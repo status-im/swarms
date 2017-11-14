@@ -5,7 +5,7 @@
 
     Idea: <to be assigned>
     Title: <title>
-    Status: <Draft | WIP | Closed >
+    Status: <Draft | In Progress | Closed >
     Created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
     Requires (*optional): <Idea number(s)>
     Replaces (*optional): <Idea number(s)>
