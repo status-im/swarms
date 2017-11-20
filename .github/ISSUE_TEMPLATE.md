@@ -5,7 +5,7 @@
 
     Idea: <to be assigned>
     Title: <title>
-    Status: <Draft | In Progress | Closed >
+    Status: <Draft | In Progress | Closed >
     Created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
     Requires (*optional): <Idea number(s)>
     Replaces (*optional): <Idea number(s)>
@@ -24,7 +24,7 @@
 <!-- Testing/Evaluation support role is also mandatory to check in on specified Goal dates or earlier. -->
 
 <!-- A swarm requires at minimum 3 contributors and 1 evaluator/tester -->
-<!-- 'Contributor' should be replaced with a descruptive role type. -->
+<!-- 'Contributor' should be replaced with a descriptive role type. -->
 - Lead Contributor: <!-- @username -->
 - Testing & Evaluation: <!-- @username -->
 - Contributor: <!-- @username -->
