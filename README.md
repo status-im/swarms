@@ -34,5 +34,5 @@
 | @sla-shi        |                  |
 | @themue         |                  |
 | @tiabc          | [#10](https://github.com/status-im/ideas/issues/10)                 |
-| @vkjr           |                  |
+| @vkjr           | [#34](https://github.com/status-im/ideas/issues/34)                 |
 | @yenda          | [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
