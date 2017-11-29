@@ -8,7 +8,7 @@
 | @adambabik      | [#1](https://github.com/status-im/ideas/issues/1), [#12](https://github.com/status-im/ideas/issues/12)                 |
 | @alwx           | [#9](https://github.com/status-im/ideas/issues/9)                 |
 | @andmironov     |                  |
-| @andytudhope    | [#10](https://github.com/status-im/ideas/issues/10)                 |
+| @andytudhope    | [#10](https://github.com/status-im/ideas/issues/10), [#18](https://github.com/status-im/ideas/issues/18)               |
 | @annadanchenko  | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10)                 |
 | @antdanchenko   |                  |
 | @asemiankevich  | [#3](https://github.com/status-im/ideas/issues/3)                 |
