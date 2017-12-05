@@ -32,7 +32,7 @@
 | @rasom          |                  |
 | @screwyprof     |                  |
 | @sla-shi        |                  |
-| @themue         |                  |
+| @themue         | [#22](https://github.com/status-im/ideas/issues/22), [#39](https://github.com/status-im/ideas/issues/39)                 |
 | @tiabc          | [#10](https://github.com/status-im/ideas/issues/10)                 |
 | @vkjr           | [#34](https://github.com/status-im/ideas/issues/34)                 |
 | @yenda          | [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
