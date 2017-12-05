@@ -13,6 +13,7 @@ Any reason *User A* doesn't want to see posts of *User B* anymore.
 
 - *User A*
 - *User B*
+- *User C*
 
 ## Pre-Condition
 
