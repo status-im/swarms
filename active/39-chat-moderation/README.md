@@ -36,21 +36,10 @@ The MVP provides users with basic moderation tools so that they can block users,
 
 ### User Stories 
 
-#### Blocking a user
-
-User A enters a public group chat. User B sends a message that User A dislikes. User A blocks User B. All messages from User B no longer show up in any chat feeds of User A.
-
-#### Reducing spam
-
-User A enters a public group chat. User A discovers that messages in the chat feed are low quality (spam). User A adjusts the required SNT burn value until the quality of the chat feed improves.
-
-#### Filter unwanted content
-
-User A does not want to view any messages that contain the phrase x. User A updates their moderation rules to ignore any messages that contain the phrase x. Messages that contain the phrase x no longer appear in any chat feeds of User A.
-
-#### Advanced filtering with smart contracts
-
-User A is a power user. User A configures their moderation rules to include the address of a smart contract that implements a standard rules interface. The smart contract will be called to evaluate new messages as they are received.
+- [US 1: Blocking a user](https://github.com/status-im/ideas/blob/progress/39-init-reqeng/active/39-chat-moderation/user-stories/us-1-blocking-a-user.md)
+- [US 2: Reducing SPAM](https://github.com/status-im/ideas/blob/progress/39-init-reqeng/active/39-chat-moderation/user-stories/us-2-reducing-spam.md)
+- [US 3: Filter unwanted content](https://github.com/status-im/ideas/blob/progress/39-init-reqeng/active/39-chat-moderation/user-stories/us-3-filter-unwanted-content.md)
+- US 4: Advanced filtering with smart contracts
 
 ### Requirements
 
