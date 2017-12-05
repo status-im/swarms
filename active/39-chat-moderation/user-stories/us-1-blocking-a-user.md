@@ -27,7 +27,7 @@ Also in other chat rooms with both users *User A* doesn't see any post of *User 
 ## Flow
 
 - *User A* selects account of *User B*.
-- Menu with multiple options is display, one of those is `Block ...`-
+- Menu with multiple options is display, one of those is `Block ...`.
 - After selecting `Block ...` and confirming a security question posts of *User B* aren't
   visible anymore to *User A*.
 

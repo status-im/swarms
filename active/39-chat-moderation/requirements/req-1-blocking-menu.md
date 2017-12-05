@@ -2,16 +2,16 @@
 
 ## User Stories
 
-- [1: Blocking a User](https://github.com/ideas/active/39-chat-moderation/user-stories/us-1-blocking-a-user.md)
+- [1: Blocking a User](https://github.com/status-im/ideas/active/39-chat-moderation/user-stories/us-1-blocking-a-user.md)
 
 ## Description
 
-The individual menu for any participant of chat must contain a blocking menu point.
+The context menu for all participants of a chat must contain a blocking menu point.
 
 ## Rationale
 
-Selecting this menu by *User A* for a *User B* leads to the blocking of that user
-for all feeds of *User A*.
+Selecting this menu point by *User A* for a *User B* leads to the blocking of the
+selected user for all feeds of *User A*.
 
 ## Fit Criteria
 
@@ -33,4 +33,5 @@ None.
 
 ## Remarks
 
-None.
+- Question: Does the list of chat members also shows the own profile? Here the
+  context menu must contain no blocking menu point.
