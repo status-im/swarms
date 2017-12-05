@@ -36,10 +36,10 @@ The MVP provides users with basic moderation tools so that they can block users,
 
 ### User Stories 
 
-- [US 1: Blocking a user](https://github.com/status-im/ideas/blob/progress/39-init-reqeng/active/39-chat-moderation/user-stories/us-1-blocking-a-user.md)
-- [US 2: Reducing SPAM](https://github.com/status-im/ideas/blob/progress/39-init-reqeng/active/39-chat-moderation/user-stories/us-2-reducing-spam.md)
-- [US 3: Filter unwanted content](https://github.com/status-im/ideas/blob/progress/39-init-reqeng/active/39-chat-moderation/user-stories/us-3-filter-unwanted-content.md)
-- US 4: Advanced filtering with smart contracts
+- [US 1: Blocking a user](./user-stories/us-1-blocking-a-user.md)
+- [US 2: Reducing SPAM](./user-stories/us-2-reducing-spam.md)
+- [US 3: Filter unwanted content](./user-stories/us-3-filter-unwanted-content.md)
+- [US 4: Advanced filtering with smart contracts](./user-stories/us-4-advanced-filtering-with-smart-contracts.md)
 
 ### Requirements
 

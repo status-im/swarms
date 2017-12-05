@@ -17,7 +17,7 @@ Feeds of *User A* contain a phrase the user doesn't want to see.
 
 ## Pre-Condition
 
-*User A* discovers phrases she dislikes and decides to ignore these messages.
+The disliked phrase is not inside the already added phrases of *User A*.
 
 ## Post-Condition
 

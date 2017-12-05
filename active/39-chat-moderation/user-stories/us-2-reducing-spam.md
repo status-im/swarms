@@ -16,9 +16,8 @@ Wish of *User A* to reduce SPAM in a public group chat.
 
 ## Pre-Condition
 
-A public chat room with traffic and *User A* as a user. *User A* decides that the
-quality of the feed doesn't match her quality requirements, the messages contain
-too much SPAM.
+A public chat room with traffic and *User A* as a user. Quality of the feed
+is too low for *User A*.
 
 ## Post-Condition
 
