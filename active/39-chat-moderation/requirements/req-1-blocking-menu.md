@@ -2,7 +2,7 @@
 
 ## User Stories
 
-- [1: Blocking a User](https://github.com/status-im/ideas/active/39-chat-moderation/user-stories/us-1-blocking-a-user.md)
+- [1: Blocking a User](https://github.com/status-im/ideas/blob/progress/39-init-reqeng/active/39-chat-moderation/user-stories/us-1-blocking-a-user.md)
 
 ## Description
 
