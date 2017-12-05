@@ -37,4 +37,4 @@ Also in other chat rooms with both users *User A* doesn't see any post of *User 
   participants and can be selected to open a menu like for blocking? Or does the chat
   room menu an option to list all blocked users and those can be unblocked there?
 - Question: How is quoting, mentioning, or forwarding of *User B* messages by *User C*
-  handled?
+  handled? Are those visible to *User A*?
