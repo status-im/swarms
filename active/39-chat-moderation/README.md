@@ -40,6 +40,7 @@ The MVP provides users with basic moderation tools so that they can block users,
 - [US 2: Reducing SPAM](./user-stories/us-2-reducing-spam.md)
 - [US 3: Filter unwanted content](./user-stories/us-3-filter-unwanted-content.md)
 - [US 4: Advanced filtering with smart contracts](./user-stories/us-4-advanced-filtering-with-smart-contracts.md)
+- [US 5: Subscribe to moderation providers](./user-stories/us-5-subscribe-to-moderation-providers.md)
 
 ### Requirements
 
