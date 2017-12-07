@@ -24,14 +24,11 @@
 | @jarradh        |                  |
 | @JekaMas        | [#1](https://github.com/status-im/ideas/issues/1), [#55](https://github.com/status-im/ideas/issues/55)                 |
 | @jeluard        | [#2](https://github.com/status-im/ideas/issues/2), [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @MarinX         |                  |
 | @MaxRis         |                  |
 | @naghdy         | [#1](https://github.com/status-im/ideas/issues/1)                 |
 | @oskarth        | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
 | @pablanopete    | [#10](https://github.com/status-im/ideas/issues/10)                 |
 | @rasom          |                  |
-| @screwyprof     |                  |
-| @sla-shi        |                  |
 | @themue         |                  |
 | @tiabc          | [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
 | @vkjr           | [#34](https://github.com/status-im/ideas/issues/34)                 |
