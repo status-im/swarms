@@ -1,7 +1,7 @@
 ## Preamble
 
     Idea: <to be assigned>
-    Title: Chat moderation
+    Title: Group Chat
     Status: Draft
     Created: 2017-11-23
     Related: https://github.com/status-im/ideas/issues/15
