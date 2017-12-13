@@ -8,33 +8,27 @@
 
 ## Summary
 
-Moderation of public chat groups.
-
-## Vision
-
-Users must have greater control over the content in their chat feeds to ensure a positive experience. We can give users that control by providing them with a suite of moderation tools. Our moderation tools will enable users to define their own content rules or subscribe to a moderation provider to do it for them. A marketplace will ultimately exist where users can choose from a range of moderation providers.
+Provide a powerful group chat with flexible moderation features
 
 ## Swarm Participants
 
 - Lead Contributor: @james
-- Testing & Evaluation:
+- Testing & Evaluation: (TBD)
 - Contributor: @themue
 - Contributor:
-- UX (if relevant):
+- PM: (TBD)
+- UX (if relevant): (TBD)
 
-## Requirements
+## Product Overview
 
-## Goals & Implementation Plan
+Users want to have a convenient and powerful group chat comparable to the market competitors. But beside these standard operations they want to have greater control over the content in their chat feeds ensuring a positive experience. We can give users that control by providing them with a suite of moderation tools. Our moderation tools will enable users to define their own content rules or subscribe to a moderation provider to do it for them. A marketplace will ultimately exist where users can choose from a range of moderation providers.
 
 ### Minimum Viable Product
 
-Goal Date:
+- Goal Date: (TBD)
+- Description: The MVP provides users with basic moderation tools so that they can block users, filter posts with certain phrases, and reduce spam.
 
-### Description
-
-The MVP provides users with basic moderation tools so that they can block users, filter posts with certain phrases, and reduce spam.
-
-### User Stories 
+#### User Stories 
 
 - [US 1: Blocking a user](./user-stories/us-1-blocking-a-user.md)
 - [US 2: Reducing SPAM](./user-stories/us-2-reducing-spam.md)
@@ -42,7 +36,7 @@ The MVP provides users with basic moderation tools so that they can block users,
 - [US 4: Advanced filtering with smart contracts](./user-stories/us-4-advanced-filtering-with-smart-contracts.md)
 - [US 5: Subscribe to moderation providers](./user-stories/us-5-subscribe-to-moderation-providers.md)
 
-### Requirements
+#### Requirements
 
 - A format / schema for moderation rules must be defined.
 - A standard rules interface for smart contracts must be defined.
@@ -62,41 +56,13 @@ The MVP provides users with basic moderation tools so that they can block users,
   - Display the user's burn amount for that channel.
   - Allow users to burn tokens for that channel.
 
-### Iteration 1
+## Dates
 
-Goal Date:
+- Goal Date: (TBD)
+- Description: (TBD)
+- Testing Days required: (TBD)
 
-### Description
-
-Users can subscribe to moderation providers. 
-
-### User Stories 
-
-### Requirements
-
-TBD
-
-### Iteration 2
-
-Goal Date:
-
-### Description
-
-A moderation marketplace.
-
-### User Stories 
-
-### Requirements
-
-TBD
-
-### Iteration 1..N
-
-Goal Date:
-
-## Supporting Role Communication
-
-## Post-Mortem
+## Success Metrics
 
 ## Copyright
 
