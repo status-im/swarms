@@ -26,41 +26,33 @@ Users want to have a convenient and powerful group chat comparable to the market
 ### Minimum Viable Product
 
 - Goal Date: (TBD)
-- Description: The MVP provides users with basic moderation tools so that they can block users, filter posts with certain phrases, and reduce spam.
+- Description: Status provides a peer-to-peer chat plus one open chat room for the global exchange between the first users. This room is moderated to avoid misusage.
+- Testing Days required: (TBD)
 
 #### User Stories 
+
+- [US 6: Viewing a chat]()
+- [US 7: Initiating a chat]()
+- [US 8: Request tokens from chat partner]()
+- [US 9: Send tokens to chat partner]()
+
+#### Requirements
+
+## Dates
+
+### Iteration 1
+
+- Goal Date: (TBD)
+- Description: The MVP provides users with basic moderation tools so that they can block users, filter posts with certain phrases, and reduce spam.
+- Testing Days required: (TBD)
+
+#### User Stories
 
 - [US 1: Blocking a user](./user-stories/us-1-blocking-a-user.md)
 - [US 2: Reducing SPAM](./user-stories/us-2-reducing-spam.md)
 - [US 3: Filter unwanted content](./user-stories/us-3-filter-unwanted-content.md)
 - [US 4: Advanced filtering with smart contracts](./user-stories/us-4-advanced-filtering-with-smart-contracts.md)
 - [US 5: Subscribe to moderation providers](./user-stories/us-5-subscribe-to-moderation-providers.md)
-
-#### Requirements
-
-- A format / schema for moderation rules must be defined.
-- A standard rules interface for smart contracts must be defined.
-- A smart contract that must:
-  - Allow a caller to burn any ERC20 token.
-  - Allow a caller to label burn amounts.
-  - Return burn amounts given a token address, user address, and an optional label.
-- A moderation settings UI must exist where the user may configure:
-  - Blocked users.
-  - Filtered phrases.
-  - The address of a smart contract to call.
-  - Burn amount required.
-- UserA must be able to block a UserB from UserB's profile.
-- Messages are evaluated against the moderation rules before they are rendered, aborting render where necessary.
-- Moderation rules must persist between sessions.
-- Chat group settings UI must:
-  - Display the user's burn amount for that channel.
-  - Allow users to burn tokens for that channel.
-
-## Dates
-
-- Goal Date: (TBD)
-- Description: (TBD)
-- Testing Days required: (TBD)
 
 ## Success Metrics
 
