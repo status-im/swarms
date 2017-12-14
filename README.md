@@ -29,7 +29,7 @@
 | @oskarth        | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
 | @pablanopete    | [#10](https://github.com/status-im/ideas/issues/10)                 |
 | @rasom          |                  |
-| @themue         |                  |
+| @themue         | [#22](https://github.com/status-im/ideas/issues/22), [#39](https://github.com/status-im/ideas/issues/39)                 |
 | @tiabc          | [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
 | @vkjr           | [#34](https://github.com/status-im/ideas/issues/34)                 |
 | @yenda          | [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
