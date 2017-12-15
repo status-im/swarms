@@ -31,10 +31,12 @@ Users want to have a convenient and powerful group chat comparable to the market
 
 #### User Stories 
 
-- [US 6: Viewing a chat]()
-- [US 7: Initiating a chat]()
-- [US 8: Request tokens from chat partner]()
-- [US 9: Send tokens to chat partner]()
+- [US 6: Viewing a chat](./user-stories/us-6-viewing-a-chat.md)
+- [US 7: Initiating a chat](./user-stories/us-7-initiating-a-chat.md)
+- [US 8: Request transaction from chat partner](./user-stories/us-8-request-transaction.md)
+- [US 9: Send transaction to chat partner]()
+- [US 10: Add a new address]()
+- [US 11: Add a new contact]()
 
 #### Requirements
 
