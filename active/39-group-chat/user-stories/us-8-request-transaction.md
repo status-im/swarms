@@ -6,7 +6,7 @@
 
 ## Trigger
 
-*User A* requests an amount of token from *User B*.
+*User A* wants to request an amount of token from *User B*.
 
 ## Actors
 
