@@ -1,4 +1,4 @@
-# User Story 8: Send Transaction to Chat Partner
+# User Story 10: Send Transaction to Chat Partner
 
 ## Description
 

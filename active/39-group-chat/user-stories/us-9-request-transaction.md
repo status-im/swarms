@@ -1,4 +1,4 @@
-# User Story 8: Request Transaction from Chat Partner
+# User Story 9: Request Transaction from Chat Partner
 
 ## Description
 

@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: <to be assigned>
+    Idea: 39-group-chat
     Title: Group Chat
     Status: Draft
     Created: 2017-11-23
@@ -16,7 +16,7 @@ Provide a powerful group chat with flexible moderation features
 - Testing & Evaluation: (TBD)
 - Contributor: @themue
 - Contributor:
-- PM: (TBD)
+- PM: @chadyj
 - UX (if relevant): (TBD)
 
 ## Product Overview
@@ -33,10 +33,9 @@ Users want to have a convenient and powerful group chat comparable to the market
 
 - [US 6: Viewing a chat](./user-stories/us-6-viewing-a-chat.md)
 - [US 7: Initiating a chat](./user-stories/us-7-initiating-a-chat.md)
-- [US 8: Request transaction from chat partner](./user-stories/us-8-request-transaction.md)
-- [US 9: Send transaction to chat partner](./user-stories/us-9-send-transaction.md)
-- [US 10: Add a new address](./user-stories/us-10-add-new-address.md)
-- [US 11: Add a new contact](./user-stories/us-11-add-new-contact.md)
+- [US 8: Initiating a chat with a new contact](./user-stories/us-8-initiating-a-chat-with-new-contact.md)
+- [US 9: Request transaction from chat partner](./user-stories/us-9-request-transaction.md)
+- [US 10: Send transaction to chat partner](./user-stories/us-10-send-transaction.md)
 
 #### Requirements
 
