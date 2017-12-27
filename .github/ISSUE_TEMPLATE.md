@@ -37,7 +37,7 @@
 <!-- forces discussion to continue implementation or recommend disband and post-mortem. -->
 
 ### Product Description
-<!-- What functionality are you adding? What will this look like from a user perspective? Why is this important?
+<!-- What functionality are you adding? What will this look like from a user perspective? Why is this important? -->
 
 ### Requirements & Dependancies
 <!-- Are there bugs or feature requests in other repositories that are part of this Idea? -->
