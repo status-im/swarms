@@ -17,6 +17,7 @@
 | @carlbennetts   |                  |
 | @denis-sharypin | [#1](https://github.com/status-im/ideas/issues/1), [#12](https://github.com/status-im/ideas/issues/12)                 |
 | @divan          | [#2](https://github.com/status-im/ideas/issues/2), [#12](https://github.com/status-im/ideas/issues/12)                 |
+| @feuGeneA       | [#55](https://github.com/status-im/ideas/issues/55)                 |
 | @flexsurfer     | [#2](https://github.com/status-im/ideas/issues/2), [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
 | @goranjovic     | [#3](https://github.com/status-im/ideas/issues/3)                 |
 | @jacqueswww     |                  |
