@@ -1,5 +1,7 @@
 # Status Ideas
 
+Read about the [process around Idea Proposals](https://docs.google.com/document/d/1CaFM2ZXGOKf05_LXMPJeNNy5qJOdAq91EF2Gn2QUBFI/edit#heading=h.cb5r1eeit5n) in the "Status Organisational Design" document.
+
 ## Commitment Registry (In Progress)
 
 | Contributor     | Idea Commitments |
