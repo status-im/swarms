@@ -39,7 +39,7 @@
 ### Product Description
 <!-- What functionality are you adding? What will this look like from a user perspective? Why is this important? -->
 
-### Requirements & Dependancies
+### Requirements & Dependencies
 <!-- Are there bugs or feature requests in other repositories that are part of this Idea? -->
 <!-- There is no approval unless the idea requires to be reviewed by supporting organelles (Financial, Hiring, or Design). -->
 <!-- The Swarm must develop a fully fleshed out Requirements document for the idea to proceed, to the satisfaction of participants. -->
