@@ -29,6 +29,7 @@
 | @naghdy         | [#1](https://github.com/status-im/ideas/issues/1)                 |
 | @oskarth        | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
 | @pablanopete    | [#10](https://github.com/status-im/ideas/issues/10)                 |
+| @pedro    | [#71](https://github.com/status-im/ideas/issues/71), [#86](https://github.com/status-im/ideas/issues/86)                 |
 | @rasom          |                  |
 | @themue         | [#22](https://github.com/status-im/ideas/issues/22), [#39](https://github.com/status-im/ideas/issues/39)                 |
 | @tiabc          | [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
