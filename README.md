@@ -6,6 +6,7 @@
 |-----------------|------------------|
 | @3esmit         | [#3](https://github.com/status-im/ideas/issues/3)                 |
 | @adambabik      | [#1](https://github.com/status-im/ideas/issues/1), [#12](https://github.com/status-im/ideas/issues/12)                 |
+| @adriacidre     | [#63](https://github.com/status-im/ideas/issues/63)                 |
 | @alwx           | [#9](https://github.com/status-im/ideas/issues/9)                 |
 | @andmironov     |                  |
 | @andytudhope    | [#10](https://github.com/status-im/ideas/issues/10), [#18](https://github.com/status-im/ideas/issues/18)               |
