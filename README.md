@@ -32,6 +32,6 @@
 | @pablanopete    | [#10](https://github.com/status-im/ideas/issues/10)                 |
 | @pedro    | [#71](https://github.com/status-im/ideas/issues/71), [#86](https://github.com/status-im/ideas/issues/86)                 |
 | @rasom          |                  |
-| @themue         | [#22](https://github.com/status-im/ideas/issues/22), [#39](https://github.com/status-im/ideas/issues/39)                 |
+| @themue         | [#58](https://github.com/status-im/ideas/issues/58), [#95](https://github.com/status-im/ideas/issues/95)                 |
 | @vkjr           | [#34](https://github.com/status-im/ideas/issues/34)                 |
 | @yenda          | [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
