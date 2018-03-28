@@ -14,10 +14,10 @@ An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
 state it is in.  
 
-| Idea                | State       | Success metrics? | Exit criteria? | Clear roles? | Future iteration? |
-|---------------------|-------------|------------------|----------------|--------------|-------------------|
-| 83-energy-efficient | In Progress | Yes              | Yes            | Yes          | Yes               |
-| 92-eth-discovery    | In Progress | Yes              | Yes            | No           | Yes               |
-| 68-core-metrics     | In Progress | Yes              | Yes            | Yes          | Yes               |
-| 58-mainnet          | In Progress | Yes              | Yes            | No           | Yes               |
-| 86-push-notif-v2    | Draft       | No               | No             | No           | No                |
+| Idea                | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
+|---------------------|-------------|------------------------|------------------------|------------------------|------------------------|
+| 83-energy-efficient | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| 92-eth-discovery    | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
+| 68-core-metrics     | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| 58-mainnet          | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
+| 86-push-notif-v2    | Draft       | :x: No                 | :x: No                 | :x: No                 | :x: No                 |
