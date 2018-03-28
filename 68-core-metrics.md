@@ -1,5 +1,3 @@
-<!-- Please Review https://docs.google.com/document/d/1CaFM2ZXGOKf05_LXMPJeNNy5qJOdAq91EF2Gn2QUBFI/edit# for more details -->
-<!-- in PR the document should be named as`DEV#1-title.md` -->
 
 ## Preamble
 
@@ -10,30 +8,19 @@
 
 
 ## Summary
-<!-- "If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the Idea. -->
 
 Determine and implement a set of user-related core performance metrics that measure the goal of driving mass-adoption of Ethereum through Status use, and do so in a way that respects users privacy.
 
 Project board: [status-im/projects/14](https://github.com/orgs/status-im/projects/14)
 
 ## Swarm Participants
-<!-- Each contributor pledges to the idea with their FOCUS value. (hours per week) -->
-<!-- Here all roles in swarm are defined and filled, one of the contributors should responsibility of the Idea as Lead. -->
 
-<!-- Testing/Evaluation support role is also mandatory to check in on specified Goal dates or earlier. -->
-
-<!-- Lead Contributor is the Owner of the Idea. If required, they can get support from a PM, but should be responsible for end to end execution of the Idea. This includes ensuring appropriate resources are allocated, setting realistic timelines and milestones, and any post-launch metrics or bug fixes that are attributed to the Idea -->
-<!-- A swarm requires at minimum 3 contributors and 1 evaluator/tester -->
-<!-- 'Contributor' should be replaced with a descriptive role type. -->
 - Lead & PM: @chadyj
 - Testing & Evaluation: @lukaszfryc
 - Contributor: @jeluard 
 - Contributor: @adambabik  
 
 ## Product Overview
-<!-- A short (~200 word) description and motivation of the Idea. Without clear explanation the Idea should not proceed. Can include User Stories -->
-<!-- Testing/Evaluation role accepts responsbility to checkin at Goal dates, -->
-<!-- forces discussion to continue implementation or recommend disband and post-mortem. -->
 
 User-related performance metrics will help orient the team towards driving Ethereum adoption by being data-informed, and provide a way to assess if the team is making progress towards this goal.  The most important metric driving this goal is **daily transacting users** (DTU). In support of DTU's there are sub-goals related to engagement, adoption, retention, and task success for the app as a whole and individual features such as wallet, chat, and Dapp's.  
 
@@ -43,7 +30,6 @@ Metric collection will be opt-in only to ensure that users privacy is respected.
 
 
 ### Product Description
-<!-- What functionality are you adding? What will this look like from a user perspective? Why is this important? -->
 
 This is not a user-facing Swarm. The product work is for Status org consumption.
 
