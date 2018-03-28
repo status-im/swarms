@@ -1,37 +1,36 @@
 # Status Ideas
 
-## Commitment Registry (In Progress)
+A space for our ideas - our current, past and future efforts.
 
-| Contributor     | Idea Commitments |
-|-----------------|------------------|
-| @3esmit         | [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @adambabik      | [#1](https://github.com/status-im/ideas/issues/1), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @adriacidre     | [#63](https://github.com/status-im/ideas/issues/63)                 |
-| @alwx           | [#9](https://github.com/status-im/ideas/issues/9)                 |
-| @andmironov     |                  |
-| @andytudhope    | [#10](https://github.com/status-im/ideas/issues/10), [#18](https://github.com/status-im/ideas/issues/18)               |
-| @annadanchenko  | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10)                 |
-| @antdanchenko   |                  |
-| @asemiankevich  | [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @b00ris         | [#1](https://github.com/status-im/ideas/issues/1), [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @bitgamma       |                  |
-| @carlbennetts   |                  |
-| @denis-sharypin | [#1](https://github.com/status-im/ideas/issues/1), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @divan          | [#2](https://github.com/status-im/ideas/issues/2), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @feuGeneA       | [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @flexsurfer     | [#2](https://github.com/status-im/ideas/issues/2), [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @goranjovic     | [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @jacqueswww     |                  |
-| @janherich      | [#9](https://github.com/status-im/ideas/issues/9)                 |
-| @jarradh        |                  |
-| @JekaMas        | [#1](https://github.com/status-im/ideas/issues/1), [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @jeluard        | [#2](https://github.com/status-im/ideas/issues/2), [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @MaxRis         |                  |
-| @naghdy         | [#1](https://github.com/status-im/ideas/issues/1)                 |
-| @oskarth        | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @pablanopete    | [#10](https://github.com/status-im/ideas/issues/10)                 |
-| @pedro    | [#71](https://github.com/status-im/ideas/issues/71), [#86](https://github.com/status-im/ideas/issues/86)                 |
-| @rasom          |                  |
-| @themue         | [#58](https://github.com/status-im/ideas/issues/58), [#95](https://github.com/status-im/ideas/issues/95)                 |
-| @vkjr           | [#34](https://github.com/status-im/ideas/issues/34)                 |
-| @yenda          | [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
+Status Swarm Manual: https://docs.google.com/document/u/1/d/10nGQ6mZGahIme6UGLov3b12tJUOi3mkjIsT5_cFl0kA/edit?ts=5ab1135d#heading=h.lqc5ff9neha5
+
+## Contributing
+
+First review https://wiki.status.im/Status_Organisational_Design and
+https://docs.google.com/document/u/1/d/10nGQ6mZGahIme6UGLov3b12tJUOi3mkjIsT5_cFl0kA/edit?ts=5ab1135d#heading=h.lqc5ff9neha5.
+Then submit a Pull Request in this repository.
+
+## Idea Registry
+
+An idea can be in the following states:
+
+- *Draft*
+- *In Progress*
+- *Completed*
+- *Aborted*
+
+See swarm manual above for more.
+
+- Clear roles includes a single Swarm lead, a designated evaluator, and at least three contributors total
+
+- Iteration dates updated each Town Hall
+
+- An idea/swarm is well-defined if it has success metrics, exit criteria, clear roles and a next iteration plan.
+
+| Idea                                                                | State       | Success metrics? | Exit criteria? | Clear roles? | Iteration 26/36-6/4?  | Well-defined? |
+|---------------------------------------------------------------------|-------------|------------------|----------------|--------------|-----------------------|---------------|
+| [83-energy-efficient](https://github.com/status-im/ideas/issues/83) | In Progress | Yes              | Yes            | Yes          | Yes                   | Yes           |
+| [92-eth-discovery](https://github.com/status-im/ideas/issues/92)    | In Progress | Yes              | Yes            | No           | Yes                   | No            |
+| [68-core-metrics](https://github.com/status-im/ideas/issues/68)     | In Progress | Yes              | Yes            | Yes          | Yes                   | Yes           |
+| [58-mainnet](https://github.com/status-im/ideas/issues/58])         | In Progress | Yes              | Yes            | No           | Yes                   | No            |
+| [86-push-notif-v2](https://github.com/status-im/ideas/issues/86)    | Draft       | No               | No             | No           | No                    | No            |
