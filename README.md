@@ -12,7 +12,7 @@ Then submit a Pull Request in this repository.
 
 An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
-state it is in.  
+state it is in.
 
 | Idea                | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
 |---------------------|-------------|------------------------|------------------------|------------------------|------------------------|
@@ -21,3 +21,4 @@ state it is in.
 | 68-core-metrics     | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | 58-mainnet          | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
 | 86-push-notif-v2    | Draft       | :x: No                 | :x: No                 | :x: No                 | :x: No                 |
+| 1-offline-inboxing  | Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
