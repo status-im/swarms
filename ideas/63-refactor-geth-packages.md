@@ -65,8 +65,16 @@ Goal Date: 2018-04-06
 Description:
 `get/common` package contains everything. In this iteration, the goal is to remove it complete or at least move most of the functions to appropriate packages.
 
+### Iteration 6: Simplify `node.NodeManager` API
+Goal Date: 2018-04-13
+
+Description:
+1. Change its name to something more appropriate as it does not manage multiple nodes,
+1. Rename methods indicating there is only support for one node: `StartNode -> Start`, `StopNode -> Stop` etc.
+1. Allow starting and stopping associated managers (`jail.Manager` and `transactions.Manager`).
+
 ### Iteration 6: A PR in status-react
-Goal Date: 2018-04-06
+Goal Date: 2018-04-13
 
 Description:
 A PR in status-react is created with updated status-go version.
