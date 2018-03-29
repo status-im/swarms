@@ -17,6 +17,7 @@ state it is in.
 | Idea                                                              | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
 |-------------------------------------------------------------------|-------------|------------------------|------------------------|------------------------|------------------------|
 | [83-energy-efficient](ideas/83-energy-efficient.md)               | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [80-onboarding](ideas/80-onboarding.md)                           | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [68-core-metrics](ideas/68-core-metrics.md)                       | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [64-release](ideas/64-release.md)                                 | Aborted     | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | Draft       | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
@@ -31,14 +32,18 @@ registry captures this. It is only applied for In Progress swarms. This means it
 is reset for each person per iteration, unless a swarm lead marks it as in
 progress again. This ensures the registry is kept up to date.
 
-| Contributor  | Ideas  |
-|--------------|--------|
-| @adambabik   | 68     |
-| @chadyj      | 68     |
-| @feuGeneA    | 83     |
-| @flexsurfer  | 34     |
-| @jeluard     | 68     |
-| @lukaszfryc  | 68, 83 |
-| @mandrigin   | 83     |
-| @MaxRis      | 34     |
-| @vkjr        | 34     |
+| Contributor   |  Ideas |
+|---------------|--------|
+| @anna         |     80 |
+| @andmironov   | 68, 80 |
+| @adambabik    |     68 |
+| @chadyj       | 68, 80 |
+| @feuGeneA     |     83 |
+| @flexsurfer   | 34, 80 |
+| @hester       |     80 |
+| @jeluard      |     68 |
+| @lukaszfryc   | 68, 83 |
+| @mandrigin    |     83 |
+| @MaxRis       |     34 |
+| @vkjr         |     34 |
+| @yevh-berdnyk |     80 |
