@@ -16,6 +16,7 @@ state it is in.
 
 | Idea                                                              | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
 |-------------------------------------------------------------------|-------------|------------------------|------------------------|------------------------|------------------------|
+| [120-swarm-process](ideas/120-swarm-process.md)                   | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [83-energy-efficient](ideas/83-energy-efficient.md)               | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [68-core-metrics](ideas/68-core-metrics.md)                       | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [64-release](ideas/64-release.md)                                 | Aborted     | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
