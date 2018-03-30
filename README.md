@@ -18,4 +18,5 @@ state it is in.
 |-----------------------------------------------------|-------------|------------------------|------------------------|------------------------|------------------------|
 | [83-energy-efficient](ideas/83-energy-efficient.md) | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [68-core-metrics](ideas/68-core-metrics.md)         | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [64-release](ideas/64-release.md)                   | Aborted     | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)   | Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
