@@ -12,7 +12,7 @@ Discovery protocol is essential for long-term scaling of the Status app. It will
 - Lead Contributor: @adambabik
 - Testing & Evaluation: TBD
 - Contributor: @dshulyak
-- Contributor: TBD
+- Contributor: @themue
 
 ## Product Overview
 Discovery protocol will allow us to dynamically change the number of server peers in our cluster and also distribute the peers among various providers and countries without rebuilding the app itself, hence improving security and reliability.
