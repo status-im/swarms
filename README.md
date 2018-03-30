@@ -14,9 +14,10 @@ An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
 state it is in.
 
-| Idea                                                | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
-|-----------------------------------------------------|-------------|------------------------|------------------------|------------------------|------------------------|
-| [83-energy-efficient](ideas/83-energy-efficient.md) | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [68-core-metrics](ideas/68-core-metrics.md)         | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [64-release](ideas/64-release.md)                   | Aborted     | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
-| [1-offline-inboxing](ideas/1-offline-inboxing.md)   | Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
+| Idea                                                              | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
+|-------------------------------------------------------------------|-------------|------------------------|------------------------|------------------------|------------------------|
+| [83-energy-efficient](ideas/83-energy-efficient.md)               | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [68-core-metrics](ideas/68-core-metrics.md)                       | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [64-release](ideas/64-release.md)                                 | Aborted     | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
+| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | Draft       | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
+| [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
