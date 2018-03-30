@@ -44,7 +44,7 @@ Goal Date: 2018-04-06
 1. [ ] Development of required components is done. The work is tracked here: https://github.com/orgs/status-im/projects/15,
 1. [ ] There is a Status App build with mainnet available,
 1. [ ] All components have been tested by the Q&A Team,
-1. [ ] Mainnet is defult in dev/nightly builds.
+1. [ ] Mainnet is default in dev/nightly builds.
 
 ## Audit iteration
 
