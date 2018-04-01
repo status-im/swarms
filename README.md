@@ -20,4 +20,5 @@ state it is in.
 | [68-core-metrics](ideas/68-core-metrics.md)                       | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [64-release](ideas/64-release.md)                                 | Aborted     | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | Draft       | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
+| [34-react-native-qt](ideas/34-react-native-qt.md)                 | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
