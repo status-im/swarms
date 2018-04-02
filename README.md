@@ -22,3 +22,23 @@ state it is in.
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | Draft       | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                 | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
+
+
+## Commitment Registry
+
+Over any given iteration, individuals can be committed to 0..N ideas. This
+registry captures this. It is only applied for In Progress swarms. This means it
+is reset for each person per iteration, unless a swarm lead marks it as in
+progress again. This ensures the registry is kept up to date.
+
+| Contributor  | Ideas  |
+|--------------|--------|
+| @adambabik   | 68     |
+| @chadyj      | 68     |
+| @feuGeneA    | 83     |
+| @flexsurfer  | 34     |
+| @jeluard     | 68     |
+| @lukaszfryc  | 68, 83 |
+| @mandrigin   | 83     |
+| @MaxRis      | 34     |
+| @vkjr        | 34     |
