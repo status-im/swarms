@@ -7,17 +7,18 @@
     Related: `120-swarm-process`
 
 ## Summary
-Swarms are ephemeral teams forming to achieve a specified goal and disbanding once achieved or failure becomes apparent.
+Ultimately we would like Status to become a public good, owned, developed and ran by it's very own users. In order to achieve that we need to open up our processes for contributions from "the outside" and establish ways for users to propose & incentivise projects they see as important.
 
-Ultimately we would like Status to become a public good, owned, developed and ran by it's very own users. In order to achieve that we need to open up our processes for contributions from "the outside" and establish ways for users to propose & incentivise projects/Swarms they see as important.
+Swarms are our current attempt at enabling this. They are ephemeral teams forming to achieve a specified goal and disbanding once achieved or failure becomes apparent. Their defined lifetime and -cycle encourage constant re-evaluation &. evolution.
 
 Compensating contributors for their work is an important component of this and where `120-swarm-process` focuses on establishing a baseline of processes that are open to everyone this idea will focus on experimentally devising compensation mechanisms. 
 
 ## Swarm Participants
 
 - Lead Contributor: @martinklepsch
-- Evaluation ('compensation criteria'): Voting mechanism (Polly survey)
+- Contributor ('payment'): ??? 
 - Contributor: @oskarth
+- Evaluation ('compensation criteria'): Voting mechanism (Polly survey)
 
 ## Product Overview
 
@@ -37,13 +38,16 @@ The compensation mechanisms should be judged according to the following criteria
 #### Checkpoint 1 — `2018-04-06`
 
 - Define at least two compensation models
+- Get buy-in from major SNT holder to fund experiments
 - Talk to #peopleops how we can admin/structure this
-- Reach out to upcoming swarms and convince them to participate  
+- Reach out to upcoming swarms and convince them to participate
+- Broadcast intention behind these experiments into community and encourage submission of ideas. (Medium post?)
 
 #### Checkpoint 2 — `2018-04-20`
 
 - Define two more compensation models
 - Again, reach out and convince upcoming swarms
+	- If possible consider a community submitted idea/swarm
 
 #### Checkpoint 3 — `2018-05-31`
 
@@ -56,13 +60,13 @@ Conduct four experiments and evaluate them based on the criteria outlined above.
 
 ## Metrics Affected
 
-### SNT Utility
-
-Allowing SNT holders to directly support changes will expand the utility of SNT tokens.
-
 ### OpenBounty Transaction Volume
 
-While these experimental compensation payouts likely won't happen through the OpenBounty platform these transactions could still be counted as part of OpenBounty as they will ultimately inform what compensation models will find their way into OpenBounty.
+While these experimental compensation payouts won't happen through the OpenBounty platform these transactions could still be counted as part of OpenBounty as they will ultimately inform what compensation models will find their way into OpenBounty.
+
+### SNT Utility
+
+Once these experiments translate to changes in the OpenBounty product SNT holders will be able to directly support changes they see as important. This will increase SNT utility and distribute ownership of the Status platform.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
