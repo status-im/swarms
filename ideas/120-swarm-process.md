@@ -46,7 +46,7 @@ basis.
 
 We thus distinguish between swarms (Type-1) as a general concept for bringing
 ideas to fruition and getting compensated by it, and 'Status LLC using swarms'
-(Type-2). The fatter might have more constraints given its immediate goals
+(Type-2). The latter might have more constraints given its immediate goals
 and current compensation model. This allows us to be efficient and effective
 while the rest of the organization is being built up.
 
