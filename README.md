@@ -27,6 +27,7 @@ state it is in.
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
 | [61-app-structure-refinement](ideas/61-app-structure-refinement.md)                 | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [3-erc20-token-support](ideas/3-erc20-token-support.md)  | :champagne: Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -      
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 
 ## Commitment Registry
