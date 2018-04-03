@@ -5,7 +5,7 @@ A space for our ideas - our current, past and future efforts.
 ## Contributing
 
 First review [Status Organizational Design](https://wiki.status.im/Status_Organisational_Design) and
-[Status Swarm Manual](https://docs.google.com/document/u/1/d/10nGQ6mZGahIme6UGLov3b12tJUOi3mkjIsT5_cFl0kA/edit?ts=5ab1135d#heading=h.lqc5ff9neha5).
+[Status Swarm Manual](MANUAL.md).
 Then submit a Pull Request in this repository.
 
 ## Idea Registry
