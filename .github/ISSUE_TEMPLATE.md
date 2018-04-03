@@ -1,3 +1,7 @@
+# Meta
+
+Please submit a PR with the following template filled in. See README.md for more info. 
+
 <!-- Please Review https://docs.google.com/document/d/1CaFM2ZXGOKf05_LXMPJeNNy5qJOdAq91EF2Gn2QUBFI/edit# for more details -->
 <!-- in PR the document should be named as`DEV#1-title.md` -->
 
@@ -58,7 +62,12 @@ Description: <!-- Description of Deliverables-->
 Testing Days required: <!-- Days required at the end of development for testing -->
 
 ## Success Metrics
-<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move?
+<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move? -->
+
+<!-- Example: Onboarding conversion rate. Target >30% full funnel -->
+
+## Exit criteria
+<!-- Launch new onboarding UI flow -->
 
 ## Supporting Role Communication
 <!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
