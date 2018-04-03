@@ -23,7 +23,7 @@ state it is in.
 | [80-onboarding](ideas/80-onboarding.md)                           | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [68-core-metrics](ideas/68-core-metrics.md)                       | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [64-release](ideas/64-release.md)                                 | :dagger: Aborted          | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
-| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | :seedling: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
+| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 
