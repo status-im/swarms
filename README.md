@@ -16,14 +16,14 @@ state it is in.
 
 | Idea                                                              | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
 |-------------------------------------------------------------------|-------------|------------------------|------------------------|------------------------|------------------------|
-| [120-swarm-process](ideas/120-swarm-process.md)                   | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [83-energy-efficient](ideas/83-energy-efficient.md)               | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [80-onboarding](ideas/80-onboarding.md)                           | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [68-core-metrics](ideas/68-core-metrics.md)                       | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [64-release](ideas/64-release.md)                                 | Aborted     | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
-| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | Draft       | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
-| [34-react-native-qt](ideas/34-react-native-qt.md)                 | In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | Completed   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
+| [120-swarm-process](ideas/120-swarm-process.md)                   | :walking_man: In Progress  | :white_check_mark: Yes   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [83-energy-efficient](ideas/83-energy-efficient.md)               | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [80-onboarding](ideas/80-onboarding.md)                           | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [68-core-metrics](ideas/68-core-metrics.md)                       | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [64-release](ideas/64-release.md)                                 | :dagger: Aborted | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
+| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
+| [34-react-native-qt](ideas/34-react-native-qt.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 
 
 ## Commitment Registry
