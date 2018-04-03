@@ -21,7 +21,7 @@ Alpha builds of Status should default to Mainnet. We should be using Status in a
 
 Currently the Status alpha builds use testnet, but using Mainnet is a key milestone for the public launch of Status. There will be potentially major performance and security implications so the goal is to surface these issues early enough by testing the app in a real-world environment.
 
-From a users perspective, Mainnet should be a default network as it is required by most popular DApps, and is needed for real transactions, so the full potential of Status can't be seen until we switch. The other networks will continue to be available for developers and testers.
+From a users perspective, Mainnet should be a default network as it is required by most popular DApps, and is needed for real transactions, so the full potential of Status can't be seen until we switch. The other networks will continue to be available, e.g. for developers and tests.
 
 ## Product Description
 
@@ -33,7 +33,7 @@ Some users, such as DApp creators may want to test their app on testnet (or some
 
 Security and performance should should be discussed and considered.
 
-Also, several Dapps should be tested.
+Also, several DApps should be tested.
 
 ## Minimum Viable Product
 
