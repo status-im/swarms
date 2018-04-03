@@ -52,6 +52,7 @@ aborted.
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
+| [101-extensions](ideas/101-extensions)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 | [142-recovery-compatibility](ideas/142-recovery-compatibility)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                      |
 
 ## Completed :champagne: and aborted :dagger:
@@ -86,7 +87,7 @@ progress again. This ensures the registry is kept up to date.
 | @flexsurfer   | 34, 80 |
 | @hester       |     80, 134 |
 | @janherich    |     87 |
-| @jeluard      |     68 |
+| @jeluard      | 68, 101 |
 | @lukaszfryc   | 68, 83 |
 | @mandrigin    |     83 |
 | @martin       |    120 |
