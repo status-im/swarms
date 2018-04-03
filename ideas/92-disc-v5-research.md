@@ -45,7 +45,7 @@ Description:
 
 ## Success Metrics
 1. Connecting to the network for statusd/Status App via DiscV5 is successful in at least 99% of tries,
-1. It's possible to discover minimal number of LES/2, Whisper and MailServer nodes via DiscV5 (nodes with the same protocol but different capabilities) within 15 seconds without cache and in 5 seconds with cache,
+1. It's possible to discover minimal number of LES/2, Whisper and MailServer nodes via DiscV5 within 15 seconds without cache and in 5 seconds with cache,
 1. Resources consumption is not higher than 20% compared to static nodes.
 
 ## Links
