@@ -7,7 +7,7 @@
 ## Preamble
 
     Idea: 127
-    Title: make testing process in SOB transparent and easy to contribute in 
+    Title: Improve OpenBounty Testing and make it easy to contribute
     Status: In Progress
     Created: 2018-04-02
 
@@ -46,7 +46,7 @@ For now blocker for 1 full-walkthrough autotest are:
 ### Minimum Viable Product v1
 
 <!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
-Goal Date: 2018-29-06
+Goal Date: 2018-06-29
 Actions needed for MVP v1 passed:
 #### Documentation 
 - [ ] Tutorial video or docs about QA process in SOB team
