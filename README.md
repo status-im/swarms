@@ -45,6 +45,8 @@ progress again. This ensures the registry is kept up to date.
 | @jeluard      |     68 |
 | @lukaszfryc   | 68, 83 |
 | @mandrigin    |     83 |
+| @martin       |    120 |
 | @MaxRis       |     34 |
+| @oskarth      |    120 |
 | @vkjr         |     34 |
 | @yevh-berdnyk |     80 |
