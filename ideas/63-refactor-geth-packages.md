@@ -2,7 +2,7 @@
 
     Idea: 63-refactor-geth-packages
     Title: Refactor status-go node package
-    Status: Draft
+    Status: In Progress
     Created: 2017-12-20
 
 ## Summary
