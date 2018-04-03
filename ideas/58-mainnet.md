@@ -12,9 +12,9 @@ Alpha builds of Status should default to Mainnet. We should be using Status in a
 ## Swarm Participants
 
 - Lead Contributor: @adambabik
-- Testing & Evaluation: <!-- @username -->
+- Testing & Evaluation: @annadanchenko
 - Contributor: @themue
-- Contributor: <!-- @username -->
+- Contributor: <!-- @username --> (someone from Clojure Team is needed)
 - PM: @chadyj
 
 ## Product Overview
@@ -43,7 +43,7 @@ Goal Date: 2018-04-06
 
 1. [ ] Development of required components is done. The work is tracked here: https://github.com/orgs/status-im/projects/15,
 1. [ ] There is a Status App build with mainnet available,
-1. [ ] All components have been tested by the Q&A Team,
+1. [ ] All components have been tested by the Test Team,
 1. [ ] Mainnet is default in dev/nightly builds.
 
 ## Audit iteration
