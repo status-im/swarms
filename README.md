@@ -14,17 +14,17 @@ An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
 state it is in.
 
-| Idea                                                              | State       | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
-|-------------------------------------------------------------------|-------------|------------------------|------------------------|------------------------|------------------------|
-| [120-swarm-process](ideas/120-swarm-process.md)                   | :walking_man: In Progress  | :white_check_mark: Yes   | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| Idea                                                              | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
+|-------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|------------------------|
+| [120-swarm-process](ideas/120-swarm-process.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [86-push-notif-v2](ideas/86-push-notif-v2.md)                     | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                 |
 | [83-energy-efficient](ideas/83-energy-efficient.md)               | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [80-onboarding](ideas/80-onboarding.md)                           | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [68-core-metrics](ideas/68-core-metrics.md)                       | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [64-release](ideas/64-release.md)                                 | :dagger: Aborted | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
-| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
+| [64-release](ideas/64-release.md)                                 | :dagger: Aborted          | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
+| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
-
+| [1-offline-inboxing](ideas/1-offline-inboxing.md)                 | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 
 ## Commitment Registry
 
