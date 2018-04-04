@@ -1,7 +1,7 @@
 ## Preamble
 
     Idea: 88
-    Title: DApp Catalog
+    Title: DApp Experience
     Status: Draft
     Created: 2018-03-12
 
@@ -18,15 +18,13 @@ We had two brainstorming sessions during the Bangkok offsite. The notes from the
  https://docs.google.com/document/d/11MRsAO8GdIKVB0bk-osld-cYMMWDOVxB012QHPkQ6_k/edit?usp=sharing
 
 ## Swarm Participants
-TBA
 
 - Lead Contributor: @goranjovic
 - Testing & Evaluation: @asemiankevich 
 - Contributor: @lukaszfryc 
 - Contributor: <!-- @username -->
-- PM: <!--- @username -->
+- PM: @rachelhamlin
 - UX (if relevant): <!-- @username -->
-<!-- - Contributor: @username -->
 
 ## Product Overview
 
@@ -46,41 +44,41 @@ Key results:
 
 Additional notes:
 
- - We may want to add some kind of user rating to allow users to help each other in dapp selection. This is completely independent from the review criteria that a dapp needs to meet in order to be included in the catalog. 
+- We may want to add some kind of user rating to allow users to help each other in dapp selection. This is completely independent from the review criteria that a dapp needs to meet in order to be included in the catalog. 
 - Inclusion criteria should not contain any subjective criteria such as UX or matters of taste. These concerns should be left to end users to decide.
 - We may use Status Open Bounty for the review process. The catalog could be a repository with a list of dapps, new entries could be submitted as pull requests and then reviewers would allow or decline based on the criteria. The exact incentivization strategy remains to be decided (e.g. dapp authors could stake some amount of money, reviewers would be rewarded, etc.)
 - We can use a separate repo for the catalog. In fact, DApp Catalog itself could be a dapp.
 
-<!-- A short (~200 word) description and motivation of the Idea. Without clear explanation the Idea should not proceed. Can include User Stories -->
-<!-- Testing/Evaluation role accepts responsbility to checkin at Goal dates, -->
-<!-- forces discussion to continue implementation or recommend disband and post-mortem. -->
+
 
 ### Product Description
 
-TBA
 
-<!-- What functionality are you adding? What will this look like from a user perspective? Why is this important? -->
 
 ### Requirements & Dependencies
-<!-- Are there bugs or feature requests in other repositories that are part of this Idea? -->
-<!-- There is no approval unless the idea requires to be reviewed by supporting organelles (Financial, Hiring, or Design). -->
-<!-- The Swarm must develop a fully fleshed out Requirements document for the idea to proceed, to the satisfaction of participants. -->
+
 
 ### Minimum Viable Product
-<!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
 
-Description: <!-- Description of Deliverables-->
+MVP for this is a fixed initial DApp Catalog 
+
+Description: Currently we have 4 dapp suggestions in the hardcoded list under Open DApp. This list should be expanded to include 12 DApps total.
+These dapps should be verified to work reasonably well (i.e. at all) and the selection should depend on currently selected network (only 
+Mainnet and Ropsten in scope for this MVP).
 
 ## Dates
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+Goal Date: 2018-04-18
 
-Description: <!-- Description of Deliverables-->
+Description: Initial DApp Catalog
 
-Testing Days required: <!-- Days required at the end of development for testing -->
+Testing Days required: ?
 
 ## Success Metrics
-<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move?
+
+- N dapps available out of the box in Status dapp catalog
+- X users opening a dapp from the catalog per day
+- Y users opening a dapp by URL
+- M new dapps submitted, reviewed and added to the catalog each month
 
 ## Supporting Role Communication
 <!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
