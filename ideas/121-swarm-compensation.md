@@ -1,10 +1,17 @@
+---
+id: 121-swarm-compensation
+title: Swarm Compensation Experiments
+status: in-progress
+created: 2018-04-02
+---
+
 ## Preamble
 
     Idea: 121-swarm-compensation
     Title: Swarm Compensation
     Status: In Progress
     Created: 2018-04-02
-    Related: `120-swarm-process`
+    Related: 120-swarm-process
 
 ## Summary
 Ultimately we would like Status to become a public good, owned, developed and ran by it's very own users. In order to achieve that we need to open up our processes for contributions from "the outside" and establish ways for users to propose & incentivise projects they see as important.
@@ -16,7 +23,7 @@ Compensating contributors for their work is an important component of this and w
 ## Swarm Participants
 
 - Lead Contributor: @martinklepsch
-- Contributor ('payment'): ??? 
+- Contributor ('payment'): @jason / @carl
 - Contributor: @oskarth
 - Evaluation ('compensation criteria'): Voting mechanism (Polly survey)
 
