@@ -21,8 +21,10 @@
 ## Product Overview
 
 Full and transparent QA process in Status Open Bounty team will help to involve new people into the testing process more quickly (if needed) and provide developers with more info about what was tested in particular PR or in `develop` branch. Ideally process should be integrated with TestRail, but initially, a smoke checklist should be defined and then automated.
-Hence this idea is a placeholder for current and future iterations of improving QA process in SOB team.
 
+All regression test cases should be automated eventually in order to reduce time for SOB testing and to find issues faster.
+In future would be nice to integrate GitHub pull requests with automation testing thus after PR will be built and deployed,  it will trigger end-to-end tests and publish test results in PR comment.
+Hence this idea is a placeholder for current and future iterations of improving QA process in SOB team.
 
 ### Minimum Viable Product v1
 
@@ -34,7 +36,7 @@ Actions needed for MVP v1 will pass:
 #### Involment
 - [ ]  one more QA can test SOB
 #### End-to-end test (1 full walkthrough test for SOB)
-- [ ] automate creating PR 
-- [ ] define function for merging PR
+- [ ] automate PR creating
+- [ ] define function for PR merging
 - [ ] define function for SNT transfer 
 - [ ] define function for signing transaction and payout confirmation
