@@ -8,8 +8,11 @@
 ## Summary
 
 Introduce the LES Service Model where LES clients can subscribe to higher quality services. Different
-payment models will be available, nagotiation between client and full node is done via auctions based
+payment models will be available, negotiation between client and full node is done via auctions based
 on demands and capacity.
+
+This way full node service provide are able to monetize the services they provide. LES will make the
+beginning, Whisper and Swarm may follow.
 
 ## Swarm Participants
 
@@ -36,6 +39,7 @@ See https://github.com/zsfelfoldi/ethereum-docs/blob/master/les/service_model.md
 
 Once the service model is introduced changes to Status app are needed:
 
+- Migration from Infura to ULC
 - Choice between free and paid LES service
 - In case of paid LES service definition of demands for auction
 
