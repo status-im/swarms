@@ -63,7 +63,7 @@ Description:
 
 - [ ] New Ultra Light Client Mode is added to LES
 - [ ] Ability for user to choose between free and standard payed priority service
-- [ ] Negotiation between client and full node
+- [ ] Negotiation about subscription between client and full node by performing an auction
 - [ ] Booking of micropayment fees for subscribed standard payed priority service
 
 Outline of MVP and next milestones is currently under discussion with Zsolt.
