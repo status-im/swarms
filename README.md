@@ -21,6 +21,7 @@ Ideas looking for people
 
 An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
+<<<<<<< HEAD
 state it is in. An idea that has been in limbo for more than a week or so gets
 aborted.
 
@@ -55,6 +56,7 @@ aborted.
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [101-extensions](ideas/101-extensions)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 | [142-recovery-compatibility](ideas/142-recovery-compatibility)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                      |
+| [94-wallet-compatibility](ideas/94-wallet-compatibility.md)       | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :white_check_mark: Yes | - :x: No               |
 
 ## Completed :champagne: and aborted :dagger:
 
