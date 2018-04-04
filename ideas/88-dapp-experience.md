@@ -62,7 +62,7 @@ Additional notes:
 
 MVP for this is a fixed initial DApp Catalog 
 
-Description: Currently we have 4 dapp suggestions in the hardcoded list under Open DApp. This list should be expanded to include 12 DApps total.
+Description: Currently we have 4 Ropsten dapp suggestions in the hardcoded list under Open DApp. This list should be expanded to include 12 DApps total.
 These dapps should be verified to work reasonably well (i.e. at all) and the selection should depend on currently selected network (only 
 Mainnet and Ropsten in scope for this MVP).
 
