@@ -62,8 +62,6 @@ aborted.
 | [3-erc20-token-support](ideas/3-erc20-token-support.md)             | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                   | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
 
-## Commitment Registry
-
 Over any given iteration, individuals can be committed to 0..N ideas. This
 registry captures this. It is only applied for In Progress swarms. This means it
 is reset for each person per iteration, unless a swarm lead marks it as in
