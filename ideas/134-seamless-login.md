@@ -59,7 +59,7 @@ Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format -->
 
 During onboarding give users the option to setup seamless authentication (if their device supports it) and use the device/OS conventions to enable, or skip. There will be a setting to manage this preference.
 
-## Iteration 1
+## Iteration 2
 Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format -->
 
 Take seamless login further and fix the root cause of the log outs by restoring from crashes. See [#2869](https://github.com/status-im/status-react/issues/2869#issuecomment-376098196) for some preliminary exploration.
