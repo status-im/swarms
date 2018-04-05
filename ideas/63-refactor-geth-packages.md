@@ -64,6 +64,9 @@ Goal Date: 2018-04-06
 
 Description:
 `get/common` package contains everything. In this iteration, the goal is to remove it complete or at least move most of the functions to appropriate packages.
+  - [x] [common.Nodemanager removal](https://github.com/status-im/status-go/issues/779)
+  - [x] [Extract lib specific code from geth/common](https://github.com/status-im/status-go/issues/785)
+  - [x] [geth/common package removal](https://github.com/status-im/status-go/issues/795)
 
 ### Iteration 6: Simplify `node.NodeManager` API
 Goal Date: 2018-04-13
