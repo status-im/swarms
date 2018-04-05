@@ -1,8 +1,8 @@
 ## Preamble
 
-    Idea: <to be assigned>
+    Idea: 087-new-protocol
     Title: New Status App communication protocol 
-    Status: Draft
+    Status: In progress
     Created: 2018-03-08
 
 
@@ -33,13 +33,12 @@ Reasons for that are following:
 * All the issues listed above would needed to be tackled serially, otherwise it would be very demanding & error prone to address merge conflicts. This together with complete QA regression testing for each "step" would need significantly more time to actually fix everything compared to new protocol code, where everything could be tackled in parallel.
 
 ## Swarm Participants
-- Lead Contributor: @yenda/@janherich
-- Testing & Evaluation: <!-- @username -->
+- Lead Contributor: @yenda
+- Testing & Evaluation: @asemiankevich @Serhy
 - Contributor: @yenda 
 - Contributor: @janherich
 - Contributor: @cammellos
-- PM: <!--- @username -->
-- UX (if relevant): <!-- @username -->
+- PM: @chadyj
 
 ### Requirements & Dependencies
 * Describe the new protocol code in a clear and easy to understand way ("birdview" with just each distinct message type and what they represent in term of actions explained)
@@ -63,7 +62,6 @@ Testing Days required: 7 (big PR with lot of surface area)
 * We have protocol versioning, so we can say that for example release 0.9.15 and 0.9.16 are using the same protocol version v1, so are fully compatible and people can communicate with each other.
 * Cutting the app data consumption by significant amount (optimistic but not unrealistic proposal is 1/3 of the current data consumption)
 * All currently identified security flaws on protocol level are fixed
-* Generally better user experience (hard to quantify that)
 
 ## Supporting Role Communication
 
