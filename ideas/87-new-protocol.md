@@ -8,6 +8,9 @@
 
 ## Summary
 
+The goal of this swarm is to define and implement a new protocol on top of whisper for the purpose of instant messaging within Status and make sure we separate the transport layer from the application code as much as possible. The new protocol should be more efficient in terms of bandwith, CPU and battery consumption, and be easier to implement for third parties.
+
+
 Communication between Status App instances is done through the whisper p2p protocol on lower level, and we created our own communication protocol on top of it, serving following functionalities (only listing things relevant for MVP):
 
 * Contact exchange
@@ -47,21 +50,25 @@ Reasons for that are following:
 * Deliver working code for testing, if we desire we can do that in 2 steps and first implement only contact exchange + 1-1 chats via new protocol, with old protocol code handling private + public group chats, and the second and final step will implement that + erase all obsolete old protocol code.
 
 ### Minimum Viable Product
-Goal Date: 2018-03-22 
+Goal Date: 2018-04-10
 
-Description: The new protocol is described in great detail + initial PR (contact exchange + 1-1 chats) is working and delivered for testing
+Description: The new protocol is merged and supports 1-1 and public group chats. Documentation is finalized in the document https://docs.google.com/document/d/1Qh2h07T_qepzEJ7IytmxwIdQAOsGHrvhXwZxuZtbwgc/edit
 
-## Dates
-Goal Date: 2018-04-14 
+### Iteration 1
+Goal Date: 2018-04-17 
 
-Description: New protocol is finalized, all traces of old protocol are removed from the code-base and final PR is ready for testing
+Description: Group chats are implemented and all bugs fixed
 
-Testing Days required: 7 (big PR with lot of surface area)
+### Iteration 2
+Goal Date: 2018-04-24
+
+Description: Support for versionning is confirmed and tested experimentally. A benchmark for bandwith consumption in advanced features allows testers to verify performance claims with real conditions. Crypto libraries have been removed and traces of transport layer concerns have all been removed from the application code and database schemas
 
 ## Success Metrics
 * We have protocol versioning, so we can say that for example release 0.9.15 and 0.9.16 are using the same protocol version v1, so are fully compatible and people can communicate with each other.
 * Cutting the app data consumption by significant amount (optimistic but not unrealistic proposal is 1/3 of the current data consumption)
-* All currently identified security flaws on protocol level are fixed
+  KR: Reduce data consumption to <10Mb/day
+* All crypto libraries can be removed on status-react side
 
 ## Supporting Role Communication
 
