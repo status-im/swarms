@@ -10,7 +10,7 @@ Discovery protocol is essential for long-term scaling of the Status app. It will
 
 ## Swarm Participants
 - Lead Contributor: @adambabik
-- Testing & Evaluation: TBD
+- Testing & Evaluation: @adambabik (unless someone else would like to take over)
 - Contributor: @dshulyak
 - Contributor: @themue
 
@@ -25,7 +25,7 @@ This is a research swarm. It must provide answers to the following questions:
 - [ ] Can we turn on and off discovery protocol when the node is running?
 - [ ] Can Discovery V5 protocol carry more information than protocol name and version? How can we distinguish Light Whisper nodes or Whisper nodes with MailServer capability? Notice that revealing this information (like Light Whisper node) may increase a chance to reveal the peer identity. The fact that we don’t want mobile phones to be each other peers raises this question.
 - [ ] How to make sure that connecting to the cluster will be fast? When the app goes to the background, does it take significantly more time to find peers? Do we need to use cache? From the cluster perspective, how to autoscale cluster so that its free capacity is always high?
-- [ ] How to make sure that there are always at least `N` peers with given capabilities? For instance, we always want to have at least `K` Whisper, `L` MailServer and `L` LES peers connected.
+- [ ] How to make sure that there are always at least `N` peers with given capabilities? For instance, we always want to have at least `K` Whisper, `L` MailServer and `M` LES peers connected.
 
 ### Requirements & Dependencies
 The discovery protocol should be testable locally with Docker, but for some more extensive tests, we will utilse a Docker Swarm cluster.
@@ -44,9 +44,9 @@ Description:
 1. If so, there is a list of issues that we should work on to further improve DiscV5 usage in the Status app and in the cluster (this may be realized as next iterations or a new swarm).
 
 ## Success Metrics
-1. It's possible to start statusd/Status App with bootnodes and DiscV5 enabled,
-1. It's possible to discover LES/2, Whisper and MailServer nodes via DiscV5 (nodes with the same protocol but different capabilities),
-1. Resources consumption is not higher than 20% compared to static nodes.
+1. Connecting to the network for statusd/Status App via DiscV5 is successful in at least 99% of tries,
+1. It's possible to discover minimal number of LES/2, Whisper and MailServer nodes via DiscV5 within 15 seconds without cache and in 5 seconds with cache,
+1. Resources consumption (CPU and network ingress/egress) is not higher than 20% compared to static nodes.
 
 ## Links
 * https://github.com/fjl/p2p-drafts
