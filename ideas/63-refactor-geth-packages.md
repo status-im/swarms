@@ -68,13 +68,13 @@ Description:
   - [x] [Extract lib specific code from geth/common](https://github.com/status-im/status-go/issues/785)
   - [x] [geth/common package removal](https://github.com/status-im/status-go/issues/795)
 
-### Iteration 6: Simplify `node.NodeManager` API
+### Iteration 6: [Simplify `node.NodeManager` API](https://github.com/status-im/status-go/issues/797)
 Goal Date: 2018-04-13
 
 Description:
 1. Change its name to something more appropriate as it does not manage multiple nodes,
-1. Rename methods indicating there is only support for one node: `StartNode -> Start`, `StopNode -> Stop` etc.
-1. Allow starting and stopping associated managers (`jail.Manager` and `transactions.Manager`).
+2. Rename methods indicating there is only support for one node: `StartNode -> Start`, `StopNode -> Stop` etc.
+3. Allow starting and stopping associated managers (`jail.Manager` and `transactions.Manager`).
 
 ### Iteration 6: A PR in status-react
 Goal Date: 2018-04-13
