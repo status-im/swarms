@@ -23,7 +23,8 @@ state it is in.
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                     | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                 |
 | [83-energy-efficient](ideas/83-energy-efficient.md)               | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [80-onboarding](ideas/80-onboarding.md)                           | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [71-low-traffic](ideas/71-low-traffic.md)                          | :question: Limbo          | :white_check_mark: Yes | :x: No                | :x: No  | :white_check_mark: Yes :question: ? |
+| [76-smooth-ui](ideas/smooth-ui.md)                                | :question: Limbo          | :white_check_mark: Yes | :x: No                | :x: No  | :white_check_mark: Yes :question: |
+| [71-low-traffic](ideas/71-low-traffic.md)                          | :question: Limbo          | :white_check_mark: Yes | :x: No                | :x: No  | :white_check_mark: Yes :question:             |
 | [68-core-metrics](ideas/68-core-metrics.md)                       | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [64-release](ideas/64-release.md)                                 | :dagger: Aborted          | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                      |
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)   | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes |
