@@ -25,7 +25,7 @@ Compensating contributors for their work is an important component of this and w
 - Lead Contributor: @martinklepsch
 - Contributor ('payment'): @jason / @carl
 - Contributor: @oskarth
-- Evaluation ('compensation criteria'): Voting mechanism (Polly survey)
+- Evaluation ('compensation criteria'): Voting mechanism among experiment participants (Polly survey)
 
 ## Product Overview
 
@@ -33,7 +33,7 @@ This swarm will define **four** experimental compensation mechanisms and recruit
 
 The compensation mechanisms should be judged according to the following criteria:
 
-- **Fairness** — if we're not fair we will fail to retain contributors
+- **Fairness** — if we're not fair we will fail to retain contributors. While hopefully obvious employees of Status the company and community contributors should be treated equally.
 - **Ease of use** — we want to ship a new kind of platform, not get bogged down in "paperwork"
 - **More attractive than salary** — as outlined in `120-swarm-process` there are two types of swarms:
 	- **`Type-1`** is the ideal, defined, ran and compensated by the community
@@ -54,7 +54,7 @@ The compensation mechanisms should be judged according to the following criteria
 
 - Define two more compensation models
 - Again, reach out and convince upcoming swarms
-	- If possible consider a community submitted idea/swarm
+  - If possible consider a community submitted idea/swarm
 
 #### Checkpoint 3 — `2018-05-31`
 
