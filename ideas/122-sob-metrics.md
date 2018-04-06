@@ -1,7 +1,7 @@
 ## Preamble
 
-    Idea: 122-sob-increase_platform_usage
-    Title: Open Bounty - Increase Platform Usage
+    Idea: 122-sob-metrics
+    Title: Open Bounty - Platform Usage Metrics
     Status: Draft
     Created: 2018-04-04
     Related: 
@@ -23,32 +23,38 @@ One of the key objectives of Open Bounty is to increase the usage of the platfor
 This swarm will create the mechanism to capture **three** specific metrics on the usage of Open Bounty (specific criteria for each metric yet to be defined):
 
 - **Value transacted** — This metric is to capture the **$USD equivalent** of total tokens that have been paid out in a given timeframe (daily, weekly, monthly, annual)
-- **Active contributors** — This metric is to capture the **Monthly Active Contributors** against each organization.
-- **Unique visitors** — This metric is to capture the **Unique Monthly Visitors** to openbounty.status.im
+- **Active bounty creators** — This metric is to capture the **Monthly Active Contributors** who have posted a minimum of 1 bounty in the previous 30 days.
+- **Active bounty hunters** — This metric is to capture the **Monthly Active Contributors** against each organization who have succesfully completed a bounty.
+- **Unique pageviews** — This metric is to capture the **Unique Monthly Pageviews** to the Home Page (https://openbounty.status.im/) and the Open Bounties page (https://openbounty.status.im/app#/)
 
 The collection of these metrics is to be automated, however their reporting and sharing can be manual, or basic automation, with future iterations looking at full automation/analytics.
 
 ## Success Criteria
 
-#### Milestone 1
+#### Milestone 1 - '13 April 2018'
 - Swarm participants identified
 - Swarm kick off held
 - Detailed specifications for each metric identified and documented
 - User stories and project board setup
 - Effort estimate and high-level schedule established
 
-#### Milestone 2
+#### Milestone 2 - '27 April 2018'
 - Report on the metric of Value transacted built
 - Report is testing and bug free
 - Manual reporting mechanism to share the results established
 
-#### Milestone 3
-- Report on the metric of Active contributors built
+#### Milestone 3 - '11 May 2018'
+- Report on the metric of Active bounty creators built
 - Report is testing and bug free
 - Manual reporting mechanism to share the results established
 
-#### Milestone 4
-- Report on the metric of Unique visitors built
+#### Milestone 4 - '25 May 2018'
+- Report on the metric of Active bounty hunters built
+- Report is testing and bug free
+- Manual reporting mechanism to share the results established
+
+#### Milestone 5 - '8 June 2018'
+- Report on the metric of Unique pageviews built
 - Report is testing and bug free
 - Manual reporting mechanism to share the results established
 
