@@ -70,6 +70,10 @@ Description: Support for versionning is confirmed and tested experimentally. A b
   KR: Reduce data consumption to <10Mb/day
 * All crypto libraries can be removed on status-react side
 
+## Exit criteria
+
+Same as success metrics.
+
 ## Supporting Role Communication
 
 ## Copyright
