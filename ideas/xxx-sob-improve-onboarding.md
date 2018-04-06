@@ -17,7 +17,8 @@ This swarm aims to remove the need for whitelisting users and revamp the onboard
 - Testing & Evaluation: @Churik
 - UX Contributor: @EugeOrtiz 
 - Dev Contributor: @siphuel or @rcullito
-- Contracts Contributor: @3esmit
+- Contracts Contributor: @3esmit (need not fully clear)
+- Product Manager Contributor: @arash009
 
 ## Product Description
 
