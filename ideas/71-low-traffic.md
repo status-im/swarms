@@ -1,7 +1,7 @@
 ## Preamble
     Idea: <to be assigned>
     Title: Low traffic consumption(technical)
-    Status: Draft
+    Status: Limbo
     Created: 2018-01-25
 
 ## Summary
