@@ -78,8 +78,15 @@ We don't have proper metrics for Open Bounty yet but this should affect the foll
 - Increase number of bounties issued
 - Overall conversion/funnel improvements
 
-## Appendix
+## Appendix / Notes
 
 ### Token Whitelisting
 
-We previously had issues with tokens being added to bounty contracts that have no value/are spam. While not explicitly the goal of this swarm this would be worth solving as well if it turns out to be low-hanging fruit.
+Swarm Compensation Experimentse previously had issues with tokens being added to bounty contracts that have no value/are spam. While not explicitly the goal of this swarm this would be worth solving as well if it turns out to be low-hanging fruit.
+
+### `repo_owner` column
+
+Currently when users sign up and install the OpenBounty app into their repo their GitHub `user_id` is stored as `repo_owner`. This ID is later used to look up which address should be able to confirm a payout (specified at bounty deployment).
+
+This concept of a `repo_owner` is insufficient as it does not reflect the realities of GitHub. Multiple people should be able to publish/pay out bounties on the same repo — as they can add bounty labels.
+
