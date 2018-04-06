@@ -26,6 +26,7 @@ aborted.
 | [80-onboarding](ideas/80-onboarding.md)                             | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [68-core-metrics](ideas/68-core-metrics.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [58-mainnet](ideas/58-mainnet.md) | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 
 ## Draft :seedling: and limbo :question:
@@ -55,10 +56,10 @@ progress again. This ensures the registry is kept up to date.
 
 | Contributor   |  Ideas |
 |---------------|--------|
-| @anna         |     80, 87 |
-| @asemiankevich | 87 | 
+| @anna         |     58, 80, 87 |
 | @andmironov   | 68, 80 |
-| @adambabik    | 68, 92 |
+| @adambabik    | 58, 68, 92 |
+| @asemiankevich | 87 | 
 | @cammellos    |     87 |
 | @chadyj       | 68, 80, 87 |
 | @dshulyak     |     92 |
@@ -73,7 +74,7 @@ progress again. This ensures the registry is kept up to date.
 | @MaxRis       |     34 |
 | @oskarth      |    120 |
 | @serhy        | 87     | 
-| @themue       |     92 |
+| @themue       |    58, 92 |
 | @vkjr         |     34 |
 | @yenda        |     87 |
 | @yevh-berdnyk |     80 |
