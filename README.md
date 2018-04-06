@@ -34,6 +34,7 @@ aborted.
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
 | [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
+| [95-les-service-model](ideas/095-les-service-model/)                | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
@@ -60,7 +61,7 @@ progress again. This ensures the registry is kept up to date.
 | @adriacidre   | 63     |
 | @andmironov   | 68, 80 |
 | @adambabik    | 58, 63, 68, 92 |
-| @asemiankevich | 87 | 
+| @asemiankevich | 87 |
 | @cammellos    |     87 |
 | @chadyj       | 68, 80, 87 |
 | @dshulyak     |     63, 92 |
@@ -74,8 +75,8 @@ progress again. This ensures the registry is kept up to date.
 | @martin       |    120 |
 | @MaxRis       |     34 |
 | @oskarth      |    120 |
-| @serhy        | 87     | 
-| @themue       |    58, 92 |
+| @serhy        | 87     |
+| @themue       | 58, 92, 95 |
 | @vkjr         |     34 |
 | @yenda        |     87 |
 | @yevh-berdnyk |     80 |
