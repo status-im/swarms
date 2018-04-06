@@ -62,11 +62,9 @@ Goal Date: TBD (before end of Q2/2018)
 Description:
 
 - [ ] New Ultra Light Client Mode is added to LES
-- [ ] Ability for user to choose between free and standard payed priority service
-- [ ] Negotiation about subscription between client and full node by performing an auction
-- [ ] Booking of micropayment fees for subscribed standard payed priority service
-
-Outline of MVP and next milestones is currently under discussion with Zsolt.
+- [ ] Auctioning protocol between client and full node is defined
+- [ ] Payment methods and models are defined
+- [ ] Initial implementation validates auctioning and micropayment in automated tests
 
 ## Artifacts
 
@@ -75,7 +73,8 @@ Outline of MVP and next milestones is currently under discussion with Zsolt.
 
 ## Success Metrics
 
-TBD
+LES of `go-ethereum` is extended to provide a micropayed services with a higher quality
+level as well as free services depending on capacity and configuration.
 
 ## Copyright
 
