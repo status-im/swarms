@@ -52,6 +52,7 @@ aborted.
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
+| [142-recovery-compatibility](ideas/142-recovery-compatibility.md)   | :seedling: In Progress    | :x: No                 | :white_check_mark: Yes | :x: No                 | -                      |
 
 ## Completed :champagne: and aborted :dagger:
 
@@ -61,6 +62,8 @@ aborted.
 | [61-app-structure-refinement](ideas/61-app-structure-refinement.md) | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
 | [3-erc20-token-support](ideas/3-erc20-token-support.md)             | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                   | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
+
+## Commitment Registry
 
 Over any given iteration, individuals can be committed to 0..N ideas. This
 registry captures this. It is only applied for In Progress swarms. This means it
@@ -99,3 +102,4 @@ progress again. This ensures the registry is kept up to date.
 | @EugeOrtiz | 140 |
 | @Churik | 140 |
 | @arash009 | 120, 122, 140 |
+| @pilu         | 84, 94, 142, 146 |
