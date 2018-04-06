@@ -1,36 +1,81 @@
 # Status Ideas
 
-## Commitment Registry (In Progress)
+A space for our ideas - our current, past and future efforts.
 
-| Contributor     | Idea Commitments |
-|-----------------|------------------|
-| @3esmit         | [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @adambabik      | [#1](https://github.com/status-im/ideas/issues/1), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @alwx           | [#9](https://github.com/status-im/ideas/issues/9)                 |
-| @andmironov     |                  |
-| @andytudhope    | [#10](https://github.com/status-im/ideas/issues/10), [#18](https://github.com/status-im/ideas/issues/18)               |
-| @annadanchenko  | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10)                 |
-| @antdanchenko   |                  |
-| @asemiankevich  | [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @b00ris         | [#1](https://github.com/status-im/ideas/issues/1), [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @bitgamma       |                  |
-| @carlbennetts   |                  |
-| @denis-sharypin | [#1](https://github.com/status-im/ideas/issues/1), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @divan          | [#2](https://github.com/status-im/ideas/issues/2), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @feuGeneA       | [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @flexsurfer     | [#2](https://github.com/status-im/ideas/issues/2), [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
-| @goranjovic     | [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @jacqueswww     |                  |
-| @janherich      | [#9](https://github.com/status-im/ideas/issues/9)                 |
-| @jarradh        |                  |
-| @JekaMas        | [#1](https://github.com/status-im/ideas/issues/1), [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @jeluard        | [#2](https://github.com/status-im/ideas/issues/2), [#3](https://github.com/status-im/ideas/issues/3)                 |
-| @MaxRis         |                  |
-| @naghdy         | [#1](https://github.com/status-im/ideas/issues/1)                 |
-| @oskarth        | [#1](https://github.com/status-im/ideas/issues/1), [#10](https://github.com/status-im/ideas/issues/10), [#55](https://github.com/status-im/ideas/issues/55)                 |
-| @pablanopete    | [#10](https://github.com/status-im/ideas/issues/10)                 |
-| @pedro    | [#71](https://github.com/status-im/ideas/issues/71), [#86](https://github.com/status-im/ideas/issues/86)                 |
-| @rasom          |                  |
-| @themue         | [#22](https://github.com/status-im/ideas/issues/22), [#39](https://github.com/status-im/ideas/issues/39)                 |
-| @vkjr           | [#34](https://github.com/status-im/ideas/issues/34)                 |
-| @yenda          | [#9](https://github.com/status-im/ideas/issues/9), [#12](https://github.com/status-im/ideas/issues/12)                 |
+## Contributing
+
+First review [Status Organizational Design](https://wiki.status.im/Status_Organisational_Design) and
+[Status Swarm Manual](https://docs.google.com/document/u/1/d/10nGQ6mZGahIme6UGLov3b12tJUOi3mkjIsT5_cFl0kA/edit?ts=5ab1135d#heading=h.lqc5ff9neha5).
+Then submit a Pull Request in this repository.
+
+## Idea Registry
+
+An idea can be in the following states: draft, in progress, completed, or
+aborted. Additionally, it can be in limbo which is when it isn't clear what
+state it is in. An idea that has been in limbo for more than a week or so gets
+aborted.
+
+## In Progress :walking_man:
+
+| Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
+|---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [120-swarm-process](ideas/120-swarm-process.md)                     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [92-disc-v5-research](ideas/92-disc-v5-research.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [87-new-protocol](ideas/87-new-protocol.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [83-energy-efficient](ideas/83-energy-efficient.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [80-onboarding](ideas/80-onboarding.md)                             | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [68-core-metrics](ideas/68-core-metrics.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [58-mainnet](ideas/58-mainnet.md) | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+
+## Draft :seedling: and limbo :question:
+| Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
+|---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
+| [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
+| [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
+| [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
+| [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
+
+## Completed :champagne: and aborted :dagger:
+
+| Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
+|---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [64-release](ideas/64-release.md)                                   | :dagger: Aborted          | :white_check_mark: Yes | :x: No                 | :white_check_mark: Yes | -                                 |
+| [61-app-structure-refinement](ideas/61-app-structure-refinement.md) | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
+| [3-erc20-token-support](ideas/3-erc20-token-support.md)             | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
+| [1-offline-inboxing](ideas/1-offline-inboxing.md)                   | :champagne: Completed     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                                 |
+
+## Commitment Registry
+
+Over any given iteration, individuals can be committed to 0..N ideas. This
+registry captures this. It is only applied for In Progress swarms. This means it
+is reset for each person per iteration, unless a swarm lead marks it as in
+progress again. This ensures the registry is kept up to date.
+
+| Contributor   |  Ideas |
+|---------------|--------|
+| @anna         |     58, 80, 87 |
+| @adriacidre   | 63     |
+| @andmironov   | 68, 80 |
+| @adambabik    | 58, 63, 68, 92 |
+| @asemiankevich | 87 | 
+| @cammellos    |     87 |
+| @chadyj       | 68, 80, 87 |
+| @dshulyak     |     63, 92 |
+| @feuGeneA     |     83 |
+| @flexsurfer   | 34, 80 |
+| @hester       |     80 |
+| @janherich    |     87 |
+| @jeluard      |     68 |
+| @lukaszfryc   | 68, 83 |
+| @mandrigin    |     83 |
+| @martin       |    120 |
+| @MaxRis       |     34 |
+| @oskarth      |    120 |
+| @serhy        | 87     | 
+| @themue       |    58, 92 |
+| @vkjr         |     34 |
+| @yenda        |     87 |
+| @yevh-berdnyk |     80 |
