@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: #95-les-service-model
+    Idea: #095-les-service-model
     Title: Introduce LES Service Model
     Status: Draft
     Created: 2018-03-20
@@ -35,16 +35,16 @@ the separation between free and payed services. As outlined by Felföldi Zsolt:
 - free service is a good indicator of high bandwidth capacity and therefore the capability to provide good service, and
 - paying clients will prefer servers which already gave them free service so free service can act as an advertisement.
 
-See https://github.com/zsfelfoldi/ethereum-docs/blob/master/les/service_model.md.
-
 Once the service model is introduced changes to Status app are needed:
 
 - Migration from Infura to ULC
 - Choice between free and paid LES service
 - In case of paid LES service definition of demands for auction
 
+### Remark
+
 For Status it also could become interesting to become a service provider offering payed full node services not only
-for own clients. This business case has to be evaluated.
+for own clients. This business case should be evaluated in an own swarm.
 
 ### Product Description
 
@@ -67,6 +67,11 @@ Description:
 - [ ] Booking of micropayment fees for subscribed standard payed priority service
 
 Outline of MVP and next milestones is currently under discussion with Zsolt.
+
+## Artifacts
+
+- [Logfile](log.md)
+- [Links](links.md)
 
 ## Success Metrics
 
