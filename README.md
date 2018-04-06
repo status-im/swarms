@@ -57,12 +57,13 @@ progress again. This ensures the registry is kept up to date.
 | Contributor   |  Ideas |
 |---------------|--------|
 | @anna         |     58, 80, 87 |
+| @adriacidre   | 63     |
 | @andmironov   | 68, 80 |
-| @adambabik    | 58, 68, 92 |
+| @adambabik    | 58, 63, 68, 92 |
 | @asemiankevich | 87 | 
 | @cammellos    |     87 |
 | @chadyj       | 68, 80, 87 |
-| @dshulyak     |     92 |
+| @dshulyak     |     63, 92 |
 | @feuGeneA     |     83 |
 | @flexsurfer   | 34, 80 |
 | @hester       |     80 |
