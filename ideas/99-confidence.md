@@ -14,7 +14,7 @@ As end users we currently don't have confidence that messages are being sent, de
 - Testing & Evaluation: <!-- @username -->
 - Contributor: <!-- @username -->
 - Contributor: <!-- @username -->
-- PM: <!--- @username -->
+- PM: @chad
 - UX (if relevant): <!-- @username -->
 <!-- - Contributor: @username -->
 

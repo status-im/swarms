@@ -17,6 +17,7 @@ state it is in.
 | Idea                                                              | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
 |-------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|------------------------|
 | [120-swarm-process](ideas/120-swarm-process.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [99-confidence](ideas/99-confidence.md)                           | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                 |
 | [92-disc-v5-research](ideas/92-disc-v5-research.md)               | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :x: No    | :white_check_mark: Yes |
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                     | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                 |
 | [83-energy-efficient](ideas/83-energy-efficient.md)               | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
