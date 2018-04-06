@@ -23,7 +23,6 @@ Ideas looking for people
 
 An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
-<<<<<<< HEAD
 state it is in. An idea that has been in limbo for more than a week or so gets
 aborted.
 
@@ -44,6 +43,7 @@ aborted.
 | [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [122-sob-metrics](ideas/122-sob-metrics.md)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
+| [146-status-go-sdk](ideas/146-status-go-sdk/)              | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [154-support-web3.js-library](ideas/154-support-web3.js-library.md)      | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes |
 
 ## Draft :seedling: and limbo :question:
@@ -56,6 +56,7 @@ aborted.
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [95-les-service-model](ideas/095-les-service-model/)                | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes             | :x: no                            |
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
+| [146-status-go-sdk](ideas/146-status-go-sdk/)              | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [101-extensions](ideas/101-extensions)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
@@ -80,7 +81,7 @@ progress again. This ensures the registry is kept up to date.
 | Contributor   |  Ideas |
 |---------------|--------|
 | @anna         |     58, 80, 87, 127 |
-| @adriacidre   | 63     |
+| @adriacidre   | 63, 146     |
 | @andmironov   | 68, 80, 134 |
 | @adambabik    | 58, 63, 68, 92 |
 | @alwx    | 134 |
