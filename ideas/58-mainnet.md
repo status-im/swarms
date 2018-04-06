@@ -14,7 +14,7 @@ Alpha builds of Status should default to Mainnet. We should be using Status in a
 - Lead Contributor: @adambabik
 - Testing & Evaluation: @annadanchenko
 - Contributor: @themue
-- Contributor: <!-- @username --> (someone from Clojure Team is needed)
+- Contributor: @roman (supportive role; still in need of one Clojure dev)
 - PM: @chadyj
 
 ## Product Overview
