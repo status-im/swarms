@@ -13,7 +13,7 @@
 - Contributors:
   - @dshulyak (20h/week)
   - @adriacidre
-- Tester/Evaluator: TBD
+- Evaluator: @adambabik
 
 ## Product Overview
 We have a bunch of problems related to the `geth/` packages:
