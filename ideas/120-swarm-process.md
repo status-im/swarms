@@ -46,7 +46,7 @@ basis.
 
 We thus distinguish between swarms (Type-1) as a general concept for bringing
 ideas to fruition and getting compensated by it, and 'Status LLC using swarms'
-(Type-2). The fatter might have more constraints given its immediate goals
+(Type-2). The latter might have more constraints given its immediate goals
 and current compensation model. This allows us to be efficient and effective
 while the rest of the organization is being built up.
 
@@ -90,19 +90,20 @@ upside: ease of use and implicit trust good for team cohesion).
 
 ### Minimum Viable Product
 Goal Date: 2017-04-06
+
 Description:
-i. Ensure new draft / in-progress ideas use PR review process.
-ii. Measure Core/Swarm OKR coverage and communicate this/needs.
-iii. Evaluation terminology and expectations are clarified in manual.
+- i. Ensure new draft / in-progress ideas use PR review process.
+- ii. Measure Core/Swarm OKR coverage and communicate this/needs.
+- iii. Evaluation terminology and expectations are clarified in manual.
 
 ### Iteration 1
 Goal Date: 2017-04-20
 
 Description:
-i. Ensure participation commitment (and ideally availability) is captured.
-i. Ensure iteration check-ins is captured for in-progress swarms.
-iii. Town Hall presentation outlining lifecycle, well-definition and roles.
-iv. Send out survey through Polly.
+- i. Ensure participation commitment (and ideally availability) is captured.
+- i. Ensure iteration check-ins is captured for in-progress swarms.
+- iii. Town Hall presentation outlining lifecycle, well-definition and roles.
+- iv. Send out survey through Polly.
 
 ### Iteration 3
 (Buffer)
@@ -118,11 +119,11 @@ Three primary success metrics.
 ### 1. CORE KNOWLEDGE SPREADING.
 90% of core contributors surveyed answer yes to following questions:
 
-1.1. It is clear to me when a swarm starts
-1.2. It is clear to me when a swarm ends
-1.3. It is clear to me what it means for a swarm to be well-defined
-1.4. It is clear to me what is expected of a swarm lead
-1.5. It is clear to me what is expected of an evaluator
+- 1.1. It is clear to me when a swarm starts
+- 1.2. It is clear to me when a swarm ends
+- 1.3. It is clear to me what it means for a swarm to be well-defined
+- 1.4. It is clear to me what is expected of a swarm lead
+- 1.5. It is clear to me what is expected of an evaluator
 
 ### 2. CORE SWARM/OKR COVERAGE.
 80% of Core OKRs are explicit covered by well-defined, in progress swarms.
@@ -131,9 +132,9 @@ Three primary success metrics.
 Ensure the following steps are encoded as discrete steps in order to enable
 future experimentation and compensation tied to it:
 
-3.1. Swarm as it moves throughout lifecycle (draft, in progress, done/aborted)
-3.2. Participant commitment
-3.3. Iteration check-ins
+- 3.1. Swarm as it moves throughout lifecycle (draft, in progress, done/aborted)
+- 3.2. Participant commitment
+- 3.3. Iteration check-ins
 
 ## Exit criteria
 
