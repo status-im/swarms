@@ -42,7 +42,7 @@ The compensation mechanisms should be judged according to the following criteria
 
 ## Checkpoints
 
-#### Checkpoint 1 — `2018-04-06`
+#### Checkpoint 1 — `2018-04-13`
 
 - Define at least two compensation models
 - Get buy-in from major SNT holder to fund experiments
@@ -50,7 +50,7 @@ The compensation mechanisms should be judged according to the following criteria
 - Reach out to upcoming swarms and convince them to participate
 - Broadcast intention behind these experiments into community and encourage submission of ideas. (Medium post?)
 
-#### Checkpoint 2 — `2018-04-20`
+#### Checkpoint 2 — `2018-04-27`
 
 - Define two more compensation models
 - Again, reach out and convince upcoming swarms
