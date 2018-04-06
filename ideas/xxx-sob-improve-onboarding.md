@@ -1,3 +1,10 @@
+---
+id: xx-sob-improve-onboarding
+title: OpenBounty Improved Onboarding
+status: in-progress
+created: 2018-04-04
+---
+
 ## Preamble
 
     Idea: #XX-sob-improve-onboarding
