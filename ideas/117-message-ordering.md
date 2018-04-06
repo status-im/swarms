@@ -1,10 +1,9 @@
 ## Preamble
 
-    Idea: #??-message-ordering
+    Idea: #117-message-ordering
     Title: Message ordering
     Status: Draft
     Created: 2018-03-29
-
 
 ## Summary
 
