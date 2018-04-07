@@ -13,10 +13,12 @@ Users would sign a message request to contracts which will use user's balance of
 
 ## Swarm Participants
 
-- Lead Contributor:  @3esmit
-- UX: @alexvandesande 
+- Lead Contributor: @3esmit
+- Contributor: @richard-ramos 
+- UX (Mist): @alexvandesande 
+- UX (Status): 
 - Contributor/Testing: @iurimatias 
-- Contributor/Testing: @richard-ramos 
+
 
 ## Product Overview
 
@@ -40,6 +42,8 @@ Important for gas abstraction.
 SNT Controller Gas Relay adaptor: include terms for accepting ethereum signed messages to IdentityGasRelay facotory and for moving the tokens from there using SNT.
 Important for accounts that never held ether, just SNT.
 
+Identity UX should allow user to choose what token it wants to use as gas price.
+
 ### Requirements & Dependancies
 
 Idea [#145](https://github.com/status-im/ideas/pull/145) is important to seamless and safe integration of gas abstraction for any type of call.
@@ -47,26 +51,32 @@ Implemention of [EIP#191](https://github.com/ethereum/EIPs/issues/191) is somewh
 
 ### Minimum Viable Product
 
-Goal Date:
+Goal Date: 2018-05-15
 Description:
-- Users can call EVM by paying gas in a selected token.
-- Users can join gas abstraction by SNTController terms
-- Users can earn tokens by including other's messages
+- Users can use Identity paying gasPrice in any token.
+- Users can create Identity using SNTController and paying with SNT.
+- Users can earn tokens running a node that include other's messages
 
 #### Identity Gas Relay
 
-Goal Date:
+Goal Date: 2018-04-20
 Description: 
 - Gas Relay Node that recieve whisper messages from Identity owners, 
 - Identity User Interface with Gas Relayed option of calls
 
 #### SNT Gas Relayer
 
-Goal Date:
+Goal Date: 2018-04-27
 Description: 
 - Gas Relay Node implements watching messages for SNTController 
 - User interface for creating Identity+ENS register (pay gas in SNT)
 - Moving SNT to other address from SNTController terms (paying gas in SNT)
+
+#### UX Integration
+Goal Date: 2018-05-15
+Description:
+- User can create Identity paying in SNT.
+- User can select differnt tokens in gasPrice when using Identity.
 
 ## Success Metrics
 
