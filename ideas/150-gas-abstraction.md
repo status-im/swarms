@@ -2,11 +2,12 @@
 
 ## Preamble
 
-    Idea: 073-gas-abstraction
+    Idea: 150-gas-abstraction
     Title: Gas Abstraction
     Status: In Progress
     Created: 2018-02-01
     Requires: 145-identity
+    Replaces: 073-snt-as-gas
 
 ## Summary
 
