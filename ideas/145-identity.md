@@ -2,7 +2,7 @@
 
 ## Preamble
 
-    Idea: #145-identity
+    Idea: 145-identity
     Title: Self-sovereign Identity
     Status: In Progress 
     Created: 2018-05-04
