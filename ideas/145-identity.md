@@ -90,9 +90,9 @@ Recovery contract, if safely defined, will garantee that Identity owner is able 
 
 - ERC#725 and ERC#735 should be approved as standard, this swarm might influence how this standards end up defined, this is important for the solution working better with unknown future applications.
 
-- #27 ENS subdomain registry is important as a shortcut for user's identity address, otherwise QR-Codes or big hexadecimal strings would be needed.
+- Idea #27 ENS subdomain registry is important as a shortcut for user's identity address, otherwise QR-Codes or big hexadecimal strings would be needed.
 
-- #73 Gas abstraction enables users to only use SNT* for everything in ethereum, or any other token/ether hold by Identity. *Only SNT can be used to gas relay deploy of Identity, after that user is free to choice.
+- Idea #73 Gas abstraction enables users to only use SNT* for everything in ethereum, or any other token/ether hold by Identity. *Only SNT can be used to gas relay deploy of Identity, after that user is free to choice.
 
 
 ## Dates
