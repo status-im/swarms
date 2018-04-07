@@ -2,10 +2,11 @@
 
 ## Preamble
 
-    Idea: #027-ens-usernames
+    Idea: 151-ens-usernames
     Title: Username ENS subdomain Registrar
     Status: Draft
     Created: 2017-11-20
+    Replaces: 027-ens-usernames
 
 ## Summary
 
