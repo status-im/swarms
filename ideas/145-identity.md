@@ -3,10 +3,10 @@
 ## Preamble
 
     Idea: #145-identity
-    Title: Identity
+    Title: Self-sovereign Identity
     Status: In Progress 
     Created: 2018-05-04
-    Requires: #27 #73 ERC725 ERC735
+    Requires: 027-ens-usernames* 073-gas-abstraction* ERC725* ERC735*
     
 ## Summary
 
@@ -65,8 +65,6 @@ Recovery contract, if safely defined, will garantee that Identity owner is able 
 
 #### External references: 
 
-- [EIP#725](https://github.com/ethereum/EIPs/issues/725) 
-- [EIP#735](https://github.com/ethereum/EIPs/issues/735)
 - [Fabian Vogelsteller - ERC: Identity - Ethereum London](https://www.youtube.com/watch?v=jv3BmGGFP7c)
 - [DEVCON3: ERC Identity](https://www.youtube.com/watch?v=pkwYVagytuA)
 - [Jolocom: enabling blockchain agnostic self- sovereign identity - Kai Wagner](https://www.youtube.com/watch?v=vkEdDj5HtVs)
@@ -88,12 +86,11 @@ Recovery contract, if safely defined, will garantee that Identity owner is able 
 
 ### Requirements & Dependencies
 
-- ERC#725 and ERC#735 should be approved as standard, this swarm might influence how this standards end up defined, this is important for the solution working better with unknown future applications.
+- ERC725 and ERC735 should be approved as standard and used in contracts interface, this swarm might influence how this standards end up defined, this is important for the solution working better with unknown future applications.
 
-- Idea #27 ENS subdomain registry is important as a shortcut for user's identity address, otherwise QR-Codes or big hexadecimal strings would be needed.
+- Idea [#027-ens-usernames](https://github.com/status-im/ideas/pull/151) is important as a shortcut for user's identity address, otherwise QR-Codes or big hexadecimal strings would be needed.
 
-- Idea #73 Gas abstraction enables users to only use SNT* for everything in ethereum, or any other token/ether hold by Identity. *Only SNT can be used to gas relay deploy of Identity, after that user is free to choice.
-
+- Idea [#073-gas-abstraction](https://github.com/status-im/ideas/pull/150) enables users to only use SNT* for everything in ethereum, or any other token/ether hold by Identity. *Only SNT can be used to gas relay deploy of Identity, after that user is free to choice.
 
 ## Dates
 
@@ -147,7 +144,6 @@ New users adopt Status because Identity support, which will be required for many
 
 ## Exit criteria
 
-Ethereum Foundation approval of ERC#725 and ERC#735 standard interfaces.
 Fully integrated on Status App.
 
 ## Supporting Role Communication
