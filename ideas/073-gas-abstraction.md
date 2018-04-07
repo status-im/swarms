@@ -1,10 +1,12 @@
+# Gas Abstraction
+
 ## Preamble
 
-    Idea: 73
+    Idea: 073-gas-abstraction
     Title: Gas Abstraction
     Status: In Progress
     Created: 2018-02-01
-    Requires: #145
+    Requires: 145-identity
 
 ## Summary
 
@@ -18,7 +20,6 @@ Users would sign a message request to contracts which will use user's balance of
 - UX (Mist): @alexvandesande 
 - UX (Status): 
 - Contributor/Testing: @iurimatias 
-
 
 ## Product Overview
 
@@ -46,7 +47,7 @@ Identity UX should allow user to choose what token it wants to use as gas price.
 
 ### Requirements & Dependancies
 
-Idea [#145](https://github.com/status-im/ideas/pull/145) is important to seamless and safe integration of gas abstraction for any type of call.
+Idea [145-identity](https://github.com/status-im/ideas/pull/145) is important to seamless and safe integration of gas abstraction for any type of call.
 Implemention of [EIP#191](https://github.com/ethereum/EIPs/issues/191) is somewhat important, specially for making signature verification slightly gas cheaper.
 
 ### Minimum Viable Product
@@ -73,6 +74,7 @@ Description:
 - Moving SNT to other address from SNTController terms (paying gas in SNT)
 
 #### UX Integration
+
 Goal Date: 2018-05-15
 Description:
 - User can create Identity paying in SNT.
