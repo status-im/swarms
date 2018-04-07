@@ -14,9 +14,9 @@
 A multisig controller that store owners privately and requires a secret to sign a call, to be used as a recovery for Identity through trust of selected friends.
 
 ## Swarm Participants
-- Lead Contributor: @3esmit
+- Lead Contributor: Ricardo Guilherme Schmidt
 - Testing & Evaluation:
-- Contributor: @richard-ramos
+- Contributor: Richard Ramos
 - PM: 
 - UX: 
 
