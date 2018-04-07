@@ -6,7 +6,7 @@
     Title: Self-sovereign Identity
     Status: In Progress 
     Created: 2018-05-04
-    Requires: 027-ens-usernames* 073-gas-abstraction* ERC725* ERC735*
+    Requires: 150-gas-abstraction 151-ens-usernames 152-friends-recovery ERC725 ERC735
     
 ## Summary
 
@@ -41,7 +41,7 @@ In traditional services you can get conforted by having an authority taking care
 1. Verified claims over Identity could be required by services.
 2. Personal data is held by Identity owner
 3. Payment system is done by payment authorizations made by Identity owner.
-4. Recovering lost/compromised Identity is done by recovery smart contracts, such a Secret MultiSig with trusted friends addreses; or other recovery method.
+4. Recovering lost/compromised Identity is done by recovery smart contracts, such as 152-friends-recover .
 5. Access to Identity is available as long as owner decides.
 
 In self-sovering identity its owner have full resposability over its safety, but also have full control of their Identity.
@@ -81,16 +81,17 @@ Recovery contract, if safely defined, will garantee that Identity owner is able 
 - Basic contracts demo: Helps engaging developers and bug hunting. 
 - Identity Sign-in: Actions for user creating or recovering their wallets.
 - Identity Usage: User may select their Identity to make tansactions in behalf of.
-- Identity Friend's "Recover Help" Request: User is able to confirm executions when asked by someone from their contact list.
 - Identity Management: User may setup keys & recovery options for its identity, confirm claims and even update the contract code.
 
 ### Requirements & Dependencies
 
 - ERC725 and ERC735 should be approved as standard and used in contracts interface, this swarm might influence how this standards end up defined, this is important for the solution working better with unknown future applications.
 
-- Idea [#027-ens-usernames](https://github.com/status-im/ideas/pull/151) is important as a shortcut for user's identity address, otherwise QR-Codes or big hexadecimal strings would be needed.
+- Idea [#150-gas-abstraction](https://github.com/status-im/ideas/pull/150) enables users to only use SNT* for everything in ethereum, or any other token/ether hold by Identity. *Only SNT can be used to gas relay deploy of Identity, after that user is free to choice.
 
-- Idea [#073-gas-abstraction](https://github.com/status-im/ideas/pull/150) enables users to only use SNT* for everything in ethereum, or any other token/ether hold by Identity. *Only SNT can be used to gas relay deploy of Identity, after that user is free to choice.
+- Idea [#151-ens-usernames](https://github.com/status-im/ideas/pull/151) is important as a shortcut for user's identity address, otherwise QR-Codes or big hexadecimal strings would be needed.
+
+- Idea [152-friends-recovery](https://github.com/status-im/ideas/pull/152) is important to provide a first recovery contract option that uses friends to recover.
 
 ## Dates
 
@@ -127,15 +128,8 @@ Goal Date: 2018-06-15
     - Keys: Add/Remove/Update 
     - Accept Claims
     - Update of Kernel
+    - Select a recovery contract
     
-### Recovery Support
-
-Goal Date: 2018-07-01
-
-- Recovery: Setup/Update/Cancel Update 
-- Request recovery to selected "friends".
-- Confirm/reject other's recovery request
-
 ## Success Metrics
 
 Status Users opt-in using an Identity to enhance interaction with decetralize systems (such as Status itself). 
