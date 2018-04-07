@@ -16,11 +16,12 @@ Users would sign a message request to contracts which will use user's balance of
 
 ## Swarm Participants
 
-- Lead Contributor: @3esmit
-- Contributor: @richard-ramos 
-- UX (Mist): @alexvandesande 
+- Lead Contributor: Ricardo Guilherme Schmidt
+- Contributor: Richard Ramos
+- Contributor: Iuri Matias
+- UX (Mist): Alexandre Van de Sande 
 - UX (Status): 
-- Contributor/Testing: @iurimatias 
+
 
 ## Product Overview
 
