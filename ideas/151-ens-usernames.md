@@ -14,10 +14,10 @@ Eliminates the need to copy/scan - and worse, type - long hexadecimal addresses 
 
 ## Swarm Participants
 
-- Lead Contributor: @3esmit
-- Contributor: @richard-ramos
-- UX (Mist): @alexvandesande
-- UX (Status): 
+- Lead Contributor: Ricardo Guilherme Schmidt
+- Contributor: Richard Ramos
+- UX (Mist): Alexandre Van de Sande 
+- UX (Status): Hester Bruikman
 
 ## Product Overview
 
