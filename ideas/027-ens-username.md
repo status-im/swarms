@@ -1,7 +1,7 @@
 # Username ENS Subdomain Registrar
 ## Preamble
 
-    Idea: #027-username-ens-subdomain
+    Idea: #027-ens-username
     Title: Username ENS Subdomain Registrar
     Status: Draft
     Created: 2017-11-20
