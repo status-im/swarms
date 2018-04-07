@@ -12,7 +12,7 @@
 ## Summary
 
 Enable Status users to pay gas fee with any token that is valueable to society. 
-Users would sign a message request to contracts which will use user's balance of selected token to refund proportional used gas to a incentivezed ETH owner to include that message in a transction.p
+Users would sign a message request to contracts which will use user's Identity balance of selected token to refund proportional used gas to a incentivezed ETH owner to include that message in a transction.p
 
 ## Swarm Participants
 
