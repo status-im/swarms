@@ -6,7 +6,7 @@
     Title: Friends Recovery (Secret Multisig)
     Status: Draft
     Created: 2018-04-07
-    Requires: #145
+    Requires: 145-identity
 
 
 ## Summary
@@ -47,7 +47,7 @@ User's friends would be able to:
 
 ### Minimum Viable Product
 
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+Goal Date: 2018-07-01
 
 Description: 
  
@@ -55,7 +55,6 @@ Description:
  - Users can use friends as allowance for Identity recovery
  - Users are notified when a recovery is requested for them
  - Users can help locked out friends to recover their Identity without paying gas
-
 
 ## Success Metrics
 
