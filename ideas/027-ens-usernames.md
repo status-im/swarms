@@ -9,7 +9,7 @@
 
 ## Summary
 
-Eliminates the need to copy/scan - and worse, type - long hexadecimal addresses / public keys, by providing an ENS subdomain registry and recognition of ENS names in Status for interacting with other people in Status.
+Eliminates the need to copy/scan - and worse, type - long hexadecimal addresses / public keys, by providing an [ENS](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md) subdomain registry and recognition of ENS names in Status for interacting with other people in Status.
 
 ## Swarm Participants
 
