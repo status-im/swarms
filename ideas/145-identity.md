@@ -14,9 +14,9 @@ Creates a common user-owned credentials for authentication on smart contracts an
 
 ## Swarm Participants
 
-- Lead Contributor:  @3esmit
-- Contributor: @richard-ramos 
-- UX (Etherum Foundation/Mist): @alexvandesande 
+- Lead Contributor: Ricardo Guilherme Schmidt 
+- Contributor: Richard Ramos 
+- UX (Etherum Foundation/Mist): Alexandre Van de Sande
 - Testing & Evaluation:  (help needed)
 - PM: (help needed)
 - UX (Status):  (help needed)
