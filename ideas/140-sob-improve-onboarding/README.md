@@ -1,5 +1,5 @@
 ---
-id: xx-sob-improve-onboarding
+id: 140-sob-improve-onboarding
 title: OpenBounty Improved Onboarding
 status: in-progress
 created: 2018-04-04
