@@ -5,7 +5,7 @@ A space for our ideas - our current, past and future efforts.
 ## Contributing
 
 First review [Status Organizational Design](https://wiki.status.im/Status_Organisational_Design) and
-[Status Swarm Manual](https://docs.google.com/document/u/1/d/10nGQ6mZGahIme6UGLov3b12tJUOi3mkjIsT5_cFl0kA/edit?ts=5ab1135d#heading=h.lqc5ff9neha5).
+[Status Swarm Manual](MANUAL.md).
 Then submit a Pull Request in this repository.
 
 ## Idea Registry
@@ -35,6 +35,7 @@ aborted.
 | [134-seamless-login](ideas/134-seamless-login.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 | [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
+| [95-les-service-model](ideas/095-les-service-model/)                | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
@@ -77,7 +78,7 @@ progress again. This ensures the registry is kept up to date.
 | @MaxRis       |     34 |
 | @oskarth      |    120 |
 | @serhy        | 87     |
-| @themue       |    58, 92 |
+| @themue       | 58, 92 |
 | @vkjr         |     34 |
 | @yenda        |     87 |
 | @yevh-berdnyk |     80 |
