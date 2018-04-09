@@ -10,6 +10,8 @@ WebGL 3D visualization platform for Whisper and peer-to-peer processes (message 
 
 ![demo1](https://i.imgur.com/MZElq0K.png)
 
+*Note: current image doesn't represent real Status cluster (yet) and serves only for showcasing purposes.*
+
 [Demo GIF](https://i.imgur.com/GAu4zte.gifv)
 
 The core aspect of Status messaging layer is a peer-to-peer (p2p) network of Ethereum nodes and the Whisper messaging protocol. For developers it is crucial to understand how P2P overlay network and Whisper works and build intuition about it. However, P2P networks in general are among one of the most complicated topics to study.
@@ -29,6 +31,8 @@ Proposed visualization framework should provide a tooling for visualizing differ
 ## Product Overview
 
 ![demo2](https://i.imgur.com/9IajeMC.png)
+
+*Note: current image doesn't represent real Status cluster (yet) and serves only for showcasing purposes.*
 
 Essentially the product is a software framework, that serves as a platform for building end-user products. One project in particular is suggested to be a showcase of the potential and a starting point for other projects – visualization of the Whisper message propagation in the Status cluster.
 
