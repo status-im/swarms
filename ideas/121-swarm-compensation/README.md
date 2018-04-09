@@ -3,6 +3,9 @@ id: 121-swarm-compensation
 title: Swarm Compensation Experiments
 status: in-progress
 created: 2018-04-02
+contributors:
+    - martinklepsch
+    - oskarth
 ---
 
 ## Preamble
