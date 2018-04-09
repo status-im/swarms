@@ -29,7 +29,7 @@ There are a number of bugs preventing this currently. In addition to resolving a
 
 ### Product Description
 
-Developers can: 
+Developers testing on Status should find that any mobile-optimized HTML DApp is compatible.
 
 Users can load, log in to, and transact inside any DApp using the Status browser.
 
@@ -69,7 +69,6 @@ Testing days required:
 
 ## Future Iterations
 - Support [web3.js 1.0](https://web3js.readthedocs.io/en/1.0/)
-- Support any 3rd party web3.js APIs 
 
 ## Copyright
 
