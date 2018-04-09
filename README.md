@@ -51,6 +51,7 @@ aborted.
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
+| [142-recovery-compatibility](ideas/142-recovery-compatibility)      | :seedling: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                      |
 
 ## Completed :champagne: and aborted :dagger:
 
@@ -100,3 +101,4 @@ progress again. This ensures the registry is kept up to date.
 | @EugeOrtiz | 140 |
 | @Churik | 140 |
 | @arash009 | 120, 122, 140 |
+| @pilu         | 84, 94, 142, 146 |
