@@ -68,5 +68,9 @@ The collection of these metrics is to be automated, however their reporting and 
 
 This swarm will be deemed successful and be closed upon the delivery of the above 6 milestones. If any of the above milestones cannot be completed within a 2-week window, they will be dropped from this swarm and parked for possible future development. 
 
+## Success Metrics
+
+Tools and means are avilable to measure Key Results
+
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
