@@ -38,7 +38,12 @@ Description:
 
 Date: 2018-04-23
 
-Description: TBD.
+Description: 
+- Development: Update copy in the app
+- Design: Drafting out the Welcome Screen, Home screen, New screen to improve the UX
+- Design: Add invite friends via link (Wireframes and mockups)
+- Design: Explore possibility of adding touch id
+- Design: improve wallet setup, add screens to encourage transfering funds to status wallet
 
 ## Success Metrics
 - 80% of users complete initial account setup onboarding. Measured by in-app metrics.
