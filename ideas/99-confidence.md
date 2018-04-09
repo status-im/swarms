@@ -16,7 +16,7 @@ As end users we currently don't have confidence that messages are being sent, de
 - Contributor: @mandrigin
 - Contributor: #dmitryn 
 - PM: @chadyj
-- UX (if relevant): @nikitalukianov
+- UX (if relevant): @nikitalukianov @jpbowen @hesterbruikman
 
 ## Product Overview
 
