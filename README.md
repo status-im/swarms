@@ -28,6 +28,7 @@ aborted.
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [58-mainnet](ideas/58-mainnet.md) | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
@@ -82,3 +83,8 @@ progress again. This ensures the registry is kept up to date.
 | @vkjr         |     34 |
 | @yenda        |     87 |
 | @yevh-berdnyk |     80 |
+| @martinklepsch | 140 |
+| @rcullito | 140 |
+| @EugeOrtiz | 140 |
+| @Churik | 140 |
+| @arash009 | 140 |
