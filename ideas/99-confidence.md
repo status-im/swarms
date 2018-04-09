@@ -11,12 +11,12 @@ As end users we currently don't have confidence that messages are being sent, de
 
 ## Swarm Participants
 - Lead Contributor: @rasom
-- Testing & Evaluation: <!-- @username -->
+- Testing & Evaluation: @lukaszfryc 
 - Contributor: @cammellos
-- Contributor: <!-- @username -->
-- PM: @chad
-- UX (if relevant): <!-- @username -->
-<!-- - Contributor: @username -->
+- Contributor: @mandrigin
+- Contributor: #dmitryn 
+- PM: @chadyj
+- UX (if relevant): @nikitalukianov
 
 ## Product Overview
 
