@@ -76,7 +76,7 @@ progress again. This ensures the registry is kept up to date.
 | @MaxRis       |     34 |
 | @oskarth      |    120 |
 | @serhy        | 87     |
-| @themue       | 58, 92, 95 |
+| @themue       | 58, 92 |
 | @vkjr         |     34 |
 | @yenda        |     87 |
 | @yevh-berdnyk |     80 |
