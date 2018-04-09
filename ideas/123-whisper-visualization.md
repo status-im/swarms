@@ -61,7 +61,7 @@ Data collectors can be implemented separately once the common data exchange form
 - metrics from the controlled cluster and e2e tests
 - metrics gathered from the Ethereum crawlers bots
 - message propagation simulations from P2P network simulators
-- empirical data based on state of the art estimation techniques (for example, BMS system desctibed in https://arxiv.org/pdf/1801.03998.pdf)
+- empirical data based on state of the art estimation techniques (for example, BMS system described in https://arxiv.org/pdf/1801.03998.pdf)
 
 ---
 
