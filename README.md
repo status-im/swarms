@@ -32,6 +32,7 @@ aborted.
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [134-seamless-login](ideas/134-seamless-login.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 | [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [95-les-service-model](ideas/095-les-service-model/)                | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
@@ -59,15 +60,16 @@ progress again. This ensures the registry is kept up to date.
 |---------------|--------|
 | @anna         |     58, 80, 87 |
 | @adriacidre   | 63     |
-| @andmironov   | 68, 80 |
+| @andmironov   | 68, 80, 134 |
 | @adambabik    | 58, 63, 68, 92 |
-| @asemiankevich | 87 |
+| @alwx    | 134 |
+| @asemiankevich | 87, 134 |
 | @cammellos    |     87 |
-| @chadyj       | 68, 80, 87 |
+| @chadyj       | 68, 80, 87, 99, 134 |
 | @dshulyak     |     63, 92 |
 | @feuGeneA     |     83 |
 | @flexsurfer   | 34, 80 |
-| @hester       |     80 |
+| @hester       |     80, 134 |
 | @janherich    |     87 |
 | @jeluard      |     68 |
 | @lukaszfryc   | 68, 83 |
