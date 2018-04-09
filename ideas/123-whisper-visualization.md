@@ -10,7 +10,7 @@ WebGL 3D visualization platform for Whisper and peer-to-peer processes (message 
 
 ![demo1](https://i.imgur.com/MZElq0K.png)
 
-![Demo GIF](https://i.imgur.com/GAu4zte.gifv)
+[Demo GIF](https://i.imgur.com/GAu4zte.gifv)
 
 The core aspect of Status messaging layer is a peer-to-peer (p2p) network of Ethereum nodes and the Whisper messaging protocol. For developers it is crucial to understand how P2P overlay network and Whisper works and build intuition about it. However, P2P networks in general are among one of the most complicated topics to study.
 
