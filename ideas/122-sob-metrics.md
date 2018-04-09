@@ -16,7 +16,7 @@ One of the key objectives of Open Bounty is to increase the usage of the platfor
 
 - Lead Contributor\PM: @arash009 (Arash)
 - Contributor: @siphiuel (Vitaliy)
-- Testing and QA: 
+- Testing and QA: @arash009 (Arash)
 
 ## Product Overview
 
@@ -66,7 +66,7 @@ The collection of these metrics is to be automated, however their reporting and 
 
 ## Exit Criteria
 
-This swarm will be deemed successful and be closed upon the delivery of the above 4 milestones. If any of the above milestones cannot be completed within a 2-week window, an MVP version will be identified with the original requirements dated for a future iteration 
+This swarm will be deemed successful and be closed upon the delivery of the above 6 milestones. If any of the above milestones cannot be completed within a 2-week window, they will be dropped from this swarm and parked for possible future development. 
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
