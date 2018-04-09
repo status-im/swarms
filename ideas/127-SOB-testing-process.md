@@ -42,3 +42,12 @@ Hence this idea is a placeholder for current and future iterations of improving 
 - [ ] define function for SNT transfer 
 - [ ] define function for signing transaction and payout confirmation
 - [ ] 1 full end-to-end test is running successfully in [Jenkins](https://jenkins.status.im/job/end-to-end-tests/job/sob-end-to-end-tests/)
+
+## Exit Criteria
+- The smoke checklist is fully automated and autotests are running through each PR which comes to `To test` column
+- Test artifacts (screenshots, log etc.) are integrated with GitHub and put to PR comments
+
+## Success Metrics
+This idea should affect the following:
+- Reduced timeframe for testing
+- Speed up feedback provided on PRs
