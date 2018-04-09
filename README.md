@@ -32,6 +32,7 @@ aborted.
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [134-seamless-login](ideas/134-seamless-login.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 | [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
@@ -60,7 +61,7 @@ progress again. This ensures the registry is kept up to date.
 | @adriacidre   | 63     |
 | @andmironov   | 68, 80 |
 | @adambabik    | 58, 63, 68, 92 |
-| @asemiankevich | 87 | 
+| @asemiankevich | 87 |
 | @cammellos    |     87 |
 | @chadyj       | 68, 80, 87 |
 | @dshulyak     |     63, 92 |
@@ -74,7 +75,7 @@ progress again. This ensures the registry is kept up to date.
 | @martin       |    120 |
 | @MaxRis       |     34 |
 | @oskarth      |    120 |
-| @serhy        | 87     | 
+| @serhy        | 87     |
 | @themue       |    58, 92 |
 | @vkjr         |     34 |
 | @yenda        |     87 |

@@ -2,7 +2,7 @@
 
     Idea: 132
     Title: Seamless Login
-    Status: In Progress
+    Status: Draft
     Created: 2018-05-04
 
 
