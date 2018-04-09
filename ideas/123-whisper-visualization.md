@@ -21,7 +21,7 @@ The decentralized nature of those networks increase security and privacy (which 
 Proposed visualization framework should provide a tooling for visualizing different types and scales of Ethereum network, processes that occur in network in different layers (p2p, les, whisper, etc), both collected from real data and from simulations.
 
 ## Swarm Participants
-- Lead Contributor: @divan
+- Lead Contributor: [@divan](https://github.com/divan)
 - Testing & Evaluation: 
 - Contributor:
 - Contributor:
@@ -69,7 +69,7 @@ User interface part needs to be implemented in the browser, because we want to r
 
 The downside of implementing this part for web is, of course, inherit limitation of web browsers in terms of supported languages – they support 0 programming languages plus Javascript. WebAssembly is not a thing yet, but we still have to implement some important calculations for this part, like physical model for the force-directed graph layout and Barne-Hut optimizations, so the suggested approach is to offload most of heavy calculation to the backend server running on the same machine, that communicates with frontend via websockets. This approach proved to be fast enough in terms of responsiveness for the set of tasks needed for this part, and allows to implement pretty complicated concurrent calculations that run natively on the user machine, and not in the browser.
 
-#####Data processing part (backend)
+##### Data processing part (backend)
 
 Currently most of the code involved into data processing is written as separate web servers that talks to the frontend via websockets. Important parts are:
 
