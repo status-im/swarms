@@ -16,7 +16,6 @@ Ideas looking for people
 | Idea | Looking for | Swarm lead | In progress? | OKR prios            |
 |------|-------------|------------|--------------|----------------------|
 | #58  | Clojure dev | Adam       | Yes          | p1: p0               |
-| #99  | Clojure dev | Roman      | Not yet      | p0: p0, p1, p2       |
 
 ## Idea Registry
 
