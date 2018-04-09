@@ -26,6 +26,7 @@ This swarm will create the mechanism to capture **three** specific metrics on th
 - **Active bounty creators** — This metric is to capture the **Monthly Active Contributors** who have posted a minimum of 1 bounty in the previous 30 days.
 - **Active bounty hunters** — This metric is to capture the **Monthly Active Contributors** against each organization who have succesfully completed a bounty.
 - **Unique pageviews** — This metric is to capture the **Unique Monthly Pageviews** to the Home Page (https://openbounty.status.im/) and the Open Bounties page (https://openbounty.status.im/app#/)
+- **Activation** - This metric is to capture the percentage of users who have used the platform to post or solve a bounty within XX days after joining (e.g. 30 days)
 
 The collection of these metrics is to be automated, however their reporting and sharing can be manual, or basic automation, with future iterations looking at full automation/analytics.
 
@@ -55,6 +56,11 @@ The collection of these metrics is to be automated, however their reporting and 
 
 #### Milestone 5 - '8 June 2018'
 - Report on the metric of Unique pageviews built
+- Report is testing and bug free
+- Manual reporting mechanism to share the results established
+
+#### Milestone 6 - '22 June 2018'
+- Report on the metric of Activation built
 - Report is testing and bug free
 - Manual reporting mechanism to share the results established
 
