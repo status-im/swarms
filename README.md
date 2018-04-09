@@ -81,3 +81,8 @@ progress again. This ensures the registry is kept up to date.
 | @vkjr         |     34 |
 | @yenda        |     87 |
 | @yevh-berdnyk |     80 |
+| @martinklepsch | 140 |
+| @rcullito | 140 |
+| @EugeOrtiz | 140 |
+| @Churik | 140 |
+| @arash009 | 140 |

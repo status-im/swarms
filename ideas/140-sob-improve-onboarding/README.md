@@ -3,6 +3,12 @@ id: 140-sob-improve-onboarding
 title: OpenBounty Improved Onboarding
 status: in-progress
 created: 2018-04-04
+contributors:
+    - martinklepsch
+    - Churik
+    - EugeOrtiz
+    - arash009
+    - rcullito
 ---
 
 ## Preamble
@@ -22,7 +28,7 @@ This swarm aims to remove the need for whitelisting users and revamp the onboard
 
 - Lead Contributor: @martinklepsch (10hr for MVP, 30hr+ from MVP onwards)
 - Testing & Evaluation: @Churik
-- UX Contributor: @EugeOrtiz 
+- UX Contributor: @EugeOrtiz
 - Dev Contributor: @siphuel or @rcullito
 - Contracts Contributor: @3esmit (need not fully clear)
 - Product Manager Contributor: @arash009
