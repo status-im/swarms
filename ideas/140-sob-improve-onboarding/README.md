@@ -60,7 +60,9 @@ These and other alternatives will be evaluated as part of this swarm, whatever d
 
 ### Iteration 2 — Implementation `2018-05-10`
 
-Implement the UI for the new flows and make it functional. 
+Implement the UI for the new flows and make it functional. Once `122-sob-metrics` has laid
+the necessary groundwork, start integrating some metrics using the tools defined by that
+swarm.
 
 **Artifacts:** 
 
