@@ -17,7 +17,7 @@ mnemonic wallets, into Status.
 - Lead Contributor: @pilu
 - Testing & Evaluation: @antdanchenko
 - Testing & Evaluation: @asemiankevich
-- Contributor: <!-- @username -->
+- Contributor: @flexsurfer
 - Contributor: <!-- @username -->
 - PM: @chadyj
 - UX (if relevant): @jpbowen
@@ -46,7 +46,7 @@ and use the passoword only to lock the account on the phone.
 
 Requires Idea #94 (Wallet Compatibility)
 Requires Idea #58-mainnet
-Requires Idea 80-onboarding
+Requires Idea #80-onboarding
 
 ### Minimum Viable Product
 
