@@ -2,7 +2,7 @@
 
     Idea: 122-sob-metrics
     Title: Open Bounty - Platform Usage Metrics
-    Status: Draft
+    Status: In progress
     Created: 2018-04-04
     Related: 
 
