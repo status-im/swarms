@@ -8,6 +8,16 @@ First review [Status Organizational Design](https://wiki.status.im/Status_Organi
 [Status Swarm Manual](MANUAL.md).
 Then submit a Pull Request in this repository.
 
+## Classifieds :loudspeaker:
+
+Ideas looking for people
+
+
+| Idea | Looking for | Swarm lead | In progress? | OKR prios            |
+|------|-------------|------------|--------------|----------------------|
+| #58  | Clojure dev | Adam       | Yes          | p1: p0               |
+| #99  | Clojure dev | Roman      | Not yet      | p0: p0, p1, p2       |
+
 ## Idea Registry
 
 An idea can be in the following states: draft, in progress, completed, or
