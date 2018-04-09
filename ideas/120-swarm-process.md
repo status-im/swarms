@@ -27,9 +27,11 @@ this.
 ## Swarm Participants
 - Lead Contributor: @oskarth
 - Evaluation ('knowledge spreading'): Voting mechanism (Polly survey)
-- Evaluation ('OKR coverage'): OKR spreadsheet coverage and/or @chad and/or @nabil (TBC)
+- Evaluation ('OKR coverage'): OKR spreadsheet coverage and @nabil
 - Evaluation ('enable experimentation'): @martin
 - Contributor: @martin
+- Contributor: @arash009
+- Contributor: @naghdy
 
 - Possibly UX for communicating things during Town Hall, etc.
 

@@ -78,6 +78,7 @@ progress again. This ensures the registry is kept up to date.
 | @mandrigin    |     83 |
 | @martin       |    120 |
 | @MaxRis       |     34 |
+| @naghdy       |     120 |
 | @oskarth      |    120, 121 |
 | @serhy        | 87     |
 | @themue       | 58, 92 |
@@ -88,4 +89,4 @@ progress again. This ensures the registry is kept up to date.
 | @rcullito | 140 |
 | @EugeOrtiz | 140 |
 | @Churik | 140 |
-| @arash009 | 140 |
+| @arash009 | 120, 140 |
