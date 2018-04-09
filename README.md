@@ -20,6 +20,7 @@ aborted.
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
 | [120-swarm-process](ideas/120-swarm-process.md)                     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
+| [121-swarm-compensation](ideas/121-swarm-compensation/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [92-disc-v5-research](ideas/92-disc-v5-research.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [87-new-protocol](ideas/87-new-protocol.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [83-energy-efficient](ideas/83-energy-efficient.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
@@ -77,13 +78,13 @@ progress again. This ensures the registry is kept up to date.
 | @mandrigin    |     83 |
 | @martin       |    120 |
 | @MaxRis       |     34 |
-| @oskarth      |    120 |
+| @oskarth      |    120, 121 |
 | @serhy        | 87     |
 | @themue       | 58, 92 |
 | @vkjr         |     34 |
 | @yenda        |     87 |
 | @yevh-berdnyk |     80 |
-| @martinklepsch | 140 |
+| @martinklepsch | 140, 121 |
 | @rcullito | 140 |
 | @EugeOrtiz | 140 |
 | @Churik | 140 |
