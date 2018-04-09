@@ -12,7 +12,7 @@ As end users we currently don't have confidence that messages are being sent, de
 ## Swarm Participants
 - Lead Contributor: @rasom
 - Testing & Evaluation: <!-- @username -->
-- Contributor: <!-- @username -->
+- Contributor: @cammellos
 - Contributor: <!-- @username -->
 - PM: @chad
 - UX (if relevant): <!-- @username -->
