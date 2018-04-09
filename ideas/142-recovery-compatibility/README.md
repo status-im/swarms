@@ -45,8 +45,8 @@ and use the passoword only to lock the account on the phone.
 <!-- The Swarm must develop a fully fleshed out Requirements document for the idea to proceed, to the satisfaction of participants. -->
 
 Requires Idea #94 (Wallet Compatibility)
-Requires Idea #58-mainnet
-Requires Idea #80-onboarding
+Impacts Idea #58-mainnet
+Impacts Idea #80-onboarding
 
 ### Minimum Viable Product
 
