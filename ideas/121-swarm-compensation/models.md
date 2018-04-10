@@ -71,8 +71,8 @@ can see:
      of work but that should be treated as implementation detail.
 2. Other people "Supporters" can pay into this contract until the threshold is reached
 3. After 30 days all supporters can either do
-   a) Nothing, their stake will be paid out to the requesting user in full after 10 more days.
-   b) Burn half their stake and receive back the other half.
+   - A) Nothing, their stake will be paid out to the requesting user in full after 10 more days.
+   - B) Burn half their stake and receive back the other half.
 
 Burning half the money is a big statement and people won't do that
 lightly — it's useful to flag bad actors though. The more usual case
