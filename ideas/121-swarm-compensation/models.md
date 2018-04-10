@@ -1,7 +1,7 @@
 A list of potential models to explore in experiments as part of this swarm
 
 - [Bountify All](#bountify-all)
-- [Grant Burning](#grant-burning)
+- [Grant & Burn](#grant--burn)
 
 
 # Bountify All
@@ -64,7 +64,7 @@ can see:
    3\*3=9 (big, high prio).
 
 
-# Grant Burning
+# Grant & Burn
 
 1. A user can request funds for a certain time interval, e.g. SNT10.000 for the next 30 days.
    - Usually this request will be tied to a specific proposed project/piece
