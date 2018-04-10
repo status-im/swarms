@@ -24,7 +24,7 @@
 
 #### SWAP
 
-#### Concept
+##### Concept
 
 - Swarm Accounting Protocol
 - Generic *peerwise* accounting
@@ -37,7 +37,18 @@
 - Peer decides how often to cash in
 - Transactions costs motivate to minimize their number
 - Trust to peers grows with good behavior
+- SWAP^2 provides API to set triggers for automatic payments
+- SWAP^3 reduces transaction cost by debt swap
 
-#### Links
+##### Links
 
 - https://github.com/ethersphere/swarm/wiki/Swap
+- https://github.com/ethersphere/swarm/wiki/Swap-demo-instructions
+
+#### Orchid
+
+##### Concept
+
+##### Links
+
+- https://orchidprotocol.com/
