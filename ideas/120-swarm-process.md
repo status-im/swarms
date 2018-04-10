@@ -104,6 +104,13 @@ Progress last two weeks: Move to PR based ideas with discrete steps; make Ideas
 repo more homey; measure and communicate OKR coverage; capture participation and
 iterations in ideas.
 
+Swarm Stats:
+- Registry: 22 ideas committed
+- Ideas In Progress: 11 well-defined swarms
+- Mempool: 12 ideas under review
+- OKR coverage: 50% of Core OKRs covered by at least one well-defined, in progress swarm
+- Contributors: 30 people committed to at least one well-defined, in progress swarm
+
 Goals for next two weeks: Ensure repo is kept up to date; support swarm leads
 and idea creators; clarify evaluator role; capture and spread knowledge about
 swarm lifecycle, definition and roles.
