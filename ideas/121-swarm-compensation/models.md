@@ -61,3 +61,26 @@ can see:
 2. Instead of spitballing bounty size, use issue size and priority to determine
    bounty size. E.g. a matrix where bounty size can be 1\*3=3 (small, high prio),
    3\*3=9 (big, high prio).
+
+
+# Salary Burning
+
+1. A user can request funds for a certain time interval, e.g. SNT10.000 for the next 30 days.
+   - Usually this request will be tied to a specific proposed project/piece
+     of work but that should be treated as implementation detail.
+2. Other people "Supporters" can pay into this contract until the threshold is reached
+3. After 30 days all supporters can either do
+   a) Nothing, their stake will be paid out to the requesting user in full after 10 more days.
+   b) Burn half their stake and receive back the other half.
+
+Burning half the money is a big statement and people won't do that
+lightly — it's useful to flag bad actors though. The more usual case
+would be just not working with the user again (which is an acceptable
+outcome that should not have negative consequences for either side).
+
+Allowing supporters to delegate the burning decision to someone else
+could be interesting in making this work for swarms as well. Swarm
+lead could be delegate for other people on the team while the swarm
+lead still remains accountable to original supporters. This might
+create a weird dynamic when the swarm lead doesn't get his chunk
+though.
