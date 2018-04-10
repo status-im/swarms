@@ -28,6 +28,7 @@ aborted.
 
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [127-sob-testing](ideas/127-sob-testing.md)  | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [120-swarm-process](ideas/120-swarm-process.md)                     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [121-swarm-compensation](ideas/121-swarm-compensation/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [92-disc-v5-research](ideas/92-disc-v5-research.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
@@ -71,14 +72,15 @@ progress again. This ensures the registry is kept up to date.
 
 | Contributor   |  Ideas |
 |---------------|--------|
-| @anna         |     58, 80, 87 |
+| @anna         |     58, 80, 87, 127 |
 | @adriacidre   | 63     |
 | @andmironov   | 68, 80, 134 |
 | @adambabik    | 58, 63, 68, 92 |
 | @alwx    | 134 |
-| @asemiankevich | 87, 134 |
+| @asemiankevich | 87, 127, 134 |
 | @cammellos    |     87 |
 | @chadyj       | 68, 80, 87, 99, 134 |
+| @churik       |     127 |
 | @dshulyak     |     63, 92 |
 | @feuGeneA     |     83 |
 | @flexsurfer   | 34, 80 |
