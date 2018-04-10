@@ -36,19 +36,19 @@ Users can load, log in to, and transact inside any DApp using the Status browser
 
 ### Requirements & Dependencies
 
-[#3174](https://github.com/status-im/status-react/issues/3174): Some Android devices can't find web3 library
+- [ ] [#3174](https://github.com/status-im/status-react/issues/3174): Some Android devices can't find web3 library
 
-[#784](https://github.com/status-im/status-go/issues/784): Contract handler not called after contract deployment
+- [ ] [#784](https://github.com/status-im/status-go/issues/784): Contract handler not called after contract deployment
 
-[#2479](https://github.com/status-im/status-react/issues/2479): web3 filters don't work with Status chat bot
+- [ ] [#2479](https://github.com/status-im/status-react/issues/2479): web3 filters don't work with Status chat bot
 
-[#2704](https://github.com/status-im/status-react/issues/2704): Personal sign message support (CryptoKitties blocker)
+- [ ] [#2704](https://github.com/status-im/status-react/issues/2704): Personal sign message support (CryptoKitties blocker)
 
-[#3131](https://github.com/status-im/status-react/issues/3131): Scrolling glitch in ERC dEX
+- [ ] [#3131](https://github.com/status-im/status-react/issues/3131): Scrolling glitch in ERC dEX
 
-[ISSUE REQUIRED](https://github.com/status-im/status-react/blob/develop/resources/js/web3_init.js#L25): Sync calls are not supported in Status 
+- [ ] [ISSUE REQUIRED](https://github.com/status-im/status-react/blob/develop/resources/js/web3_init.js#L25): Sync calls are not supported in Status 
 
-ISSUE REQUIRED: [Blockchain Cuties](https://blockchaincuties.co ) does not load inside Status
+- [ ] ISSUE REQUIRED: [Blockchain Cuties](https://blockchaincuties.co ) does not load inside Status
 
 ### Minimum Viable Product
 
