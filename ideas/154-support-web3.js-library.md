@@ -10,9 +10,10 @@ Ensure that any DApp that works in Metamask also works in Status by providing we
 
 ## Swarm Participants
 - Lead Contributor: [@flexsurfer](https://github.com/flexsurfer)
-- Testing & Evaluation: [@dmitryn](https://github.com/dmitryn)
+- Contributor: [@dmitryn](https://github.com/dmitryn)
 - Contributor: [@mandrigin](https://github.com/mandrigin)
 - Contributor: [@dshulyak](https://github.com/dshulyak)
+- Testing & Evaluation: 
 - PM: [@rachelhamlin](https://github.com/rachelhamlin)
 - UX: N/A
 
