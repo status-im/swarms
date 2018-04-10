@@ -98,6 +98,16 @@ Description:
 - ii. Measure Core/Swarm OKR coverage and communicate this/needs.
 - iii. Evaluation terminology and expectations are clarified in manual.
 
+Town Hall Update: 2017-04-09
+
+Progress last two weeks: Move to PR based ideas with discrete steps; make Ideas
+repo more homey; measure and communicate OKR coverage; capture participation and
+iterations in ideas.
+
+Goals for next two weeks: Ensure repo is kept up to date; support swarm leads
+and idea creators; clarify evaluator role; capture and spread knowledge about
+swarm lifecycle, definition and roles.
+
 ### Iteration 1
 Goal Date: 2017-04-20
 
