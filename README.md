@@ -16,7 +16,6 @@ Ideas looking for people
 | Idea | Looking for | Swarm lead | In progress? | OKR prios            |
 |------|-------------|------------|--------------|----------------------|
 | #58  | Clojure dev | Adam       | Yes          | p1: p0               |
-| #99  | Clojure dev | Roman      | Not yet      | p0: p0, p1, p2       |
 
 ## Idea Registry
 
@@ -29,6 +28,7 @@ aborted.
 
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [127-sob-testing](ideas/127-sob-testing.md)  | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [120-swarm-process](ideas/120-swarm-process.md)                     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [121-swarm-compensation](ideas/121-swarm-compensation/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [92-disc-v5-research](ideas/92-disc-v5-research.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
@@ -40,6 +40,7 @@ aborted.
 | [58-mainnet](ideas/58-mainnet.md) | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
+| [122-sob-metrics](ideas/122-sob-metrics.md)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
@@ -47,10 +48,11 @@ aborted.
 | [134-seamless-login](ideas/134-seamless-login.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 | [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
-| [95-les-service-model](ideas/095-les-service-model/)                | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
+| [95-les-service-model](ideas/095-les-service-model/)                | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes             | :x: no                            |
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                       | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [76-smooth-ui](ideas/smooth-ui.md)                                  | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
+| [142-recovery-compatibility](ideas/142-recovery-compatibility)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                      |
 
 ## Completed :champagne: and aborted :dagger:
 
@@ -70,14 +72,15 @@ progress again. This ensures the registry is kept up to date.
 
 | Contributor   |  Ideas |
 |---------------|--------|
-| @anna         |     58, 80, 87 |
+| @anna         |     58, 80, 87, 127 |
 | @adriacidre   | 63     |
 | @andmironov   | 68, 80, 134 |
 | @adambabik    | 58, 63, 68, 92 |
 | @alwx    | 134 |
-| @asemiankevich | 87, 134 |
+| @asemiankevich | 87, 127, 134 |
 | @cammellos    |     87 |
 | @chadyj       | 68, 80, 87, 99, 134 |
+| @churik       |     127 |
 | @dshulyak     |     63, 92 |
 | @feuGeneA     |     83 |
 | @flexsurfer   | 34, 80 |
@@ -99,4 +102,4 @@ progress again. This ensures the registry is kept up to date.
 | @rcullito | 140 |
 | @EugeOrtiz | 140 |
 | @Churik | 140 |
-| @arash009 | 120, 140 |
+| @arash009 | 120, 122, 140 |
