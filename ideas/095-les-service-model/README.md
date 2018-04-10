@@ -63,7 +63,7 @@ Description:
 
 - [ ] New Ultra Light Client Mode is added to LES
 - [ ] Auctioning protocol between client and full node is defined
-- [ ] Payment methods and models are defined
+- [ ] Payment methods or interfaces are defined
 - [ ] Initial implementation validates auctioning and micropayment in automated tests
 
 ## Artifacts
@@ -73,7 +73,7 @@ Description:
 
 ## Success Metrics
 
-LES of `go-ethereum` is extended to provide a micropayed services with a higher quality
+LES of `go-ethereum` is extended to provide micropayed services with a higher quality
 level as well as free services depending on capacity and configuration.
 
 ## Copyright
