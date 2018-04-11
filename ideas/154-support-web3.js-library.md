@@ -46,9 +46,9 @@ Users can load, log in to, and transact inside any DApp using the Status browser
 
 - [ ] [#3131](https://github.com/status-im/status-react/issues/3131): Scrolling glitch in ERC dEX
 
-- [ ] [ISSUE REQUIRED](https://github.com/status-im/status-react/blob/develop/resources/js/web3_init.js#L25): Sync calls are not supported in Status 
+- [ ] [#3823](https://github.com/status-im/status-react/issues/3823): Sync calls are not supported in Status 
 
-- [ ] ISSUE REQUIRED: [Blockchain Cuties](https://blockchaincuties.co ) does not load inside Status
+- [ ] [#3824](https://github.com/status-im/status-react/issues/3824): [Blockchain Cuties](https://blockchaincuties.co ) does not load inside Status
 
 ### Minimum Viable Product
 
