@@ -4,9 +4,9 @@
 
     Idea: 145-identity
     Title: Self-sovereign Identity
-    Status: In Progress 
+    Status: Draft 
     Created: 2018-05-04
-    Requires: 150-gas-abstraction 151-ens-usernames 152-friends-recovery ERC725 ERC735
+    Requires: 152-friends-recovery ERC725 ERC735
     
 ## Summary
 
@@ -49,10 +49,11 @@ In self-sovering identity its owner have full resposability over its safety, but
 #### Fundamental terms:
 
 - ID Manager (owner) can define MultiSig public keys required for its management/actions;
-- ID Manager (owner) can define a Recovery contract;
-- ID Manager (owner) can define public keys for other; users knowing how to encrypt data for identity owner;
-- ID Manager (owner) can accept claims;
-- ID Manager (owner) can make claims.
+- ID Manager can define a Recovery contract;
+- ID Manager can define public keys for other; users knowing how to encrypt data for identity owner;
+- ID Manager can accept claims;
+- ID Manager can make claims.
+- ID Actor can call other contracts.
 
 #### Status Use Case:
 
@@ -85,13 +86,11 @@ Recovery contract, if safely defined, will garantee that Identity owner is able 
 
 ### Requirements & Dependencies
 
-- ERC725 and ERC735 should be approved as standard and used in contracts interface, this swarm might influence how this standards end up defined, this is important for the solution working better with unknown future applications.
+- [ERC#725](https://github.com/ethereum/EIPs/issues/725) define identity management interface used by dapps to read Identity and manage it. Important for cross-compatibility with other dapps. 
 
-- Idea [#150-gas-abstraction](https://github.com/status-im/ideas/pull/150) enables users to only use SNT* for everything in ethereum, or any other token/ether hold by Identity. *Only SNT can be used to gas relay deploy of Identity, after that user is free to choice.
+- [ERC#735](https://github.com/ethereum/EIPs/issues/735) define identity claims interface used by DApps to read claims. Important for cross-compatibility with other dapps.
 
-- Idea [#151-ens-usernames](https://github.com/status-im/ideas/pull/151) is important as a shortcut for user's identity address, otherwise QR-Codes or big hexadecimal strings would be needed.
-
-- Idea [152-friends-recovery](https://github.com/status-im/ideas/pull/152) is important to provide a first recovery contract option that uses friends to recover.
+- Idea [152-friends-recovery](https://github.com/status-im/ideas/pull/152) define a recovery option. Important to provide a first decentralized recovery contract option that uses friends to recover.
 
 ## Dates
 
@@ -138,7 +137,10 @@ New users adopt Status because Identity support, which will be required for many
 
 ## Exit criteria
 
-Fully integrated on Status App.
+Fully integrated on Status App
+    - Users can create new Indeitity
+    - Users can manage their Identities
+    - Users can use (action) Identities to call contracts
 
 ## Supporting Role Communication
 <!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
