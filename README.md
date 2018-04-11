@@ -16,6 +16,9 @@ Ideas looking for people
 | Idea | Looking for | Swarm lead | In progress? | OKR prios            |
 |------|-------------|------------|--------------|----------------------|
 | #58  | Clojure dev | Adam       | Yes          | p1: p0               |
+| #96  | Clojure dev | Richard    | Yes          | p2: p0               |
+| #96  | Designer    | Richard    | Yes          | p2: p0               |
+
 
 ## Idea Registry
 
@@ -43,6 +46,7 @@ aborted.
 | [122-sob-metrics](ideas/122-sob-metrics.md)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [154-support-web3.js-library](ideas/154-support-web3.js-library.md)      | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes |
 | [134-seamless-login](ideas/134-seamless-login.md)               | :walking_man: In Progress         | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
+| [96-message-tributes](ideas/96-message-tributes.md)               | :walking_man: In Progress         | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
