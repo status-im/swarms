@@ -42,11 +42,11 @@ aborted.
 | [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [122-sob-metrics](ideas/122-sob-metrics.md)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [154-support-web3.js-library](ideas/154-support-web3.js-library.md)      | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes |
-| [134-seamless-login](ideas/134-seamless-login.md)               | :walking_man: In Progress         | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [134-seamless-login](ideas/134-seamless-login.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 | [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
 | [95-les-service-model](ideas/095-les-service-model/)                | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes             | :x: no                            |
