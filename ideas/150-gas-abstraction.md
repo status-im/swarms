@@ -7,7 +7,7 @@
     Status: In Progress
     Created: 2018-02-01
     Requires: 145-identity
-    Replaces: 073-snt-as-gas
+    Replaces: 073-economic-abstraction
 
 ## Summary
 
@@ -20,7 +20,7 @@ Users would sign a message request to contracts which will use user's Identity b
 - Contributor: Richard Ramos
 - Contributor: Iuri Matias
 - UX (Mist): Alexandre Van de Sande 
-- UX (Status): 
+- UX (Status): (help needed)
 
 
 ## Product Overview
@@ -36,21 +36,25 @@ The product solve this by emulating a gas abstraction by adding "Gas Relayer Act
 
 ### Product Description
 
-Gas Relay node: Status Destkop extension or an independent node can include messages by making automatic transactions calls to smart contracts to earn tokens being offered as gas price refund.
-Fundamental pivot. 
+Gas Relay node: 
+- Status Destkop extension or an independent node can include messages by making automatic transactions calls to smart contracts to earn tokens being offered as gas price refund.
+- Configuration for tokens accepted and types of contract willing to interact with.
+Important as fundamental pivot actor. 
 
-Identity Gas Relay adaptor: include terms for accepting ethereum signed messages representing authorization to call by/for Identity owner offering a gas price refund.
-Important for gas abstraction.
+Identity Gas Relay adaptor: 
+- include smart contract terms for accepting ethereum signed messages representing authorization to call by/for Identity owner offering a gas price refund for relayer.
+- Identity UI should allow user to choose what token it wants to use as gas price.
+Important for gas abstraction of call. 
 
-SNT Controller Gas Relay adaptor: include terms for accepting ethereum signed messages to IdentityGasRelay facotory and for moving the tokens from there using SNT.
-Important for accounts that never held ether, just SNT.
+SNTController Gas Relay adaptor: 
+- include smart contract terms for accepting ethereum signed messages to call `IdentityGasRelayFactory` and for moving the tokens from there using SNT controller contract.
+- a "wizard" UI would make the calls to create a Identity and send user SNT to Identity (so it can be used as ether gas).
+Important for opt-in gas abstraction without ever holding ether.
 
-Identity UX should allow user to choose what token it wants to use as gas price.
 
 ### Requirements & Dependancies
 
-Idea [145-identity](https://github.com/status-im/ideas/pull/145) is important to seamless and safe integration of gas abstraction for any type of call.
-Implemention of [EIP#191](https://github.com/ethereum/EIPs/issues/191) is somewhat important, specially for making signature verification slightly gas cheaper.
+Idea [145-identity](https://github.com/status-im/ideas/pull/145) is important to seamless and safe integration of gas abstraction for any type of call, so identity can become `msg.sender` for other contracts.
 
 ### Minimum Viable Product
 
@@ -60,7 +64,8 @@ Description:
 - Users can create Identity using SNTController and paying with SNT.
 - Users can earn tokens running a node that include other's messages
 
-#### Identity Gas Relay
+#### Identity Gas RelayIdentity UX should allow user to choose what token it wants to use as gas price.
+
 
 Goal Date: 2018-04-20
 Description: 
@@ -72,7 +77,7 @@ Description:
 Goal Date: 2018-04-27
 Description: 
 - Gas Relay Node implements watching messages for SNTController 
-- User interface for creating Identity+ENS register (pay gas in SNT)
+- User interface for creating Identity (pay gas in SNT)
 - Moving SNT to other address from SNTController terms (paying gas in SNT)
 
 #### UX Integration
