@@ -2,19 +2,43 @@
 
 ### Existing Solutions
 
+#### Raiden
+
+##### Concept
+
+- Off-chain solution for ERC20-compliant token transfers on Ethereum
+- Transfer of tokens without global consensus
+- Previously setup on-chain deposits and *balance proofs*
+- Payment channels for bidirectional transfers between two participants as long as deposit isn't exceeded
+- Transfers require no fees
+- Funds can be added to existing channels
+- Blockchain isn't involved during transfers, only for channel creation and potential closing
+- As binding as on-chain due to smart contract containing tokens only accessable to both participants
+- Closing leads to payments to both participants based on balance
+- *Network* of channels with routing allow transfers between all peers, secured by *hash-locks*
+- Scaling with the number of peers
+- RESTful API
+
+##### Links
+
+- https://raiden.network/
+- http://raiden-network.readthedocs.io/en/stable/
+- https://medium.com/@raiden_network/
+
 #### µRaiden
 
 ##### Concept
 
-- Between two parties: *sender* (client) and *receiver* (service provider)
-- Communication between sender and receiver via RESTful API
+- Like Raiden but only between two parties: *sender* (client) and *receiver* (service provider)
+- Designed for 1:N solutions
 - Creation of channel and settling leads to µRaiden Smart Contract and a *deposit*
 - Smart Contract enforces payment of deposit
 - Signing payments with balance-proofs between sender and receiver allows off-chain transactions
-- If deposit of sender gets low it can increase it
-- Once channel gets closed deposit is payed to receiver based on balance-proofs and rest to sender
-- Only two transactions for opening and closing
+- Once channel gets closed deposit is payed to receiver based on *balance proofs* and rest to sender
+- Typically only two on-chain transactions for opening and closing
+- If deposit of sender gets low it can increase it with an on-chain transaction
 - Own ERC20 and ERC223 compliant token
+- RESTful API
 
 ##### Links
 
