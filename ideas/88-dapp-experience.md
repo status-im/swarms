@@ -22,7 +22,7 @@ We had two brainstorming sessions during the Bangkok offsite. The notes from the
 - Lead Contributor: @goranjovic
 - Testing & Evaluation: @asemiankevich 
 - Contributor: @lukaszfryc 
-- Contributor: <!-- @username -->
+- Contributor: @pilu
 - PM: @rachelhamlin
 - UX (if relevant): <!-- @username -->
 
@@ -32,7 +32,7 @@ Objectives:
 
 1. Provide a definition of decentralized apps
 2. Provide clear inclusion criteria that dapps need to conform with in order to be listed in our catalog
-3. Perform some research o existing dapps for better understanding. For ex https://dappradar.com/
+3. Perform research o existing dapps for better understanding, e.g. https://dappradar.com/
 4. Create the initial catalog 
 5. Provide a transparent and simple process for inclusion of new entries
 
@@ -57,21 +57,36 @@ Additional notes:
 
 ### Requirements & Dependencies
 
+- Idea #154 - Web3 Support
+- Idea #163 - ERC-721 Supports
+
+To some extent also #101 - Extensions (transitively)
+
+**At the moment, this idea is blocked by #154 and #163 and all available effort should be directed to those swarms instead.**
+
 
 ### Minimum Viable Product
 
-MVP for this is a fixed initial DApp Catalog 
+MVP for this is a DApp Catalog with nice, fully functional, good looking and representative DApps that Status
+users can interact with.
 
-Description: Currently we have 4 Ropsten dapp suggestions in the hardcoded list under Open DApp. This list should be expanded to include 12 DApps total.
-These dapps should be verified to work reasonably well (i.e. at all) and the selection should depend on currently selected network (only 
-Mainnet and Ropsten in scope for this MVP).
+
 
 ## Dates
-Goal Date: 2018-04-18
 
-Description: Initial DApp Catalog
+### Iteration 0
 
-Testing Days required: ?
+Goal Date: 2018-04-05
+
+Description: Currently we have 4 Ropsten dapp suggestions in the hardcoded list under Open DApp. This list should be expanded to include 12 DApps total.
+These dapps should be verified to work reasonably well (i.e. at all).
+
+Use this list for the Mainnet dapps - https://docs.google.com/spreadsheets/d/1cPjVu5AizyGgz6J4PJwK62LQfB8LHTnPmAdJvyBqQLE/edit#gid=492008138
+
+
+### Iterations 1 - N
+
+Description: New onboarding process for dapps that showcases most representative dapps and collectibles available in Status.
 
 ## Success Metrics
 
