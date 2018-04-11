@@ -17,13 +17,15 @@ Add ERC721 support to Status wallet so that users can see their CryptoKitties, P
 
 ## Product Overview
 
+ERC721 tokens, or non-fungible tokens (NFTs), represent unique assets on the blockchain. The ability to use rare digial assets as a store of value has spawned a large market of digital collectibles. 
+
 With 100+ digital collectibles on the market and a combined sales volume greater than $50MM, it's important that we allow users to access their NFT collections inside Status right alongside their ETH and ERC20 tokens.
 
 The two primary cases we need to support are:
 1. Having my existing collectibles in my Status wallet
 2. Buying or receiving new collectibles and seeing them in my Status wallet
 
-Additional use cases may focus on gifting collectibles from one user to another, as well as sending collectibles in a chat.
+Additional use cases may focus on gifting collectibles from one user to another, or sending collectibles in a chat.
 
 ### Product Description
 
@@ -32,7 +34,7 @@ Additional use cases may focus on gifting collectibles from one user to another,
 Users should be able to view their collection of NFTs in a dedicated section of their Status wallet. 
 Tokens associated with a user's Mainnet address should appear there automatically. 
 
-Any ERC721 should be supported, and individual assets within a collection should display available metadata such as name or number, properties, creation date, etc. To whatever extent possible, we can standardize the metadata displayed for each type of collectible and provide a link to the DApp for more.
+Any ERC721 token should be supported, and individual assets within a collection should display available metadata such as name or number, properties, creation date, etc. To whatever extent possible, we can standardize the metadata displayed for each type of collectible and provide a link to the DApp for more.
 
 ##### For newly purchased crypto assets
 
@@ -44,6 +46,7 @@ Initially we can use marketplaces to support this by consuming metadata from [Op
 
 ### Requirements & Dependencies
 
+Potential dependency on Status extensions (formerly #101)
 
 ### Minimum Viable Product
 Goal Date: 
@@ -53,17 +56,17 @@ Description:
 As there is no way to automatically browse all the existing collectible types, we'll focus on individual support for any collectible DApps that Status currently features.
 
 - UX/UI for collectibles in wallet:
-  - Browse collections
+  - Browse collections (categories/types)
   - Browse collectibles
   - View individual collectible
 - Add wallet support for any ERC721 featured in Status Selected DApps:
   - CryptoFighters
   - CryptoKitties
   - CryptoPunks
-  - etc.
   
 ### Iteration 1
 - Expand collectible support
+- Add profile showcase for users to display their collections
 - Purchase new collectibles via a marketplace
 
 ### Exit Criteria
