@@ -3,7 +3,7 @@
 
 ## Preamble
 
-    Idea: <to be assigned>
+    Idea: 96
     Title: Tribute to Talk
     Status: Draft
     Created: 2018-03-20
