@@ -41,6 +41,7 @@ aborted.
 | [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes            |
 | [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
 | [122-sob-metrics](ideas/122-sob-metrics.md)     | :walking_man: In Progress     | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                                 |
+| [154-support-web3.js-library](ideas/154-support-web3.js-library.md)      | :walking_man: In Progress    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
