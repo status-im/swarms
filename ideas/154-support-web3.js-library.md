@@ -2,7 +2,7 @@
 
     Idea: 154
     Title: Support web3.js library
-    Status: Draft
+    Status: In Progress
     Created: 2018-04-09
     
 ## Summary
