@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: <to be assigned>
+    Idea: 146-status-go-sdk
     Title: Status GO-SDK
     Status: Draft
     Created: 2018-04-03
@@ -100,9 +100,12 @@ Description: TBD
 Testing Days required: TBD
 
 ## Success Metrics
-TBD
-<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move?
 
+- A dev who is unfamiliar with the SDK is able to set up his environment and build a simple chatbot in under 2 hours, just by following the documentation.
+
+#### Exit criteria:
+
+Same as success metrics.
 
 ## Supporting Role Communication
 <!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
