@@ -20,7 +20,7 @@ One of the key objectives of Open Bounty is to increase the usage of the platfor
 
 ## Product Overview
 
-This swarm will create the mechanism to capture **three** specific metrics on the usage of Open Bounty (specific criteria for each metric yet to be defined):
+This swarm will create the mechanism to capture **five** specific metrics on the usage of Open Bounty (specific criteria for each metric yet to be defined):
 
 - **Value transacted** — This metric is to capture the **$USD equivalent** of total tokens that have been paid out in a given timeframe (daily, weekly, monthly, annual)
 - **Active bounty creators** — This metric is to capture the **Monthly Active Contributors** who have posted a minimum of 1 bounty in the previous 30 days.
