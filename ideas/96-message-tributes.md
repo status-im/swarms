@@ -1,6 +1,3 @@
-<!-- Please Review https://docs.google.com/document/d/1CaFM2ZXGOKf05_LXMPJeNNy5qJOdAq91EF2Gn2QUBFI/edit# for more details -->
-<!-- in PR the document should be named as`DEV#1-title.md` -->
-
 ## Preamble
 
     Idea: 96
@@ -11,31 +8,19 @@
 
 
 ## Summary
-<!-- "If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the Idea. -->
 Economics-based anti-spam filter, in our case for receiving messages and “cold” contact requests from users.
 
 
 ## Swarm Participants
-<!-- Each contributor pledges to the idea with their FOCUS value. (hours per week) -->
-<!-- Here all roles in swarm are defined and filled, one of the contributors should responsibility of the Idea as Lead. -->
-
-<!-- Testing/Evaluation support role is also mandatory to check in on specified Goal dates or earlier. -->
-
-<!-- Lead Contributor is the Owner of the Idea. If required, they can get support from a PM, but should be responsible for end to end execution of the Idea. This includes ensuring appropriate resources are allocated, setting realistic timelines and milestones, and any post-launch metrics or bug fixes that are attributed to the Idea -->
-<!-- A swarm requires at minimum 3 contributors and 1 evaluator/tester -->
-<!-- 'Contributor' should be replaced with a descriptive role type. -->
 - Lead Contributor: @richard-ramos
-- Testing & Evaluation: <!-- @username -->
-- Contributor: <!-- @username -->
-- Contributor: <!-- @username -->
+- Testing & Evaluation: 
+- Contributor: 
+- Contributor: 
 - PM:  @rachelhamlin
-- UX (if relevant): <!-- @username -->
-<!-- - Contributor: @username -->
+- UX (if relevant): 
+
 
 ## Product Overview
-<!-- A short (~200 word) description and motivation of the Idea. Without clear explanation the Idea should not proceed. Can include User Stories -->
-<!-- Testing/Evaluation role accepts responsbility to checkin at Goal dates, -->
-<!-- forces discussion to continue implementation or recommend disband and post-mortem. -->
 This enables stakeholders to set a minimum amount of SNT that a Status stakeholder must deposit in order for someone outside of their network to contact him directly. If the recipient replies the deposit is forfeited to the recipient.
 
 **SNT Utility**
@@ -49,7 +34,6 @@ Example use-cases
 - Stakeholder C, a freelancer, provides photography tutorials, and has a means of generating revenue.
 
 ### Product Description
-<!-- What functionality are you adding? What will this look like from a user perspective? Why is this important? -->
 Any Status user can enable Tribute to Talk and set a minimum required deposit for other users to stake in order to send them a message. Users requiring a tribute can whitelist their full contact list, or specific contacts.
 
 If User A requires a minimum 200 SNT deposit, User B will not be able to open a new chat with User A until they deposit at least 200 SNT. Once deposited, User B can send their message.
@@ -69,10 +53,9 @@ In the future, User A might have the option to respond to User B but waive the d
 <!-- The Swarm must develop a fully fleshed out Requirements document for the idea to proceed, to the satisfaction of participants. -->
 
 ### Minimum Viable Product
-<!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
-Goal Date: TBD <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+Goal Date: TBD 
 
-Description: <!-- Description of Deliverables-->
+Description:
 For the initial delivery, these are the minimum features proposed.
 - [ ] UI for recipients to set Tribute to Talk with required minimum deposit for any new chat
 - [ ] UI for requesters to send minimum SNT deposit and their message to users with Tribute to Talk enabled
@@ -84,17 +67,16 @@ For the initial delivery, these are the minimum features proposed.
 Next milestones and deliverables would be determined discussing and prioritizing features of the product description
 
 ## Dates
-Goal Date: TBD <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+Goal Date: TBD 
 
-Description: TBD <!-- Description of Deliverables-->
+Description: TBD 
 
-Testing Days required: TBD <!-- Days required at the end of development for testing -->
+Testing Days required: TBD 
 
 ## Exit Criteria
 Any user can set up Tribute to Talk and require a deposit minimum to be contacted. Other users can put down a deposit to message them. New requests can be responded to, rejected or withdrawn. The deposit is transferred when a recipient responds, and sent back if they reject or the requester withdraws.
 
 ## Success Metrics
-<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move? -->
 Initial emphasis is on TtT working as expected and producing no bugs for critical events. 
 
 - Message requests are delivered 100% reliably from requester to recipient.
@@ -103,7 +85,6 @@ Initial emphasis is on TtT working as expected and producing no bugs for critica
 
 
 ## Supporting Role Communication
-<!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
 TBD
 
 ## Copyright
