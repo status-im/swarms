@@ -12,10 +12,10 @@ Provide an easy to use GO-SDK library to allow community developers easily inter
 
 
 ## Swarm Participants
-- Lead Contributor: @adriacidre
+- Lead Contributor: [@adriacidre](https://github.com/adriacidre)
 - Contributor:
 - Contributor:
-- Testing & Evaluation:
+- Testing & Evaluation: [@lukaszfryc](https://github.com/lukaszfryc)
 
 
 ## Product Overview
