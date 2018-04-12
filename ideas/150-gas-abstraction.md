@@ -4,7 +4,7 @@
 
     Idea: 150-gas-abstraction
     Title: Gas Abstraction
-    Status: In Progress
+    Status: Draft
     Created: 2018-02-01
     Requires: 145-identity
     Replaces: 073-economic-abstraction
