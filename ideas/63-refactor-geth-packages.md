@@ -76,7 +76,7 @@ Description:
 2. [x] [Rename methods indicating there is only support for one node: `StartNode -> Start`, `StopNode -> Stop` etc.](https://github.com/status-im/status-go/pull/803)
 3. [x] [Unify EnsureSync on t/utils/utils.go and StatusManager](https://github.com/status-im/status-go/pull/806)
 
-### Iteration 6: A PR in status-react
+### Iteration 6: [A PR in status-react](https://github.com/status-im/status-react/pull/3826)
 Goal Date: 2018-04-13
 
 Description:
