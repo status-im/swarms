@@ -18,6 +18,7 @@ Eliminates the need to copy/scan - and worse, type - long hexadecimal addresses 
 - Contributor: Richard Ramos
 - UX (Mist): Alexandre Van de Sande 
 - UX (Status): Hester Bruikman
+- Design: Denis Sharypin
 - PM: Rachel Hamlin
 
 ## Product Overview
