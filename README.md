@@ -17,7 +17,9 @@ Ideas looking for people
 |------|-------------|------------|--------------|----------------------|
 | #58  | Clojure dev | Adam       | Yes          | p1: p0               |
 | #145 | PM          | Ricardo | No        |                   |
-| #145 | UX        | Ricardo | No        |                   |
+| #145 | UX          |  Ricardo  | No     |                   |
+| #151 | Clojure dev | Ricardo   | No        | p2: p0          |
+
 
 ## Idea Registry
 
