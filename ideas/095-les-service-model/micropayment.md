@@ -7,6 +7,7 @@
 ##### Concept
 
 - Off-chain solution for ERC20-compliant token transfers on Ethereum
+- Designed for many-to-many solutions
 - Transfer of tokens without global consensus
 - Previously setup on-chain deposits and *balance proofs*
 - Payment channels for bidirectional transfers between two participants as long as deposit isn't exceeded
@@ -30,7 +31,7 @@
 ##### Concept
 
 - Like Raiden but only between two parties: *sender* (client) and *receiver* (service provider)
-- Designed for 1:N solutions
+- Designed for many-to-one solutions
 - Creation of channel and settling leads to µRaiden Smart Contract and a *deposit*
 - Smart Contract enforces payment of deposit
 - Signing payments with balance-proofs between sender and receiver allows off-chain transactions
@@ -69,10 +70,43 @@
 - https://github.com/ethersphere/swarm/wiki/Swap
 - https://github.com/ethersphere/swarm/wiki/Swap-demo-instructions
 
-#### Orchid
+### API
 
-##### Concept
+#### Client
 
-##### Links
+##### Query Conditions
 
-- https://orchidprotocol.com/
+Ask service provider about pricing and model (bandwidth, CPU, etc.).
+
+##### Establish Business Contract
+
+Establish a payed connection with an initial deposit.
+
+##### Check Balance
+
+Check balance of the deposit to increase fund early enough before
+connection potentially is dropped.
+
+##### Increase Fund
+
+Increase fund to keep connection with higher quality level. If
+fund is spent connection may not be dropped but changed into
+free connection. That may be dropped later.
+
+##### Close Contract
+
+Close contract so that used deposit is spent service provide and
+rest is refunded.
+
+#### Service Provider
+
+##### Book Token
+
+Book a token based on provided service. If all tokens of deposit
+are used with a booking then close contract.
+
+##### Close Contract
+
+Close contract to retrieve used deposit and transform connection
+into a free connection.
+
