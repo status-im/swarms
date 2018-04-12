@@ -16,6 +16,8 @@ Ideas looking for people
 | Idea | Looking for | Swarm lead | In progress? | OKR prios            |
 |------|-------------|------------|--------------|----------------------|
 | #58  | Clojure dev | Adam       | Yes          | p1: p0               |
+| #145 | PM          | Ricardo | No        |                   |
+| #145 | UX        | Ricardo | No        |                   |
 
 ## Idea Registry
 
@@ -47,6 +49,8 @@ aborted.
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [145-identity](ideas/145-identity.md) | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No | - :white_check_mark: Yes |
+| [94-wallet-compatibility](ideas/94-wallet-compatibility.md)       | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :white_check_mark: Yes | - :x: No               |
 | [134-seamless-login](ideas/134-seamless-login.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
 | [117-message-ordering](ideas/117-message-ordering.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                  | :x: No         |
 | [99-confidence](ideas/99-confidence.md)                             | :seedling: Draft          | :x: no                 | :x: no                 | :x: no                 | :x: no                            |
@@ -56,7 +60,6 @@ aborted.
 | [71-low-traffic](ideas/71-low-traffic.md)                           | :question: Limbo          | :white_check_mark: Yes | :x: No                 | :x: No                 | :white_check_mark: Yes :question: |
 | [101-extensions](ideas/101-extensions)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                      |
 | [142-recovery-compatibility](ideas/142-recovery-compatibility)      | :seedling: Draft    | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                      |
-| [94-wallet-compatibility](ideas/94-wallet-compatibility.md)       | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :white_check_mark: Yes | - :x: No               |
 
 ## Completed :champagne: and aborted :dagger:
 
