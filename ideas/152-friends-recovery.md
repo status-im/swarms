@@ -6,8 +6,7 @@
     Title: Friends Recovery (Secret Multisig)
     Status: Draft
     Created: 2018-04-07
-    Requires: 145-identity
-
+    
 
 ## Summary
 
