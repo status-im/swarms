@@ -45,6 +45,7 @@ aborted.
 | [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [122-sob-metrics](ideas/122-sob-metrics.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [154-support-web3.js-library](ideas/154-support-web3.js-library.md) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [167-extended-automated-testing-for-continuous-delivery](ideas/167-extended-automated-testing-for-continuous-delivery)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                              | State            | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?        |
@@ -86,9 +87,10 @@ progress again. This ensures the registry is kept up to date.
 | @anna         |     58, 80, 87, 127 |
 | @adriacidre   | 63, 146     |
 | @andmironov   | 68, 80, 134 |
+| @antdanchenko   | 167 |
 | @adambabik    | 58, 63, 68, 92 |
 | @alwx    | 134 |
-| @asemiankevich | 87, 127, 134 |
+| @asemiankevich | 87, 127, 134, 167 |
 | @cammellos    |     87 |
 | @chadyj       | 68, 80, 87, 99, 134 |
 | @churik       |140, 127 |
@@ -98,17 +100,17 @@ progress again. This ensures the registry is kept up to date.
 | @hester       |     80, 134 |
 | @janherich    |     87 |
 | @jeluard      | 68, 101 |
-| @lukaszfryc   | 68, 83 |
+| @lukaszfryc   | 68, 83, 167 |
 | @mandrigin    |     83 |
 | @martin       |    120 |
 | @MaxRis       |     34 |
 | @naghdy       |     120 |
 | @oskarth      |    120, 121 |
-| @serhy        | 87     |
+| @serhy        | 87, 167     |
 | @themue       | 58, 92 |
 | @vkjr         |     34 |
 | @yenda        |     87 |
-| @yevh-berdnyk |     80 |
+| @yevh-berdnyk |     80, 167 |
 | @martinklepsch | 140, 121 |
 | @rcullito | 140 |
 | @EugeOrtiz | 140 |
