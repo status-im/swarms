@@ -85,8 +85,12 @@ Description: <!-- Description of Deliverables-->
 
 ### Useful links & Dependencies
 
-- https://github.com/mandrigin/status-go-bots — http://offsite.chat and #humans-need-not-apply bots.
-- Pre-existing issue - https://github.com/status-im/ideas/issues/131
+- http://offsite.chat
+- [https://github.com/mandrigin/status-go-bots](#humans-need-not-apply bots)
+- [Pre-existing issue](https://github.com/status-im/ideas/issues/131)
+- [New protocol spec](https://docs.google.com/document/d/1Qh2h07T_qepzEJ7IytmxwIdQAOsGHrvhXwZxuZtbwgc/edit#)
+- [transit-format](https://github.com/cognitect/transit-format)
+
 
 ### Blockers
 New Status App communication protocol - https://github.com/status-im/ideas/issues/87
@@ -100,20 +104,14 @@ Testing Days required: TBD
 
 ## Success Metrics
 
-#### Milestone 1: Basic SDK
-  - [ ] Swarm participants identified
-  - [ ] Detailed specifications for each metric identified and documented
-  - [ ] User stories and project board setup
-  - [ ] Effort estimate and high-level schedule established
-
-#### Milestone 2: Status messaging basic interaction
+#### [Milestone 1: Status messaging basic interaction](Milestone1_BasicSDK.md)
   - [ ] Setup a new connection
   - [ ] Ability to close a specific connection
   - [ ] Ability to change connection configuration
+  - [ ] Ability to sign up on the platform
   - [ ] Ability to login as a specific account
-  - [ ] Ability to log out.
 
-#### Milestone 3: Public channels interaction
+#### Milestone 2: Public channels interaction
   - [ ] Ability to join public channels
   - [ ] Ability to publish messages on public channels
   - [ ] Ability to subscribe to public channels
@@ -121,19 +119,23 @@ Testing Days required: TBD
   - [ ] Documented API for public channels interaction.
   - [ ] Working examples for public channel interaction.
 
-#### Milestone 4: Private groups interaction
+#### Milestone 3: Private groups interaction
   - [ ] Ability to publish messages on private groups
   - [ ] Ability to subscribe to private groups
   - [ ] Ability to unsubscribe from a private groups
   - [ ] Documented API for private groups interaction.
   - [ ] Working examples for private groups interaction.
 
-#### Milestone 5: 1 to 1 messages interaction
+#### Milestone 4: 1 to 1 messages interaction
   - [ ] Ability to send 1 to 1 conversation
   - [ ] Ability to subscribe to 1 to 1 conversation
   - [ ] Ability to unsubscribe from a 1 to 1 conversation
   - [ ] Documented API for 1 to 1 conversations
   - [ ] Working examples for 1 to 1 conversations
+
+#### Milestone 5: Extra methods
+  - [ ] Ability to recover your account
+  - [ ] Ability to log out.
 
 
 ## Exit criteria:
