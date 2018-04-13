@@ -1,6 +1,6 @@
-## Milestone 1: Basic SDK
+## Milestone 1: Status messaging basic interaction
 
-// TODO its still not clear how username works on the new protocol, it may change the methods using it, as it's not used atm.
+** * TODO its still not clear how username works on the new protocol, it may change the methods using it, as it's not used atm. **
 
 ###  Setup a new connection
 
@@ -46,7 +46,7 @@ if err := conn.SignupOrLogin("username", "password"); err != nil {
 `SignupOrLogin` method is provided so you can sign up as a specific user
 
 ```
-if err := conn.Login("username", "password"); err != nil {
+if err := conn.SignupOrLogin("username", "password"); err != nil {
   panic(err)
 }
 ```
@@ -54,7 +54,15 @@ if err := conn.Login("username", "password"); err != nil {
 
 ###  Ability to login as a specific account
 
+`Login` method provides an interface to log in
+
+```
+if err := conn.Login("username", "password"); err != nil {
+  panic(err)
+}
+```
 
 
+### Documented API for basic sdk interaction
 
-###  Ability to log out.
+This document can be adapted as a documentation for basic sdk interaction

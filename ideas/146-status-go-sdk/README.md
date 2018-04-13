@@ -90,6 +90,7 @@ Description: <!-- Description of Deliverables-->
 - [Pre-existing issue](https://github.com/status-im/ideas/issues/131)
 - [New protocol spec](https://docs.google.com/document/d/1Qh2h07T_qepzEJ7IytmxwIdQAOsGHrvhXwZxuZtbwgc/edit#)
 - [transit-format](https://github.com/cognitect/transit-format)
+- [Sniffing app messages](howto_Sniffing_app_messages.md)
 
 
 ### Blockers
@@ -104,14 +105,14 @@ Testing Days required: TBD
 
 ## Success Metrics
 
-#### [Milestone 1: Status messaging basic interaction](Milestone1_BasicSDK.md)
+#### Milestone 1: [Status messaging basic interaction](Milestone1_BasicSDK.md)
   - [ ] Setup a new connection
   - [ ] Ability to close a specific connection
   - [ ] Ability to change connection configuration
   - [ ] Ability to sign up on the platform
   - [ ] Ability to login as a specific account
 
-#### Milestone 2: Public channels interaction
+#### Milestone 2: [Public channels interaction](Mileston2_PublicChannels.md)
   - [ ] Ability to join public channels
   - [ ] Ability to publish messages on public channels
   - [ ] Ability to subscribe to public channels
