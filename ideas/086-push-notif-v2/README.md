@@ -43,6 +43,10 @@ We want to end up with a notification system which works on as many devices as p
 
 We also want a solution that doesn’t involve talking directly to the notification provider, as that would require keeping authentication elements embedded in the app (currently the case), and might expose us to quota theft.
 
+### Flow Diagram
+
+![Alt text](https://g.gravizo.com/source/svg?https%3A%2F%2Fraw.githubusercontent.com%2Fstatus-im%2Fideas%2Fmaster%2Fideas%2F086-push-notif-v2%2Fdiagram.dot)
+
 ### Goals
 
 At a high-level, we want to move up the current solution a notch regarding some of the critical qualities mentioned in the [Product Overview](#product-overview) which are currently lagging behind. The specific steps to reach that goal are:
