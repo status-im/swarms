@@ -1,4 +1,4 @@
-## Milestone 1: Status messaging basic interaction
+## Status messaging basic interaction
 
 ** * TODO its still not clear how username works on the new protocol, it may change the methods using it, as it's not used atm. **
 

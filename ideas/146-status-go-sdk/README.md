@@ -105,7 +105,7 @@ Testing Days required: TBD
 
 ## Success Metrics
 
-#### Milestone 1: [Status messaging basic interaction](Milestone1_BasicSDK.md)
+#### Milestone 1: [Status messaging basic interaction](BasicSDK.md)
   - [ ] Setup a new connection
   - [ ] Ability to close a specific connection
   - [ ] Ability to change connection configuration
@@ -113,7 +113,11 @@ Testing Days required: TBD
   - [ ] Ability to login as a specific account
   - [ ] Documented API for basic sdk interaction
 
-#### Milestone 2: [Public channels interaction](Mileston2_PublicChannels.md)
+### Milestone 2: [Contact management](ContactManagement.md)
+  - [ ] Invite new contact
+  - [ ] Accept new contact
+
+#### Milestone 3: [Public channels interaction](PublicChannels.md)
   - [ ] Ability to join public channels
   - [ ] Ability to publish messages on public channels
   - [ ] Ability to subscribe to public channels
@@ -121,21 +125,21 @@ Testing Days required: TBD
   - [ ] Documented API for public channels interaction.
   - [ ] Working examples for public channel interaction.
 
-#### Milestone 3: [Private groups interaction](Milestone3_PrivateChannels.md)
-  - [ ] Ability to publish messages on private groups
-  - [ ] Ability to subscribe to private groups
-  - [ ] Ability to unsubscribe from a private groups
-  - [ ] Documented API for private groups interaction.
-  - [ ] Working examples for private groups interaction.
-
-#### Milestone 4: 1 to 1 messages interaction
+#### Milestone 4: [1 to 1 messages interaction](1to1Channels.md)
   - [ ] Ability to send 1 to 1 conversation
   - [ ] Ability to subscribe to 1 to 1 conversation
   - [ ] Ability to unsubscribe from a 1 to 1 conversation
   - [ ] Documented API for 1 to 1 conversations
   - [ ] Working examples for 1 to 1 conversations
 
-#### Milestone 5: Extra methods
+#### Milestone 5: [Private groups interaction](PrivateChannels.md)
+  - [ ] Ability to publish messages on private groups
+  - [ ] Ability to subscribe to private groups
+  - [ ] Ability to unsubscribe from a private groups
+  - [ ] Documented API for private groups interaction.
+  - [ ] Working examples for private groups interaction.
+
+#### Milestone 6: Extra methods
   - [ ] Ability to recover your account
   - [ ] Ability to log out.
 

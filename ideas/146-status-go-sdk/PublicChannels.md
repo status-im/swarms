@@ -1,4 +1,4 @@
-## Milestone 2: Public channels interaction
+## Public channels
 
 Public channels interaction is about how the developer will be interacting with public channels.
 
