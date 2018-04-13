@@ -68,6 +68,7 @@ Description:
 
 ## Artifacts
 
+- [Information about Micropayment](micropayment.md)
 - [Logfile](log.md)
 - [Links](links.md)
 
