@@ -13,7 +13,7 @@ Provide an easy to use GO-SDK library to allow community developers easily inter
 
 ## Swarm Participants
 - Lead Contributor: [@adriacidre](https://github.com/adriacidre)
-- Contributor:
+- Contributor: [@pilu](https://github.com/pilu)
 - Contributor:
 - Testing & Evaluation: [@lukaszfryc](https://github.com/lukaszfryc)
 
@@ -111,6 +111,7 @@ Testing Days required: TBD
   - [ ] Ability to change connection configuration
   - [ ] Ability to sign up on the platform
   - [ ] Ability to login as a specific account
+  - [ ] Documented API for basic sdk interaction
 
 #### Milestone 2: [Public channels interaction](Mileston2_PublicChannels.md)
   - [ ] Ability to join public channels
@@ -120,7 +121,7 @@ Testing Days required: TBD
   - [ ] Documented API for public channels interaction.
   - [ ] Working examples for public channel interaction.
 
-#### Milestone 3: Private groups interaction
+#### Milestone 3: [Private groups interaction](Milestone3_PrivateChannels.md)
   - [ ] Ability to publish messages on private groups
   - [ ] Ability to subscribe to private groups
   - [ ] Ability to unsubscribe from a private groups
