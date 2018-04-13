@@ -38,9 +38,15 @@ Description: Login screen rendering and functionality
 
 Goal Date: 2018-04-09
 Description:
-- Upgrade react-native-desktop to react-native v.0.53.3 (since latest status-react expects  v.0.53.3 as well)
-- Investigate and implement possibility to not rely on Node.js installed system wide, but bundle it with react-native-desktop app distribution
-- Create runnable react-native-desktop app distribution (status-electron MVP based) for Ububntu, OS X and Windows.
+1. Upgrade react-native-desktop to react-native v.0.53.3 (since latest status-react expects  v.0.53.3 as well) (2018-04-09 update: Done)
+2. Investigate and implement possibility to not rely on Node.js installed system wide, but bundle it with react-native-desktop app distribution (2018-04-09 update: In-Progress)
+3. Create runnable react-native-desktop app distribution (status-electron MVP based) for Ububntu, OS X and Windows. (2018-04-09 update: Not started)
+
+### Iteration 2
+Goal Date: 2018-04-23
+1. react-native-desktop running with integrated JavaScriptCore engine instead Node.js on Ubuntu (continuation of Goal 2 from Iteration 1)
+2. Porting latest status-react to run on top of react-native-desktop. Work-in-progress. Resolve messages receiving and sending issues.
+3. Create runnable react-native-desktop app distribution (status-electron MVP based) for Ububntu, OS X and Windows.
 
 Goal Date: TODO
 Description: Integrate react-native-desktop into latest status-react sources with desktops screens available.

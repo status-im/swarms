@@ -72,11 +72,11 @@ Description:
 Goal Date: 2018-04-13
 
 Description:
-1. Change its name to something more appropriate as it does not manage multiple nodes,
-2. Rename methods indicating there is only support for one node: `StartNode -> Start`, `StopNode -> Stop` etc.
-3. Allow starting and stopping associated managers (`jail.Manager` and `transactions.Manager`).
+1. [x] [Change its name to something more appropriate as it does not manage multiple nodes](https://github.com/status-im/status-go/pull/803)
+2. [x] [Rename methods indicating there is only support for one node: `StartNode -> Start`, `StopNode -> Stop` etc.](https://github.com/status-im/status-go/pull/803)
+3. [x] [Unify EnsureSync on t/utils/utils.go and StatusManager](https://github.com/status-im/status-go/pull/806)
 
-### Iteration 6: A PR in status-react
+### Iteration 6: [A PR in status-react](https://github.com/status-im/status-react/pull/3826)
 Goal Date: 2018-04-13
 
 Description:
