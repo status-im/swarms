@@ -14,10 +14,9 @@ Economics-based anti-spam filter, in our case for receiving messages and “cold
 ## Swarm Participants
 - Lead Contributor: @richard-ramos
 - Testing & Evaluation: 
-- Contributor: 
-- Contributor: 
+- Contributor: @3esmit
 - PM:  @rachelhamlin
-- UX (if relevant): 
+- UX: @denis-sharypin
 
 
 ## Product Overview
