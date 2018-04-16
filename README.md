@@ -50,6 +50,8 @@ aborted.
 ## Draft :seedling: and limbo :question:
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?                 |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|-----------------------------------|
+| [150-gas-abstraction](ideas/150-gas-abstraction.md) | :seedling: Draft | :white_check_mark: Yes | :x: No | :x: No | - :white_check_mark: Yes |
+| [027-username-ens-subdomain](ideas/027-username-ens-subdomain.md)        | :seedling: Draft     | :x: No | :white_check_mark: Yes  | :x: No | - :white_check_mark: Yes |
 | [145-identity](ideas/145-identity.md) | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No | - :white_check_mark: Yes |
 | [94-wallet-compatibility](ideas/94-wallet-compatibility.md)       | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :white_check_mark: Yes | - :x: No               |
 | [134-seamless-login](ideas/134-seamless-login.md)               | :seedling: Draft          | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes                 | :white_check_mark: Yes         |
