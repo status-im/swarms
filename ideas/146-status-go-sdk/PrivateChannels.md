@@ -12,8 +12,8 @@ Interacting with private channels is complex than public channels as
 ### Ability to unsubscribe from a private groups
 **[ TBD ]**
 
-### Documented API for private groups interaction.
+### Documented API for private groups
 **[ TBD ]**
 
-### Working examples for private groups interaction.
+### Working examples for private groups interaction
 **[ TBD ]**

@@ -40,11 +40,11 @@ ch.Subscribe(func(m *sdk.Msg) {
 ```
 
 
-### Documented API for public channels interaction.
+### Documented API for public channels interaction
 
 This document can be adapted as a documentation for public channels interaction
 
 
-### Working examples for public channel interaction.
+### Working examples for public channel interaction
 
 Actually [here](https://github.com/status-im/status-go/blob/sdk/sdk/examples/) you'll find  an example of a "ping pong game".
