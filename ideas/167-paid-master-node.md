@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: XXX-paid-master-node
+    Idea: 167-paid-master-node
     Title: Paid master nodes
     Status: Draft
     Created: 2018-04-13
@@ -21,17 +21,18 @@ users.
 - Go Contributor: TBD
 - PM: TBD
 - UX(R): TBD
+- Community: @andytudhope
 
 ## Product Overview
 
-This idea takes of where https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md ended. It provides an SNT payment layer for usage of master nofdes.
+This idea takes of where https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md ended. It provides an SNT payment layer for usage of master nodes.
 
 > We want to make it easy to run a Whisper mail server (part of Whisper v5 API). This will archive messages and forward them to a peer upon request. You can run this yourself if you want to, but we’ll also provide default mail servers through our clusters, and make it easy for anyone to set one up. This can be paid using SNT, which aligns incentives in terms of Quality of Service.
 
 We need something users can do with their SNT, to realize the power of the
 technology and keep them interested.
 
-Currently offline inboxing is a free resource, subsidies and run by us. This is
+Currently offline inboxing is a free resource, subsidised and run by us. This is
 sub-optimal for many reasons, and goes against our vision of letting users pay
 for things they use, as well as incentivizing this capability to be
 decentralized.
@@ -44,7 +45,7 @@ well.
 
 - No one will pay for it.
 
-This is a free resource. If we want to subsidies it and the concern is people
+This is a free resource. If we want to subsidise it and the concern is people
   not wanting to stay / top up to use basic funcrtionality we can solve it by
   giving free SNT as part of SNT onboarding.
   
