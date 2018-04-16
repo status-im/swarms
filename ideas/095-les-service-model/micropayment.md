@@ -78,13 +78,14 @@
 - Needs the plasma chain block headers to be written to root chain
 - Submit the plasma chain blocks to the root chain on its every block
 - Any number of users in a plasma side chain
-- The root chain is involved into transaction for creating a side-chain, adding founds (deposit) and withdraws.
+- The root chain is involved into transaction for creating a side-chain, adding funds (deposit) and withdraws
 - Plasma: withdraw takes 7 days for confirmation
 - Plasma Cash: withdraw without any confirmation
 - Plasma Cash: the plasma chain + ERC721 unique identifiers for each token
 - Plasma Cash: sharded client-side validation
 - The implementation is going to be integrated to the Ethereum blockchain
-- If a block producer starts acting maliciously, a user can leave the child-chain with his or her funds
+- If a block producer starts acting maliciously, a user can leave the child-chain with his or her tokens. The user can publish a fraud proof to the root contract (valid previous and current states + invalid fraud state) and withdraw his or her tokens
+- Invalid exits can be challenged by any user with the token's data
 
 ##### Links
 
