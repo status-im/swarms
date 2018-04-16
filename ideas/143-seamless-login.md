@@ -37,7 +37,16 @@ For future iterations, this swarm will research the security implications and ex
 
 ### Security and Privacy Implications
 
-todo: Alwx
+Potentially, both Touch ID ("fingerprint authentication") and Face ID can improve security by allowing users to have stronger passwords (the current experience encourages to have a weak password). Of course, it has some disadvantages, but we're going to require passwords anyway for important operations, so the goal is to improve security anyway.
+Moreover, options like "Require authentication every time I open the application" will improve both security and privacy for sure – right now we ask password only in the case user was accidentally logged out.  
+
+Of course, there are some open questions:
+1) We should discuss options like requiring passwords to log in once in a while even if biometrical authentication is used;
+2) Screens like "Settings" or "Backup your Seed Phrase" should be protected by password anyway;
+3) We need to discuss the "level of freedom" – what should be the options? 
+4) How can we encrypt/decrypt Realm in the situation when we don't have a password?
+
+Answers to all these question will affect the possible security and privacy implications, but the first iteration will be dedicated to discussions about this topic.
 
 ### Iteration 1
 
