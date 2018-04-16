@@ -117,7 +117,7 @@ After iteration 1 is complete the swarm will meet and discuss the results of the
 
 ## Success Metrics
 
-95% of a group of users surveyed - who don't have additional context beyond Status providing a p2p IM capability - using the app for an extended period of time, should answer 'yes' to the question: "Do you trust Status to deliver messages for you?" (and possibly variants of this).
+95% of a group of 100 users surveyed - who don't have additional context beyond Status providing a p2p IM capability - using the app for an extended period of time, should answer 'yes' to the question: "Do you trust Status to deliver messages for you?" (and possibly variants of this).
 
 This is fundamentally a soft or qualitative goal. It is thus necessary but not necessarily sufficient, and additional harder numbers might be used as we develop the capability to measure this.
 
