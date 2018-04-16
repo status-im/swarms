@@ -13,15 +13,18 @@ Then submit a Pull Request in this repository.
 Ideas looking for people
 
 
-| Idea | Looking for | Swarm lead | In progress? | OKR prios |
-|------|-------------|------------|--------------|-----------|
-| #58  | Clojure dev | Adam       | Yes          | p1: p0    |
-| #145 | PM          | Ricardo    | No           |           |
-| #145 | UX          | Ricardo    | No           |           |
-| #151 | Clojure dev | Ricardo    | No           | p2: p0    |
+| Idea | Looking for | Swarm lead | In progress? | OKR prios      |
+|------|-------------|------------|--------------|----------------|
+| #58  | Clojure dev | Adam       | Yes          | p1: p0         |
+| #145 | PM          | Ricardo    | No           |                |
+| #145 | UX          | Ricardo    | No           |                |
+| #151 | Clojure dev | Ricardo    | No           | p2: p0         |
+| #167 | Clojure dev | Oskar      | No           | p1: p3, p2: p0 |
+| #167 | Go dev      | Oskar      | No           | p1: p3, p2: p0 |
+| #167 | QA          | Oskar      | No           | p1: p3, p2: p0 |
+>
 
-
-## Idea Registry
+# Idea Registry
 
 An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
@@ -30,28 +33,29 @@ aborted.
 
 ## In Progress :walking_man:
 
-| Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
-|---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|------------------------|
-| [127-sob-testing](ideas/127-SOB-testing-process.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [120-swarm-process](ideas/120-swarm-process/README.md)              | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [121-swarm-compensation](ideas/121-swarm-compensation/)             | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [92-disc-v5-research](ideas/92-disc-v5-research.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [87-new-protocol](ideas/87-new-protocol.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [83-energy-efficient](ideas/83-energy-efficient.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [80-onboarding](ideas/80-onboarding.md)                             | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [68-core-metrics](ideas/68-core-metrics.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [58-mainnet](ideas/58-mainnet.md)                                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [122-sob-metrics](ideas/122-sob-metrics.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [154-support-web3.js-library](ideas/154-support-web3.js-library.md) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [99-confidence](ideas/99-confidence.md)                           | :walking_man: In Progress | :white_check_mark: Yes                 | :white_check_mark: Yes                 | :white_check_mark: Yes                 | :white_check_mark: Yes                   |
-| [167-extended-automated-testing-for-continuous-delivery](ideas/167-extended-automated-testing-for-continuous-delivery)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [096-tribute-to-talk](ideas/96-message-tributes.md) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| Idea                                                                                                                   | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
+|------------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|------------------------|
+| [127-sob-testing](ideas/127-SOB-testing-process.md)                                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [120-swarm-process](ideas/120-swarm-process/README.md)                                                                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [121-swarm-compensation](ideas/121-swarm-compensation/)                                                                | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [92-disc-v5-research](ideas/92-disc-v5-research.md)                                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [87-new-protocol](ideas/87-new-protocol.md)                                                                            | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [83-energy-efficient](ideas/83-energy-efficient.md)                                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [80-onboarding](ideas/80-onboarding.md)                                                                                | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [68-core-metrics](ideas/68-core-metrics.md)                                                                            | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [58-mainnet](ideas/58-mainnet.md)                                                                                      | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [34-react-native-qt](ideas/34-react-native-qt.md)                                                                      | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)                                                        | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [122-sob-metrics](ideas/122-sob-metrics.md)                                                                            | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [154-support-web3.js-library](ideas/154-support-web3.js-library.md)                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [99-confidence](ideas/99-confidence.md)                                                                                | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [167-extended-automated-testing-for-continuous-delivery](ideas/167-extended-automated-testing-for-continuous-delivery) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [096-tribute-to-talk](ideas/96-message-tributes.md)                                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                              | State            | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?        |
 |-------------------------------------------------------------------|------------------|------------------------|------------------------|------------------------|--------------------------|
+| [167-paid-master-nodes](ideas/167-paid-master-node.md)            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
 | [150-gas-abstraction](ideas/150-gas-abstraction.md)               | :seedling: Draft | :white_check_mark: Yes | :x: No                 | :x: No                 | - :white_check_mark: Yes |
 | [027-username-ens-subdomain](ideas/027-username-ens-subdomain.md) | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
 | [145-identity](ideas/145-identity.md)                             | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
