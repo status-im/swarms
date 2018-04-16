@@ -5,7 +5,7 @@
 
     Idea: 76-smooth-ui
     Title: Make UI fast and smooth
-    Status: Limbo
+    Status: Aborted
     Created: 2018-01-24
     Requires (*optional): 87-new-protocol
 

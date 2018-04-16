@@ -1,7 +1,7 @@
 ## Preamble
-    Idea: <to be assigned>
+    Idea: 71-low-traffic
     Title: Low traffic consumption(technical)
-    Status: Limbo
+    Status: Aborted
     Created: 2018-01-25
 
 ## Summary
