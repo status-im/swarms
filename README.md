@@ -33,7 +33,7 @@ aborted.
 | Idea                                                                | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
 |---------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|------------------------|
 | [127-sob-testing](ideas/127-SOB-testing-process.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [120-swarm-process](ideas/120-swarm-process.md)                     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [120-swarm-process](ideas/120-swarm-process/README.md)              | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [121-swarm-compensation](ideas/121-swarm-compensation/)             | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [92-disc-v5-research](ideas/92-disc-v5-research.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [87-new-protocol](ideas/87-new-protocol.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
