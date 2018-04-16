@@ -130,6 +130,30 @@ One example of measuring success is to ensure there are Mixpanel events setup/cr
 It’s up to you! It's often useful to keep a public Google Doc with meeting notes that can be referred to later. As a swarm leader, it can be helpful to get someone else to act as note taker while you drive the agenda. This note taker role can also rotate among participants in the swarm.
 
 Another idea is to record decisions more formally, a la Architecture Recording Decisions.
+
+### Who can merge an idea?
+
+Anyone, as soon as they feel the idea has gone through sufficient review by the
+relevant people.
+
+### What does it mean for an idea to be approved merged as a draft?
+
+It just means an initial draft looks good enough to continue working on. It
+doesn't mean the idea is necessarily ready to start yet.
+
+### When does an idea turn into progress?
+
+Once the idea is well-defined, create an updated PR that reflects this state
+change and get buy-in from relevant peers. This depends on the specifics of the
+idea.
+
+For user facing swarms, this means PM/UX(R)/Eng consensus.
+
+### Who is the evaluator?
+
+For core contributors: by default, swarm lead acts as the evaluator.
+
+This role is evolving, especially in the context of #121.
   
 ### I have more questions / feedback
 
