@@ -40,7 +40,6 @@ aborted.
 | [83-energy-efficient](ideas/83-energy-efficient.md)                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [80-onboarding](ideas/80-onboarding.md)                             | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [68-core-metrics](ideas/68-core-metrics.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
-| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [58-mainnet](ideas/58-mainnet.md)                                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [34-react-native-qt](ideas/34-react-native-qt.md)                   | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
@@ -73,6 +72,7 @@ aborted.
 | [61-app-structure-refinement](ideas/61-app-structure-refinement.md) | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                  |
 | [3-erc20-token-support](ideas/3-erc20-token-support.md)             | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                  |
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                   | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                  |
+| [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)     | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                  |
 
 ## Commitment Registry
 
