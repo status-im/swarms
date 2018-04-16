@@ -12,7 +12,6 @@ Then submit a Pull Request in this repository.
 
 Ideas looking for people
 
-
 | Idea | Looking for | Swarm lead | In progress? | OKR prios      |
 |------|-------------|------------|--------------|----------------|
 | #58  | Clojure dev | Adam       | Yes          | p1: p0         |
@@ -22,16 +21,15 @@ Ideas looking for people
 | #167 | Clojure dev | Oskar      | No           | p1: p3, p2: p0 |
 | #167 | Go dev      | Oskar      | No           | p1: p3, p2: p0 |
 | #167 | QA          | Oskar      | No           | p1: p3, p2: p0 |
->
 
-# Idea Registry
+## Idea Registry
 
 An idea can be in the following states: draft, in progress, completed, or
 aborted. Additionally, it can be in limbo which is when it isn't clear what
 state it is in. An idea that has been in limbo for more than a week or so gets
 aborted.
 
-## In Progress :walking_man:
+### In Progress :walking_man:
 
 | Idea                                                                                                                   | State                     | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?      |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|------------------------|------------------------|------------------------|
@@ -51,8 +49,10 @@ aborted.
 | [99-confidence](ideas/99-confidence.md)                                                                                | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [167-extended-automated-testing-for-continuous-delivery](ideas/167-extended-automated-testing-for-continuous-delivery) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [096-tribute-to-talk](ideas/96-message-tributes.md)                                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [086-push-notif-v2](ideas/086-push-notif-v2/README.md)                                                                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 
-## Draft :seedling: and limbo :question:
+### Draft :seedling: and limbo :question:
+
 | Idea                                                              | State            | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?        |
 |-------------------------------------------------------------------|------------------|------------------------|------------------------|------------------------|--------------------------|
 | [167-paid-master-nodes](ideas/167-paid-master-node.md)            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
@@ -63,12 +63,11 @@ aborted.
 | [134-seamless-login](ideas/134-seamless-login.md)                 | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
 | [117-message-ordering](ideas/117-message-ordering.md)             | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :x: No                   |
 | [95-les-service-model](ideas/095-les-service-model/)              | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :x: no                   |
-| [86-push-notif-v2](ideas/86-push-notif-v2.md)                     | :seedling: Draft | :x: no                 | :x: no                 | :x: no                 | :x: no                   |
 | [146-status-go-sdk](ideas/146-status-go-sdk/)                     | :seedling: Draft | :white_check_mark: yes | :white_check_mark: yes | :x: no                 | :x: no                   |
 | [101-extensions](ideas/101-extensions)                            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                        |
 | [142-recovery-compatibility](ideas/142-recovery-compatibility)    | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                        |
 
-## Completed :champagne: and aborted :dagger:
+### Completed :champagne: and aborted :dagger:
 
 | Idea                                                                | State                 | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?  |
 |---------------------------------------------------------------------|-----------------------|------------------------|------------------------|------------------------|--------------------|
@@ -80,7 +79,7 @@ aborted.
 | [1-offline-inboxing](ideas/1-offline-inboxing.md)                   | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                  |
 | [63-refactor-geth-packages](ideas/63-refactor-geth-packages.md)     | :champagne: Completed | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                  |
 
-## Commitment Registry
+### Commitment Registry
 
 Over any given iteration, individuals can be committed to 0..N ideas. This
 registry captures this. It is only applied for In Progress swarms. This means it
@@ -90,18 +89,19 @@ progress again. This ensures the registry is kept up to date.
 | Contributor   |  Ideas |
 |---------------|--------|
 | @anna         |     58, 80, 87, 127 |
-| @adriacidre   | 63, 146     |
+| @adambabik    | 58, 63, 68, 92 |
+| @adriacidre   | 63, 146, 86 |
+| @alwx         | 134 |
 | @andmironov   | 68, 80, 134 |
 | @antdanchenko   | 167 |
-| @adambabik    | 58, 63, 68, 92 |
-| @alwx    | 134 |
+| @arash009 | 120, 122, 140 |
 | @asemiankevich | 87, 127, 134, 167 |
 | @cammellos    |     87, 99 |
 | @chadyj       | 68, 80, 87, 99, 134 |
 | @churik       |140, 127 |
 | @dmitryn      |     99 |
 | @dshulyak     |     63, 92 |
-| @feuGeneA     |     83 |
+| @EugeOrtiz    | 140 |
 | @flexsurfer   | 34, 80 |
 | @hesterbruikman |     80, 99, 134 |
 | @janherich    |     87 |
@@ -110,17 +110,17 @@ progress again. This ensures the registry is kept up to date.
 | @lukaszfryc   | 68, 83, 99 |
 | @mandrigin    |     83, 99 |
 | @martin       |    120 |
+| @martinklepsch | 140, 121 |
 | @MaxRis       |     34 |
 | @naghdy       |     120 |
+| @nastya       |     86 |
 | @nikitalukianov |     99 |
 | @oskarth      |    120, 121 |
+| @PombeirP     | 86 |
 | @rachelhamlin | 96, 151, 154 |
+| @rcullito     | 140 |
 | @serhy        | 87, 167     |
 | @themue       | 58, 92 |
 | @vkjr         |     34 |
-| @yenda        |     87 |
+| @yenda        | 87, 86 |
 | @yevh-berdnyk |     80, 167 |
-| @martinklepsch | 140, 121 |
-| @rcullito | 140 |
-| @EugeOrtiz | 140 |
-| @arash009 | 120, 122, 140 |
