@@ -59,9 +59,9 @@ The discovery protocol should be testable locally with Docker, but for some more
 Goal Date: 2018-04-27
 
 Description:
-1. All questions described in Product Description are researched and answered :white_check_mark:,
-1. It's possible to start `statusd` and Status App with DiscV5 enabled instead of static nodes (switch between them with a flag would be great) :white_check_mark: (:heavy_minus_sign: tested only with `statusd`),
-1. There is an automated way to collect CPU and network usage metrics in an isolated environment :white_check_mark:.
+1. All questions described in Product Description are researched and answered,
+1. It's possible to start `statusd` and Status App with DiscV5 enabled instead of static nodes (switch between them with a flag would be great),
+1. There is an automated way to collect CPU and network usage metrics in an isolated environment.
 
 #### Exit criteria
 
