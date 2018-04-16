@@ -50,21 +50,23 @@ Answers to all these question will affect the possible security and privacy impl
 
 ### Iteration 1
 
-Research security, technical, and UX implications of adding TouchID-like features in addition to the password.
+Perform some research:
+1) Think more of security and privacy implications; dicuss what exactly needs to be implemented and how;
+2) Discuss different technical aspects like encryption of Realm (look at react-native-keychain and PR [#3829](https://github.com/status-im/status-react/pulls/3829)) and libraries for biometric authentication;
+3) Think of possible restrictions of biometric authentication;
+4) Think of UX: Do we need any special onboarding screen or not? What exactly needs to be added to Settings and how should it look like?
 
 ### Iteration 2
 
-During onboarding give users the option to setup seamless authentication (if their device supports it) and use the device/OS conventions to enable, or skip. There will be a setting to manage this preference.
+1) Implement biometric authentication;
+2) Make all required changes to onboarding flow and Settings;
+3) Perform usability tests;
+4) Perform security analysis.
 
 ## Iteration 3
 
-Research crashes, logouts, and other related issues in Status. Some exploration has started [here#2869](https://github.com/status-im/status-react/issues/2869#issuecomment-376098196).
-
-Propose fixes that improve both security and usability.
-
-## Iteration 4
-
-Implement improves from iteration 3.
+1) Research crashes, logouts, and other related issues. Some exploration has started [here#2869](https://github.com/status-im/status-react/issues/2869#issuecomment-376098196).
+2) Propose fixes that improve both security and usability.
 
 
 ## Success Metrics
