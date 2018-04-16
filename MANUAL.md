@@ -136,7 +136,7 @@ Another idea is to record decisions more formally, a la Architecture Recording D
 Anyone, as soon as they feel the idea has gone through sufficient review by the
 relevant people.
 
-### What does it mean for an idea to be approved merged as a draft?
+### What does it mean for an idea to be approved and merged as a draft?
 
 It just means an initial draft looks good enough to continue working on. It
 doesn't mean the idea is necessarily ready to start yet.
@@ -154,6 +154,14 @@ For user facing swarms, this means PM/UX(R)/Eng consensus.
 For core contributors: by default, swarm lead acts as the evaluator.
 
 This role is evolving, especially in the context of #121.
+
+### How can we ensure PRs don't drag out and stay open for too long?
+
+General policy: 5-7 days means it is time to either merge or close a PR.
+
+Lazy consensus mechanism: If reviewers come with feedback that isn't addressed
+within a reasonable time frame, the PR can be closed. E.g.: feedback (48h) ping
+(48h) => close PR.
   
 ### I have more questions / feedback
 
