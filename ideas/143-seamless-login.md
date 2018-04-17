@@ -78,7 +78,7 @@ Perform some research:
 
 ## Exit criteria
 
-When iterations 1-4 are complete the success metrics should be evaluated. If the results are successful this swarm can be closed. If work is needed an additional iteration can be done to address shortcomings.
+When iterations are complete the success metrics should be evaluated. If the results are successful this swarm can be closed. If work is needed an additional iteration can be done to address shortcomings.
 
 ## Supporting Role Communication
 
