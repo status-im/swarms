@@ -93,7 +93,7 @@ A PR in status-react is created with updated status-go version.
 
 ## Summary after finish
 
-The first and second success metrics have been achieved. We managed to reduce dependencies between packages and get rid of `common` package. No change did negatively impact tests reliability and all tests pass properly. With regard to the third metric, we haven't implemented automated race conditions checks yet so it's hard to tell but there are no race condition issues reported so far.
+The first and second success metrics have been achieved. We managed to reduce dependencies between packages and get rid of `common` package. No change did negatively impact tests reliability and all tests pass properly. With regard to the third metric, we haven't implemented automated race condition checks yet so it's hard to tell but there are no race condition issues reported so far.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
