@@ -1,4 +1,1 @@
 _extends: probot-settings
-
-github-team:
-  slug: 'swarms'
