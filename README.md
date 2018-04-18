@@ -47,6 +47,7 @@ aborted.
 | [154-support-web3.js-library](ideas/154-support-web3.js-library.md) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [99-confidence](ideas/99-confidence.md)                           | :walking_man: In Progress | :white_check_mark: Yes                 | :white_check_mark: Yes                 | :white_check_mark: Yes                 | :white_check_mark: Yes                   |
 | [167-extended-automated-testing-for-continuous-delivery](ideas/167-extended-automated-testing-for-continuous-delivery)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [096-tribute-to-talk](ideas/96-message-tributes.md) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 
 ## Draft :seedling: and limbo :question:
 | Idea                                                              | State            | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?        |
@@ -109,6 +110,7 @@ progress again. This ensures the registry is kept up to date.
 | @naghdy       |     120 |
 | @nikitalukianov |     99 |
 | @oskarth      |    120, 121 |
+| @rachelhamlin | 96, 151, 154 |
 | @serhy        | 87, 167     |
 | @themue       | 58, 92 |
 | @vkjr         |     34 |
