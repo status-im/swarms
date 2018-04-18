@@ -1,8 +1,8 @@
 ## Preamble
 
     Idea: 63-refactor-geth-packages
-    Title: Refactor status-go node package
-    Status: In Progress
+    Title: Refactor status-go geth packages
+    Status: Done
     Created: 2017-12-20
 
 ## Summary
@@ -90,6 +90,10 @@ A PR in status-react is created with updated status-go version.
 ## Exit criteria
 1. All iterations are done. There is no threat that they can't be finished.
 1. New version of status-go is merged into `status-react` develop branch.
+
+## Summary after finish
+
+The first and second success metrics have been achieved. We managed to reduce dependencies between packages and get rid of `common` package. No change did negatively impact tests reliability and all tests pass properly. With regard to the third metric, we haven't implemented automated race condition checks yet so it's hard to tell but there are no race condition issues reported so far.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
