@@ -2,7 +2,7 @@
 
     Idea: 96
     Title: Tribute to Talk
-    Status: Draft
+    Status: In Progress
     Created: 2018-03-20
     Requires (*optional): TBD
 
