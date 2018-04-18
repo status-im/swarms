@@ -1,0 +1,33 @@
+ digraph ladder {
+  ranksep=".5"; nodesep="1"; splines="line";
+
+  node [shape=point fontsize=10];
+  edge [dir=none fontsize=10];
+
+  // Column labels
+  a [shape=Square label="Contact A"];
+  w [shape=Square label="Notification Server"];
+  b [shape=Square label="Contact B"];
+
+  // Draw the 3 column headings, no line
+  { rank=same; edge[style=invis] a -> w -> b   }
+
+  // Draw the columns
+  a -> a1 [style=dotted weight=1000];
+  w -> w1 [style=dotted];
+  b -> b1 [style=dotted weight=1000];
+
+  a1 -> a2 -> a3 -> a4 -> a5 [weight=1000];
+  a3 [xlabel="Contact A wants\nto send a message\nto Contact B" weight=1000];
+  w1 -> w2 -> w3 -> w4 -> w5 [weight=1000];
+  b1 -> b2 -> b3 -> b4 -> b5 [weight=1000];
+
+  // Now each step in the ladder
+  { rank=same; a1 -> w1 [dir=forward label="Requests topic\nfor notifications\nto Contact B"]  }
+  { rank=same; a2 -> w2 [dir=back label="Replies with its Whisper topic"]  }
+  { rank=same;
+    w3 [shape=none style=invis width=0 height=0 label=""]
+    a3 -> w3;
+    w3 -> b3 [dir=forward label="Sends message\nwith agreed topic"]  }
+  { rank=same; a4 -> w4 [dir=forward label="Sends message using topic received"]  }
+ }

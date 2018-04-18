@@ -1,10 +1,9 @@
 ## Preamble
 
-    Idea: 86
+    Idea: 086
     Title: Push Notifications v2
     Status: Draft
     Created: 2018-03-01
-    Requires: [#87](https://github.com/status-im/ideas/issues/87)
     Q2 Objective: 1.2
 
 ## Summary
@@ -13,13 +12,11 @@ The [current push notification system](https://docs.google.com/document/d/1OgjnY
 
 ## Swarm Participants
 
-- Lead Contributor: @PombeirP (~25h)
-- Testing & Evaluation: TBD
-- Contributor (Go): @adriacidre
+- Lead Contributor: @PombeirP (~20h/week)
+- Testing & Evaluation: @nastya
+- Contributor (Go): @adriacidre (24h/week)
 - Contributor (Clojure): @yenda
-- Contributor (QA): TBD
-- PM: TBD
-- UX: TBD
+- Contributor (QA): @nastya
 
 ## Product Overview
 
@@ -46,9 +43,13 @@ We want to end up with a notification system which works on as many devices as p
 
 We also want a solution that doesn’t involve talking directly to the notification provider, as that would require keeping authentication elements embedded in the app (currently the case), and might expose us to quota theft.
 
+### Flow Diagram
+
+![Alt text](https://g.gravizo.com/source/svg?https%3A%2F%2Fraw.githubusercontent.com%2Fstatus-im%2Fideas%2Fmaster%2Fideas%2F086-push-notif-v2%2Fdiagram.dot)
+
 ### Goals
 
-At a high-level, we want to move up the current solution a notch regarding some of the critical qualities mentioned in the [Product Overview](#Product_Overview) which are currently lagging behind. The specific steps to reach that goal are:
+At a high-level, we want to move up the current solution a notch regarding some of the critical qualities mentioned in the [Product Overview](#product-overview) which are currently lagging behind. The specific steps to reach that goal are:
 
 - Improve usability of notifications by:
   - Allowing the app to match a push notification with a specific chat message. That way we can:
@@ -79,27 +80,27 @@ There are undoubtedly enough issues identified to span several months of effort,
 
 With that in mind, the exit criteria are as follows:
 
-- The swarm has addressed all `P0` and `P1` goals mentioned in the [goals](#Goals) section.
+- The swarm has addressed all `P0` and `P1` goals mentioned in the [goals](#goals) section.
 
 ## Success Metrics
 
 KRs:
 
 - 100% of the messages that should generate a notification on the receiving device do so within 15 seconds, under different network conditions (i.e. Wi-Fi, cellular).
-- TODO performance metrics? (e.g. device sleep improvements, network traffic).
+- Network and battery consumption values are same or less than current values.
 
 ## MVP(s)
 
 - Single notification provider phase:
-  - Iteration 1: Show more information on notification (date: *TBD*)
+  - Iteration 1: Show more information on notification (date: Beginning Of Work/BOW + 2w)
     - Send only envelope hash on PN to destination device so that it knows to refresh messages and to match them to the notification.
     - Update message body from retrieved Whisper message.
-  - Iteration 2: Implement notification server mode on `statusd` (date: *TBD*)
+  - Iteration 2: Implement notification server mode on `statusd` (date: BOW + 4w)
     - Connects to FCM, only 1 instance, no load-balancing.
     - Add logic to statusd (accept special P2P messages from clients, and trigger notifications in response).
     - Deploy service with Ansible.
     - Change client so that it communicates with notification server to send notifications indirectly to contact.
-  - Iteration 3: Support simple deep-linking (date: *TBD*)
+  - Iteration 3: Support simple deep-linking (date: BOW + 6w)
     - Open respective chat when taping on a notification.
     - Hide notification when the user views the respective message in chat.
   - Iteration X: TBD
@@ -115,6 +116,7 @@ TBD
 - [v1 Push notifications proposal](https://docs.google.com/document/d/1OgjnY8ps8lVA4dIohwkfGK9HVt0nZxEWbuNdb7BX5-o/edit#)
 - [Whisper Push Notifications wiki](https://github.com/status-im/status-go/wiki/Whisper-Push-Notifications)
 - [Work notes](https://docs.google.com/document/d/1TCeTY77fCGHqAseWkH74P0mk7PF8DGXN7xvbYqodnTI/edit#)
+- [Gorush, a push notification server written in Go](https://github.com/appleboy/gorush)
 
 ## Copyright
 
