@@ -1,3 +1,23 @@
+---
+id: 167-automated-testing
+title: Functional automated testing as a part of Continuous Delivery process
+status: Active
+created: 2018-04-12
+category: core
+lead-contributor: antdanchenko
+contributors:
+    - antdanchenko
+    - yevh-berdnyk
+    - lukaszfryc
+    - Serhy
+    - asemiankevich
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
 ## Preamble
 
     Idea: 167

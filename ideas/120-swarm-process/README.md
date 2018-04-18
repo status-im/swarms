@@ -1,3 +1,20 @@
+---
+id: 120-swarm-process
+title: Formalize swarm process
+status: Active
+created: 2018-04-02
+category: meta
+contributors:
+    - martinklepsch
+    - oskarth
+    - naghdy
+    - arash009
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+---
+
 ## Preamble
 
     Idea: 120-swarm-process

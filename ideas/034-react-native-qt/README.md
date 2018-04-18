@@ -1,3 +1,26 @@
+---
+id: 34-react-native-qt
+title: Extend react-native-desktop to support status-react Desktop functionality
+status: Active
+created: 2017-11-22
+category: core
+lead-contributor: MaxRis
+contributors:
+    - MaxRis
+    - vkjr
+    - flexsurfer
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+    - PM
+okrs:
+    - "[P3] Objective: Status is used everyday internally"
+    - "[P0] KR: 80% of core contributors use Status (mobile or desktop) every workday"
+    - "[P3] KR: 10% more usage of Status Desktop than Slack"
+---
+
 ## Preamble
 
     Idea: #34-react-native-qt

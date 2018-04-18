@@ -1,3 +1,26 @@
+---
+id: 58-mainnet
+title: Use Mainnet as the default network
+status: Active
+created: 2017-12-08
+category: core
+contributors:
+    - adambabik
+    - annadanchenko
+    - themue
+    - rasom
+    - chadyj
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+    - Clojure dev
+okrs:
+   - "[P1]: Objective: Beta is launched successfully"
+   - "[P0]: KR: 5k daily active users"
+---
+
 ## Preamble
 
     Idea: 58-mainnet-default
@@ -11,11 +34,11 @@ Alpha builds of Status should default to Mainnet. We should be using Status in a
 
 ## Swarm Participants
 
-- Lead Contributor: @adambabik
-- Testing & Evaluation: @annadanchenko
-- Contributor: @themue
-- Contributor: @roman (supportive role; still in need of one Clojure dev)
-- PM: @chadyj
+- Lead Contributor: adambabik
+- Testing & Evaluation: annadanchenko
+- Contributor: themue
+- Contributor: roman (supportive role; still in need of one Clojure dev)
+- PM: chadyj
 
 ## Product Overview
 
@@ -69,4 +92,3 @@ Goal Date: 2018-04-??
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-

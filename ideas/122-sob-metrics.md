@@ -1,3 +1,20 @@
+---
+id: 122-sob-metrics
+title: Open Bounty - Platform Usage Metrics
+status: Active
+created: 2018-04-04
+category: openbounty
+lead-contributor: arash009
+ontributors:
+    - arash009
+    - siphiuel
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
 ## Preamble
 
     Idea: 122-sob-metrics
