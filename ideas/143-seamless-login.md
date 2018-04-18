@@ -29,7 +29,7 @@ This idea seeks to make logging in seamless through both technical and UX method
 
 ### Product Description
 
-The Status login process should smooth as possible, and this can be achieved with the (optional) use of device security features such as Touch ID or a pin code. In addition to the password prompt, a user can use choose to securely use their fingerprint. This will be set up during onboarding and toggled in settings.
+The Status login process should smooth as possible, and this can be achieved with the (optional) use of device security features such as Touch ID or a pin code. In addition to the password prompt, a user can choose to securely use their fingerprint. This will be set up during onboarding and toggled in settings.
 
 Note, all transactions require authentication, so even if the phone was lost or stolen a third party couldn’t transfer funds. This idea does not cover the transaction flow.
 
@@ -42,7 +42,7 @@ Moreover, options like "Require authentication every time I open the application
 
 Of course, there are some open questions:
 1) We should discuss options like requiring passwords to log in once in a while even if biometrical authentication is used;
-2) Screens like "Settings" or "Backup your Seed Phrase" should be protected by password anyway;
+2) Screens like "Settings" or "Backup your Seed Phrase" should be protected by a password?;
 3) We need to discuss the "level of freedom" – what should be the options? 
 4) How can we encrypt/decrypt Realm in the situation when we don't have a password?
 
