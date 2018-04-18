@@ -45,6 +45,7 @@ aborted.
 | [140-sob-improve-onboarding](ideas/140-sob-improve-onboarding/)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [122-sob-metrics](ideas/122-sob-metrics.md)                         | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [154-support-web3.js-library](ideas/154-support-web3.js-library.md) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [99-confidence](ideas/99-confidence.md)                           | :walking_man: In Progress | :white_check_mark: Yes                 | :white_check_mark: Yes                 | :white_check_mark: Yes                 | :white_check_mark: Yes                   |
 | [167-extended-automated-testing-for-continuous-delivery](ideas/167-extended-automated-testing-for-continuous-delivery)     | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 
 ## Draft :seedling: and limbo :question:
@@ -56,7 +57,6 @@ aborted.
 | [94-wallet-compatibility](ideas/94-wallet-compatibility.md)       | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :white_check_mark: Yes | - :x: No                 |
 | [134-seamless-login](ideas/134-seamless-login.md)                 | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
 | [117-message-ordering](ideas/117-message-ordering.md)             | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :x: No                   |
-| [99-confidence](ideas/99-confidence.md)                           | :seedling: Draft | :x: no                 | :x: no                 | :x: no                 | :x: no                   |
 | [95-les-service-model](ideas/095-les-service-model/)              | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :x: no                   |
 | [86-push-notif-v2](ideas/86-push-notif-v2.md)                     | :seedling: Draft | :x: no                 | :x: no                 | :x: no                 | :x: no                   |
 | [146-status-go-sdk](ideas/146-status-go-sdk/)                     | :seedling: Draft | :white_check_mark: yes | :white_check_mark: yes | :x: no                 | :x: no                   |
@@ -91,20 +91,23 @@ progress again. This ensures the registry is kept up to date.
 | @adambabik    | 58, 63, 68, 92 |
 | @alwx    | 134 |
 | @asemiankevich | 87, 127, 134, 167 |
-| @cammellos    |     87 |
+| @cammellos    |     87, 99 |
 | @chadyj       | 68, 80, 87, 99, 134 |
 | @churik       |140, 127 |
+| @dmitryn      |     99 |
 | @dshulyak     |     63, 92 |
 | @feuGeneA     |     83 |
 | @flexsurfer   | 34, 80 |
-| @hester       |     80, 134 |
+| @hesterbruikman |     80, 99, 134 |
 | @janherich    |     87 |
 | @jeluard      | 68, 101 |
-| @lukaszfryc   | 68, 83, 167 |
-| @mandrigin    |     83 |
+| @jpbowen      |     99 |
+| @lukaszfryc   | 68, 83, 99 |
+| @mandrigin    |     83, 99 |
 | @martin       |    120 |
 | @MaxRis       |     34 |
 | @naghdy       |     120 |
+| @nikitalukianov |     99 |
 | @oskarth      |    120, 121 |
 | @serhy        | 87, 167     |
 | @themue       | 58, 92 |
