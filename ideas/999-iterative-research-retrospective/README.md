@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: #999-iterative-resear-retrospective
+    Idea: #999-iterative-research-retrospective
     Title: Establish a self-learning research process
     Status: Draft
     Created: 2018-04-19
