@@ -51,6 +51,7 @@ aborted.
 | [096-tribute-to-talk](ideas/96-message-tributes.md)                                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [086-push-notif-v2](ideas/086-push-notif-v2/README.md)                                                                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [101-extensions](ideas/101-extensions)                                                                                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
+| [170-wallet-improvements](ideas/170-wallet-improvements.md)                                                            | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 
 ### Draft :seedling: and limbo :question:
 
