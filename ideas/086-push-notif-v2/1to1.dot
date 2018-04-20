@@ -1,0 +1,76 @@
+digraph ladder {
+  ranksep="0.5"; nodesep="0.5"; splines="line"; ratio="0.5";
+
+  node [shape=point fontsize=10 fontname="Helvetica"];
+  edge [dir=none fontsize=10 fontname="Helvetica"];
+
+  // Column labels
+  a [shape=Square label="Contact A" style=filled color=lightblue];
+  w1 [shape=Square label="Arbitrary\nNotification Server"];
+  p [shape=Square label="Notification platform\n(e.g. FCM, Pushy)" style=filled color=lightgray];
+  b [shape=Square label="Contact B" style=filled color=lightgreen];
+
+  // Draw the 3 column headings, no line
+  { rank=same; edge[style=invis] a -> w1 -> b -> p   }
+
+  // Force rows to stay aligned
+  { rank=same; edge[style=invis] a2 -> w1_2 -> b2 -> p2   }
+  { rank=same; edge[style=invis] a3 -> w1_3 -> b3 -> p3   }
+
+  // Draw the columns
+  a -> a1 [style=dotted weight=1000];
+  w1 -> w1_1 [style=dotted weight=1000];
+  p -> p1 [style=dotted weight=1000];
+  b -> b1 [style=dotted weight=1000];
+
+  // Draw the vertical lines
+  a1 -> a2 -> a3 [weight=1000] a3 -> a4 -> a5 -> a6 [style=dotted weight=1000] a6 -> a7 -> a8 -> a9 -> a10 -> a11 [weight=1000] a11 -> amax [style=dotted weight=1000];
+  w1_1 -> w1_2 [weight=1000] w1_3 -> w1_4 -> w1_5 -> w1_6 [style=dotted weight=1000] w1_6 -> w1_7 -> w1_8 -> w1_9 -> w1_10 -> w1_11 [weight=1000] w1_11 -> w1_max [style=dotted weight=1000];
+  p1 -> p2 -> p3 -> p4 -> p5 -> p6 -> p7 -> p8 -> p9 -> p10 [style=dotted weight=1000] p10 -> p11 [weight=1000] p11 -> pmax [style=dotted weight=1000];
+  b1 -> b2 [style=dotted weight=1000] b2 -> b3 -> b4 -> b5 -> b6 [style=dotted weight=1000] b6 -> b7 -> b8 -> b9 -> b10 -> b11 [weight=1000] b11 -> bmax [style=dotted weight=1000 label="   App retrieves historic messages\nand matches ID"];
+  amax, w1_max, pmax, bmax [style=invis]
+
+  // Hide unused points
+  a5, b1, b2, b3, b4, b5, w1_5, p1, p2, p3, p4, p5, p6, p7, p8, p9 [style=invis height=0];
+
+  // Now each step in the ladder
+  { rank=same; a1 -> w1_1 [dir=back label="Broadcasts availability to serve\nas notification server (1)"]  }
+  { rank=same; w1_1 -> b1 [dir=forward label="Broadcasts availability to serve\nas notification server (1)"]  }
+
+  a2 -> w1_2 [dir=forward label="Sends anonymous Whisper message for registration request,\npassing device registration token and secure channel (SK1) (2)"];
+
+  w1_2 -> w1_3 [label="   Stores data for Contact A\n   (device registration token, SK1)\nCreates AK2" weight=1000];
+  a3 -> w1_3 [dir=back label="Sends message over SK1 channel\naccepting request, and passing pubkey of AK2"]
+
+  a4 [label="" shape=none width=0 height=0 xlabel="Stores pubkey of AK2.\nAt this point Contact A and\n Arbitrary Notification Server #1   \ncan communicate securely,\nusing keys exchanged with server   "];
+  { rank=same; w1_4 -> b4 [dir=both label="Negotiation with PN servers,\nsame process as above for Contact A (...)"]  }
+
+  a6 [xlabel="Contact A starts chat  \nwith Contact B"];
+  { rank=same; a6 -> b6 [dir=forward label="[NewContactKey]: Sends a contact request\nin the discovery topic, using B's public key for encryption\nand passing the new symkey that will be used for further comms.\nNEW: contains A's AK2 pubkey"]  }
+
+  { rank=same; a7 -> b7 [dir=back label="[ContactRequestConfirmed]: Responds to contact request.\nNEW: response contains B's AK2 pubkey"]  }
+
+  a8 [xlabel="Contact A wants\nto send a message  \nto Contact B"];
+  { rank=same;
+    a8 -> b8 [dir=forward label="Sends message using common random topic"]  }
+
+  { rank=same;
+    a9 -> w1_9 [dir=forward label="Sends message over SK1 requesting a notification\nto Contact B passing B's AK2 pubkey over pre-defined topic"] }
+
+  { rank=same;
+    w1_10 -> p10 [dir=forward label="Requests notification to be sent to Contact B's device\nusing stored device registration token"] }
+
+  { rank=same;
+    b11 -> p11 [dir=back label="Sends a data push notification to Contact B's device\ncontaining hash of message payload as an ID"] }
+
+  // Add empty space at the bottom before legend
+  amax -> legend [style=invis weight=1000];
+
+  // Legend
+  { legend [shape=plaintext label=<
+  <table border="0" cellborder="0" cellspacing="0">
+    <tr><td align="left">(1) Communication is done over a discovery topic provided by Status to the PN providers.<br align="left"/>       Message includes pubkey of server's encryption key (AK1).<br align="left"/></td></tr>
+    <tr><td align="left">(2) Channel = random symmetric key + topic to have encrypted communication between peers
+.<br align="left"/></td></tr>
+  </table>>] }
+ }
