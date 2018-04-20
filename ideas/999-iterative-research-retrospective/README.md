@@ -7,12 +7,12 @@
 
 ## Summary
 
-Modern development processes often use some kind of agile process, e.g. Scrum. Core of all those
-processes is to act in iterations, review those, learn from succuess and failures, improve, and
-start the next iteration. Opposite to this research often is focussed on an explorative journey
-towards their goals.
+Many modern software development projects use some kind of agile process, e.g. Scrum. Core 
+of all those processes is to act in iterations, review those, learn from success and failures,
+improve, and start the next iteration. Opposite to this research often is more like an
+explorative journey, focussed on findings but seldom on production-like processes.
 
-This swarm is focussed on the establishment of a similar iterative-incremental process in research.
+This swarm wants to establish an iterative-incremental process in research.
 
 ## Swarm Participants
 
@@ -22,7 +22,36 @@ This swarm is focussed on the establishment of a similar iterative-incremental p
 
 ## Process Overview
 
-- TBD
+Right now research swarms are pretty independent working on different topics with different
+technologies. Answering the following questions shall help to come to a common process
+improving the work in research.
+
+#### Q: How can the different swarms benefit from each other?
+
+**A:** TBD
+
+*Compare isolated swarm iterations to common research iterations.*
+
+#### Q: What kind of questions shall be answered during the retrospectives?
+
+**A:** TBD
+
+#### Q: How shall the results of the retrospectives be documented?
+
+**A:** TBD
+
+*Compare wiki, repository, Google Docs, external solutions.*
+
+#### Q: How can the effect of retrospectives on the research be measured?
+
+**A:** TBD
+
+#### Q: Do iterative-incremental processes consort with research?
+
+**A:** TBD
+
+*Answering the final question if and how an iterative-incremental process also
+helps research or if other ways could support work of research more.*
 
 ### Minimum Viable Product
 
@@ -35,13 +64,13 @@ Description:
 - [ ] Establishing of iterations with documented reviews
 - [ ] Report of experiences with research process
 
-## Artifacts
+## Artefacts
 
 - not yet
 
 ## Success Metrics
 
-An learning process for the continous improvement is documented and established.
+A research process supporting the continuous improvement is documented and established.
 
 ## Copyright
 

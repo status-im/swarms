@@ -1,11 +1,10 @@
-## Preamble
+# Meta
 
-    Idea: 86
+    Idea: 086
     Title: Push Notifications v2
-    Status: Draft
+    Status: In Progress
     Created: 2018-03-01
-    Requires: [#87](https://github.com/status-im/ideas/issues/87)
-    Q2 Objective: 1.2
+    Q2 Objective: #core 1.2
 
 ## Summary
 
@@ -13,13 +12,10 @@ The [current push notification system](https://docs.google.com/document/d/1OgjnY
 
 ## Swarm Participants
 
-- Lead Contributor: @PombeirP (~25h)
-- Testing & Evaluation: TBD
-- Contributor (Go): @adriacidre
-- Contributor (Clojure): @yenda
-- Contributor (QA): TBD
-- PM: TBD
-- UX: TBD
+- Lead Contributor: @PombeirP (~20h/week)
+- Testing & Evaluation: @nastya
+- Contributor (Go): @adriacidre (24h/week)
+- Contributor (Clojure): @yenda (20h/week)
 
 ## Product Overview
 
@@ -46,9 +42,15 @@ We want to end up with a notification system which works on as many devices as p
 
 We also want a solution that doesn’t involve talking directly to the notification provider, as that would require keeping authentication elements embedded in the app (currently the case), and might expose us to quota theft.
 
+### Flow Diagram (1:1 chat)
+
+![Alt text](https://g.gravizo.com/source/svg?https%3A%2F%2Fraw.githubusercontent.com%2Fstatus-im%2Fideas%2Fmaster%2Fideas%2F086-push-notif-v2%2F1to1.dot)
+
+For group chats, the flow is similar, but it's the chat admin which ensures that each chat member gets a notification channel for every other chat member. Notifications from chat members who left/were removed should be ignored.
+
 ### Goals
 
-At a high-level, we want to move up the current solution a notch regarding some of the critical qualities mentioned in the [Product Overview](#Product_Overview) which are currently lagging behind. The specific steps to reach that goal are:
+At a high-level, we want to move up the current solution a notch regarding some of the critical qualities mentioned in the [Product Overview](#product-overview) which are currently lagging behind. The specific steps to reach that goal are:
 
 - Improve usability of notifications by:
   - Allowing the app to match a push notification with a specific chat message. That way we can:
@@ -68,10 +70,13 @@ At a high-level, we want to move up the current solution a notch regarding some 
 
 ### Requirements & Dependencies
 
-- [status-im/ideas#87](https://github.com/status-im/ideas/issues/87): In order to build on a stable foundation, we should make sure we start addressing this after the new communication protocol has landed.
 - [status-im/status-react#3451](https://github.com/status-im/status-react/issues/3451): Preview notifications using background app refresh.
 - [status-im/status-react#3488](https://github.com/status-im/status-react/issues/3488): Clicking message notification does not open the chat
 - [status-im/status-react#3487](https://github.com/status-im/status-react/issues/3487): Notifications about previous messages should disappear when chat is opened
+
+### Security and Privacy Implications
+
+- It is possible for a third-party to easily exhaust the capacity of a Push Notification server by organizing a distributed attack to consume all the available slots. This should be resolved with paid notification servers.
 
 ## Exit criteria
 
@@ -79,32 +84,53 @@ There are undoubtedly enough issues identified to span several months of effort,
 
 With that in mind, the exit criteria are as follows:
 
-- The swarm has addressed all `P0` and `P1` goals mentioned in the [goals](#Goals) section.
+- The swarm has addressed all `P0` and `P1` goals mentioned in the [goals](#goals) section.
 
 ## Success Metrics
 
 KRs:
 
 - 100% of the messages that should generate a notification on the receiving device do so within 15 seconds, under different network conditions (i.e. Wi-Fi, cellular).
-- TODO performance metrics? (e.g. device sleep improvements, network traffic).
+- Network and battery consumption values are same or less than current values.
 
-## MVP(s)
+## Dates
 
-- Single notification provider phase:
-  - Iteration 1: Show more information on notification (date: *TBD*)
-    - Send only envelope hash on PN to destination device so that it knows to refresh messages and to match them to the notification.
-    - Update message body from retrieved Whisper message.
-  - Iteration 2: Implement notification server mode on `statusd` (date: *TBD*)
-    - Connects to FCM, only 1 instance, no load-balancing.
-    - Add logic to statusd (accept special P2P messages from clients, and trigger notifications in response).
-    - Deploy service with Ansible.
-    - Change client so that it communicates with notification server to send notifications indirectly to contact.
-  - Iteration 3: Support simple deep-linking (date: *TBD*)
-    - Open respective chat when taping on a notification.
-    - Hide notification when the user views the respective message in chat.
-  - Iteration X: TBD
-- "Multiple notification provider" phase:
-  - TBD
+### Minimum Viable Product
+
+Goal Date: 2018-05-07
+
+Description: Show more information on notification
+
+- Send only envelope hash on PN to destination device so that it knows to refresh messages and to match them to the notification.
+- Update message body from retrieved Whisper message.
+
+### Iteration 1
+
+Goal Date: 2018-05-21
+
+Description: Implement notification server mode on `statusd`
+
+- Connects to FCM, only 1 instance, no load-balancing.
+- Add logic to statusd (accept special P2P messages from clients, and trigger notifications in response).
+- Deploy service with Ansible.
+- Change client so that it communicates with notification server to send notifications indirectly to contact.
+
+### Iteration 2
+
+Goal Date: 2018-06-04
+
+Description: Support simple deep-linking
+
+- Open respective chat when taping on a notification.
+- Hide notification when the user views the respective message in chat.
+
+### Iteration 3
+
+Goal Date: TBD
+
+Description: TBD
+
+<!-- "Multiple notification provider" phase -->
 
 ## Supporting Role Communication
 
@@ -115,6 +141,7 @@ TBD
 - [v1 Push notifications proposal](https://docs.google.com/document/d/1OgjnY8ps8lVA4dIohwkfGK9HVt0nZxEWbuNdb7BX5-o/edit#)
 - [Whisper Push Notifications wiki](https://github.com/status-im/status-go/wiki/Whisper-Push-Notifications)
 - [Work notes](https://docs.google.com/document/d/1TCeTY77fCGHqAseWkH74P0mk7PF8DGXN7xvbYqodnTI/edit#)
+- [Gorush, a push notification server written in Go](https://github.com/appleboy/gorush)
 
 ## Copyright
 

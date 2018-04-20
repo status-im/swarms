@@ -105,39 +105,45 @@ Testing Days required: TBD
 
 ## Success Metrics
 
-#### Milestone 1: [Status messaging basic interaction](Milestone1_BasicSDK.md)
-  - [ ] Setup a new connection
-  - [ ] Ability to close a specific connection
-  - [ ] Ability to change connection configuration
-  - [ ] Ability to sign up on the platform
-  - [ ] Ability to login as a specific account
-  - [ ] Documented API for basic sdk interaction
+#### Milestone 1: [Status messaging basic interaction](BasicSDK.md)
+  - [ ] [Setup a new connection](BasicSDK.md#setup-a-new-connection)
+  - [ ] [Ability to close a specific connection](BasicSDK.md#ability-to-close-a-specific-connection)
+  - [ ] [Ability to change connection configuration](BasicSDK.md#ability-to-change-connection-configuration)
+  - [ ] [Ability to sign up on the platform](BasicSDK.md#ability-to-sign-up-on-the-platform)
+  - [ ] [Ability to login as a specific account](BasicSDK.md#ability-to-login-as-a-specific-account)
+  - [ ] [Documented API for basic sdk interaction](BasicSDK.md#documented-api-for-basic-sdk-interaction)
 
-#### Milestone 2: [Public channels interaction](Mileston2_PublicChannels.md)
-  - [ ] Ability to join public channels
-  - [ ] Ability to publish messages on public channels
-  - [ ] Ability to subscribe to public channels
-  - [ ] Ability to unsubscribe from a public channel
-  - [ ] Documented API for public channels interaction.
-  - [ ] Working examples for public channel interaction.
+#### Milestone 2: [Public channels interaction](PublicChannels.md)
+  - [ ] [Ability to join public channels](PublicChannels.md#ability-to-join-public-channels)
+  - [ ] [Ability to publish messages on public channels](PublicChannels.md#ability-to-publish-messages-on-public-channels)
+  - [ ] [Ability to subscribe to public channels](PublicChannels.md#ability-to-subscribe-to-publc-channels)
+  - [ ] [Ability to unsubscribe from a public channel](PublicChannels.md#ability-to-unsubscribe-from-a-public-channel)
+  - [ ] [Documented API for public channels interaction](PublicChannels.md#documented-api-for-public-channels-interaction)
+  - [ ] [Working examples for public channel interaction](PublicChannels.md#working-examples-for-public-channel-interaction)
 
-#### Milestone 3: [Private groups interaction](Milestone3_PrivateChannels.md)
-  - [ ] Ability to publish messages on private groups
-  - [ ] Ability to subscribe to private groups
-  - [ ] Ability to unsubscribe from a private groups
-  - [ ] Documented API for private groups interaction.
-  - [ ] Working examples for private groups interaction.
+### Milestone 3: [Contact management](ContactManagement.md)
+  - [ ] [Invite new contact](ContactManagement.md#invite-new-contact)
+  - [ ] [Accept a contact request](ContactManagement.md#accept-contact-request)
 
-#### Milestone 4: 1 to 1 messages interaction
-  - [ ] Ability to send 1 to 1 conversation
-  - [ ] Ability to subscribe to 1 to 1 conversation
-  - [ ] Ability to unsubscribe from a 1 to 1 conversation
-  - [ ] Documented API for 1 to 1 conversations
-  - [ ] Working examples for 1 to 1 conversations
 
-#### Milestone 5: Extra methods
+#### Milestone 4: [1 to 1 messages interaction](1to1Channels.md)
+  - [ ] TBD : [Ability to send 1 to 1 conversation](1to1Channels.md#ability-to-send-1-to-1-conversation)
+  - [ ] TBD : [Ability to subscribe to 1 to 1 conversation](1to1Channels.md#ability-to-subscribe-1-to-1-conversation)
+  - [ ] TBD : [Ability to unsubscribe from a 1 to 1 conversation](1to1Channels.md#ability-to-unsubscribe-1-to-1-conversation)
+  - [ ] TBD : [Documented API for 1 to 1 conversation](1to1Channels.md#documented-api-for-1-to-1-conversations)
+  - [ ] TBD : [Working examples for 1 to 1 conversations](1to1Channels.md#working-examples-for-1-to-1-conversations)
+
+#### Milestone 5: [Private groups interaction](PrivateChannels.md)
+  - [ ] TBD : [Ability to publish messages on private groups](PrivateChannels.md#ability-to-publish-messages-on-private-groups)
+  - [ ] TBD : [Ability to subscribe to private groups](PrivateChannels.md#ability-to-subscribe-to-private-groups)
+  - [ ] TBD : [Ability to unsubscribe from a private groups](PrivateChannels.md#ability-to-unsubscribe-to-private-groups)
+  - [ ] TBD : [Documented API for private groups interaction](PrivateChannels.md#documented-api-for-private-groups)
+  - [ ] TBD : [Working examples for private groups interaction](PrivateChannels.md#working-examples-for-private-groups-interaction)
+
+#### Milestone 6: Extra methods
   - [ ] Ability to recover your account
   - [ ] Ability to log out.
+  - [ ] ...
 
 
 ## Exit criteria:

@@ -36,6 +36,9 @@ this.
 - Possibly UX for communicating things during Town Hall, etc.
 
 ## Product Overview
+
+**UPDATE: Our thinking on this matter has evolved, see [Permission-less and compensated work at Status](permission-less-and-compensated-work.md) for more**
+
 There are two constraints that govern how this structure is designed and
 cultivated. One is that Status the company wants to ship a product, and the
 other is creating a decentralized autonomous organization. Since we are moving
@@ -126,10 +129,6 @@ Description:
 
 ### Iteration 3
 (Buffer)
-
-Possibly something related to Type-1 swarms and communication thereof, but to me
-once success metric 3 is achieved this is a slightly different focus and thus
-ideally a different swarm.
 
 ## Success Metrics
 
