@@ -91,20 +91,23 @@ progress again. This ensures the registry is kept up to date.
 |---------------|--------|
 | @anna         |     58, 80, 87, 127 |
 | @adambabik    | 58, 63, 68, 92 |
+| @alwx    | 134 |
+| @asemiankevich | 87, 127, 134, 167, 170 |
 | @adriacidre   | 63, 146, 86 |
 | @alwx         | 134 |
 | @andmironov   | 68, 80, 134 |
 | @antdanchenko   | 167 |
 | @arash009 | 120, 122, 140 |
-| @asemiankevich | 87, 127, 134, 167 |
 | @cammellos    |     87, 99 |
-| @chadyj       | 68, 80, 87, 99, 134 |
+| @chadyj       | 68, 80, 87, 99, 134, 170 |
 | @churik       |140, 127 |
+| @denis-sharypin | 170 |
 | @dmitryn      |     99 |
 | @dshulyak     |     63, 92 |
 | @EugeOrtiz    | 140 |
 | @flexsurfer   | 34, 80 |
-| @hesterbruikman |     80, 99, 134 |
+| @goranjovic   | 170 |
+| @hesterbruikman |     80, 99, 134, 170 |
 | @janherich    |     87 |
 | @jeluard      | 68, 101 |
 | @jpbowen      |     99 |

@@ -1,8 +1,31 @@
+
+---
+id: 170-wallet-improvements
+title: Wallet Improvements
+status: Active
+created: 2018-04-13
+category: core
+contributors:
+    - goranjovic
+    - asemiankevich
+    - chadyj
+    - denis-sharypin
+    - hesterbruikman
+    - jpbowen
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+okrs:
+   - "[P0]: Objective: Beta is launched successfully"
+   - "[P3]: >20% of users send a transaction"
+---
+
 ## Preamble
 
     Idea: 170
     Title: Wallet Improvements
-    Status: Draft
+    Status: In Progress
     Created: 2018-04-13
     
 ## Summary
@@ -43,7 +66,7 @@ Add native support for all ERC20 token operations and rudimentary support for ER
 
 ### Minimum Viable Product
 
-Goal Date: 2018-04-18
+Goal Date: 2018-05-12
 
 Description: 
 
@@ -52,7 +75,7 @@ Description:
 
 ### Iteration 1 
 
-Goal Date: 2018-04-26
+Goal Date: 2018-05-04
 
 Description: 
 
