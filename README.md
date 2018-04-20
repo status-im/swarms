@@ -18,9 +18,9 @@ Ideas looking for people
 | #145 | PM          | Ricardo    | No           |                |
 | #145 | UX          | Ricardo    | No           |                |
 | #151 | Clojure dev | Ricardo    | No           | p2: p0         |
-| #167 | Clojure dev | Oskar      | No           | p1: p3, p2: p0 |
-| #167 | Go dev      | Oskar      | No           | p1: p3, p2: p0 |
-| #167 | QA          | Oskar      | No           | p1: p3, p2: p0 |
+| #168 | Clojure dev | Oskar      | No           | p1: p3, p2: p0 |
+| #168 | Go dev      | Oskar      | No           | p1: p3, p2: p0 |
+| #168 | QA          | Oskar      | No           | p1: p3, p2: p0 |
 
 ## Idea Registry
 
@@ -55,7 +55,7 @@ aborted.
 
 | Idea                                                              | State            | Success metrics?       | Exit criteria?         | Clear roles?           | Future iteration?        |
 |-------------------------------------------------------------------|------------------|------------------------|------------------------|------------------------|--------------------------|
-| [167-paid-master-nodes](ideas/167-paid-master-node.md)            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
+| [168-paid-master-nodes](ideas/168-paid-master-node.md)            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
 | [150-gas-abstraction](ideas/150-gas-abstraction.md)               | :seedling: Draft | :white_check_mark: Yes | :x: No                 | :x: No                 | - :white_check_mark: Yes |
 | [151-ens-usernames](ideas/151-ens-usernames.md)                   | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
 | [145-identity](ideas/145-identity.md)                             | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
