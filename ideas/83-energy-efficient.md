@@ -1,3 +1,23 @@
+---
+id: 83-energy-efficient
+title: Energy Efficient Status
+status: Active
+created: 2018-02-19
+category: core
+contributors:
+    - mandrigin
+    - lukaszfryc
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+    - Clojure Dev
+okrs:
+   - "[P4] Objective: Performance significantly improves"
+   - "[P0] KR: Reduce power consumption to <120% of Telegram/Skype"
+---
+
 ## Preamble
 
     Idea: 83

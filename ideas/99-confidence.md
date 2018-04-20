@@ -1,3 +1,24 @@
+---
+id: 99-confidence
+title: Confidence in Messaging
+status: Active
+created: 2018-03-22
+category: core
+contributors:
+    - rasom
+    - lukaszfryc
+    - mandrigin
+    - dmitryn
+    - chadyj
+    - nikitalukianov
+    - jpbowen
+    - hesterbruikman
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+---
+
 ## Preamble
 
     Idea: 99

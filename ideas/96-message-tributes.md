@@ -1,3 +1,28 @@
+---
+id: 96-message-tributes
+title: Tribute to Talk
+status: Active
+created: 2018-03-20
+category: core
+lead-contributor: richard-ramos
+contributors:
+    - richard-ramos
+    - 3esmit
+    - rachelhamlin
+    - denis-sharypin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+    - Clojure dev
+okrs:
+    - "[P2] Objective: SNT is a powerful utility in Status"
+    - "[P0] KR: 2x launched SNT use cases"
+    - "[P0] KR: 2x demo’s/proof of concepts using SNT"
+    - "[P4] KR: 2x Fleshed out description of the utility"
+---
+
 ## Preamble
 
     Idea: 96

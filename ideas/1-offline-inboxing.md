@@ -1,3 +1,26 @@
+---
+id: 001
+title: Offline inboxing and persistent messaging
+status: Completed
+created: 2017-10-25
+category: core
+lead-contributor: oskarth
+contributors:
+    - oskarth
+    - annadanchenko
+    - adambabik
+    - naghdy
+    - denis-sharypin
+    - b00ris
+    - JekaMas
+    - dmitryn
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+roles-needed:
+---
+
 ## Preamble
 
     Idea: DEV#001

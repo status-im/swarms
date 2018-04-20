@@ -1,14 +1,19 @@
 ---
 id: 140-sob-improve-onboarding
 title: OpenBounty Improved Onboarding
-status: in-progress
+status: Active
 created: 2018-04-04
+category: openbounty
 contributors:
     - martinklepsch
     - Churik
     - EugeOrtiz
     - arash009
     - rcullito
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
 ---
 
 ## Preamble

@@ -1,3 +1,33 @@
+---
+id: 64
+title: Release swarm for continuous delivery
+status: Aborted
+created: 2017-12-27
+category: core
+lead-contributor: oskarth
+contributors:
+    - oskarth
+    - annadanchenko
+    - asemiankevich
+    - rasom
+    - adambabik
+    - andytudhope
+    - pablanopete
+    - chadyj
+    - jeluard
+    - yenda
+    - sergii
+    - flexsurfer
+    - goran
+    - lukaszfryc 
+    - churik
+exit-criteria: no
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+roles-needed:
+---
+
 ## Preamble
 
     Idea: PROC064

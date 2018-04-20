@@ -1,3 +1,23 @@
+---
+id: 154
+title: Support web3.js library
+status: Active
+created: 2018-04-09
+category: core
+lead-contributor: flexsurfer
+contributors:
+    - flexsurfer
+    - dmitryn
+    - mandrigin
+    - dshulyak
+    - rachelhamlin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
 ## Preamble
 
     Idea: 154

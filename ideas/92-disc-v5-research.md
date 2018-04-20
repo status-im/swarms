@@ -1,3 +1,20 @@
+---
+id: 92-disc-v5-research
+title: Research Ethereum Discovery V5 Protocol
+status: Active
+created: 2018-03-12
+category: core
+contributors:
+    - adambabik
+    - dshulyak
+    - themue
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
 ## Preamble
 
     Idea: #92-disc-v5-research

@@ -1,3 +1,20 @@
+---
+id: 68-core-metrics
+title: Core Metrics
+status: Active
+created: 2018-01-10
+category: core
+contributors:
+    - chadyj
+    - lukaszfryc
+    - jeluard
+    - adambabik
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
 
 ## Preamble
 

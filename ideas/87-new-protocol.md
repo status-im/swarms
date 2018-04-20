@@ -1,3 +1,23 @@
+---
+id: 87-new-protocol
+title: New Status App communication protocol
+status: Active
+created: 2018-03-08
+category: core
+contributors:
+    - yenda
+    - asemiankevich
+    - serhy
+    - janherich
+    - cammellos
+    - chadyj
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
 ## Preamble
 
     Idea: 087-new-protocol
