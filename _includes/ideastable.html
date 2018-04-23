@@ -20,10 +20,10 @@
           <td class="id"><a href="{{page.url|relative_url}}">{{page.id|xml_escape}}</a></td>
           <td class="title">{{page.title|xml_escape}}</td>
           <td class="categ">{{page.category|xml_escape}}</td>
-          <td class="success-metrics">{{page.success-metrics|xml_escape}}</td>
-          <td class="exit-criteria">{{page.exit-criteria|xml_escape}}</td>
-          <td class="clear-roles">{{page.clear-roles|xml_escape}}</td>
-          <td class="future-iterations">{{page.future-iterations|xml_escape}}</td>
+          <td class="success-metrics">{% if page.success-metrics %}✅ {% else %}❌{% endif %}</td>
+          <td class="exit-criteria">{% if page.exit-criteria %}✅{% else %}❌{% endif %}</td>
+          <td class="clear-roles">{% if page.clear-roles %}✅{% else %}❌{% endif %}</td>
+          <td class="future-iterations">{% if page.future-iterations %}✅{% else %}❌{% endif %}</td>
         </tr>
       {% endfor %}
     </table>
