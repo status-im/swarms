@@ -1,4 +1,25 @@
-## Preamble
+---
+id: 142-recovery-compatibility
+title: Wallet Recovery Compatibility
+status: Active
+created: 2018-04-04
+category: core
+lead-contributor: pilu
+contributors:
+    - pilu
+    - antdanchenko
+    - asemiankevich
+    - flexsurfer
+    - chadyj
+    - jpbowen
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
+## Meta
 
     Idea: #142
     Title: Wallet Recovery Compatibility
