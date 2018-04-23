@@ -1,7 +1,7 @@
 ---
 id: 86-push-notif-v2
 title: Push Notifications v2
-status: Limbo
+status: Active
 created: 2018-03-01
 category: core
 lead-contributor: PombeirP

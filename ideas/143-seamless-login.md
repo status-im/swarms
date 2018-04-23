@@ -1,7 +1,7 @@
 ---
 id: 143-seamless-login
 title: Seamless Login
-status: Limbo
+status: Active
 created: 2018-05-04
 category: core
 contributors:
