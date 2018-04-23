@@ -10,11 +10,15 @@ contributors:
     - nastya
     - adriacidre
     - yenda
+    - chad
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
 future-iterations: yes
 roles-needed:
+okrs:
+   - "[P0]: Objective: Messaging is reliable"
+   - "[P0]: KR: >95% of 20+ people surveyed trust Status for messaging"
 ---
 
 # Meta
@@ -35,6 +39,7 @@ The [current push notification system](https://docs.google.com/document/d/1OgjnY
 - Testing & Evaluation: @nastya
 - Contributor (Go): @adriacidre (24h/week)
 - Contributor (Clojure): @yenda (20h/week)
+- PM: @chad
 
 ## Product Overview
 
@@ -89,9 +94,10 @@ At a high-level, we want to move up the current solution a notch regarding some 
 
 ### Requirements & Dependencies
 
+- [#143-Seamless Login](../143-seamless-login)
 - [status-im/status-react#3451](https://github.com/status-im/status-react/issues/3451): Preview notifications using background app refresh.
-- [status-im/status-react#3488](https://github.com/status-im/status-react/issues/3488): Clicking message notification does not open the chat
-- [status-im/status-react#3487](https://github.com/status-im/status-react/issues/3487): Notifications about previous messages should disappear when chat is opened
+- [status-im/status-react#3488](https://github.com/status-im/status-react/issues/3488): Clicking message notification does not open the chat.
+- [status-im/status-react#3487](https://github.com/status-im/status-react/issues/3487): Notifications about previous messages should disappear when chat is opened.
 
 ### Security and Privacy Implications
 
@@ -121,7 +127,7 @@ Goal Date: 2018-05-07
 Description: Show more information on notification
 
 - Send only envelope hash on PN to destination device so that it knows to refresh messages and to match them to the notification.
-- Update message body from retrieved Whisper message.
+- Update message body from retrieved Whisper message ([status-im/status-react#3451](https://github.com/status-im/status-react/issues/3451)).
 
 ### Iteration 1
 
@@ -133,6 +139,7 @@ Description: Implement notification server mode on `statusd`
 - Add logic to statusd (accept special P2P messages from clients, and trigger notifications in response).
 - Deploy service with Ansible.
 - Change client so that it communicates with notification server to send notifications indirectly to contact.
+- Address [status-im/status-react#3488](https://github.com/status-im/status-react/issues/3488) and [status-im/status-react#3487](https://github.com/status-im/status-react/issues/3487).
 
 ### Iteration 2
 
