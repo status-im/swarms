@@ -1,8 +1,31 @@
+---
+id: 143-seamless-login
+title: Seamless Login
+status: Active
+created: 2018-05-04
+category: core
+contributors:
+    - alwx
+    - asemiankevich
+    - chadyj
+    - rasom
+    - andmironov
+    - jpbowen
+    - hesterbruikman
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+okrs:
+   - "[P1]: Objective: Beta is launched successfully"
+   - "[P0]: KR: 5k daily active users"
+---
+
 ## Preamble
 
     Idea: 143
     Title: Seamless Login
-    Status: Draft
+    Status: In Progress
     Created: 2018-05-04
 
 
