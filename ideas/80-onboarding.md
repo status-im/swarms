@@ -1,7 +1,7 @@
 ---
 id: 80-onboarding
 title: Onboarding
-status: Active
+status: Limbo
 created: 2018-01-25
 category: core
 contributors:

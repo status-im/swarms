@@ -1,7 +1,7 @@
 ---
 id: 121-swarm-compensation
 title: Swarm Compensation Experiments
-status: Active
+status: Limbo
 created: 2018-04-02
 category: openbounty
 contributors:

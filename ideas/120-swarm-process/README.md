@@ -1,7 +1,7 @@
 ---
 id: 120-swarm-process
 title: Formalize swarm process
-status: Active
+status: Limbo
 created: 2018-04-02
 category: meta
 contributors:

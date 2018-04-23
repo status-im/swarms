@@ -1,7 +1,7 @@
 ---
 id: 34-react-native-qt
 title: Extend react-native-desktop to support status-react Desktop functionality
-status: Active
+status: Limbo
 created: 2017-11-22
 category: core
 lead-contributor: MaxRis

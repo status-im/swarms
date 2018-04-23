@@ -1,7 +1,7 @@
 ---
 id: 83-energy-efficient
 title: Energy Efficient Status
-status: Active
+status: Limbo
 created: 2018-02-19
 category: core
 contributors:
