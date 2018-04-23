@@ -1,18 +1,18 @@
 ---
 id: 83-energy-efficient
 title: Energy Efficient Status
-status: Limbo
+status: Active
 created: 2018-02-19
 category: core
 contributors:
     - mandrigin
     - lukaszfryc
+    - janherich
+    - yenda
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
 future-iterations: yes
-roles-needed:
-    - Clojure Dev
 okrs:
    - "[P4] Objective: Performance significantly improves"
    - "[P0] KR: Reduce power consumption to <120% of Telegram/Skype"
@@ -32,7 +32,8 @@ A specific issue about the energy efficiency of different parts of Status (`stat
 
 ## Swarm Participants
 - Lead Contributor: @mandrigin (~25h)
-- Contributor (Go): @feuGeneA 
+- Contributor (Clojure): @janerich
+- Contributor (Clojure): @yenda
 - Contributor (QA): @lukaszfryc (~10h/week)
 
 ## Product Overview
@@ -55,9 +56,9 @@ https://github.com/orgs/status-im/projects/17
 
 
 ## Exit criteria
-- We have test cases and tools to check the energy efficiency of `status-go` and `status-react` independently;
-- We can notice regressions/improvements caused, e.g. by updating the version of `go-ethereum` or new features of Status;
-- Top energy draining issues are identified and fixed.
+- [x] We have test cases and tools to check the energy efficiency of `status-go` and `status-react` independently;
+- [x] We can notice regressions/improvements caused, e.g. by updating the version of `go-ethereum` or new features of Status;
+- [ ] Top energy draining issues are identified and fixed.
 
 ## Success Metrics
 KR: 
@@ -66,8 +67,7 @@ KR:
 
 
 ## MVP(s)
-MVP1 (docs & process): Create and integrate energy efficiency testing as a part of the release process (date: *Mar, 30*)
-MVP2 (development): Create a low-power background mode for status-go (date: *Mar, 30*)
+MVP (development): Identify top issues with CPU hogging in Status for Android
 
 
 ## Supporting Role Communication
