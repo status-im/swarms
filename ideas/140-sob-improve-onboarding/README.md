@@ -1,7 +1,7 @@
 ---
 id: 140-sob-improve-onboarding
 title: OpenBounty Improved Onboarding
-status: Active
+status: Limbo
 created: 2018-04-04
 category: openbounty
 contributors:
