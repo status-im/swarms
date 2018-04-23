@@ -60,7 +60,7 @@ aborted.
 | [027-username-ens-subdomain](ideas/027-username-ens-subdomain.md) | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
 | [145-identity](ideas/145-identity.md)                             | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :x: No                 | - :white_check_mark: Yes |
 | [94-wallet-compatibility](ideas/94-wallet-compatibility.md)       | :seedling: Draft | :x: No                 | :white_check_mark: Yes | :white_check_mark: Yes | - :x: No                 |
-| [134-seamless-login](ideas/134-seamless-login.md)                 | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
+| [143-seamless-login](ideas/134-seamless-login.md)                 | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
 | [117-message-ordering](ideas/117-message-ordering.md)             | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :x: No                   |
 | [95-les-service-model](ideas/095-les-service-model/)              | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :x: no                   |
 | [146-status-go-sdk](ideas/146-status-go-sdk/)                     | :seedling: Draft | :white_check_mark: yes | :white_check_mark: yes | :white_check_mark: yes | :x: no                   |
