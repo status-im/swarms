@@ -64,7 +64,7 @@ aborted.
 | [117-message-ordering](ideas/117-message-ordering.md)             | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :x: No                   |
 | [95-les-service-model](ideas/095-les-service-model/)              | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :x: no                   |
 | [146-status-go-sdk](ideas/146-status-go-sdk/)                     | :seedling: Draft | :white_check_mark: yes | :white_check_mark: yes | :white_check_mark: yes | :x: no                   |
-| [101-extensions](ideas/101-extensions)                            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | -                        |
+| [101-extensions](ideas/101-extensions)                            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
 | [142-recovery-compatibility](ideas/142-recovery-compatibility)    | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                        |
 
 ### Completed :champagne: and aborted :dagger:

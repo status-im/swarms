@@ -12,8 +12,8 @@ A set of extension points so that external developers can enhance status
 ## Swarm Participants
 
 - Lead Contributor: @jeluard
-- Testing & Evaluation: ??
-- Contributor: ??
+- Testing & Evaluation: @asemiankevich
+- Contributor: @cammellos, @janherich
 - PM: @andytudhope
 - UX: @denis-sharypin
 
@@ -31,7 +31,7 @@ There won't be any distinction between those extensions and status itself (it wi
 
 None
 
-### Minimum Viable Product
+### Research
 
 * document existing working features offered by status [API](https://docs.status.im/)
 * list (potential) new types of extensions
@@ -52,11 +52,75 @@ First status hackathon is also a good starting point. [Feedback](https://github.
 
 Note that idea #96 might be the first guinea pig of extensions.
 
-Goal Date: 3 weeks after beginning
+*Started*: 2018-26-03
+*Goal Date*: 3 weeks after beginning
+*Completed*: 2018-20-04
 
 ## Dates
 
-Iterations will be defined based on specification and team feedback.
+### Pre-MVP
+
+Validate technical feasibility.
+
+* general mechanism (UI, conditionals, queries, events)
+* HTML based
+* stored in ipfs (via gateway)
+* entry point: QR code scanner
+* no concept of extension points
+* no custom code
+* extension are activated when loaded and cannot be deactivated
+* simplified app-db
+
+*Started* 2018-04-24
+*Goal Date* 2018-05-09
+
+### MVP
+
+Pre-MVP integrated in Status.
+
+*Duration* 1 week
+
+### Iteration 1
+
+Migrate old commands to extensions.
+
+* implement extension points logic and proposed extension points
+* isolated data per extension
+* migrate existing commands send / request (message-type, update message)
+* detail plan for persistent extensions
+
+*Duration* 2 weeks
+
+### Iteration 2
+
+Add custom code support.
+
+* implement security mechanism
+* remote code loading
+* JavaScript API
+
+*Duration* 2 weeks
+
+### Iteration 3
+
+Persistent extensions.
+
+* implement data persistency
+* implement extension lifecycle
+* extensions can be deactivated
+* add extension registry UI
+
+*Duration* 2 weeks
+
+### Iteration 4
+
+Support dependencies.
+
+* add versioning support
+* extensions can depend on others extensions
+* implement WhoPays
+
+*Duration* 2 weeks
 
 ## Exit criteria
 
@@ -67,8 +131,9 @@ Iterations will be defined based on specification and team feedback.
 
 ## Success Metrics
 
-- 2 internal extensions shipped 
-- 3 external extensions shipped
-- quality of documentation recognized: few support request related to extensions
+* 2 internal extensions shipped 
+* 3 external extensions shipped
+* positive feedback (API, documentation) from 3 external ethereum projects
+* quality of documentation recognized: few support request related to extensions
 
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
