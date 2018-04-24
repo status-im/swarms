@@ -7,7 +7,7 @@
 
 ## Summary
 
-Many modern software development projects use some kind of agile process, e.g. Scrum. Core 
+Many modern software development projects use some kind of agile process, e.g. Scrum. Core
 of all those processes is to act in iterations, review those, learn from success and failures,
 improve, and start the next iteration. Opposite to this research often is more like an
 explorative journey, focussed on findings but seldom on production-like processes.
@@ -28,27 +28,27 @@ improving the work in research.
 
 #### Q: How can the different swarms benefit from each other?
 
-**A:** TBD
+**A:** TBA
 
 *Compare isolated swarm iterations to common research iterations.*
 
 #### Q: What kind of questions shall be answered during the retrospectives?
 
-**A:** TBD
+**A:** TBA
 
 #### Q: How shall the results of the retrospectives be documented?
 
-**A:** TBD
+**A:** TBA
 
 *Compare wiki, repository, Google Docs, external solutions.*
 
 #### Q: How can the effect of retrospectives on the research be measured?
 
-**A:** TBD
+**A:** TBA
 
 #### Q: Do iterative-incremental processes consort with research?
 
-**A:** TBD
+**A:** TBA
 
 *Answering the final question if and how an iterative-incremental process also
 helps research or if other ways could support work of research more.*
