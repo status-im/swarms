@@ -14,7 +14,7 @@ Provide an easy to use GO-SDK library to allow community developers easily inter
 ## Swarm Participants
 - Lead Contributor: [@adriacidre](https://github.com/adriacidre)
 - Contributor: [@pilu](https://github.com/pilu)
-- Contributor:
+- PM: [@rachelhamlin](https://github.com/rachelhamlin)
 - Testing & Evaluation: [@lukaszfryc](https://github.com/lukaszfryc)
 
 
