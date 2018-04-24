@@ -50,6 +50,7 @@ aborted.
 | [167-extended-automated-testing-for-continuous-delivery](ideas/167-extended-automated-testing-for-continuous-delivery) | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [096-tribute-to-talk](ideas/96-message-tributes.md)                                                                    | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
 | [086-push-notif-v2](ideas/086-push-notif-v2/README.md)                                                                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes |
+| [101-extensions](ideas/101-extensions)                                                                                 | :walking_man: In Progress | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
 
 ### Draft :seedling: and limbo :question:
 
@@ -64,7 +65,6 @@ aborted.
 | [117-message-ordering](ideas/117-message-ordering.md)             | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | :x: No                   |
 | [95-les-service-model](ideas/095-les-service-model/)              | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :x: no                   |
 | [146-status-go-sdk](ideas/146-status-go-sdk/)                     | :seedling: Draft | :white_check_mark: yes | :white_check_mark: yes | :white_check_mark: yes | :x: no                   |
-| [101-extensions](ideas/101-extensions)                            | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes | :white_check_mark: Yes   |
 | [142-recovery-compatibility](ideas/142-recovery-compatibility)    | :seedling: Draft | :white_check_mark: Yes | :white_check_mark: Yes | :x: No                 | -                        |
 
 ### Completed :champagne: and aborted :dagger:
