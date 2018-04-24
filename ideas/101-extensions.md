@@ -1,8 +1,28 @@
-## Preamble
+---
+id: 101-extensions
+title: Extensions
+status: Active
+created: 2018-03-26
+category: core
+lead-contributor: jeluard
+contributors:
+    - asemiankevich
+    - janherich
+    - cammellos
+    - andytudhope
+    - denis-sharypin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
+## Meta
 
     Idea: 101
     Title: Status extensions
-    Status: Draft
+    Status: In Progress
     Created: 2018-03-26
 
 ## Summary
