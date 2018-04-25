@@ -62,6 +62,15 @@ Goal Date: TBD (before end of Q2/2018)
 Description:
 
 - [ ] New Ultra Light Client Mode is added to LES
+- [ ] Integrate ULC with status-go,
+- [ ] Collect metrics (CPU, mem, disk, network I/O) when starting with a branch new install and after 1h of inactivity.
+
+### Iteration 1
+
+Goal Date: TBD
+
+Description:
+
 - [ ] Auctioning protocol between client and full node is defined
 - [ ] Payment methods or interfaces are defined
 - [ ] Initial implementation validates auctioning and micropayment in automated tests
