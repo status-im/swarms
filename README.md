@@ -102,13 +102,13 @@ progress again. This ensures the registry is kept up to date.
 | @dmitryn      |     99 |
 | @dshulyak     |     63, 92 |
 | @EugeOrtiz    | 140 |
-| @flexsurfer   | 34, 80 |
+| @flexsurfer   | 34, 80, 154 |
 | @hesterbruikman |     80, 99, 134 |
 | @janherich    |     87 |
 | @jeluard      | 68, 101 |
 | @jpbowen      |     99 |
 | @lukaszfryc   | 68, 83, 99 |
-| @mandrigin    |     83, 99 |
+| @mandrigin    |     83, 99, 154 |
 | @martin       |    120 |
 | @martinklepsch | 140, 121 |
 | @MaxRis       |     34 |
