@@ -9,12 +9,12 @@ contributors:
     - rachelhamlin
     - jpbowen
     - andytudhope
+    - pilu
 exit-criteria: yes
 success-metrics:yes
 clear-roles: yes
 future-iterations: yes
 roles-needed:
-    - Go dev
     - Clojure dev
     - QA
     - Designer
@@ -40,7 +40,7 @@ users.
 - QA: TBD
 - Evaluation: @oskarth
 - Clojure Contributor: TBD
-- Go Contributor: TBD
+- Go Contributor: @pilu
 - PM: @rachelhamlin
 - UX(R): @jpbowen
 - Designer: TBD
