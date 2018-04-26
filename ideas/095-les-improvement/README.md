@@ -81,6 +81,7 @@ Description:
 - [ ] New Ultra Light Client mode is added to LES
 - [ ] Integrate ULC with `status-go`
 - [ ] Collect metrics (CPU, mem, disk, network I/O) when starting with a branch new install and after 1h of inactivity
+- [ ] Keep battery and network consumption at least as low as today with Infura
 
 ### Iteration 1
 
