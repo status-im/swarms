@@ -1,7 +1,7 @@
 ---
 id: 122-sob-metrics
 title: Open Bounty - Platform Usage Metrics
-status: Limbo
+status: Active
 created: 2018-04-04
 category: openbounty
 lead-contributor: arash009
@@ -57,33 +57,17 @@ The collection of these metrics is to be automated, however their reporting and 
 - Effort estimate and high-level schedule established
 
 #### Milestone 2 - '27 April 2018'
-- Report on the metric of Value transacted built
-- Report is testing and bug free
-- Manual reporting mechanism to share the results established
+- All reports have been built and tested
 
 #### Milestone 3 - '11 May 2018'
-- Report on the metric of Active bounty creators built
-- Report is testing and bug free
-- Manual reporting mechanism to share the results established
+- Graphical reports that represent the above metrics over time built and tested
 
 #### Milestone 4 - '25 May 2018'
-- Report on the metric of Active bounty hunters built
-- Report is testing and bug free
-- Manual reporting mechanism to share the results established
-
-#### Milestone 5 - '8 June 2018'
-- Report on the metric of Unique pageviews built
-- Report is testing and bug free
-- Manual reporting mechanism to share the results established
-
-#### Milestone 6 - '22 June 2018'
-- Report on the metric of Activation built
-- Report is testing and bug free
-- Manual reporting mechanism to share the results established
+- Create above reports to be made available to bounty creators for their repositories
 
 ## Exit Criteria
 
-This swarm will be deemed successful and be closed upon the delivery of the above 6 milestones. If any of the above milestones cannot be completed within a 2-week window, they will be dropped from this swarm and parked for possible future development. 
+This swarm will be deemed successful and be closed upon the delivery of the above milestones. If any of the above milestones cannot be completed within a 2-week window, they will be dropped from this swarm and parked for possible future development. 
 
 ## Success Metrics
 
