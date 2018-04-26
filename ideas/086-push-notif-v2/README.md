@@ -133,11 +133,13 @@ Description: Show more information on notification
 
 Goal Date: 2018-05-21
 
-Description: Implement notification server mode on `statusd`
+Description: Implement notification server
 
 - Connects to FCM, only 1 instance, no load-balancing.
-- Add logic to statusd (accept special P2P messages from clients, and trigger notifications in response).
-- Deploy service with Ansible.
+- Implement new project in status-go (accepts special P2P messages from clients, and triggers notifications in response).
+- Deploy services with Ansible:
+  - Gorush ([status-im/cluster#75](https://github.com/status-im/status-cluster/issues/75)).
+  - Status PN server ([status-im/cluster#75](https://github.com/status-im/status-cluster/issues/75)).
 - Change client so that it communicates with notification server to send notifications indirectly to contact.
 - Address [status-im/status-react#3488](https://github.com/status-im/status-react/issues/3488) and [status-im/status-react#3487](https://github.com/status-im/status-react/issues/3487).
 
@@ -168,6 +170,11 @@ TBD
 - [Whisper Push Notifications wiki](https://github.com/status-im/status-go/wiki/Whisper-Push-Notifications)
 - [Work notes](https://docs.google.com/document/d/1TCeTY77fCGHqAseWkH74P0mk7PF8DGXN7xvbYqodnTI/edit#)
 - [Gorush, a push notification server written in Go](https://github.com/appleboy/gorush)
+
+## Future Direction
+
+- Improving the resiliency of the discovery mechanism (easily spammable in its current form, but good to get the idea off the ground initially), maybe with [@dshulyak's suggestion](https://status-im.slack.com/archives/C9P65FJEA/p1524731634000109) of using the lower-level RLPx P2P protocol for more granular control of the traffic.
+- Being able to [mute notifications](https://status-im.slack.com/archives/C9P65FJEA/p1524493903000400) by filtering them on arrival.
 
 ## Copyright
 
