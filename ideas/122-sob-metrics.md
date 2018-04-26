@@ -1,7 +1,7 @@
 ---
 id: 122-sob-metrics
 title: Open Bounty - Platform Usage Metrics
-status: Limbo
+status: in-progress
 created: 2018-04-04
 category: openbounty
 lead-contributor: arash009
