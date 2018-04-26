@@ -13,8 +13,6 @@ Strongly Disagree
 Average: 3.7
 Total Votes: 52
 
-Agree or strongly agree: 66%
-
 ### Comments
 
 > Neutral: WHere are they announced, who validates and create the slack channel?,
