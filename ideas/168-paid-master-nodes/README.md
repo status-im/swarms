@@ -1,8 +1,30 @@
+---
+id: 168-paid-master-nodes
+title: Paid master nodes
+status: Active
+created: 2018-04-13
+lead-contributor: oskarth
+contributors:
+    - oskarth
+    - rachelhamlin
+    - jpbowen
+    - andytudhope
+    - pilu
+exit-criteria: yes
+success-metrics:yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+    - Clojure dev
+    - QA
+    - Designer
+---
+
 ## Preamble
 
-    Idea: 167-paid-master-node
+    Idea: 168-paid-master-node
     Title: Paid master nodes
-    Status: Draft
+    Status: In Progress
     Created: 2018-04-13
 
 ## Summary
@@ -16,17 +38,27 @@ users.
 
 - Lead Contributor: @oskarth
 - QA: TBD
-- Evaluation: TBD
+- Evaluation: @oskarth
 - Clojure Contributor: TBD
-- Go Contributor: TBD
+- Go Contributor: @pilu
 - PM: @rachelhamlin
 - UX(R): @jpbowen
 - Designer: TBD
 - Community: @andytudhope
 
+Risk:
+- Not enough Go and Clojure resources available
+
+Counteract:
+- Create clear issues as bounties
+- Oskar start initial spiking out, be OK with slow progress
+- Proactively reach out to individual devs to try to free up resources
+
 ## Product Overview
 
-This idea takes of where https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md ended. It provides an SNT payment layer for usage of master nodes.
+This idea takes off where
+https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md
+ended. It provides an SNT payment layer for usage of master nodes.
 
 Users want basic services such as offline inboxing to just work, while at the
 same time paying for the resources they are using, as opposed to being a product
@@ -83,13 +115,19 @@ the Apple store.
 Mail server needs to be able to process this transaction and have logic for
 whitelisting this user's enode for some period of time.
 
-How re-newal will happen is not specified yet.
+How renewal will happen is not specified yet.
 
-> Comment from review: May be out of scope for this idea but perhaps we'll want to experiment with different payment models for time - e.g. Alice pays until she runs out of SNT OR N offline messages OR set period of time.
+> Comment from review: May be out of scope for this idea but perhaps we'll want
+> to experiment with different payment models for time - e.g. Alice pays until
+> she runs out of SNT OR N offline messages OR set period of time.
 
-Solving the initial user stories don't require any proof of message delivery or
-quality of service. Reputation of specific mail servers thus happens completely
-outside of the app, e.g. through Riot, Reddit, etc.
+Solving the initial user stories doesn't require any proof of message delivery
+or quality of service.
+
+How reputable a given mail server is will thus be communicated outside of the
+app, at least initially. That is, instead of having the equivalent of an App
+Store rating system, or seed ratio on a Torrent site, this can be communicated
+through other means. For example: Riot, Reddit, public status channels, etc.
 
 #### Note on Status Desktop
 
@@ -113,9 +151,30 @@ technical terms on status-go side.
 
 (Lack of consensus on this point: Possibly onboarding SNT give-away logistics.)
 
+### Pre MVP - initial investigation and spec
+
+Goal Date: 2018-05-07
+
+Description:
+- [ ] Recruit additional roles: Go dev, Designer, Clojure dev, QA
+- [ ] Spec out rough UX(R) track
+- [ ] Spike out technical requirements:
+      (a) deny requests to mail server as a function of peer and envelope
+      (b) send STT payments and get basic proof
+- [ ] Create issues (and bounties) necessary for MVP
+- [ ] Communicate proof of payment / accept/deny thinking at kick off call
+
+Probably not enough time: (- [ ] Understand changes to requestMessage envelope required)
+
+Initial investigation to understand how to scope MVP (WIP):
+- https://github.com/status-im/status-react/commit/2a1678ef8724702cee547fdc3ba1f5f03681714a
+- https://github.com/status-im/status-go/commit/a4820285bdb16789477efc06d832bfbd51753ca4
+- [Local mailserver HOWTO](local-mailserver.md)
+
+Also see https://github.com/status-im/status-react/issues/4003 (more to come)
+
 ### Minimum Viable Product
-<!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
-Goal Date: TBD - May 1 + 2w
+Goal Date: 2018-05-21
 
 Description: Spike out most basic proof of concept possible for payment / service on or off in Clojure and Go, using SNT test token.
 
@@ -124,11 +183,11 @@ Separate tracks:
 - UX(R) / design
 - Go dealing with app protocol / payment
 
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+Goal Date:
 
-Description: <!-- Description of Deliverables-->
+Description:
 
-Testing Days required: <!-- Days required at the end of development for testing -->
+Testing Days required:
 
 ## Success Metrics
 
