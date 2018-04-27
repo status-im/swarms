@@ -1,7 +1,7 @@
 ---
 id: 92-disc-v5-research
 title: Research Ethereum Discovery V5 Protocol
-status: In Progress
+status: Active
 created: 2018-03-12
 category: core
 contributors:
