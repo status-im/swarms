@@ -11,23 +11,26 @@ if account, err := conn.Invite("my_friend_public_key"); err != nil {
 Before starting to chat with someone privately you should have its contact details. In order to do that, the next process should happen
 
 ##### Generate a new symkey (shh_newSymKey):
+Generates a new symetric key
 ```
 {"jsonrpc":"2.0","id":872,"method":"shh_newSymKey","params":[]}
 ```
 
 
 ##### GetSymKey (shh_getSymKey):
-**[ TODO Describe what's this call doing...]**
+Polls any message for the symetric key
 ```
 {"jsonrpc":"2.0","id":873,"method":"shh_getSymKey","params":["14829092e1b30cb9ab643ef9aa3c37e5a576e69821259cc690f8cccedd08dc94"]}
 ```
+** [ TBD : How do i calculate what's on params? ] **
 
 
 ##### Create filter for new topic (shh_newMessageFilter):
 ```
 {"jsonrpc":"2.0","id":879,"method":"shh_newMessageFilter","params":[{"topics":["0x6c0b63af"],"symKeyID":"14829092e1b30cb9ab643ef9aa3c37e5a576e69821259cc690f8cccedd08dc94","allowP2P":true}]}
 ```
-Main difference here with public channels is how the topic is calculated **[TODO DEFINE HOW'S CALUCULATED]**
+Main difference here with public channels is how the topic is calculated
+**[ TODO DEFINE HOW TOPIC IS CALCULATED ]**
 
 
 ##### Send first message with my contact information (shh_post)

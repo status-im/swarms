@@ -16,6 +16,9 @@ Basically the only difference between 1to1 and public is the field message type 
 
 
 ### Ability to send 1 to 1 conversation
+
+
+
 ### Ability to subscribe to 1 to 1 conversation
 ### Ability to unsubscribe from a 1 to 1 conversation
 ### Documented API for 1 to 1 conversations
