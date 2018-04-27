@@ -1,7 +1,7 @@
 ---
 id: 146-status-go-sdk
 title: Status-go-sdk
-status: draft
+status: Active
 created: 2018-04-03
 category: core
 lead-contributor: adriacidre
