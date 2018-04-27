@@ -3,11 +3,16 @@ id: 095-les-improvement
 title: Improvement of LES
 status: Active
 created: 2018-03-20
+category: research
 contributors:
     - themue
     - jeka
     - b00ris
     - zsfelfoldi (external)
+exit-criteria: yes
+success-metrics: no
+clear-roles: yes
+future-iterations: yes
 ---
 
 ## Preamble
@@ -74,7 +79,7 @@ Parts of ULC and the LES Service Model introduction are:
 
 ### Minimum Viable Product
 
-Goal Date: TBD (before end of Q2/2018)
+Goal Date: 2018-06-30
 
 Description:
 
