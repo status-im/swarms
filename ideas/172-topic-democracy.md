@@ -1,10 +1,5 @@
 # Democracy
 
-Please submit a PR with the following template filled in. See README.md for more info. 
-
-<!-- Please Review https://docs.google.com/document/d/1CaFM2ZXGOKf05_LXMPJeNNy5qJOdAq91EF2Gn2QUBFI/edit# for more details -->
-<!-- in PR the document should be named as`DEV#1-title.md` -->
-
 ## Preamble
 
     Idea: 172-topic-democracy
@@ -16,60 +11,70 @@ Please submit a PR with the following template filled in. See README.md for more
 A democracy where you can specify delegate for carbon-voting specific multi level topics or fallback to a predefined defaults if none set.
 
 ## Swarm Participants
-<!-- Each contributor pledges to the idea with their FOCUS value. (hours per week) -->
-<!-- Here all roles in swarm are defined and filled, one of the contributors should responsibility of the Idea as Lead. -->
-
-<!-- Testing/Evaluation support role is also mandatory to check in on specified Goal dates or earlier. -->
-
-<!-- Lead Contributor is the Owner of the Idea. If required, they can get support from a PM, but should be responsible for end to end execution of the Idea. This includes ensuring appropriate resources are allocated, setting realistic timelines and milestones, and any post-launch metrics or bug fixes that are attributed to the Idea -->
-<!-- A swarm requires at minimum 3 contributors and 1 evaluator/tester -->
-<!-- 'Contributor' should be replaced with a descriptive role type. -->
 - Lead Contributor: Ricardo Guilherme Schmidt
 - Testing & Evaluation: <!-- @username -->
 - Contributor: <!-- @username -->
 - Contributor: <!-- @username -->
 - PM: <!--- @username -->
 - UX (if relevant): <!-- @username -->
-<!-- - Contributor: @username -->
 
 ## Product Overview
+
+This product intend replace authority centralized control for networks with  tokenized participation, such as Status Network currently owned by MultiSig contract 0xBBF0cC1C63F509d48a4674e270D26d80cCAF6022.
+The product would enhance security of network as an attack would require control of more addresses. 
+
 For a democracy where every member understands basic about every subject required for senstive actions inside the network is utopic. 
 As Status Network decisions would be democratic for the users of the platform, a optional voting capability would be given to SNT owners, where they could set their delegate, or vote by themselfs.
+
 When users don't vote and don't delegate, their influence would be delegated to SGT (Status Genesis Tokens) owners consensus.
 
 
-<!-- A short (~200 word) description and motivation of the Idea. Without clear explanation the Idea should not proceed. Can include User Stories -->
-<!-- Testing/Evaluation role accepts responsbility to checkin at Goal dates, -->
-<!-- forces discussion to continue implementation or recommend disband and post-mortem. -->
-
 ### Product Description
-<!-- What functionality are you adding? What will this look like from a user perspective? Why is this important? -->
+
+- Users should be able to participate on decisions or delegate their influence. _Important to democracy._
+- Votes are counted as MiniMeToken balance of user at block voting end. _Important to not double tabulating without locking token transfers_ 
+- Voting or delegating must not cause direct risks to users balances. _Important to don't cause barriers into democracy process_
+- Users that delegates must be able to vote differently then his delegate. _Important to don't cause barriers into setting a delegate._
+- Delegates should be able to delegate influence delegated to them, as a delegation chain. _Important to inflience get into experts._
+- The voting process of proposals should be divided in two polls, first asking for approval votes, and second asking for reject votes.  _Important to prevent a big delegate changing decision at last moment._
+- Approval pool uses a "Executive Delegation" and rejection pool uses a "Veto Delegation". _Important to prevent bribe of delegates._
+- Specifics topics should have their own parent topic and specific delegation chain, which if unset by user should fallback to parent topic definition. _Important to influence get into specialists of the topic._
+- Users that didnt defined any delegate would by default delegate to SGT Topic Democracy. _Important to don't cause slowness into Status Network development._
+- SNT must be owned by SNT Topic Democracy. _Important to democracy._
 
 ### Requirements & Dependencies
-<!-- Are there bugs or feature requests in other repositories that are part of this Idea? -->
-<!-- There is no approval unless the idea requires to be reviewed by supporting organelles (Financial, Hiring, or Design). -->
-<!-- The Swarm must develop a fully fleshed out Requirements document for the idea to proceed, to the satisfaction of participants. -->
+
+- MiniMeToken
 
 ### Minimum Viable Product
 <!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
 Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
 
-Description: <!-- Description of Deliverables-->
+Description: Topic Democracy as DAO Governance
+- Users can execution of proposals.
+- SNT is owned by topic democracy. 
 
 ## Dates
 Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
 
-Description: <!-- Description of Deliverables-->
-
-Testing Days required: <!-- Days required at the end of development for testing -->
+Description: Topic Democracy as "opinion" pool as experimental.
+- System is deployed in mainnet.
+- Users can cast opinion as vote through Status.
+- Users can delegate opinion through Status.
+- Inchain tabulation is not required.
+- Topic Democracy don't owns SNT.
+- Users are asked to approve proposal to upgrade into DAO Governance.
+- First DAO Governance can control network/assets by a multisig between current authority.
 
 ## Success Metrics
-<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move? -->
 
-<!-- Example: Onboarding conversion rate. Target >30% full funnel -->
+It's difficult to assume a success metric from the voting, as users that just didn't "touched" the product probably are delegating their trust to Status Genesis Token holders.
+
+However if we able to see if users look into the proposals and discuss about them in forums, would be a success signal.
 
 ## Exit criteria
-<!-- Launch new onboarding UI flow -->
+
+Status Network controlled by Topic Democracy.
 
 ## Supporting Role Communication
 <!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
