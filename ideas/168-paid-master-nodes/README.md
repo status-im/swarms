@@ -56,7 +56,9 @@ Counteract:
 
 ## Product Overview
 
-This idea takes of where https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md ended. It provides an SNT payment layer for usage of master nodes.
+This idea takes off where
+https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md
+ended. It provides an SNT payment layer for usage of master nodes.
 
 Users want basic services such as offline inboxing to just work, while at the
 same time paying for the resources they are using, as opposed to being a product
@@ -113,15 +115,19 @@ the Apple store.
 Mail server needs to be able to process this transaction and have logic for
 whitelisting this user's enode for some period of time.
 
-How re-newal will happen is not specified yet.
+How renewal will happen is not specified yet.
 
 > Comment from review: May be out of scope for this idea but perhaps we'll want
 > to experiment with different payment models for time - e.g. Alice pays until
 > she runs out of SNT OR N offline messages OR set period of time.
 
-Solving the initial user stories don't require any proof of message delivery or
-quality of service. Reputation of specific mail servers thus happens completely
-outside of the app, e.g. through Riot, Reddit, etc.
+Solving the initial user stories doesn't require any proof of message delivery
+or quality of service.
+
+How reputable a given mail server is will thus be communicated outside of the
+app, at least initially. That is, instead of having the equivalent of an App
+Store rating system, or seed ratio on a Torrent site, this can be communicated
+through other means. For example: Riot, Reddit, public status channels, etc.
 
 #### Note on Status Desktop
 
