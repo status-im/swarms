@@ -1,8 +1,9 @@
 ---
 id: 120-swarm-process
 title: Formalize swarm process
-status: Limbo
+status: Completed
 created: 2018-04-02
+ended: 2018-05-01
 category: meta
 contributors:
     - martinklepsch
@@ -19,7 +20,7 @@ future-iterations: yes
 
     Idea: 120-swarm-process
     Title: Formalize swarm process
-    Status: In Progress
+    Status: Completed
     Created: 2018-03-30
     Requires (*optional):
     Replaces (*optional):
@@ -144,8 +145,16 @@ Description:
 - iii. Town Hall presentation outlining lifecycle, well-definition and roles.
 - iv. Send out survey through Polly.
 
-### Iteration 3
-(Buffer)
+Town Hall Update: 2017-04-23
+
+Progress last two weeks: Update manual and template, clarify swarm’s role in
+org; static site index; ongoing support and knowledge spreading. 80% of Core
+OKRs covered!
+
+Goals for next two weeks: Retainer. Start to wind down swarm. Bounty up
+outstanding issues. Ongoing support.
+
+Lessons learned so far: Updating manual README index is terrible UX.
 
 ## Success Metrics
 
@@ -158,7 +167,6 @@ Three primary success metrics.
 - 1.2. It is clear to me when a swarm ends
 - 1.3. It is clear to me what it means for a swarm to be well-defined
 - 1.4. It is clear to me what is expected of a swarm lead
-- 1.5. It is clear to me what is expected of an evaluator
 
 ### 2. CORE SWARM/OKR COVERAGE.
 80% of Core OKRs are explicit covered by well-defined, in progress swarms.
@@ -175,6 +183,30 @@ future experimentation and compensation tied to it:
 
 This swarm will be time-boxed to one month and marked as completed May 1 OR when
 success metrics have been met.
+
+## Mini-post mortem
+
+Success metric 2 and 3 achieved. Success metric 1 ended up at 3.7 / 3.7 / 3.9 /
+3.9 respectively, whereas we were aiming for 4.5/5. for this one. So still some
+work to be done there (see section below). Also got a static site index as a bonus at (ideas.status.im)[https://ideas.status.im/].
+
+Will require ongoing support to make sure we follow through, but this can be
+done outside of swarm model, similar to code review etc.
+
+### A few survey take-aways
+
+See raw results in (survey-results)[town-hall-7-survey-results.md].
+
+- Swarm start clarity: global notifications on when swarms start
+
+- Swarm start clarity: some work done in draft/prep mode, line blurry
+> Comment: If in-progress event was tied to compensation being unlocked this would be very clear -- Oskar
+
+- Swarm end clarity: success criteria validation? exit criteria still not clear
+> Comment: Hopefully this will become more clear as more and more swarms finish. -- Oskar
+
+- Swarm well-defined clarity: can be stated more clearly in terms of user stories
+> Comment: In TEMPLATE now https://github.com/status-im/ideas/blob/master/TEMPLATE.md#user-stories - something UXR can assist with too -- Oskar
 
 ## Supporting Role Communication
 
