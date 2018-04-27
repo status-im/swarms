@@ -80,7 +80,23 @@ Description:
 1. It's possible to start `statusd` and Status App with DiscV5 enabled instead of static nodes (switch between them with a flag would be great),
 1. There is an automated way to collect CPU and network usage metrics in an isolated environment.
 
-#### Exit criteria
+### Iteration 1
+
+Goal Date: 2018-05-11
+
+Description:
+- [ ] increase awarness by changing the UI copy that Rinkeby network uses Discovery protocol,
+- [ ] make LES working in Mainnet and Ropsten,
+- [ ] design how mailservers can work in dynamic environment.
+
+## Updates
+
+### 2018-04-27
+
+- Added `Iteration 1`.
+
+
+## Exit criteria
 
 1. Assess if DiscV5 is a viable protocol to replace static nodes.
 1. If so, there is a list of issues that we should work on to further improve DiscV5 usage in the Status app and in the cluster (this may be realized as next iterations or a new swarm).
