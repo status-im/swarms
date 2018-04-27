@@ -6,6 +6,7 @@
     <table class="ideastable">
       <thead>
         <tr>
+          <th class="contributor">Contributor</th>
           <th class="id">Idea</th>
           <th class="title">Title</th>
           <th class="categ">Category</th>
@@ -17,6 +18,7 @@
       </thead>
       {% for page in ideas %}
         <tr>
+          <td class="contributor">{{page.contributor|xml_escape}}</td>
           <td class="id"><a href="{{page.url|relative_url}}">{{page.id|xml_escape}}</a></td>
           <td class="title">{{page.title|xml_escape}}</td>
           <td class="categ">{{page.category|xml_escape}}</td>
