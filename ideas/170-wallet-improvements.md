@@ -1,4 +1,3 @@
-
 ---
 id: 170-wallet-improvements
 title: Wallet Improvements
