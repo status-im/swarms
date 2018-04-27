@@ -82,12 +82,14 @@ Description:
 
 ### Iteration 1
 
-Goal Date: 2018-05-11
+Goal Date: 2018-05-18
 
 Description:
 - [ ] increase awarness by changing the UI copy that Rinkeby network uses Discovery protocol,
 - [ ] make LES working in Mainnet and Ropsten,
-- [ ] design how mailservers can work in dynamic environment.
+- [ ] design how mailservers can work in dynamic environment,
+- [ ] make it configurable from the UI/command line to use discovery protocol,
+- [ ] run automated, nightly tests that collect CPU, mem and network I/O statistics with comparison to static nodes.
 
 ## Updates
 
