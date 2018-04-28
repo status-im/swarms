@@ -86,10 +86,9 @@ Goal Date: 2018-05-18
 
 Description:
 - [ ] increase awarness by changing the UI copy that Rinkeby network uses Discovery protocol,
-- [ ] make LES working in Mainnet and Ropsten,
-- [ ] design how mailservers can work in dynamic environment,
-- [ ] make it configurable from the UI/command line to use discovery protocol,
-- [ ] run automated, nightly tests that collect CPU, mem and network I/O statistics with comparison to static nodes.
+- [ ] ~~make LES working in Mainnet and Ropsten~~ (this is not in scope of this swarm as we haven't decided between LES vs ULC),
+- [ ] make sure the current MailServers as static peers work,
+- [ ] run a job in Jenkins daily that will print network I/O statistics of Discovery mode (to make sure that changes we make to Discovery V5 actually improve it).
 
 ## Updates
 
