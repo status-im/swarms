@@ -1,5 +1,5 @@
 {% for status in site.data.statuses %}
-  {% assign ideas = include.ideas | where:"status", status%}
+  {% assign ideas = (include.ideas | where:"status", status) | sort: 'id' %}
   {% assign count = ideas|size %}
   {% if count > 0 %}
     <h2>{{status}}</h2>

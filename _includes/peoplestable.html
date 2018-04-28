@@ -11,7 +11,7 @@
   </thead>
 
 
-  {% assign ideas = include.ideas %}
+  {% assign ideas = include.ideas | sort: 'id' %}
   {% assign count = ideas|size %}
 
   {% for page in ideas %}
@@ -56,7 +56,7 @@
     <tr>
       <td class="contributor">{{contributor|xml_escape}}</td>
       <td class="ideas">
-        {% for page in ideas %}
+        {% for page in sortedideas %}
         {% if page.contributors contains contributor %}
           <a href="{{page.url|relative_url}}">{{page.id|xml_escape}}</a>
         {% endif %}
