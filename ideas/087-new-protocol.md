@@ -1,5 +1,5 @@
 ---
-id: 87-new-protocol
+id: 087-new-protocol
 title: New Status App communication protocol
 status: Active
 created: 2018-03-08

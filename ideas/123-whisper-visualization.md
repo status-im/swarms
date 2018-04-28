@@ -98,7 +98,7 @@ It's important to realize that in WebGL world performance is an important player
 Whisper message propagation project should work relatively fast with a graphs ~1K nodes. For higher numbers more optimizations have to be made.
 
 ### Requirements & Dependencies
-This idea may be related to the [92 - Research Ethereum Discovery V5 Protocol](https://github.com/status-im/ideas/blob/master/ideas/92-disc-v5-research.md) idea.
+This idea may be related to the [092 - Research Ethereum Discovery V5 Protocol](https://github.com/status-im/ideas/blob/master/ideas/092-disc-v5-research.md) idea.
 
 ### Minimum Viable Product
 Goal Date: 06-05-2018
