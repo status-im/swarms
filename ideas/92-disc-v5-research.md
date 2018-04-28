@@ -1,7 +1,7 @@
 ---
 id: 92-disc-v5-research
 title: Research Ethereum Discovery V5 Protocol
-status: Limbo
+status: Active
 created: 2018-03-12
 category: core
 contributors:
@@ -80,7 +80,24 @@ Description:
 1. It's possible to start `statusd` and Status App with DiscV5 enabled instead of static nodes (switch between them with a flag would be great),
 1. There is an automated way to collect CPU and network usage metrics in an isolated environment.
 
-#### Exit criteria
+### Iteration 1
+
+Goal Date: 2018-05-18
+
+Description:
+- [ ] increase awarness by changing the UI copy that Rinkeby network uses Discovery protocol,
+- [ ] ~~make LES working in Mainnet and Ropsten~~ (this is not in scope of this swarm as we haven't decided between LES vs ULC),
+- [ ] make sure the current MailServers as static peers work,
+- [ ] run a job in Jenkins daily that will print network I/O statistics of Discovery mode (to make sure that changes we make to Discovery V5 actually improve it).
+
+## Updates
+
+### 2018-04-27
+
+- Added `Iteration 1`.
+
+
+## Exit criteria
 
 1. Assess if DiscV5 is a viable protocol to replace static nodes.
 1. If so, there is a list of issues that we should work on to further improve DiscV5 usage in the Status app and in the cluster (this may be realized as next iterations or a new swarm).
