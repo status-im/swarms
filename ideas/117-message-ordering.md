@@ -21,6 +21,7 @@ roles-needed:
     Status: Draft
     Created: 2018-03-29
 
+## Summary
 
 Addresses point 2 and 3 of https://github.com/status-im/ideas/issues/99 .
 
