@@ -1,5 +1,5 @@
 ---
-id: 071-smooth-ui
+id: 076-smooth-ui
 title: Make UI fast and smooth
 status: Aborted
 created: 2018-01-24
