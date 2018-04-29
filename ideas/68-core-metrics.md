@@ -4,6 +4,7 @@ title: Core Metrics
 status: Limbo
 created: 2018-01-10
 category: core
+lead-contributor: chadyj
 contributors:
     - chadyj
     - lukaszfryc

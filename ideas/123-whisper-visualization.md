@@ -1,3 +1,18 @@
+---
+id: 123-whisper-visualization
+title: Whisper Visualization
+status: Draft
+created: 2018-04-06
+category: core
+lead-contributor: divan
+contributors:
+    - divan
+exit-criteria: no
+success-metrics: no
+clear-roles: yes
+future-iterations: yes
+---
+
 ## Preamble
 
     Idea: 123

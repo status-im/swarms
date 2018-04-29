@@ -1,3 +1,20 @@
+---
+id: 063-refactor-geth-packages
+title: Refactor status-go geth packages 
+status: Done
+created: 2017-12-20
+category: core
+lead-contributor: adambabik
+contributors:
+    - adambabik
+    - dshulyak
+    - adriacidre
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 ## Preamble
 
     Idea: 63-refactor-geth-packages

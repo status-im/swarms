@@ -1,3 +1,24 @@
+---
+id: 071-smooth-ui
+title: Make UI fast and smooth
+status: Aborted
+created: 2018-01-24
+category: core
+lead-contributor: dmitryn
+contributors:
+    - dmitryn
+    - Serhy
+    - rasom 
+    - janherich 
+    - yenda
+    - mandrigin 
+    - flexsurfer 
+exit-criteria: no
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 <!-- Please Review https://docs.google.com/document/d/1CaFM2ZXGOKf05_LXMPJeNNy5qJOdAq91EF2Gn2QUBFI/edit# for more details -->
 <!-- in PR the document should be named as`DEV#1-title.md` -->
 

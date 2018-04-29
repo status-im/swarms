@@ -1,3 +1,21 @@
+---
+id: 163-support-erc721-tokens
+title: Support ERC721 tokens
+status: Draft
+created: 2018-04-10
+category: core
+lead-contributor: rachelhamlin
+contributors:
+    - rachelhamlin
+    - jeluard
+    - goranjovic
+    - denis-sharypin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 ## Preamble
 
     Idea: 163

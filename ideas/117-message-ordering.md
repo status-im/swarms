@@ -1,3 +1,19 @@
+---
+id: 117-messaging-order
+title: Message ordering
+status: Draft
+created: 2018-03-29
+category: core
+lead-contributor: cammellos
+contributors:
+    - cammellos
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+roles-needed:
+---
+
 ## Preamble
 
     Idea: #117-message-ordering
@@ -5,7 +21,6 @@
     Status: Draft
     Created: 2018-03-29
 
-## Summary
 
 Addresses point 2 and 3 of https://github.com/status-im/ideas/issues/99 .
 

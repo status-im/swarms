@@ -1,3 +1,23 @@
+---
+id: 151-ens-usernames
+title: Username ENS subdomain Registrar
+status: Draft
+created: 2017-11-20
+category: core
+lead-contributor: Ricardo Guilherme Schmidt
+contributors:
+    - Ricardo Guilherme Schmidt
+    - Richard Ramos
+    - Alexandre Van de Sande 
+    - Hester Bruikman
+    - Denis Sharypin
+    - Rachel Hamlin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 # Username ENS subdomain Registrar
 
 ## Preamble

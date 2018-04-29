@@ -1,3 +1,19 @@
+---
+id: 094-wallet-compatibility
+title: Wallet Compatibility
+status: Draft
+created: 2018-03-20
+category: core
+lead-contributor: pilu
+contributors:
+    - pilu
+    - asemiankevich
+exit-criteria: yes
+success-metrics: no
+clear-roles: yes
+future-iterations: no
+---
+
 ## Preamble
 
     Idea: #94

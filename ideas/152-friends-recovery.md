@@ -1,3 +1,19 @@
+---
+id: 152-friends-recovery
+title: Friends Recovery (Secret Multisig)
+status: Draft
+created: 2018-04-07
+category: core
+lead-contributor: Ricardo Guilherme Schmidt
+contributors:
+    - Ricardo Guilherme Schmidt
+    - Richard Ramos
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 # Friends Recovery (Secret Multisig)
 
 ## Preamble

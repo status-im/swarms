@@ -1,3 +1,23 @@
+---
+id: 071-low-traffic
+title: Low traffic consumption(techncal)
+status: Aborted
+created: 2018-01-25
+category: core
+lead-contributor: JekaMas
+contributors:
+   - JekaMas
+   - annadanchenko
+   - b00ris
+   - PombeirP
+   - feuGeneA
+   - yenda
+exit-criteria: no
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 ## Preamble
     Idea: 71-low-traffic
     Title: Low traffic consumption(technical)

@@ -1,3 +1,24 @@
+---
+id: 061-structure refinement
+title: App structure refinement
+status: Active
+created: 2017-12-14
+category: core
+lead-contributor: jeluard
+contributors:
+    - jeluard
+    - asemiankevich
+    - Serhy
+    - flexsurfer
+    - goranjovic
+    - chadyj
+    - andmironov
+exit-criteria: no
+success-metrics: no
+clear-roles: yes
+future-iterations: yes
+---
+
 ## Preamble
 
     Idea: #61-app-structure

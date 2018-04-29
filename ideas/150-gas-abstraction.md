@@ -1,3 +1,21 @@
+---
+id: 150-gas-abstraction
+title: Gas Abstraction
+status: Draft
+created: 2018-02-01
+category: core
+lead-contributor: Ricardo Guilherme Schmidt
+contributors:
+    - Ricardo Guilherme Schmidt
+    - Richard Ramos
+    - Iuri Matias
+    - Alexandre Van de Sande 
+exit-criteria: no
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 # Gas Abstraction
 
 ## Preamble

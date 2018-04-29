@@ -1,7 +1,7 @@
 ---
 id: 58-mainnet
 title: Use Mainnet as the default network
-status: In Progress
+status: Active
 created: 2017-12-08
 category: core
 contributors:
