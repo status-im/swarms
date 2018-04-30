@@ -11,7 +11,7 @@ contributors:
     - andytudhope
     - pilu
 exit-criteria: yes
-success-metrics:yes
+success-metrics: yes
 clear-roles: yes
 future-iterations: yes
 roles-needed:
