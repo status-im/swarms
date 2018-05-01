@@ -37,9 +37,9 @@ The proposal is to create a Pro version of the hardware wallet not based on the 
 
 ## Swarm Participants
 
-Lead Contributor: @bitgamma
-Contributor: jarradh
-Contributor: naghdy
+- Lead Contributor: @bitgamma
+- Contributor: @jarradh
+- Contributor: @naghdy
 - QA: TBD
 - UX: TBD
 
