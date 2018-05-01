@@ -55,17 +55,6 @@ As with any hardware wallet security is a prime concern. The device must be engi
 4. Tampering of the software - Firmware must be either non-upgradable (less flexible, makes it impossible to fix existing bugs) or the upgrade procedure must be implemented in a secure way
 5. Tampering of the hardware - It should be cost prohibitive to tamper with the hardware to read data or write malicious data. With the correct production techniques the device will be destroyed by disassembling.
 
-## Dates
-
-> Description of deliverables at a given date, for example each Town Hall (default).
-> Add more iterations as required.
->
-> Evaluator accepts responsbility to checkin at Goal dates, forces discussion to
-> continue implementation or recommend disband and post-mortem.
->
-> Upcoming Town Halls this quarter:
-> 2018-04-23, 2018-05-07, 2018-05-21, 2018-06-04, 2018-06-18
-
 ## Success Metrics
 
 The project is composed o 4 major steps. Although these are described sequentially, at some point it might be possible to run some of them in parallel. Phase 3 especially can be started when the software is still being finalized but there is a solid understanding of which components are needed and how they are to be wired.
