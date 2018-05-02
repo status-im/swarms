@@ -10,7 +10,7 @@ contributors:
     - asemiankevich
 exit-criteria: yes
 success-metrics: no
-clear-roles: yes
+clear-roles: no
 future-iterations: no
 ---
 

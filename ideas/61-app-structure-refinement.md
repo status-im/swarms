@@ -1,7 +1,7 @@
 ---
 id: 061-structure refinement
 title: App structure refinement
-status: Active
+status: Completed
 created: 2017-12-14
 category: core
 lead-contributor: jeluard

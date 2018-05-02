@@ -4,9 +4,11 @@ title: Self-soverign Identity
 status: Draft
 created: 2018-05-04
 category: core
-lead-contributor: divan
+lead-contributor: 3esmit
 contributors:
-    - divan
+    - 3esmit
+    - richard-ramos 
+    - alexvandesande 
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes

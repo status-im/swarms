@@ -4,12 +4,12 @@ title: Gas Abstraction
 status: Draft
 created: 2018-02-01
 category: core
-lead-contributor: Ricardo Guilherme Schmidt
+lead-contributor: 3esmit
 contributors:
-    - Ricardo Guilherme Schmidt
-    - Richard Ramos
-    - Iuri Matias
-    - Alexandre Van de Sande 
+    - 3esmit
+    - richard-ramos
+    - iurimatias
+    - alexvandesande
 exit-criteria: no
 success-metrics: yes
 clear-roles: yes

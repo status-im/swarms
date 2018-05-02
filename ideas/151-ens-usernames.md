@@ -4,14 +4,14 @@ title: Username ENS subdomain Registrar
 status: Draft
 created: 2017-11-20
 category: core
-lead-contributor: Ricardo Guilherme Schmidt
+lead-contributor: 3esmit
 contributors:
-    - Ricardo Guilherme Schmidt
-    - Richard Ramos
-    - Alexandre Van de Sande 
-    - Hester Bruikman
+    - 3esmit
+    - richard-ramos
+    - alexvandesande
+    - hesterbruikman
     - Denis Sharypin
-    - Rachel Hamlin
+    - rachelhamlin
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
