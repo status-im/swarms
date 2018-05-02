@@ -1,4 +1,22 @@
-# Democracy
+---
+id: 172-topic-democracy
+title: Subjective Delegation Liquid Democracy
+status: Draft
+created: 2018-04-15
+category: core
+contributors:
+    - 3esmit
+exit-criteria: yes
+success-metrics: yes
+clear-roles: no
+future-iterations: no
+roles-needed:
+    - UX
+    - PM
+    - Clojure dev
+okrs:
+   - "[P2]: SNT is a powerful utility in Status"
+---
 
 ## Preamble
 
@@ -8,7 +26,7 @@
     Created: 2018-04-15
 
 ## Summary
-A democracy where you can specify delegate for carbon-voting specific multi level topics or fallback to a predefined defaults if none set.
+A democracy where you can specify delegate for carbon-voting proposals with specific multilevel governance delegation topics, or fallback to a predefined defaults if none set.
 
 ## Swarm Participants
 - Lead Contributor: Ricardo Guilherme Schmidt
@@ -44,7 +62,7 @@ When users don't vote and don't delegate, their influence would be delegated to 
 
 ### Requirements & Dependencies
 
-- MiniMeToken
+- MiniMeToken: Important because it allows lookup of snapshot balances in a certain block. This make possible safe tabulation without locking user balances.
 
 ### Minimum Viable Product
 <!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
@@ -59,11 +77,11 @@ Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format -->
 
 Description: Topic Democracy as "opinion" pool as experimental.
 - System is deployed in mainnet.
-- Users can cast opinion as vote through Status.
-- Users can delegate opinion through Status.
-- Inchain tabulation is not required.
+- Users can cast opinion as vote using SNT for Status proposals throug Topic Democracy..
+- Users can delegate opinion for Status proposals using SNT through Topic Democracy.
+- Inchain tabulation is not required, because results can be calculated offchain and as no action would be taken by the result, inchain tabulation would be waste of gas.
 - Topic Democracy don't owns SNT.
-- Users are asked to approve proposal to upgrade into DAO Governance.
+- Users are asked to approve proposal to upgrade into DAO Governance. When community decides this system is ready to take control of Status authority, a pool can be done and tabulated inchain to transfer control to Topic Democracy over a Topic Democracy proposal.
 - First DAO Governance can control network/assets by a multisig between current authority.
 
 ## Success Metrics
