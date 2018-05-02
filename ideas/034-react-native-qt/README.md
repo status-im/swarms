@@ -1,8 +1,31 @@
+---
+id: 34-react-native-qt
+title: Extend react-native-desktop to support status-react Desktop functionality
+status: Active
+created: 2017-11-22
+category: core
+lead-contributor: MaxRis
+contributors:
+    - MaxRis
+    - vkjr
+    - flexsurfer
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+    - PM
+okrs:
+    - "[P3] Objective: Status is used everyday internally"
+    - "[P0] KR: 80% of core contributors use Status (mobile or desktop) every workday"
+    - "[P3] KR: 10% more usage of Status Desktop than Slack"
+---
+
 ## Preamble
 
     Idea: #34-react-native-qt
     Title: Extend react-native-desktop to support status-react Desktop functionality
-    Status: Draft
+    Status: In-Progress
     Created: 2017-11-22
 
 
@@ -35,7 +58,6 @@ Goal Date: 2017-12-15 (Done)
 Description: Login screen rendering and functionality
 
 ### Iteration 1
-
 Goal Date: 2018-04-09
 Description:
 1. Upgrade react-native-desktop to react-native v.0.53.3 (since latest status-react expects  v.0.53.3 as well) (2018-04-09 update: Done)
@@ -44,9 +66,16 @@ Description:
 
 ### Iteration 2
 Goal Date: 2018-04-23
-1. react-native-desktop running with integrated JavaScriptCore engine instead Node.js on Ubuntu (continuation of Goal 2 from Iteration 1)
-2. Porting latest status-react to run on top of react-native-desktop. Work-in-progress. Resolve messages receiving and sending issues.
-3. Create runnable react-native-desktop app distribution (status-electron MVP based) for Ububntu, OS X and Windows.
+1. react-native-desktop running with integrated JavaScriptCore engine instead Node.js on Ubuntu (continuation of Goal 2 from Iteration 1) (2018-04-23 update: Done)
+2. Porting latest status-react to run on top of react-native-desktop. Work-in-progress. Resolve messages receiving and sending issues. (2018-04-23 update: Done)
+3. Create runnable react-native-desktop app distribution (status-electron MVP based) for Ububntu, OS X and Windows. (2018-04-23 update: Not started)
+
+### Iteration 3
+Goal Date: 2018-05-07
+1. Build status-react Desktop in production
+2. OS X bundle distribution for status-react Desktop
+3. Realm native module support by r-n-d and JavaScriptCore
+4. Ubuntu distribution build of old status-electron for Desktop based on react-native-desktop and JavaScriptCore
 
 Goal Date: TODO
 Description: Integrate react-native-desktop into latest status-react sources with desktops screens available.

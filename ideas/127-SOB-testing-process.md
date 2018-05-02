@@ -1,3 +1,18 @@
+---
+id: 121-sob-testing-process
+title: Improve OpenBounty Testing and make it easy to contribute
+status: Active
+created: 2018-04-02
+category: openbounty
+contributors:
+    - churik
+    - annadanchenko
+    - asemiankevich
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+---
 
 ## Preamble
 

@@ -1,3 +1,26 @@
+---
+id: 58-mainnet
+title: Use Mainnet as the default network
+status: In Progress
+created: 2017-12-08
+category: core
+contributors:
+    - adambabik
+    - annadanchenko
+    - themue
+    - rasom
+    - chadyj
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+    - Clojure dev
+okrs:
+   - "[P1]: Objective: Beta is launched successfully"
+   - "[P0]: KR: 5k daily active users"
+---
+
 ## Preamble
 
     Idea: 58-mainnet-default
@@ -11,11 +34,11 @@ Alpha builds of Status should default to Mainnet. We should be using Status in a
 
 ## Swarm Participants
 
-- Lead Contributor: @adambabik
-- Testing & Evaluation: @annadanchenko
-- Contributor: @themue
-- Contributor: @roman (supportive role; still in need of one Clojure dev)
-- PM: @chadyj
+- Lead Contributor: adambabik
+- Testing & Evaluation: annadanchenko
+- Contributor: themue
+- Contributor: roman (supportive role; still in need of one Clojure dev)
+- PM: chadyj
 
 ## Product Overview
 
@@ -39,20 +62,28 @@ Also, several DApps should be tested.
 
 **This MVP does not mean that after it's finished we release the app with Mainnet enabled by default but defines prerequisites that should be done before we consider doing so.**
 
-Goal Date: 2018-04-06
+Goal Date: 2018-04-14
 
-1. [ ] Development of required components is done. The work is tracked here: https://github.com/orgs/status-im/projects/15,
-1. [ ] There is a Status App build with mainnet available,
-1. [ ] All components have been tested by the Test Team,
-1. [ ] Mainnet is default in dev/nightly builds.
+1. [X] Development of required components is done. The work is tracked here: https://github.com/orgs/status-im/projects/15,
+1. [X] There is a Status App build with mainnet available,
+1. [X] All components have been tested by the Test Team,
+1. [X] Mainnet is default in dev/nightly builds.
 
 ## Audit iteration
 
-Goal Date: 2018-04-23
+Goal Date: 2018-05-31
 
 1. [ ] Security audit is finished by an independent company,
 1. [ ] The final report is available,
-1. [ ] All reported security issues are evaluated and fixed.
+1. [ ] All reported security issues and recommendations are evaluated and finished.
+
+### Updates
+
+#### 2018-04-26
+
+- security audit got extended to May 7th,
+- security issues are tracked with `security` label in [status-react](https://github.com/status-im/status-react/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity) and [status-go](https://github.com/status-im/status-go/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity),
+- [a feature request](https://github.com/status-im/status-react/issues/3994) to allow custom upstream address was created
 
 ## Status App Bug Bounty iteration (CANCELED)
 
@@ -69,4 +100,3 @@ Goal Date: 2018-04-??
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-

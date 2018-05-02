@@ -1,5 +1,12 @@
 ## Logfile
 
+### 2018-04-26
+
+- ULC has higher priority to become independend of Infura asap
+- Swarm has been renamed to #095-les-improvement
+- MVP is now ULC integration
+- Iteration 1 is initial development of LES service model
+
 ### 2018-04-12
 
 - Exchange about observer chain/chain filters and sharding

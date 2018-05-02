@@ -1,8 +1,26 @@
+---
+id: 146-status-go-sdk
+title: Status-go-sdk
+status: Active
+created: 2018-04-03
+category: core
+lead-contributor: adriacidre
+contributors:
+    - pilu
+    - lukaszfryc
+    - rachelhamlin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iteration: no
+okrs:
+---
+
 ## Preamble
 
     Idea: 146-status-go-sdk
     Title: Status GO-SDK
-    Status: Draft
+    Status: In Progress
     Created: 2018-04-03
 
 
@@ -14,7 +32,7 @@ Provide an easy to use GO-SDK library to allow community developers easily inter
 ## Swarm Participants
 - Lead Contributor: [@adriacidre](https://github.com/adriacidre)
 - Contributor: [@pilu](https://github.com/pilu)
-- Contributor:
+- PM: [@rachelhamlin](https://github.com/rachelhamlin)
 - Testing & Evaluation: [@lukaszfryc](https://github.com/lukaszfryc)
 
 
@@ -105,7 +123,7 @@ Testing Days required: TBD
 
 ## Success Metrics
 
-#### Milestone 1: [Status messaging basic interaction](BasicSDK.md)
+#### Milestone 1: [Status messaging basic interaction](BasicSDK.md) (2018-05-07)
   - [ ] [Setup a new connection](BasicSDK.md#setup-a-new-connection)
   - [ ] [Ability to close a specific connection](BasicSDK.md#ability-to-close-a-specific-connection)
   - [ ] [Ability to change connection configuration](BasicSDK.md#ability-to-change-connection-configuration)
@@ -113,7 +131,7 @@ Testing Days required: TBD
   - [ ] [Ability to login as a specific account](BasicSDK.md#ability-to-login-as-a-specific-account)
   - [ ] [Documented API for basic sdk interaction](BasicSDK.md#documented-api-for-basic-sdk-interaction)
 
-#### Milestone 2: [Public channels interaction](PublicChannels.md)
+#### Milestone 2: [Public channels interaction](PublicChannels.md) (2018-05-14)
   - [ ] [Ability to join public channels](PublicChannels.md#ability-to-join-public-channels)
   - [ ] [Ability to publish messages on public channels](PublicChannels.md#ability-to-publish-messages-on-public-channels)
   - [ ] [Ability to subscribe to public channels](PublicChannels.md#ability-to-subscribe-to-publc-channels)
@@ -121,26 +139,26 @@ Testing Days required: TBD
   - [ ] [Documented API for public channels interaction](PublicChannels.md#documented-api-for-public-channels-interaction)
   - [ ] [Working examples for public channel interaction](PublicChannels.md#working-examples-for-public-channel-interaction)
 
-### Milestone 3: [Contact management](ContactManagement.md)
+### Milestone 3: [Contact management](ContactManagement.md) (2018-05-21)
   - [ ] [Invite new contact](ContactManagement.md#invite-new-contact)
   - [ ] [Accept a contact request](ContactManagement.md#accept-contact-request)
 
 
-#### Milestone 4: [1 to 1 messages interaction](1to1Channels.md)
+#### Milestone 4: [1 to 1 messages interaction](1to1Channels.md) (2018-05-28)
   - [ ] TBD : [Ability to send 1 to 1 conversation](1to1Channels.md#ability-to-send-1-to-1-conversation)
   - [ ] TBD : [Ability to subscribe to 1 to 1 conversation](1to1Channels.md#ability-to-subscribe-1-to-1-conversation)
   - [ ] TBD : [Ability to unsubscribe from a 1 to 1 conversation](1to1Channels.md#ability-to-unsubscribe-1-to-1-conversation)
   - [ ] TBD : [Documented API for 1 to 1 conversation](1to1Channels.md#documented-api-for-1-to-1-conversations)
   - [ ] TBD : [Working examples for 1 to 1 conversations](1to1Channels.md#working-examples-for-1-to-1-conversations)
 
-#### Milestone 5: [Private groups interaction](PrivateChannels.md)
+#### Milestone 5: [Private groups interaction](PrivateChannels.md) (2018-06-04)
   - [ ] TBD : [Ability to publish messages on private groups](PrivateChannels.md#ability-to-publish-messages-on-private-groups)
   - [ ] TBD : [Ability to subscribe to private groups](PrivateChannels.md#ability-to-subscribe-to-private-groups)
   - [ ] TBD : [Ability to unsubscribe from a private groups](PrivateChannels.md#ability-to-unsubscribe-to-private-groups)
   - [ ] TBD : [Documented API for private groups interaction](PrivateChannels.md#documented-api-for-private-groups)
   - [ ] TBD : [Working examples for private groups interaction](PrivateChannels.md#working-examples-for-private-groups-interaction)
 
-#### Milestone 6: Extra methods
+#### Milestone 6: Extra methods (2018-06-11)
   - [ ] Ability to recover your account
   - [ ] Ability to log out.
   - [ ] ...

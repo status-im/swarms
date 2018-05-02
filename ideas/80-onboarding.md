@@ -1,3 +1,24 @@
+---
+id: 80-onboarding
+title: Onboarding
+status: Limbo
+created: 2018-01-25
+category: core
+contributors:
+    - andmironov
+    - flexsurfer
+    - annadanchenko
+    - yevh-berdnyk
+    - chadyj
+    - hester
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
+
 ## Preamble
 
     Idea: 80

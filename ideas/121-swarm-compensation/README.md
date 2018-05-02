@@ -1,11 +1,18 @@
 ---
 id: 121-swarm-compensation
 title: Swarm Compensation Experiments
-status: in-progress
+status: Limbo
 created: 2018-04-02
+category: openbounty
 contributors:
     - martinklepsch
     - oskarth
+    - carlbennetts
+    - jason
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
 ---
 
 ## Preamble

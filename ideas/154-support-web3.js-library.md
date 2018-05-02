@@ -1,3 +1,23 @@
+---
+id: 154
+title: Support web3.js library
+status: Active
+created: 2018-04-09
+category: core
+lead-contributor: flexsurfer
+contributors:
+    - flexsurfer
+    - dmitryn
+    - mandrigin
+    - dshulyak
+    - rachelhamlin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
 ## Preamble
 
     Idea: 154
@@ -36,17 +56,15 @@ Users can load, log in to, and transact inside any DApp using the Status browser
 
 ### Requirements & Dependencies
 
-- [ ] [#3174](https://github.com/status-im/status-react/issues/3174): Some Android devices can't find web3 library
+- [X] [#3174](https://github.com/status-im/status-react/issues/3174): Some Android devices can't find web3 library
+
+- [X] [#2704](https://github.com/status-im/status-react/issues/2704): Personal sign message support (CryptoKitties blocker)
 
 - [ ] [#784](https://github.com/status-im/status-go/issues/784): Contract handler not called after contract deployment
 
-- [ ] [#2479](https://github.com/status-im/status-react/issues/2479): web3 filters don't work with Status chat bot
-
-- [ ] [#2704](https://github.com/status-im/status-react/issues/2704): Personal sign message support (CryptoKitties blocker)
-
-- [ ] [#3131](https://github.com/status-im/status-react/issues/3131): Scrolling glitch in ERC dEX
-
 - [ ] [#3823](https://github.com/status-im/status-react/issues/3823): Sync calls are not supported in Status 
+
+- [ ] [#2479](https://github.com/status-im/status-react/issues/2479): web3 filters don't work with Status chat bot
 
 - [ ] [#3824](https://github.com/status-im/status-react/issues/3824): [Blockchain Cuties](https://blockchaincuties.co ) does not load inside Status
 

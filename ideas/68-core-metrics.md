@@ -1,3 +1,20 @@
+---
+id: 68-core-metrics
+title: Core Metrics
+status: Active
+created: 2018-01-10
+category: core
+contributors:
+    - chadyj
+    - lukaszfryc
+    - jeluard
+    - adambabik
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
 
 ## Preamble
 
@@ -100,7 +117,9 @@ Description: Track basic product events to start measuring engagement
 * [x] [Add Mixpanel client library](https://github.com/status-im/status-react/issues/3537)
 * [x] [Track engagement events](https://github.com/status-im/status-react/issues/3545)
 * [x] Opt-in screen during signup
-* [ ] [Opt-in toggle in settings](https://github.com/status-im/status-react/issues/3538)
+* [x] [Opt-in toggle in settings](https://github.com/status-im/status-react/issues/3538)
+* [ ] [Improve opt-in screen](https://github.com/status-im/status-react/issues/3944)
+* [ ] [Tweaks and improvements](https://github.com/status-im/status-react/issues/3732)
 
 
 ### Success metrics

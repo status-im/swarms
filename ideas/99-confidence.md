@@ -1,8 +1,29 @@
+---
+id: 99-confidence
+title: Confidence in Messaging
+status: Active
+created: 2018-03-22
+category: core
+contributors:
+    - rasom
+    - lukaszfryc
+    - mandrigin
+    - dmitryn
+    - chadyj
+    - nikitalukianov
+    - jpbowen
+    - hesterbruikman
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+---
+
 ## Preamble
 
     Idea: 99
     Title: Confidence in Messaging
-    Status: Draft
+    Status: In Progress
     Created: 2018-03-22
 
 
@@ -11,12 +32,12 @@ As end users we currently don't have confidence that messages are being sent, de
 
 ## Swarm Participants
 - Lead Contributor: @rasom
-- Testing & Evaluation: @lukaszfryc 
+- Testing & Evaluation: @lukaszfryc
 - Contributor: @cammellos
 - Contributor: @mandrigin
-- Contributor: #dmitryn 
+- Contributor: @dmitryn
 - PM: @chadyj
-- UX (if relevant): @nikitalukianov @jpbowen @hesterbruikman
+- UX: @nikitalukianov @jpbowen @hesterbruikman
 
 ## Product Overview
 
@@ -90,30 +111,38 @@ Request messages history after background: https://github.com/status-im/status-r
 New protocol https://github.com/status-im/status-react/pull/3273
 https://github.com/status-im/ideas/issues/87
 
-### Minimum Viable Product
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+### Security and Privacy Implications
 
-Description: <!-- Description of Deliverables-->
+None currently known.
 
-**TBD**
-Probably something like: Select subset of above to implement/finish; do initial community check, do design basics and plan initial UXR session.
+### Iteration 1
 
-## Dates
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+Complete several reliability improvements that have been identified so far:
 
-Description: <!-- Description of Deliverables-->
+- [#3827 Message reliability survey](https://github.com/status-im/status-react/issues/3827)
+- [#3793 Improve timestamps in chat messages](https://github.com/status-im/status-react/issues/3793)
+- [#3787 Improve network offline and mail server error messaging](https://github.com/status-im/status-react/issues/3787)
+- [#3784 Provide users with delivery status feedback when sending messages](https://github.com/status-im/status-react/issues/3784)
+- [#3792 Measure message send/receive ratio on internal builds ](https://github.com/status-im/status-react/issues/3792)
+- [#828 Send an expiration signal when envelope wasn't delivered to any peer](https://github.com/status-im/status-go/pull/828)
+- [#810 Notify clj side when the message actually "left" local node.](https://github.com/status-im/status-go/issues/810)
+- [#3785 Remove "seen by everyone" from public chat](https://github.com/status-im/status-react/issues/3785)
 
-Testing Days required: <!-- Days required at the end of development for testing -->
+### Iteration 2
+
+After iteration 1 is complete the swarm will meet and discuss the results of the UXR survey, send/receive ratio results, review current UX and discuss future iterations. Work will then be planned for a future iteration, or the swarm will be closed.
+
+## Exit Criteria
+
+- >99% message deliverability from [#3792](https://github.com/status-im/status-react/issues/3792)
 
 ## Success Metrics
-**TBD**
 
-95% of a group of 20-100 users surveyed - who don't have additional context beyond Status providing a p2p IM capability - using the app for an extended period of time, should answer 'yes' to the question: "Do you trust Status to deliver messages for you?" (and possibly variants of this).
+95% of a group of 100 users surveyed - who don't have additional context beyond Status providing a p2p IM capability - using the app for an extended period of time, should answer 'yes' to the question: "Do you trust Status to deliver messages for you?" (and possibly variants of this).
 
 This is fundamentally a soft or qualitative goal. It is thus necessary but not necessarily sufficient, and additional harder numbers might be used as we develop the capability to measure this.
 
 Zero instabug reports within 30 days of alpha release
 
-## Supporting Role Communication
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).

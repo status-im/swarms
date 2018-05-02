@@ -1,3 +1,23 @@
+---
+id: 87-new-protocol
+title: New Status App communication protocol
+status: Active
+created: 2018-03-08
+category: core
+contributors:
+    - yenda
+    - asemiankevich
+    - serhy
+    - janherich
+    - cammellos
+    - chadyj
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+roles-needed:
+---
+
 ## Preamble
 
     Idea: 087-new-protocol
@@ -43,26 +63,56 @@ Reasons for that are following:
 - Contributor: @cammellos
 - PM: @chadyj
 
-### Requirements & Dependencies
+
+## Current status of the Swarm
+
+- Weekly sync call on Fridays (contact eric@status.im if you want to join)
+- Focus on solving issues, particularly this one https://github.com/status-im/status-react/issues/4034
+
+## Requirements & Dependencies
 * Describe the new protocol code in a clear and easy to understand way ("birdview" with just each distinct message type and what they represent in term of actions explained)
 * Describe each message type in detail, including all the information encapsulated in it (update whenever new features requiring protocol version inc are added)
 * Describe security mechanism of the new protocol, where the sym/asym keys are used, how they are updated/refreshed, how do we choose whisper topics, etc.
 * Deliver working code for testing, if we desire we can do that in 2 steps and first implement only contact exchange + 1-1 chats via new protocol, with old protocol code handling private + public group chats, and the second and final step will implement that + erase all obsolete old protocol code.
 
-### Minimum Viable Product
+## Minimum Viable Product
 Goal Date: 2018-04-10
 
-Description: The new protocol is merged and supports 1-1 and public group chats. Documentation is finalized in the document https://docs.google.com/document/d/1Qh2h07T_qepzEJ7IytmxwIdQAOsGHrvhXwZxuZtbwgc/edit
+### Description
 
-### Iteration 1
+The new protocol is merged and supports 1-1 and public group chats. Documentation is finalized in the document https://docs.google.com/document/d/1Qh2h07T_qepzEJ7IytmxwIdQAOsGHrvhXwZxuZtbwgc/edit
+
+### Outcome 
+
+This goal has been successfully achieved at the goal date.
+
+### What we could improve
+
+It would be valuable for external developpers and for the sake of tracking future evolutions to the protocol to have the documentation ported into a repository and generate a static website to expose the documentation to the outside world.
+
+There's been discussions around the encoding for the communication protocol and it was mentionned that protocol buffers might be a better solution than transit for portability. We are going to research that topic and gather feedback from other teams working on whisper on that matter.
+
+## Iteration 1
 Goal Date: 2018-04-17 
 
-Description: Group chats are implemented and all bugs fixed
+### Description 
 
-### Iteration 2
-Goal Date: 2018-04-24
+- TODO Group chats are implemented and all bugs fixed
 
-Description: Support for versionning is confirmed and tested experimentally. A benchmark for bandwith consumption in advanced features allows testers to verify performance claims with real conditions. Crypto libraries have been removed and traces of transport layer concerns have all been removed from the application code and database schemas
+### Outcome
+
+This goal was not reached. Amount of time available/amount of time required was not matched.
+
+Group chat are removed from the scope after discussion involving @yenda, @oskarth, @cammellos and @chadyj here https://github.com/status-im/ideas/pull/224#discussion_r184694789 (note: they were already disabled as of 0.9.16 because of bugs)
+
+## Iteration 2
+Goal Date: 2018-05-04
+
+### Description
+
+- TODO Support for versionning is confirmed and tested experimentally. 
+- TODO A benchmark for bandwith consumption in advanced features allows testers to verify performance claims with real conditions. 
+- DONE Crypto libraries have been removed and traces of transport layer concerns have all been removed from the application code and database schemas
 
 ## Success Metrics
 * We have protocol versioning, so we can say that for example release 0.9.15 and 0.9.16 are using the same protocol version v1, so are fully compatible and people can communicate with each other.
