@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: 088
+    Idea: 88
     Title: DApp Experience
     Status: Draft
     Created: 2018-03-12

@@ -1,5 +1,5 @@
 ---
-id: 087-new-protocol
+id: 87-new-protocol
 title: New Status App communication protocol
 status: Limbo
 created: 2018-03-08

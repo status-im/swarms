@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: 094
+    Idea: #94
     Title: Wallet Compatibility
     Status: Draft
     Created: 2018-03-20

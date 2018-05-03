@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: #061-app-structure
+    Idea: #61-app-structure
     Title: App structure refinement
     Status: In Progress
     Created: 2017-12-14
