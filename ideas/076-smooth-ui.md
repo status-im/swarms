@@ -3,7 +3,7 @@
 
 ## Preamble
 
-    Idea: 76-smooth-ui
+    Idea: 076-smooth-ui
     Title: Make UI fast and smooth
     Status: Aborted
     Created: 2018-01-24
