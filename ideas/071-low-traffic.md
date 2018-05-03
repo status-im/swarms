@@ -1,5 +1,5 @@
 ## Preamble
-    Idea: 71-low-traffic
+    Idea: 071-low-traffic
     Title: Low traffic consumption(technical)
     Status: Aborted
     Created: 2018-01-25

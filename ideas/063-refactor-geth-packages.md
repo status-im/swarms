@@ -1,6 +1,6 @@
 ## Preamble
 
-    Idea: 63-refactor-geth-packages
+    Idea: 063-refactor-geth-packages
     Title: Refactor status-go geth packages
     Status: Done
     Created: 2017-12-20
