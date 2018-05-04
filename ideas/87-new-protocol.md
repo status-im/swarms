@@ -1,9 +1,10 @@
 ---
 id: 87-new-protocol
 title: New Status App communication protocol
-status: Active
+status: Limbo
 created: 2018-03-08
 category: core
+lead-contributor: yenda
 contributors:
     - yenda
     - asemiankevich

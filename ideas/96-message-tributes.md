@@ -1,7 +1,7 @@
 ---
 id: 96-message-tributes
 title: Tribute to Talk
-status: Active
+status: Limbo
 created: 2018-03-20
 category: core
 lead-contributor: richard-ramos
