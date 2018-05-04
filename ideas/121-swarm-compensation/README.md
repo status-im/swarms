@@ -1,9 +1,10 @@
 ---
 id: 121-swarm-compensation
 title: Swarm Compensation Experiments
-status: Limbo
+status: Aborted
 created: 2018-04-02
 category: openbounty
+lead-contributor: martinklepsch
 contributors:
     - martinklepsch
     - oskarth

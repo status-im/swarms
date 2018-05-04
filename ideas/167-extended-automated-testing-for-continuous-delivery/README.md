@@ -1,7 +1,7 @@
 ---
 id: 167-automated-testing
 title: Functional automated testing as a part of Continuous Delivery process
-status: Active
+status: Limbo
 created: 2018-04-12
 category: core
 lead-contributor: antdanchenko
