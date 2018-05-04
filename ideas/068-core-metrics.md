@@ -1,9 +1,10 @@
 ---
 id: 068-core-metrics
 title: Core Metrics
-status: Active
+status: Limbo
 created: 2018-01-10
 category: core
+lead-contributor: chadyj
 contributors:
     - chadyj
     - lukaszfryc

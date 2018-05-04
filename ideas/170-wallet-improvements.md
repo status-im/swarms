@@ -1,9 +1,10 @@
 ---
 id: 170-wallet-improvements
 title: Wallet Improvements
-status: Active
+status: Limbo
 created: 2018-04-13
 category: core
+lead-contributor: goranjovic
 contributors:
     - goranjovic
     - asemiankevich

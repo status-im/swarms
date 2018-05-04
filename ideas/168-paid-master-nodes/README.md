@@ -1,7 +1,7 @@
 ---
 id: 168-paid-master-nodes
 title: Paid master nodes
-status: Active
+status: Limbo
 created: 2018-04-13
 lead-contributor: oskarth
 contributors:

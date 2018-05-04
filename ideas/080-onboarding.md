@@ -1,9 +1,10 @@
 ---
 id: 080-onboarding
 title: Onboarding
-status: Limbo
+status: Aborted
 created: 2018-01-25
 category: core
+lead-contributor: andmironov
 contributors:
     - andmironov
     - flexsurfer
