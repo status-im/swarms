@@ -10,7 +10,7 @@ contributors:
     - richard-ramos
     - alexvandesande
     - hesterbruikman
-    - Denis Sharypin
+    - denis-sharypin
     - rachelhamlin
 exit-criteria: yes
 success-metrics: yes
