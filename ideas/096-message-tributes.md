@@ -10,6 +10,7 @@ contributors:
     - 3esmit
     - rachelhamlin
     - denis-sharypin
+    - Serhy
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
@@ -38,7 +39,7 @@ Economics-based anti-spam filter, in our case for receiving messages and “cold
 
 ## Swarm Participants
 - Lead Contributor: @richard-ramos
-- Testing & Evaluation: 
+- Testing & Evaluation: @Serhy
 - Contributor: @3esmit
 - PM:  @rachelhamlin
 - UX: @denis-sharypin
