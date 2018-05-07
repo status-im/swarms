@@ -1,7 +1,7 @@
 ---
 id: 083-energy-efficient
 title: Energy Efficient Status
-status: Limbo
+status: Active
 created: 2018-02-19
 category: core
 lead-contributor: mandrigin
@@ -9,7 +9,6 @@ contributors:
     - mandrigin
     - lukaszfryc
     - janherich
-    - yenda
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
@@ -63,9 +62,9 @@ https://github.com/orgs/status-im/projects/17
 
 ## Success Metrics
 KR: 
-(1) foreground energy consumption is < 120% of the apps in a similar class (messengers) 
-(2) background energy consumption is < 120% of the apps in a similar class (messengers)
-
+(1) foreground chat energy consumption is < 120% of the apps in a similar class (messengers) 
+(2) background chat energy consumption is < 120% of the apps in a similar class (messengers)
+(3) foreground dapps energy consumption is < 120% of the apps in a similar class (browsers)
 
 ## MVP(s)
 MVP (development): Identify top issues with CPU hogging in Status for Android
