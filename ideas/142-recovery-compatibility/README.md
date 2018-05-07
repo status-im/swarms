@@ -1,7 +1,7 @@
 ---
 id: 142-recovery-compatibility
 title: Wallet Recovery Compatibility
-status: Active
+status: Limbo
 created: 2018-04-04
 category: core
 lead-contributor: pilu

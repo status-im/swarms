@@ -1,7 +1,7 @@
 ---
-id: 154
+id: 154-web3
 title: Support web3.js library
-status: Active
+status: Limbo
 created: 2018-04-09
 category: core
 lead-contributor: flexsurfer

@@ -1,9 +1,10 @@
 ---
 id: 140-sob-improve-onboarding
 title: OpenBounty Improved Onboarding
-status: Limbo
+status: Aborted
 created: 2018-04-04
 category: openbounty
+lead-contributor: martinklepsch
 contributors:
     - martinklepsch
     - Churik

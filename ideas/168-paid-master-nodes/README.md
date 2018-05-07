@@ -1,7 +1,7 @@
 ---
 id: 168-paid-master-nodes
 title: Paid master nodes
-status: Active
+status: Limbo
 created: 2018-04-13
 lead-contributor: oskarth
 contributors:
@@ -11,7 +11,7 @@ contributors:
     - andytudhope
     - pilu
 exit-criteria: yes
-success-metrics:yes
+success-metrics: yes
 clear-roles: yes
 future-iterations: yes
 roles-needed:
@@ -57,7 +57,7 @@ Counteract:
 ## Product Overview
 
 This idea takes off where
-https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md
+https://github.com/status-im/ideas/blob/master/ideas/001-offline-inboxing.md
 ended. It provides an SNT payment layer for usage of master nodes.
 
 Users want basic services such as offline inboxing to just work, while at the
@@ -156,11 +156,13 @@ technical terms on status-go side.
 Goal Date: 2018-05-07
 
 Description:
-- [ ] Recruit additional roles: Go dev, Designer, Clojure dev, QA
-- [ ] Spec out rough UX(R) track
+- [ ] Recruit additional roles: Designer, Clojure dev (yenda?), QA
+- [ ] Spec out rough UX(R) track (jpbowen)
 - [ ] Spike out technical requirements:
-      (a) deny requests to mail server as a function of peer and envelope
-      (b) send STT payments and get basic proof
+      - [x] deny requests to mail server as a function of peer and envelope
+      - [x] send STT payments and get basic proof
+      - [/] later: inspect basic proof (tx id initially)
+      - [ ] inspect envelope in what format for basic proof of payment?
 - [ ] Create issues (and bounties) necessary for MVP
 - [ ] Communicate proof of payment / accept/deny thinking at kick off call
 
@@ -170,13 +172,20 @@ Initial investigation to understand how to scope MVP (WIP):
 - https://github.com/status-im/status-react/commit/2a1678ef8724702cee547fdc3ba1f5f03681714a
 - https://github.com/status-im/status-go/commit/a4820285bdb16789477efc06d832bfbd51753ca4
 - [Local mailserver HOWTO](local-mailserver.md)
+- [Getting and sending STT, proof of payment](stt-payment-testing.md)
 
-Also see https://github.com/status-im/status-react/issues/4003 (more to come)
+
+Project board: https://github.com/orgs/status-im/projects/28
+
+Also see:
+- https://github.com/status-im/status-react/issues/4003
 
 ### Minimum Viable Product
 Goal Date: 2018-05-21
 
-Description: Spike out most basic proof of concept possible for payment / service on or off in Clojure and Go, using SNT test token.
+Description: Spike out most basic proof of concept possible for payment / service on or off in Clojure and Go, using SNT test token (STT) on Ropsten.
+
+Maybe: signing of txid with address.
 
 ## Dates
 Separate tracks:

@@ -1,14 +1,13 @@
 ---
 id: 090-branch-perf-stats
 title: Make branch performance stats visible
-status: draft
+status: Draft
 created: 2018-03-12
 category: core
 lead-contributor: PombeirP
 contributors:
-    -
-    -
-    -
+    - jason
+    - adambabik
 exit-criteria: no
 success-metrics: no
 clear-roles: no
@@ -35,8 +34,8 @@ Right now there is no visibility of how a PR impacts performance before it is me
 ## Swarm Participants
 
 - Lead Contributor: PombeirP
-- Contributor (Go): TBD
-- Contributor (DevOps): TBD
+- Contributor (Go): adambabik
+- Contributor (DevOps): jason
 
 ## Product Overview
 

@@ -1,7 +1,7 @@
 ---
-id: 121-sob-testing-process
+id: 127-sob-testing-process
 title: Improve OpenBounty Testing and make it easy to contribute
-status: Active
+status: Limbo
 created: 2018-04-02
 category: openbounty
 contributors:
