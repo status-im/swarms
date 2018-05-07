@@ -6,19 +6,20 @@ created: 2018-03-01
 category: core
 lead-contributor: PombeirP
 contributors:
-    - PombeirP
-    - nastya
-    - adriacidre
-    - yenda
-    - chad
+  - PombeirP
+  - nastya
+  - adriacidre
+  - yenda
+  - chad
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
 future-iterations: yes
 roles-needed:
+  - Clojure dev
 okrs:
-   - "[P0]: Objective: Messaging is reliable"
-   - "[P0]: KR: >95% of 20+ people surveyed trust Status for messaging"
+  - "[P0]: Objective: Messaging is reliable"
+  - "[P0]: KR: >95% of 20+ people surveyed trust Status for messaging"
 ---
 
 # Meta
@@ -39,6 +40,7 @@ The [current push notification system](https://docs.google.com/document/d/1OgjnY
 - Testing & Evaluation: @nastya
 - Contributor (Go): @adriacidre (24h/week)
 - Contributor (Clojure): @yenda (20h/week)
+- Contributor (Clojure): TBD
 - PM: @chad
 
 ## Product Overview
