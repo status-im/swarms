@@ -1,7 +1,7 @@
 ---
 id: 086-push-notif-v2
 title: Push Notifications v2
-status: Limbo
+status: Active
 created: 2018-03-01
 category: core
 lead-contributor: PombeirP
@@ -70,6 +70,10 @@ We also want a solution that doesn’t involve talking directly to the notificat
 
 ### Flow Diagram (1:1 chat)
 
+#### Prerequisites
+
+- We do not want to give out our identity to the Push Notification servers (so we'll negotiate anonymously passing a secondary key pair that both the PN server and chat counterparties will work with)
+
 ![Alt text](https://g.gravizo.com/source/svg?https%3A%2F%2Fraw.githubusercontent.com%2Fstatus-im%2Fideas%2Fmaster%2Fideas%2F086-push-notif-v2%2F1to1.dot)
 
 For group chats, the flow is similar, but it's the chat admin which ensures that each chat member gets a notification channel for every other chat member. Notifications from chat members who left/were removed should be ignored.
@@ -124,7 +128,7 @@ KRs:
 
 ### Minimum Viable Product
 
-Goal Date: 2018-05-07
+Goal Date: 2018-05-21
 
 Description: Show more information on notification
 
@@ -138,8 +142,8 @@ Goal Date: 2018-05-21
 Description: Implement notification server mode on `statusd`
 
 - Connects to FCM, only 1 instance, no load-balancing.
-- Add logic to statusd (accept special P2P messages from clients, and trigger notifications in response).
-- Deploy service with Ansible.
+- Add logic to PN server (accept special P2P messages from clients, and trigger notifications in response).
+- Deploy services with Ansible (gorush and PN server).
 - Change client so that it communicates with notification server to send notifications indirectly to contact.
 - Address [status-im/status-react#3488](https://github.com/status-im/status-react/issues/3488) and [status-im/status-react#3487](https://github.com/status-im/status-react/issues/3487).
 
