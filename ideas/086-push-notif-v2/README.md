@@ -1,24 +1,25 @@
 ---
-id: 86-push-notif-v2
+id: 086-push-notif-v2
 title: Push Notifications v2
 status: Active
 created: 2018-03-01
 category: core
 lead-contributor: PombeirP
 contributors:
-    - PombeirP
-    - nastya
-    - adriacidre
-    - yenda
-    - chad
+  - PombeirP
+  - nastya
+  - adriacidre
+  - yenda
+  - chad
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
 future-iterations: yes
 roles-needed:
+  - Clojure dev
 okrs:
-   - "[P0]: Objective: Messaging is reliable"
-   - "[P0]: KR: >95% of 20+ people surveyed trust Status for messaging"
+  - "[P0]: Objective: Messaging is reliable"
+  - "[P0]: KR: >95% of 20+ people surveyed trust Status for messaging"
 ---
 
 # Meta
@@ -39,6 +40,7 @@ The [current push notification system](https://docs.google.com/document/d/1OgjnY
 - Testing & Evaluation: @nastya
 - Contributor (Go): @adriacidre (24h/week)
 - Contributor (Clojure): @yenda (20h/week)
+- Contributor (Clojure): TBD
 - PM: @chad
 
 ## Product Overview
@@ -67,6 +69,10 @@ We want to end up with a notification system which works on as many devices as p
 We also want a solution that doesn’t involve talking directly to the notification provider, as that would require keeping authentication elements embedded in the app (currently the case), and might expose us to quota theft.
 
 ### Flow Diagram (1:1 chat)
+
+#### Prerequisites
+
+- We do not want to give out our identity to the Push Notification servers (so we'll negotiate anonymously passing a secondary key pair that both the PN server and chat counterparties will work with)
 
 ![Alt text](https://g.gravizo.com/source/svg?https%3A%2F%2Fraw.githubusercontent.com%2Fstatus-im%2Fideas%2Fmaster%2Fideas%2F086-push-notif-v2%2F1to1.dot)
 
@@ -122,7 +128,7 @@ KRs:
 
 ### Minimum Viable Product
 
-Goal Date: 2018-05-07
+Goal Date: 2018-05-21
 
 Description: Show more information on notification
 
@@ -136,8 +142,8 @@ Goal Date: 2018-05-21
 Description: Implement notification server mode on `statusd`
 
 - Connects to FCM, only 1 instance, no load-balancing.
-- Add logic to statusd (accept special P2P messages from clients, and trigger notifications in response).
-- Deploy service with Ansible.
+- Add logic to PN server (accept special P2P messages from clients, and trigger notifications in response).
+- Deploy services with Ansible (gorush and PN server).
 - Change client so that it communicates with notification server to send notifications indirectly to contact.
 - Address [status-im/status-react#3488](https://github.com/status-im/status-react/issues/3488) and [status-im/status-react#3487](https://github.com/status-im/status-react/issues/3487).
 

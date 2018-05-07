@@ -1,7 +1,7 @@
 ---
 id: 168-paid-master-nodes
 title: Paid master nodes
-status: Active
+status: Limbo
 created: 2018-04-13
 lead-contributor: oskarth
 contributors:
@@ -57,7 +57,7 @@ Counteract:
 ## Product Overview
 
 This idea takes off where
-https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md
+https://github.com/status-im/ideas/blob/master/ideas/001-offline-inboxing.md
 ended. It provides an SNT payment layer for usage of master nodes.
 
 Users want basic services such as offline inboxing to just work, while at the

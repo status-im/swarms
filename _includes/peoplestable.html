@@ -11,7 +11,7 @@
   </thead>
 
 
-  {% assign ideas = include.ideas %}
+  {% assign ideas = include.ideas | sort: 'id' %}
   {% assign count = ideas|size %}
 
   {% for page in ideas %}

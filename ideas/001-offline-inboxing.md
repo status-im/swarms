@@ -1,5 +1,5 @@
 ---
-id: 001
+id: 001-offline-inboxing
 title: Offline inboxing and persistent messaging
 status: Completed
 created: 2017-10-25
