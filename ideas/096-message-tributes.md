@@ -1,7 +1,7 @@
 ---
 id: 096-message-tributes
 title: Tribute to Talk
-status: Limbo
+status: Paused until post-beta
 created: 2018-03-20
 category: core
 lead-contributor: richard-ramos
@@ -27,7 +27,7 @@ okrs:
 
     Idea: 96
     Title: Tribute to Talk
-    Status: In Progress
+    Status: In Progress - paused until post-beta
     Created: 2018-03-20
     Requires (*optional): TBD
 
@@ -38,7 +38,8 @@ Economics-based anti-spam filter, in our case for receiving messages and “cold
 
 ## Swarm Participants
 - Lead Contributor: @richard-ramos
-- Testing & Evaluation: 
+- Testing & Evaluation: @serhy
+- Contributor: @yenda
 - Contributor: @3esmit
 - PM:  @rachelhamlin
 - UX: @denis-sharypin
