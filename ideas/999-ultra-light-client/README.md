@@ -9,15 +9,15 @@ contributors:
     - jeka
     - b00ris
     - zsfelfoldi (external)
-exit-criteria: no
-success-metrics: no
+exit-criteria: yes
+success-metrics: yes
 clear-roles: no
 future-iterations: no
 ---
 
 ## Preamble
 
-    Idea: #???-ultra-light-client
+    Idea: ???-ultra-light-client
     Title: Integration of ULC in Status
     Status: Draft
     Created: 2018-05-02
