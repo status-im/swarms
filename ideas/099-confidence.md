@@ -1,14 +1,13 @@
 ---
 id: 099-confidence
 title: Confidence in Messaging
-status: Limbo
+status: Active
 created: 2018-03-22
 category: core
-lead-contributor: rasom
+lead-contributor: PombeirP
 contributors:
-    - rasom
     - lukaszfryc
-    - mandrigin
+    - gravityblast
     - dmitryn
     - chadyj
     - nikitalukianov
@@ -20,23 +19,24 @@ clear-roles: yes
 future-iterations: yes
 ---
 
-## Preamble
+# Preamble
 
     Idea: 99
     Title: Confidence in Messaging
     Status: In Progress
     Created: 2018-03-22
 
-
 ## Summary
+
 As end users we currently don't have confidence that messages are being sent, delivered and read. This swarm aims to address this.
 
 ## Swarm Participants
-- Lead Contributor: @rasom
+
+- Lead Contributor: @PombeirP
 - Testing & Evaluation: @lukaszfryc
-- Contributor: @cammellos
-- Contributor: @mandrigin
-- Contributor: @dmitryn
+- Contributor (Clojure): @cammellos
+- Contributor (Clojure): @dmitryn
+- Contributor (Go): @gravityblast
 - PM: @chadyj
 - UX: @nikitalukianov @jpbowen @hesterbruikman
 
@@ -47,6 +47,7 @@ We currently don't have confidence in the reliability of messaging in Status. Th
 What all these issues have in common is that they cause the end user to not have confidence in their messages being delivered and read. This swarm aims to attack this from a user point of view. It is expected additional swarms might be spawned for more core technical areas as these are identified (e.g. network visibility or push notifications v2).
 
 ### Product Description
+
 This section is based on user feedback spawned as part of 75-status-everyday (https://docs.google.com/document/d/1pkfZWxr9I0AqidEuOfogzxEXrcg6ofs2bUkh-HSKD6o/edit)
 
 1. Messages should always be sent.
@@ -108,9 +109,9 @@ This section is based on user feedback spawned as part of 75-status-everyday (ht
 
 ### Requirements & Dependencies
 
-Request messages history after background: https://github.com/status-im/status-react/pull/3493
-New protocol https://github.com/status-im/status-react/pull/3273
-https://github.com/status-im/ideas/issues/87
+[Request messages history after background](https://github.com/status-im/status-react/pull/3493)
+[New protocol](https://github.com/status-im/status-react/pull/3273)
+[New Status App communication protocol idea](https://github.com/status-im/ideas/blob/master/ideas/087-new-protocol.md)
 
 ### Security and Privacy Implications
 
@@ -124,7 +125,7 @@ Complete several reliability improvements that have been identified so far:
 - [#3793 Improve timestamps in chat messages](https://github.com/status-im/status-react/issues/3793)
 - [#3787 Improve network offline and mail server error messaging](https://github.com/status-im/status-react/issues/3787)
 - [#3784 Provide users with delivery status feedback when sending messages](https://github.com/status-im/status-react/issues/3784)
-- [#3792 Measure message send/receive ratio on internal builds ](https://github.com/status-im/status-react/issues/3792)
+- [#3792 Measure message send/receive ratio on internal builds](https://github.com/status-im/status-react/issues/3792)
 - [#828 Send an expiration signal when envelope wasn't delivered to any peer](https://github.com/status-im/status-go/pull/828)
 - [#810 Notify clj side when the message actually "left" local node.](https://github.com/status-im/status-go/issues/810)
 - [#3785 Remove "seen by everyone" from public chat](https://github.com/status-im/status-react/issues/3785)
@@ -146,4 +147,5 @@ This is fundamentally a soft or qualitative goal. It is thus necessary but not n
 Zero instabug reports within 30 days of alpha release
 
 ## Copyright
+
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
