@@ -1,6 +1,6 @@
 ---
-id: 142-recovery-compatibility
-title: Wallet Recovery Compatibility
+id: 142-wallet-compatibility
+title: Wallet Compatibility
 status: Active
 created: 2018-04-04
 category: core
@@ -47,11 +47,11 @@ Users should be able to use `dapps` on their browser and continue to use them wi
 Other wallets like MetaMask, Toshi, Cipher, etc., implements BIPs 39/32/44 like Status, and so they derive the keys starting from 12 mnemonic words.
 
 Given that they use the same standards, users can start playing with a `dapp` with one of those apps, and continue with another one without problems. They can open one of the other apps, and use the same 12 mnemonic words to import their existing account (private key).
- 
+
 In Status, we implement the same standards to derive the keys starting from the 12 mnemonic words but using different constants, and we use the password added as an extra entropy in the generation of the seed.
 
 This means that users can click on "Add existing account" and successfully "import" an account with the 12 mnemonic words that they generated in a different wallet software, but ending up with a different key and address.
-Since the generation of the key is different, the account and address are not the ones that the user expected to import. 
+Since the generation of the key is different, the account and address are not the ones that the user expected to import.
 Users won't be able to log in on `dapps` with the same they used previously, and won't be able to see the value and collectables they actually have in their wallet.
 
 Impacts Idea #58-mainnet
@@ -83,7 +83,7 @@ The changes went already through the security audit.
 
 Goal Date: 2018-05-18
 
-Description: users can import and export an account to and from Status. 
+Description: users can import and export an account to and from Status.
 
 Testing Days required: <!-- Days required at the end of development for testing -->
 
@@ -98,8 +98,8 @@ Users can use a single account/address for `dapps` and use it both in external a
 
 ## Supporting Role Communication
 
-Once deployed, the generation of the keys will change. 
-It will be impossible to re-import an account created previously. 
+Once deployed, the generation of the keys will change.
+It will be impossible to re-import an account created previously.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
