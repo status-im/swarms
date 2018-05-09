@@ -1,5 +1,5 @@
 ---
-id: ???-ultra-light-client
+id: 254-ultra-light-client
 title: Integration of ULC in Status
 status: Draft
 created: 2018-05-02
@@ -17,7 +17,7 @@ future-iterations: no
 
 ## Preamble
 
-    Idea: ???-ultra-light-client
+    Idea: 254-ultra-light-client
     Title: Integration of ULC in Status
     Status: Draft
     Created: 2018-05-02
