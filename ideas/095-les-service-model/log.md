@@ -1,5 +1,11 @@
 ## Logfile
 
+### 2018-05-09
+
+- Separated ULC into own swarm
+- Renamed back into #095-les-service-model
+- Set to draft for new priority setting for ULC
+
 ### 2018-04-26
 
 - ULC has higher priority to become independend of Infura asap
