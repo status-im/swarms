@@ -1,7 +1,7 @@
 ---
 id: 142-recovery-compatibility
 title: Wallet Recovery Compatibility
-status: Limbo
+status: Active
 created: 2018-04-04
 category: core
 lead-contributor: pilu
@@ -22,16 +22,14 @@ roles-needed:
 ## Meta
 
     Idea: #142
-    Title: Wallet Recovery Compatibility
+    Title: Wallet Compatibility
     Status: Draft
     Created: 2018-04-04
-    Requires (*optional): #94 Wallet Compatibility
-    Replaces (*optional): <Idea number(s)>
+    Replaces (*optional): #94
 
 ## Summary
 
-A user should be able to recover accounts created in MyCrypto, MetaMask, Toshi, Cipher Browser, and other
-mnemonic wallets, into Status.
+Users should be able to use `dapps` on their browser and continue to use them with the same account in Status, and vice versa.
 
 ## Swarm Participants
 
@@ -46,57 +44,62 @@ mnemonic wallets, into Status.
 
 ## Product Overview
 
-The wallets named above create the private key with the mnemonic words but without password.
+Other wallets like MetaMask, Toshi, Cipher, etc., implements BIPs 39/32/44 like Status, and so they derive the keys starting from 12 mnemonic words.
 
-In those wallets, the password is only used to lock the account and encrypt the private key, and it's not needed to recover it.
+Given that they use the same standards, users can start playing with a `dapp` with one of those apps, and continue with another one without problems. They can open one of the other apps, and use the same 12 mnemonic words to import their existing account (private key).
+ 
+In Status, we implement the same standards to derive the keys starting from the 12 mnemonic words but using different constants, and we use the password added as an extra entropy in the generation of the seed.
 
-In Status, the same password is used to generate the account and to recover it,
-so a user cannot recover a wallet created with the 12 words but without password.
+This means that users can click on "Add existing account" and successfully "import" an account with the 12 mnemonic words that they generated in a different wallet software, but ending up with a different key and address.
+Since the generation of the key is different, the account and address are not the ones that the user expected to import. 
+Users won't be able to log in on `dapps` with the same they used previously, and won't be able to see the value and collectables they actually have in their wallet.
 
-To be compatible with those wallets, we should create and recover wallets without password,
-and use the passoword only to lock the account on the phone.
-
-### Product Description
-
-[need help from UX team]
-
-### Requirements & Dependencies
-<!-- Are there bugs or feature requests in other repositories that are part of this Idea? -->
-<!-- There is no approval unless the idea requires to be reviewed by supporting organelles (Financial, Hiring, or Design). -->
-<!-- The Swarm must develop a fully fleshed out Requirements document for the idea to proceed, to the satisfaction of participants. -->
-
-Requires Idea #94 (Wallet Compatibility)
 Impacts Idea #58-mainnet
 Impacts Idea #80-onboarding
 
+### Technical overview
+
+The changes have been already implemented in [PR 858](https://github.com/status-im/status-go/pull/858), and they already went through the security audit.
+
+**Changes:**
+
+* update the BIP39 seed generation to use the salt `"mnemonic"` instead of `"status-im"` following [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#from-mnemonic-to-seed).
+
+* update the master key generation using the constant `"Bitcoin seed"` instead of `"status-im"`, following [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#master-key-generation).
+
+* remove the use of the password in the salt during the BIP39 seed generation (password is not removed from the app in general, and it's still required to encrypt the keys on the device).
+
+### User stories
+
+* As a user, I want to be able to use a `dapp` in Status, and then open the same `dapp` with the same account in a different Wall Software, using the 12 mnemonic words.
+
+* As a user, I want to be able to use a `dapp` in an external app, and then using it in Status with the same account generated imported using the 12 mnemonic words.
+
+### Security and Privacy Implications
+
+The changes went already through the security audit.
+
 ### Minimum Viable Product
 
-Goal Date: 2018-04-20
+Goal Date: 2018-05-18
 
-Description: <!-- Description of Deliverables-->
-
-## Dates
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format -->
-
-Description: <!-- Description of Deliverables-->
+Description: users can import and export an account to and from Status. 
 
 Testing Days required: <!-- Days required at the end of development for testing -->
 
 ## Success Metrics
-<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move? -->
-
-<!-- Example: Onboarding conversion rate. Target >30% full funnel -->
 
 * 5k daily active users (OKR 2.1 of Q2)
 * 20% of users send a transaction (OKR 2.4 of Q2)
 
 ## Exit criteria
-<!-- Launch new onboarding UI flow -->
 
-Accounts created with the mnemonic wallets named above can be recovered in Status.
+Users can use a single account/address for `dapps` and use it both in external apps and in Status.
 
 ## Supporting Role Communication
-<!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
+
+Once deployed, the generation of the keys will change. 
+It will be impossible to re-import an account created previously. 
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
