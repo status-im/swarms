@@ -23,7 +23,7 @@ roles-needed:
 
     Idea: #142
     Title: Wallet Compatibility
-    Status: Draft
+    Status: Active
     Created: 2018-04-04
     Replaces (*optional): #94
 
@@ -54,8 +54,8 @@ This means that users can click on "Add existing account" and successfully "impo
 Since the generation of the key is different, the account and address are not the ones that the user expected to import.
 Users won't be able to log in on `dapps` with the same they used previously, and won't be able to see the value and collectables they actually have in their wallet.
 
-Impacts Idea #58-mainnet
-Impacts Idea #80-onboarding
+
+Impacts Ideas #58-mainnet and #80-onboarding.
 
 ### Technical overview
 
@@ -68,6 +68,12 @@ The changes have been already implemented in [PR 858](https://github.com/status-
 * update the master key generation using the constant `"Bitcoin seed"` instead of `"status-im"`, following [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#master-key-generation).
 
 * remove the use of the password in the salt during the BIP39 seed generation (password is not removed from the app in general, and it's still required to encrypt the keys on the device).
+
+### Relevant reading
+
+* [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+* [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
+* [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
 
 ### User stories
 
