@@ -1,9 +1,10 @@
 ---
-id: 99-confidence
+id: 099-confidence
 title: Confidence in Messaging
-status: Active
+status: Limbo
 created: 2018-03-22
 category: core
+lead-contributor: rasom
 contributors:
     - rasom
     - lukaszfryc
