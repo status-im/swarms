@@ -44,15 +44,16 @@ Users should be able to use `dapps` on their browser and continue to use them wi
 
 ## Product Overview
 
-Other wallets like MetaMask, Toshi, Cipher, etc., implements BIPs 39/32/44 like Status, and so they derive the keys starting from 12 mnemonic words.
+Other wallets used to interact with dapps, like MetaMask, Toshi, Cipher, etc., implements BIPs 39/32/44 like Status, and so they derive the keys starting from 12 mnemonic words.
 
-Given that they use the same standards, users can start playing with a `dapp` with one of those apps, and continue with another one without problems. They can open one of the other apps, and use the same 12 mnemonic words to import their existing account (private key).
+Given that they use the same standards, users can start playing with a `dapp` with one of those apps, and continue with another one without problems. They can open one of the other apps, and use the same 12 mnemonic words to import their existing account (keys).
 
-In Status, we implement the same standards to derive the keys starting from the 12 mnemonic words but using different constants, and we use the password added as an extra entropy in the generation of the seed.
+In Status, we implement the same standards to derive the keys starting from the 12 mnemonic words but using different parameters, and we use the password added as an extra entropy in the generation of the seed.
 
-This means that users can click on "Add existing account" and successfully "import" an account with the 12 mnemonic words that they generated in a different wallet software, but ending up with a different key and address.
+This means that users can click on "Add existing account" and successfully "import" an account with the 12 mnemonic words that they generated in a different wallet software.
+But this process ends up generating different keys and addresses.
 Since the generation of the key is different, the account and address are not the ones that the user expected to import.
-Users won't be able to log in on `dapps` with the same they used previously, and won't be able to see the value and collectables they actually have in their wallet.
+Users won't be able to log in to `dapps` with the same account they used previously, and won't be able to see the value and collectables they actually have in their wallet.
 
 
 Impacts Ideas #58-mainnet and #80-onboarding.
@@ -79,7 +80,7 @@ The changes have been already implemented in [PR 858](https://github.com/status-
 
 * As a user, I want to be able to use a `dapp` in Status, and then open the same `dapp` with the same account in a different Wall Software, using the 12 mnemonic words.
 
-* As a user, I want to be able to use a `dapp` in an external app, and then using it in Status with the same account generated imported using the 12 mnemonic words.
+* As a user, I want to be able to use a `dapp` in an external app, and then using it in Status with the same account imported using the 12 mnemonic words.
 
 ### Security and Privacy Implications
 
