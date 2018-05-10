@@ -1,3 +1,23 @@
+---
+id: 003-er20-token-support
+title: ERC20 Token Support
+status: Done
+created: 2017-11-08
+category: core
+lead-contributor: jeluard
+contributors:
+    - jeluard
+    - goranjovic
+    - 3esmit
+    - asemiankevich
+exit-criteria: no
+success-metrics: no
+clear-roles: yes
+future-iterations: yes
+---
+
+## Preamble
+
 Idea code: DEV#003
 Status: Done
 Created: 2017-11-08

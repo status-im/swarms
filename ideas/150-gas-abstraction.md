@@ -1,3 +1,21 @@
+---
+id: 150-gas-abstraction
+title: Gas Abstraction
+status: Draft
+created: 2018-02-01
+category: core
+lead-contributor: 3esmit
+contributors:
+    - 3esmit
+    - richard-ramos
+    - iurimatias
+    - alexvandesande
+exit-criteria: no
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 # Gas Abstraction
 
 ## Preamble
