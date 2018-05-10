@@ -55,6 +55,7 @@ But this process ends up generating different keys and addresses.
 Since the generation of the key is different, the account and address are not the ones that the user expected to import.
 Users won't be able to log in to `dapps` with the same account they used previously, and won't be able to see the value and collectables they actually have in their wallet.
 
+To fix this problem, in the Technical Overview we describe the changes that make the generation of the keys compatible with those other wallets.
 
 Impacts Ideas #58-mainnet and #80-onboarding.
 
@@ -78,7 +79,7 @@ The changes have been already implemented in [PR 858](https://github.com/status-
 
 ### User stories
 
-* As a user, I want to be able to use a `dapp` in Status, and then open the same `dapp` with the same account in a different Wall Software, using the 12 mnemonic words.
+* As a user, I want to be able to use a `dapp` in Status, and then open the same `dapp` with the same account in a different Wallet Software, using the 12 mnemonic words.
 
 * As a user, I want to be able to use a `dapp` in an external app, and then using it in Status with the same account imported using the 12 mnemonic words.
 
