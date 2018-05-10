@@ -2,6 +2,7 @@
 !.github
 !.gitignore
 !*.md
+!*.scss
 _site
 .sass-cache
 .jekyll-metadata
