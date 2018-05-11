@@ -27,7 +27,7 @@ okrs:
 
     Idea: 96
     Title: Tribute to Talk
-    Status: In Progress
+    Status: In Progress - paused until post-beta
     Created: 2018-03-20
     Requires (*optional): TBD
 
@@ -38,7 +38,8 @@ Economics-based anti-spam filter, in our case for receiving messages and “cold
 
 ## Swarm Participants
 - Lead Contributor: @richard-ramos
-- Testing & Evaluation: 
+- Testing & Evaluation: @serhy
+- Contributor: @yenda
 - Contributor: @3esmit
 - PM:  @rachelhamlin
 - UX: @denis-sharypin
@@ -89,6 +90,11 @@ For the initial delivery, these are the minimum features proposed.
 - [ ] Deposit is returned to requester if rejected or withdrawn
 
 Next milestones and deliverables would be determined discussing and prioritizing features of the product description
+
+##### Update 2019-09-05:
+- [Clojure work in progress](https://github.com/status-im/status-react/tree/feature/message-tributes)
+- Contract complete
+- Designs complete
 
 ## Dates
 Goal Date: TBD 
