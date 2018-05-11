@@ -4,6 +4,7 @@ title: Seamless Login
 status: Limbo
 created: 2018-05-04
 category: core
+lead-contributor: alwx
 contributors:
     - alwx
     - asemiankevich
