@@ -4,6 +4,7 @@ title: Improve OpenBounty Testing and make it easy to contribute
 status: Limbo
 created: 2018-04-02
 category: openbounty
+lead-contributor: churik
 contributors:
     - churik
     - annadanchenko
