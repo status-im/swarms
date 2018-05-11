@@ -5,6 +5,7 @@ status: Completed
 created: 2018-04-02
 ended: 2018-05-01
 category: meta
+lead-contributor: oskarth
 contributors:
     - martinklepsch
     - oskarth
