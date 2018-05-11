@@ -4,6 +4,7 @@ title: Use Mainnet as the default network
 status: Active
 created: 2017-12-08
 category: core
+lead-contributor: adambabik
 contributors:
     - adambabik
     - annadanchenko
