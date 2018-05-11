@@ -1,7 +1,7 @@
 ---
 id: 096-message-tributes
 title: Tribute to Talk
-status: Paused until post-beta
+status: Limbo
 created: 2018-03-20
 category: core
 lead-contributor: richard-ramos
@@ -90,6 +90,11 @@ For the initial delivery, these are the minimum features proposed.
 - [ ] Deposit is returned to requester if rejected or withdrawn
 
 Next milestones and deliverables would be determined discussing and prioritizing features of the product description
+
+##### Update 2019-09-05:
+- [Clojure work in progress](https://github.com/status-im/status-react/tree/feature/message-tributes)
+- Contract complete
+- Designs complete
 
 ## Dates
 Goal Date: TBD 
