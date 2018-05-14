@@ -59,7 +59,7 @@ Goal Date: 2018-06-30
 Description:
 
 - [ ] New Ultra Light Client mode is added to patched LES
-- [ ] Integrate ULC with `status-go`
+- [ ] Integrate ULC with `status-go` with Status nodes as trusted nodes
 - [ ] Collect metrics (CPU, mem, disk, network I/O) when starting with a branch new install and after 1h of inactivity
 - [ ] Keep battery and network consumption at least as low as today with Infura
 
@@ -78,7 +78,7 @@ Description:
 
 ## Success Metrics
 
-LES of `go-ethereum` is extended to use ULC.
+LES of `go-ethereum` is extended to use ULC with a similar or better use of bandwidth and CPU as Infura.
 
 ## Copyright
 
