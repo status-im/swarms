@@ -1,7 +1,7 @@
 ---
 id: 068-core-metrics
 title: Core Metrics
-status: Limbo
+status: Completed
 created: 2018-01-10
 category: core
 lead-contributor: chadyj
@@ -21,7 +21,7 @@ roles-needed:
 
     Idea: #68-core-metrics
     Title: Core Metrics
-    Status: In progress
+    Status: Complete
     Created: 2018-01-10
 
 
@@ -119,8 +119,7 @@ Description: Track basic product events to start measuring engagement
 * [x] [Track engagement events](https://github.com/status-im/status-react/issues/3545)
 * [x] Opt-in screen during signup
 * [x] [Opt-in toggle in settings](https://github.com/status-im/status-react/issues/3538)
-* [ ] [Improve opt-in screen](https://github.com/status-im/status-react/issues/3944)
-* [ ] [Tweaks and improvements](https://github.com/status-im/status-react/issues/3732)
+* [x] [Improve opt-in screen](https://github.com/status-im/status-react/issues/3944)
 
 
 ### Success metrics
@@ -129,4 +128,4 @@ This swarm is considered successful if it empowers 4 other swarms to use core me
 
 ### Exit Criteria
 
-When iteration 2 is complete this swarm will end. Any new metric instrumentation is to be completed by user-facing swarms that implement new screens or functionality by updating the [mixpanel_events.edn](https://github.com/status-im/status-react/blob/develop/src/status_im/utils/mixpanel_events.edn) file.
+When iteration 2 is complete this swarm will end. Any new metric instrumentation is to be completed by user-facing swarms that implement new screens or functionality by updating the [mixpanel_events.cljs](https://github.com/status-im/status-react/blob/develop/src/status_im/utils/mixpanel_events.cljs) file.
