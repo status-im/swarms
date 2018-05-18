@@ -1,7 +1,7 @@
 ---
 id: 143-seamless-login
 title: Seamless Login
-status: Limbo
+status: Aborted
 created: 2018-05-04
 category: core
 lead-contributor: alwx
@@ -26,7 +26,7 @@ okrs:
 
     Idea: 143
     Title: Seamless Login
-    Status: In Progress
+    Status: Aborted
     Created: 2018-05-04
 
 
