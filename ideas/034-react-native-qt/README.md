@@ -79,12 +79,17 @@ Goal Date: 2018-05-07
 
 ### Iteration 4
 Goal Date: 2018-05-18
-1. Resolve account creation issues with StatusIm.app bundle (happens only on non-vm machines)
-2. Automate Mac OS bundle creation
-3. Ubuntu distribution with JavaScriptCore enabled
-4. Realm native module support by r-n-d and JavaScriptCore in Ubuntu distribution
-5. Build react-native-desktop on Windows
-6. status-react Desktop Windows portable binaries distribution
+1. Resolve account creation issues with StatusIm.app bundle (happens only on non-vm machines) (2018-05-16 update: Done)
+2. Automate Mac OS bundle creation (2018-05-16 update: Done)
+3. Ubuntu distribution with JavaScriptCore enabled (2018-05-16 update: Proof of concept verified)
+4. Realm native module support by r-n-d and JavaScriptCore in Ubuntu distribution (2018-05-16 update: On-hold)
+5. Build react-native-desktop on Windows (2018-05-16 update: Done)
+6. status-react Desktop Windows portable binaries distribution (2018-05-16 update: Done)
+
+### Iteration 5
+Goal Date: 2018-06-01
+1. Resolve failing jest unit tests, increase stability of unit testing runs
+2. Support of on-going needs for StatusIM Desktop project
 
 Goal Date: TODO
 Description: Integrate react-native-desktop into latest status-react sources with desktops screens available. (2018-05-04 update: Done)
