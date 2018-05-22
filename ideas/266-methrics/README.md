@@ -1,5 +1,5 @@
 ---
-id: 000-methrics
+id: 266-methrics
 title: Methrics
 status: draft
 created: 2018-05-17
@@ -26,7 +26,7 @@ roles-needed:
 
 ## Preamble
 
-    Idea: 000-methrics
+    Idea: 266-methrics
     Title: Methrics
     Status: Draft
     Created: 2018-05-17
@@ -68,6 +68,8 @@ To explore as part of this project is how to ensure that data retention laws suc
 * I want to limit specific types of data that Status collects when I use the application
 * I want to export the data conveniently for my own analysis
 * I want meaningful information that I can make sense of, opposed to datapoints
+* As a status developer, I want to build the right features for our users, and want to understand adoption
+* As a dapp developer, I want to understand how users interact with my dapp
 
 ### Requirements & Dependencies
 
