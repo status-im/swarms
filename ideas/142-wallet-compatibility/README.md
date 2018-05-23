@@ -1,7 +1,7 @@
 ---
 id: 142-wallet-compatibility
 title: Wallet Compatibility
-status: Active
+status: Completed
 created: 2018-04-04
 category: core
 lead-contributor: pilu
