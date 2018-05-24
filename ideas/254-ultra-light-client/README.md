@@ -5,13 +5,13 @@ status: Draft
 created: 2018-05-02
 category: research
 contributors:
-    - themue
-    - jeka
     - b00ris
+    - jeka
+    - themue
     - zsfelfoldi (external)
 exit-criteria: yes
 success-metrics: yes
-clear-roles: no
+clear-roles: yes
 future-iterations: no
 ---
 
@@ -29,10 +29,10 @@ the ULC addressing this kind of clients.
 
 ## Swarm Participants
 
-- Lead Contributor: @themue
+- Lead Contributor: @b00ris
 - Testing & Evaluation: TBD
 - Contributor: @jeka
-- Contributor: @b00ris
+- Contributor: @themue
 - PM: @zsfelfoldi (external)
 - UX (if relevant):
 
