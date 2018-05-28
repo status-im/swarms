@@ -1,7 +1,7 @@
 ---
 id: 154-web3
 title: Support web3.js library
-status: Limbo
+status: Completed
 created: 2018-04-09
 category: core
 lead-contributor: flexsurfer
@@ -22,7 +22,7 @@ roles-needed:
 
     Idea: 154
     Title: Support web3.js library
-    Status: In Progress
+    Status: Completed
     Created: 2018-04-09
     
 ## Summary
@@ -60,13 +60,13 @@ Users can load, log in to, and transact inside any DApp using the Status browser
 
 - [X] [#2704](https://github.com/status-im/status-react/issues/2704): Personal sign message support (CryptoKitties blocker)
 
-- [ ] [#784](https://github.com/status-im/status-go/issues/784): Contract handler not called after contract deployment
+- [X] [#784](https://github.com/status-im/status-go/issues/784): Contract handler not called after contract deployment
 
-- [ ] [#3823](https://github.com/status-im/status-react/issues/3823): Sync calls are not supported in Status 
+- [X] [#3823](https://github.com/status-im/status-react/issues/3823): Sync calls are not supported in Status 
 
-- [ ] [#2479](https://github.com/status-im/status-react/issues/2479): web3 filters don't work with Status chat bot
+- [X] [#2479](https://github.com/status-im/status-react/issues/2479): web3 filters don't work with Status chat bot
 
-- [ ] [#3824](https://github.com/status-im/status-react/issues/3824): [Blockchain Cuties](https://blockchaincuties.co ) does not load inside Status
+- [X] [#3824](https://github.com/status-im/status-react/issues/3824): [Blockchain Cuties](https://blockchaincuties.co ) does not load inside Status
 
 ### Minimum Viable Product
 
@@ -77,6 +77,8 @@ Description:
 - Support web3.js library v.0.20.3
 
 Testing days required:
+
+Swarm closed 2018-05-14.
 
 ## Exit Criteria
 - Test cases defined for web3.js v.0.20.3
