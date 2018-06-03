@@ -31,7 +31,7 @@ okrs:
 
 ## Summary
 
-Instead of Burning fees, user lock them in a contract where a democracy can choose where user can destinate them, such as approved Status Open Bounties. 
+Instead of Burning fees, user lock them in a contract where a democracy can choose where user can destine them, such as approved Status Open Bounties. 
 
 ## Swarm Participants
 
@@ -43,11 +43,11 @@ Instead of Burning fees, user lock them in a contract where a democracy can choo
 
 ## Product Overview
 
-Burning fees are used when theres no rightful beneficiary for the destination of funds, however in a fixed supply economy will ultimately lead to a failed model because of excessive deflation of economy.
+Burning fees are used when there is no rightful beneficiary for the destination of funds, however in a fixed supply economy will ultimately lead to a failed model because of excessive deflation of economy.
 Recycling fees to approved destinations by Status Democracy can lead to a self funded DAO through its own fees. 
-This fees should not be introduced without reason, instead they are only introduced when there is no other way of achieving an social-economic feature, for example, a curation board where users can pay to increase a determined rating but theres no rightful destination of this funds in an decentralized organization.
+This fees should not be introduced without reason, instead they are only introduced when there is no other way of achieving an social-economic feature, for example, a curation board where users can pay to increase a determined rating but there is no rightful destination of this funds in an decentralized organization.
 Future features of Status Network, such as "Emoji Score Board" will send fees to recycling.
-Users that have their locked fees will be able to select where that fees can go, therefore deciding by themselfs which features to be implemented in Status are more important. 
+Users that have their locked fees will be able to select where that fees can go, therefore deciding by themselves which features to be implemented in Status are more important. 
 
 ### User Stories
 
@@ -57,7 +57,7 @@ Users now have locked funds which they can only spend in approved Open Bounties,
 
 ### Requirements & Dependencies
 
-172-topic-democracy voting app for deciding where the fees can be destinated.
+172-topic-democracy voting app for deciding where the fees can be destined.
 
 ### Security and Privacy Implications
 
