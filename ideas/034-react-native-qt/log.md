@@ -1,5 +1,9 @@
 ## Logfile
 
+### 2018-05-25
+- TextInput enchancements: Support of keyboard modifiers keys, newline character. (Volodymyr)
+- patch-package node.js tool is used to automate patching of 3rd party node modules on `npm install`. (Max)
+
 ### 2018-05-18
 - Build script to fully automate Mac OS bundle build process. (Volodymyr)
 - TextInput react-native component issues resolution to work as expected in StatusIm Desktop. (Volodymyr)

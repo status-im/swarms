@@ -88,6 +88,11 @@ Goal Date: 2018-05-18
 
 ### Iteration 5
 Goal Date: 2018-06-01
+1. Resolve failing jest unit tests, increase stability of unit testing runs (2018-06-03 update: Not started)
+2. Support of on-going needs for StatusIM Desktop project (2018-06-03 update: In-Progress)
+
+### Iteration 6
+Goal Date: 2018-06-18
 1. Resolve failing jest unit tests, increase stability of unit testing runs
 2. Support of on-going needs for StatusIM Desktop project
 
