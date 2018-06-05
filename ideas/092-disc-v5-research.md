@@ -1,7 +1,7 @@
 ---
 id: 092-disc-v5-research
 title: Research Ethereum Discovery V5 Protocol
-status: Limbo
+status: Done
 created: 2018-03-12
 category: core
 lead-contributor: adambabik
@@ -43,7 +43,7 @@ This is a research swarm. It must provide answers to the following questions:
 
 #### Q: CPU/network increase usage. How does it change in absolute and relative values? How to reproduce the measurement?
 
-**A:** TBD
+**A:** Discovery protocol is enabled just at the beginning and it uses caching for reducing the amount of CPU and network usage. There was no negative impact on any of these metrics reported so far.
 
 
 #### Q: Can we turn on and off discovery protocol when the node is running?
@@ -53,7 +53,7 @@ This is a research swarm. It must provide answers to the following questions:
 
 #### Q: Can Discovery V5 protocol carry more information than protocol name and version? How can we distinguish Light Whisper nodes or Whisper nodes with MailServer capability? Notice that revealing this information (like Light Whisper node) may increase a chance to reveal the peer identity. The fact that we don’t want mobile phones to be each other peers raises this question.
 
-**A:** Topic can be an arbitrary `key=value` pair. The rest will be answer later...
+**A:** Topic can be an arbitrary `key=value` pair. Mobile nodes do not register themselves in Discovery V5 so they won't be actively advertised in the network. Additionally, we can turn off accepting [incoming connection requests](https://github.com/status-im/status-go/pull/982).
 
 
 #### Q: How to make sure that connecting to the cluster will be fast? When the app goes to the background, does it take significantly more time to find peers? Do we need to use cache? From the cluster perspective, how to autoscale cluster so that its free capacity is always high?
@@ -62,7 +62,7 @@ This is a research swarm. It must provide answers to the following questions:
 
 To use Discovery V5, we need to set up bootnodes, however, they can use the existing server nodes, provided that they advertise Discovery V5 topics.
 
-*Provide answer for cluster autoscaling.*
+Scaling the cluster is just a matter of adding new server nodes and pointing them to bootnodes.
 
 
 #### Q: How to make sure that there are always at least `N` peers with given capabilities? For instance, we always want to have at least `K` Whisper, `L` MailServer and `M` LES peers connected.
@@ -86,16 +86,23 @@ Description:
 Goal Date: 2018-05-18
 
 Description:
-- [ ] increase awarness by changing the UI copy that Rinkeby network uses Discovery protocol,
+- [x] increase awarness by changing the UI copy that Rinkeby network uses Discovery protocol,
 - [ ] ~~make LES working in Mainnet and Ropsten~~ (this is not in scope of this swarm as we haven't decided between LES vs ULC),
-- [ ] make sure the current MailServers as static peers work,
-- [ ] run a job in Jenkins daily that will print network I/O statistics of Discovery mode (to make sure that changes we make to Discovery V5 actually improve it).
+- [x] make sure the current MailServers as static peers work,
+- [x] run a job in Jenkins daily that will print network I/O statistics of Discovery mode (to make sure that changes we make to Discovery V5 actually improve it).
 
 ## Updates
 
 ### 2018-04-27
 
 - Added `Iteration 1`.
+
+### 2018-06-05
+
+- a [boothealth](https://github.com/status-im/boothealth/blob/master/main.go#L30:6) repo was created to measure performance of Discovery V5,
+- Grafana collects Discovery V5 metrics as well,
+- Discovery V5 is used in all networks with positive feedback,
+- LES support is not planned for beta at all.
 
 
 ## Exit criteria
