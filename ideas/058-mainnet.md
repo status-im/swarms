@@ -1,7 +1,7 @@
 ---
 id: 058-mainnet
 title: Use Mainnet as the default network
-status: Active
+status: Done
 created: 2017-12-08
 category: core
 lead-contributor: adambabik
@@ -74,9 +74,9 @@ Goal Date: 2018-04-14
 
 Goal Date: 2018-05-31
 
-1. [ ] Security audit is finished by an independent company,
-1. [ ] The final report is available,
-1. [ ] All reported security issues and recommendations are evaluated and finished.
+1. [x] Security audit is finished by an independent company,
+1. [x] The final report is available,
+1. [x] All reported security issues and recommendations are evaluated and finished.
 
 ### Updates
 
@@ -86,13 +86,25 @@ Goal Date: 2018-05-31
 - security issues are tracked with `security` label in [status-react](https://github.com/status-im/status-react/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity) and [status-go](https://github.com/status-im/status-go/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity),
 - [a feature request](https://github.com/status-im/status-react/issues/3994) to allow custom upstream address was created
 
-## Status App Bug Bounty iteration (CANCELED)
+#### 2018-06-05
+
+- the final readout took place on May 7th,
+- there were no new issues reported,
+- all issues were fixed; there are still recommendations that we decided to implement but they are not blockers for beta. Moreover, more issues were identified during Risk Management meetings.
+
+## Status App Bug Bounty iteration ~~(CANCELED)~~
 
 **This iteration got canceled as we do not plan to announce Status App Bug Bounty for the time being.**
 
 Goal Date: 2018-04-??
 
 1. [ ] Status App Bug Bounty program is announced and will last for at least X weeks.
+
+### Updates
+
+#### 2018-06-05
+
+We actually decided to run Status App But Bounty in June. The blog post should appear this week.
 
 ## Success and exit criteria
 
