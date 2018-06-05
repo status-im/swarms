@@ -94,7 +94,7 @@ Goal Date: 2018-05-31
 
 ## Status App Bug Bounty iteration ~~(CANCELED)~~
 
-**This iteration got canceled as we do not plan to announce Status App Bug Bounty for the time being.**
+~~**This iteration got canceled as we do not plan to announce Status App Bug Bounty for the time being.**~~
 
 Goal Date: 2018-04-??
 
