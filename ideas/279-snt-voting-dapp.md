@@ -1,5 +1,5 @@
 ---
-id: 267-snt-voting-dapp
+id: 279-snt-voting-dapp
 title: SNT Voting Dapp
 status: draft
 created: 2018-06-05
@@ -23,7 +23,7 @@ okrs:
 
 ## Preamble
 
-    Idea: 267
+    Idea: 279
     Title: SNT Voting Dapp
     Status: Draft
     Created: 2018-05-21
