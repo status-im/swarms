@@ -71,33 +71,25 @@ Goal Date: 2018-06-04
 
 Description:
 
-- [ ] Fix [downloader N/M validation](https://github.com/status-im/go-ethereum/issues/51)
-- [ ] Fix [announce type on handshake](https://github.com/status-im/go-ethereum/issues/55)
-- [ ] [ULC config refactoring](https://github.com/status-im/go-ethereum/issues/52)
-- [ ] [Simulation tests](https://github.com/status-im/go-ethereum/issues/53)
-- [ ] PR to `go-ethereum`
+- [x] Fix [downloader N/M validation](https://github.com/status-im/go-ethereum/issues/51)
+- [x] Fix [announce type on handshake](https://github.com/status-im/go-ethereum/issues/55)
+- [x] [ULC config refactoring](https://github.com/status-im/go-ethereum/issues/52)
+- [x] PR to `go-ethereum`
 
 ### Iteration 2018-06-04 - 2018-06-18
 
 Goal Date: 2018-06-18
 
 Description:
+[ULC milestone 2018-06-04](https://github.com/status-im/go-ethereum/milestone/1)
 
-- [ ] Support integration of ULC into `go-ethereum`
-- [ ] Integrate ULC to `status-go`
-- [ ] Changes to `status-cluster` for making our LES nodes ULC-compatible
-- [ ] Collect metrics (CPU, mem, disk, network I/O) when starting with a branch new install and after 1h of inactivity
-- [ ] Resolve [Client connection to trusted node](https://github.com/status-im/go-ethereum/issues/54)
-- [ ] Resolve [Trusted nodes config](https://github.com/status-im/go-ethereum/issues/56)
 
 ### Iteration 2018-06-18 - 2018-07-02
 
 Goal Date: 2018-07-02
 
 Description:
-
-- [ ] Documentation
-- [ ] Release & Testing
+[ULC milestone 2018-06-18](https://github.com/status-im/go-ethereum/milestone/2)
 
 ## Artifacts
 
