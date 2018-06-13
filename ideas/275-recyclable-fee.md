@@ -23,7 +23,7 @@ okrs:
 
 ## Preamble
 
-    Idea: <to be assigned>
+    Idea: 275-recyclable-fee
     Title: Ricardo Guilherme Schmidt
     Status: Draft
     Created: 2018-06-02 
