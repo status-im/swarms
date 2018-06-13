@@ -27,7 +27,7 @@ Currently, Mail Servers (and other planned server nodes like Push Notification s
 
 The outcome of this swarm are decentralized and discoverable Mail Servers which will initially be managed and trusted by Status. The client will still accept user's custom Mail Servers.
 
-In the next iterations, we may work on a solution to introduce external providers to submit their own Mail Servers into the cluster and allow end users to accept these resources as trusted. The list of providers and their resource could be managed by [Token-Curated Registries](https://docs.google.com/document/d/1BWWC__-Kmso9b7yCI_R7ysoGFIT9D_sfjH3axQsmB6E), for instance.
+In the next iterations, we may work on a solution to allow external providers to submit their own Mail Servers into the cluster and allow end users to accept these resources as trusted. The list of providers and their resource could be managed by [Token-Curated Registries](https://docs.google.com/document/d/1BWWC__-Kmso9b7yCI_R7ysoGFIT9D_sfjH3axQsmB6E), for instance.
 
 ## Product Description
 The work in this swarm can be divided into three areas:
