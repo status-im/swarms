@@ -6,8 +6,8 @@ created: 2018-06-07
 category: core
 lead-contributor: adambabik
 contributors:
-    - @richard-ramos (Richard Ramos, Smart Contract Developer)
-    - @cammellos (Andrea Maria Piana, Clojure Developer)
+    - "Richard Ramos (@richard-ramos), Smart Contract Developer"
+    - "Andrea Maria Piana (@cammellos), Clojure Developer"
 exit-criteria: yes
 success-metrics: yes
 clear-roles: no
