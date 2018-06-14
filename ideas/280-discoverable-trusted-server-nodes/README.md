@@ -19,6 +19,8 @@ okrs:
     - "[P2]: KR: Cluster can handle 500 concurrent users"
 ---
 
+Project Board: https://github.com/orgs/status-im/projects/35
+
 ## Summary
 The idea here is to provide a way to make Mail Server nodes discoverable and trusted. This should work seamlessly for the end user.
 
