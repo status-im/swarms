@@ -6,18 +6,20 @@ created: 2018-06-07
 category: core
 lead-contributor: adambabik
 contributors:
-    - richard-ramos (Smart Contract Developer)
+    - "Richard Ramos (@richard-ramos), Smart Contract Developer"
+    - "Andrea Maria Piana (@cammellos), Clojure Developer"
 exit-criteria: yes
 success-metrics: yes
 clear-roles: no
 future-iterations: yes
 roles-needed:
     - Go Developer
-    - Clojure Developer
 okrs:
     - "[PO]: Objective: Messaging is reliable"
     - "[P2]: KR: Cluster can handle 500 concurrent users"
 ---
+
+Project Board: https://github.com/orgs/status-im/projects/35
 
 ## Summary
 The idea here is to provide a way to make Mail Server nodes discoverable and trusted. This should work seamlessly for the end user.
