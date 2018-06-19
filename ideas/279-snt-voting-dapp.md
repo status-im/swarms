@@ -8,6 +8,7 @@ contributors:
     - Barry 
     - 3esmit
     - rramos
+    - rachelhamlin
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
@@ -31,31 +32,32 @@ okrs:
 
 ## Summary
 
-Provide Status users with a dApp to vote on ideas using their SNT without affecting their token balance.
+Provide Status users with a dApp to vote on ideas using their SNT thru carbon voting, without affecting their token balance.
 
 ## Swarm Participants
 
 - Lead Contributor: @3esmit
 - Contributor: @Barry
 - Contributor: @rramos
-- Contributor: @3esmit
 - QA:
 - PM (required for user-facing): @rachelhamlin
 - UX(R) (required for user-facing swarms):
 
 ## Product Overview
 
-Status.im has ideas for a DApp idea collective commons, and we want the SNT Holders to have the ability to vote on these and decide a winner
+We want to provide a mechanism for SNT Holders to be able to vote on proposals and features using their token balance. 
+
+Each token represents 1 vote, and the balance can be allocated proportionally between the different options a proposal may have, in order to determine the interest level and priorize features.
 
 
 ### Requirements & Dependencies
 
-The final goal for this DApp is to be managed via Liquid Democracy. Idea #172 needs to be implemented before this iteration starts.
+The final goal for this DApp is to be managed via Liquid Democracy. Idea #172 needs to be implemented before the final iteration of this swarm is completed
 
 
 ### Minimum Viable Product
 
-Goal Date: TBD
+Goal Date: 2018-07-29
 
 Description:
 For the initial delivery, these are the minimum features proposed:
@@ -74,6 +76,7 @@ Description:
 - Design / Prototypes are created
 - Design and layout of dApp is updated
 - SNT holders may create items to vote
+- Proposals may contain different options, and SNT can be allocated among them.
 
 ### Iteration 2
 
