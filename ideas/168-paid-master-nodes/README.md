@@ -83,7 +83,7 @@ User story 2: Alice pays SNT to a master node in order to get offline inboxing f
 
 Out of scope for this idea:
 
-- (User story 3: Decentralized discovery mechanism for master nodes)
+- (User story 3: [Decentralized discovery mechanism for master nodes](https://ideas.status.im/ideas/280-discoverable-trusted-server-nodes/README))
 
 - (User story 4: Onboarding mechanism to seed closed beta users with SNT)
 
@@ -141,7 +141,7 @@ high availabity of mail servers is a requirement.
 
 Mail server / wnode / master node are used interchangably. Master mode is the
 "soft" user term (invented by the community!), mail server and wnode are
-technical terms on status-go side.
+technical terms on status-go side (wnode currently falling out of favor).
 
 #### Relevant reading
 
