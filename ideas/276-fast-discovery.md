@@ -1,20 +1,20 @@
 ---
 id: 276-fast-discovery
-title: Fast discovery
+title: 'Fast discovery'
 status: Draft
 created: 2018-06-22
 category: core
 lead-contributor: dshulyak
 contributors:
-        - dshulyak
+    - dshulyak
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
-future-iteration: ?
+future-iteration: no
 roles-needed:
-    - Go Developer
+    - 'Go Developer'
 okrs:
-    - "[PO]: Objective: Messaging is reliable"
+    - '[PO]: Objective: Messaging is reliable'
 ---
 
 ## Preamble
