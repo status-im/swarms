@@ -99,24 +99,40 @@ Description:
 - v1 content architecture agreed upon
 - Website generator, if using, agreed upon—[Gatsby](https://www.gatsbyjs.org/), [Jekyll](https://jekyllrb.com/)? 
 
+Completed: 2018-06-19
+
+High-level content map here: https://realtimeboard.com/app/board/o9J_kzBXeuc=/
+
 ### Iteration 1
 
-Goal Date:
+Goal Date: 2018-07-09
 
 Description:
-- Existing wiki content is updated
-- Any new content in progress
+- ~~Existing wiki content is updated~~
+- `Build Status` guide is updated
+- Add Your Dapp to Status guide is updated
+- ~Any new content in progress~
+- New "Contribute to Status" guide written
 - Design assets for site prepared
+
 
 ### Iteration 2
 
 Goal Date:
 
 Description:
-- Website created, content migrated
-- Plan for maintaining documentation proposed
+- New docs.status.im site is live
+- Content mapped for [3. References and Other guides](https://realtimeboard.com/app/board/o9J_kzBXeuc=/)
+- Strategy for writing and maintaining docs proposed
 
-Note: translatiosn can also be considered at this stage.
+### Iteration 3
+
+Goal Date:
+
+Description:
+- Feedback mechanism built into docs.status.im
+- Information architecture for `I want to Build DApps` defined
+- Content for `I want to learn about web3` identified
 
 ## Success Metrics
 
