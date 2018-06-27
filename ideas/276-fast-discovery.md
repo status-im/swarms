@@ -1,7 +1,7 @@
 ---
 id: 276-fast-discovery
 title: Fast discovery
-status: draft
+status: Draft
 created: 2018-06-22
 category: core
 lead-contributor: dshulyak
@@ -15,7 +15,6 @@ roles-needed:
     - Go Developer
 okrs:
     - "[PO]: Objective: Messaging is reliable"
-    - "[P2]: KR: Cluster can handle 500 concurrent users"
 ---
 
 ## Preamble
@@ -40,6 +39,20 @@ very slow and not reliable. For instance it can consume as much as 2mb in 10s wh
 
 We will implement protocol that takes into consideration problems mentioned in summary of this document.
 
+Statusd process will register both in discovery v5 and rendevouz (defined in this spec) discovery protocol.
+This way we will also preserve backward compatibility with beta release.
+
+### Compatibility with ethereum network
+
+We want to allow other peers to register in status network, and those peers are not necessarily running.
+our software (for example they can run wnode provided in go-ethereum repository). To make it possible we
+can go two ways:
+
+1. Convince them to use new discovery protocol in addition to original discovery based on kademlia.
+This is preferred way, but might be hard to achieve.
+2. Implement a proxy that will search for target topics and create enodes for every node with particular
+topic.
+
 ### User Stories
 
 Devices will be able to connect with new peers without spending noticeable amount of time and traffic.
@@ -61,11 +74,11 @@ https://github.com/libp2p/specs/blob/4059338ff0f90835ed953e1eb4c2beb703cc04d9/re
 For details please see that spec. but essentially it just implements 3 RPC call.
 1. discover peers
 2. register peer for a particular topic
-3. unregister peer
+3. unregister peer (under consideration. we will need to )
 
 ### Peer definition
 
-We need to share more information than pubkey of the peer and information
+We need to share more information than public key of the peer and information
 for ip connection. There is a format suitable for sharing any
 key=value information. You can learn more about ENRs here:
 
