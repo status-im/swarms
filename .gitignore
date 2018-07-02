@@ -6,3 +6,6 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# allow any files in ideas directories
+!ideas/*/*

@@ -1,19 +1,19 @@
 ---
 id: 280-discoverable-trusted-server-nodes
 title: Discoverable And Trusted Server Nodes
-status: Draft
+status: Active
 created: 2018-06-07
 category: core
 lead-contributor: adambabik
 contributors:
     - "Richard Ramos (@richard-ramos), Smart Contract Developer"
     - "Andrea Maria Piana (@cammellos), Clojure Developer"
+    - "Adrià Cidre (@adriacidre), Go Developer"
 exit-criteria: yes
 success-metrics: yes
 clear-roles: no
 future-iterations: yes
 roles-needed:
-    - Go Developer
 okrs:
     - "[PO]: Objective: Messaging is reliable"
     - "[P2]: KR: Cluster can handle 500 concurrent users"
@@ -48,13 +48,13 @@ Due to the fact that all Mail Servers are supposed to be equal and independent (
 
 ## Minimum Viable Product
 
-Goal Date: TBD
+Goal Date: 2018-07-22
 
 1. [ ] A smart contract that keeps track of providers and Mail Servers,
 1. [ ] Discoverable Mail Servers,
 1. [ ] Requests for messages are securely encrypted to provide confidentiality,
     * As devp2p packets are encrypted and this is P2P communication, the question is should we additionally encrypt Whisper messages with a Mail Server's public key?
-1. [ ] A client that collects discovered Mail Servers and verifies if they are trusted using the smart contract. Verified Mail Servers are added to the pool and a random one is selected to use.
+1. [ ] Client requests for Mail Servers and server finds them and verifies if they are trusted using the smart contract. Verified Mail Servers are sent to the client and a random one is selected to use.
     * We keep the option to add user's own Mail Server addresses.
 1. [ ] Make sure this solution is flexible and can work with other server nodes.
 
