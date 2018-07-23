@@ -4,9 +4,9 @@ This document attempts to outline a broad set of guidelines so we can operate sw
 
 What we are working towards is an entirely decentralized organization, where ideas and swarms are funded by any user, stakeholder, in the system. This is a non-trivial problem in terms of incentive design. To get there we are currently using a two-pronged approach. This document focuses purely on the first point:
 
-1.  Formalize swarm lead process and come to a shared agreement about role expectations
+1. Formalize swarm lead process and come to a shared agreement about role expectations
 
-2.  Run incentive/reputation design experiments through Open Bounty
+1. Run incentive/reputation design experiments through Open Bounty
 
 Additionally, there will likely be some changes to ideas repository to
 facilitate the running of a swarm.
