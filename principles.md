@@ -3,7 +3,7 @@
 The goal of Status is widespread adoption of the decentralized web. Our challenge is achieving mass adoption while staying true to our principles outlined below.
 
 **Liberty**
-We believe in the sovereignty of individuals. As a platform that stands for the cause of personal liberty, we maximize social, political, and economic freedoms.
+We believe in the sovereignty of individuals. As a platform that stands for the cause of personal liberty, we aim to maximize social, political, and economic freedoms.
 
 **Censorship resistance**
 We enable free flow of information. No content is under surveillance. We abide
