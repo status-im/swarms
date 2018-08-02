@@ -25,7 +25,7 @@ The software we create is a public good. It is made available via a free and ope
 We minimize centralization across both the software and the organization itself. In other words, we maximize the number of physical computers composing the network, and maximize the number of individuals who have control over the system(s) we are building.
 
 **VIII. Inclusivity**
-We believe in fair and widespread access to our software, with an emphasis on ease-of-use. This also extends to social inclusivity, permissionless participation, and investing in educational efforts.
+We believe in fair and widespread access to our software, with an emphasis on ease-of-use. This also extends to social inclusivity, permissionless participation, interoperability, and investing in educational efforts.
 
 **IX. Continuance**
 We create software that will continue to exist and improve, without the stewardship of a single entity or any of the current team members.
