@@ -4,7 +4,7 @@ title: Adding a service model to LES
 status: Draft
 created: 2018-03-20
 category: research
-lead-contributor: themue
+lead-contributor: @b00ris
 contributors:
     - themue
     - jeka
@@ -32,10 +32,9 @@ and Swarm may follow.
 
 ## Swarm Participants
 
-- Lead Contributor: @themue
+- Lead Contributor: @b00ris
 - Testing & Evaluation: TBD
 - Contributor: @jeka
-- Contributor: @b00ris
 - PM: @zsfelfoldi (external)
 - UX (if relevant):
 
