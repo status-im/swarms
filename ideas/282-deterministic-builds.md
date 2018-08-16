@@ -2,12 +2,10 @@
 id: 282-deterministic-builds
 title: Deterministic Mobile App Builds
 status: In Progress
-created: 2018-08-10
+created: 2018-08-16
 category: infra
 lead-contributor: jakubgs
 contributors:
-    - TODO
-    - TODO
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
@@ -20,7 +18,7 @@ roles-needed:
     Idea: #282-deterministic-builds
     Title: Deterministic Mobile App Builds
     Status: In Progress
-    Created: 2018-08-10
+    Created: 2018-08-16
 
 The purpose of achieving deterministic builds is encuring security of Status software. Deterministic builds depend on ensuring stable inputs, ensuring stable outputs, and capturing as little of the build environment as possible.
 
@@ -33,20 +31,16 @@ In simple terms, deterministic builds mean the same commit generates exactly the
 
 ## Key Results
 
-- TODO
-- Status.im app can be uploaded to F-Droid
+- Anyone can build a commit on their own machines and verify the result by comparing against our builds
+- We can upload Android builds to F-Droid which requires deterministic builds
 
 ## Timeline / Checkpoints
 
-TODO
+__TODO__: Not sure?
 
 # Exit Criteria
 
 - All Status mobile and desktop app builds are deterministic
-
-# Success Metrics
-
-TODO
 
 ## What exactly we going to do?
 
@@ -55,5 +49,5 @@ TODO
 - Make sure we initialize all variables in an explicit way
 - Verify the build output does not depend on build system time/locale/encoding
 - Eliminate timestamp related changes (use `SOURCE_DATE_EPOCH`)
-- Use [gitan-builder](https://github.com/devrandom/gitian-builder) or [Nix](https://nixos.org/nix/) to have a deterministic build environment
+- Use [gitan-builder](https://github.com/devrandom/gitian-builder) or [Nix](https://nixos.org/nix/) to have a controlled build environment
 - Configure deterministic builds to run on Jenkins
