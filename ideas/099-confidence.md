@@ -1,7 +1,7 @@
 ---
 id: 099-confidence
 title: Confidence in Messaging
-status: Active
+status: Aborted
 created: 2018-03-22
 category: core
 lead-contributor: PombeirP
@@ -22,7 +22,7 @@ future-iterations: yes
 
     Idea: 99
     Title: Confidence in Messaging
-    Status: In Progress
+    Status: Aborted
     Created: 2018-03-22
 
 ## Summary
@@ -138,15 +138,52 @@ After iteration 1 is complete the swarm will meet and discuss the results of the
 
 ## Exit Criteria
 
-- >99% message deliverability from [#3792](https://github.com/status-im/status-react/issues/3792)
-
-## Success Metrics
-
 - 95% of a group of 100 users surveyed - who don't have additional context beyond Status providing a p2p IM capability - using the app for an extended period of time, should answer 'yes' to the question: "Do you trust Status to deliver messages for you?" (and possibly variants of this).
 
   This is fundamentally a soft or qualitative goal. It is thus necessary but not necessarily sufficient, and additional harder numbers might be used as we develop the capability to measure this.
 
+## Success Metrics
+
+- >99% message deliverability from [#3792](https://github.com/status-im/status-react/issues/3792)
+
 - Zero instabug reports within 30 days of alpha release
+
+## Retrospective
+
+- What went well?
+
+  - Andrea: Effort was well focused, results were good (although hard to measure)
+  - Chad:
+    - Shipped beta on time
+    - Chat Team worked much better together than previous swarm(s)
+    - Dramatically increased chat reliability!
+    - Coordinated from multiple angles, eg UXR surveys, mixpanel stats, automated testing
+    - Chat board was like night and day compared to previous way
+  - Lukasz:
+    - Switching to teams helped focus a lot
+    - Almost no Instabug reports regarding reliability recently
+  - Dmitry: switch to teams, focus on Beta release, reliability and performance increase
+  - Pedro: having a Chat team was helpful any time a high-priority bug or a question appeared. People know where to go to discuss that without cluttering #core.
+
+- What could we do better?
+
+  - Andrea: The measuring part could have been more fleshed out, we focused more on fixing the current issues rather than fixing and preventing new ones from happening, but overall minor points compared to the benefits of the initiative.
+  - Chad:
+    - Find a better way to measure
+    - Still had a handful of users complaining
+    - Have a proactive way to spot regressions
+  - Lukasz:
+    - Maybe try to monitor on cluster side in the future?
+    - Some issues with Jenkins, seems to be solved now
+  - Pedro:
+    - Better tooling, eg reliable surveys + instabug
+  - Eric: maybe the team effort can work just as well as a swarm, we just need better control of when a swarm is ready to start
+  - Dmitry: reliability metrics (in-app and cluster monitoring)
+
+- What do we want to implement/improve?
+
+  - Better monitoring and better communication between infra and chat teams
+  - Continue with Chat team for Q3
 
 ## Copyright
 
