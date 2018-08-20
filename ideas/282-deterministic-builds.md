@@ -2,10 +2,17 @@
 id: 282-deterministic-builds
 title: Deterministic Mobile App Builds
 status: In Progress
-created: 2018-08-16
+created: 2018-09-01
 category: infra
 lead-contributor: jakubgs
 contributors:
+  - corpetty
+  - adambabik
+  - mandrigin
+  - divan
+  - cammellos
+  - yenda
+  - rasom
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
@@ -18,7 +25,7 @@ roles-needed:
     Idea: #282-deterministic-builds
     Title: Deterministic Mobile App Builds
     Status: In Progress
-    Created: 2018-08-16
+    Created: 2018-09-01
 
 The purpose of achieving deterministic builds is encuring security of Status software. Deterministic builds depend on ensuring stable inputs, ensuring stable outputs, and capturing as little of the build environment as possible.
 
@@ -36,7 +43,20 @@ In simple terms, deterministic builds mean the same commit generates exactly the
 
 ## Timeline / Checkpoints
 
-__TODO__: Not sure?
+Time is given since start of swarm.
+
+* __1 month__
+  - All major blockers are identified for major build steps
+    - Dependencies
+    - Compilation
+    - Packaging
+* __3 months__
+  - All dependencies are contolled and versioned
+  - Env controlling solution is chosen and implemented(vm, nix, docker)
+* __4 months__
+  - Remaining blockers are cleared
+  - CI is configured to build in a deterministic way
+  - Instructions to check build vailidty are published for anyone to use
 
 # Exit Criteria
 
