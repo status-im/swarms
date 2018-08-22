@@ -4,11 +4,11 @@ title: Perfect Forward Secrecy
 status: Active
 created: 2018-07-23
 category: core
-lead-contributor: @cammellos
+lead-contributor: cammellos
 contributors:
-    - @yenda
-    - @pedro
-exit-criteria: no
+    - yenda
+    - pedro
+exit-criteria: yes
 success-metrics: no
 clear-roles: no
 future-iteration: no
@@ -22,9 +22,9 @@ okrs:
   - "[P0]: KR: Implement perfect forward secrecy for chat, including draft of a formal spec"
 ---
 
-# Preamble
+## Preamble
 
-    Idea: 289-perfect-forward-secrecy
+    Idea: 289
     Title: Perfect Forward Secrecy
     Status: In Progress
     Created: 2018-07-23
