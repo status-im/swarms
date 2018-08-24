@@ -1,0 +1,123 @@
+---
+id: 290-hardware-wallet-light
+title: Hardware Wallet Light
+status: Active
+created: 2018-08-24
+category: core
+lead-contributor: bitgamma
+contributors:
+    bitgamma
+    gravityblast
+    goranjovic
+    dmitryn
+    patrick
+    denis-sharpyn
+    guylouis
+    
+exit-criteria: true
+success-metrics: true
+clear-roles: true
+future-iteration: true
+roles-needed:
+    
+---
+
+## Preamble
+
+    Idea: 290-hardware-wallet-light
+    Title: Hardware Wallet Light
+    Status: In Progress
+    Created: 2018-08-24
+
+## Summary
+
+We have a Javacard based wallet implementation ready, see https://github.com/status-im/hardware-wallet
+
+This swarm is about making the hardwallet available (uxr, ux, client integration, sourcing) to our Android users.
+
+## Swarm Participants
+
+- Lead Contributor: @bitgamma
+- Go: @gravityblast
+- Clojure: @gorandjovic @dmitryn
+- UXR: @patrick
+- UX: @denis-sharpyn
+- PM:@guylouis
+
+## Product Overview
+
+The product is a HD hardware wallet in the form of a credit card size javacard with contactless capability (nfc), and is natively usable with our android clent.
+
+It will provide extended security and convenience to our users, providing:
+- ability to create or import an existing Status account or any BIP-32 wallet onto the javacard
+- physically separate the mobile client from its secrets, and allow on-card signature of transactions 
+- facilitate and secure login onto Status account
+
+### Product Description
+
+Our two priorities for a successfull launch of this product are:
+- make no compromise on security 
+- provide a clear and smooth product experience from setup to the everyday usage of the hardwallet
+
+UXR & UX 
+- Status hardwallet will be delivered without any software loaded. At first use, the user will be guided through an initialization of his card where the applet will be loaded and two secrets (pairing code of the card, and PUk to recover the card is PIn gets blocked after 3 wrong PINS) will be communicated to him during the initialization process. This initialization happens only once in the life of the card. 
+- Status user can use their mobile client with hardwallet or no hardwallet. We will guide them through to understand of waht are the implications of using the hardwallet, explaining them where their secrets are stored and how to recover them.
+- There are several secrets involved in the full process : pairing code (specific to the card), PUK (specific to the code), PIN code, Wallet key pair, Whisper key pair, and there is a specific uxr @ ux work to make sure the user is not lost in the different informations provided to him 
+- The user experience is inter-twinned with client integration, since each time a command is set to the card, this one needs to be close to the nfc reader
+- the usages to cover are : initialization of the card, setup of an account, signing of transactions, login to status account, javacard life management (change account, unpair card, unblock card)
+
+Client integration
+- the usages to cover are : initialization of the card, setup of an account, signing of transactions, login to status account, javacard life management (change account, unpair card, unblock card)
+- the intended user experience is that the user will not use his password anymore but a PIN instead. Implications of this have to be studied both on the clients side and javacard side.
+- whisper key decouplig dependency. The following swarm is a dependency for the project : https://github.com/status-im/ideas/pull/292
+
+Sourcing
+- we are sourcing a credit size javacard with the following characteristics: 
+   - compatible with our applet, supporting 3.0.4 SDK 
+   - (if possible, not fully mandatory) supporting EC end point mutliplication  
+   - contactless (nfc)
+   - compatible with our app implementation
+- we are selecting a supplier or a set of suppliers able to provide to us:
+   - printing of the card 
+   - realization of a custom packaging + tamper proof seal
+   - printing of our quick start guide 
+
+Security:
+- a security audit of the javacard code has been delegated to an external security audit company
+
+## Dependency
+
+https://github.com/status-im/ideas/pull/292 is a dependency (whisper key decoupling)
+
+## Success Metrics
+
+### Phase 1
+Goal Date: Q3 2018
+- Have a first batch (>1k products) manufactured and ready to be delivered for a beta test. 
+- Minimum viable product with regards to the integration work: 
+   - initialization of the card
+   - creation and importing of a new account
+   - signing transaction
+   - login into status
+
+Description: 
+### Phase 2
+Goal Date: Q4 2018
+- Freeze a v1 (card + applet are not upgradable once deployed) of the product 
+- which takes into account results of the beta tests feedbacks (card, package, quick start guide, client user experience)
+- production of a second batch (>1k product) of this V1
+- addition of following client features if not present in Phase 1: 
+   - change account on card
+   - PUK unblocking
+   - unpair card
+   - faceID/touchID to replace PIN
+
+Description: 
+## Exit criteria
+
+This swarm will be deemed successful and be closed after reaching Phase 2.
+
+## Copyright
+
+Copyright and related rights waived
+via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
