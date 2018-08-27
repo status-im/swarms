@@ -11,8 +11,7 @@ contributors:
   - mandrigin
   - divan
   - cammellos
-  - yenda
-  - rasom
+  - antdanchenko
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
