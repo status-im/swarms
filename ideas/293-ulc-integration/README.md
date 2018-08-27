@@ -4,8 +4,9 @@ title: ULC integration
 status: draft
 created: 2018-08-06
 category: core
-lead-contributor: b00ris
+lead-contributor: mandrigin
 contributors:
+    - mandrigin Clojure dev
     - b00ris Go dev
     - jeka Go dev
 exit-criteria: no
@@ -34,9 +35,9 @@ okrs:
 Status app can use LES and ULC as Ethereum providers instead of Infura.
 
 ## Swarm Participants
-- Lead Contributor: @b00ris
+- Lead Contributor: @mandrigin
 - Contributor: @jeka
-- Contributor: @mandrigin
+- Contributor: @b00ris
 - Contributor: TBD
 - QA: TBD
 
@@ -44,11 +45,11 @@ Status app can use LES and ULC as Ethereum providers instead of Infura.
 We need LES client enabled on mobile device to be really decentralized and to enable all web3 features for dApps.
 
 ### Requirements & Dependencies
-Depends on research swarm #254
+ULC integration depends on research swarm #254
 
 ### Security and Privacy Implications
-* Free slots for LES servers
-* Trusted nodes selection
+* Free slots for LES servers(can be resolved by les service model, onlyannounce servers, vipnode)
+* Trusted nodes selection(trusted nodes list can be automatically expanded or changed)
 
 ### Minimum Viable Product
 * LES can work as the second Ethereum provider in status app.
@@ -58,36 +59,28 @@ Goal Date: 2018-10-08
 
 Description:
 
-### Iteration 2018-08-13 - 2018-08-27
-
-Goal Date: 2018-08-27
-
-Description:
-* investigate les integration problems and fix them
-* ULC in go-ethereum master(#254)
-
-### Iteration 2018-08-27 - 2018-09-10
+### Iteration 0
 
 Goal Date: 2018-09-10
 
 Description:
-* run ULC compatible nodes in staus cluser
-* integrate ULC to status-go as a patch
+* Add LES as an option for test networks
+* investigate les integration problems and add it to backlog
+* ULC in go-ethereum master(#254)
 
-### Iteration 2018-09-10 - 2018-09-24
+### Iteration 1
 
-Goal Date: 2018-09-24
+Goal Date: 2018-09-25
 
 Description:
-* debug and run status app with ULC and status cluster
+* run in our cluster onlyAnnounce LES servers 
+* update go-ethereum with ULC in status-go 
 * graceful downgrade(use infura by default and if it fails, start ULC node)
 
-### Iteration 2018-09-24 - 2018-10-08
+### Iteration 2
 
-Goal Date: 2018-10-08
-
-Description:
-* reserved for shifting
+Goal Date: 2018-09-25
+ * TBD
 
 ## Success Metrics
 * Status app can use LES and ULC provider instead of Infura.
