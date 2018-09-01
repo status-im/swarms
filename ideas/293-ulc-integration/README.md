@@ -20,7 +20,6 @@ roles-needed:
     - QA
 okrs:
     - Core. [P0] LES and/or ULC are operational and used by at least 10% of all users.
-    - Research. Integrate and test ULC in a manner “graceful downgrade”: use infura by default and if it fails, start ULC node.
 ---
 
 ## Preamble
