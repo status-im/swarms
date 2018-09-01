@@ -67,6 +67,7 @@ Description:
 * Add LES as an option for test networks
 * investigate les integration problems and add it to backlog
 * ULC in go-ethereum master(#254)
+* Add LES servers to our staging fleet
 
 ### Iteration 1
 
