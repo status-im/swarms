@@ -84,7 +84,7 @@ Goal Date: 2018-09-25
  * TBD
 
 ## Success Metrics
-* Status app can use LES and ULC provider instead of Infura.
+* Status app can use LES and ULC provider instead of Infura (10% of users are using it).
 
 ## Exit criteria
 * Running on Mainnet
