@@ -42,6 +42,7 @@ The proposal is to create a Pro version of the hardware wallet not based on the 
 - Contributor: @naghdy
 - QA: TBD
 - UX: TBD
+- PM:@guylouis
 
 ## Product Overview
 The product will be a HD hardware wallet with its own screen and input buttons used to display and confirm transactions. The seed will be generated on card and mnemonics will be displayed on the card screen as to never reach the mobile device. Communication with mobile/desktop clients will happen through BLE. The device will be powered by its own rechargeable battery (inductive charger). Ideally, the physical size will match that of a standard smart card.
