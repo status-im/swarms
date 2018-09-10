@@ -6,19 +6,18 @@ created: 2018-08-24
 category: core
 lead-contributor: guylouis
 contributors:
-    bitgamma
-    pilu
-    goranjovic
-    dmitryn
-    patrick
-    denis-sharpyn
-    obi2020
-    guylouis
+    - bitgamma
+    - pilu
+    - goranjovic
+    - dmitryn
+    - patrick
+    - denis-sharpyn
+    - obi2020
+    - guylouis
 exit-criteria: true
 success-metrics: true
 clear-roles: true
 future-iteration: true
-roles-needed:
 ---
 
 ## Preamble
