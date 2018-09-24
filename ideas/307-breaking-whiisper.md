@@ -1,9 +1,9 @@
 ---
-id: ???-breaking-whisper
+id: 307-breaking-whisper
 title: Breaking Whisper
 status: Draft
 created: 2018-09-24
-category: swarm
+category: swarm / SITG experiment
 lead-contributor: corpetty
 contributors:
 exit-criteria: no
@@ -13,7 +13,7 @@ future-iterations: yes
 ---
 
 ## Preamble
-    Idea: ???-breaking-whisper
+    Idea: 307-breaking-whisper
     Title: SITG Experiment #2: Breaking Whisper
     Status: Draft
     Created: 2018-09-24
@@ -60,6 +60,9 @@ Contributors:
 Goal Date: 2018-
 Description:
 * Systematically perform and record all tests with regards to relevant parameter changes
+
+Contributors: 
+* @corpetty 
 
 ### Milestone 3: Results aggregation and data analysis.
 Goal Date: 2018-
