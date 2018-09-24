@@ -53,7 +53,7 @@ Description:
 
 Contributors: 
 * @divan ??
-* @adamb ??
+* @adamb ??  
 * @arnetheduck ??
 
 ### Milestone 2: Perform theoretical tests.
