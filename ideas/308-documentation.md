@@ -1,5 +1,5 @@
 ---
-id: 307-documentation
+id: 308-documentation
 title: Documentation
 status: draft
 created: 2018-09-26
@@ -34,7 +34,7 @@ okrs:
 
 ## Preamble
 
-Idea: 307
+Idea: 308
 Title: Ducmentation
 Status: Draft
 Created: 2018-09-25
