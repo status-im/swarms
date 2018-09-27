@@ -21,8 +21,6 @@ success-metrics:
 clear-roles: no
 future-iteration: yes
 roles-needed:
-    - Go team janitor
-    - Clojure team janitor
     - Nimbus janitor
     - Hardwallet janitor
     - Technical tutorial writer (perhaps video too?)
@@ -54,6 +52,8 @@ I have called everyone I need `janitors` rather than `leaders` or any other term
 - Contributor: [@jakubgs](https://github.com/jakubgs)
 - QA:
 - PM: [@rachelhamlin](https://github.com/rachelhamlin)
+- Janitor: [@jeluard](https://github.com/jeluard)
+- Janitor: [PombeirP](https://github.com/PombeirP)
 - UX(R):
 
 ## Product Overview
