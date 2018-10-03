@@ -48,8 +48,31 @@ In an attempt to streamline and incentivize this process, as well as experiment 
 ### Milestone 1: Simulation engine completion and metrics definition.
 Goal Date: 2018-
 Description: 
-* Completion of [whispervis](https://github.com/status-im/whispervis) and the required stats as laid out in Product Overview HackMD doc.
+* Completion of [whispervis](https://github.com/status-im/whispervis) and the required stats as laid out in [Overview](##Overview) HackMD doc, which are repeated here as follows:
+  - test capacity as
+  - number of nodes
+  - number of messages/sec
+    - poisson distribution
+  - number of connections
+- a given message $m_i$ has:
+  - size of message, $m_{s,i}$
+    - poisson distribution
+  - proof of work, $m_{pow, i}$
+  - ttl, $m_{ttl,i}$
+- a given node, $node$, has:
+  - messages/sec rate, $node_{v,i}$
+    - poisson distribution
+  - number of peers, $node_{num\_p,i}$
+    - poisson distribution
+      - reputation per peer link (spam)
+        - dynamic based on devp2p
+        - which means it can move within a given distribution
+  - topic bloom filter, $node_{b,i} \exists [0,1]$
 * The simulation aspect is not as important as the ability to run multiple tests with different parameters changed in a quick manner
+
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
 
 Contributors: 
 * @divan ??
@@ -60,6 +83,10 @@ Contributors:
 Goal Date: 2018-
 Description:
 * Systematically perform and record all tests with regards to relevant parameter changes
+
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
 
 Contributors: 
 * @corpetty 
@@ -75,6 +102,10 @@ Description:
 * This should provide preliminary data on theoretical limit of naive whisper scaling
   * Publish a blog about current progress, current insights, proposed next steps
 
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
+
 Contributors: 
 * @easye ??
 
@@ -86,6 +117,10 @@ Description:
 * Note typical usage / remove standard usage
 * Development of methodology for stress testing Beta fleet in the similar manner as Theoretical model. 
 
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
+
 Contributors: 
 * @jacob ??
 
@@ -95,6 +130,10 @@ Goal Date: 2018-
 * Collect and store relevent performance metrics
 * Publish a blog about initial experimental results and thoughts
 
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
+
 ### Milestone 6: Comparison Analysis
 Goal Date: 2018-
 * Compare theoretical vs experimental tests data
@@ -103,10 +142,22 @@ Goal Date: 2018-
   * problems with theoretical model and experimental setup
   * improvements with communication scaling and their implementation details with experimental/theoretical frameworks
 
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
+
+Contributors: 
+* @corpetty
+* @jacek ??
+
 ### Milestone 7: Paper write-up and publish
 Goal Date: 2018-
 * Write up the entire process / analysis / results / and conclusions for ourselves and the public. 
 * Portal for community feedback
+
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
 
 Contributors: 
 * Someone from peopleops for portal ??
@@ -114,6 +165,10 @@ Contributors:
 ## Success Metrics
 * Compeleted paper on whisper scaling, both theoretical and experimental
 * Enough information to make a case on how Status uses Whisper, what userbase / message load it breaks at, and what improvements to test to judge viability of Whisper in the future
+
+Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD
 
 Contributors: 
 * @easye ??
