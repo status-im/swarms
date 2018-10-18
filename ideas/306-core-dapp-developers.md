@@ -25,6 +25,10 @@ DApps and Dev team is mostly focused on:
 * providing tooling for DApps developers (documentation, HTTP API, JS API)
 * offering Status extensions capacities
 
+[Q4 2018 DApp/Dev strategy deck](https://docs.google.com/presentation/d/14FFmXzBh50jXxhZplVfSzR46jRKJBt74WpJtCv8mRas/edit#slide=id.g4235117b70_0_0)
+
+[Weekly Sync Notes](https://docs.google.com/document/d/1S86RWNxLT-VV_xIJ02-NOHXnODVl-M33aDVyoiAEhdc/edit?usp=sharing)
+
 ## Work log
 
 ### September 17-28
