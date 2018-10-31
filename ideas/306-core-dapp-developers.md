@@ -31,6 +31,11 @@ DApps and Dev team is mostly focused on:
 
 ## Work log
 
+### Week of Oct 29
+
+* Reorganized and edited [extensions documentation](https://github.com/status-im/status.im/tree/develop/source/extensions) (Julien, Rachel)
+* Decided not to force EIP1102 until ~Nov 16—ENS DApp and Voting DApp will break because there are architectual changes needed in Embark to support the most recent implementation of EIP1102. OKR voting will run until Nov 16. Implication: DApps that switch to EIP1102 (per MetaMask timeline of Nov 2) will break inside Status unless `Development mode` and `Opt-in web3 provider access` are enabled in settings. (Julien, Rachel)
+
 ### September 17-28
 
 #### Browser
