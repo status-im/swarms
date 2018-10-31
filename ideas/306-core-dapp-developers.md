@@ -31,6 +31,8 @@ DApps and Dev team is mostly focused on:
 
 ## Work log
 
+### 2018
+
 ### Week of Oct 29
 
 * Reorganized and edited [extensions documentation](https://github.com/status-im/status.im/tree/develop/source/extensions) (Julien, Rachel)
