@@ -33,6 +33,15 @@ DApps and Dev team is mostly focused on:
 
 ### 2018
 
+### Week of Nov 5
+
+* Fixed various extensions issues discovered during hackathon ([#6610](https://github.com/status-im/status-react/pull/6610) [#6661](https://github.com/status-im/status-react/pull/6661) [#6668]https://github.com/status-im/status-react/pull/6668) (Julien)
+* Added DApps ([#6667](https://github.com/status-im/status-react/pull/6667) (Julien)
+* Agreed with providers ring about next steps (Rachel, Andrey, Julien)
+* Discussed with Embark team about EIP1102 strategies (backport to Embark3, delayed call to enable) (Rachel, Julien)
+* Discussed ENS usernames reverse lookup strategies https://github.com/status-im/ens-usernames/issues/80 (Rachel, Julien)
+* Investigated potential new wallet extension hook (Julien)
+
 ### Week of Oct 29
 
 * Reorganized and edited [extensions documentation](https://github.com/status-im/status.im/tree/develop/source/extensions) (Julien, Rachel)
