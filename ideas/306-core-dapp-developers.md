@@ -35,12 +35,16 @@ DApps and Dev team is mostly focused on:
 
 ### Week of Nov 5
 
-* Fixed various extensions issues discovered during hackathon ([#6610](https://github.com/status-im/status-react/pull/6610) [#6661](https://github.com/status-im/status-react/pull/6661) [#6668]https://github.com/status-im/status-react/pull/6668) (Julien)
+* Fixed various extensions issues discovered during hackathon ([#6610](https://github.com/status-im/status-react/pull/6610) [#6661](https://github.com/status-im/status-react/pull/6661) [#6668](https://github.com/status-im/status-react/pull/6668) (Julien)
 * Added DApps ([#6667](https://github.com/status-im/status-react/pull/6667) (Julien)
 * Agreed with providers ring about next steps (Rachel, Andrey, Julien)
 * Discussed with Embark team about EIP1102 strategies (backport to Embark3, delayed call to enable) (Rachel, Julien)
 * Discussed ENS usernames reverse lookup strategies https://github.com/status-im/ens-usernames/issues/80 (Rachel, Julien)
 * Investigated potential new wallet extension hook (Julien)
+* Investigated how pluto works and moved registry out of it (Alex)
+* Improved extension management — added functionality to allow editing and removing extensions + made UI for it (Alex)
+* Worked on extensions data persistence (Alex) - not finished yet
+
 
 ### Week of Oct 29
 
