@@ -44,7 +44,10 @@ DApps and Dev team is mostly focused on:
 * Investigated how pluto works and moved registry out of it (Alex)
 * Improved extension management — added functionality to allow editing and removing extensions + made UI for it (Alex)
 * Worked on extensions data persistence (Alex) - not finished yet
-
+* Introduced browser privacy mode [#6654] (Andrey)
+* Fixed Cryptokitties [#6627] (Andrey)
+* Display .eth or other domain rather than IPFS redirect [#6169] (Andrey)
+* Granting profile access to a DApp gives access to any DApp with same host [#6585] (Andrey)
 
 ### Week of Oct 29
 
