@@ -40,6 +40,9 @@ DApps and Dev team is mostly focused on:
 * Hooks name can have multiple segments [commit](https://github.com/status-im/pluto/commit/71db93d02862822e073e6561928777d5a7883397) (Julien)
 * Published a WIP for wallet.settings hook [extensions.wallet.settings](https://github.com/status-im/status-react/tree/extensions.wallet.settings) (Julien)
 * Discussed about extensions plans for Asia roadshow (Rachel, Andrey and Julien)
+* Fixed and merged Granting profile access to a DApp [#6585] (Andrey)
+* Investigated resolving ens in webview component and discussed with the core team (Andrey)
+* Investigated extensions and started work on multi-extensions storage support [#6736] (Andrey)
 
 ### Week of Nov 5
 
