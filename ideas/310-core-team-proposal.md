@@ -48,11 +48,12 @@ Core needs an accountable, passionate get-shit-done mentality and drive, in cont
 
 ## Budget
 
-Headcount-based. 7 people.
+Headcount-based. 8 people.
 
 The swarm also has a discretionary budget for bounty based development using Gitcoin, in order to parallelize development.
 
-Assuming average organizational compensation, this would be roughly 60k/m. Possibly more based on performance, etc. A self-imposed ceiling of 100k is proposed for budget bucketing (~10%) for the team as a whole.
+Assuming average organizational compensation, this would be roughly 69k/m. Possibly more based on performance, etc.
+A self-imposed ceiling of 100k is proposed for budget bucketing (~10%) for the team as a whole.
 
 Related adjacent activities such as security, devops, marketing, QA, etc will be assumed to be provided and funded by the Gmbh until further notice.
 
