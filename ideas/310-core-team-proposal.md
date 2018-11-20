@@ -1,37 +1,8 @@
 ---
-title: Status Core swarm proposal
+title: Status Core Team
 
 ---
 ###### tags: `proposal` `core` `SNIP` `SNIP-core`
-
-**NOTE: This doc is a WIP, if you want to change something, just edit straight away. Please don't ask for permission.**
-
-# Next Actions
-
-- [ ] Potentially we can split this team in two
-    - (a) "blockchain/cryptoeconomy" team
-        - LES, ULC, geth, vipnode, incentivization
-    - (b) "everything else"
-
-- [ ] The proposal is reviewed/commented by the team members: "what's missing?" "what should be changed?" (by 10:00 CET Nov, 15)
-    - **Reviewed/gave feedback**
-    - [x] Igor
-    - [ ] Roman
-    - [x] Pedro
-    - [ ] Adam
-    - [x] Andrea MP
-    - [ ] Chad
-    - [ ] Maciej
-    - [ ] Oskar (optionally)
-    - [ ] DmitryS
-
-- [ ] Assign outscoped projects
-
-- [ ] Vote for the focus area we want to start with (by Friday, Nov 16, 23:00 CET)
-    - [ ] Setup the voting process (igorm, by Nov, 14)
-
-- [ ] Do the first meeting discussing the voting/the first focus area
-    - (Probably) Monday, Nov 19 10:00 CET
 
 # Status Core proposal
 
@@ -78,7 +49,7 @@ For simplicity, the responsibilities are split into 2 categories:
 * **maintenance** - that means this effort is continuous and doesn't have any end date or exit criteria (publishing a mobile release is a good example, we don't stop)
 * **project** - something that has a clear exit criteria, with a few iterations, after which the task is considered completed (for instance, when LES option is there and works)
 
-### Core: Maintenance
+# Core: Maintenance
 
 #### 1. Battery usage
 
@@ -86,29 +57,33 @@ For simplicity, the responsibilities are split into 2 categories:
 
 #### 3. Mobile Releases
 
-> [pedro] Shouldn't all releases be considered here? Why only mobile? Feels like we'd losing a holistic view.
-> [igorm] not sure, the initial idea was to outscope desktop. Isn't it too much for one team?
-> [pedro] I'd defer to your opinion since you have the experience of handling the releases, but maybe not too much if we end up splitting in two teams. I was hoping that it would be a small increment to the workload to also handle the desktop release part.
+# Core: Projects - Active
 
-### Core: Projects
+#### Message Reliability Improvements
 
-> [dmitry] there is nothing about decentralization and discovery.
-> [igorm] can you suggest projects related to that?
-> [dmitry] establishing a network using desktop clients. we need atleast to reuse libp2p tools descibed here https://github.com/libp2p/go-libp2p/issues/375 . and another thing is discovery, geth plans to refactor discovery v5 and add discovery based on dns. we should integrate atleast this two things.
-> another point is censorship resitance. we need to ensure that we can update bootnodes if they get blocked in russia/china/other place.
-> [igorm] I will add those as 3 projects then
-> [igorm] done
+* Umbrella issue: https://github.com/status-im/status-react/issues/6757
+* Project GitHub tag: https://github.com/status-im/status-react/labels/chat-reliability
 
-#### 1. Message reliability improvements
+##### Project Vision
 
 The goal of this project is:
 * to make messaging extremely reliable;
 * to be able to prove that;
-* to be able to show that information to a user.
+* to be able to show that information to a user (especially it is important to
+    communicate if the message isn't delivered).
+
+##### Project Scope
+
+"Message reliability" in this project means:
+- being able to deliver a user's message;
+- or being able to communicate to the user that her message wasn't delivered;
+- with the current network topology.
 
 That includes research & investigation, creating toolkit to monitor and test reliability.
 
 Currently, it doesn't look like messaging is reliable enough.
+
+##### Root Cause Analysis
 
 **Why?**
 1) Message history differs between desktop and mobile for the same user being online at the same time.
@@ -118,17 +93,19 @@ Currently, it doesn't look like messaging is reliable enough.
 5) We don't have any way to check if mailservers are in sync with each other.
 6) We don't have any way to check if there are network partitionings.
 7) If a mailserver is down, it takes a long time to figure this out and switch to another one.
-> [andrea] Not sure I understand point 8 100%, maybe worth rewording? Are we saying that it takes a long time for messages to be received and there's no feedback (i.e a spinning wheel)?
-> [igorm] there is a feedback, but the time span between sending a request and a user seeing messages looks unreasonably long, even if we have a spinner (taking into account that the mailserver response time seems fairly quick)
-> [andrea] cool, thanks for updating the description, clearer
-> 
 8) Receiving messages from a mailserver (from a user perspective, the time between requesting messages from mailserver and actually rendering new messages) looks suspiciously long. And we have no way of measuring it and splitting into components.
 9) If there are no new messages received, user doesn't know that he is up to date. There is no way to figure out if the request failed vs. user is up-to-date.
 10) If a topic is crowded (like we witnessed in Prague) the response from the mailserver can quickly consume the data plan from the user. We need to think about ways to mitigate this (maybe request a preview from the mailserver so we can inform the user that messages won't be downloaded automatically for the selected chat if he's on 4G?)
 
 See also: https://discuss.status.im/t/diagnosing-chat-reliability-issues/729
 
-#### 2. Support LES and ULC
+
+# Core: Projects - Backlog
+
+This backlog is organized in a prioritized way. The higher the project the more important it is.
+When promoting the project, it is also important to make it more detailed.
+
+#### Support LES and ULC
 
 Add an option to use LES and ULC in our application. It should work on Ropsten and Mainnet with working discovery.
 
@@ -146,21 +123,28 @@ We should probably have some background sync enabled too, on both iOS and Androi
 
 Disable sync on mobile network or low battery charge.
 
-#### 3. LES/ULC: Economic incentives
+#### Spam filtering & DDoS Protection
+
+We lack the way of protecting our network from spam, especially on the network
+layer where a bot can relatively easily spam channels or at least waste users'
+traffic.
+
+
+#### LES/ULC: Economic incentives
 
 > [dmitry] is it about proposal from Jacek?
 > [igorm] probably, I'm not sure. it isn't the priority unless LES/ULC is just functional.
 
-#### 4. VipNode support
+#### VipNode support
 
 
-#### 5. Implement EIP-681
+#### Implement EIP-681
 
 https://eips.ethereum.org/EIPS/eip-681
 
 > A standard way of representing various transactions, especially payment requests in Ethers and ERC #20 tokens as URLs.
 
-#### 6. Reduce unnecessary bandwidth usage
+#### Reduce unnecessary bandwidth usage
 
 https://github.com/status-im/status-go/issues/1266
 
@@ -174,11 +158,11 @@ Currently, it looks like our application uses too much bandwidth.
 2. Mailserver requests seems to be very expensive in bandwidth and we probably receive a lot of duplicate messages.
 3. We don't know all the places where networking is used, so we can't measure bandwidth client-side (we have to only rely on iOS/Android settings to check that).
 
-#### 7. Support multi-device experience
+#### Support multi-device experience
 
 We need to be able to see the same message history on multiple devices (desktop + mobile is the common scenario).
 
-#### 8. Improve mechanisms of storing/using sensitive information on mobile
+#### Improve mechanisms of storing/using sensitive information on mobile
 
 **Problems in this area**
 
@@ -189,7 +173,7 @@ We need to be able to see the same message history on multiple devices (desktop 
 5. Only a single protection mechanism for sensitive data (should be at least two).
 6. (potentially) Storing sensitive information which we don't have to store.
 
-#### 9. Improved message compatibility with other versions and other clients (using the *current* version of the protocol)
+#### Improved message compatibility with other versions and other clients (using the *current* version of the protocol)
 
 **Problems**
 1. It is too easy to change protocol (message format, etc) in a PR w/o necessary oversight.
@@ -200,26 +184,27 @@ We need to be able to see the same message history on multiple devices (desktop 
 > [pedro] Same thing for mailservers. Just recently there was a change to status-go that made it incompatible with the deployed eth.beta mailservers. We have no way to deal with backward compatibility, and having mailserver pinned makes it especially problematic.
 > [igor] added this part too
 
-#### 10. Reduce metadata leakage
+#### Reduce metadata leakage
 
-#### 11. Audited private group chat and PFS
+#### Audited private group chat and PFS
 
-#### 12. Reproducible builds
+#### Reproducible builds
 
 **Problems**
 1. Right now it's hard to tell exactly which commit of any dependency was used to build a particular release
 2. Users don't have guarantees that the release they downloaded matches the official release (i.e. hasn't been tampered with).
 3. A user should be able to build the sources on his own machine and obtain exactly the same binaries. 
 
-#### 13. Integrate with `libp2p`
+#### Integrate with `libp2p`
 
-#### 14. Better discovery
+#### Better discovery
 
 1. Support/integrate geth initiatives
 
-#### 15. Better censorship resistance
+#### Better censorship resistance
 
 1. Being able to update bootnodes list if they are blocked
+
 
 
 ## Process
