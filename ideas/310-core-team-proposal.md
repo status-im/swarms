@@ -39,6 +39,8 @@ title: Status Core swarm proposal
 
 Status Core is responsible for implementing a decentralized, reliable Ethereum reference client for Mobile on Android and iOS. This client should provide a reliable communication medium and ability to access the open decentralized web.
 
+Core team also sets up the design direction for the mobile app.
+
 Desktop is out of scope, as is protocol research. Whitepaper use case implementation is partly in scope, partly not, depending on specifics and other teams.
 
 Core needs an accountable, passionate get-shit-done mentality and drive, in contrast to the meandering blame-shifting.
@@ -46,11 +48,12 @@ Core needs an accountable, passionate get-shit-done mentality and drive, in cont
 
 ## Budget
 
-Headcount-based. 7 people.
+Headcount-based. 8 people.
 
 The swarm also has a discretionary budget for bounty based development using Gitcoin, in order to parallelize development.
 
-Assuming average organizational compensation, this would be roughly 60k/m. Possibly more based on performance, etc. A self-imposed ceiling of 100k is proposed for budget bucketing (~10%) for the team as a whole.
+Assuming average organizational compensation, this would be roughly 69k/m. Possibly more based on performance, etc.
+A self-imposed ceiling of 100k is proposed for budget bucketing (~10%) for the team as a whole.
 
 Related adjacent activities such as security, devops, marketing, QA, etc will be assumed to be provided and funded by the Gmbh until further notice.
 
