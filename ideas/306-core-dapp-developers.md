@@ -33,6 +33,9 @@ DApps and Dev team is mostly focused on:
 
 ### 2018
 
+### Week of Nov 19
+* Updated [add_your_dapp.md](https://github.com/status-im/status.im/blob/develop/source/developer_tools/add_your_dapp.md) in status-im to move back to PR process (Rachel)
+
 ### Week of Nov 12
 
 * Added Voting DApp [#6702](https://github.com/status-im/status-react/pull/6702) (Julien)
