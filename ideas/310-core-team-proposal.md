@@ -77,7 +77,7 @@ The goal of this project is:
 "Message reliability" in this project means:
 - being able to deliver a user's message;
 - or being able to communicate to the user that her message wasn't delivered;
-- with the current network topology.
+- with the current network topology and level of decentralization.
 
 That includes research & investigation, creating toolkit to monitor and test reliability.
 
