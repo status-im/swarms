@@ -226,6 +226,10 @@ Post-project retrospective with post-mortem
 - single point of contact
 - focused on one thing (one can be a DRI only to one focus area/maintenance task)
 
+#### Push Notifications v2
+
+https://ideas.status.im/ideas/086-push-notif-v2/README
+
 ---
 
 # Outscoped Projects (to other teams)
