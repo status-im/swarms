@@ -38,6 +38,7 @@ Related adjacent activities such as security, devops, marketing, QA, etc will be
 - Maciej (Design)
 - Pedro
 - Roman
+- Serhy (QA)
 
 ## Scope
 
