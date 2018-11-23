@@ -35,7 +35,12 @@ DApps and Dev team is mostly focused on:
 
 ### Week of Nov 19
 * Updated [add_your_dapp.md](https://github.com/status-im/status.im/blob/develop/source/developer_tools/add_your_dapp.md) in status-im to move back to PR process (Rachel)
-
+* Implemented support for multi-extensions store [#6736] (Andrey)
+* Implemented chat command suggestions to select parameter [#6643] (Andrey)
+* Implemented chat command extra key [#6642] (Andrey)
+* Researched Local events can include conditional logic [#94] , Local events can trigger multiple events [#95], fixed pluto tests (Andrey)
+* Started work on Expose a query allowing to access supported ERC20 tokens [#6802] (Andrey)
+ 
 ### Week of Nov 12
 
 * Added Voting DApp [#6702](https://github.com/status-im/status-react/pull/6702) (Julien)
