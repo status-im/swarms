@@ -40,6 +40,12 @@ DApps and Dev team is mostly focused on:
 * Implemented chat command extra key [#6642] (Andrey)
 * Researched Local events can include conditional logic [#94] , Local events can trigger multiple events [#95], fixed pluto tests (Andrey)
 * Started work on Expose a query allowing to access supported ERC20 tokens [#6802] (Andrey)
+* Merged `wallet.settings` hook [#6783](https://github.com/status-im/status-react/pull/6783) (Julien)
+* Added some docs for new hook type [#159](https://github.com/status-im/status.im/pull/159) (Julien)
+* Fixed broken HTTP event [#6858](https://github.com/status-im/status-react/pull/6858) (Julien)
+* Improved hook names [#6811](https://github.com/status-im/status-react/pull/6811) (Julien)
+* Fixed ABI encoding issues [#6809](https://github.com/status-im/status-react/pull/6809) (Julien)
+* Worked on Kyber extension
  
 ### Week of Nov 12
 
