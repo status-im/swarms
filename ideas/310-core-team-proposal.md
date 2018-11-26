@@ -50,6 +50,47 @@ For simplicity, the responsibilities are split into 2 categories:
 * **maintenance** - that means this effort is continuous and doesn't have any end date or exit criteria (publishing a mobile release is a good example, we don't stop)
 * **project** - something that has a clear exit criteria, with a few iterations, after which the task is considered completed (for instance, when LES option is there and works)
 
+
+## Process (aka How We Work?)
+
+### Projects
+
+Each project that is currently active should have an umbrella issue that should
+link all the other issues. It contains a full description of the project and is
+closed when the project is considered "done".
+
+Some high-level discussions might also happen there.
+
+This issue should contain all the other issues grouped into areas if necessary.
+
+Each project should contain **Vision**, **Scope** and **Tradeoffs**.
+1. Vision: a high-level goal of the project or a problem we are trying to solve.
+2. Scope: limiting conditions that we empose on ourselves when implementing the project (what it is doing and what it is NOT doing).
+3. Tradeoffs: a lot of projects can contain tradeoffs that make is feasible to implement. These should be documented there.
+
+See https://github.com/status-im/status-react/issues/6757 as an example of a similar issue.
+
+The projects list should have links to umbrella issues for each projects.
+
+### Meetigns & Philosophy
+
+Process can be revisited through retrospective. Probably, the process should go to a github repository as a markdown file and using PRs to update it.
+
+Taking as little of the parallel projects as possible. For example, we have to do maintenance anyway, so adding one other project as a focus area should be okay.
+
+Weekly sync-up calls
+- goals for the week
+- focus area, progress
+- post-meeting report in a Discuss thread
+
+Post-project retrospective with post-mortem
+- when the project milestone is done/failed
+- when we are deciding to switch to another focus area
+
+[DRIs](https://www.forbes.com/sites/quora/2012/10/02/how-well-does-apples-directly-responsible-individual-dri-model-work-in-practice/#38840682194c) for focus areas / maintenance tasks:
+- single point of contact
+- focused on one thing (one can be a DRI only to one focus area/maintenance task)
+
 # Core: Maintenance
 
 #### 1. Battery usage
@@ -62,44 +103,13 @@ For simplicity, the responsibilities are split into 2 categories:
 
 #### Message Reliability Improvements
 
-* Umbrella issue: https://github.com/status-im/status-react/issues/6757
-* Project GitHub tag: https://github.com/status-im/status-react/labels/chat-reliability
-
-##### Project Vision
-
 The goal of this project is:
 * to make messaging extremely reliable;
 * to be able to prove that;
 * to be able to show that information to a user (especially it is important to
     communicate if the message isn't delivered).
 
-##### Project Scope
-
-"Message reliability" in this project means:
-- being able to deliver a user's message;
-- or being able to communicate to the user that her message wasn't delivered;
-- with the current network topology and level of decentralization.
-
-That includes research & investigation, creating toolkit to monitor and test reliability.
-
-Currently, it doesn't look like messaging is reliable enough.
-
-##### Root Cause Analysis
-
-**Why?**
-1) Message history differs between desktop and mobile for the same user being online at the same time.
-2) Mailserver requests looks like take long.
-3) Push notifications being received way before messages are downloaded, leading to "phantom" push notifications.
-4) We don't have any way to check if the message history is consistent on the server side.
-5) We don't have any way to check if mailservers are in sync with each other.
-6) We don't have any way to check if there are network partitionings.
-7) If a mailserver is down, it takes a long time to figure this out and switch to another one.
-8) Receiving messages from a mailserver (from a user perspective, the time between requesting messages from mailserver and actually rendering new messages) looks suspiciously long. And we have no way of measuring it and splitting into components.
-9) If there are no new messages received, user doesn't know that he is up to date. There is no way to figure out if the request failed vs. user is up-to-date.
-10) If a topic is crowded (like we witnessed in Prague) the response from the mailserver can quickly consume the data plan from the user. We need to think about ways to mitigate this (maybe request a preview from the mailserver so we can inform the user that messages won't be downloaded automatically for the selected chat if he's on 4G?)
-
-See also: https://discuss.status.im/t/diagnosing-chat-reliability-issues/729
-
+See more and up-to-date info in the Umbrella issue: https://github.com/status-im/status-react/issues/6757
 
 # Core: Projects - Backlog
 
@@ -206,26 +216,6 @@ We need to be able to see the same message history on multiple devices (desktop 
 
 1. Being able to update bootnodes list if they are blocked
 
-
-
-## Process
-
-Process can be revisited through retrospective. Probably, the process should go to a github repository as a markdown file and using PRs to update it.
-
-Taking as little of the parallel projects as possible. For example, we have to do maintenance anyway, so adding one other project as a focus area should be okay.
-
-Weekly sync-up calls
-- goals for the week
-- focus area, progress
-- post-meeting report in a Discuss thread
-
-Post-project retrospective with post-mortem
-- when the project milestone is done/failed
-- when we are deciding to switch to another focus area
-
-[DRIs](https://www.forbes.com/sites/quora/2012/10/02/how-well-does-apples-directly-responsible-individual-dri-model-work-in-practice/#38840682194c) for focus areas / maintenance tasks:
-- single point of contact
-- focused on one thing (one can be a DRI only to one focus area/maintenance task)
 
 #### Push Notifications v2
 
