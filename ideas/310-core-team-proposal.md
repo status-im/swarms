@@ -101,6 +101,9 @@ Post-project retrospective with post-mortem
 
 - [Mobile release guide](https://notes.status.im/mobile-release-guide)
 - [Mobile release notes](https://notes.status.im/mobile-release-notes)
+- Upgrade policy
+  - *User’s data.* User should be able to successfully upgrade preserving all his/her data from 0.9.19 to any beta release.
+  - *Messaging/Transactions.* User should be able to successfully interact (make transactions, chat, etc) with users that have 0.9.20 or later release.
 
 #### 4. Product Analytics
 
