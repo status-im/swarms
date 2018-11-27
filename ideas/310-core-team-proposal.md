@@ -72,7 +72,7 @@ See https://github.com/status-im/status-react/issues/6757 as an example of a sim
 
 The projects list should have links to umbrella issues for each projects.
 
-### Meetigns & Philosophy
+### Meetings & Philosophy
 
 Process can be revisited through retrospective. Probably, the process should go to a github repository as a markdown file and using PRs to update it.
 
@@ -98,6 +98,19 @@ Post-project retrospective with post-mortem
 #### 2. Application performance profiling
 
 #### 3. Mobile Releases
+
+- [Mobile release guide](https://notes.status.im/mobile-release-guide)
+- [Mobile release notes](https://notes.status.im/mobile-release-notes)
+
+#### 4. Product Analytics
+
+Product analytics provides insight into how Status is being used.  Currently we have 3 key metrics delivering insight:
+
+- App downloads
+- Public message
+- ENS registrations
+
+The core team is responsible for maintaining the reporting of these metrics at [status.im/analytics](https://status.im/analytics/)
 
 # Core: Projects - Active
 
