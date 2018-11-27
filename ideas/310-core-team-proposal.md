@@ -138,17 +138,7 @@ Add an option to use LES and ULC in our application. It should work on Ropsten a
 
 Status can host clusters for LES and ULC, for both testing and reliability purposes, but the usage of LES/ULC shouldn't be limited to that.
 
-User should be able to create custom networks based on LES and ULC.
-
-User should be able to manage trusted peers in ULC and static peers in LES.
-
-User should be able to disable discovery if needed.
-
-We should add some basic optimizations for LES, especially for the initial sync.
-
-We should probably have some background sync enabled too, on both iOS and Android if static peers are available.
-
-Disable sync on mobile network or low battery charge.
+See more and up-to-date info in the Umbrella issue: https://github.com/status-im/status-react/issues/6905
 
 #### Spam filtering & DDoS Protection
 
