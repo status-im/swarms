@@ -10,8 +10,20 @@ title: Status Desktop Team
 
 Status Desktop is responsible for **TBD**
 
-- react-native-desktop (are we maintaining on a level just enough to run Status Desktop or maintain and evolve this as a separate open source project) ?
-- Status desktop releases on all platforms ?
+#### react-native-desktop
+**TBD**
+Are we maintaining on a level just enough to run Status Desktop or maintain and evolve this as a separate open source project) ?
+Depending on answer list of tasks can include:
+- support of existing components
+- adding features needed for Status desktop
+- adding features that exists in mobile status-react
+- adding desktop-specific features (desktop shortcuts, app standard menu, open file dialog, etc..)
+- support of external contributors: issues review, contributions review, answers to questions
+-
+
+#### Status desktop
+Releases on all platforms?
+
 
 ## Budget
 
@@ -32,7 +44,8 @@ A self-imposed ceiling of 100k is proposed for budget bucketing (~10%) for the t
 
 - Max Risuhin
 - Volodymyr Kozieiev
-- Chad (PM) **TBD**
+- Chad (PM) ? **TBD**: Do we consider PM as a part of the team? Chad already in a core.
+- QAs ? **TBD**: Do we consider QAs as a part of the team?
 
 ## Scope
 
