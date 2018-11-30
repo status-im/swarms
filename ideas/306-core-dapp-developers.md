@@ -33,6 +33,13 @@ DApps and Dev team is mostly focused on:
 
 ### 2018
 
+### Week of Nov 26
+
+* Created / mentored bounties (Julien)
+* Introduced new extensions components [#6873](https://github.com/status-im/status-react/pull/6873) and [#6922](https://github.com/status-im/status-react/pull/6922) (Julien)
+* Fixed broken extension property replacement [commit](https://github.com/status-im/pluto/commit/24daf56d46a8fd67ab3abc205955652943d54119) (Julien)
+* Worked on Kyber extension (Julien)
+
 ### Week of Nov 19
 * Updated [add_your_dapp.md](https://github.com/status-im/status.im/blob/develop/source/developer_tools/add_your_dapp.md) in status-im to move back to PR process (Rachel)
 * Implemented support for multi-extensions store [#6736] (Andrey)
