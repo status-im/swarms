@@ -39,6 +39,12 @@ DApps and Dev team is mostly focused on:
 * Introduced new extensions components [#6873](https://github.com/status-im/status-react/pull/6873) and [#6922](https://github.com/status-im/status-react/pull/6922) (Julien)
 * Fixed broken extension property replacement [commit](https://github.com/status-im/pluto/commit/24daf56d46a8fd67ab3abc205955652943d54119) (Julien)
 * Worked on Kyber extension (Julien)
+* Exposed a new query allowing to access supported ERC20 tokens [#6802] (Andrey)
+* Added on-send-sync to chat.command extension for yielding command control and introduced two new events send-message and send-plain-text-message [#6867] (Andrey)
+* Introduced installation extension from chat [#6644] (Andrey)
+* Fixed [#6957] Wallet shouldn't allows redirect to Home after a transaction (Andrey)
+* Fixed [#6958] Only render command message when relevant (Andrey)
+* Started work on selection list component for extensions (Andrey)
 
 ### Week of Nov 19
 * Updated [add_your_dapp.md](https://github.com/status-im/status.im/blob/develop/source/developer_tools/add_your_dapp.md) in status-im to move back to PR process (Rachel)
