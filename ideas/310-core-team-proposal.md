@@ -125,12 +125,19 @@ The goal of this project is:
 * to be able to show that information to a user (especially it is important to
     communicate if the message isn't delivered).
 
-See more and up-to-date info in the Umbrella issue: https://github.com/status-im/status-react/issues/6757
+See more and up-to-date info in the Epic: https://github.com/status-im/status-react/issues/6757
 
 # Core: Projects - Backlog
 
 This backlog is organized in a prioritized way. The higher the project the more important it is.
 When promoting the project, it is also important to make it more detailed.
+
+#### "Save Password" on Android
+
+The goal is to achieve feature-parity between iOS and Android in terms of
+storing the password.
+
+Epic: https://github.com/status-im/status-react/issues/5793
 
 #### Support LES and ULC
 
@@ -138,7 +145,7 @@ Add an option to use LES and ULC in our application. It should work on Ropsten a
 
 Status can host clusters for LES and ULC, for both testing and reliability purposes, but the usage of LES/ULC shouldn't be limited to that.
 
-See more and up-to-date info in the Umbrella issue: https://github.com/status-im/status-react/issues/6905
+See more and up-to-date info in the Epic: https://github.com/status-im/status-react/issues/6905
 
 #### Spam filtering & DDoS Protection
 
