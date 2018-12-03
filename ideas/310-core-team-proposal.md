@@ -210,7 +210,7 @@ We need to be able to see the same message history on multiple devices (desktop 
 **Problems**
 1. Right now it's hard to tell exactly which commit of any dependency was used to build a particular release
 2. Users don't have guarantees that the release they downloaded matches the official release (i.e. hasn't been tampered with).
-3. A user should be able to build the sources on his own machine and obtain exactly the same binaries. 
+3. A user should be able to build the sources on his own machine and obtain exactly the same binaries.
 
 #### Integrate with `libp2p`
 
@@ -227,6 +227,31 @@ We need to be able to see the same message history on multiple devices (desktop 
 
 https://ideas.status.im/ideas/086-push-notif-v2/README
 
+#### Design
+- Component-based UI; https://www.figma.com/file/cb4p8AxLtTF3q1L6JYDnKN15/Index?node-id=0%3A1
+
+- New Profile https://www.figma.com/file/FwEv7oz7gW9KGS69RtKcbPuL/Identities?node-id=803%3A3933
+    - Make use of random names;
+    - Improve profile sharing;
+    - Easy account switching;
+    - New Public Chat, Private Chat, User and Dapp Profiles;
+- New Nav Structure -> New Tab bar https://framer.cloud/RAxDT
+- Blocked users;
+- Muted users;
+- Lock homescreen with Passcode/Face ID/Touch ID https://www.figma.com/file/FwEv7oz7gW9KGS69RtKcbPuL/Identities?node-id=803%3A3933
+- New Settings https://www.figma.com/file/FwEv7oz7gW9KGS69RtKcbPuL/Identities?node-id=803%3A3933
+    - Improve settings structure;
+    - Notification settings;
+    - Privacy settings
+        - Who can in invite me to group chats;
+        - Who can send me messages;
+    - Security settings
+        - Introduce passcode lock;
+        - Add Face ID/Fingerprint support to replace passcode lock;
+    - Data Settings (Delete data/Export data)
+- Profile Info Requests in chat
+
+
 ---
 
 # Outscoped Projects (to other teams)
@@ -236,13 +261,13 @@ https://ideas.status.im/ideas/086-push-notif-v2/README
 To DevOps team?
 
 Not sure if the core team responsibility (igorm).
-This is one of the problems that everyone depends on. If/when our CI is unstable, essentially, the whole dev team cannot work. 
+This is one of the problems that everyone depends on. If/when our CI is unstable, essentially, the whole dev team cannot work.
 > [???] Although I agree that this is mission critical, I would like to see this offloaded to a different team, it requires a specific skillset (which we might have in the core-team, but not only) and not many dependencies, also our plate is quite full as it is.
-> [igorm] Agree, I just want to make sure it will be prioritized by some team, and asap. 
+> [igorm] Agree, I just want to make sure it will be prioritized by some team, and asap.
 
 **Problems**
 1. Issues with builds scripts on macOS builders (not isolated)
-2. Way too many network requests on each build process (if any of these fails, all the build procedure fails). 
+2. Way too many network requests on each build process (if any of these fails, all the build procedure fails).
 3. No retries of commonly unstable steps (again, when it fails, everything fails).
 4. No decent caching/reusing of artifacts (that makes the build process very slow).
 
@@ -269,10 +294,10 @@ While additional hires/individuals might be wanted, it is desirable to keep the 
 The structure of this document is also subject to change.
 
 Misc bits from Jarrad convo:
-- wallet feature as out of scope, but tx signing as in scope 
+- wallet feature as out of scope, but tx signing as in scope
 - -- relates to key handling discussion with Corey as well
 - fundamental things in scope
-- browser url foo.ens not lol.ipfs.io 
+- browser url foo.ens not lol.ipfs.io
 - same dapp and chat features, unless impl requirement for all application
 - message reliability is core, keycard is core
 - UI features bells and whistles are not, incl self-destruct messages
@@ -309,7 +334,7 @@ TODO: Clean up
 - provide alternative LES, for some people don't care but is option
 - be honest about it
 13. Enable a cluster-free Status experience through Status nodes.
-- 
+-
 15. Weekly progress reports with relevant links to artifacts.
 - makes sense
 - okrs? concept ok but execution/followup so-so
@@ -327,9 +352,9 @@ TODO: Clean up
 - still useful to do problem identification beforehand
 - vagrant machines for dev to simplify
 17. Deliver in accordance with our principles, and be explicit about trade-offs.
-- 
+-
 17. Do post-mortems after disruptive incidents to improve collectively.
-- 
+-
 (18. ?)
 
 
