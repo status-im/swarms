@@ -41,6 +41,7 @@ DApps and Dev team is mostly focused on:
 * Added wallet extensions support in fiddle (Andrey)
 * Implemented a JS API allowing to install an extension [#7002] (Andrey)
 * Investigated Blockchain Cuties does not load inside Status [#3824] (Andrey)
+* Participated to asian roadshow / EthSingapore (Rachel / Julien)
 
 ### Week of Nov 26
 
