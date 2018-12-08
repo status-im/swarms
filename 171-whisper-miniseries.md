@@ -117,7 +117,7 @@ Goal Date: TBD
 
 - Fourth part of miniseries completed and published
 - Propose guidelines for writing future technical docs 
-1
+
 ## Success Metrics
 
 [Update TK]
