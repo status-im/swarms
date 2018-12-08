@@ -13,7 +13,7 @@ For new swarms:
 - Define Contributors
 - Define Rough summary
 - [Timebox](https://en.wikipedia.org/wiki/Timeboxing) (approx) `Research`
-- Submit to [this repo](https://github.com/status-im/swarms) as a pull request
+- Submit to [this repo](https://github.com/status-im/swarms) as a `PULL request`
 
 For existing swarms:
 - Go to the file in Github
