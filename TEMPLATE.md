@@ -33,12 +33,16 @@ budget:
 > do after `Research`
 
 (required)
-`timelines (approx)`
+`timebox specification (approx)`
 
 (optional)
 `user stories`, `architecture`, `designs`, `PoC`
 
 ## Implementation
+
+(required)
+`timebox implementation (approx)`
+
 > do after `Specification`
 
 > All swarm contributors should test and break the implementation, especially developers
