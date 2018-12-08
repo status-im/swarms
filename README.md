@@ -1,12 +1,20 @@
-# Status Ideas
+# Status Swarms
 
-A space for our ideas - our current, past and future efforts.
+Swarms follow a structured approach to developing features. These include:
+- Research
+- Specifications / Planning
+- Implementation
+- Communication / Post-mortem
 
-## Contributing
+## Getting Started
 
-First review [Status Organizational Design](https://wiki.status.im/Status_Organisational_Design) and
-[Status Swarm Manual](MANUAL.md).  Then submit a Pull Request in this repository.
+For new swarms:
+- Copy and Paste TEMPLATE.md into [notes.status.im](https://notes.status.im)
+- Define Contributors
+- Define Rough summary
+- [Timebox](https://en.wikipedia.org/wiki/Timeboxing) (approx) `Research`
+- Submit to [this repo](https://github.com/status-im/swarms) as a pull request
 
-See [ideas registry](https://ideas.status.im/all) and [people
-registry](https://ideas.status.im/people) (classifieds and commitment
-registry).
+For existing swarms:
+- Go to the file in Github
+- Click edit and commit
