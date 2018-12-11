@@ -17,7 +17,7 @@ budget:
 # Swarm proposal
 
 ## Summary and Goal(s)
-The Status Janitors oversee the delivery and completion of the [Status white paper](https://status.im/whitepaper.pdf) by the end of Q1, with a hard deadline of the end of Q2 2018.
+The Status Janitors oversee the delivery and completion of the [Status white paper](https://status.im/whitepaper.pdf) by the end of Q1, with a hard deadline of the end of Q2 2019.
 
 ## Communication
 (required)
