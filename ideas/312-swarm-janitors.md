@@ -87,6 +87,8 @@ _Unknowns_
 
 > All swarm contributors should test and break the implementation, especially developers
 
+For above swarms to be in research phase: https://github.com/status-im/swarms/issues/338
+
 (required)
 `document progress`
 
