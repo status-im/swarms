@@ -1,11 +1,18 @@
 ---
 id: 311-status-protocol
 title: Protocol Engineering Swarm
+status: research
+lead-contributor: oskarth 
+contributors:
+    -
+    -
+budget:
+- actual: xxx
+- estimate: yyy
+- currency: ETH/USD/SNT
 ---
 
 # Protocol Engineering Swarm
-
-Draft, 2018-12-01.
 
 ## Summary
 This swarm will research and develop a set of open protocols that is a
@@ -228,12 +235,15 @@ this will be updated.
 
 ## Research log
 
-### December 3 - December 9
-<CURRENT>
+### December 10 - December 16
+- Posted 'Introducing data sync layer' https://discuss.status.im/t/introducing-a-data-sync-layer/864/2
+- Conversation with Open Privacy people
+- Anon Protocol requirement: https://github.com/w3f/messaging/issues/18
 
-WIP:
+### December 3 - December 9
 - Looking into distributed/replicated state (BSP, protobuf)
 - Swarm proposal with rough milestones, clear separation and problem statements, 1 milestone
+- Half week due to ETH SG
 
 ### November 26 - December 2
 - Started awesome secure messaging GH repo: https://github.com/status-im/awesome-secure-messaging
