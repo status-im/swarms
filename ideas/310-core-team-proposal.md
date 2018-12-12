@@ -83,6 +83,14 @@ Goals:
 - Figure out the list of tasks and top UX issues that needs to be fixed
 - Rank them by priority (what should we do first)
 
+### 3. Improve Security using native views
+
+Completion by ???
+
+Goals:
+- Figure out how we can use native code (Java/ObjC) to short-circuit sensitive text views
+    to Status-Go, so attacks like [event-stream incident](https://blog.npmjs.org/post/180565383195/details-about-the-event-stream-incident) are impossible.
+
 ## Specification
 
 ### 2. "Save Password" on Android
@@ -155,6 +163,7 @@ When promoting the project, it is also important to make it more detailed.
 2. Patch `go-ethereum`, so AndroidKeyStore and iOS KeyChain (+optional Secure Enclave encryption) are used to store private keys.
 
 ### Split Whisper and Ethereum keys
+
 
 
 ### Improved message compatibility with other versions and other clients (using the *current* version of the protocol)
