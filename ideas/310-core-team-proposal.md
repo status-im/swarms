@@ -4,9 +4,9 @@ title: Status Core Team
 ---
 ###### tags: `proposal` `core` `SNIP` `SNIP-core`
 
-# Status Core proposal
+# Swarm Proposal :: Polish/UX improvements/etc
 
-## Summary
+## Summary and Goal(s)
 
 Status Core is responsible for implementing a decentralized, reliable Ethereum reference client for Mobile on Android and iOS. This client should provide a reliable communication medium and ability to access the open decentralized web.
 
@@ -17,32 +17,18 @@ Desktop is out of scope, as is protocol research. Whitepaper use case implementa
 Core needs an accountable, passionate get-shit-done mentality and drive, in contrast to the meandering blame-shifting.
 
 
-## Budget
-
-Headcount-based. 8 people.
-
-The swarm also has a discretionary budget for bounty based development using Gitcoin, in order to parallelize development.
-
-Assuming average organizational compensation, this would be roughly 69k/m. Possibly more based on performance, etc.
-A self-imposed ceiling of 100k is proposed for budget bucketing (~10%) for the team as a whole.
-
-Related adjacent activities such as security, devops, marketing, QA, etc will be assumed to be provided and funded by the Gmbh until further notice.
-
 ## Core participants
 
 - Adam
 - Andrea MP
-- Chad (PM)
 - DmitryS
 - Igor (tech lead)
 - Andrei M (Design)
 - Pedro
 - Roman
-- Serhy (QA)
+- Serhy/Anna/Nastya(QA)
 
 ## Scope
-
-See also: [team and responsibilities](https://notes.status.im/k0xVSu6nRvS5p0UAWV__BA?view)
 
 Core should focus on problems/features that require multidisciplinary understanding and influence the application architecture. With the highest priority of making Status a usable application for consumption.
 
@@ -51,9 +37,18 @@ For simplicity, the responsibilities are split into 2 categories:
 * **project** - something that has a clear exit criteria, with a few iterations, after which the task is considered completed (for instance, when LES option is there and works)
 
 
-## Process (aka How We Work?)
+## Communications
+(required)
+`status channel (same as swarm id)`:[`#status-core`](http://get.status.im/chat/public/status-core).
+`sync frequency`: Weekly Sync, Monday 10am CET
 
-### Projects
+
+### Process
+
+Weekly sync-up calls
+- goals for the week
+- focus area, progress
+- post-meeting report in a Discuss thread
 
 Each project that is currently active should have an umbrella issue that should
 link all the other issues. It contains a full description of the project and is
@@ -72,52 +67,45 @@ See https://github.com/status-im/status-react/issues/6757 as an example of a sim
 
 The projects list should have links to umbrella issues for each projects.
 
-### Meetings & Philosophy
+## Research
 
-Process can be revisited through retrospective. Probably, the process should go to a github repository as a markdown file and using PRs to update it.
+### 0. Meta (what this team will be doing?)
 
-Taking as little of the parallel projects as possible. For example, we have to do maintenance anyway, so adding one other project as a focus area should be okay.
+Compeltion by December, 19th (1 week)
 
-Weekly sync-up calls
-- goals for the week
-- focus area, progress
-- post-meeting report in a Discuss thread
+Goals:
+- Figure out the list of tasks and top UX issues that needs to be fixed
+- Rank them by priority (what should we do first)
 
-Post-project retrospective with post-mortem
-- when the project milestone is done/failed
-- when we are deciding to switch to another focus area
+## Specification
 
-[DRIs](https://www.forbes.com/sites/quora/2012/10/02/how-well-does-apples-directly-responsible-individual-dri-model-work-in-practice/#38840682194c) for focus areas / maintenance tasks:
-- single point of contact
-- focused on one thing (one can be a DRI only to one focus area/maintenance task)
+### 2. "Save Password" on Android
 
-# Core: Maintenance
+* Timeline - January, 14th
 
-#### 1. Battery usage
+The goal is to achieve feature-parity between iOS and Android in terms of
+storing the password.
 
-#### 2. Application performance profiling
+Epic: https://github.com/status-im/status-react/issues/5793
 
-#### 3. Mobile Releases
+- [ ] Threat modelling (STRIDE) + document about that.
 
-- [Mobile release guide](https://notes.status.im/mobile-release-guide)
-- [Mobile release notes](https://notes.status.im/mobile-release-notes)
-- Upgrade policy
-  - *User’s data.* User should be able to successfully upgrade preserving all his/her data from 0.9.19 to any beta release.
-  - *Messaging/Transactions.* User should be able to successfully interact (make transactions, chat, etc) with users that have 0.9.20 or later release.
+## Implementation
 
-#### 4. Product Analytics
+### 0. Meta
+* Timeline - EOQ2 2019, continuous process. Each backlog item discovered by
+    research will have it's own deadline.
 
-Product analytics provides insight into how Status is being used.  Currently we have 3 key metrics delivering insight:
+Setup a regular meetings with the stakeholders to adjust the backlog.
 
-- App downloads
-- Public message
-- ENS registrations
+`document progress` - keep the backlog and the state up to date with this
+document.
 
-The core team is responsible for maintaining the reporting of these metrics at [status.im/analytics](https://status.im/analytics/)
+Projects from should be put in the correct state to see the progress, etc.
 
-# Core: Projects - Active
+### 1. Message Reliability Improvements
 
-#### Message Reliability Improvements
+* Timeline - January, 11
 
 The goal of this project is:
 * to make messaging extremely reliable;
@@ -125,19 +113,38 @@ The goal of this project is:
 * to be able to show that information to a user (especially it is important to
     communicate if the message isn't delivered).
 
-See more and up-to-date info in the Epic: https://github.com/status-im/status-react/issues/6757
+`docyment progress`: see the epic https://github.com/status-im/status-react/issues/6757
+
+### 2. "Save Password" on Android
+
+* Timeline - January, 21th
+
+Epic: https://github.com/status-im/status-react/issues/5793
+
+- [ ] Implement according to the spec
+- [ ] Audit the implementation
+
+## Maintenance
+
+### 1. Battery usage
+
+### 2. Application performance profiling
+
+### 3. Mobile Releases
+
+- [Mobile release guide](https://notes.status.im/mobile-release-guide)
+- [Mobile release notes](https://notes.status.im/mobile-release-notes)
+- Upgrade policy
+  - *User’s data.* User should be able to successfully upgrade preserving all his/her data from 0.9.19 to any beta release.
+  - *Messaging/Transactions.* User should be able to successfully interact (make transactions, chat, etc) with users that have 0.9.20 or later release.
+
+## Backlog
 
 # Core: Projects - Backlog
 
 This backlog is organized in a prioritized way. The higher the project the more important it is.
 When promoting the project, it is also important to make it more detailed.
 
-#### "Save Password" on Android
-
-The goal is to achieve feature-parity between iOS and Android in terms of
-storing the password.
-
-Epic: https://github.com/status-im/status-react/issues/5793
 
 #### Support LES and ULC
 
