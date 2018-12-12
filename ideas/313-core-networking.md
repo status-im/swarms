@@ -1,11 +1,10 @@
 ---
-id: #313-core-networking
-title: Core Networking Swarm Proposal
-status: research/specification/implementation/maintenance
+id: #313-core-network-incentives
+title: Core Network Incentives Swarm Proposal
+status: research
 contributors:
     - igor
     - andrea mp
-    - dmitry s
 budget:
 - actual: xxx
 - estimate: yyy
@@ -19,9 +18,13 @@ budget:
 Research and develop framework and incentivization structure for people
 deploying and using Status nodes according to [the whitepaper](https://status.im/whitepaper.pdf).
 
+### Additional contributors
+- oskart
+- dmitrys
+
 ## Communication
 (required)
-`status channel (same as swarm id)`: [#313-core-networking](https://get.status.im/chat/public/313-core-networking)
+`status channel (same as swarm id)`: [#313-core-network-incentives](https://get.status.im/chat/public/313-core-networking)
 `sync frequency`: Weekly Sync Mondays, 11:00 CET
 
 ## Research

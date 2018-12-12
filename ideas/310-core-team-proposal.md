@@ -1,12 +1,13 @@
 ---
-id: #310-core-team-proposal
+id: #310-core-team
 title: Core Improvements Swarm Proposal
 status: research
+lead conributor: Igor
 contributors:
 - Adam
-- Igor
 - Pedro
 - Roman
+- Dmitry S
 budget:
 - actual: xxx
 - estimate: yyy
@@ -25,12 +26,12 @@ Desktop is out of scope, as is protocol research. Whitepaper use case implementa
 
 Core needs an accountable, passionate get-shit-done mentality and drive, in contrast to the meandering blame-shifting.
 
-## Additinal contibutors
+## Additional contibutors
 
 - Andrea MP
-- Dmitry S
 - Andrei M (Design)
 - Serhy/Anna/Nastya(QA)
+- Rachel/Hester (PO)
 
 ## Scope
 
@@ -44,7 +45,8 @@ For simplicity, the responsibilities are split into 2 categories:
 ## Communications
 (required)
 `status channel (same as swarm id)`:[`#status-core`](http://get.status.im/chat/public/status-core).
-`sync frequency`: Weekly Sync, Monday 10am CET
+`sync frequency`: Weekly Sync, Monday 10am CET.
+`meeting notes`: [this running doc on notes.status.im](https://notes.status.im/sm7x7tPpQESkRwu7YNFzSQ)
 
 
 ### Process
@@ -75,7 +77,7 @@ The projects list should have links to umbrella issues for each projects.
 
 ### 0. Meta (what this team will be doing?)
 
-Compeltion by December, 19th (1 week)
+Completion by December, 19th (1 week)
 
 Goals:
 - Figure out the list of tasks and top UX issues that needs to be fixed
@@ -117,7 +119,7 @@ The goal of this project is:
 * to be able to show that information to a user (especially it is important to
     communicate if the message isn't delivered).
 
-`docyment progress`: see the epic https://github.com/status-im/status-react/issues/6757
+`document progress`: see the epic https://github.com/status-im/status-react/issues/6757
 
 ### 2. "Save Password" on Android
 
