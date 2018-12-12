@@ -4,8 +4,6 @@ title: Core Improvements Swarm Proposal
 status: research
 contributors:
 - Adam
-- Andrea MP
-- DmitryS
 - Igor
 - Pedro
 - Roman
@@ -29,6 +27,8 @@ Core needs an accountable, passionate get-shit-done mentality and drive, in cont
 
 ## Additinal contibutors
 
+- Andrea MP
+- Dmitry S
 - Andrei M (Design)
 - Serhy/Anna/Nastya(QA)
 
