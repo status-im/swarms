@@ -45,6 +45,11 @@ developed in conjunction with other teams in the Web3 / secure communication spa
 5. Enable implementation of clients to participate in the Status Network, and
    work with teams such as Status Core, to find a graceful path to implement and
    integrate the new set of protocols.
+   
+## Communication
+
+`status channel (same as swarm id)`: [#311-protocol](https://get.status.im/chat/public/311-protocol) (current #status-protocol is also used, as well as Riot chat https://riot.im/app/#/room/#web3-messaging:matrix.org for cross-team communication)
+`sync frequency`: One person team right now so no specific sync; weekly updates (see below); currently ad hoc sync with Web3 foundation etc 
 
 ## Requirements
 
@@ -265,6 +270,44 @@ https://discuss.status.im/t/protocol-anonymous-communication-requirements-and-br
 3. Initial team scoping 
 
 See here for more details: https://discuss.status.im/t/hello-protocol-progress-since-prague/736
+
+## Phases
+
+### Research
+(required) 
+`timebox research (approx)` See milestones above. Each milestone can be seen as a way a Research>Spec>Implementation>Maintenance cycle. 
+
+(optional)
+`eips`, `competitors`, `existing research`, `wireframes`, `spike (PoC)`
+
+### Specification
+
+> do after `Research`
+
+(required)
+`timebox specification (approx)`
+
+(optional)
+`user stories`, `architecture`, `designs`, `PoC`
+
+### Implementation (LATER)
+
+(required)
+`timebox implementation (approx)`
+
+> do after `Specification`
+
+> All swarm contributors should test and break the implementation, especially developers
+
+(required)
+`document progress`
+
+(optional)
+`townhall demo`
+
+### Maintenance (LATER)
+
+`lead-contributor`,`post-mortems`
 
 ## Resources
 
