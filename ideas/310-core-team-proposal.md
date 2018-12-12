@@ -1,10 +1,21 @@
 ---
-title: Status Core Team
-
+id: #310-core-team-proposal
+title: Core Improvements Swarm Proposal
+status: research
+contributors:
+- Adam
+- Andrea MP
+- DmitryS
+- Igor
+- Pedro
+- Roman
+budget:
+- actual: xxx
+- estimate: yyy
+- currency: ETH/USD/SNT
 ---
-###### tags: `proposal` `core` `SNIP` `SNIP-core`
 
-# Swarm Proposal :: Polish/UX improvements/etc
+# Core Improvements Swarm Proposal
 
 ## Summary and Goal(s)
 
@@ -16,16 +27,9 @@ Desktop is out of scope, as is protocol research. Whitepaper use case implementa
 
 Core needs an accountable, passionate get-shit-done mentality and drive, in contrast to the meandering blame-shifting.
 
+## Additinal contibutors
 
-## Core participants
-
-- Adam
-- Andrea MP
-- DmitryS
-- Igor (tech lead)
 - Andrei M (Design)
-- Pedro
-- Roman
 - Serhy/Anna/Nastya(QA)
 
 ## Scope
