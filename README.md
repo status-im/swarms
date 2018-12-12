@@ -21,11 +21,10 @@ For existing swarms:
 
 ## Active swarms
 
-- [310-core](ideas/310-swarm) (undefined/underspecified)
 - [311-protocol](ideas/311-status-protocol.md) (research)
 - [312-janitors](ideas/312-swarm-janitors.md) (research)
 
 TBD:
 - Teller Network; Tribute to Talk; Sticker Market; Network Incentivization; DApp Store/Discover 
 - DAO;Patient Zero
-- Chat;Wallet;DApp Browser;Desktop;Keycard
+- Core(310);Chat;Wallet;DApp Browser;Desktop;Keycard
