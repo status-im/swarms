@@ -146,42 +146,41 @@ Epic: https://github.com/status-im/status-react/issues/5793
 
 ## Backlog
 
-# Core: Projects - Backlog
-
 This backlog is organized in a prioritized way. The higher the project the more important it is.
 When promoting the project, it is also important to make it more detailed.
 
+### Improve secure storage of geth private keys
 
-#### Support LES and ULC
+1. Get rid of `react-native-keychain` and it's dependencies.
+2. Patch `go-ethereum`, so AndroidKeyStore and iOS KeyChain (+optional Secure Enclave encryption) are used to store private keys.
 
-Add an option to use LES and ULC in our application. It should work on Ropsten and Mainnet with working discovery.
+### Split Whisper and Ethereum keys
 
-Status can host clusters for LES and ULC, for both testing and reliability purposes, but the usage of LES/ULC shouldn't be limited to that.
 
-See more and up-to-date info in the Epic: https://github.com/status-im/status-react/issues/6905
+### Improved message compatibility with other versions and other clients (using the *current* version of the protocol)
 
-#### Spam filtering & DDoS Protection
+**Problems**
+1. It is too easy to change protocol (message format, etc) in a PR w/o necessary oversight.
+2. There are no tests to detect that message format or semantics didn't change after PR is merged.
+3. We don't have any procedures and best practices on how to introduce changes to the current protocol.
+4. We don't have any procedures and best practices on how to handle breaking changes gracefully and coordinate them between the clients.
+5. We don't have any procedures, tools and best practices to handle breaking changes in mailservers.
+
+### Spam filtering & DDoS Protection
 
 We lack the way of protecting our network from spam, especially on the network
 layer where a bot can relatively easily spam channels or at least waste users'
 traffic.
 
+### Reproducible builds
 
-#### LES/ULC: Economic incentives
-
-> [dmitry] is it about proposal from Jacek?
-> [igorm] probably, I'm not sure. it isn't the priority unless LES/ULC is just functional.
-
-#### VipNode support
+**Problems**
+1. Right now it's hard to tell exactly which commit of any dependency was used to build a particular release
+2. Users don't have guarantees that the release they downloaded matches the official release (i.e. hasn't been tampered with).
+3. A user should be able to build the sources on his own machine and obtain exactly the same binaries. 
 
 
-#### Implement EIP-681
-
-https://eips.ethereum.org/EIPS/eip-681
-
-> A standard way of representing various transactions, especially payment requests in Ethers and ERC #20 tokens as URLs.
-
-#### Reduce unnecessary bandwidth usage
+### Reduce unnecessary bandwidth usage
 
 https://github.com/status-im/status-go/issues/1266
 
@@ -195,73 +194,52 @@ Currently, it looks like our application uses too much bandwidth.
 2. Mailserver requests seems to be very expensive in bandwidth and we probably receive a lot of duplicate messages.
 3. We don't know all the places where networking is used, so we can't measure bandwidth client-side (we have to only rely on iOS/Android settings to check that).
 
-#### Support multi-device experience
-
-We need to be able to see the same message history on multiple devices (desktop + mobile is the common scenario).
-
-#### Improve mechanisms of storing/using sensitive information on mobile
+### Improve mechanisms of storing/using sensitive information on mobile
 
 **Problems in this area**
 
-1. Whisper uses the same keypairs as the blockchain, exposing one of them leads to losing funds.
-2. It is possible (and it happened before) to leak sensitive data through logs and debugging information.
-3. Unsafe defaults in some publicly available builds in the application.
-4. Sensitive information is used directly (accessible to most of the app components), whereas the best practices is to provide minimal APIs to do whatever needs to be done w/o exposing data (see Secure Enclave data signing)
-5. Only a single protection mechanism for sensitive data (should be at least two).
-6. (potentially) Storing sensitive information which we don't have to store.
+1. It is possible (and it happened before) to leak sensitive data through logs and debugging information.
+2. Unsafe defaults in some publicly available builds in the application.
+3. Sensitive information is used directly (accessible to most of the app components), whereas the best practices is to provide minimal APIs to do whatever needs to be done w/o exposing data (see Secure Enclave data signing)
+4. (potentially) Storing sensitive information which we don't have to store.
 
-#### Improved message compatibility with other versions and other clients (using the *current* version of the protocol)
 
-**Problems**
-1. It is too easy to change protocol (message format, etc) in a PR w/o necessary oversight.
-2. There are no tests to detect that message format or semantics didn't change after PR is merged.
-3. We don't have any procedures and best practices on how to introduce changes to the current protocol.
-4. We don't have any procedures and best practices on how to handle breaking changes gracefully and coordinate them between the clients.
-5. We don't have any procedures, tools and best practices to handle breaking changes in mailservers.
-> [pedro] Same thing for mailservers. Just recently there was a change to status-go that made it incompatible with the deployed eth.beta mailservers. We have no way to deal with backward compatibility, and having mailserver pinned makes it especially problematic.
-> [igor] added this part too
+### Support LES and ULC
 
-#### Reduce metadata leakage
+Add an option to use LES and ULC in our application. It should work on Ropsten and Mainnet with working discovery.
 
-#### Audited private group chat and PFS
+Status can host clusters for LES and ULC, for both testing and reliability purposes, but the usage of LES/ULC shouldn't be limited to that.
 
-#### Reproducible builds
+See more and up-to-date info in the Epic: https://github.com/status-im/status-react/issues/6905
 
-**Problems**
-1. Right now it's hard to tell exactly which commit of any dependency was used to build a particular release
-2. Users don't have guarantees that the release they downloaded matches the official release (i.e. hasn't been tampered with).
-3. A user should be able to build the sources on his own machine and obtain exactly the same binaries. 
+### Reduce metadata leakage
 
-#### Integrate with `libp2p`
+### Audited private group chat and PFS
 
-#### Better discovery
+### Integrate with `libp2p`
+
+### Better discovery
 
 1. Support/integrate geth initiatives
 
-#### Better censorship resistance
+### Be able to update bootnodes list if they are blocked
 
 1. Being able to update bootnodes list if they are blocked
 
-
-#### Push Notifications v2
+### Push Notifications v2
 
 https://ideas.status.im/ideas/086-push-notif-v2/README
 
----
+### LES/ULC: Economic incentives
 
-# Outscoped Projects (to other teams)
+> [dmitry] is it about proposal from Jacek?
+> [igorm] probably, I'm not sure. it isn't the priority unless LES/ULC is just functional.
 
-#### 14. Better CI experience
+### VipNode support
 
-To DevOps team?
 
-Not sure if the core team responsibility (igorm).
-This is one of the problems that everyone depends on. If/when our CI is unstable, essentially, the whole dev team cannot work. 
-> [???] Although I agree that this is mission critical, I would like to see this offloaded to a different team, it requires a specific skillset (which we might have in the core-team, but not only) and not many dependencies, also our plate is quite full as it is.
-> [igorm] Agree, I just want to make sure it will be prioritized by some team, and asap. 
+### Implement EIP-681
+https://eips.ethereum.org/EIPS/eip-681
 
-**Problems**
-1. Issues with builds scripts on macOS builders (not isolated)
-2. Way too many network requests on each build process (if any of these fails, all the build procedure fails). 
-3. No retries of commonly unstable steps (again, when it fails, everything fails).
-4. No decent caching/reusing of artifacts (that makes the build process very slow).
+> A standard way of representing various transactions, especially payment requests in Ethers and ERC #20 tokens as URLs.
+
