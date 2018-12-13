@@ -132,7 +132,7 @@ Status: Implementation
 Let users control their own wallet and add any erc20 token they possess. Currently Status only supports a limited fixed list which is manually maintained by core contributors.
 Epic: [#6939](https://github.com/status-im/status-react/issues/6939)
 
-Status: Research
+Status: Specification
 
 #### Functional Transaction/Transfer History
 
