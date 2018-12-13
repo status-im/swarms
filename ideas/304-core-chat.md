@@ -1,30 +1,59 @@
 ---
-id: 304-core-chat
-title: Core Chat Team
-status: Active
-created: 2018-05-01
-category: core
-lead-contributor: pedro
+id: #304-core-chat
+title: Core Chat
+status: research
+lead-contributor: Eric
 contributors:
-    - pedro
-    - chadyj
-    - yenda
-    - dmitryn
-    - cammellos
-exit-criteria: no
-success-metrics: no
-clear-roles: yes
-future-iterations: no
-roles-needed:
+    - Eric
+    - Vitaliy
+    - Tetiana
+    - Hester
+    - Rachel
+budget:
+- actual: xxx
+- estimate: yyy
+- currency: ETH
 ---
 
-This should probably be filled out similar to Ideas template, but this will do
-as a skeleton.
+Chat Swarm Proposal
+=
 
-The Core Chat team is a product team that is focused on the chat experience of
-Status. It gets support and is enabled by the Mobile App team as well as Infra and P2P team.
+## Summary and Goals
 
-Current state of it is focused on [PFS swarm](289-perfect-forward-secrecy), as well as minor UX improvements and so on. Recently it has started focusing on the Chat experience of Desktop as well.
+The Core Chat team is going to be primarily responsible in Q12019 for building the P0 SNT Utility feature Tribute to Talk.
 
+This swarm is also responsbile for maintaining and improving the overall chat experience. 
 
+Any capacity leftover from TtT tasks will be dedicated to essential chat features or fixes.
+
+## Contributors
+
+- Eric
+- Vitaliy
+- Tetiana
+- Maciej
+
+(+ Janitor swarm)
+
+## Communication
+
+`Status channel`: #status-core-chat
+`Sync schedule`: currently twice weekly
+`Meeting notes`: https://notes.status.im/weekly-chat-sync-agenda
+
+## Research
+
+`Timebox`: Complete by 19/12/18
+
+`Objective`: Define high priority items for chat, outside of Tribute to Talk and independent of current board. 
+
+## Specification
+
+## Implementation 
+
+## Maintenance
+
+## Copyright
+
+Copyright and related rights waived via CC0.
 
