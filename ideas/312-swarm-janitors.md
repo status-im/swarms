@@ -34,7 +34,6 @@ Goals of Specifications:
 - Define critical path for completing the swarm goal
     - SNT utility swarms
     - Identify essential non-SNT swarms (e.g. onboarding, product teams)
-    - https://notes.status.im/critical-path - started here / Oskar
 - Report organisational progress regularly during Town Hall
 - Regular check-ins with swarms
 
