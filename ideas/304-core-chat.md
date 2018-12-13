@@ -9,6 +9,7 @@ contributors:
     - Tetiana
     - Hester
     - Rachel
+    - Maciej
 budget:
 - actual: xxx
 - estimate: yyy
