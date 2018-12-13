@@ -1,6 +1,6 @@
 ---
-id: #313-core-network-incentives
-title: Core Network Incentives Swarm Proposal
+id: #313-core-improvements
+title: Core Improvements Swarm
 status: research
 lead contributor: igor
 contributors:
@@ -14,7 +14,7 @@ budget:
 - currency: ETH/USD/SNT
 ---
 
-# Core Networking Swarm proposal
+# Core Improvements Swarm
 
 ## Summary and Goal(s)
 
@@ -23,6 +23,8 @@ Status Core Improvements swarm's goal is the preparation of Status Mobile Client
 A few key areas that we need to focus on:
 
 * all the critical security and privacy issues are resolved (including audit);
+    - a security and privacy document is delivered (it lists guarantees we make around security and privacy; as well as ways we are falling short)
+
 * all the critical tech debt issues are resolved;
 * key UX problems are solved in two areas:
     - adoption issues;
