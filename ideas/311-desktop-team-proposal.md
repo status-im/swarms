@@ -88,7 +88,10 @@ Additional tasks for the swarm is maintaining `react-native-desktop` project to 
 
 
 `Research output:`
-When questions above answered we can create a prioritized list of most important tasks to do for boosting communication exprience
+When questions above answered we can create:
+- prioritized list of most important tasks to do for boosting communication exprience
+- user stories
+- bounties
 
 ## Specification
 
