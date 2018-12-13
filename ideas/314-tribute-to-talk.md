@@ -41,6 +41,8 @@ It allows individuals to monetize their time and attention by setting minimum re
 `status channel`: #314-tribute-to-talk
 `sync schedule`: weekly, during core chat sync
 
+`Pivotal link`: https://www.pivotaltracker.com/projects/2231830
+
 `Meeting notes`: https://notes.status.im/weekly-chat-sync-agenda
 
 ## Research
