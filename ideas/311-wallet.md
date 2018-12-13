@@ -122,6 +122,8 @@ Projects that have a clear exit criteria, with a few iterations, after which the
 
 #### Wallet redesign
 
+`(timebox 2 weeks)`
+
 Fix usability issues and create meaningful improvements with regard to interaction patterns, feedback, labeling and copy of the current flows.
 Epic: [#6921](https://github.com/status-im/status-react/issues/6921)
 
