@@ -4,13 +4,11 @@ title: Wallet Swarm
 status: implementation
 lead-contributor: Goran - Clojure
 contributors:
-- Bruce - Clojure
 - Nastya - QA
 - Tanya - QA 
-- Patrick - UXR 
-- Philip - UXR
+- Patrick - UXR
 - Denis - UX
-- Chad - PM
+- Rachel - PM
 budget:
 - actual: xxx
 - estimate: yyy
@@ -60,7 +58,7 @@ Success for wallet is having the best mobile user experience for transactions, i
 
 ## Communication
 
-- `status channel`: [#311-wallet](https://get.status.im/chat/public/311-wallet)
+- `status channel`: [#status-core-wallet](https://get.status.im/chat/public/status-core-wallet)
 - `sync frequency`: Weekly Sync
 - Github:
   - Project boards
@@ -68,6 +66,53 @@ Success for wallet is having the best mobile user experience for transactions, i
     - [Maintenance project board](https://github.com/orgs/status-im/projects/24)
   - Label: [wallet](https://github.com/status-im/status-react/labels/wallet)
 
+## Research
+
+#### Wallet redesign
+
+UXR already done.
+
+#### Custom ERC20 Tokens
+
+UXR already done.
+
+#### Functional Transaction/Transfer History
+
+`(timebox 5 days)`
+
+#### Address Validity
+
+`(timebox 1 day)`
+
+Research [EIP-55](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
+
+#### Ethereum Links and QRs
+
+`(timebox 1 day)`
+
+Research [EIP-681](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md) and [EIP-831](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-831.md)
+
+## Specification
+
+#### Wallet redesign
+
+Designs already done - https://www.figma.com/file/SIeZPHvrX7KUwEBW8VQct8C5/WIP_New-send-transaction?node-id=0%3A1
+
+#### Custom ERC20 Tokens
+
+Designs already done - https://www.figma.com/file/XUehMnhyD1FGcWzvGz6SXqvh/Mobile-wallet?node-id=160%3A3954
+
+#### Functional Transaction/Transfer History
+
+`(timebox 1 day)`
+
+#### Address Validity
+
+`(timebox 1 day)`
+
+#### Ethereum Links and QRs
+
+`(timebox 1 day)`
 
 ## Implementation
 
@@ -91,14 +136,14 @@ Status: Research
 
 #### Functional Transaction/Transfer History
 
-Status depends on Etherscan API to display ethereum transactions and it depends on Infura to display ERC-20 token transfers. 
+Status depends on Etherscan API to display ethereum transactions and it depends on Infura to display ERC-20 token transfers.
 Epic: [#6940](https://github.com/status-im/status-react/issues/6940)
 
 Status: Research
 
 #### Address Validity
 
-Implement EIP-55 
+Implement EIP-55
 Epic: [#6941](https://github.com/status-im/status-react/issues/6941)
 
 Status: Research
@@ -108,7 +153,23 @@ Status: Research
 Implement EIP-681 and EIP-831 to facilitate easy and standards-compliant transfers
 Status: Research
 
-### Adoption
+## Maintenance
+
+This effort is continuous and doesn't have any end date or exit criteria (internal security reviews, bugfixing, refactoring, bounties, community engagement).
+
+### Security
+
+Security champions, reviews.
+
+### Bugfixing and refactoring
+
+Standing rule to prioritize critical bugs above any other work until resolved. After the critical fix, there should be a follow up to determine how can the same type of bug be prevented from reoccurring in the future. The action taken could be a refactor, a new kind of automated/manual test case or both.
+
+### Community engagement
+
+Communication activities in primarily in relation to implementation of relevant standard proposals and to community involvement in general.
+
+### Outscoped/Postponed
 
 #### Desktop
 
@@ -134,22 +195,6 @@ Status: Research
 Make it easy for users to swap tokens natively in chat
 
 Status: Research
-
-## Maintenance
-
-This effort is continuous and doesn't have any end date or exit criteria (internal security reviews, bugfixing, refactoring, bounties, community engagement).
-
-### Security
-
-Security champions, reviews.
-
-### Bugfixing and refactoring
-
-Standing rule to prioritize critical bugs above any other work until resolved. After the critical fix, there should be a follow up to determine how can the same type of bug be prevented from reoccurring in the future. The action taken could be a refactor, a new kind of automated/manual test case or both.
-
-### Community engagement
-
-Communication activities in primarily in relation to implementation of relevant standard proposals and to community involvement in general.
 
 
 ## Copyright
