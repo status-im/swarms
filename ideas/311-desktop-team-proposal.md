@@ -1,7 +1,7 @@
 ---
 id: 311-dekstop
 title: Desktop
-status: research/implementation
+status: research
 lead-contributor: Vitaliy
 contributors:
     - Vitaliy
