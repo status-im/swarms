@@ -1,4 +1,23 @@
-TtT Swarm
+---
+id: #314-tribute-to-talk
+title: Tribute to Talk
+status: research
+lead-contributor: Eric/Rachel
+contributors:
+    - Eric
+    - Vitaliy
+    - Tetiana
+    - Hester
+    - Richard
+    - Rachel
+budget:
+- actual: xxx
+- estimate: yyy
+- currency: ETH
+---
+
+
+TtT Swarm Proposal
 =
 
 ## Summary and Goals
@@ -12,6 +31,7 @@ It allows individuals to monetize their time and attention by setting minimum re
 - Eric 
 - Vitaliy 
 - Maciej
+- Richard
 - Tetiana 
 
 (+ Janitor swarm)
