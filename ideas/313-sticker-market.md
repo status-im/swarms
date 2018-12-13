@@ -47,6 +47,8 @@ We can commission a set of stickers to populate the marketplace starting out.
 
 `sync schedule`: biweekly sprint planning, ad hoc meetings as needed
 
+`Pivotal project:` https://www.pivotaltracker.com/projects/2231918
+
 `Meeting notes:` https://www.google.com/url?q=https%3A%2F%2Fnotes.status.im%2FwyjNCxeURu6lYSwWGh3biw&sa=D&ust=1545051619127000&usg=AFQjCNGFgvurpaS4HBPB0Y3s5pR5HLiQWA
 
 ## Research 
