@@ -21,6 +21,7 @@ budget:
 Status Core Improvements swarm's goal is the preparation of Status Mobile Client to be released publicly (AppStore/GP release tracks).
 
 A few key areas that we need to focus on:
+
 * all the critical security and privacy issues are resolved (including audit);
 * all the critical tech debt issues are resolved;
 * key UX problems are solved in two areas:
@@ -37,8 +38,8 @@ The work includes releasing internal "dogfood" builds as well as betas in prepar
 
 ## Communication
 (required)
-`status channel (same as swarm id)`: [#status-core](https://get.status.im/chat/public/status-core)
-`sync frequency`: Weekly Sync Mondays, 10:00 CET (the regular "core team" standup)
+`status channel (same as Core Team)`: [`#status-core`](https://get.status.im/chat/public/status-core)
+`sync frequency`: Weekly Sync Mondays, 10:00 CET (the regular "Core Team" standup)
 `meeting notes`: [this running doc on notes.status.im](https://notes.status.im/sm7x7tPpQESkRwu7YNFzSQ)
 
 # Research
@@ -90,6 +91,7 @@ Projects from should be put in the correct state to see the progress, etc.
 * Timeline - January, 11
 
 The goal of this project is:
+
 * to make messaging extremely reliable;
 * to be able to prove that;
 * to be able to show that information to a user (especially it is important to
@@ -117,8 +119,8 @@ Epic: https://github.com/status-im/status-react/issues/5793
 - [Mobile release guide](https://notes.status.im/mobile-release-guide)
 - [Mobile release notes](https://notes.status.im/mobile-release-notes)
 - Upgrade policy
-  - *User’s data.* User should be able to successfully upgrade preserving all his/her data from 0.9.19 to any beta release.
-  - *Messaging/Transactions.* User should be able to successfully interact (make transactions, chat, etc) with users that have 0.9.20 or later release.
+    * *User’s data.* User should be able to successfully upgrade preserving all his/her data from 0.9.19 to any beta release.
+    * *Messaging/Transactions.* User should be able to successfully interact (make transactions, chat, etc) with users that have 0.9.20 or later release.
 
 ## Backlog
 
