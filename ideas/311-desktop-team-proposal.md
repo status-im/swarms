@@ -1,115 +1,124 @@
 ---
-title: Status Desktop Team
-
+id: 311-dekstop
+title: Desktop
+status: research/implementation
+lead-contributor: Vitaliy
+contributors:
+    - Vitaliy
+    - Max
+    - Volodymyr
+budget:
+- actual: xxx
+- estimate: yyy
+- currency: ETH/USD/SNT
 ---
-###### tags: `proposal` `desktop`
 
-# Status Desktop proposal
+# Desktop Swarm proposal
 
-## Summary
+## Summary and Goal(s)
 
-Status Desktop is responsible for **TBD**
+Messenger apps expected to be present on all widely used platforms - ios, android, mac, windows, linux.
 
-#### react-native-desktop
-**TBD**
-Are we maintaining on a level just enough to run Status Desktop or maintain and evolve this as a separate open source project) ?
-Depending on answer list of tasks can include:
-- support of existing components
-- adding features needed for Status desktop
-- adding features that exists in mobile status-react
-- adding desktop-specific features (desktop shortcuts, app standard menu, open file dialog, etc..)
-- support of external contributors: issues review, contributions review, answers to questions
--
+Status desktop app currently extensively used by Status company for communications.
+It is implemented with the help of [react-native-desktop](https://github.com/status-im/react-native-desktop) project that is a Qt-based port of `react-native` to desktop platforms: mac, windows, linux.
 
-#### Status desktop
-Releases on all platforms?
+So Desktop swarm has two goals in mind:
+1. Providing well-polished communication tool for Status company itself and the community
+2. Feature parity with mobile application
+For initial scope focus is on the first goal.
 
+Additional tasks for the swarm is maintaining `react-native-desktop` project to fit Status desktop needs and publishing Status desktop releases.
 
-## Budget
+## Communication
+`status channel (same as swarm id)`: [#311-desktop](https://get.status.im/chat/public/311-desktop)
 
-Headcount-based. 2 people.
+`sync frequency`: Weekly Sync
 
-**TBD**
+`meeting notes`: https://notes.status.im/IVQ6ZK6iRw6LfF-4y4WJmw
 
-From core team proposal:
->The swarm also has a discretionary budget for bounty based development using Gitcoin, in order to parallelize development.
+## Research
 
->Assuming average organizational compensation, this would be roughly 69k/m. Possibly more based on performance, etc.
-A self-imposed ceiling of 100k is proposed for budget bucketing (~10%) for the team as a whole.
+`Timebox: 21/12`
 
->Related adjacent activities such as security, devops, marketing, QA, etc will be assumed to be provided and funded by the Gmbh until further notice.
+`Research questions:`
 
-
-## Core participants
-
-- Max Risuhin
-- Volodymyr Kozieiev
-- Chad (PM) ? **TBD**: Do we consider PM as a part of the team? Chad already in a core.
-- QAs ? **TBD**: Do we consider QAs as a part of the team?
-
-## Scope
-
-See also: [team and responsibilities](https://notes.status.im/k0xVSu6nRvS5p0UAWV__BA?view)
-
-**TBD: Same questions as in Summary**
-
-## Process (aka How We Work?)
-
-**TBD**
-
-### Projects
-
-#### react-native-desktop
-**TBD**
-
-#### Status desktop
-**TBD**
-
-
-From core team proposal:
->Each project that is currently active should have an umbrella issue that should
-link all the other issues. It contains a full description of the project and is
-closed when the project is considered "done".
-
->Some high-level discussions might also happen there.
-
->This issue should contain all the other issues grouped into areas if necessary.
-
->Each project should contain **Vision**, **Scope** and **Tradeoffs**.
-1. Vision: a high-level goal of the project or a problem we are trying to solve.
-2. Scope: limiting conditions that we empose on ourselves when implementing the project (what it is doing and what it is NOT doing).
-3. Tradeoffs: a lot of projects can contain tradeoffs that make is feasible to implement. These should be documented there.
-
->See https://github.com/status-im/status-react/issues/6757 as an example of a similar issue.
-
->The projects list should have links to umbrella issues for each projects.
-
-### Meetings & Philosophy
-
-Weekly sync-up calls
-- goals for the week
-- focus area, progress
-- post-meeting report in a Discuss thread
+ * **what features we already planned or were talking about? How they priority changes now?**
+  * [Allow standard keyboard shortcuts](https://github.com/status-im/status-react/pull/6951)
+  * Publishing at platform's official marketplaces
+  * [Fix memory leaks](https://github.com/status-im/status-react/issues/5271)
+  * Improve CPU usage
+  * windows uwp support
+  * markdown support in chat
+  * text selection among multiple messages
+  * [show connection stats inside the app](https://github.com/status-im/status-react/issues/6568)
+  * [add log level settings](https://github.com/status-im/status-react/issues/5848)
+  * [use peer counts to detect online\offline state](https://github.com/status-im/status-react/issues/6961)
+  * [No new messages after going back from sleep](https://github.com/status-im/status-react/issues/6396)
+  * [Security and privacy review](Desktop security and privacy review)
+  * [Context menu in input fields](https://github.com/status-im/status-react/issues/6571)
+  * [Add design for menus](https://github.com/status-im/status-react/issues/4434)
+  * [Fix scroll stuttering](https://github.com/status-im/status-react/issues/6570)
+  * [Add dev mode and network switching](https://github.com/status-im/status-react/issues/6477)
+  * [UI fixes for bubble-less chat area](https://github.com/status-im/status-react/issues/6506)
+  * [Fix group chats creation](https://github.com/status-im/status-react/issues/6607)
+  * [Confirmation dialog on logout](https://github.com/status-im/status-react/issues/4977)
+  * [Custom url support on linux](https://github.com/status-im/status-react/issues/6394)
+  * [Add custom mailserver](https://github.com/status-im/status-react/issues/6110)
+  * [Edit profile picture](https://github.com/status-im/status-react/issues/5456)
+  * [Remove code duplication in Jenkinsfiles](https://github.com/status-im/status-react/issues/5424)
+  * [Persist scroll position after navigation through the app](https://github.com/status-im/status-react/issues/5852)
+  * [Add jenkins job for e2e tests](https://github.com/status-im/status-react/issues/5859)
+  * [Apply onboarding designs](https://github.com/status-im/status-react/issues/4418)
+ * **what existing desktop issues affect its usability most (in functionality or UI)**?  
+ * **how many users outside of Status we have? (optional)**
+ * **how can we get user feedback about desktop**
+ * **what features mostly anticipated by users?**
+ * **what ui/ux input needed**
+ * **what should be done in `react-native-desktop` to support status desktop tasks**
+  * [Get rid of ubuntu-server and embed js engine in react-native-desktop](https://github.com/status-im/status-react/issues/6175)
+  * [File open dialog](https://github.com/status-im/react-native-desktop/issues/377)
+  * [Fix remote js debugging](https://github.com/status-im/react-native-desktop/issues/392)
+  * Improve UI responsiveness
+ * **what should be done in `react-native-desktop` to make its maintenance easier**
+  * port to react-native 0.57. That will give us a possibility to make it an [out-of-tree](https://facebook.github.io/react-native/docs/out-of-tree-platforms) platform and facilitate future upgrades.
+    * PR with updated version [already in react-native-desktop](https://github.com/status-im/react-native-desktop/pull/422)
+    * [PR for testing it with status-react](https://github.com/status-im/status-react/pull/6983)
+    * PR for mobile [in progress](https://github.com/status-im/status-react/pull/6951)
+  * More documentation/tutorials for external contributors
 
 
-# react-native-desktop
+`Research output:`
+When questions above answered we can create a prioritized list of most important tasks to do for boosting communication exprience
 
-**TBD**
+## Specification
 
-# Status desktop
+> do after `Research`
 
-**TBD**
+(required)
+`timebox specification (approx)`
 
+(optional)
+`user stories`, `architecture`, `designs`, `PoC`
 
-# Raw Data
+## Implementation
 
-#### Desktop scoping sync (30.11.18)
-- upgrade react-native
-- allow standard keyboard shortcuts
-- native app & js communication
-- windows. uwp support
-- publishing at platform's official marketplaces
-- better performance
-- feature parity with mobile
-- windows desktop builds
-- join relevant EthMagicians workshop
+(required)
+`timebox implementation (approx)`
+
+> do after `Specification`
+
+> All swarm contributors should test and break the implementation, especially developers
+
+(required)
+`document progress`
+
+(optional)
+`townhall demo`
+
+## Maintenance
+
+`lead-contributor`,`post-mortems`
+
+## Copyright
+
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
