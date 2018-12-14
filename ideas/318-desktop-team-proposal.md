@@ -1,10 +1,9 @@
 ---
-id: 311-dekstop
+id: 318-desktop
 title: Desktop
 status: research
-lead-contributor: Vitaliy
+lead-contributor: Max
 contributors:
-    - Vitaliy
     - Max
     - Volodymyr
 budget:
@@ -30,7 +29,7 @@ For initial scope focus is on the first goal.
 Additional tasks for the swarm is maintaining `react-native-desktop` project to fit Status desktop needs and publishing Status desktop releases.
 
 ## Communication
-`status channel (same as swarm id)`: [#311-desktop](https://get.status.im/chat/public/311-desktop)
+`status channel (same as swarm id)`: [#318-desktop](https://get.status.im/chat/public/318-desktop)
 
 `sync frequency`: Weekly Sync
 
@@ -85,13 +84,23 @@ Additional tasks for the swarm is maintaining `react-native-desktop` project to 
     * [PR for testing it with status-react](https://github.com/status-im/status-react/pull/6983)
     * PR for mobile [in progress](https://github.com/status-im/status-react/pull/6951)
   * More documentation/tutorials for external contributors
+ * **what tasks can be done without involving Clojure/Go resources**
 
 
-`Research output:`
+`Research output structure:`
 When questions above answered we can create:
-- prioritized list of most important tasks to do for boosting communication exprience
+- prioritized list of most important tasks to do for boosting communication experience
 - user stories
 - bounties
+
+`Research output structure:`
+
+**Prioritized list of tasks:**
+
+**User stories:**
+
+**Bounties:**
+
 
 ## Specification
 
