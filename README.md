@@ -33,8 +33,10 @@ For existing swarms:
 
 ### Teams (fallback for responsibility)
 - [310-core](ideas/310-core-team-proposal.md) (research)
+- [306-core-browser](ideas/306-core-browser.md) (research)
+- [304-core-chat](ideas/304-core-chat.md) (research)
 
 ### TBD
 - Teller Network; DApp Store/Discover
 - DAO;Patient Zero
-- Chat;Wallet;DApp Browser;Desktop;Keycard
+- Wallet;Desktop;Keycard
