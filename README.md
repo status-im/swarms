@@ -22,7 +22,7 @@ For existing swarms:
 ## Active swarms
 
 ### SNT Utility  
-- [313-core-network-incentivization](ideas/313-core-networking.md) (research)
+- [316-core-network-incentivization](ideas/316-core-networking.md) (research)
 - [313-sticker-market](ideas/313-sticker-market.md) (research)
 - [314-tribute-to-talk](ideas/314-tribute-to-talk.md) (research)
 
