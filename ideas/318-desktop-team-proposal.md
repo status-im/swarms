@@ -2,7 +2,7 @@
 id: 318-desktop
 title: Desktop
 status: research
-lead-contributor: Max
+lead-contributor: Volodymyr
 contributors:
     - Max
     - Volodymyr
