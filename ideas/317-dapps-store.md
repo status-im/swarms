@@ -33,7 +33,7 @@ It allows individuals to curate DApps by staking SNT and have access to this lis
 
 ## Communication
 
-`status channel`: #315-dapps-store
+`status channel`: #317-dapps-store
 `sync schedule`: weekly
 
 `Meeting notes`: 
