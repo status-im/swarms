@@ -36,7 +36,7 @@ The goal is:
 * preserve security and privacy;
 
 
-### 2. Push Notifications
+### 2. Push Notifications [stretch goal]
 
 Distributed push-notification market. Researching ways on how can users pick PN providers.
 
@@ -52,6 +52,7 @@ Distributed push-notification market. Researching ways on how can users pick PN 
 (required)
 `status channel (same as swarm id)`: [#316-core-network-incentives](https://get.status.im/chat/public/316-core-networking)
 `sync frequency`: Weekly Sync Mondays, 11:00 CET
+`document`: https://notes.status.im/2ogTGMkqRwC7VMcGh9mBdA
 
 ## Research
 (required) 
@@ -64,6 +65,21 @@ https://1337alliance.com/
 https://github.com/status-im/swarms/tree/master/ideas/168-paid-master-nodes
 https://status.im/whitepaper.pdf
 protocol work and leveraging data sync data, eg
+
+### Weekly Goals
+#### W51-18 Problems/Ideation
+timebox: Dec, 21
+
+- trying to figure out which users and Status problems we can solve by users running Status nodes
+
+participants: 
+- igorm
+- andrea mp
+- andrei m
+
+outcome:
+- ideas written in https://notes.status.im/2ogTGMkqRwC7VMcGh9mBdA
+- discussion on Dec, 21
 
 
 ### 1. Offline Messaging
