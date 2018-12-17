@@ -65,95 +65,102 @@ Success for wallet is having the best mobile user experience for transactions, i
     - [Wallet epic project board](https://github.com/orgs/status-im/projects/48)
     - [Maintenance project board](https://github.com/orgs/status-im/projects/24)
   - Label: [wallet](https://github.com/status-im/status-react/labels/wallet)
+  
+## Projects 
 
-## Research
-
-#### Wallet redesign
-
-UXR already done.
-
-#### Custom ERC20 Tokens
-
-UXR already done.
-
-#### Functional Transaction/Transfer History
-
-`(timebox 5 days)`
-
-#### Address Validity
-
-`(timebox 1 day)`
-
-Research [EIP-55](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
-
-#### Ethereum Links and QRs
-
-`(timebox 1 day)`
-
-Research [EIP-681](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md) and [EIP-831](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-831.md)
-
-## Specification
-
-#### Wallet redesign
-
-Designs already done - https://www.figma.com/file/SIeZPHvrX7KUwEBW8VQct8C5/WIP_New-send-transaction?node-id=0%3A1
-
-#### Custom ERC20 Tokens
-
-Designs already done - https://www.figma.com/file/XUehMnhyD1FGcWzvGz6SXqvh/Mobile-wallet?node-id=160%3A3954
-
-#### Functional Transaction/Transfer History
-
-`(timebox 1 day)`
-
-#### Address Validity
-
-`(timebox 1 day)`
-
-#### Ethereum Links and QRs
-
-`(timebox 1 day)`
-
-## Implementation
-
-Projects that have a clear exit criteria, with a few iterations, after which the task is considered completed (e.g. wallet redesign, implementation of eip-5, ec.)
-
-### Usability
-
-#### Wallet redesign
-
-`(timebox 2 weeks)`
+### Wallet redesign
 
 Fix usability issues and create meaningful improvements with regard to interaction patterns, feedback, labeling and copy of the current flows.
 Epic: [#6921](https://github.com/status-im/status-react/issues/6921)
 
 Status: Implementation
 
-#### Custom ERC20 Tokens
+#### Research & Specification
+
+UXR already done.
+Designs based on research already done - https://www.figma.com/file/SIeZPHvrX7KUwEBW8VQct8C5/WIP_New-send-transaction?node-id=0%3A1
+
+#### Implementation
+
+`(timebox 2 weeks)`
+
+
+### Custom ERC20 Tokens
 
 Let users control their own wallet and add any erc20 token they possess. Currently Status only supports a limited fixed list which is manually maintained by core contributors.
 Epic: [#6939](https://github.com/status-im/status-react/issues/6939)
 
 Status: Specification
 
-#### Functional Transaction/Transfer History
+#### Research & Specification
+
+UXR already done.
+Designs based on research already done - https://www.figma.com/file/XUehMnhyD1FGcWzvGz6SXqvh/Mobile-wallet?node-id=160%3A3954
+
+#### Implementation
+
+
+
+### Functional Transaction/Transfer History
+
 
 Status depends on Etherscan API to display ethereum transactions and it depends on Infura to display ERC-20 token transfers.
 Epic: [#6940](https://github.com/status-im/status-react/issues/6940)
 
 Status: Research
 
-#### Address Validity
+#### Research 
+
+`(timebox 5 days)`
+
+#### Specification
+
+`(timebox 1 day)`
+
+#### Implementation
+
+`?`
+
+### Address Validity
 
 Implement EIP-55
 Epic: [#6941](https://github.com/status-im/status-react/issues/6941)
 
 Status: Research
 
-#### Ethereum Links and QRs
+#### Research
+
+`(timebox 1 day)`
+
+Research [EIP-55](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
+
+#### Specification
+
+`(timebox 1 day)`
+
+#### Implementation 
+
+`(timebox 1 day)`
+
+### Ethereum Links and QRs
 
 Implement EIP-681 and EIP-831 to facilitate easy and standards-compliant transfers
 Status: Research
+
+#### Research
+
+`(timebox 1 day)`
+
+Research [EIP-681](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md) and [EIP-831](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-831.md)
+
+#### Specification
+
+`(timebox 1 day)`
+
+#### Implementation 
+
+`(timebox 1 day)`
+
 
 ## Maintenance
 
