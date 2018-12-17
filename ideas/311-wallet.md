@@ -1,5 +1,5 @@
 ---
-id: #311-wallet
+id: #319-wallet
 title: Wallet Swarm
 status: implementation
 lead-contributor: Goran - Clojure
