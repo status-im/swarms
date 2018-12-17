@@ -36,8 +36,8 @@ We can commission a set of stickers to populate the marketplace starting out.
 - Julien
 - Andrey
 - Nastya
-- Smart contract dev needed (probably Ricardo)
-- Designer needed
+- Ricardo
+- Maciej
 
 (+ Janitor swarm) 
 
