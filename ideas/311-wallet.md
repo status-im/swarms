@@ -1,7 +1,7 @@
 ---
 id: #319-wallet
 title: Wallet Swarm
-status: implementation
+status: research
 lead-contributor: Goran - Clojure
 contributors:
 - Nastya - QA
