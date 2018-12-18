@@ -38,6 +38,6 @@ For existing swarms:
 - [310-core](ideas/310-core-team-proposal.md) (research)
 - [306-core-browser](ideas/306-core-browser.md) (research)
 - [304-core-chat](ideas/304-core-chat.md) (research)
-- [318-desktop](ideas/318-desktop-team-proposal.md) (research)
-- [319-wallet](ideas/319-wallet.md) (research)
+- [318-desktop](ideas/318-desktop.md) (research)
+- [319-wallet](ideas/319-core-wallet.md) (research)
 - Keycard missing

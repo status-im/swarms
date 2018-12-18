@@ -1,5 +1,5 @@
 ---
-id: #310-core-team
+id: #310-core
 title: Core Team
 status: research
 lead conributor: Igor
