@@ -35,7 +35,7 @@ For existing swarms:
 - [312-janitors](ideas/312-swarm-janitors.md) (research)
 
 ### Teams (fallback for responsibility)
-- [310-core](ideas/310-core-team-proposal.md) (research)
+- [310-core](ideas/310-core.md) (research)
 - [306-core-browser](ideas/306-core-browser.md) (research)
 - [304-core-chat](ideas/304-core-chat.md) (research)
 - [318-desktop](ideas/318-desktop.md) (research)
