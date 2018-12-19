@@ -48,7 +48,10 @@ developed in conjunction with other teams in the Web3 / secure communication spa
    
 ## Communication
 
-`status channel (same as swarm id)`: [#311-protocol](https://get.status.im/chat/public/311-protocol) (current #status-protocol is also used, as well as Riot chat https://riot.im/app/#/room/#web3-messaging:matrix.org for cross-team communication)
+`status channel (same as swarm id)`:
+- [#status-protocol](https://get.status.im/chat/public/status-protocol) (currently used channel, not same as swarm id)
+- as well as as Riot chat https://riot.im/app/#/room/#web3-messaging:matrix.org for cross-team communication)
+
 `sync frequency`: One person team right now so no specific sync; weekly updates (see below); currently ad hoc sync with Web3 foundation etc 
 
 ## Requirements
