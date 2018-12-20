@@ -43,7 +43,7 @@ Distributed push-notification market. Researching ways on how can users pick PN 
 
 
 ### Additional contributors
-- oskart
+- oskarth
 - dmitrys
 - andrei m (design)
 - a smart contract dev
