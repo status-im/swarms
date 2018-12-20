@@ -51,6 +51,8 @@ We can commission a set of stickers to populate the marketplace starting out.
 
 `Meeting notes:` https://notes.status.im/stickers-market-sync
 
+`Research notes:` https://notes.status.im/stickers-market-research
+
 ## Research 
 
 `Timing`: wrap on 28/12
