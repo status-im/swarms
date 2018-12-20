@@ -153,6 +153,9 @@ it hard for NAT to pass through.)
 For more details and the latest updates,
 see [w3f/messaging](https://github.com/w3f/messaging).
 
+### Dissemination
+Ensure swarms working with protocols maintain a solid understanding. Includes explaining aspects that go against intuition that have design implication, such as latency, bandwidth, identity, partial graph state, etc.
+
 ## Budget
 
 Headcount based. Small group.
@@ -242,6 +245,10 @@ direction. As research effort continues and above milestones are being achieved,
 this will be updated.
 
 ## Research log
+
+### December 17 - December 21
+- Workshop coordination (Brussels ~28/1-1/2, just before Fosdem)
+- BSP convo with Adam and start protobuf spec: https://github.com/status-im/bsp-spec
 
 ### December 10 - December 16
 - Posted 'Introducing data sync layer' https://discuss.status.im/t/introducing-a-data-sync-layer/864/2
