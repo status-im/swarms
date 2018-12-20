@@ -49,11 +49,11 @@ We can commission a set of stickers to populate the marketplace starting out.
 
 `Pivotal project:` https://www.pivotaltracker.com/projects/2231918
 
-`Meeting notes:` https://www.google.com/url?q=https%3A%2F%2Fnotes.status.im%2FwyjNCxeURu6lYSwWGh3biw&sa=D&ust=1545051619127000&usg=AFQjCNGFgvurpaS4HBPB0Y3s5pR5HLiQWA
+`Meeting notes:` https://notes.status.im/stickers-market-sync
 
 ## Research 
 
-`Timing`: wrap on 21/12
+`Timing`: wrap on 28/12
 
 `References`: LINE & Kakao are two of the best sticker markets. Looking at these two alone can give ample guidance on great sticker market UX. Telegram another worthy reference.
 
