@@ -40,7 +40,7 @@ It allows individuals to curate DApps by staking SNT and have access to this lis
 
 ## Research
 
-`Timebox`: wrap by 28/12
+`Timebox`: wrap by 04/01
 
 `Previous work`:
 
