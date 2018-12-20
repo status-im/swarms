@@ -43,7 +43,7 @@ We can commission a set of stickers to populate the marketplace starting out.
 
 ## Communication
 
-`status channel`: #313-sticker-market
+`status channel`: [#313-sticker-market](https://get.status.im/chat/public/#313-sticker-market)
 
 `sync schedule`: biweekly sprint planning, ad hoc meetings as needed
 
