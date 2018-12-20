@@ -1,6 +1,6 @@
 ---
 id: #316-core-network-incentives
-title: Core Network Incentives Swarm Proposal
+title: Core Network Incentives
 status: research
 contributors:
     - igor
@@ -50,7 +50,7 @@ Distributed push-notification market. Researching ways on how can users pick PN 
 
 ## Communication
 (required)
-`status channel (same as swarm id)`: [#316-core-network-incentives](https://get.status.im/chat/public/316-core-networking)
+`status channel (same as swarm id)`: [#316-core-network-incentives](https://get.status.im/chat/public/316-core-network-incentives)
 `sync frequency`: Weekly Sync Mondays, 11:00 CET
 `document`: https://notes.status.im/2ogTGMkqRwC7VMcGh9mBdA
 
