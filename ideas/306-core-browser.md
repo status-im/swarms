@@ -49,6 +49,8 @@ Any capacity leftover from Stickers market tasks will be dedicated to essential 
 
 `Objective`: Define high priority items for browser, outside of Stickers market and independent of current board. 
 
+Notes are available [here](https://notes.status.im/browser-research)
+
 ## Specification
 
 ## Implementation 
