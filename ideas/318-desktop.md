@@ -109,9 +109,10 @@ Additional tasks for the swarm is maintaining `react-native-desktop` project to 
       * [Fix memory leaks](https://github.com/status-im/status-react/issues/5271)      
       * [Fix scroll stuttering](https://github.com/status-im/status-react/issues/6570)
       * [Get rid of ubuntu-server and embed js engine in react-native-desktop](https://github.com/status-im/status-react/issues/6175)
-      * [port to react-native 0.57](https://github.com/status-im/react-native-desktop/pull/422)      
+      * [port to react-native 0.57](https://github.com/status-im/react-native-desktop/pull/422)          
 
     * Medium
+      * [Support building react-native-desktop with msvc](https://github.com/status-im/react-native-desktop/issues/222)  
       * Add emoji panel
       * [Fix remote js debugging](https://github.com/status-im/react-native-desktop/issues/392)      
       * [UI fixes for bubble-less chat area](https://github.com/status-im/status-react/issues/6506)      
