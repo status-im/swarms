@@ -4,7 +4,6 @@ title: Desktop
 status: research
 lead-contributor: Volodymyr
 contributors:
-    - Max
     - Volodymyr
 budget:
 - actual: xxx
@@ -107,44 +106,44 @@ Additional tasks for the swarm is maintaining `react-native-desktop` project to 
 
  * **TODO**
     * High
-      * [Fix memory leaks](https://github.com/status-im/status-react/issues/5271)
-      * [Security and privacy review](Desktop security and privacy review)
-      * [Add design for menus](https://github.com/status-im/status-react/issues/4434)
+      * [Fix memory leaks](https://github.com/status-im/status-react/issues/5271)      
       * [Fix scroll stuttering](https://github.com/status-im/status-react/issues/6570)
-      * [UI fixes for bubble-less chat area](https://github.com/status-im/status-react/issues/6506)
-      * [Fix group chats creation](https://github.com/status-im/status-react/issues/6607)
-      * [Confirmation dialog on logout](https://github.com/status-im/status-react/issues/4977)
-      * [Custom url support on linux](https://github.com/status-im/status-react/issues/6394)
-      * [Edit profile picture](https://github.com/status-im/status-react/issues/5456)
-      * [Persist scroll position after navigation through the app](https://github.com/status-im/status-react/issues/5852)
       * [Get rid of ubuntu-server and embed js engine in react-native-desktop](https://github.com/status-im/status-react/issues/6175)
-      * [Add jenkins job for e2e tests](https://github.com/status-im/status-react/issues/5859)
-      * [Apply onboarding designs](https://github.com/status-im/status-react/issues/4418)
-      * [File open dialog](https://github.com/status-im/react-native-desktop/issues/377)
-      * [Fix remote js debugging](https://github.com/status-im/react-native-desktop/issues/392)
-      * Improve UI responsiveness (needs clarification on existing issues)
-      * [port to react-native 0.57](https://github.com/status-im/react-native-desktop/pull/422)      
-      * Image/links preview
-      * Pinned channels
-      * mark all messages in a channel as unread
+      * [port to react-native 0.57](https://github.com/status-im/react-native-desktop/pull/422)          
 
     * Medium
+      * [Support building react-native-desktop with msvc](https://github.com/status-im/react-native-desktop/issues/222)  
+      * Add emoji panel
+      * [Fix remote js debugging](https://github.com/status-im/react-native-desktop/issues/392)      
+      * [UI fixes for bubble-less chat area](https://github.com/status-im/status-react/issues/6506)      
+      * [Security and privacy review](Desktop security and privacy review)
+      * [Add design for menus](https://github.com/status-im/status-react/issues/4434)
+      * [Confirmation dialog on logout](https://github.com/status-im/status-react/issues/4977)
+      * [File open dialog](https://github.com/status-im/react-native-desktop/issues/377)      
+      * [Edit profile picture](https://github.com/status-im/status-react/issues/5456) (depends on file open dialog implementation in react-native-desktop)
+      * [Persist scroll position after navigation through the app](https://github.com/status-im/status-react/issues/5852)
+      * [Add jenkins job for e2e tests](https://github.com/status-im/status-react/issues/5859)
+      * [Apply onboarding designs](https://github.com/status-im/status-react/issues/4418)
+      * Improve UI responsiveness (needs clarification on existing issues)
+      * Image/links preview      
+      * mark all messages in a channel as unread
       * [Allow standard keyboard shortcuts](https://github.com/status-im/status-react/issues/6272)
       * markdown support in chat
       * text selection among multiple messages
-      * [show connection stats inside the app](https://github.com/status-im/status-react/issues/6568)
-      * [add log level settings](https://github.com/status-im/status-react/issues/5848)
-      * [Context menu in input fields](https://github.com/status-im/status-react/issues/6571)
-      * [Add dev mode and network switching](https://github.com/status-im/status-react/issues/6477)
-      * [Add custom mailserver](https://github.com/status-im/status-react/issues/6110)
-      * [Remove code duplication in Jenkinsfiles](https://github.com/status-im/status-react/issues/5424)
-      * More documentation/tutorials for external contributors
+      * More documentation/tutorials in react-native-desktop for external contributors
+      * [Custom url support on linux](https://github.com/status-im/status-react/issues/6394)
+      * Mentions
 
     * Low
-     * [Improve CPU usage on resize](https://github.com/status-im/status-react/issues/5151)
+      * Pinned channels
+      * [Fix group chats creation](https://github.com/status-im/status-react/issues/6607)
+      * [Remove code duplication in Jenkinsfiles](https://github.com/status-im/status-react/issues/5424)
+      * [Improve CPU usage on resize](https://github.com/status-im/status-react/issues/5151)
+      * [Add custom mailserver](https://github.com/status-im/status-react/issues/6110)
+      * [Add dev mode and network switching](https://github.com/status-im/status-react/issues/6477)
+      * [Context menu in input fields](https://github.com/status-im/status-react/issues/6571)
 
  * **Needs input from other teams (most probably)**
-  * Mentions
   * channels (public chat where only creator can write and others can read). That would be great for announcing things company-wide
   * persisting chat list and settings between full reinstalls
 
