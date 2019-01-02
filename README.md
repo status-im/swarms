@@ -26,12 +26,12 @@ For existing swarms:
 - [313-sticker-market](ideas/313-sticker-market.md) (research)
 - [314-tribute-to-talk](ideas/314-tribute-to-talk.md) (research)
 - [317-dapp-store](ideas/317-dapps-store.md) (research)
-- **TODO: Teller Network**
+- [321-teller-network](ideas/321-teller-network.md) (research)
 
 ### Essential
 - [315-core-improvements](ideas/315-core-improvements.md) (research) - same as Patient Zero?
 - [311-protocol](ideas/311-status-protocol.md) (research)
-- **TODO: DAO**
+- [322-dao](ideas/321-dao.md) (research)
 - [312-janitors](ideas/312-swarm-janitors.md) (research)
 
 ### Teams (fallback for responsibility)
