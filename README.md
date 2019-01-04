@@ -31,7 +31,7 @@ For existing swarms:
 ### Essential
 - [315-core-improvements](ideas/315-core-improvements.md) (research) - same as Patient Zero?
 - [311-protocol](ideas/311-status-protocol.md) (research)
-- [322-dao](ideas/321-dao.md) (research)
+- [322-dao](ideas/322-dao.md) (research)
 - [312-janitors](ideas/312-swarm-janitors.md) (research)
 
 ### Teams (fallback for responsibility)
