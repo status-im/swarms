@@ -113,7 +113,7 @@ Additional tasks for the swarm is maintaining `react-native-desktop` project to 
 
     * Medium
       * [Support building react-native-desktop with msvc](https://github.com/status-im/react-native-desktop/issues/222)  
-      * Add emoji panel
+      * [Add emoji panel](https://github.com/orgs/status-im/projects/32#card-16155153)
       * [Fix remote js debugging](https://github.com/status-im/react-native-desktop/issues/392)      
       * [UI fixes for bubble-less chat area](https://github.com/status-im/status-react/issues/6506)      
       * [Security and privacy review](Desktop security and privacy review)
@@ -125,19 +125,18 @@ Additional tasks for the swarm is maintaining `react-native-desktop` project to 
       * [Add jenkins job for e2e tests](https://github.com/status-im/status-react/issues/5859)
       * [Apply onboarding designs](https://github.com/status-im/status-react/issues/4418)
       * Improve UI responsiveness (needs clarification on existing issues)
-      * Image/links preview      
-      * mark all messages in a channel as unread
+      * [Image/links preview](https://github.com/status-im/status-react/issues/7176)
+      * [mark all messages in a channel as unread](https://github.com/status-im/status-react/issues/7200)
       * [Allow standard keyboard shortcuts](https://github.com/status-im/status-react/issues/6272)
-      * markdown support in chat
-      * text selection among multiple messages
+      * [markdown support in chat](https://github.com/status-im/status-react/issues/7201)
+      * [text selection among multiple messages](https://github.com/status-im/status-react/issues/7202)
       * More documentation/tutorials in react-native-desktop for external contributors
       * [Custom url support on linux](https://github.com/status-im/status-react/issues/6394)
       * Mentions
 
     * Low
-      * Pinned channels
+      * [Pinned channels](https://github.com/status-im/status-react/issues/7203)
       * [Fix group chats creation](https://github.com/status-im/status-react/issues/6607)
-      * [Remove code duplication in Jenkinsfiles](https://github.com/status-im/status-react/issues/5424)
       * [Improve CPU usage on resize](https://github.com/status-im/status-react/issues/5151)
       * [Add custom mailserver](https://github.com/status-im/status-react/issues/6110)
       * [Add dev mode and network switching](https://github.com/status-im/status-react/issues/6477)
