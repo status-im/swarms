@@ -29,7 +29,7 @@ For existing swarms:
 - [321-teller-network](ideas/321-teller-network.md) (research)
 
 ### Essential
-- [315-core-improvements](ideas/315-core-improvements.md) (research) - same as Patient Zero?
+- [315-core-improvements](ideas/315-core-improvements.md) (research)
 - [311-protocol](ideas/311-status-protocol.md) (research)
 - [322-dao](ideas/322-dao.md) (research)
 - [312-janitors](ideas/312-swarm-janitors.md) (research)
