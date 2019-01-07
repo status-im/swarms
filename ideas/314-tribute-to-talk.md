@@ -49,7 +49,7 @@ It allows individuals to monetize their time and attention by setting minimum re
 
 ## Research
 
-`Timebox`: wrap by 21/12
+`Timebox`: wrap by 21/12/18
 
 `Previous work`:
 An initial version of Tribute to Talk was partially developed and designed back in April/May. 
@@ -80,6 +80,20 @@ Changes to the smart contract may be required in order to meet specs defined in 
 - What features does the current smart contract support?
 - Do we need to conduct an audit on the contract before launch?
 - Identifiy incompatibilies with other features/issues—e.g. inability to remove contacts once added, overlap with core issues, etc. 
+
+**Update 7/1/19**<br>
+*Top line: The Tribute to Talk MVP will deliver 1:1 spam prevention. The contract will manage tribute settings only. There will be no escrow; payment will be handled through a normal SNT transaction. There are constraints that force this decision, but it's also the simplest possible implementation.* 
+
+User A = Person sending tribute<br>
+User B = Person accepting/rejecting chat request
+
+[Eric]
+So far we have discussed 2 different options:
+- contract 1 is a very simple contract that is only used as a index of tributes required to contact users. The tribute is payed with a regular transaction which is slightly better for privacy but requires A to pay before talking to B without an escrow. I don't think there would be a need for a security audit for this one because the contract itself doesn't handle any value.
+
+- contract 2 is more complex and acts as an escrow. B needs to accept the tribute to be paid. However this just look like an additional step in the UX flow that doesn't really bring any guarantees because it can't be proven that the B actually replied or provided a meaninful reply.
+
+[Continued here](https://notes.status.im/SGNQNVEATuChD7xXHybyWA?edit)
 
 
 ## Specification
