@@ -27,9 +27,10 @@ The Status Janitors oversee the delivery and completion of the [Status white pap
 Meeting notes: https://notes.status.im/384OqZPUR1-viP7l2Fxeew?edit
 
 ## Research
-Completion by the 17th December (one week)
+Completion by the end of January, 2019.
 
 Goals of Specifications:
+- **Document our way of working**
 - Swarm Framework
 - Define critical path for completing the swarm goal
     - SNT utility swarms
@@ -50,6 +51,8 @@ _Unknowns_
     * Monte Carlo simulations
 
 ## Specification
+
+TODO: Update based on research phase.
 
 **Timeline** 15th Jan to complete specifications of all > P2 features below.
 **Swarm Framework**: https://github.com/status-im/swarms
