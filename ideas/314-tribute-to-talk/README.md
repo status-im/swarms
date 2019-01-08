@@ -45,7 +45,8 @@ It allows individuals to monetize their time and attention by setting minimum re
 
 `Meeting notes`: https://notes.status.im/weekly-chat-sync-agenda
 
-`Research notes`: https://notes.status.im/SGNQNVEATuChD7xXHybyWA
+`Research notes`: [Research notes](research.md)
+
 
 ## Research
 

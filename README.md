@@ -24,7 +24,7 @@ For existing swarms:
 ### SNT Utility  
 - [316-core-network-incentives](ideas/316-core-network-incentives.md) (research until 31/1)
 - [313-sticker-market](ideas/313-sticker-market.md) (research)
-- [314-tribute-to-talk](ideas/314-tribute-to-talk.md) (research)
+- [314-tribute-to-talk](ideas/314-tribute-to-talk/README.md) (research)
 - [317-dapp-store](ideas/317-dapps-store.md) (research)
 - [321-teller-network](ideas/321-teller-network.md) (research)
 
