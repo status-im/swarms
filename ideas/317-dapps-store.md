@@ -40,9 +40,11 @@ It allows individuals to curate DApps by staking SNT and have access to this lis
 
 ## Research
 
-`Timebox`: wrap by 04/01
+`Timebox`: wrap by 31/01
 
-`Previous work`:
+Potentially, by the end of Jan, the work can be split into parallel streams where redesign of the current browsing experience on the UI side moves to specification, while topics that require more research (curation mechanism) remain in the research phase.
+
+`Previous work`: 
 
 DApps are currently exposed as a static catalog hardcoded in Status client.
 Previous versions of Status relied on a basic discovery protocol to discover new DApps.
@@ -50,7 +52,21 @@ Previous versions of Status relied on a basic discovery protocol to discover new
 
 Andy [proposed](https://discuss.status.im/t/how-to-curate-dapps-simply/759) a bonded curve based curation mechanism.
 
-`Potential user stories for MVP`:
+`Research questions`:
+
+Below are topics to be addressed in the research phase.
+1. What are appropriate incentivization mechanisms? (e.g. Game theory exploration)
+2. What is the best way to implement a DApp store given user and business requirements (w.r.t. liability and upgradability)? 
+3. What is the most efficient and effective development strategy given the outcome of 2? (bounty to attract team, required level of support by core contributors)
+4. What are appropriate ranking mechanisms?
+5. What are appropriate mechanisms for user involvement in this ranking (4)?
+6. How can new DApps be included in the browse and search experience? (e.g. submission, registration, adding, curation by committee)
+7. What are different visual interfaces that can support a browse and search experience? (design exploration)
+8. What position/'status' should Status DApps have in it's own store?
+
+`Potential user stories`:
+The user stories below need to be detailed and prioritized following the research phase. 
+
 - As a Status user:
 - I want to easily browse interesting DApps
 - I want to see new DApps frequently.
@@ -62,12 +78,6 @@ Andy [proposed](https://discuss.status.im/t/how-to-curate-dapps-simply/759) a bo
 - As a DApp developer:
 - I want to be able to propose my DApp for inclusion.
 - I want to vote for my DApp inclusion.
-
-
-`Research questions`:
-
-- Is it possible to
-
 
 ## Specification
 
