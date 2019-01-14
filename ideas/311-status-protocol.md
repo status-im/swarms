@@ -245,6 +245,17 @@ direction. As research effort continues and above milestones are being achieved,
 this will be updated.
 
 ## Research log
+### January 7 - January 13
+1. Workshop prep:
+-- https://www.meetup.com/Pre-FOSDEM-Messaging-Workshop/events/257926909/?isFirstPublish=true 5-7 ppl from Status
+-- https://medium.com/web3foundation/messaging-for-web-3-0-building-an-anonymous-messaging-protocol-e29db72f4d19
+2. Data Sync layer PoC1 for 1:1 chat:
+-- Code: https://github.com/status-im/status-research/tree/master/data_sync
+-- Protobuf: https://github.com/status-im/status-research/blob/master/data_sync/sync.proto
+-- Write-up: https://notes.status.im/THYDMxSmSSiM5ASdl-syZg?both
+
+### December 21 - January 7
+Break. Some data sync prototyping.
 
 ### December 17 - December 21
 - Workshop coordination (Brussels ~28/1-1/2, just before Fosdem)
