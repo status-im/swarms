@@ -61,6 +61,49 @@ Previous versions of Status relied on a basic discovery protocol to discover new
 
 Andy [proposed](https://discuss.status.im/t/how-to-curate-dapps-simply/759) a bonded curve based curation mechanism. You can watch the [video here](https://www.youtube.com/watch?v=82wMcgHSej0).
 
+### Intial Spec
+
+#### Version 1
+
+1. A new option in the global navigation for DApps, rather than mixing them in with chats on the home screen. This is currently one of the item in the #Core backlog and @andytudhope to communicate with @igorm about implementation and dates.
+2. DApp Store to be designed & built as a separate web DApp based on feedback from @jarradhope @jeluard @admironov @hesterbruikman and others, as will be the case for the Sticker Market.
+2. Parallel to changing the global nav bar, design work to be delivered by 15/02/2019 for intial DApp Store.
+    1. This will solve the first 2 User Stories below - being able to browse easily interesting DApps, and being able to see new content regularly.
+    2. The basic idea is still to show the current categories we have: `Exchanges`, `Marketplaces`, `Fun and Games`, `Social Networks`, `Media` and `Utilities` (though these are up for discussion with designers), but organise them in a more attractive and easily-browsable fashion.
+    3. We also need to begin to train users to use filters to organise what is displayed to them according to their preferences (before we are ready to introduce smart contract based curation and Discovery). So, part of the design spec for v1 is to include two, very simple filters: one reliant only on Status for `Most Recently Used`; and one which calls some API(s) to get a list of the `Most Popular` and `Trending` DApps across Ethereum. Once a filter is selected, we need not show the categories on the "Home" page of the DApp Store (though this is also up for design discussion).
+    The thinking here is that relying on an API (could be StateOfTheDapps, OpenSea, Dappist, all of the above, etc.) is not too bad if it is one of multiple options and if it being unavailable doesn't break entirely the functioning of the store.
+    4. Note the point in User Story 1 about thinking of ways in the design to make it clearer that there is a chat/community directly behind each DApp, using the global whisper topic made from the DApp's name. I think this is a powerful feature we could really try and emphasise so that more already existant communities begin to use Status rather than Telegram/Rocket Chat etc.
+
+#### Version 2
+
+1. Add an `Editorial` or `User Reviews` section to the DApp store, much like Apple recently added. Here, we can incentivise users to submit good feedback about DApps, or well-known "celebs" to share curated lists of their favourite DApps; most interesting (or worst/most scammy) ICOs; most liquid (or cheapest) exchanges; most fun games etc. Research on this can take place in parallel, but it would likely be the simplest possible incentivization mechanism: user's pay some fee defined by whoever creates the editorial/curated list directly to them (though routed through a simple contract for access-control) in order to access their list. No middlemen, no hidden fees/complexity.
+2. Implement smart contract based curation of DApps. Hopefully, all this means from a design perspective is adding a `balance` beneath each DApp and some up/down vote `carrots` to the right of it. Delivery dates depend heavily on research and final smart contracts though.
+3. @andytudhope to work with @3esmit on smart contract research and design until at least 15/02/2019, the general aim being to write contracts that can handle _curation in general_. That is, we should try and build our contracts in such a way that they can be used to curate any arbitrary data type, whether it be a DApp or a sticker pack, or whatever else we feel could benefit from community curation.
+4. Both to work with @corpetty on making sure that the spec for smart contracts is easily auditable and follows all the best practices being worked on by ethsecurity.
+4. Editorials/curated lists likely added as a separte page, but navigated to through filter list, which also has `SNT curation` as an option.
+
+#### Version N
+
+1. Replace the APIs used for `Trending` and `Most Popular` with data from some form of discovery using our as-yet-to-be-defined new protocol/data sync layer so that you can build a social graph out of nodes near/interesting to you and figure out (without compromising anonymity) what they are discussing/using most.
+
+### User stories:
+The user stories below need to be detailed and prioritized following the research phase. 
+
+**As a Status user:**
+1. I want to easily browse interesting DApps (Design, v1. There is also the chance to make it much clearer that each DApp has a open chat/community behind it. I think this should be considered and surfaced more in the design too).
+    - The key question here is what defines `interesting`. The filtering options defined above in the various iterations are meant as the answer to this. That is, we don't answer it, but rather let people decide for themselves what they find interesting/relevant, using as many or as few filters as they like. This means that the emphasis will be on creating as many non-correlated filters as we possibly can, rather than debating what the mythical "average user" will find useful.
+2. I want to see new DApps frequently (Design, potential use of an API (gasp)?, v1)
+3. I want to see old unusable DApps removed. (This is like proving a negative, I don't think it can be done).
+4. I want to be confident a DApp is usable / not a scam (Achieved bestwith economic curation mechanism, requires smart contracts, v2. Having an `Editorial` section will also likely help though.)
+5. I want to be able to propose a DApp for inclusion (Requires smart contracts, v2).
+6. I want to vote for a DApp inclusion (Requires smart contracts, v2).
+
+--
+
+**As a DApp developer:**
+- I want to be able to propose my DApp for inclusion.
+- I want to vote for my DApp inclusion.
+
 ### Research questions:
 
 Below are topics to be addressed in the research phase.
@@ -74,8 +117,8 @@ This is the first question for a lot of folks thinking about curation, but it is
 
 **2. What is the best way to implement a DApp store given user and business requirements (w.r.t. liability and upgradability)?**
 
-    1. User requirements: I do not want to have to track a unique token that requires actions from me on chain in order to curate DApps or stickers or anything else in Status. It is too much mental overhead - I just want to see interesting and new DApps regularly, get a sense of which ones are being used the most, and have easy access to a list of the DApps I use most often myself. That said, if DApps are being curated, I want to be able to see and understand at a glance how that is happening and why different DApps appear where they do (and, if I feel **really strongly** about it, I want to be able to affect those rankings).
-    2. Business requirements: Need some input here from @jarradhope @hesterbruikman and anyone else willing to pitch in.
+1. User requirements: I do not want to have to track a unique token that requires actions from me on chain in order to curate DApps or stickers or anything else in Status. It is too much mental overhead - I just want to see interesting and new DApps regularly, get a sense of which ones are being used the most, and have easy access to a list of the DApps I use most often myself. That said, if DApps are being curated, I want to be able to see and understand at a glance how that is happening and why different DApps appear where they do (and, if I feel **really strongly** about it, I want to be able to affect those rankings).
+2. Business requirements: Need some input here from @jarradhope @hesterbruikman and anyone else willing to pitch in.
 
 **3. What is the most efficient and effective development strategy given the outcome of 2? (bounty to attract team, required level of support by core contributors)**
 
@@ -100,23 +143,6 @@ This is really for Andrei to answer, and will form the bulk of the work for v1 (
 **8. What position/'status' should Status DApps have in it's own store?**
 
 Once we implement an economic curation mechanism, this question should be answered entirely by that mechanism, not by us. We also need to build and market more aggressively some Status Dapps (apart from Quadratic Voting and ENS Usernames).
-
-### Potential user stories:
-The user stories below need to be detailed and prioritized following the research phase. 
-
-**As a Status user:**
-- I want to easily browse interesting DApps (Design, v1. There is also the chance to make it much clearer that each DApp has a open chat/community behind it. I think this should be considered and surfaced more in the design too).
-- I want to see new DApps frequently (Design, potential use of an API (gasp)?, v1)
-- I want to see old unusable DApps removed. (This is like proving a negative, I don't think it can be done).
-- I want to be confident a DApp is usable / not a scam (Can only be achieved with economic curation mechanism, requires smart contracts, v2)
-- I want to be able to propose a DApp for inclusion (Requires smart contracts, v2).
-- I want to vote for a DApp inclusion (Requires smart contracts, v2).
-
---
-
-**As a DApp developer:**
-- I want to be able to propose my DApp for inclusion.
-- I want to vote for my DApp inclusion.
 
 ## Specification
 
