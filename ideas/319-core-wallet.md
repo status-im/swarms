@@ -21,6 +21,16 @@ budget:
 
 The Wallet swarm focuses on the Wallet tab within Status, and related transaction actions throughout the app, such as in Chat with `/send ETH 0.5`.
 
+### Links
+
+[Pivotal Board](https://www.pivotaltracker.com/n/projects/2231938)
+
+[Swarm notes](https://notes.status.im/wallet-sync)
+
+[Swarm prios](https://notes.status.im/yJ3X0OitQkeSoSyZH0g2bw)
+
+Research below
+
 ### Problem
 
 > What problem are you solving? Who are you solving this for?
