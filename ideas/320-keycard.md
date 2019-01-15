@@ -35,13 +35,13 @@ This swarm is about:
 
 ## Communication
 
-
 [#status-keycard](https://get.status.im/chat/public/status-keycard)
-
 
 Weekly Sync, tuesday 11:00 AM Paris time
 
 Weekly meeting notes https://notes.status.im/BSmOfT4qSuWLLXS6AuxcXQ
+
+Team page https://notes.status.im/Uyg8wkVESjKyvwWAa19czQ?view
 
 ## Research
 
@@ -61,22 +61,18 @@ closed
 
 **Status software integration**
 
-The specification for the Status integration is done
-
 The use cases for the Status integration are:
 1. sign transaction by tapping card + entering PIN
 2. login into account by tapping card and entering PIN
 3.  export of the whisper key from the card to the app (goal : not store the whisper private key in Flash at anay time on the app)
 4. export of the password used to encode the database from the card to the app 
 
-Specification consists of: 
 
-User flow wireframes
+UPDATE 15012019
 
-https://docs.google.com/document/d/1w9GGtsAC8H3B563iRi52evOYMGNOfBlVh3Ay4aFuluc/edit
+It has been decided to leave Keycard card upgradeable to allow software upgrade of Keycard during its lifecycle. This has affected our state diagrams and specifications. Sepcifications (see below)have been updated and approvded by the team on wk2 2019.
 
-Screens UX Flows in Figma
-
+Specifications reference document (UI flows + State Diagrams)
 https://bit.ly/2NdxoUB
 
 
@@ -90,6 +86,13 @@ closed
 
 Alpha stage: up to 28/02/2019
 Beta stage: 01/03/2019 (Beta success consists of functional availability of use cases 1-2-3-4)
+
+15012019 UPDATE 
+- detailed status in weekly meeting notes and pivotal tracker
+- overview
+  - Done: card initialization, account creation
+  - In progress: card settings (change PIN, reset cards, unpair), decoupling of whisper and private key in go
+  - To be done : card login, sign transaction, import account
 
 ## Maintenance
 
