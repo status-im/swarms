@@ -67,6 +67,23 @@ https://status.im/whitepaper.pdf
 protocol work and leveraging data sync data, eg
 
 ### Weekly Goals
+#### W03-19
+timebox: Jan 21
+
+widen research to include protocols different than Whisper and our current infra
+
+outcomes:
+
+#### W02-19
+timebox: Jan 14
+
+initial research phase
+
+outcomes:
+https://hackmd.io/WwDneHimRj2Oqwnjb9uG6A
+https://hackmd.io/s/r1ZawmIf4
+
+
 #### W51-18 Problems/Ideation
 timebox: Dec, 21
 
