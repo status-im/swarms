@@ -93,10 +93,9 @@ The user stories below need to be detailed and prioritized following the researc
 1. I want to easily browse interesting DApps (Design, v1. There is also the chance to make it much clearer that each DApp has a open chat/community behind it. I think this should be considered and surfaced more in the design too).
     - The key question here is what defines `interesting`. The filtering options defined above in the various iterations are meant as the answer to this. That is, we don't answer it, but rather let people decide for themselves what they find interesting/relevant, using as many or as few filters as they like. This means that the emphasis will be on creating as many non-correlated filters as we possibly can, rather than debating what the mythical "average user" will find useful.
 2. I want to see new DApps frequently (Design, potential use of an API (gasp)?, v1)
-3. I want to see old unusable DApps removed. (This is like proving a negative, I don't think it can be done).
-4. I want to be confident a DApp is usable / not a scam (Achieved bestwith economic curation mechanism, requires smart contracts, v2. Having an `Editorial` section will also likely help though.)
-5. I want to be able to propose a DApp for inclusion (Requires smart contracts, v2).
-6. I want to vote for a DApp inclusion (Requires smart contracts, v2).
+3. I want to be confident a DApp is usable / not a scam (Achieved bestwith economic curation mechanism, requires smart contracts, v2. Having an `Editorial` section will also likely help though.)
+4. As an SNT stakeholder, I would like to signal using SNT that I find a listing useful.
+5. As an SNT stakeholder, I would like to signal using SNT that I find a listing to be not useful/poor quality/etc.
 
 --
 
@@ -118,7 +117,9 @@ This is the first question for a lot of folks thinking about curation, but it is
 **2. What is the best way to implement a DApp store given user and business requirements (w.r.t. liability and upgradability)?**
 
 1. User requirements: I do not want to have to track a unique token that requires actions from me on chain in order to curate DApps or stickers or anything else in Status. It is too much mental overhead - I just want to see interesting and new DApps regularly, get a sense of which ones are being used the most, and have easy access to a list of the DApps I use most often myself. That said, if DApps are being curated, I want to be able to see and understand at a glance how that is happening and why different DApps appear where they do (and, if I feel **really strongly** about it, I want to be able to affect those rankings).
-2. Business requirements: Need some input here from @jarradhope @hesterbruikman and anyone else willing to pitch in.
+2. Business requirements:
+    1. Increase value of SNT by using it as the underlying currency in a token-based curation market, eligible to repurpose in multiple use cases.
+    2. Drive engagement by supporting Status as a tool for community across Ethereum ecosystem—by raising the visibility of DApp based chats.
 
 **3. What is the most efficient and effective development strategy given the outcome of 2? (bounty to attract team, required level of support by core contributors)**
 
