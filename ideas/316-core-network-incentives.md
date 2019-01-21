@@ -57,7 +57,7 @@ Distributed push-notification market. Researching ways on how can users pick PN 
 ## Research
 (required) 
 `timebox research (approx)` 
-Research deadline: January 31th
+Research deadline: February, 18th ~January 31th~
 
 (optional)
 `eips`, `competitors`, `existing research`, `wireframes`, `spike (PoC)`
@@ -73,6 +73,16 @@ timebox: Jan 21
 widen research to include protocols different than Whisper and our current infra
 
 outcomes:
+
+#### W03-19
+timebox: Jan 21
+
+initial research phase
+https://hackmd.io/jmuP-tk6QFOw14Vfp-DSbg
+
+- adding Loopix protocol case
+- goals to start some design research next week
+- extending the research phase due to Brussels meetup with Protocol research
 
 #### W02-19
 timebox: Jan 14
