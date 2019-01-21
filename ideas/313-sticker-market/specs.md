@@ -152,6 +152,7 @@ Key functions of the contract:
 - Edit price of a pack
 - Edit categories/metadata associated with a pack
 - Add new sticker categories
+- Gift a pack to another user (from own collection or directly from store)
 
 Free packs, although they can not be bought or owned, should also be listed and offer details.
 
