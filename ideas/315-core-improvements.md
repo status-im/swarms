@@ -81,11 +81,16 @@ Projects from should be put in the correct state to see the progress, etc.
 
 `document progress`: https://www.pivotaltracker.com/epic/show/4178343
 
++ improving mailservers handling: https://www.pivotaltracker.com/epic/show/4198376
+
 ### 2. "Save Password" on Android
 
-* Timeline - January, 21th
+* Timeline - January, 31th
 
 `document progress`: https://www.pivotaltracker.com/epic/show/4179882
+
+leftovers:
+- 
 
 ### 3. Slow sign-in - DONE
 
@@ -99,6 +104,11 @@ Projects from should be put in the correct state to see the progress, etc.
 
 * Timeline - January, 31
 `document progress`: https://www.pivotaltracker.com/epic/show/4182828
+
+### 6. Message compatibility & upgradeability guarantees
+
+* Timeline - March 1st 
+`document progress`: https://www.pivotaltracker.com/epic/show/4179927
 
 ## Maintenance
 
