@@ -99,6 +99,8 @@ So far we have discussed 2 different options:
 
 ## Specification
 
+[Read spec](https://github.com/status-im/swarms/blob/master/ideas/314-tribute-to-talk/specs.md)
+
 ## Implementation
 
 ## Maintenance
