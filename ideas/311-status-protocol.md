@@ -145,7 +145,7 @@ Validity Labs. Note that this list of requirements is tentative.
 
 Up for debate: incentives, network spam, asynchronous messaging.
 
-Additionally, it should be resigned with mobile in mind (internet connection is
+Additionally, it should be designed with mobile in mind (internet connection is
 unstable and mostly missing, CPU resources are limited, we can't stay in
 background for a long time and we are behind very strict firewalls that makes
 it hard for NAT to pass through.)
