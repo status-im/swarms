@@ -72,7 +72,7 @@ The metadata will be stored as key/value pairs in the extension file.
 **Image formats**
 - Supported file types are PNG, JPG/JPEG and GIF.
 - Background should be transparent.
-- Size is limited to 300k (same as WeChat)
+- Size is limited to 300kb (same as WeChat)
 
 **Storage and Accessibility**
 - Stickers will be stored on a distributed system, starting with IPFS.
