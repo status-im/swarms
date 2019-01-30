@@ -40,4 +40,4 @@ For existing swarms:
 - [304-core-chat](ideas/304-core-chat.md) (research)
 - [318-desktop](ideas/318-desktop.md) (research)
 - [319-wallet](ideas/319-core-wallet.md) (research)
-- [320-keycard](ideas/320-keycard.md) (research)
+- [320-keycard](ideas/320-keycard.md) (implementation)
