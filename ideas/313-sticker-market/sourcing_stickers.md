@@ -99,3 +99,10 @@ The target launch for our sticker market is by the end of Q1 2019 (end of March)
 #### Budget
 
 We have a total budget of $10k USD.
+
+#### Credit
+
+Illustrators' names will be given as the artist credit within Status.
+
+
+
