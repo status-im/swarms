@@ -59,6 +59,9 @@ Our wallet supports ERC20 tokens—including our own, the Status Network Token (
 
 ### Stickers
 
+![](https://i.imgur.com/ZHOLDGP.png)
+_Lazynfatty Piggy from [LINE Store](https://store.line.me/stickershop/product/6409417/en)_
+
 To bring more fun to chatting on Status _and_ build value for SNT, we're introducing a sticker market.
 
 Stickers are one of the most popular elements of the most-used chat platforms today.
