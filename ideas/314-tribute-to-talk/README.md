@@ -82,6 +82,12 @@ Changes to the smart contract may be required in order to meet specs defined in 
 - Do we need to conduct an audit on the contract before launch?
 - Identifiy incompatibilies with other features/issues—e.g. inability to remove contacts once added, overlap with core issues, etc. 
 
+## Latest
+
+**2/1/19**
+- First version of UI is complete and design reviewed
+- Changes required here: https://github.com/status-im/status-react/pull/7304#issuecomment-459337181
+
 **Update 7/1/19**<br>
 *Top line: The Tribute to Talk MVP will deliver 1:1 spam prevention. The contract will manage tribute settings only. There will be no escrow; payment will be handled through a normal SNT transaction. There are constraints that force this decision, but it's also the simplest possible implementation.* 
 
