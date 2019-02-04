@@ -47,6 +47,8 @@ It allows individuals to monetize their time and attention by setting minimum re
 
 `Research notes`: [Research notes](research.md)
 
+`Contract`: https://github.com/status-im/contracts/blob/314-tribute-to-talk/contracts/communication/MessageTribute.sol
+
 
 ## Research
 
