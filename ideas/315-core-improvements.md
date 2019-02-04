@@ -46,69 +46,17 @@ The work includes releasing internal "dogfood" builds as well as betas in prepar
 
 # Research
 
-### Meta - Done
-
-### Meta (what this team will be doing?)
-Backlog is created
-
-### 3. Improve Security using native views - Done
-PoC is created for using native views
+### Backlog refresh
+5th February — refresh and re-prioritize backlog to keep it up to date
 
 ## Specification
 
-### 2. "Save Password" on Android - Done
-
-Epic: https://github.com/status-im/status-react/issues/5793
-
 ## Implementation
 
-### Done
+See https://www.pivotaltracker.com/n/projects/2232205
 
-### 0. Meta
-
-* Timeline - EOQ2 2019, continuous process. Each backlog item discovered by research will have it's own deadline.
-
-Setup a regular meetings with the stakeholders to adjust the backlog.
-
-`document progress` - keep the backlog and the state up to date with this
-document.
-
-Projects from should be put in the correct state to see the progress, etc.
-
-### 1. Message Reliability Improvements
-
-* Timeline - January, 31
-
-`document progress`: https://www.pivotaltracker.com/epic/show/4178343
-
-+ improving mailservers handling: https://www.pivotaltracker.com/epic/show/4198376
-
-### 2. "Save Password" on Android
-
-* Timeline - January, 31th
-
-`document progress`: https://www.pivotaltracker.com/epic/show/4179882
-
-leftovers:
-- 
-
-### 3. Slow sign-in - DONE
-
-### 4. Dependency audit for reproducible builds
-
-* Timeline - January, 25
-
-`document progress`: https://www.pivotaltracker.com/epic/show/4182830
-
-### 5. Fix critical issues with traffic consumption
-
-* Timeline - January, 31
-`document progress`: https://www.pivotaltracker.com/epic/show/4182828
-
-### 6. Message compatibility & upgradeability guarantees
-
-* Timeline - March 1st 
-`document progress`: https://www.pivotaltracker.com/epic/show/4179927
+O.9.32 releases (hotfixes)
+0.9.33 release in preparation (feature update)
 
 ## Maintenance
 
