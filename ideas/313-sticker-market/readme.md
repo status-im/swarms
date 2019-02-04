@@ -49,9 +49,19 @@ We can commission a set of stickers to populate the marketplace starting out.
 
 `Pivotal project:` https://www.pivotaltracker.com/projects/2231918
 
-`Meeting notes:` https://notes.status.im/stickers-market-sync
+`Meeting notes:` https://notes.status.im/wyjNCxeURu6lYSwWGh3biw
 
 `Research notes:` https://notes.status.im/stickers-market-research
+
+## Latest
+
+- First iteration of UI complete
+- Design issues identified by Maciej
+- Rachel talking with sticker illustrators
+- Ricardo making final changes to contract to:
+- Allow multiple categories per pack
+- Include a function to globally set a burn percentage. One more option: global fee to all packs, only controller can set it.
+- Add new contract state restricting all market functions to controller but “buyToken”
 
 ## Research 
 
