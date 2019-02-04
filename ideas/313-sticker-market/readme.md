@@ -10,9 +10,9 @@ contributors:
     - Rachel
     - Hester
 budget:
-- actual: xxx
+- actual: $21k
 - estimate: yyy
-- currency: ETH
+- currency: USD
 ---
 
 Sticker Market Swarm Proposal
@@ -96,6 +96,19 @@ Friday, 1/2
 ## Specification
 
 ## Implementation
+### 21st January Update
+- Finalizing specs for registry contract
+- Basic UI POC 
+
+### 4th February Update
+- Finalized specs
+- Contract implemented and deployed on Ropsten
+- Awaiting audit info
+- First stage of MVP UI merged
+- In talks with sticker illustrators
+
+
+
 
 ## Maintenance
 
