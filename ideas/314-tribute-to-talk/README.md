@@ -11,9 +11,9 @@ contributors:
     - Richard
     - Rachel
 budget:
-- actual: xxx
+- actual: $32k
 - estimate: yyy
-- currency: ETH
+- currency: USD
 ---
 
 
@@ -88,11 +88,26 @@ Changes to the smart contract may be required in order to meet specs defined in 
 - First version of UI is complete and design reviewed
 - Changes required here: https://github.com/status-im/status-react/pull/7304#issuecomment-459337181
 
-**Update 7/1/19**<br>
+**7/1/19**
 *Top line: The Tribute to Talk MVP will deliver 1:1 spam prevention. The contract will manage tribute settings only. There will be no escrow; payment will be handled through a normal SNT transaction. There are constraints that force this decision, but it's also the simplest possible implementation.* 
 
 User A = Person sending tribute<br>
 User B = Person accepting/rejecting chat request
+
+**21/1/19**
+- Design review complete
+- Product spec complete
+- Includes contract functional requirements, migration strategy & risk assessment 
+- UI implementation in progress
+- Tangential—contact list w/ “remove contact” WIP
+
+**4/2/19**
+- Settings UI design reviewed
+    - Changes required
+
+
+
+
 
 [Eric]
 So far we have discussed 2 different options:
