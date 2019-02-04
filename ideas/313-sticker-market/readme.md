@@ -55,6 +55,7 @@ We can commission a set of stickers to populate the marketplace starting out.
 
 ## Latest
 
+Friday, 1/2
 - First iteration of UI complete
 - Design issues identified by Maciej
 - Rachel talking with sticker illustrators
