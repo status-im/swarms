@@ -67,6 +67,12 @@ https://status.im/whitepaper.pdf
 protocol work and leveraging data sync data, eg
 
 ### Weekly Goals
+#### W04/05-19
+timebox: Feb, 4
+
+more wide research, setting the frame for new protocol
+conclusion about new protocol: it's long-term, so we only care about not depending on Whisper
+
 #### W03-19
 timebox: Jan 21
 
