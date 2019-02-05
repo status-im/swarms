@@ -20,6 +20,10 @@ deploying and using Status nodes according to [the whitepaper](https://status.im
 
 One important vision aspect is that the app continues to work if all nodes in Status-hosted cluster is down.
 
+Current docs: 
+
+https://hackmd.io/kQHqdZ0xR7WbYwGEG4FFNg
+
 ### 1. Offline messaging
 
 This one is the primary topic of research.
