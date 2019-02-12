@@ -86,7 +86,11 @@ Changes to the smart contract may be required in order to meet specs defined in 
 
 ## Latest
 
-**2/1/19**
+**11/2/19**
+- UI bug fixes complete
+- Second half of UI (chat side) underway
+
+**1/2/19**
 - First version of UI is complete and design reviewed
 - Changes required here: https://github.com/status-im/status-react/pull/7304#issuecomment-459337181
 
