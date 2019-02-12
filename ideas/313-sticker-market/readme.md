@@ -55,6 +55,12 @@ We can commission a set of stickers to populate the marketplace starting out.
 
 ## Latest
 
+Monday, 11/2
+- Sticker UI is complete
+- Andrey working on contract/UI interface
+- Illustrator hired
+- [Community contest planning](https://docs.google.com/document/d/1LxVHnWzdS9D1xO5b6lcferKX8xeIySzQ95u5eLZh8Q0/edit?ts=5c61c866) underway
+
 Friday, 1/2
 - First iteration of UI complete
 - Design issues identified by Maciej
