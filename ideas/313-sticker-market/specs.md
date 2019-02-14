@@ -73,6 +73,7 @@ The metadata will be stored as key/value pairs in the extension file.
 - Supported file types are PNG, JPG/JPEG and GIF.
 - Background should be transparent.
 - Size is limited to 300kb (same as WeChat)
+- Minimum size is 512x512px
 
 **Storage and Accessibility**
 - Stickers will be stored on a distributed system, starting with IPFS.
@@ -89,7 +90,7 @@ Sending a sticker does not mean transferring ownership of sticker or pack.
 *Limitation:* IPFS currently relies on HTTP gateways (Infura), which is a potential privacy issue as metadata will be leaked to external providers.
 
 ### Packs 
-**Will be extensions**
+**Will be installed as extensions**
 
 A pack is just a vehicle to transfer a set of stickers. The stickers are logically grouped as packs using metadata.
 
