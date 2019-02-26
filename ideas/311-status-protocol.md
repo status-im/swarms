@@ -208,7 +208,7 @@ Hard to provide with research, but rough timeline to indicate effort.
 
 ### Data replication/sync layer
 
-#### December 2018 - January 2018
+#### December 2018 - April 2018 (before Chaos Unicorn Day if possible!)
 
 #### Goals
 Provide 'in-between layer' that synchronizes data over delay-tolerant p2p
@@ -228,7 +228,7 @@ existing app, and work with Core team to make it into a reality.
 
 More details after conversations with Web3 Foundation etc.
 
-#### December 2018 - March 2018
+#### December 2018 - (no specific deadline set)
 
 #### Goals
 - Requirements and goals in more details
@@ -245,6 +245,23 @@ direction. As research effort continues and above milestones are being achieved,
 this will be updated.
 
 ## Research log
+
+### January 14 - February 24
+*NOTE: This update was written after the fact, so just capturing most important artifacts here. Probably missings some things or inaccurate in some details.*
+
+1. Workshop in Brussels
+- Meeting Minutes: https://notes.status.im/G5cD0U0uS724JhYXsJanzw?both#
+- Outcome post: https://our.status.im/messaging-protocol-workshop-outcomes/
+- Presentation slides: https://notes.status.im/status-protocol-stack
+- Secure Messaging evaluation doc: https://notes.status.im/sDKuBAiPSH6iB9cFmEKLyg?both
+
+2. Town Hall presentation, overview and update (Feb 4) https://www.youtube.com/watch?v=MaIoxsu9xrs&feature=youtu.be&t=1410
+
+3. Data Sync PoC continued with Whisper toy end-to-end interactive example, as well as some identified problems
+- https://discuss.status.im/t/data-sync-next-steps-and-considerations/1056
+- Demo https://www.youtube.com/watch?v=i1_j7M70_9g&feature=youtu.be
+- Code https://github.com/status-im/status-research/tree/master/data_sync
+
 ### January 7 - January 13
 1. Workshop prep:
 -- https://www.meetup.com/Pre-FOSDEM-Messaging-Workshop/events/257926909/?isFirstPublish=true 5-7 ppl from Status
@@ -307,6 +324,8 @@ See here for more details: https://discuss.status.im/t/hello-protocol-progress-s
 
 (required)
 `timebox specification (approx)`
+
+WIP can be found https://github.com/status-im/status-research/blob/master/data_sync/sync.proto as well as semantics which are, currently, essentially https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BSP.md
 
 (optional)
 `user stories`, `architecture`, `designs`, `PoC`
