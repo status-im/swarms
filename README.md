@@ -33,7 +33,9 @@ https://www.pivotaltracker.com/reports/v2/projects/2235976/epics
 - [321-teller-network](ideas/321-teller-network.md) (implementation)
 https://www.pivotaltracker.com/reports/v2/projects/2231548/epics
 
+
 ### Essential
+- [368-token-economics](ideas/368-token-economics.md) (research)
 - [315-core-improvements](ideas/315-core-improvements.md) (implementation)
 https://www.pivotaltracker.com/reports/v2/projects/2232205/epics
 - [311-protocol](ideas/311-status-protocol.md) (research)
