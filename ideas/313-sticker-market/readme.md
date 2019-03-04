@@ -1,6 +1,6 @@
 ---
-id: #312-janitors
-title: Swarm Janitors
+id: #313-sticker-market
+title: Sticker Market
 status: research
 lead-contributor: Julien/Rachel
 contributors:
