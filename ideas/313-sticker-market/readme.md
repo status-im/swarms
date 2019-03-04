@@ -1,7 +1,7 @@
 ---
 id: #313-sticker-market
 title: Sticker Market
-status: research
+status: implementation
 lead-contributor: Julien/Rachel
 contributors:
     - Andrey
