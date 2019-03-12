@@ -1,20 +1,15 @@
 # Extensions Swarm
 
 ---
-id: #369-extensions
-title: Extensions
-status: research
-lead-contributor: Julien/Rachel
-contributors:
-    - Andrey
-    - Julien
-    - Nastya
-    - Rachel
-    - Hester
-budget:
-- actual: ?
-- estimate: ?
-- currency: USD
+id: #369-extensions<br>
+title: Extensions<br>
+status: research<br>
+lead-contributor: Julien/Rachel<br>
+contributors: Andrey, Julien, Nastya, Rachel, Hester<br>
+budget:<br>
+- actual: ?<br>
+- estimate: ?<br>
+- currency: USD<br>
 ---
 
 ## Summary and Goals
@@ -61,9 +56,9 @@ This makes extensions difficult to discover and install.
 
 In order to surface extensions more visibly to users, we should first cover off on the following:
 
-**1. Improved security modeling
-2. Stronger syntax validation & error handling in development
-3. User experience of discovery, installation, etc.** 
+**1. Improved security modeling**<br>
+**2. Stronger syntax validation & error handling in development**<br>
+**3. User experience of discovery, installation, etc.**
 
 The main factor preventing extensions from being available by default is the missing security/privacy model.
 
@@ -82,14 +77,16 @@ Additional features that should also be considered:
 * Smooth installation experience and user journey
 * Merge latest pluto improvements
 
+**To-do:** Conduct risk assessment of all existing, potential or requested primitives.
+
 ### Improve developer experience
 
 Developers are currently slowed by the process of deploying and testing extensions. 
 
 The following options are considered to make the whole experience smoother:
 
-**1. Improved editor
-2. Simplified deployment**
+**1. Improved editor**<br>
+**2. Simplified deployment**
 
 Ultimately a developer would have high level tooling allowing them to simply create an extension from primitives while being confident it is functional.
 
@@ -134,6 +131,8 @@ At all times, extension preview and source are in sync. With a click it can be t
 
 The extension preview can be flipped to source access for advanced users.
 
+**To-do:** Write user stories for the improved editor MVP. 
+
 #### Simplified Deployment
 
 An extension could be seamlessly pushed to a paired device or any device in dev mode, provided the right URL.
@@ -144,9 +143,13 @@ Once ready for prime time, a click deploys an extension on IPFS, updates an even
 
 This extension will be available forever, published permissionlessly and easily installable by anyone.
 
+**To-do:** Write user stories for a simplified deployment MVP.
+
 ### Advanced features
 
 Potential features that could be added at some point, worth considering from an architectural perspective.
+
+**To-do:** Validate ideas with user research. 
 
 #### More hooks
 
@@ -200,9 +203,13 @@ Extension can be exchanged via Whisper between contacts.
 
 Follow EIP1577 style standard to support easily any storage mechanism (IPFS, SWARM).
 
+## Specification
+
+Specification TK.
+
 ## Implementation
 
-Implementation details will follow once research is completed.
+Implementation details TK.
 
 ## Copyright
 
