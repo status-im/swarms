@@ -203,11 +203,24 @@ e.g. As a sticker creator, I want to sell a limited number of packs to increase 
 
 **Selling stickers**
 
-- I want to publish my stickers in the Status sticker market.
-- I want to name my price.
+MVP
+- I want an easy-to-use web interface to publish my stickers in the Status sticker market.
+- I want to set the price for each pack I sell.
+- I want the size and image requirements to be very clear.
+- I want to receive an error if my image is too large or misproportioned.
+- I want to upload my images to a decentralized storage solution directly from this interface.
+- I want to name my packs. 
 - I want to publish as many sticker packs as I would like. 
-- I want to add tags/keywords so that my stickers are more searchable.
-- I want to remove stickers I’ve published to the store.
+- I want to add tags/categories from a pre-determined list, so that my packs are more easily found. 
+- I want to remove packs I’ve published to the store.
+
+Questions for MVP
+- Should artist set address for payment manually or by connecting to wallet?
+- Does the artist need an artist name or can/should we pull Status username?
+- Do artists upload pack images individually or as a group?
+
+Later
+- I want to edit the price of a pack.
 - I want my pack to be limited edition (e.g. only a fixed amount of packs can be owned at a time)
 
 **Gifting stickers**
