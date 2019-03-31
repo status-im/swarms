@@ -1,102 +1,111 @@
 ---
 id: 172-topic-democracy
-title: Subjective Delegation Liquid Democracy
-status: Draft
+title: µTopic Democracy
+status: In Progress
 created: 2018-04-15
 category: core
-lead-contributor: 3esmit
+lead-contributor: Ricardo Guilherme Schmidt <3esmit.stateofus.eth>
 contributors:
-    - 3esmit
+    - Jarrad Hope <jarrad.stateofus.eth>
 exit-criteria: yes
 success-metrics: yes
 clear-roles: no
 future-iterations: no
 roles-needed:
-    - UX
     - PM
-    - Clojure dev
+    - Design
+    - StatusIM dev
+    - Embark dev
 okrs:
    - "[P2]: SNT is a powerful utility in Status"
 ---
 
-## Preamble
+# Swarm proposal
 
-    Idea: 172-topic-democracy
-    Title: Subjective Delegation Liquid Democracy
-    Status: Draft
-    Created: 2018-04-15
+A democracy where you can specify delegate for carbon-voting proposals with specific multilevel governance delegation topics, or fallback to default delegate if none set.
 
-## Summary
-A democracy where you can specify delegate for carbon-voting proposals with specific multilevel governance delegation topics, or fallback to a predefined defaults if none set.
+## Communication
+`status channel`: [#172-topic-democracy](https://get.status.im/chat/public/172-topic-democracy)
+`sync frequency`: Weekly Sync
 
-## Swarm Participants
-- Lead Contributor: Ricardo Guilherme Schmidt
-- Testing & Evaluation: <!-- @username -->
-- Contributor: <!-- @username -->
-- Contributor: <!-- @username -->
-- PM: <!--- @username -->
-- UX (if relevant): <!-- @username -->
+## Summary and Goal(s)
 
-## Product Overview
-
-This product intend replace authority centralized control for networks with  tokenized participation, such as Status Network currently owned by MultiSig contract 0xBBF0cC1C63F509d48a4674e270D26d80cCAF6022.
-The product would enhance security of network as an attack would require control of more addresses. 
+This product intend replace authority centralized control for contracts with a democracy based on a token.
+Developers would be able to spawn democracy contracts to take decisions on the control of contracts used in the Dapps they are developing.  
+The product would enhance security and continuance of this subsystems as the control would be up to token holders.
 
 For a democracy where every member understands basic about every subject required for senstive actions inside the network is utopic. 
-As Status Network decisions would be democratic for the users of the platform, a optional voting capability would be given to SNT owners, where they could set their delegate, or vote by themselfs.
+Every subsystem decisions would be democratic for the users of the platform, because a optional voting capability would be given to token owners, where they could set their delegate, or vote by themselfs.
 
-When users don't vote and don't delegate, their influence would be delegated to SGT (Status Genesis Tokens) owners consensus.
+Users wouldn't have to set specific delegates for each topic, they would be able to set their trusted in a root topic, which would be make that delegate claim the influence at any sub level which don't have a specialized delegate set. 
+This relationship between child-parent creates a trust network, which is a common set of trust nominations by users in a network.  
 
+When users don't vote and don't delegate, their influence might be delegated to a default delegate, if that specific delegation have a default.
+The default delegate will be defined by the developer of the governed sub system, as they usually are the most understanded in the issue, or issues in general, regarding their subsystem.
+
+### User Story
+
+Contributor Julien is swarm leader of #313-sticker-market. 
+This project deploys a smart contract with settings that can be defined by its controller.
+- Being a onlyOwner is against Status Principle of Decentralization.
+- Developers need control over the smart contract for development roadmap.
+- Don’t knows exactly what is the consensus for many parameters.
+SNT Holders funded the development of Status. 
+- Don’t want to trust a onlyOwner for decisions on Status Network Contracts
+- Wants to engage with decisions and polls by voting or selecting a delegate
+- Are happy if they can control the ecosystem around the token they hold.
 
 ### Product Description
 
 - Users should be able to participate on decisions or delegate their influence. _Important to democracy._
 - Votes are counted as MiniMeToken balance of user at block voting end. _Important to not double tabulating without locking token transfers_ 
 - Voting or delegating must not cause direct risks to users balances. _Important to don't cause barriers into democracy process_
-- Users that delegates must be able to vote differently then his delegate. _Important to don't cause barriers into setting a delegate._
+- Users that delegates must be able to vote differently then their delegate. _Important to don't cause barriers into setting a delegate._
 - Delegates should be able to delegate influence delegated to them, as a delegation chain. _Important to inflience get into experts._
-- The voting process of proposals should be divided in two polls, first asking for approval votes, and second asking for reject votes.  _Important to prevent a big delegate changing decision at last moment._
-- Approval pool uses a "Executive Delegation" and rejection pool uses a "Veto Delegation". _Important to prevent bribe of delegates._
-- Specifics topics should have their own parent topic and specific delegation chain, which if unset by user should fallback to parent topic definition. _Important to influence get into specialists of the topic._
-- Users that didnt defined any delegate would by default delegate to SGT Topic Democracy. _Important to don't cause slowness into Status Network development._
-- SNT must be owned by SNT Topic Democracy. _Important to democracy._
+- The execution of proposals should be subject of two proposals, first asking for it's approval, and second asking for it's veto.  _Important to prevent a big delegate changing decision at last moment._
+- Approval Proposal uses a "Executive Delegation" and Veto Proposal uses a "Veto Delegation". _Important to prevent bribe of delegates._
+- Specifics topics have their specific delegation chain, which if unset by user should fallback to parent topic definition. _Important to influence get into specialists of the topic._
+- Users that didnt defined any delegate would be claimable by default delegate. _Important to don't cause slowness into development roadmaps._
+- Users could be able to create their own sub democracies and choose their trust network (or create a new one) for controlling the decisions of tokens that contract hold. 
+- User's democracy would be able to have any default delegate choosen by its creator.
 
-### Requirements & Dependencies
+### [MVP] Basic liquid democracy with binary proposals
 
-- MiniMeToken: Important because it allows lookup of snapshot balances in a certain block. This make possible safe tabulation without locking user balances.
+Description: Topic Democracy for contracts control
+- Developers can create democracy to own system contracts;
+- Developers can create subtopics to specific functions on their contract;
+- Users can request approval for execution of state changes;
+- Users can set delegates;
+- Users can vote;
+- Volunteers can include other votes signatures
+- Delegates can claim influence;
+- Volunteers can tabulate votes;
+- Proposal can be executed by Democracy contract;
+- Users can request opinion as poll to trust network;
 
-### Minimum Viable Product
-<!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+### [2ºi] Complex proposals and elections. 
 
-Description: Topic Democracy as DAO Governance
-- Users can execution of proposals.
-- SNT is owned by topic democracy. 
+Description: Election Proposal enable an Approval proposal to contain an elected variable based on other proposal.
+- Upgrade current SNT (Opinion) Voting Dapp to become completely gasless. 
+- Users can easily approve a high majority and tercerize a complex decision based on an election.
+- Price variables could be elected as a weighted math mean.
 
-## Dates
-Goal Date: <!-- Date for evaluation in ISO 8601 (yyyy-mm-dd) format --> 
+### [3ºi] Multiple delegations
 
-Description: Topic Democracy as "opinion" pool as experimental.
-- System is deployed in mainnet.
-- Users can cast opinion as vote using SNT for Status proposals throug Topic Democracy..
-- Users can delegate opinion for Status proposals using SNT through Topic Democracy.
-- Inchain tabulation is not required, because results can be calculated offchain and as no action would be taken by the result, inchain tabulation would be waste of gas.
-- Topic Democracy don't owns SNT.
-- Users are asked to approve proposal to upgrade into DAO Governance. When community decides this system is ready to take control of Status authority, a pool can be done and tabulated inchain to transfer control to Topic Democracy over a Topic Democracy proposal.
-- First DAO Governance can control network/assets by a multisig between current authority.
+Description: Users can delegate to multiple delegates with different priorities.
+- Lessens power of default delegate on sub democracies
+- Allow smarter choices
 
 ## Success Metrics
 
-It's difficult to assume a success metric from the voting, as users that just didn't "touched" the product probably are delegating their trust to Status Genesis Token holders.
-
-However if we able to see if users look into the proposals and discuss about them in forums, would be a success signal.
+Sub-democracies controlling sub-systems with intelligent outcomes. 
+At least one sub-system should be sucessfully operated democratically by SNT holders or it's choosen delegates. (wonderfully work)
+The partial success might be having only sub-systems operated democratically by Default Delegates. (no user engagement, but works) 
+Another success metric would be the popularization of µTopic Democracy as means to control several aspects of Status, such as public chats (using SNT), group chats (using membership as token), public token list order and curation, and any aspect requiring democracy. 
 
 ## Exit criteria
 
-Status Network controlled by Topic Democracy.
-
-## Supporting Role Communication
-<!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
+Working platform for developers spawn sub-democracies controlled by SNT holders for controlling their syb-systems (e.g. ENS Usernames, Sticker Market, Tribute to Talk). 
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
