@@ -1,3 +1,23 @@
+---
+id: 151-ens-usernames
+title: Username ENS subdomain Registrar
+status: Draft
+created: 2017-11-20
+category: core
+lead-contributor: 3esmit
+contributors:
+    - 3esmit
+    - richard-ramos
+    - alexvandesande
+    - hesterbruikman
+    - denis-sharypin
+    - rachelhamlin
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: no
+---
+
 # Username ENS subdomain Registrar
 
 ## Preamble

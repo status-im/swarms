@@ -1,3 +1,20 @@
+---
+id: 145-identity
+title: Self-soverign Identity
+status: Draft
+created: 2018-05-04
+category: core
+lead-contributor: 3esmit
+contributors:
+    - 3esmit
+    - richard-ramos 
+    - alexvandesande 
+exit-criteria: yes
+success-metrics: yes
+clear-roles: yes
+future-iterations: yes
+---
+
 # Self-sovereign Identity
 
 ## Preamble

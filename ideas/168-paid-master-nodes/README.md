@@ -1,7 +1,7 @@
 ---
 id: 168-paid-master-nodes
 title: Paid master nodes
-status: Active
+status: Limbo
 created: 2018-04-13
 lead-contributor: oskarth
 contributors:
@@ -10,6 +10,7 @@ contributors:
     - jpbowen
     - andytudhope
     - pilu
+    - adan
 exit-criteria: yes
 success-metrics: yes
 clear-roles: yes
@@ -24,7 +25,7 @@ roles-needed:
 
     Idea: 168-paid-master-node
     Title: Paid master nodes
-    Status: In Progress
+    Status: Limbo - On hold until after beta
     Created: 2018-04-13
 
 ## Summary
@@ -37,7 +38,7 @@ users.
 ## Swarm Participants
 
 - Lead Contributor: @oskarth
-- QA: TBD
+- QA: @adan
 - Evaluation: @oskarth
 - Clojure Contributor: TBD
 - Go Contributor: @pilu
@@ -57,7 +58,7 @@ Counteract:
 ## Product Overview
 
 This idea takes off where
-https://github.com/status-im/ideas/blob/master/ideas/1-offline-inboxing.md
+https://github.com/status-im/ideas/blob/master/ideas/001-offline-inboxing.md
 ended. It provides an SNT payment layer for usage of master nodes.
 
 Users want basic services such as offline inboxing to just work, while at the
@@ -82,7 +83,7 @@ User story 2: Alice pays SNT to a master node in order to get offline inboxing f
 
 Out of scope for this idea:
 
-- (User story 3: Decentralized discovery mechanism for master nodes)
+- (User story 3: [Decentralized discovery mechanism for master nodes](https://ideas.status.im/ideas/280-discoverable-trusted-server-nodes/README))
 
 - (User story 4: Onboarding mechanism to seed closed beta users with SNT)
 
@@ -140,7 +141,7 @@ high availabity of mail servers is a requirement.
 
 Mail server / wnode / master node are used interchangably. Master mode is the
 "soft" user term (invented by the community!), mail server and wnode are
-technical terms on status-go side.
+technical terms on status-go side (wnode currently falling out of favor).
 
 #### Relevant reading
 
@@ -156,15 +157,15 @@ technical terms on status-go side.
 Goal Date: 2018-05-07
 
 Description:
-- [ ] Recruit additional roles: Designer, Clojure dev (yenda?), QA
-- [ ] Spec out rough UX(R) track (jpbowen)
-- [ ] Spike out technical requirements:
+- [-] Recruit additional roles: Designer, Clojure dev (yenda?), QA
+- [x] Spec out rough UX(R) track (jpbowen)
+- [x] Spike out technical requirements:
       - [x] deny requests to mail server as a function of peer and envelope
       - [x] send STT payments and get basic proof
       - [/] later: inspect basic proof (tx id initially)
-      - [ ] inspect envelope in what format for basic proof of payment?
-- [ ] Create issues (and bounties) necessary for MVP
-- [ ] Communicate proof of payment / accept/deny thinking at kick off call
+      (- [ ] inspect envelope in what format for basic proof of payment?)
+- [x] Create issues (and bounties) necessary for MVP
+- [x] Communicate proof of payment / accept/deny thinking at kick off call
 
 Probably not enough time: (- [ ] Understand changes to requestMessage envelope required)
 
@@ -174,14 +175,25 @@ Initial investigation to understand how to scope MVP (WIP):
 - [Local mailserver HOWTO](local-mailserver.md)
 - [Getting and sending STT, proof of payment](stt-payment-testing.md)
 
-
 Project board: https://github.com/orgs/status-im/projects/28
 
 Also see:
 - https://github.com/status-im/status-react/issues/4003
 
+
+#### Update 2018-05-07
+
+PreMVP mostly complete. In terms of next steps, main focus is on Beta. Swarm on
+hold until then. When work is resumed, we have:
+
+- UXR initial wireframes
+- https://github.com/status-im/status-react/pull/4120 PR by bounty from status-react
+- Missing initial status-go side MVP
+- Should deploy custom mail server into cluster, even minimal
+- Meeting notes in some doc somewhere
+
 ### Minimum Viable Product
-Goal Date: 2018-05-21
+Goal Date: 2018-XX
 
 Description: Spike out most basic proof of concept possible for payment / service on or off in Clojure and Go, using SNT test token (STT) on Ropsten.
 

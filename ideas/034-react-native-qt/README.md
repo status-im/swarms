@@ -1,7 +1,7 @@
 ---
-id: 34-react-native-qt
+id: 034-react-native-qt
 title: Extend react-native-desktop to support status-react Desktop functionality
-status: Active
+status: Limbo
 created: 2017-11-22
 category: core
 lead-contributor: MaxRis
@@ -72,13 +72,32 @@ Goal Date: 2018-04-23
 
 ### Iteration 3
 Goal Date: 2018-05-07
-1. Build status-react Desktop in production
-2. OS X bundle distribution for status-react Desktop
-3. Realm native module support by r-n-d and JavaScriptCore
-4. Ubuntu distribution build of old status-electron for Desktop based on react-native-desktop and JavaScriptCore
+1. Build status-react Desktop in production (2018-05-04 update: Done)
+2. OS X bundle distribution for status-react Desktop (2018-05-04 update: Done)
+3. Realm native module support by r-n-d and JavaScriptCore (2018-05-04 update: Partially done, In-Progress)
+4. Ubuntu distribution build of old status-electron for Desktop based on react-native-desktop and JavaScriptCore (2018-05-04 update: Done)
+
+### Iteration 4
+Goal Date: 2018-05-18
+1. Resolve account creation issues with StatusIm.app bundle (happens only on non-vm machines) (2018-05-16 update: Done)
+2. Automate Mac OS bundle creation (2018-05-16 update: Done)
+3. Ubuntu distribution with JavaScriptCore enabled (2018-05-16 update: Proof of concept verified)
+4. Realm native module support by r-n-d and JavaScriptCore in Ubuntu distribution (2018-05-16 update: On-hold)
+5. Build react-native-desktop on Windows (2018-05-16 update: Done)
+6. status-react Desktop Windows portable binaries distribution (2018-05-16 update: Done)
+
+### Iteration 5
+Goal Date: 2018-06-01
+1. Resolve failing jest unit tests, increase stability of unit testing runs (2018-06-03 update: Not started)
+2. Support of on-going needs for StatusIM Desktop project (2018-06-03 update: In-Progress)
+
+### Iteration 6
+Goal Date: 2018-06-18
+1. Resolve failing jest unit tests, increase stability of unit testing runs
+2. Support of on-going needs for StatusIM Desktop project
 
 Goal Date: TODO
-Description: Integrate react-native-desktop into latest status-react sources with desktops screens available.
+Description: Integrate react-native-desktop into latest status-react sources with desktops screens available. (2018-05-04 update: Done)
 
 Goal Date: TODO
 Description: Resolve react-native-desktop related UI issues (missed support of some specific props or components, etc)

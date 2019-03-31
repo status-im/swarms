@@ -11,7 +11,7 @@
   </thead>
 
 
-  {% assign ideas = include.ideas %}
+  {% assign ideas = include.ideas | sort: 'id' %}
   {% assign count = ideas|size %}
 
   {% for page in ideas %}
@@ -19,16 +19,16 @@
   {% if count > 0 %}
     <tr>
 
-      <td class="idea">
+      <td data-label="Idea" class="idea">
         <a href="{{page.url|relative_url}}">{{page.id|xml_escape}}</a>
       </td>
-      <td class="role-needed">
+      <td data-label="Looking for" class="role-needed">
         {% for role in page.roles-needed %}
           {{ role }}
         {% endfor %}
       </td>
-     <td class="status"> {{ page.status }} </td>
-     <td class="okr">
+     <td data-label="Idea Status" class="status"> {{ page.status }} </td>
+     <td data-label="OKRs" class="okr">
        {% for okr in page.okrs %}
        {{ okr }}<br>
        {% endfor %}
@@ -54,8 +54,8 @@
   {% assign ideas = include.ideas|where:"status","Active" %}
 
     <tr>
-      <td class="contributor">{{contributor|xml_escape}}</td>
-      <td class="ideas">
+      <td data-label="Contributor" class="contributor">{{contributor|xml_escape}}</td>
+      <td data-label="Ideas" class="ideas">
         {% for page in ideas %}
         {% if page.contributors contains contributor %}
           <a href="{{page.url|relative_url}}">{{page.id|xml_escape}}</a>

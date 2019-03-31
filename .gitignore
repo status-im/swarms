@@ -2,6 +2,10 @@
 !.github
 !.gitignore
 !*.md
+!*.scss
 _site
 .sass-cache
 .jekyll-metadata
+
+# allow any files in ideas directories
+!ideas/*/*

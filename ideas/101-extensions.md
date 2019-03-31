@@ -1,7 +1,7 @@
 ---
 id: 101-extensions
 title: Extensions
-status: Active
+status: Limbo
 created: 2018-03-26
 category: core
 lead-contributor: jeluard

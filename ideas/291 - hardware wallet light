@@ -1,0 +1,144 @@
+---
+id: 291-hardware-wallet-light
+title: Hardware Wallet Light
+status: Active
+created: 2018-08-24
+category: core
+lead-contributor: guylouis
+contributors:
+    bitgamma
+    pilu
+    goranjovic
+    dmitryn
+    patrick
+    denis-sharpyn
+    guylouis
+    obi2020
+    
+exit-criteria: true
+success-metrics: true
+clear-roles: true
+future-iteration: true
+roles-needed:
+    
+---
+
+## Preamble
+
+    Idea: 291-hardware-wallet-light
+    Title: Hardware Wallet Light
+    Status: In Progress
+    Created: 2018-08-24
+
+## Summary
+
+We have a Javacard based wallet implementation ready, see https://github.com/status-im/hardware-wallet
+
+This swarm is about making the hardwallet available (uxr, ux, client integration, sourcing) to our Android users.
+
+## Swarm Participants
+
+- Lead Contributor: @guylouis
+- javacard: @bitgamma
+- Go: @pilu
+- Clojure: @gorandjovic @dmitryn
+- UXR: @patrick
+- UX: @denis-sharpyn
+- PM:@guylouis
+
+## Product Overview
+
+The product is a HD hardware wallet in the form of a credit card size javacard with contactless capability (nfc), and is natively usable with our android clent.
+
+It will provide extended security and convenience to our users, providing:
+- ability to create or import an existing Status account or any BIP-32 wallet onto the javacard
+- physically separate the mobile client from its secrets, and allow on-card signature of transactions 
+- facilitate and secure login onto Status account
+
+### Product Description
+
+Our two priorities for a successfull launch of this product are:
+- make no compromise on security 
+- provide a clear and smooth product experience from setup to the everyday usage of the hardwallet
+
+UXR & UX 
+- Status hardwallet will be delivered without any software loaded. At first use, the user will be guided through an initialization of his card where the applet will be loaded and two secrets (pairing code of the card, and PUk to recover the card is PIn gets blocked after 3 wrong PINS) will be communicated to him during the initialization process. This initialization happens only once in the life of the card. 
+- Status user can use their mobile client with hardwallet or no hardwallet. We will guide them through to understand of waht are the implications of using the hardwallet, explaining them where their secrets are stored and how to recover them.
+- There are several secrets involved in the full process : pairing code (specific to the card), PUK (specific to the code), PIN code, Wallet key pair, Whisper key pair, and there is a specific uxr @ ux work to make sure the user is not lost in the different informations provided to him 
+- The user experience is inter-twinned with client integration, since each time a command is set to the card, this one needs to be close to the nfc reader
+- the usages to cover are : initialization of the card, setup of an account, signing of transactions, login to status account, javacard life management (change account, unpair card, unblock card)
+
+Client integration
+- the usages to cover are : initialization of the card, setup of an account, signing of transactions, login to status account, javacard life management (change account, unpair card, unblock card)
+- the intended user experience is that the user will not use his password anymore but a PIN instead. Implications of this have to be studied both on the clients side and javacard side.
+- whisper key decouplig dependency. The following swarm is a dependency for the project : https://github.com/status-im/ideas/pull/292
+
+Sourcing
+- we are sourcing a credit size javacard with the following characteristics: 
+   - compatible with our applet, supporting 3.0.4 SDK 
+   - (if possible, not fully mandatory) supporting EC end point mutliplication  
+   - contactless (nfc)
+   - compatible with our app implementation
+- we are selecting a supplier or a set of suppliers able to provide to us:
+   - printing of the card 
+   - realization of a custom packaging + tamper proof seal
+   - printing of our quick start guide 
+
+Security:
+- a security audit of the javacard code has been delegated to an external security audit company, this security audit will run through end of october. Since applet software is loaded by our client, the dependency to complete security audit is the actual availability of the beta hardwallet units for beta test. 
+
+## Dependency
+
+https://github.com/status-im/ideas/pull/292 is a dependency (whisper key decoupling) for launch
+
+### Phases
+
+Each phase should last 2-3 weeks approx.
+   
+PHASE 1
+Goal: product outlook defined
+UX/UXR/CONTENT Get a ui.v1 screen flows taking into account feedback from uxr,ux, content, dev,security, pm
+PACKAGING Get a pack.v1 definition (outlook at this stage) including materials to be used, size, selling technology, type of printing, rough content.
+DEV Go-eth work step 1 : define strategy with Nick Johnson regarding PR submitted. Progress on integration. 
+DEV Installer work step 1 : implementation working in java
+SOURCING evaluate other sources the ACS 
+
+PHASE 2  
+Goal: full product specification defined
+UX/UXR/CONTENT Get a ui.v2 screen flows taking into account user testing done on ui.v1
+PACKAGING/SOURCING Get a pack.v2 definition, by refining our definition and content, and taking into account answers and samples provided by factory to our pack.v1 submission
+DEV Go-eth : iteration
+DEV Installer : iteration
+
+PHASE 3
+Goal: prototype with set-up user experience implemented
+DEV UI : get a functional prototype with all set-up user experience
+DEV Go-eth : iteration
+DEV Installer : done and integrated
+UXR/UX/CONTENT/SOURCING: if necessary iterations on user testing and ux/packs definitions
+
+PHASE 4
+Goal:  alpha release, first feature complete version of the product available
+UX/UXR : user testing of phase 3 prototype for the set-up part, provide feedback to reach alpha level
+DEV UI : full ux implemented, and take into account feedback from user testing of phase 3 result
+DEV Go-eth new step (to be precised)
+QA activity starting
+SOURCING : user set-up validated + packaging defined, we can pass a purchase order to the factory from here. Lead time to get product :  6 weeks. 
+UXR/UX/SOURCING: if necessary iterations on user testing and ux/packs definitions
+
+PHASE 5
+Goal: beta release, first product ready for deployment to beta users/testers outside status 
+DEV UI finalization
+QA effort 
+DEV Debugging 
+SOURCING : validation of final samples 
+
+ 
+## Exit criteria and Success metrics
+
+This swarm will be deemed successful and be closed after reaching Phase 5 if more than 90% of beta test users score the user experience to more than 4 out of 5
+
+## Copyright
+
+Copyright and related rights waived
+via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).

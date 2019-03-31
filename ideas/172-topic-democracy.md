@@ -4,6 +4,7 @@ title: Subjective Delegation Liquid Democracy
 status: Draft
 created: 2018-04-15
 category: core
+lead-contributor: 3esmit
 contributors:
     - 3esmit
 exit-criteria: yes

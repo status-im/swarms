@@ -1,11 +1,12 @@
 {% for status in site.data.statuses %}
-  {% assign ideas = include.ideas | where:"status", status%}
+  {% assign ideas = (include.ideas | where:"status", status) | sort: 'id' %}
   {% assign count = ideas|size %}
   {% if count > 0 %}
     <h2>{{status}}</h2>
     <table class="ideastable">
       <thead>
         <tr>
+          <th class="lead-contributor">Lead Contributor</th>
           <th class="id">Idea</th>
           <th class="title">Title</th>
           <th class="categ">Category</th>
@@ -17,13 +18,14 @@
       </thead>
       {% for page in ideas %}
         <tr>
-          <td class="id"><a href="{{page.url|relative_url}}">{{page.id|xml_escape}}</a></td>
-          <td class="title">{{page.title|xml_escape}}</td>
-          <td class="categ">{{page.category|xml_escape}}</td>
-          <td class="success-metrics">{% if page.success-metrics %}✅ {% else %}❌{% endif %}</td>
-          <td class="exit-criteria">{% if page.exit-criteria %}✅{% else %}❌{% endif %}</td>
-          <td class="clear-roles">{% if page.clear-roles %}✅{% else %}❌{% endif %}</td>
-          <td class="future-iterations">{% if page.future-iterations %}✅{% else %}❌{% endif %}</td>
+          <td data-label="Lead Contributor" class="lead-contributor">{{page.lead-contributor|xml_escape}}</td>
+          <td data-label="Idea" class="id"><a href="{{page.url|relative_url}}">{{page.id|xml_escape}}</a></td>
+          <td data-label="Title" class="title">{{page.title|xml_escape}}</td>
+          <td data-label="Category" class="categ">{{page.category|xml_escape}}</td>
+          <td data-label="Success metrics" class="success-metrics">{% if page.success-metrics %}✅ {% else %}❌{% endif %}</td>
+          <td data-label="Exit criteria" class="exit-criteria">{% if page.exit-criteria %}✅{% else %}❌{% endif %}</td>
+          <td data-label="Clear roles" class="clear-roles">{% if page.clear-roles %}✅{% else %}❌{% endif %}</td>
+          <td data-label="Future iterations?" class="future-iterations">{% if page.future-iterations %}✅{% else %}❌{% endif %}</td>
         </tr>
       {% endfor %}
     </table>

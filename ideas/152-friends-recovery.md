@@ -1,3 +1,19 @@
+---
+id: 152-friends-recovery
+title: Friends Recovery (Secret Multisig)
+status: Draft
+created: 2018-04-07
+category: core
+lead-contributor: 3esmit
+contributors:
+    - 3esmit
+    - richard-ramos
+exit-criteria: yes
+success-metrics: yes
+clear-roles: no
+future-iterations: no
+---
+
 # Friends Recovery (Secret Multisig)
 
 ## Preamble
