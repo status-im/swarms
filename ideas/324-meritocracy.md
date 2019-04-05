@@ -49,7 +49,7 @@ Sync frequency: async via text
 - [x] Test DApp and share feedback (@people-ops)
 - [x] Create budget and plan for transfer of SNT into contract (@people-ops / finance)
 - [ ] Create People Ops site page / FAQ (@people-ops)
-- [ ] Draft launch post for Discuss (@people-ops)
+- [x] Draft launch post for Discuss (@people-ops)
 - [ ] Launch on 5 April with post on Discuss (@people-ops)
 - [x] Present/demo in TH (@richard / @people-ops)
 - [ ] Schedule weekly reminders to ping all contributors to let them know a new reward cycle has started (@people-ops)
