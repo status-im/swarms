@@ -45,12 +45,12 @@ Sync frequency: async via text
 [Mid-Feb - 5 April]
 - [x] Deploy DApp to Mainnet (@richard)
 - [ ] Add @jb and @rajanie as additional `Admins` if possible (@richard) - only the contract owner (richard) can add admins
-- [ ] Seek help with adding Design to the UI (@richard/@people-ops)
+- [x] Seek help with adding Design to the UI (@richard/@people-ops) 
 - [x] Test DApp and share feedback (@people-ops)
 - [x] Create budget and plan for transfer of SNT into contract (@people-ops / finance)
 - [ ] Create People Ops site page / FAQ (@people-ops)
 - [x] Draft launch post for Discuss (@people-ops)
-- [ ] Launch on 5 April with post on Discuss (@people-ops)
+- [x] Launch on 5 April with post on Discuss (@people-ops) - delayed to 8 April
 - [x] Present/demo in TH (@richard / @people-ops)
 - [ ] Schedule weekly reminders to ping all contributors to let them know a new reward cycle has started (@people-ops)
 - [ ] Leaderboard UI
@@ -63,6 +63,7 @@ Sync frequency: async via text
 * 28 March - Finance have transferred a small amount of ETH and SNT into @ceri's Metamask wallet ready for first cycle (equivalent to SNT 5 per participant).
 * 1 April - 5 SNT distributed to all participants.
 * 3 April - troubleshooting issues with Richard. Drafting launch comms
+* 8 April - launched with 10 SNT allocated.
 
 
 ## Maintenance
