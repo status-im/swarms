@@ -48,7 +48,7 @@ Sync frequency: async via text
 - [x] Seek help with adding Design to the UI (@richard/@people-ops) 
 - [x] Test DApp and share feedback (@people-ops)
 - [x] Create budget and plan for transfer of SNT into contract (@people-ops / finance)
-- [ ] Create People Ops site page / FAQ (@people-ops)
+- [x] Create People Ops site page / FAQ (@people-ops) - https://people-ops.status.im/meritocracy/
 - [x] Draft launch post for Discuss (@people-ops)
 - [x] Launch on 5 April with post on Discuss (@people-ops) - delayed to 8 April
 - [x] Present/demo in TH (@richard / @people-ops)
