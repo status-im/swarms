@@ -4,8 +4,8 @@ title: Protocol Engineering Swarm
 status: research
 lead-contributor: oskarth 
 contributors:
-    -
-    -
+    - decanus
+    - adamb
 budget:
 - actual: xxx
 - estimate: yyy
@@ -52,7 +52,7 @@ developed in conjunction with other teams in the Web3 / secure communication spa
 - [#status-protocol](https://get.status.im/chat/public/status-protocol) (currently used channel, not same as swarm id)
 - as well as as Riot chat https://riot.im/app/#/room/#web3-messaging:matrix.org for cross-team communication)
 
-`sync frequency`: One person team right now so no specific sync; weekly updates (see below); currently ad hoc sync with Web3 foundation etc 
+`sync frequency`: Weekly sync within Status ([meeting notes](https://notes.status.im/EVxnIQeqTpquNETtdXcqNw#)); biweekly sync with Web3 Foundation, Validity Labs, Nym, Swarm, and others interesting in *Messaging for Web3*. [Agenda/notes](https://github.com/status-im/messaging-pm/).
 
 ## Requirements
 
@@ -245,6 +245,8 @@ direction. As research effort continues and above milestones are being achieved,
 this will be updated.
 
 ## Research log
+
+Data sync research log: https://discuss.status.im/t/data-sync-research-log/1100
 
 ### January 14 - February 24
 *NOTE: This update was written after the fact, so just capturing most important artifacts here. Probably missings some things or inaccurate in some details.*
