@@ -22,7 +22,7 @@ Status Core is responsible for implementing a decentralized, reliable Ethereum r
 
 Mobile: The highest priority is to prepare Status to the public release in terms of performance and reliability.
 
-Desktop: support and make usable for core contributors; do releases and merge codebases as much as possible.
+Desktop: support and make usable for core contributors; do releases; reuse mobile codebase as much as possible to simplify feature development and bugfixing, with the goal of supporting `react-native-desktop` only.
 
 Core needs an accountable, passionate get-shit-done mentality and drive, in contrast to the meandering blame-shifting.
 
