@@ -83,7 +83,7 @@ Success for wallet is having the best mobile user experience for transactions, i
 Fix usability issues and create meaningful improvements with regard to interaction patterns, feedback, labeling and copy of the current flows.
 Epic: [#6921](https://github.com/status-im/status-react/issues/6921)
 
-Status: Implementation
+Status: implementation
 
 #### Research & Specification
 
@@ -92,7 +92,7 @@ Designs based on research already done - https://www.figma.com/file/SIeZPHvrX7KU
 
 #### Implementation
 
-`(timebox 2 weeks)`
+Not fully completed - remaining PR is  https://github.com/status-im/status-react/pull/7916 + chat/app tx flow integration
 
 
 ### Custom ERC20 Tokens
@@ -109,7 +109,7 @@ Designs based on research already done - https://www.figma.com/file/XUehMnhyD1FG
 
 #### Implementation
 
-
+Not done - bountied here  https://github.com/status-im/status-react/issues/7983
 
 ### Functional Transaction/Transfer History
 
@@ -121,15 +121,15 @@ Status: Research
 
 #### Research 
 
-`(timebox 5 days)`
+No progress
 
 #### Specification
 
-`(timebox 1 day)`
+No Progress
 
 #### Implementation
 
-`?`
+No progress 
 
 ### Address Validity
 
@@ -144,13 +144,10 @@ Status: Research
 
 Research [EIP-55](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
 
-#### Specification
-
-`(timebox 1 day)`
-
 #### Implementation 
 
-`(timebox 1 day)`
+Done 
+https://github.com/status-im/status-react/issues/6941
 
 ### Ethereum Links and QRs
 
@@ -169,7 +166,7 @@ Research [EIP-681](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md)
 
 #### Implementation 
 
-`(timebox 1 day)`
+No progress
 
 
 ## Maintenance
