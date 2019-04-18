@@ -13,7 +13,7 @@ budget:
 
 # Desktop Swarm proposal
 
-#  OUTDATED, Desktop was merged with the [310-core](ideas/310-core.md) team.
+#  OUTDATED, Desktop was merged with the [310-core](310-core.md) team.
 
 
 ---
