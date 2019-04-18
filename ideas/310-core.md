@@ -9,6 +9,7 @@ contributors:
 - Pedro
 - Roman
 - Dmitry S
+- Volodymyr K
 budget:
 - actual: xxx
 - estimate: yyy
@@ -19,9 +20,9 @@ budget:
 ## Summary and Goal(s)
 Status Core is responsible for implementing a decentralized, reliable Ethereum reference client for Mobile on Android and iOS. This client should provide a reliable communication medium and ability to access the open decentralized web.
 
-Core team also sets up the design direction for the mobile app.
+Mobile: The highest priority is to prepare Status to the public release in terms of performance and reliability.
 
-Desktop is out of scope, as is protocol research. Whitepaper use case implementation is partly in scope, partly not, depending on specifics and other teams.
+Desktop: support and make usable for core contributors; do releases; reuse mobile codebase as much as possible to simplify feature development and bugfixing, with the goal of supporting `react-native-desktop` only.
 
 Core needs an accountable, passionate get-shit-done mentality and drive, in contrast to the meandering blame-shifting.
 
@@ -32,12 +33,12 @@ Core needs an accountable, passionate get-shit-done mentality and drive, in cont
 
 ## Scope
 
-Core should focus on problems/features that require multidisciplinary understanding and influence the application architecture. With the highest priority of making Status a usable application for consumption.
-
+Core should focus on problems/features that require multidisciplinary understanding and influence the application architecture. With the highest priority of making Status Mobile app a usable application for consumption.
 
 ### Active Swarms
 * [Network Incentivization Swarm](./313-core-networking.md)
-* [Core Improvements Swarm](./315-core-improvements.md)
+* [Core Improvements Swarm (deprioritized)](./315-core-improvements.md)
+* Desktop
 
 
 ## Communications
@@ -52,23 +53,11 @@ Weekly sync-up calls
 - goals for the week
 - focus area, progress
 
-Each project that is currently active should have an umbrella issue that should
+Each project that is currently active should have an umbrella Epic in Pivotal Tracker that should
 link all the other issues. It contains a full description of the project and is
 closed when the project is considered "done".
 
-Some high-level discussions might also happen there.
-
-This issue should contain all the other issues grouped into areas if necessary.
-
-Each project should contain **Vision**, **Scope** and **Tradeoffs**.
-1. Vision: a high-level goal of the project or a problem we are trying to solve.
-2. Scope: limiting conditions that we empose on ourselves when implementing the project (what it is doing and what it is NOT doing).
-3. Tradeoffs: a lot of projects can contain tradeoffs that make is feasible to implement. These should be documented there.
-
-See [status-react#6757](https://github.com/status-im/status-react/issues/6757) as an example of a similar issue.
-
-The projects list should have links to umbrella issues for each projects.
-
+Pivotal Tracker project for Core: https://www.pivotaltracker.com/n/projects/2232205
 
 ## Copyright
 
