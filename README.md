@@ -50,7 +50,7 @@ https://www.pivotaltracker.com/reports/v2/projects/2232205/epics
 https://www.pivotaltracker.com/reports/v2/projects/2231918/epics
 - [304-core-chat](ideas/304-core-chat.md) (implementation)
 https://www.pivotaltracker.com/reports/v2/projects/2231830/epics
-- [318-desktop](ideas/318-desktop.md) (research)
+- ~[318-desktop](ideas/318-desktop.md)~ (merged with [310-core](ideas/310-core.md))
 - [319-wallet](ideas/319-core-wallet.md) (research)
 https://www.pivotaltracker.com/reports/v2/projects/2231938/epics
 - [320-keycard](ideas/320-keycard.md) (implementation)

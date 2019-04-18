@@ -13,6 +13,13 @@ budget:
 
 # Desktop Swarm proposal
 
+#  OUTDATED, Desktop was merged with the [310-core](310-core.md) team.
+
+
+---
+
+# Archive
+
 ## Summary and Goal(s)
 
 Messenger apps expected to be present on all widely used platforms - ios, android, mac, windows, linux.
