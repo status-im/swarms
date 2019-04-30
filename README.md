@@ -54,4 +54,4 @@ https://www.pivotaltracker.com/reports/v2/projects/2231830/epics
 - [319-wallet](ideas/319-core-wallet.md) (research)
 https://www.pivotaltracker.com/reports/v2/projects/2231938/epics
 - [320-keycard](ideas/320-keycard.md) (implementation)
-https://www.pivotaltracker.com/reports/v2/projects/2236359/epics
+https://www.wrike.com/workspace.htm?acc=2688416#path=folder&id=332947082&a=2688416&c=timeline3&so=10&bso=10&sd=0&st=ft-5
