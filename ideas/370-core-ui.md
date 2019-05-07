@@ -13,24 +13,24 @@ _TtT:_ [Two remaining issues](https://github.com/status-im/status-react/issues?q
 
 **New items**
 
-| Item | Status |
-| -------- | -------- |
+| Item | Status | Completed? |
+| -------- | -------- | -------- |
 | _Profile changes_     |    | 
-| Restructuring Profile screen | Ready for implementation |
-| ENS setting & usage | Being implemented |
-| _Wallet_ |  |
-| Add custom tokens | Requirements, design needed |
-| Set max Tx amount | Requires scoping |
-| Improve Tx history | Requirements, design needed |
-| _Onboarding_ |  |
-| Normal account creation flow | In design |
-| Keycard account creation flow | In design/being implemented |
-| Normal account recovery | In design |
-| Keycard account recovery | In design |
-| _Browser_ | |
-| Privacy mode setting UI | In design |
-| _ENS DApp_ | | 
-| Check for deprecation in light of new registrar | Research required (domains from old registrar must be migrated) |
+| Restructuring Profile screen | Ready for implementation | No |
+| ENS setting & usage | Being implemented | No |
+| _Wallet_ |  | |
+| Add custom tokens | Requirements, design needed | No |
+| Set max Tx amount | Requires scoping | No | 
+| Improve Tx history | Requirements, design needed | No |
+| _Onboarding_ |  | |
+| Normal account creation flow | In design | No |
+| Keycard account creation flow | In design/being implemented | No |
+| Normal account recovery | In design | No |
+| Keycard account recovery | In design | No |
+| _Browser_ | | | 
+| Privacy mode setting UI | In design | [Yes](https://github.com/status-im/status-react/pull/8112) |
+| _ENS DApp_ | | |
+| Check for deprecation in light of new registrar | Research required (domains from old registrar must be migrated) | |
 
 
 
