@@ -2,11 +2,12 @@
 id: #368-token-economics
 title: Token Economics
 status: research
-lead-contributor: jarrad
+lead-contributor: corey
 contributors:
     - carl
     - barry
-    - corey
+    - jarrad
+    - nabil
 budget:
 - actual: xxx
 - estimate: yyy
