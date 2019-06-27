@@ -8,6 +8,7 @@ contributors:
     - barry
     - jarrad
     - nabil
+    - ben
 budget:
 - actual: xxx
 - estimate: yyy
@@ -17,9 +18,10 @@ budget:
 # Swarm proposal
 
 ## Summary and Goal(s)
-
-To model the Status Network token economy based on current SNT use-cases.
-The goal is to model the SNT value potential for investment, as well as inform design decisions.
+This swarm is responsible for:
+- Model the Status Network token economy based on current SNT use-cases
+- Explore and consult on new areas for SNT Utility
+- Communicate the value of SNT to retail and institutional investors
 
 ## Communication
 (required)
