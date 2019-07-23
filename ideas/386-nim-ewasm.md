@@ -20,10 +20,10 @@ Ethereum 2.0 will introduce a new Virtual Machine for writing smart contracts, b
 
 ## Communication
 
-`status channel (same as swarm id)`: [#386-nim-ewasm-dsl](https://gitter.im/status-im/nimbus)
+`status channel (same as swarm id)`: [#386-nim-ewasm-dsl](https://gitter.im/status-im/nimplay)
 * Weekly Sync
-13:30 UTC every Wednesday
-Call Link: https://meet.google.com/zsw-cues-jjg
+12:00 UTC every Tuesday
+Call Link: https://meet.google.com/ozg-dova-eod
 
 ## Timeline
 
@@ -38,6 +38,10 @@ eWasm nim kick off point:
 - https://discuss.status.im/t/wrc20-and-nim-the-ewasm-token-challenge/1167
 - https://github.com/jacqueswww/nim-eth-contracts
 - https://github.com/status-im/nim-eth-contracts
+
+Project repository:
+
+- https://github.com/status-im/nimplay
 
 Using existing eWASM compiler tookit in above repositories. Establish what a clean Nim - ethereum smart contract would look like.
 
