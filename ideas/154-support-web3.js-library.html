@@ -1,0 +1,99 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 154
+Title: Support web3.js library
+Status: Completed
+Created: 2018-04-09
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>Ensure that any DApp that works in Metamask also works in Status by providing web3.js library support.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: <a href="https://github.com/flexsurfer">@flexsurfer</a></li>
+  <li>Contributor: <a href="https://github.com/dmitryn">@dmitryn</a></li>
+  <li>Contributor: <a href="https://github.com/mandrigin">@mandrigin</a></li>
+  <li>Contributor: <a href="https://github.com/dshulyak">@dshulyak</a></li>
+  <li>Testing &amp; Evaluation:</li>
+  <li>PM: <a href="https://github.com/rachelhamlin">@rachelhamlin</a></li>
+  <li>UX: N/A</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>A fundamental step in supporting the developer ecosystem is to ensure that any existing DApp loads and is operable in the Status browser.</p>
+
+<p>Users:</p>
+<ol>
+  <li>Developers who want to develop a new HTML DApp for Ethereum from scratch</li>
+  <li>Developers of existing HTML DApps that work on desktop with Metamask</li>
+  <li>Users exploring DApps in Status</li>
+</ol>
+
+<p>There are a number of bugs preventing this currently. In addition to resolving any known issues, we will provide support for the web3.js library.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>Developers testing on Status should find that any mobile-optimized HTML DApp is compatible.</p>
+
+<p>Users can load, log in to, and transact inside any DApp using the Status browser.</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<ul class="task-list">
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/3174">#3174</a>: Some Android devices can’t find web3 library</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/2704">#2704</a>: Personal sign message support (CryptoKitties blocker)</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/issues/784">#784</a>: Contract handler not called after contract deployment</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/3823">#3823</a>: Sync calls are not supported in Status</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/2479">#2479</a>: web3 filters don’t work with Status chat bot</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/3824">#3824</a>: <a href="https://blockchaincuties.co">Blockchain Cuties</a> does not load inside Status</p>
+  </li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Goal date:</p>
+
+<p>Description:</p>
+<ul>
+  <li>Fix known issues.</li>
+  <li>Support web3.js library v.0.20.3</li>
+</ul>
+
+<p>Testing days required:</p>
+
+<p>Swarm closed 2018-05-14.</p>
+
+<h2 id="exit-criteria">Exit Criteria</h2>
+<ul>
+  <li>Test cases defined for web3.js v.0.20.3</li>
+  <li>Known issues closed</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<ul>
+  <li>All tests pass QA</li>
+  <li>Every Selected DApp works (loads, logs in, transacts)</li>
+</ul>
+
+<h2 id="future-iterations">Future Iterations</h2>
+<ul>
+  <li>Support <a href="https://web3js.readthedocs.io/en/1.0/">web3.js 1.0</a></li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

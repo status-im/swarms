@@ -1,0 +1,106 @@
+<h1 id="swarm-proposal">Swarm proposal</h1>
+
+<p>Ethereum 2.0 will introduce a new Virtual Machine for writing smart contracts, based on WebAssembly (WASM). This swarm will deliver a Nim based smart contract language to allow developers to write smart contracts in Nim, with minimal boilerplate.</p>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+
+<h2 id="communication">Communication</h2>
+
+<p><code class="highlighter-rouge">status channel (same as swarm id)</code>: <a href="https://gitter.im/status-im/nimplay">#386-nim-ewasm-dsl</a></p>
+<ul>
+  <li>Weekly Sync
+12:00 UTC every Tuesday
+Call Link: https://meet.google.com/ozg-dova-eod</li>
+</ul>
+
+<h2 id="timeline">Timeline</h2>
+
+<ul>
+  <li>2 months: Research and PoC</li>
+  <li>2 months: Development and tooling</li>
+  <li>2 months: Documenation and testing</li>
+</ul>
+
+<p>eWasm nim kick off point:</p>
+
+<ul>
+  <li>https://ewasm.readthedocs.io</li>
+  <li>https://discuss.status.im/t/wrc20-and-nim-the-ewasm-token-challenge/1167</li>
+  <li>https://github.com/jacqueswww/nim-eth-contracts</li>
+  <li>https://github.com/status-im/nim-eth-contracts</li>
+</ul>
+
+<p>Project repository:</p>
+
+<ul>
+  <li>https://github.com/status-im/nimplay</li>
+</ul>
+
+<p>Using existing eWASM compiler tookit in above repositories. Establish what a clean Nim - ethereum smart contract would look like.</p>
+
+<h2 id="specification">Specification</h2>
+
+<p>The ethereum smart contract language will aim to have the following features:</p>
+
+<ul>
+  <li>Concept of public &amp; private (exported &amp; local) method.</li>
+  <li>Tooling
+    <ul>
+      <li>ABI encoding &amp; decoding
+        <ul>
+          <li>Parameter Return Type decoder &amp; encoder for public functions.</li>
+          <li>Start off with 64-Bit based if standardised at time of implementation.
+            <ul>
+              <li>WRC20 as reference point (https://gist.github.com/axic/16158c5c88fbc7b1d09dfa8c658bc363)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>ABI JSON generating with Ethereum specific types (e.g. <code class="highlighter-rouge">uint256</code> and <code class="highlighter-rouge">map()</code>).</li>
+    </ul>
+  </li>
+  <li>Strict ruleset for allowing only subset of Nim to be used.
+    <ul>
+      <li>Emphasis on readibility and verifiability.</li>
+      <li>Minimisation of “footguns”.</li>
+    </ul>
+  </li>
+  <li>Standard library and macros
+    <ul>
+      <li>Emitting of Log Events.</li>
+      <li>Specific syntax to store in the global scope of the contract (self/this).</li>
+      <li>Basic arithmetic support for Ethereum specific types.</li>
+      <li>Overflow protection (to be determined).</li>
+      <li>Must be able to write at minimum Token (ERC20) or NFT (ERC721) with DSL.</li>
+      <li>eWASM internal functions must be abstracted away (no direct interface with CallData, Storage and similar “ethereum” exposed functions).</li>
+    </ul>
+  </li>
+  <li>Web3 Test suite against Ewasm chain/client (to be determined).</li>
+</ul>
+
+<h3 id="milestones">Milestones</h3>
+
+<ul>
+  <li>Defining principles for the Language</li>
+  <li>Simple tooling for nim contract development
+    <ul>
+      <li>ABI encoding/decoding</li>
+      <li>Deployment tools</li>
+      <li>Development environment / Framework</li>
+    </ul>
+  </li>
+  <li>Townhall demo</li>
+  <li>WRC202 / ERC20 Token Contract running on ewasm testnet</li>
+</ul>
+
+<h2 id="implementation">Implementation</h2>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<ul>
+  <li>Jacques</li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

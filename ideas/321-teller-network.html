@@ -1,0 +1,97 @@
+<h1 id="teller-network">Teller Network</h1>
+
+<h2 id="summary-and-goals">Summary and Goals</h2>
+
+<p>DApp inside of Status, which provides borderless, peer-to-peer fiat-to-crypto ‘Teller Network’ that allows Stakeholders to find nearby users to exchange their cash for digital assets and currency, giving any smartphone owner in the world the ability to take control of their personal wealth.</p>
+
+<h2 id="contributors">Contributors</h2>
+
+<ul>
+  <li>Anthony @alaibe</li>
+  <li>Barry @bgits</li>
+  <li>Iuri @iurimatias</li>
+  <li>Jonathan @jrainville</li>
+  <li>Ricardo @3esmit</li>
+  <li>Richard @richard-ramos</li>
+</ul>
+
+<p>(+ Janitor swarm)</p>
+
+<h2 id="communication">Communication</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">status channel</code>: #321-teller-network</li>
+  <li><code class="highlighter-rouge">sync schedule</code>: brainstorming on Mondays / stand ups on Wednesday</li>
+  <li><code class="highlighter-rouge">pivotal link</code>: https://www.pivotaltracker.com/n/projects/2231548</li>
+  <li><code class="highlighter-rouge">research notes</code>: https://github.com/status-im/status-teller-network/wiki</li>
+  <li><code class="highlighter-rouge">github repo</code>: https://github.com/status-im/status-teller-network</li>
+</ul>
+
+<h2 id="research">Research</h2>
+<ol>
+  <li>Sellers:
+    <ul>
+      <li>Will the seller receive the full SNT used to obtain the license once it is released or will a fee be deducted.</li>
+      <li>Determine if a Harbinger tax mechanism could be used somehow for the acquisition of licenses or map location.</li>
+      <li>Where will the seller information be stored at?</li>
+    </ul>
+  </li>
+  <li>Escrow:
+    <ul>
+      <li>How will arbitrage work for a descentralized escrow. What protections does a buyer and seller have when performing a transaction in case one of them is an evil actor.</li>
+      <li>Most teller network buyers will not have ETH to perform transactions. Gas Abstraction might be useful for covering this scenario</li>
+      <li>Escrow not necessarily has to be onchain. It might be handled offchain and use signatures.</li>
+      <li>Can any ERC20 token be sold/bought? or only those that handled by the status wallet.</li>
+      <li>If users are locking up funds in escrow, from a user perspective it may not be that different from locking up in a plasma contract which can allow more frequent transacting with lower costs. An interesting expansion on that is with offchain transactions you might be able to setup atomic swaps cross chain, so BTC/SNT direct trade possibly using lightning for the BTC side.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Interactions with other SNT use cases, and Status Features</p>
+
+    <p>3.1 Indicators of Trust</p>
+    <ul>
+      <li>License contract should be associated to this trust system.</li>
+      <li>Obtaining a license should allow you to sell crypto to fiat up to an amount determined in function of the SNT deposited against the username.</li>
+      <li>Slashing of the SNT stake would decrease the amount of SNT staked, and max amounts of crypto that can be selled / escrows open at the same time?</li>
+    </ul>
+
+    <p>3.2 Tribute to Talk</p>
+    <ul>
+      <li>Probably we should allow communication between a buyer and the seller so they could perform agreements on how will the payment be done. Research needs to be done to determine how will TtT affect this communication, since if a seller sets a fee, most likely he wont be able to talk with potential buyers (It’s highly likely that buyers do not have SNT to pay for the tribute). This could be potentially mitigated by introducing Identities in Status, where a seller could create an identity exclusive for selling and this one wouldn’t have TtT fees associated.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="specification">Specification</h2>
+<p>TODO</p>
+
+<h2 id="implementation">Implementation</h2>
+
+<h4 id="sprint-1">Sprint 1</h4>
+<p><strong>Front end</strong></p>
+<ul>
+  <li>License acquisition flow</li>
+  <li>Component to obtain prices using cryptocompare.</li>
+  <li>Maps component to see sellers. (not yet connected to smart contract / datasources)</li>
+</ul>
+
+<p><strong>Smart contracts</strong>
+The following smart contracts were created for the initial sprint of Teller Network</p>
+<ul>
+  <li><em>License</em>: allows an address to act as a seller inside the tellet network. Acquiring a license requires N amount of SNT which is set by the controller of the contract (which should be a multisig, and later, a DAO component like Topic Democracy. A license can be released after a period of time and the SNT used to obtain the license will be returned to the user.</li>
+  <li><em>Escrow</em>: Allows a seller to send an amount of ether or a number of ERC20 tokens and have them held by the contract and later released to the buyer. Current implementation is naive and does not have arbitrage. A buyer can rate a transaction after it’s released.</li>
+</ul>
+
+<h4 id="feb-4th-update">Feb 4th Update</h4>
+<ul>
+  <li>Event Sourcing &amp; Persistence solution (watermelon)</li>
+  <li>Liquid-funding is in the implementation phase. ETA is by the end of Q1.</li>
+  <li>Contracts are deployed on Rinkeby testnet. Client side data persistence + DB is implemented which gives the dapp much faster load times and flexible querying capabilities for the data generated by LF.</li>
+</ul>
+
+<h2 id="maintenance">Maintenance</h2>
+<p>TODO</p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via CC0.</p>

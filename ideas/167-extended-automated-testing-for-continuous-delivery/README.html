@@ -1,0 +1,74 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 167
+Title: Functional automated testing as a part of Continuous Delivery process
+Status: In Progress
+Created: 2018-04-12
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>For automated testing to be a part of CD process we need to:</p>
+<ul>
+  <li>increase coverage</li>
+  <li>increase reliability</li>
+  <li>provide visible results on daily basis</li>
+</ul>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @antdanchenko</li>
+  <li>Testing &amp; Evaluation: @antdanchenko</li>
+  <li>Contributor: @yevh-berdnyk</li>
+  <li>Contributor: @lukaszfryc</li>
+  <li>Contributor: @Serhy</li>
+  <li>Contributor: @asemiankevich</li>
+  <li>PM:</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<p>Extended set of automated tests which will run against each nightly build in order to provide results via TestRun in TestRail + short summary via Slack notification
+As result during nightly build testing a tester should execute only those tests which are not covered by automation in the same TestRun
+In case of failure in automated test a tester should add an appropriate status to the test (see <code class="highlighter-rouge">An option to review results should be added for each test via adding 4 statuses to TestRail</code> in <code class="highlighter-rouge">Product Description</code> section)
+Actual sanity test case which is running against each PR will keep running without changes</p>
+
+<h3 id="product-description">Product Description</h3>
+<ul>
+  <li>Each automated test suite should be based on existing set of cases from TestRail for tracking percents of functional test coverage</li>
+  <li>Each automated test should be the reflection of a test case from TestRail</li>
+  <li>Results of each automated test from a build should be provided via TestRun in TestRail and linked to the appropriate case</li>
+  <li>An option to review results should be added for each test via adding 4 statuses to TestRail:
+    <ul>
+      <li>feature changed (for changed product behavior)</li>
+      <li>known bug (link to the issue)</li>
+      <li>false failure (bug in test)</li>
+      <li>infrastructure issue</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+<p>Goal Date: 2018-05-01</p>
+
+<ul>
+  <li>New test suite is add to TestRail (<code class="highlighter-rouge">Functional tests for Nightly Build</code>)</li>
+  <li>80% of test cases for nightly build test suite from TestRail are covered by automated tests</li>
+  <li>Extended set of automated tests is running against each nightly build</li>
+  <li>Detailed test results are provided in TestRail via TestRuns + short summary via Slack notification</li>
+</ul>
+
+<p>Testing Days required: 10</p>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<ul>
+  <li>80% of functional test cases in <code class="highlighter-rouge">Functional tests for Nightly Build</code> are covered</li>
+  <li>not more than 10% of tests are failing due to an issue with a test</li>
+  <li>results are visible and understandable for all status-react team members</li>
+</ul>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+<p>Extended set of automated tests covers 80% of functional nightly test cases from TestRail
+The set is running against each nightly build
+Results are visible in TestRail as TestRuns, also summary is visible in Slack notifications</p>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

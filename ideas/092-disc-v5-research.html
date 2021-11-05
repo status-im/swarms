@@ -1,0 +1,116 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: #92-disc-v5-research
+Title: Research Ethereum Discovery V5 Protocol
+Status: In Progress
+Created: 2018-03-12
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>Discovery protocol is essential for long-term scaling of the Status app. It will improve security of our cluster and reliability of the app and prepare it for the beta launch.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @adambabik</li>
+  <li>Testing &amp; Evaluation: @adambabik (unless someone else would like to take over)</li>
+  <li>Contributor: @dshulyak</li>
+  <li>Contributor: @themue</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<p>Discovery protocol will allow us to dynamically change the number of server peers in our cluster and also distribute the peers among various providers and countries without rebuilding the app itself, hence improving security and reliability.</p>
+
+<p>The biggest challenge may be increased CPU and network usage. This needs to be carefully measured and we may end up with proposing some protocol changes.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>This is a research swarm. It must provide answers to the following questions:</p>
+
+<h4 id="q-cpunetwork-increase-usage-how-does-it-change-in-absolute-and-relative-values-how-to-reproduce-the-measurement">Q: CPU/network increase usage. How does it change in absolute and relative values? How to reproduce the measurement?</h4>
+
+<p><strong>A:</strong> Discovery protocol is enabled just at the beginning and it uses caching for reducing the amount of CPU and network usage. There was no negative impact on any of these metrics reported so far.</p>
+
+<h4 id="q-can-we-turn-on-and-off-discovery-protocol-when-the-node-is-running">Q: Can we turn on and off discovery protocol when the node is running?</h4>
+
+<p><strong>A:</strong> Yes. First of all, we can tell how often the Discovery V5 should search for new peers with a given topic. Also, as we implemented Discovery V5 as a peer pool, we managed the list of peers. If the number of peers found for all topics is equal or exceed the upper limit, we can disable Discover V5 completely.</p>
+
+<h4 id="q-can-discovery-v5-protocol-carry-more-information-than-protocol-name-and-version-how-can-we-distinguish-light-whisper-nodes-or-whisper-nodes-with-mailserver-capability-notice-that-revealing-this-information-like-light-whisper-node-may-increase-a-chance-to-reveal-the-peer-identity-the-fact-that-we-dont-want-mobile-phones-to-be-each-other-peers-raises-this-question">Q: Can Discovery V5 protocol carry more information than protocol name and version? How can we distinguish Light Whisper nodes or Whisper nodes with MailServer capability? Notice that revealing this information (like Light Whisper node) may increase a chance to reveal the peer identity. The fact that we don’t want mobile phones to be each other peers raises this question.</h4>
+
+<p><strong>A:</strong> Topic can be an arbitrary <code class="highlighter-rouge">key=value</code> pair. Mobile nodes do not register themselves in Discovery V5 so they won’t be actively advertised in the network. Additionally, we can turn off accepting <a href="https://github.com/status-im/status-go/pull/982">incoming connection requests</a>.</p>
+
+<h4 id="q-how-to-make-sure-that-connecting-to-the-cluster-will-be-fast-when-the-app-goes-to-the-background-does-it-take-significantly-more-time-to-find-peers-do-we-need-to-use-cache-from-the-cluster-perspective-how-to-autoscale-cluster-so-that-its-free-capacity-is-always-high">Q: How to make sure that connecting to the cluster will be fast? When the app goes to the background, does it take significantly more time to find peers? Do we need to use cache? From the cluster perspective, how to autoscale cluster so that its free capacity is always high?</h4>
+
+<p><strong>A</strong>: We need a cache to quickly provide the list of recently used peers. If the app fails to connect to them, it will use Discovery V5 in fast mode (checking for new peers more often).</p>
+
+<p>To use Discovery V5, we need to set up bootnodes, however, they can use the existing server nodes, provided that they advertise Discovery V5 topics.</p>
+
+<p>Scaling the cluster is just a matter of adding new server nodes and pointing them to bootnodes.</p>
+
+<h4 id="q-how-to-make-sure-that-there-are-always-at-least-n-peers-with-given-capabilities-for-instance-we-always-want-to-have-at-least-k-whisper-l-mailserver-and-m-les-peers-connected">Q: How to make sure that there are always at least <code class="highlighter-rouge">N</code> peers with given capabilities? For instance, we always want to have at least <code class="highlighter-rouge">K</code> Whisper, <code class="highlighter-rouge">L</code> MailServer and <code class="highlighter-rouge">M</code> LES peers connected.</h4>
+
+<p><strong>A:</strong> This is implemented in <a href="https://github.com/status-im/status-go/tree/develop/geth/peers"><code class="highlighter-rouge">github.com/status-im/status-go/geth/peers</code></a> package. For each topic we are interested in, a lower and upper limits are provided. <code class="highlighter-rouge">PeerPool</code> and <code class="highlighter-rouge">TopicPool</code> take care of maintaining the number of peers within the limits.</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+<p>The discovery protocol should be testable locally with Docker, but for some more extensive tests, we will utilse a Docker Swarm cluster.</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+<p>Goal Date: 2018-04-27</p>
+
+<p>Description:</p>
+<ol>
+  <li>All questions described in Product Description are researched and answered,</li>
+  <li>It’s possible to start <code class="highlighter-rouge">statusd</code> and Status App with DiscV5 enabled instead of static nodes (switch between them with a flag would be great),</li>
+  <li>There is an automated way to collect CPU and network usage metrics in an isolated environment.</li>
+</ol>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<p>Goal Date: 2018-05-18</p>
+
+<p>Description:</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />increase awarness by changing the UI copy that Rinkeby network uses Discovery protocol,</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><del>make LES working in Mainnet and Ropsten</del> (this is not in scope of this swarm as we haven’t decided between LES vs ULC),</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />make sure the current MailServers as static peers work,</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />run a job in Jenkins daily that will print network I/O statistics of Discovery mode (to make sure that changes we make to Discovery V5 actually improve it).</li>
+</ul>
+
+<h2 id="updates">Updates</h2>
+
+<h3 id="2018-04-27">2018-04-27</h3>
+
+<ul>
+  <li>Added <code class="highlighter-rouge">Iteration 1</code>.</li>
+</ul>
+
+<h3 id="2018-06-05">2018-06-05</h3>
+
+<ul>
+  <li>a <a href="https://github.com/status-im/boothealth/blob/master/main.go#L30:6">boothealth</a> repo was created to measure performance of Discovery V5,</li>
+  <li>Grafana collects Discovery V5 metrics as well,</li>
+  <li>Discovery V5 is used in all networks with positive feedback,</li>
+  <li>LES support is not planned for beta at all.</li>
+</ul>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<ol>
+  <li>Assess if DiscV5 is a viable protocol to replace static nodes.</li>
+  <li>If so, there is a list of issues that we should work on to further improve DiscV5 usage in the Status app and in the cluster (this may be realized as next iterations or a new swarm).</li>
+</ol>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<ol>
+  <li>Connecting to the network for statusd/Status App via DiscV5 is successful in at least 99% of tries,</li>
+  <li>It’s possible to discover minimal number of LES/2, Whisper and MailServer nodes via DiscV5 within 15 seconds without cache and in 5 seconds with cache,</li>
+  <li>Resources consumption (CPU and network ingress/egress) is not higher than 20% compared to static nodes.</li>
+</ol>
+
+<h2 id="links">Links</h2>
+<ul>
+  <li>https://github.com/fjl/p2p-drafts</li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

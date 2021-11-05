@@ -1,0 +1,93 @@
+<h1 id="swarm-proposal">Swarm proposal</h1>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+
+<p>We want to give Status users control over their private keys, and offer them the possibilty to store them in a air-gapped secure device. This kind of control is provided by hardware wallets, however there is no hardware wallet on the market today that integrates with mobile apps, and hardware wallets are quite expensive.</p>
+
+<p>Javacard smartcards are a good platform to solve this issue: their inexpensive, provides  very high level of physical security (CC EAL5+), and are contactless (NFC) and thus work with Android apps.</p>
+
+<p>Our goal is to:</p>
+<ul>
+  <li>manufacture such a smartcard, called Keycard,</li>
+  <li>standardize a protocol ‘Keycard API’ for integration of clients with smartcards securing access to crypto assets</li>
+  <li>propose an open source javacard applet ‘Keycard applet’</li>
+  <li>integrate Keycard with Status app</li>
+</ul>
+
+<p>This swarm is about:</p>
+<ul>
+  <li>Keycard applet</li>
+  <li>Status software integration</li>
+</ul>
+
+<h2 id="communication">Communication</h2>
+
+<p><a href="https://get.status.im/chat/public/status-keycard">#status-keycard</a></p>
+
+<p>Weekly Sync, tuesday 11:00 AM Paris time</p>
+
+<p>Weekly meeting notes https://notes.status.im/BSmOfT4qSuWLLXS6AuxcXQ</p>
+
+<p>Team page https://notes.status.im/Uyg8wkVESjKyvwWAa19czQ?view</p>
+
+<h2 id="research">Research</h2>
+
+<p><strong>Keycard applet</strong></p>
+
+<p>closed</p>
+
+<p><strong>Status software integration</strong></p>
+
+<p>closed</p>
+
+<h2 id="specification">Specification</h2>
+
+<p><strong>Keycard applet</strong></p>
+
+<p>closed</p>
+
+<p><strong>Status software integration</strong></p>
+
+<p>The use cases for the Status integration are:</p>
+<ol>
+  <li>sign transaction by tapping card + entering PIN</li>
+  <li>login into account by tapping card and entering PIN</li>
+  <li>export of the whisper key from the card to the app (goal : not store the whisper private key in Flash at anay time on the app)</li>
+  <li>export of the password used to encode the database from the card to the app</li>
+</ol>
+
+<p>UPDATE 15012019</p>
+
+<p>It has been decided to leave Keycard card upgradeable to allow software upgrade of Keycard during its lifecycle. This has affected our state diagrams and specifications. Sepcifications (see below)have been updated and approvded by the team on wk2 2019.</p>
+
+<p>Specifications reference document (UI flows + State Diagrams)
+https://bit.ly/2NdxoUB</p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p><strong>Keycard applet</strong></p>
+
+<p>closed</p>
+
+<p><strong>Status software integration</strong></p>
+
+<p>Alpha stage: up to 28/02/2019
+Beta stage: 01/03/2019 (Beta success consists of functional availability of use cases 1-2-3-4)</p>
+
+<p>15012019 UPDATE</p>
+<ul>
+  <li>detailed status in weekly meeting notes and pivotal tracker</li>
+  <li>overview
+    <ul>
+      <li>Done: card initialization, account creation</li>
+      <li>In progress: card settings (change PIN, reset cards, unpair), decoupling of whisper and private key in go</li>
+      <li>To be done : card login, sign transaction, import account</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

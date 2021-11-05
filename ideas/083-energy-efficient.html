@@ -1,0 +1,67 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 83
+Title: Energy Efficient Status
+Status: In Progress
+Created: 2018-02-19
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>A specific issue about the energy efficiency of different parts of Status (<code class="highlighter-rouge">status-go</code>, <code class="highlighter-rouge">status-react</code>, <code class="highlighter-rouge">desktop</code> (when running on a laptop battery).</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @mandrigin (~25h)</li>
+  <li>Contributor (Clojure): @janerich</li>
+  <li>Contributor (Clojure): @yenda</li>
+  <li>Contributor (QA): @lukaszfryc (~10h/week)</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<p>Energy consumption is a crucial part of the mobile experience, and even though it is related to performance, it is worth having a separate.
+The end goal is:</p>
+<ul>
+  <li>to provide a toolkit and guidelines to test energy efficiency of different parts of an app on different platforms;</li>
+  <li>using this toolkit to fix the top battery drainers;</li>
+  <li>notice regressions early by having tests in place.</li>
+</ul>
+
+<h3 id="goals">Goals</h3>
+
+<ol>
+  <li>
+    <p>Create a BoK for Energy efficiency testing: https://github.com/orgs/status-im/projects/18
+a. test apps are created for both Android and iOS
+b. test cases are written and tools are created to measure the energy efficiency of both Status client (status-react+status-go) and tests apps (status-go exclusively).
+c. tests are run on a regular basis
+d. (stretch goal) tests are automated for both platforms</p>
+  </li>
+  <li>
+    <p>Fix obvious issues with energy consumption
+https://github.com/orgs/status-im/projects/17</p>
+  </li>
+</ol>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />We have test cases and tools to check the energy efficiency of <code class="highlighter-rouge">status-go</code> and <code class="highlighter-rouge">status-react</code> independently;</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />We can notice regressions/improvements caused, e.g. by updating the version of <code class="highlighter-rouge">go-ethereum</code> or new features of Status;</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Top energy draining issues are identified and fixed.</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<p>KR: 
+(1) foreground chat energy consumption is &lt; 120% of the apps in a similar class (messengers) 
+(2) background chat energy consumption is &lt; 120% of the apps in a similar class (messengers)
+(3) foreground dapps energy consumption is &lt; 120% of the apps in a similar class (browsers)</p>
+
+<h2 id="mvps">MVP(s)</h2>
+<p>MVP (development): Identify top issues with CPU hogging in Status for Android</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+
+<h2 id="useful-links">Useful Links</h2>
+<p>https://github.com/dgryski/go-perfbook</p>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

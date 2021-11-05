@@ -1,0 +1,182 @@
+<h1 id="self-sovereign-identity">Self-sovereign Identity</h1>
+
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 145-identity
+Title: Self-sovereign Identity
+Status: Draft 
+Created: 2018-05-04
+Requires: 152-friends-recovery ERC725 ERC735
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Creates a common user-owned credentials for authentication on smart contracts and for enhancing users security with multisig and optional recovery.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: Ricardo Guilherme Schmidt</li>
+  <li>Contributor: Richard Ramos</li>
+  <li>UX (Etherum Foundation/Mist): Alexandre Van de Sande</li>
+  <li>Testing &amp; Evaluation:  (help needed)</li>
+  <li>PM: (help needed)</li>
+  <li>UX (Status):  (help needed)</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>Self sovereign identity can disrupt single sign on services by using blockchain ledger, smart contracts and encryption techniques.</p>
+
+<h4 id="traditional-sign-in">Traditional sign-in:</h4>
+
+<ol>
+  <li>Verification of personal information is required for each single sign on service.</li>
+  <li>Services usually require trusting your personal information to multiple companies, which may collect it.</li>
+  <li>Some services require payment credentials to be stored in their database, which might be abused.</li>
+  <li>Recovering lost/compromised Identity requires an authorithy, which might be censored/abused.</li>
+  <li>Access to your Identity is available as long as service decides.</li>
+</ol>
+
+<p>In traditional services you can get conforted by having an authority taking care of your data, which not only control your access to it, but also can read it (and sell it).</p>
+
+<h4 id="self-sovereign-identity-sign-in">Self-sovereign identity sign-in:</h4>
+
+<ol>
+  <li>Verified claims over Identity could be required by services.</li>
+  <li>Personal data is held by Identity owner</li>
+  <li>Payment system is done by payment authorizations made by Identity owner.</li>
+  <li>Recovering lost/compromised Identity is done by recovery smart contracts, such as 152-friends-recover .</li>
+  <li>Access to Identity is available as long as owner decides.</li>
+</ol>
+
+<p>In self-sovering identity its owner have full resposability over its safety, but also have full control of their Identity.</p>
+
+<h4 id="fundamental-terms">Fundamental terms:</h4>
+
+<ul>
+  <li>ID Manager (owner) can define MultiSig public keys required for its management/actions;</li>
+  <li>ID Manager can define a Recovery contract;</li>
+  <li>ID Manager can define public keys for other; users knowing how to encrypt data for identity owner;</li>
+  <li>ID Manager can accept claims;</li>
+  <li>ID Manager can make claims.</li>
+  <li>ID Actor can call other contracts.</li>
+</ul>
+
+<h4 id="status-use-case">Status Use Case:</h4>
+
+<p>From user perspective, instead of talking to obscure address/contracts, users  would able to confirm that a person is whom they expect to be interacting.
+Mainly because they usually know by community network who is the Identity holder and can safely assume is the right person.</p>
+
+<p>This is important for chat system, where Identities provide the right key for others messaging, and Identity owners can always update this keys as they want.</p>
+
+<p>Recovery contract, if safely defined, will garantee that Identity owner is able to get back their Identity from loss or theft, therefore no need to create a new one and ask friends to update their contact list with your new Identity.</p>
+
+<h4 id="external-references">External references:</h4>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=jv3BmGGFP7c">Fabian Vogelsteller - ERC: Identity - Ethereum London</a></li>
+  <li><a href="https://www.youtube.com/watch?v=pkwYVagytuA">DEVCON3: ERC Identity</a></li>
+  <li><a href="https://www.youtube.com/watch?v=vkEdDj5HtVs">Jolocom: enabling blockchain agnostic self- sovereign identity - Kai Wagner</a></li>
+  <li><a href="https://gist.github.com/alexvandesande/434f143fc6d08cb4388479a3d9f527a9">Mist: UX insight - Alexande Van de Sande</a></li>
+  <li><a href="https://www.youtube.com/watch?v=QpaTOvAhLR4">DEVCON1: Digital Identity - Christian Lundkvist</a></li>
+  <li><a href="https://www.youtube.com/watch?v=qRevDM9D8WE">uPort – Usable key management &amp; identity - Rouven Heck and Dr. Christian Lundkvist</a></li>
+  <li><a href="https://www.youtube.com/watch?v=VXAZdBtN3N0">ConsenSys and uPort: Powering Decentralized Identity</a></li>
+  <li><a href="https://www.youtube.com/watch?v=8K-BDlsx8KQ">Self-sovereign BigchainDB data injection in smart contracts through the Jolocom Identity Gateway</a></li>
+  <li><a href="https://www.youtube.com/watch?v=h1Oz3oEtZxE">IDbox – Cost efficient device for self-sovereign identity</a></li>
+</ul>
+
+<h3 id="product-description">Product Description</h3>
+
+<ul>
+  <li>Smart contracts: See <a href="https://docs.google.com/document/d/1K8tFjGneScuKiudpD3HfSpAd4eOe8012jn0Q3iDxEV0/edit#">GDocs Identity Terms Intent</a> and <a href="https://github.com/status-im/contracts/blob/develop/Identity.md">Identity Readme</a></li>
+  <li>Basic contracts demo: Helps engaging developers and bug hunting.</li>
+  <li>Identity Sign-in: Actions for user creating or recovering their wallets.</li>
+  <li>Identity Usage: User may select their Identity to make tansactions in behalf of.</li>
+  <li>Identity Management: User may setup keys &amp; recovery options for its identity, confirm claims and even update the contract code.</li>
+</ul>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/ethereum/EIPs/issues/725">ERC#725</a> define identity management interface used by dapps to read Identity and manage it. Important for cross-compatibility with other dapps.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/ethereum/EIPs/issues/735">ERC#735</a> define identity claims interface used by DApps to read claims. Important for cross-compatibility with other dapps.</p>
+  </li>
+  <li>
+    <p>Idea <a href="https://github.com/status-im/ideas/pull/152">152-friends-recovery</a> define a recovery option. Important to provide a first decentralized recovery contract option that uses friends to recover.</p>
+  </li>
+</ul>
+
+<h2 id="dates">Dates</h2>
+
+<h3 id="proof-of-concept">Proof-of-concept</h3>
+
+<p>Goal Date: 2018-05-15</p>
+
+<p>Description:</p>
+<ul>
+  <li>Working contracts system</li>
+  <li>Basic UI for direct interaction with blockchain</li>
+</ul>
+
+<h3 id="minimal-viable-product">Minimal Viable Product</h3>
+
+<p>Goal Date:  2018-06-01</p>
+
+<p>Description:</p>
+<ul>
+  <li>Status Wallet enables creation, association or recovery of Identity</li>
+  <li>Status Wallet enables transactions to be executed by Identity</li>
+  <li>Identity management (basic)</li>
+</ul>
+
+<p>Testing Days required: <!-- Days required at the end of development for testing --></p>
+
+<h3 id="seamless-status-integration">Seamless Status Integration</h3>
+
+<p>Goal Date: 2018-06-15</p>
+
+<ul>
+  <li>Identity Sign-in:
+    <ul>
+      <li>Create new;</li>
+      <li>Reconfigure existing;</li>
+    </ul>
+  </li>
+  <li>Identity Usage:
+    <ul>
+      <li>Interact with other contracts in behalf of Identity;</li>
+      <li>Sign claims about others Identity.</li>
+    </ul>
+  </li>
+  <li>Identity Management
+    <ul>
+      <li>Keys: Add/Remove/Update</li>
+      <li>Accept Claims</li>
+      <li>Update of Kernel</li>
+      <li>Select a recovery contract</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<p>Status Users opt-in using an Identity to enhance interaction with decetralize systems (such as Status itself). 
+Developers start using Status Identity implementation as base.
+New users adopt Status because Identity support, which will be required for many dapps in future.</p>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<p>Fully integrated on Status App
+    - Users can create new Indeitity
+    - Users can manage their Identities
+    - Users can use (action) Identities to call contracts</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+<!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

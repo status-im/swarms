@@ -1,0 +1,113 @@
+<h1 id="gas-abstraction">Gas Abstraction</h1>
+
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 150-gas-abstraction
+Title: Gas Abstraction
+Status: Draft
+Created: 2018-02-01
+Requires: 145-identity
+Replaces: 073-economic-abstraction
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Enable Status users to pay gas fee with any token that is valueable to society. 
+Users would sign a message request to contracts which will use user’s Identity balance of selected token to refund proportional used gas to a incentivezed ETH owner to include that message in a transction.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: Ricardo Guilherme Schmidt</li>
+  <li>Contributor: Richard Ramos</li>
+  <li>Contributor: Iuri Matias</li>
+  <li>UX (Mist): Alexandre Van de Sande</li>
+  <li>UX (Status): (help needed)</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>A barrier for user adoption to blockchain through Status would be the need of holding two tokens for paying fees, ether gas for moving the <a href="https://etherscan.io/address/0x744d70fdbe2ba4cf95131626614a1763df805b9e#readContract">SNT</a> fee from user balance to decentralized service provider.</p>
+
+<p>The product solve this by emulating a gas abstraction by adding “Gas Relayer Actor” in top of smart contracts as: <a href="https://github.com/status-im/contracts/blob/73-economic-abstraction/contracts/identity/Identity.sol">Identity</a><a href="https://github.com/status-im/contracts/blob/73-economic-abstraction/contracts/identity/IdentityGasRelay.sol">GasRelay</a>, MultiSigWallet, <a href="https://github.com/status-im/contracts/blob/73-economic-abstraction/contracts/status/SNTController.sol#L82">SNTController</a> (updated from SNTPlaceHolder).</p>
+
+<ul>
+  <li>Allows SNT holder to broadcast ethereum signed messages to anyone with ETH to validate them in the GasRelay smart contracts, and offering a refund of gas used in a gas price set in SNT.</li>
+  <li>Whoever have ether could verify if the gas price worth the SNT gas price offered.</li>
+  <li>This becomes a micro trade of ETH-&gt;SNT.</li>
+  <li>Allow user to use any token they want (even ETH, or ETH stored in Identity).</li>
+</ul>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>Gas Relay node:</p>
+<ul>
+  <li>Status Destkop extension or an independent node can include messages by making automatic transactions calls to smart contracts to earn tokens being offered as gas price refund.</li>
+  <li>Configuration for tokens accepted and types of contract willing to interact with.
+Important as fundamental pivot actor.</li>
+</ul>
+
+<p>Identity Gas Relay adaptor:</p>
+<ul>
+  <li>include smart contract terms for accepting ethereum signed messages representing authorization to call by/for Identity owner offering a gas price refund for relayer.</li>
+  <li>Identity UI should allow user to choose what token it wants to use as gas price.
+Important for gas abstraction of call.</li>
+</ul>
+
+<p>SNTController Gas Relay adaptor:</p>
+<ul>
+  <li>include smart contract terms for accepting ethereum signed messages to call <code class="highlighter-rouge">IdentityGasRelayFactory</code> and for moving the tokens from there using SNT controller contract.</li>
+  <li>a “wizard” UI would make the calls to create a Identity and send user SNT to Identity (so it can be used as ether gas).
+Important for opt-in gas abstraction without ever holding ether.</li>
+</ul>
+
+<h3 id="requirements--dependancies">Requirements &amp; Dependancies</h3>
+
+<p>Idea <a href="https://github.com/status-im/ideas/pull/145">145-identity</a> is important to seamless and safe integration of gas abstraction for any type of call, so identity can become <code class="highlighter-rouge">msg.sender</code> for other contracts.</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Goal Date: 2018-05-15
+Description:</p>
+<ul>
+  <li>Users can use Identity paying gasPrice in any token.</li>
+  <li>Users can create Identity using SNTController and paying with SNT.</li>
+  <li>Users can earn tokens running a node that include other’s messages</li>
+</ul>
+
+<h4 id="identity-gas-relayidentity-ux-should-allow-user-to-choose-what-token-it-wants-to-use-as-gas-price">Identity Gas RelayIdentity UX should allow user to choose what token it wants to use as gas price.</h4>
+
+<p>Goal Date: 2018-04-20
+Description:</p>
+<ul>
+  <li>Gas Relay Node that recieve whisper messages from Identity owners,</li>
+  <li>Identity User Interface with Gas Relayed option of calls</li>
+</ul>
+
+<h4 id="snt-gas-relayer">SNT Gas Relayer</h4>
+
+<p>Goal Date: 2018-04-27
+Description:</p>
+<ul>
+  <li>Gas Relay Node implements watching messages for SNTController</li>
+  <li>User interface for creating Identity (pay gas in SNT)</li>
+  <li>Moving SNT to other address from SNTController terms (paying gas in SNT)</li>
+</ul>
+
+<h4 id="ux-integration">UX Integration</h4>
+
+<p>Goal Date: 2018-05-15
+Description:</p>
+<ul>
+  <li>User can create Identity paying in SNT.</li>
+  <li>User can select differnt tokens in gasPrice when using Identity.</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<p>Users are able to use Ethereum Virtual Machine and Status Network with only ever holding SNT.</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

@@ -1,0 +1,115 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 63-refactor-geth-packages
+Title: Refactor status-go geth packages
+Status: Done
+Created: 2017-12-20
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p><code class="highlighter-rouge">geth/</code> packages require refactoring as they are tightly coupled, hard to maintain and extend. In this idea, we would like to fix all these issues and make status-go architecture easier to work with for new core members and external contributors.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @adambabik</li>
+  <li>Contributors:
+    <ul>
+      <li>@dshulyak (20h/week)</li>
+      <li>@adriacidre</li>
+    </ul>
+  </li>
+  <li>Evaluator: @adambabik</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<p>We have a bunch of problems related to the <code class="highlighter-rouge">geth/</code> packages:</p>
+<ul>
+  <li><code class="highlighter-rouge">NodeManager</code> contains a lot of complexity, especially related to starting and stopping a node,</li>
+  <li><code class="highlighter-rouge">geth/account</code> unnecessarily depends on packages like <code class="highlighter-rouge">geth/rpc</code>,</li>
+  <li>decouple <code class="highlighter-rouge">geth/transactions</code> from <code class="highlighter-rouge">geth/account</code>,</li>
+  <li>remove huge, unnecessary interfaces,</li>
+  <li>get rid of <code class="highlighter-rouge">geth/common</code> package.</li>
+</ul>
+
+<p>In this idea, our goal is to come up with a better architecture design for these packages, removing unnecessary dependencies and huge interfaces. Overall, the whole repo will be easier to browse through for audit companies and external contributors.</p>
+
+<h3 id="product-description">Product Description</h3>
+<p>It does not add any new features from the user perspective but it’s a part of making status-go better tested, easier to extend and reason about, also by external contributors.</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+<p>All existing tests should pass. If we need to change the interface in <code class="highlighter-rouge">library.go</code>, we need to communicate that and work with status-react team to figure out the best way to do it.</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+<p>Goal Date: 2018-02-02</p>
+
+<p>Description: Minimal implementation of <code class="highlighter-rouge">Node</code> that can be started and stopped and an RPC client can be connected to it. It should be preceded with code examples how the new interface of <code class="highlighter-rouge">Node</code> will look like.</p>
+
+<h3 id="iteration-1">Iteration 1</h3>
+<p>Goal Date: 2018-02-09</p>
+
+<p>Description: The rest of the <code class="highlighter-rouge">Node</code> features is implemented.</p>
+
+<h3 id="iteration-2-accountmanager-cleanup">Iteration 2: <a href="https://github.com/status-im/status-go/pull/753">AccountManager cleanup</a></h3>
+<p>Goal Date: 2018-03-23</p>
+
+<p>Description:
+<code class="highlighter-rouge">AccountManager</code> should know nothing about Whisper or <code class="highlighter-rouge">node.NodeManager</code>, so on this iteration we will remove these dependencies.</p>
+
+<h3 id="iteration-3-transactionmanager-cleanup">Iteration 3: <a href="https://github.com/status-im/status-go/issues/772">TransactionManager cleanup</a></h3>
+<p>Goal Date: 2018-03-30</p>
+
+<p>Description:
+<code class="highlighter-rouge">TransactionManager</code> shouldn’t directly depend on <code class="highlighter-rouge">AccountManager</code> and <code class="highlighter-rouge">NodeManager</code>. In this iteration we want to remove these direct dependencies.</p>
+
+<h3 id="iteration-4-commonnodemanager-removal">Iteration 4: <a href="https://github.com/status-im/status-go/issues/779">common.NodeManager removal</a></h3>
+<p>Goal Date: 2018-03-30</p>
+
+<p>Description:
+<code class="highlighter-rouge">common.NodeManager</code> interface and all its mocks have to be removed from status-go. This interface is too large and is not useful at all.</p>
+
+<h3 id="iteration-5-gethcommon-package-removal">Iteration 5: <code class="highlighter-rouge">geth/common</code> package removal</h3>
+<p>Goal Date: 2018-04-06</p>
+
+<p>Description:
+<code class="highlighter-rouge">get/common</code> package contains everything. In this iteration, the goal is to remove it complete or at least move most of the functions to appropriate packages.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/issues/779">common.Nodemanager removal</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/issues/785">Extract lib specific code from geth/common</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/issues/795">geth/common package removal</a></li>
+</ul>
+
+<h3 id="iteration-6-simplify-nodenodemanager-api">Iteration 6: <a href="https://github.com/status-im/status-go/issues/797">Simplify <code class="highlighter-rouge">node.NodeManager</code> API</a></h3>
+<p>Goal Date: 2018-04-13</p>
+
+<p>Description:</p>
+<ol class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/pull/803">Change its name to something more appropriate as it does not manage multiple nodes</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/pull/803">Rename methods indicating there is only support for one node: <code class="highlighter-rouge">StartNode -&gt; Start</code>, <code class="highlighter-rouge">StopNode -&gt; Stop</code> etc.</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/pull/806">Unify EnsureSync on t/utils/utils.go and StatusManager</a></li>
+</ol>
+
+<h3 id="iteration-6-a-pr-in-status-react">Iteration 6: <a href="https://github.com/status-im/status-react/pull/3826">A PR in status-react</a></h3>
+<p>Goal Date: 2018-04-13</p>
+
+<p>Description:
+A PR in status-react is created with updated status-go version.</p>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<ol>
+  <li>A tree of module dependencies is hugely simplified,</li>
+  <li>All tests pass,</li>
+  <li>There are no race conditions in tests.</li>
+</ol>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+<ol>
+  <li>All iterations are done. There is no threat that they can’t be finished.</li>
+  <li>New version of status-go is merged into <code class="highlighter-rouge">status-react</code> develop branch.</li>
+</ol>
+
+<h2 id="summary-after-finish">Summary after finish</h2>
+
+<p>The first and second success metrics have been achieved. We managed to reduce dependencies between packages and get rid of <code class="highlighter-rouge">common</code> package. No change did negatively impact tests reliability and all tests pass properly. With regard to the third metric, we haven’t implemented automated race condition checks yet so it’s hard to tell but there are no race condition issues reported so far.</p>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

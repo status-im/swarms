@@ -1,0 +1,219 @@
+<h1 id="wallet-swarm">Wallet Swarm</h1>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+
+<p>The Wallet swarm focuses on the Wallet tab within Status, and related transaction actions throughout the app, such as in Chat with <code class="highlighter-rouge">/send ETH 0.5</code>.</p>
+
+<h3 id="links">Links</h3>
+
+<p><a href="https://www.pivotaltracker.com/n/projects/2231938">Pivotal Board</a></p>
+
+<p><a href="https://notes.status.im/wallet-sync">Swarm notes</a></p>
+
+<p><a href="https://notes.status.im/yJ3X0OitQkeSoSyZH0g2bw">Swarm prios</a></p>
+
+<p>Research below</p>
+
+<h3 id="problem">Problem</h3>
+
+<blockquote>
+  <p>What problem are you solving? Who are you solving this for?</p>
+</blockquote>
+
+<p>Status Wallet facilitates ethereum usage and transactions, but does not offer a compelling reason for users to download and open the app.  Our research (<a href="https://docs.google.com/presentation/d/1eJP-Hh4tN6XZREIy73GNuJP1LqGg41EvP5QpVlFZQ78/edit#slide=id.g3e1b33ca7e_2_36">July ‘18</a>, <a href="https://docs.google.com/presentation/d/11vEgAbZgXvCwiS2QdMmW3vjOBApx5y8ARXNbFLyJBuk/edit#slide=id.g3beee3ddf4_0_0">June ‘14</a>) has shown there are two main problems that prevent wallet usage:</p>
+
+<ul>
+  <li>Usability issues that prevent simple transaction and erode trust
+    <ul>
+      <li>Usability issues of our wallet specifically (e.g. how much am I sending, what is the value in fiat when sending via wallet and via chat)</li>
+      <li>Usability issues of Ethereum itself (e.g. what does it mean 5 confirmations, was it sent or now? what is gas?)</li>
+    </ul>
+  </li>
+  <li>Lack of killer features that drive adoption
+    <ul>
+      <li>Lack of a goal-driven interaction flow. E.g. buy SNT/Cryptokitty</li>
+      <li>For non crypto users; a lack of introduction or guidance. “I’ll look into that later because I don’t know what I’m doing.” E.g. what would a gentle transition from a DApp to wallet look like.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="why">Why</h3>
+
+<blockquote>
+  <p>Will solving this problem advance the goals of Status and adhere to its principles?</p>
+</blockquote>
+
+<p>Status aims to be a gateway to ethereum, and wallet and transactions are at the core of this ambition. Many aspects of the Status vision including the whitepaper depend on a functioning wallet that is secure, private, and easy to use, therefore it is important that Wallet creates a core foundation of usability and delight through best-in-class UI and compelling features.</p>
+
+<p>Furthermore, the central Wallet feature - transaction signing - is essential for dapp usage within Status , and vice versa.</p>
+
+<p>Solving usability bottlenecks and introducing killer features that give users a reason to open Status will ensure that Status drives adoption and will unblock more advanced use cases outlined in the whitepaper and beyond.</p>
+
+<h3 id="success-criteria">Success Criteria</h3>
+
+<blockquote>
+  <p>How will we know when this problem has been addressed? What are qual and quant metrics that will help evaluate?</p>
+</blockquote>
+
+<p>Success for wallet is having the best mobile user experience for transactions, is super easy to use, offers compelling features, and is the best way to easily get tokens.  A fun onboarding experience is essential to give new users something to do and people to connect with.</p>
+
+<ul>
+  <li>80%+ of UXR subjects report a positive experience when transacting</li>
+  <li>5+ organic reports of users using Status for transactions (eg tweets, sightings, etc)</li>
+  <li>3+ way for users to acquire tokens</li>
+</ul>
+
+<h2 id="communication">Communication</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">status channel</code>: <a href="https://get.status.im/chat/public/status-core-wallet">#status-core-wallet</a></li>
+  <li><code class="highlighter-rouge">sync frequency</code>: Weekly Sync</li>
+  <li>Github:
+    <ul>
+      <li>Project boards
+        <ul>
+          <li><a href="https://github.com/orgs/status-im/projects/48">Wallet epic project board</a></li>
+          <li><a href="https://github.com/orgs/status-im/projects/24">Maintenance project board</a></li>
+        </ul>
+      </li>
+      <li>Label: <a href="https://github.com/status-im/status-react/labels/wallet">wallet</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<h3 id="wallet-redesign">Wallet redesign</h3>
+
+<p>Fix usability issues and create meaningful improvements with regard to interaction patterns, feedback, labeling and copy of the current flows.
+Epic: <a href="https://github.com/status-im/status-react/issues/6921">#6921</a></p>
+
+<p>Status: implementation</p>
+
+<h4 id="research--specification">Research &amp; Specification</h4>
+
+<p>UXR already done.
+Designs based on research already done - https://www.figma.com/file/SIeZPHvrX7KUwEBW8VQct8C5/WIP_New-send-transaction?node-id=0%3A1</p>
+
+<h4 id="implementation">Implementation</h4>
+
+<p>Not fully completed - remaining PR is  https://github.com/status-im/status-react/pull/7916 + chat/app tx flow integration</p>
+
+<h3 id="custom-erc20-tokens">Custom ERC20 Tokens</h3>
+
+<p>Let users control their own wallet and add any erc20 token they possess. Currently Status only supports a limited fixed list which is manually maintained by core contributors.
+Epic: <a href="https://github.com/status-im/status-react/issues/6939">#6939</a></p>
+
+<p>Status: Specification</p>
+
+<h4 id="research--specification-1">Research &amp; Specification</h4>
+
+<p>UXR already done.
+Designs based on research already done - https://www.figma.com/file/XUehMnhyD1FGcWzvGz6SXqvh/Mobile-wallet?node-id=160%3A3954</p>
+
+<h4 id="implementation-1">Implementation</h4>
+
+<p>Not done - bountied here  https://github.com/status-im/status-react/issues/7983</p>
+
+<h3 id="functional-transactiontransfer-history">Functional Transaction/Transfer History</h3>
+
+<p>Status depends on Etherscan API to display ethereum transactions and it depends on Infura to display ERC-20 token transfers.
+Epic: <a href="https://github.com/status-im/status-react/issues/6940">#6940</a></p>
+
+<p>Status: Research</p>
+
+<h4 id="research">Research</h4>
+
+<p>No progress</p>
+
+<h4 id="specification">Specification</h4>
+
+<p>No Progress</p>
+
+<h4 id="implementation-2">Implementation</h4>
+
+<p>No progress</p>
+
+<h3 id="address-validity">Address Validity</h3>
+
+<p>Implement EIP-55
+Epic: <a href="https://github.com/status-im/status-react/issues/6941">#6941</a></p>
+
+<p>Status: Research</p>
+
+<h4 id="research-1">Research</h4>
+
+<p><code class="highlighter-rouge">(timebox 1 day)</code></p>
+
+<p>Research <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md">EIP-55</a></p>
+
+<h4 id="implementation-3">Implementation</h4>
+
+<p>Done 
+https://github.com/status-im/status-react/issues/6941</p>
+
+<h3 id="ethereum-links-and-qrs">Ethereum Links and QRs</h3>
+
+<p>Implement EIP-681 and EIP-831 to facilitate easy and standards-compliant transfers
+Status: Research</p>
+
+<h4 id="research-2">Research</h4>
+
+<p><code class="highlighter-rouge">(timebox 1 day)</code></p>
+
+<p>Research <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md">EIP-681</a> and <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-831.md">EIP-831</a></p>
+
+<h4 id="specification-1">Specification</h4>
+
+<p><code class="highlighter-rouge">(timebox 1 day)</code></p>
+
+<h4 id="implementation-4">Implementation</h4>
+
+<p>No progress</p>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<p>This effort is continuous and doesn’t have any end date or exit criteria (internal security reviews, bugfixing, refactoring, bounties, community engagement).</p>
+
+<h3 id="security">Security</h3>
+
+<p>Security champions, reviews.</p>
+
+<h3 id="bugfixing-and-refactoring">Bugfixing and refactoring</h3>
+
+<p>Standing rule to prioritize critical bugs above any other work until resolved. After the critical fix, there should be a follow up to determine how can the same type of bug be prevented from reoccurring in the future. The action taken could be a refactor, a new kind of automated/manual test case or both.</p>
+
+<h3 id="community-engagement">Community engagement</h3>
+
+<p>Communication activities in primarily in relation to implementation of relevant standard proposals and to community involvement in general.</p>
+
+<h3 id="outscopedpostponed">Outscoped/Postponed</h3>
+
+<h4 id="desktop">Desktop</h4>
+
+<p>Bring wallet to more platforms which can lead to more adoption. Wallet will have feature parity on mobile and desktop.</p>
+
+<p>Epic: <a href="https://github.com/status-im/status-react/issues/6297">#6297</a></p>
+
+<p>Status: Design</p>
+
+<h4 id="get-tokens">Get Tokens</h4>
+
+<p>Help users get tokens by means of credit, teller network, and exchange.</p>
+
+<p>Status: Research</p>
+
+<h4 id="point-of-sale">Point of Sale</h4>
+
+<p>Create a proof of concept that would help merchants use Status to transact.</p>
+
+<p>Status: Research</p>
+
+<h4 id="native-token-swaps">Native Token Swaps</h4>
+<p>Make it easy for users to swap tokens natively in chat</p>
+
+<p>Status: Research</p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

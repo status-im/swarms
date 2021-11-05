@@ -1,0 +1,133 @@
+<h1 id="ttt-swarm-proposal">TtT Swarm Proposal</h1>
+
+<h2 id="summary-and-goals">Summary and Goals</h2>
+
+<p>The Tribute to Talk swarm will deliver SNT based anti-spam mechanisms in accordance with the white paper.</p>
+
+<p>It allows individuals to monetize their time and attention by setting minimum required deposits to message them.</p>
+
+<h2 id="contributors">Contributors</h2>
+
+<ul>
+  <li>Eric</li>
+  <li>Vitaliy</li>
+  <li>Maciej</li>
+  <li>Richard</li>
+  <li>Tetiana</li>
+</ul>
+
+<p>(+ Janitor swarm)</p>
+
+<h2 id="communication">Communication</h2>
+
+<p><code class="highlighter-rouge">status channel</code>: #314-tribute-to-talk
+<code class="highlighter-rouge">sync schedule</code>: weekly, during core chat sync</p>
+
+<p><code class="highlighter-rouge">Pivotal link</code>: https://www.pivotaltracker.com/projects/2231830</p>
+
+<p><code class="highlighter-rouge">Meeting notes</code>: https://notes.status.im/weekly-chat-sync-agenda</p>
+
+<p><code class="highlighter-rouge">Research notes</code>: <a href="research.md">Research notes</a></p>
+
+<p><code class="highlighter-rouge">Contract</code>: https://github.com/status-im/contracts/blob/314-tribute-to-talk/contracts/communication/MessageTribute.sol</p>
+
+<h2 id="research">Research</h2>
+
+<p><code class="highlighter-rouge">Timebox</code>: wrap by 21/12/18</p>
+
+<p><code class="highlighter-rouge">Previous work</code>:
+An initial version of Tribute to Talk was partially developed and designed back in April/May.</p>
+
+<p>The existing smart contract documentation is <a href="https://github.com/status-im/contracts/blob/096-tribute-to-talk/TributeToTalk.md#deciding-the-outcome-of-a-chat-request">here</a>. Written by Richard Ramos (@rramos).</p>
+
+<p>The previous designs were shared in these <a href="https://github.com/orgs/status-im/projects/27">github issues</a>.</p>
+
+<p>Ongoing design exploration <a href="https://www.figma.com/file/aS1ct66VQ6V0cio7vSqS8UoG/Chat?node-id=1319%3A13403">available here</a></p>
+
+<p>Changes to the smart contract may be required in order to meet specs defined in this swarm.</p>
+
+<p><code class="highlighter-rouge">Potential user stories for MVP</code>:</p>
+<ul>
+  <li>As an influential person, I want to set a minimum required deposit to speak with me on Status.</li>
+  <li>I want to review incoming requests from people who have made deposits.</li>
+  <li>I want to read the sender’s message before accepting or ignoring their request.</li>
+  <li>I want to receive payment from the sender when I respond to their request.</li>
+  <li>I want the option to close the line of communication again afterward.</li>
+  <li>
+    <h2 id="i-want-the-option-to-waive-the-deposit-and-still-accept-the-message">I want the option to waive the deposit and still accept the message.</h2>
+  </li>
+  <li>As a fan of some influential person, I want to offer an SNT deposit in order to message that person.</li>
+  <li>I want to be notified when the person has accepted my message and sent a reply.</li>
+  <li>I want to receive my SNT back if the person does not respond to my message.</li>
+</ul>
+
+<p><code class="highlighter-rouge">Research questions</code>:</p>
+<ul>
+  <li>Is this feature comparable to any other anti-spam mechanisms? Will people understand the concept? What UX references are relevant?</li>
+  <li>What features does the current smart contract support?</li>
+  <li>Do we need to conduct an audit on the contract before launch?</li>
+  <li>Identifiy incompatibilies with other features/issues—e.g. inability to remove contacts once added, overlap with core issues, etc.</li>
+</ul>
+
+<h2 id="latest">Latest</h2>
+
+<p><strong>11/2/19</strong></p>
+<ul>
+  <li>UI bug fixes complete</li>
+  <li>Second half of UI (chat side) underway</li>
+</ul>
+
+<p><strong>1/2/19</strong></p>
+<ul>
+  <li>First version of UI is complete and design reviewed</li>
+  <li>Changes required here: https://github.com/status-im/status-react/pull/7304#issuecomment-459337181</li>
+</ul>
+
+<p><strong>7/1/19</strong>
+<em>Top line: The Tribute to Talk MVP will deliver 1:1 spam prevention. The contract will manage tribute settings only. There will be no escrow; payment will be handled through a normal SNT transaction. There are constraints that force this decision, but it’s also the simplest possible implementation.</em></p>
+
+<p>User A = Person sending tribute<br />
+User B = Person accepting/rejecting chat request</p>
+
+<p><strong>21/1/19</strong></p>
+<ul>
+  <li>Design review complete</li>
+  <li>Product spec complete</li>
+  <li>Includes contract functional requirements, migration strategy &amp; risk assessment</li>
+  <li>UI implementation in progress</li>
+  <li>Tangential—contact list w/ “remove contact” WIP</li>
+</ul>
+
+<p><strong>4/2/19</strong></p>
+<ul>
+  <li>Settings UI design reviewed
+    <ul>
+      <li>Changes required</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[Eric]
+So far we have discussed 2 different options:</p>
+<ul>
+  <li>
+    <p>contract 1 is a very simple contract that is only used as a index of tributes required to contact users. The tribute is payed with a regular transaction which is slightly better for privacy but requires A to pay before talking to B without an escrow. I don’t think there would be a need for a security audit for this one because the contract itself doesn’t handle any value.</p>
+  </li>
+  <li>
+    <p>contract 2 is more complex and acts as an escrow. B needs to accept the tribute to be paid. However this just look like an additional step in the UX flow that doesn’t really bring any guarantees because it can’t be proven that the B actually replied or provided a meaninful reply.</p>
+  </li>
+</ul>
+
+<p><a href="https://notes.status.im/SGNQNVEATuChD7xXHybyWA?edit">Continued here</a></p>
+
+<h2 id="specification">Specification</h2>
+
+<p><a href="https://github.com/status-im/swarms/blob/master/ideas/314-tribute-to-talk/specs.md">Read spec</a></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via CC0.</p>

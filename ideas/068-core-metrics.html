@@ -1,0 +1,120 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: #68-core-metrics
+Title: Core Metrics
+Status: Complete
+Created: 2018-01-10
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Determine and implement a set of user-related core performance metrics that measure the goal of driving mass-adoption of Ethereum through Status use, and do so in a way that respects users privacy.</p>
+
+<p>Project board: <a href="https://github.com/orgs/status-im/projects/14">status-im/projects/14</a></p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead &amp; PM: @chadyj</li>
+  <li>Testing &amp; Evaluation: @lukaszfryc</li>
+  <li>Contributor: @jeluard</li>
+  <li>Contributor: @adambabik</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>User-related performance metrics will help orient the team towards driving Ethereum adoption by being data-informed, and provide a way to assess if the team is making progress towards this goal.  The most important metric driving this goal is <strong>daily transacting users</strong> (DTU). In support of DTU’s there are sub-goals related to engagement, adoption, retention, and task success for the app as a whole and individual features such as wallet, chat, and Dapp’s.</p>
+
+<p>This swarm should determine the best core metrics to measure our goals and progress, then create methods to track, store and view them.</p>
+
+<p>Metric collection will be opt-in only to ensure that users privacy is respected.  Any metrics gathered will be strictly in the service of making Status better for users and never for any advertising or monetisation reasons, and be completely anonymous.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>This is not a user-facing Swarm. The product work is for Status org consumption.</p>
+
+<p>Core goals are not intended to measure for measurements sake, but to provide product insight, create feedback loops that can accelerate decision making and product development, and let us know how users are using Status at scale. After determining the metrics, the next step is collecting the metrics and establishing a baseline that future quantitative goals can be measured against.</p>
+
+<p>This draft has the start of proposed metrics that would give us deep insight into Status and Ethereum usage, and is to be revised with team feedback. Each future swarm can also pick metric(s) from this list and track them as part of their success metrics.</p>
+
+<p><strong>Goals</strong></p>
+<ul>
+  <li>Daily transacting users (DTU)</li>
+  <li>Monthly transacting users (MTU)</li>
+  <li>Daily SNT transaction volume</li>
+  <li>Monthly SNT transaction volume</li>
+  <li>Daily ETH and ERC20 token transaction volume</li>
+  <li>Monthly ETH and ERC20 token transaction volume</li>
+</ul>
+
+<p><strong>Engagement Metrics</strong>
+<em>Level of user involvement</em></p>
+<ul>
+  <li>Daily active users (DAU)</li>
+  <li>Monthly active users (MAU)</li>
+  <li>Daily messages sent</li>
+  <li>Monthly messages sent</li>
+  <li>Daily messaging users</li>
+  <li>Monthly messaging users</li>
+  <li>Daily DApp Users</li>
+  <li>Monthly DApp Users</li>
+</ul>
+
+<p><strong>Adoption Metrics</strong>
+<em>New users of a product or feature</em></p>
+<ul>
+  <li>Daily downloads</li>
+  <li>Monthly downloads</li>
+  <li>Daily signups</li>
+  <li>Monthly signups</li>
+  <li>Percentage of 1d/7d/30d users that do a transaction</li>
+  <li>Percentage of 1d/7d/30d users that send a message</li>
+  <li>Percentage of 1d/7d/30d users that open a DApp</li>
+</ul>
+
+<p><strong>Retention</strong>
+<em>the rate at which existing users are returning</em></p>
+<ul>
+  <li>Percentage of new users using Status after 1d/7d/30d/3m/6m/12m</li>
+</ul>
+
+<p>Healthy stats would show increasing DTU, engaged users across the core of the app, the widespread adoption of core features, and returning users.</p>
+
+<p>There are two main types of metric tracking available: in-app tracking and external tracking.  In-app tracking is instrumented from within the app, and will need to adhere to strict guidelines including being opt-in, honest and clear, and anonymous. External tracking can use public or available sources, such as Play/App store accounts, or the blockchain.  A complete picture will involve both in-app and external tracking.</p>
+
+<h3 id="iterations">Iterations</h3>
+
+<p><strong>Iteration 1</strong>
+<!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
+Goal Date: 2018-02-28
+Status: Complete.</p>
+
+<p>Description: Collect chat message volume as a fast an non-intrusive way to measure app engagement. This will tell us daily/monthly sent messages and we can get a sense for how app use is growing.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-go/issues/536">Collect Whisper metrics in MailServer</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-cluster/issues/36">Setup a dedicated server for Prometheus and Grafana that can handle data retention time of 30 days.</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Weekly chart of sent messages</li>
+</ul>
+
+<p><strong>Iteration 2</strong>
+Goal Date: 2018-03-30 
+Status: In Progress.</p>
+
+<p>Description: Track basic product events to start measuring engagement</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/3537">Add Mixpanel client library</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/3545">Track engagement events</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Opt-in screen during signup</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/3538">Opt-in toggle in settings</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/status-react/issues/3944">Improve opt-in screen</a></li>
+</ul>
+
+<h3 id="success-metrics">Success metrics</h3>
+
+<p>This swarm is considered successful if it empowers 4 other swarms to use core metrics to measure their OKR’s.</p>
+
+<h3 id="exit-criteria">Exit Criteria</h3>
+
+<p>When iteration 2 is complete this swarm will end. Any new metric instrumentation is to be completed by user-facing swarms that implement new screens or functionality by updating the <a href="https://github.com/status-im/status-react/blob/develop/src/status_im/utils/mixpanel_events.cljs">mixpanel_events.cljs</a> file.</p>

@@ -1,0 +1,133 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 123
+Title: Whisper Visualization
+Status: Draft
+Created: 2018-04-06
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>WebGL 3D visualization platform for Whisper and peer-to-peer processes (message propagation, peers discovery, etc), both for educational and research purposes.</p>
+
+<p><img src="https://i.imgur.com/MZElq0K.png" alt="demo1" /></p>
+
+<p><em>Note: current image doesn’t represent real Status cluster (yet) and serves only for showcasing purposes.</em></p>
+
+<p><a href="https://i.imgur.com/GAu4zte.gifv">Demo GIF</a></p>
+
+<p>The core aspect of Status messaging layer is a peer-to-peer (p2p) network of Ethereum nodes and the Whisper messaging protocol. For developers it is crucial to understand how P2P overlay network and Whisper works and build intuition about it. However, P2P networks in general are among one of the most complicated topics to study.</p>
+
+<p>The decentralized nature of those networks increase security and privacy (which is exactly the reason why they are built), but makes it incredibly hard to collect meaningful metrics, understand network topology, analyze its behaviour and create educational material. This results in a generaly poor understanding of P2P decentralized systems, and that’s exactly the problem this project aims to attack.</p>
+
+<p>Proposed visualization framework should provide a tooling for visualizing different types and scales of Ethereum network, processes that occur in network in different layers (p2p, les, whisper, etc), both collected from real data and from simulations.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: <a href="https://github.com/divan">@divan</a></li>
+  <li>Testing &amp; Evaluation:</li>
+  <li>Contributor:</li>
+  <li>Contributor:</li>
+  <li>PM:</li>
+  <li>UX:</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p><img src="https://i.imgur.com/9IajeMC.png" alt="demo2" /></p>
+
+<p><em>Note: current image doesn’t represent real Status cluster (yet) and serves only for showcasing purposes.</em></p>
+
+<p>Essentially the product is a software framework, that serves as a platform for building end-user products. One project in particular is suggested to be a showcase of the potential and a starting point for other projects – visualization of the Whisper message propagation in the Status cluster.</p>
+
+<p>Other projects that can be implemented using this framework:</p>
+
+<ul>
+  <li>real-time visual monitoring of Status cluster - visualizing nodes connectivity, CPU/memory/disk utilization, ingress/egress traffic, etc</li>
+  <li>visualizing real Status app activity by collecting opt-in metrics from Status app</li>
+  <li>researching the network heterogeneity and clusterization for Status nodes with different peers layer configurations</li>
+  <li>educational visualizations of Whisper messaging, P2P network types and their properties</li>
+</ul>
+
+<p>It’s impossible to predict all possible ideas and needs, so the framework should provide easy to use building blocks, rather than try to be an all-in-one hyper-configurable solution.</p>
+
+<p>Basically there are two important parts in any of the visualization projects:</p>
+
+<h5 id="user-interface-part-frontend">User interface part (frontend)</h5>
+
+<p>The P2P network is essentially a directed graph, and the best known approach to represent those graphs is to use force-directed graph layout. It allows human brain to reuse our intuition built on top of physics and understand graph properties intuitively. The algorithm is basically to put peers (nodes) into 3D space, assign some weight (mass) to them and apply two physical forces: <em>repelling force</em> between nodes and <em>spring force</em> between linked nodes. The forces than applied repeatedly till the system stabilze i.e. reach the minimum energy threshold.</p>
+
+<ul>
+  <li>WebGL 3D representation of p2p network and processes</li>
+  <li>UI for user interaction: controls, import/export data, restarting or stepping through simulation, etc</li>
+</ul>
+
+<h5 id="data-collection-part">Data collection part</h5>
+
+<p>Data collectors can be implemented separately once the common data exchange format is determined. Currently JSON format is used. Data can be collected or generated in many different ways:</p>
+
+<ul>
+  <li>metrics from the controlled cluster and e2e tests</li>
+  <li>metrics gathered from the Ethereum crawlers bots</li>
+  <li>message propagation simulations from P2P network simulators</li>
+  <li>empirical data based on state of the art estimation techniques (for example, BMS system described in https://arxiv.org/pdf/1801.03998.pdf)</li>
+</ul>
+
+<hr />
+
+<p>User interface part needs to be implemented in the browser, because we want to reach as many people as possible, and thus have to use web. Fortunately, most browsers got decent support of WebGL technology and even have native GPU rendering capabilities. Currently the fantastic library <a href="https://threejs.org">Three.js</a> is used – it has smooth learning curve, hides all shaders magic, provides nice API and great documentation.</p>
+
+<p>The downside of implementing this part for web is, of course, inherit limitation of web browsers in terms of supported languages – they support 0 programming languages plus Javascript. WebAssembly is not a thing yet, but we still have to implement some important calculations for this part, like physical model for the force-directed graph layout and Barne-Hut optimizations, so the suggested approach is to offload most of heavy calculation to the backend server running on the same machine, that communicates with frontend via websockets. This approach proved to be fast enough in terms of responsiveness for the set of tasks needed for this part, and allows to implement pretty complicated concurrent calculations that run natively on the user machine, and not in the browser.</p>
+
+<h5 id="data-processing-part-backend">Data processing part (backend)</h5>
+
+<p>Currently most of the code involved into data processing is written as separate web servers that talks to the frontend via websockets. Important parts are:</p>
+
+<ul>
+  <li>force-oriented graph physical model</li>
+  <li>common data format import/export code</li>
+  <li>use-case specific data processing and optimization for frontend</li>
+  <li>websocket server</li>
+</ul>
+
+<p>As we’re talking about set of tools and libraries, all data collectors and generators could be implemented as a part of backend as well, adding to the interactivity of the final product. For example, user interface can allow changing different options for the simulations or data collectors and rerun them directly from the browser.</p>
+
+<h2 id="product-details">Product Details</h2>
+
+<h4 id="help-needed">Help needed</h4>
+
+<p>The core part of this project is already written and will be opened this week. There three major focus points where brains and skills are needed:</p>
+
+<ul>
+  <li>Frontend developers: frontend part still have to be written in Javascript, so JS-ninjas are very welcome. My goal is to package current <a href="http://vanilla-js.com">Vanilla.js</a> code into something easy to work with and refactor in the future - React for example (suggestions are welcomed).</li>
+  <li>UI/UX/VR designers: as this project involves user interactivity why not make it bloody awesome? This is virtual 3D space and we can do whatever we want – change colors, shapes, invent better way of visualization of complex systems, put this into VR space, anything. Maybe you have ideas for #ArtProject and want to make physical model out of the visualization. Let’s talk.</li>
+  <li>Researchers: mainly Go developers who involved into P2P-layer, nodes discovery and Whisper protocol improvements and research. Most of the simulations can be done without visualization, but having visual model helps enormously to develop intution and stir research tools into the right direction.</li>
+  <li>WebGL/shaders ninjas: if you, by any chance, have an experience with <a href="https://en.wikipedia.org/wiki/OpenGL_Shading_Language">GLSL</a> (OpenGL Shading Language), you’re are very welcomed. Larger graphs and cooler animations will require bringing more shaders programming magic, and I will really need help here.</li>
+</ul>
+
+<h4 id="performance-considerations">Performance considerations</h4>
+
+<p>It’s important to realize that in WebGL world performance is an important player when it comes to the tradeoffs. Graphs with 10, 100, 1000 and 1000000 nodes require drastically different approaches. Static nodes vs dynamic nodes rendering should be implemented in a totally different way, so for each particular project, this should be taken into account.</p>
+
+<p>Whisper message propagation project should work relatively fast with a graphs ~1K nodes. For higher numbers more optimizations have to be made.</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+<p>This idea may be related to the <a href="https://github.com/status-im/ideas/blob/master/ideas/092-disc-v5-research.md">092 - Research Ethereum Discovery V5 Protocol</a> idea.</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+<p>Goal Date: 06-05-2018</p>
+
+<p>Description: The Whisper propagation visualization tool is implemented and documented. It should use either simulated propagation data or real data from controlled cluster. Minimal needed set of interactivity and controls is implemented (ability to choose node initiating the message sending, start multiple message sendings, etc). Code (libraries and tools) is documented and prepared to be open-sourced and used by third-party contributors.</p>
+
+<h2 id="dates">Dates</h2>
+<p>Goal Date: 06-06-2018</p>
+
+<p>Description:  First visualization project from another teams (i.e. Marketing, Community etc) or external contributors are implemented. That may be creating educational material on messaging in Whisper, researching libp2p code behaviour, visualizing Mailboxes, etc.</p>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<ol>
+  <li>There is at least three useful projects that use this framework for different goals (i.e. research, monitoring, education).</li>
+  <li>Once open-sourced, number of “Awesome” comments should be at least 10 per week.</li>
+</ol>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

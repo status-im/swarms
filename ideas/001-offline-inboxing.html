@@ -1,0 +1,193 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: DEV#001
+Title: Offline inboxing and persistent messaging
+Status: Done
+Created: 2017-10-25
+Started: 2017-11-14
+Ended: 2018-01-04
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>Make it possible for users to see messages sent to them while they were offline.</p>
+
+<h2 id="vision">Vision</h2>
+<p>No messaging app is complete without persistent messaging. Unlike servers, end users with mobile phones as endpoint go in and out of connectivity. When a user comes back online, the expectation is that they can see messages that was sent while they were gone. How can we solve this without compromising on decentralization and anonymity? There are two basic scenarios we want to solve.</p>
+
+<p>Basic user story A: User A and B are chatting. User A goes offline for a longer period of time. In the meantime, User B sends a message to A and goes offline as well. When User A opens app they see the message from B.</p>
+
+<p>Basic user story B: User A enters public chat room X. User A goes offline and people keep chatting. When User A comes back they instantly see all the missed messages in X.</p>
+
+<p>We want to make it easy to run a Whisper mail server (part of Whisper v5 API). This will archive messages and forward them to a peer upon request. You can run this yourself if you want to, but we’ll also provide default mail servers through our clusters, and make it easy for anyone to set one up. This can be paid using SNT, which aligns incentives in terms of Quality of Service.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @oskarth (20/w)</li>
+  <li>Testing &amp; Evaluation: @annadanchenko (20h)</li>
+  <li>Go Contributor: @adambabik (20h/w)</li>
+  <li>PM: @naghdy (5h/w)</li>
+  <li>Design: @denis-sharypin (30h/w)</li>
+  <li>Go Contributor: @b00ris (40h/w)</li>
+  <li>Go Contributor: @JekaMas (?)</li>
+  <li>Clojure Contributor: @trybeee (?)</li>
+</ul>
+
+<p>Squad size: 5-8 people.  Squad channel: <strong>#1-offline-inboxing</strong></p>
+
+<h3 id="update-on-time-commitments-after-mvp">Update on time commitments after MVP</h3>
+
+<ul>
+  <li>Go contributors available until Christmas, after this on retainer in background</li>
+  <li>@trybeee just joined swarm</li>
+  <li>Design, no new designs right now - on retainer for iteration 2 (MVP sketch from design POV)</li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>From a user point of view, anything that solves one or both of the user stories seems like a good start. From a 10 000 feet technical view for the initial version:</p>
+
+<ol>
+  <li>status-go: Ability to run a standalone wnode with Whisper Mail Server from the terminal</li>
+  <li>status-go: <code class="highlighter-rouge">RequestHistoricMessages</code> binding exposed that status-react can call</li>
+  <li>status-react: put these messages in their appropriate place</li>
+  <li>status-react: handshake with wnode to get it to receive messages on its behalf</li>
+</ol>
+
+<p>Side note: Exactly what amount of granularity do we want these requirements to be at? And should it be for MVP or for future iterations as well?</p>
+
+<p>Ultimate goal: Decentralized marketplace where people host and connect to wnodes/mailboxes, informed by their reputation, and pay/get compensated with SNT in a fluid fashion. Seamless end user experience in terms of reliability of offline messages showing up when they start the app.</p>
+
+<h2 id="goals--implementation-plan">Goals &amp; Implementation Plan</h2>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Initial Goal Date: 2017-11-24
+Updated Goal Date: 2017-12-08
+Completed: 2017-12-08
+Passed Full QA: TBD
+Description: Run a wnode from the command line; let A send message to B who is offline, and then A goes offline again. When B comes online it should call wnode which should reply with some payload that contains A’s message. This payload should be visible in A-B’s chat. The wnode can be hardcoded.</p>
+
+<h3 id="iteration-1---public-chat-mvp-retainer-and-laundry">Iteration 1 - Public chat, MVP retainer, and laundry</h3>
+<p>Goal Date: 22 December
+Started: 2017-11-08 (MVP end) or 2017-11-12 (retro meeting done)
+Completed: 2017-12-22 (main user story)
+Description: Main user story: User A enters public chat room X. User A goes offline and people keep chatting. When User A comes back they instantly see all the missed messages in X.</p>
+
+<p>Additionally, MVP retainer and laundry: QA of MVP complete and all MVP work merged into develop on status-react and status-go. MVP bug fixing. Basic error handling, refactoring and logging. Documentation for updating wnode-status and API calls introduced. Identify and make bounties of some nice-to-have / upcoming issues. Planning and swarm participants re-organization: likely one more Clojure dev and identify Go dev needs. Clarification on interface (enode). Specify group chat workflow and tests thereof.</p>
+
+<p>Uncertainty: Swarm availability, both w.r.t. other ideas and holidays (seems OK). Availability normal for 2 weeks: Adam 2w 22 Dec, Eugene, Boris, Dmitry, Oskar After Christmas no more Go dev necessary.</p>
+
+<h3 id="iteration-152---joe-blockchain-goes-to-town-multiple-wnodes">Iteration 1.5/2 - Joe Blockchain goes to town (multiple wnodes)</h3>
+<p>Goal Date: TBD - est. +~2w, due to holidays possibly delayed till mid January
+State: Aborted
+Completed: 2018-01-14 (very partial; read only screen under flag)
+Description: Ability to toggle between different wnodes in the app. Show basic connectivity to wnode in interface. The wnodes identifiers are hardcoded in the app. Add by enode (?). Multiple wnodes enabled for redundancy (?).</p>
+
+<p>Uncertainty: Go dev work necessary. Seems docs and options for wnode-status but other than that not. Only on retainer.</p>
+
+<h2 id="success-metrics-and-exit-criteria">Success metrics and exit criteria</h2>
+
+<p>Post-hoc: solving the two user stories above.</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+
+<h2 id="post-mortem">Post-Mortem</h2>
+
+<p>As of today (Jan 4) the swarm is closing down. There might be small things left and stuff to bounty etc, but we can take these on a an ad hoc basis. The main user stories have been solved, no major bugs found during retainer period, and it is probably time to focus on other things.</p>
+
+<p>No formal retrospective has been performed. Retrospective from ~1m ago still holds the most potent lessons: https://docs.google.com/document/d/14XZoqI0t28WD4qBKA7jnf_c99R94jSlCLwK4XpaFPvc/edit</p>
+
+<h3 id="timeline-and-focus">Timeline and focus</h3>
+<p>The idea was created on 2017-10-25, started 2017-11-14 (+20d), MVP delivered 2017-12-08 (+24d) and ended 2018-01-04 (+27d). A total of 71 days from idea conception to completion, or 51 days from idea start to completion.</p>
+
+<p>Focus: Lacking precise numbers, but a very rough estimate is 5 times 20 times8=800h (~5+-1 ppl avg active any given time, ~20h+-10h/w avg time, 8w+-2w, probably a bit less). Swarm participants ranged from 4 to 8 on a weekly basis (@adambabik @annadanchenko @b00ris @denis-sharypin @dmitryn @JekaMas @naghdy @oskarth).</p>
+
+<h3 id="main-user-stories-solved-are">Main user stories solved are</h3>
+<ol>
+  <li>
+    <p>User A and B are chatting. User A goes offline for a longer period of time. In the meantime, User B sends a message to A and goes offline as well. When User A opens app they see the message from B.</p>
+  </li>
+  <li>
+    <p>User A enters public chat room X. User A goes offline and people keep chatting. When User A comes back they instantly see all the missed messages in X. This also works for group chats.</p>
+  </li>
+</ol>
+
+<h3 id="issues-solved">Issues solved</h3>
+
+<p>https://github.com/search?q=org%3Astatus-im+label%3A1-offline-inboxing</p>
+
+<h3 id="additionally">Additionally</h3>
+<ul>
+  <li>A read only screen for changing wnode/master node has been implemented (not part of MVP scope and under flag)</li>
+</ul>
+
+<p><a href="https://user-images.githubusercontent.com/1552237/34560596-b0dcf1a8-f189-11e7-858f-3f1227541568.png">image</a></p>
+
+<ul>
+  <li>
+    <p>It’s straightforward to change wnode/master node in code (not exposed in UI or build settings)</p>
+  </li>
+  <li>
+    <p>A wnode/master node is running persistently in status-cluster</p>
+  </li>
+</ul>
+
+<p>Future work
+In future swarms there are a few that will be touched on:</p>
+
+<ul>
+  <li>Integrating push notifications into wnode/master node</li>
+  <li>Allow people to change to their own wnode/master node in UI, as well as in Desktop (might be bounty work only)</li>
+  <li>SNT payment layer for usage of wnode/masternode</li>
+</ul>
+
+<p>Finally Thanks for all your hard work these last two months, especially @adambabik @b00ris @dmitryn and @JekaMas!</p>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+
+<h2 id="resources">Resources</h2>
+<ul>
+  <li>https://github.com/ethereum/go-ethereum/wiki/Whisper-Overview#mail-server</li>
+  <li>https://github.com/ethereum/go-ethereum/tree/master/whisper/mailserver</li>
+</ul>
+
+<h2 id="appendix-archive-of-future-work">Appendix: archive of future work</h2>
+
+<p>Things that were considered but cut.</p>
+
+<h3 id="design">Design</h3>
+
+<p>Consider how to surface and solve the following challenges in our UI. wnode and mailbox used interchangeably. This list should probably be split into MVP concerns and later concerns as there is quite a lot.</p>
+
+<ul>
+  <li>How will user select and deselect a wnode?</li>
+  <li>How do we communicate more “trusted” nodes, like the ones we operate initially?</li>
+  <li>How do we communicate and quantify reputation such as uptime and reliability? Start ad hoc (upvotes? number of connected nodes? “official” Status nodes with guaranteed uptime?)</li>
+  <li>How will the cost of using node be determined? Initial setup and running costs?</li>
+  <li>What happens if we fail to connect to our mailbox? How do we communicate this in a chat?</li>
+  <li>How communicate to the sender that a message was ACKed by a mail box but not by end user?</li>
+  <li>What about if a user wants to use multiple mailboxes?</li>
+  <li>Where can a user get an overview of the mail server / contracts they are using?</li>
+  <li>How will ongoing payment signing work?</li>
+  <li>How do we communicate a certain wnode is dead or can’t be trusted for some reason?</li>
+  <li>How do we communicate capacity of a wnode to ensure quality of service?</li>
+  <li>How does a wnode operator accept or deny a request to act as mail server? How is this communicated to end user?</li>
+  <li>Initially a wnode will probably just be a CLI thing. How do we surface options like how much compensation we want? And what about when this can be run through Status Desktop? How do you decide how much capacity you have as a wnode?</li>
+</ul>
+
+<h3 id="code">Code</h3>
+
+<p>Smorgasbord of desirable features in the future. Revisit this.</p>
+
+<ul>
+  <li>Discovery of wnodes</li>
+  <li>Ability to select wnodes</li>
+  <li>Running wnodes in cluster and making it possible for others to run them</li>
+  <li>Giving feedback in chat about state of messages</li>
+  <li>Using multiple wnodes</li>
+  <li>Cryptoeconomics to incentive running of nodes</li>
+  <li>Basic reputation system to signal quality of service</li>
+</ul>
+

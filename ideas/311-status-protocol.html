@@ -1,0 +1,421 @@
+<h1 id="protocol-engineering-swarm">Protocol Engineering Swarm</h1>
+
+<h2 id="summary">Summary</h2>
+<p>This swarm will research and develop a set of open protocols that is a
+reflection of our <a href="https://our.status.im/our-principles/">our principles</a>.</p>
+
+<p>This set of protocols will as a whole enable the implementation of the Status
+whitepaper, and similar use cases, through various clients. Part of the effort
+will be about selecting existing protocols and standards, when appropriate, and
+part of it will be about developing new protocols to meet our needs.</p>
+
+<p>Initial focus is on providing an anonymous communication protocol, which is
+developed in conjunction with other teams in the Web3 / secure communication space.</p>
+
+<h2 id="goals">Goals</h2>
+
+<ol>
+  <li>
+    <p>Create a set of open protocol(s) for secure communication that reflects our
+principles.</p>
+  </li>
+  <li>
+    <p>Produce an open, independent protocol specification can be audited, tested
+independently and implemented in many languages.</p>
+  </li>
+  <li>
+    <p>Work with other teams in the Ethereum, Web3, decentralized web and secure
+communication space to ensure maximum interoperability and a high quality
+specification that other actors take seriously.</p>
+  </li>
+  <li>
+    <p>Use a layered protocol approach that is mindful and explicit about what it
+requires, what it provides, under what threat models, and with what
+trade-offs.</p>
+  </li>
+  <li>
+    <p>Enable implementation of clients to participate in the Status Network, and
+work with teams such as Status Core, to find a graceful path to implement and
+integrate the new set of protocols.</p>
+  </li>
+</ol>
+
+<h2 id="communication">Communication</h2>
+
+<p><code class="highlighter-rouge">status channel (same as swarm id)</code>:</p>
+<ul>
+  <li><a href="https://get.status.im/chat/public/status-protocol">#status-protocol</a> (currently used channel, not same as swarm id)</li>
+  <li>as well as as Riot chat https://riot.im/app/#/room/#web3-messaging:matrix.org for cross-team communication)</li>
+</ul>
+
+<p><code class="highlighter-rouge">sync frequency</code>: Weekly sync within Status (<a href="https://notes.status.im/EVxnIQeqTpquNETtdXcqNw#">meeting notes</a>); biweekly sync with Web3 Foundation, Validity Labs, Nym, Swarm, and others interesting in <em>Messaging for Web3</em>. <a href="https://github.com/status-im/messaging-pm/">Agenda/notes</a>.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<h3 id="weekly-progress-reports-and-accessible-updates">Weekly progress reports and accessible updates</h3>
+<p>The swarm will provide weekly updates on research progress, either through this
+document, Discuss posts, Town Hall, or similar medium.</p>
+
+<p>The swarm will also periodically post more accessible material to explain the
+effort, challenges and trade-offs faced.</p>
+
+<h3 id="using-a-layered-and-modular-approach">Using a layered and modular approach</h3>
+<p>This swarm will ensure the the protocols are designed in a layered and modular
+fashion. This allows subproblems to be studied and progressing in isolation, as
+well giving the ability to swap out components per layer based on needs.</p>
+
+<p>Very rough thinking right now:</p>
+<ul>
+  <li>
+    <p>Initial trust establishment (e.g. something like BQP)</p>
+  </li>
+  <li>P2P Overlay layer (e.g. something like libp2p)</li>
+  <li>Transport privacy layer (e.g. something like Loopix)</li>
+  <li>Conversational security layer (e.g. something like BTP)</li>
+  <li>
+    <p>Syncing layer (e.g. something like BSP)</p>
+  </li>
+  <li>Chat clients (public/private/group chat)</li>
+</ul>
+
+<h3 id="team-growth-and-collaboration-with-other-teams">Team growth and collaboration with other teams</h3>
+<p>This effort is about creating open specifications, so we need access to a wide
+range of specialized skill sets, as well as general consensus among community.
+Creating a protocol in isolation would likely lead to a lackluster result.</p>
+
+<p>This swarm will collaborate with Ethereum / Web3 / decentralized web / secure
+messaging teams in an attempt to re-use existing work and create protocols
+together.</p>
+
+<p>Additionally, this team will involve individuals with relevant expertise.
+Ideally individuals who have designed 1-2 open, battle-tested p2p protocols.</p>
+
+<h3 id="reflection-of-our-principles">Reflection of our principles</h3>
+
+<p>The protocol should be a <a href="https://our.status.im/tag/our-principles/">reflection</a>
+of <a href="https://our.status.im/our-principles/">our principles</a>.</p>
+
+<ul>
+  <li>
+    <p>I. Liberty - enable sovereignty of individuals with things like key
+management, as well as economic freedom, etc, by enabling transaction of funds
+and socio-economic coordination between small groups of people.</p>
+  </li>
+  <li>
+    <p>II. Censorship resistance - enable censorship resistance through things like
+pluggable transports, as well as being agnostic to the information being
+transported.</p>
+  </li>
+  <li>
+    <p>III. Security - use state-of-the-art technologies, and research new security
+methods and technologies to make strong security guarantees.</p>
+  </li>
+  <li>
+    <p>IV. Privacy - protect privacy in communication and transactions, and strive to
+provide right to total anonymity.</p>
+  </li>
+  <li>
+    <p>V. Transparency - be open about what we are doing, allow community
+contributions and be clear about trade-offs.</p>
+  </li>
+  <li>
+    <p>VI. Openness - specification is open and under a permissive license.</p>
+  </li>
+  <li>
+    <p>VII. Decentralization - p2p network, maximizing number of computers/humans who
+can control and use the protocol we are building.</p>
+  </li>
+  <li>
+    <p>VIII. Inclusivity - easy to use our protocols, as well as working towards
+interopability with other protocols, and educating users.</p>
+  </li>
+  <li>
+    <p>IX. Continuance - network should be incentivized to continue on its own.</p>
+  </li>
+  <li>
+    <p>X. Resourcefulness - work with other teams to avoid duplication of effort,
+study prior work deeply to minimize wasted and duplicate effort.</p>
+  </li>
+</ul>
+
+<h3 id="anonymous-communication-protocol-requirements">Anonymous Communication Protocol requirements</h3>
+
+<p>The purpose of an anonymous communication (AC) protocol is to ensure metadata
+isn’t leaked when messages are communicated between peers. It deals with how
+messages are transported, and not what is in them.</p>
+
+<p>This is the inital focus and work has begun together with Web3 Foundation and
+Validity Labs. Note that this list of requirements is tentative.</p>
+
+<ol>
+  <li>Sender Anonymity</li>
+  <li>Receiver Anonymity</li>
+  <li>Sender-Receiver Unlinkability</li>
+  <li>Reasonable Latency</li>
+  <li>Reasonable Bandwidth</li>
+  <li>Adaptable Anonymity</li>
+  <li>Scalable</li>
+  <li>No specialized Services</li>
+</ol>
+
+<p>Up for debate: incentives, network spam, asynchronous messaging.</p>
+
+<p>Additionally, it should be designed with mobile in mind (internet connection is
+unstable and mostly missing, CPU resources are limited, we can’t stay in
+background for a long time and we are behind very strict firewalls that makes
+it hard for NAT to pass through.)</p>
+
+<p>For more details and the latest updates,
+see <a href="https://github.com/w3f/messaging">w3f/messaging</a>.</p>
+
+<h3 id="dissemination">Dissemination</h3>
+<p>Ensure swarms working with protocols maintain a solid understanding. Includes explaining aspects that go against intuition that have design implication, such as latency, bandwidth, identity, partial graph state, etc.</p>
+
+<h2 id="budget">Budget</h2>
+
+<p>Headcount based. Small group.</p>
+
+<h2 id="team--contributors">Team / contributors</h2>
+
+<h3 id="status">Status</h3>
+
+<ul>
+  <li>Oskar</li>
+  <li>&lt;1-2 protocol engineerings&gt;</li>
+</ul>
+
+<p>Review/part-time, pending other commitments:</p>
+<ul>
+  <li>Jacek</li>
+  <li>Andrea MP</li>
+  <li>Corey</li>
+  <li>Jarrad</li>
+</ul>
+
+<h3 id="anonymous-communication-protocol">Anonymous Communication Protocol</h3>
+
+<ul>
+  <li>Web3 Foundation</li>
+  <li>Status</li>
+  <li>Validity Labs</li>
+  <li>who else?</li>
+</ul>
+
+<h2 id="scope">Scope</h2>
+<p>The above plan is ambitious and the team size is currently limited. It is thus
+likely the scope will be limited, at least initially, to ensure solid progress
+in the most fruitful direction and avoid scope creep.</p>
+
+<p>Expect the precise scope and requirements to change somewhat as we get more
+familiar with the problem domain, and depending on how research and
+collaborations with other teams go.</p>
+
+<h2 id="milestones">Milestones</h2>
+
+<p>Hard to provide with research, but rough timeline to indicate effort.</p>
+
+<h3 id="team-formation-initial-research-and-rough-project-timeline">Team formation, initial research, and rough project timeline</h3>
+
+<h4 id="november-2018---december-2018">November 2018 - December 2018</h4>
+
+<h4 id="goals-1">Goals:</h4>
+<ol>
+  <li>Study state of the art deeply
+– includes p2p and networking basic literature
+– as well as anonymity/secure p2p specific (Tor, Briar, etc)</li>
+  <li>Sketch out rough layers of concerns</li>
+  <li>Team formation and collaboration with others in the space</li>
+  <li>Do write-up of lessons learned so far
+    <ul>
+      <li>Consider presentation at TH re landscape and lessons learned</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="data-replicationsync-layer">Data replication/sync layer</h3>
+
+<h4 id="december-2018---april-2018-before-chaos-unicorn-day-if-possible">December 2018 - April 2018 (before Chaos Unicorn Day if possible!)</h4>
+
+<h4 id="goals-2">Goals</h4>
+<p>Provide ‘in-between layer’ that synchronizes data over delay-tolerant p2p
+networks.</p>
+
+<p>Core abstraction that we are currently missing in the app and will give us more
+freedom going forward, as we implement more chat-like coordination mechanisms,
+and make progress on alternative transports like PSS and AC protocol below.</p>
+
+<p>Requires secure transport layer, and provides a way for clients to sync data on
+a peer to peer basis. Thinking very much in line with what BSP provides.</p>
+
+<p>Research and specification (protobuf) thereof. Sketch for how to provide with
+existing app, and work with Core team to make it into a reality.</p>
+
+<h3 id="anonymous-communication-protoocol">Anonymous Communication Protoocol</h3>
+
+<p>More details after conversations with Web3 Foundation etc.</p>
+
+<h4 id="december-2018---no-specific-deadline-set">December 2018 - (no specific deadline set)</h4>
+
+<h4 id="goals-3">Goals</h4>
+<ul>
+  <li>Requirements and goals in more details</li>
+  <li>Workshop with relevant teams</li>
+  <li>Specification that enables theoretical analysis of properties</li>
+</ul>
+
+<p>(- Later: theoretical analysis of properties)
+(- Later: viable implementation)</p>
+
+<h3 id="tbd">TBD.</h3>
+
+<p>Other pieces here. Underspecified at the moment, but see general goals for
+direction. As research effort continues and above milestones are being achieved,
+this will be updated.</p>
+
+<h2 id="research-log">Research log</h2>
+
+<p>Data sync research log: https://discuss.status.im/t/data-sync-research-log/1100</p>
+
+<h3 id="january-14---february-24">January 14 - February 24</h3>
+<p><em>NOTE: This update was written after the fact, so just capturing most important artifacts here. Probably missings some things or inaccurate in some details.</em></p>
+
+<ol>
+  <li>Workshop in Brussels
+    <ul>
+      <li>Meeting Minutes: https://notes.status.im/G5cD0U0uS724JhYXsJanzw?both#</li>
+      <li>Outcome post: https://our.status.im/messaging-protocol-workshop-outcomes/</li>
+      <li>Presentation slides: https://notes.status.im/status-protocol-stack</li>
+      <li>Secure Messaging evaluation doc: https://notes.status.im/sDKuBAiPSH6iB9cFmEKLyg?both</li>
+    </ul>
+  </li>
+  <li>
+    <p>Town Hall presentation, overview and update (Feb 4) https://www.youtube.com/watch?v=MaIoxsu9xrs&amp;feature=youtu.be&amp;t=1410</p>
+  </li>
+  <li>Data Sync PoC continued with Whisper toy end-to-end interactive example, as well as some identified problems
+    <ul>
+      <li>https://discuss.status.im/t/data-sync-next-steps-and-considerations/1056</li>
+      <li>Demo https://www.youtube.com/watch?v=i1_j7M70_9g&amp;feature=youtu.be</li>
+      <li>Code https://github.com/status-im/status-research/tree/master/data_sync</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="january-7---january-13">January 7 - January 13</h3>
+<ol>
+  <li>Workshop prep:
+– https://www.meetup.com/Pre-FOSDEM-Messaging-Workshop/events/257926909/?isFirstPublish=true 5-7 ppl from Status
+– https://medium.com/web3foundation/messaging-for-web-3-0-building-an-anonymous-messaging-protocol-e29db72f4d19</li>
+  <li>Data Sync layer PoC1 for 1:1 chat:
+– Code: https://github.com/status-im/status-research/tree/master/data_sync
+– Protobuf: https://github.com/status-im/status-research/blob/master/data_sync/sync.proto
+– Write-up: https://notes.status.im/THYDMxSmSSiM5ASdl-syZg?both</li>
+</ol>
+
+<h3 id="december-21---january-7">December 21 - January 7</h3>
+<p>Break. Some data sync prototyping.</p>
+
+<h3 id="december-17---december-21">December 17 - December 21</h3>
+<ul>
+  <li>Workshop coordination (Brussels ~28/1-1/2, just before Fosdem)</li>
+  <li>BSP convo with Adam and start protobuf spec: https://github.com/status-im/bsp-spec</li>
+</ul>
+
+<h3 id="december-10---december-16">December 10 - December 16</h3>
+<ul>
+  <li>Posted ‘Introducing data sync layer’ https://discuss.status.im/t/introducing-a-data-sync-layer/864/2</li>
+  <li>Conversation with Open Privacy people</li>
+  <li>Anon Protocol requirement: https://github.com/w3f/messaging/issues/18</li>
+</ul>
+
+<h3 id="december-3---december-9">December 3 - December 9</h3>
+<ul>
+  <li>Looking into distributed/replicated state (BSP, protobuf)</li>
+  <li>Swarm proposal with rough milestones, clear separation and problem statements, 1 milestone</li>
+  <li>Half week due to ETH SG</li>
+</ul>
+
+<h3 id="november-26---december-2">November 26 - December 2</h3>
+<ul>
+  <li>Started awesome secure messaging GH repo: https://github.com/status-im/awesome-secure-messaging</li>
+  <li>Looking into distributed state / async messaging, some mixnetwork basics to understand how differ design-wise</li>
+  <li>Working with W3F, trying to setup time for workshop</li>
+  <li>Also separate Whisper spec effort ongoing</li>
+</ul>
+
+<h3 id="november-19---november-25">November 19 - November 25</h3>
+<ol>
+  <li>Sketch out requirements doc for anonymous communication protocol</li>
+  <li>Talk with Web3 Foundation and Validity Labs</li>
+  <li>Joint initiative started <a href="https://github.com/w3f/messaging">here</a></li>
+</ol>
+
+<p>See here for more details:
+https://discuss.status.im/t/protocol-anonymous-communication-requirements-and-brief-update/792</p>
+
+<h3 id="november-5---november-18">November 5 - November 18</h3>
+<ol>
+  <li>Initial rough proposal based on discussion at Devcon</li>
+  <li>Initial early research orientiation</li>
+  <li>Initial team scoping</li>
+</ol>
+
+<p>See here for more details: https://discuss.status.im/t/hello-protocol-progress-since-prague/736</p>
+
+<h2 id="phases">Phases</h2>
+
+<h3 id="research">Research</h3>
+<p>(required) 
+<code class="highlighter-rouge">timebox research (approx)</code> See milestones above. Each milestone can be seen as a way a Research&gt;Spec&gt;Implementation&gt;Maintenance cycle.</p>
+
+<p>(optional)
+<code class="highlighter-rouge">eips</code>, <code class="highlighter-rouge">competitors</code>, <code class="highlighter-rouge">existing research</code>, <code class="highlighter-rouge">wireframes</code>, <code class="highlighter-rouge">spike (PoC)</code></p>
+
+<h3 id="specification">Specification</h3>
+
+<blockquote>
+  <p>do after <code class="highlighter-rouge">Research</code></p>
+</blockquote>
+
+<p>(required)
+<code class="highlighter-rouge">timebox specification (approx)</code></p>
+
+<p>WIP can be found https://github.com/status-im/status-research/blob/master/data_sync/sync.proto as well as semantics which are, currently, essentially https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BSP.md</p>
+
+<p>(optional)
+<code class="highlighter-rouge">user stories</code>, <code class="highlighter-rouge">architecture</code>, <code class="highlighter-rouge">designs</code>, <code class="highlighter-rouge">PoC</code></p>
+
+<h3 id="implementation-later">Implementation (LATER)</h3>
+
+<p>(required)
+<code class="highlighter-rouge">timebox implementation (approx)</code></p>
+
+<blockquote>
+  <p>do after <code class="highlighter-rouge">Specification</code></p>
+</blockquote>
+
+<blockquote>
+  <p>All swarm contributors should test and break the implementation, especially developers</p>
+</blockquote>
+
+<p>(required)
+<code class="highlighter-rouge">document progress</code></p>
+
+<p>(optional)
+<code class="highlighter-rouge">townhall demo</code></p>
+
+<h3 id="maintenance-later">Maintenance (LATER)</h3>
+
+<p><code class="highlighter-rouge">lead-contributor</code>,<code class="highlighter-rouge">post-mortems</code></p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://github.com/status-im/awesome-secure-messaging">Awesome Secure Messaging</a></li>
+  <li><a href="https://get.status.im/chat/public/status-protocol">Status Protocol / Swarm Chat</a></li>
+  <li><a href="https://riot.im/app/#/room/#web3-messaging:matrix.org">Riot / Web3 Messaging Chat</a></li>
+  <li><a href="https://github.com/w3f/messaging">Anonymous Communication Protocol</a></li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Waived, CC0.</p>

@@ -1,0 +1,67 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 127
+Title: Improve OpenBounty Testing and make it easy to contribute
+Status: In Progress
+Created: 2018-04-02
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<ul>
+  <li>make QA process in SOB team easy to understand and support;</li>
+  <li>in order  to reduce time spent on regression testing automate main use cases;</li>
+</ul>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor:@churik</li>
+  <li>Testing &amp; Evaluation: @annadanchenko</li>
+  <li>Contributor: @asemiankevich</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<p>Full and transparent QA process in Status Open Bounty team will help to involve new people into the testing process more quickly (if needed) and provide developers with more info about what was tested in particular PR or in <code class="highlighter-rouge">develop</code> branch. Ideally process should be integrated with TestRail, but initially, a smoke checklist should be defined and then automated.</p>
+
+<p>All regression test cases should be automated eventually in order to reduce time for SOB testing and to find issues faster.
+In future would be nice to integrate GitHub pull requests with automation testing thus after PR will be built and deployed,  it will trigger end-to-end tests and publish test results in PR comment.
+Hence this idea is a placeholder for current and future iterations of improving QA process in SOB team.</p>
+
+<h2 id="iterations">Iterations</h2>
+
+<h3 id="iteration-1---2018-04-30">Iteration 1 - <code class="highlighter-rouge">2018-04-30</code></h3>
+
+<h4 id="documentation">Documentation</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Tutorial video or docs about QA process in SOB team</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Basic use cases (smoke checklist) are defined in TestRail
+    <h4 id="involvement">Involvement</h4>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />one more QA can test SOB
+    <h4 id="automation">Automation</h4>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />automate PR creating, new claim check in <code class="highlighter-rouge">Activity</code> feed</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />define function for PR merging, <code class="highlighter-rouge">Manage Payouts</code> check</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />all tests are running successfully in <a href="https://jenkins.status.im/job/end-to-end-tests/job/sob-end-to-end-tests/">Jenkins</a></li>
+</ul>
+
+<h3 id="iteration-2-wip-can-be-modified---2018-05-30">Iteration 2 (WIP, can be modified) - <code class="highlighter-rouge">2018-05-30</code></h3>
+
+<h4 id="automation-1-full-test-for-sob-which-contains-all-bounty-stages">Automation (1 full test for SOB, which contains all bounty stages)</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />define function for SNT transfer</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />define function for signing transaction and payout confirmation</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />1 full end-to-end test is running successfully in <a href="https://jenkins.status.im/job/end-to-end-tests/job/sob-end-to-end-tests/">Jenkins</a></li>
+</ul>
+
+<h2 id="exit-criteria">Exit Criteria</h2>
+<ul>
+  <li>The smoke checklist is fully automated and autotests are running through each PR which comes to <code class="highlighter-rouge">To test</code> column</li>
+  <li>Test artifacts (screenshots, log etc.) are integrated with GitHub and put to PR comments</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<p>This idea should affect the following:</p>
+<ul>
+  <li>Reduced timeframe for testing</li>
+  <li>Speed up feedback provided on PRs</li>
+</ul>

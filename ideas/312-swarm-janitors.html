@@ -1,0 +1,119 @@
+<h1 id="swarm-proposal">Swarm proposal</h1>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+<p>The Status Janitors oversee the delivery and completion of the <a href="https://status.im/whitepaper.pdf">Status white paper</a> by the end of Q1, with a hard deadline of the end of Q2 2019.</p>
+
+<h2 id="communication">Communication</h2>
+<p>(required)
+<code class="highlighter-rouge">status channel (same as swarm id)</code>: <a href="https://get.status.im/chat/public/312-janitors">#312-janitors</a>
+<code class="highlighter-rouge">sync frequency</code>: Weekly Sync, Monday 10am UTC</p>
+
+<p>Meeting notes: https://notes.status.im/384OqZPUR1-viP7l2Fxeew?edit</p>
+
+<h2 id="research">Research</h2>
+<p>Completion by the end of January, 2019.</p>
+
+<p>Goals of Specifications:</p>
+<ul>
+  <li><strong>Document our way of working</strong></li>
+  <li>Swarm Framework</li>
+  <li>Define critical path for completing the swarm goal
+    <ul>
+      <li>SNT utility swarms</li>
+      <li>Identify essential non-SNT swarms (e.g. onboarding, product teams)</li>
+    </ul>
+  </li>
+  <li>Report organisational progress regularly during Town Hall</li>
+  <li>Regular check-ins with swarms</li>
+</ul>
+
+<p><em>Unknowns</em></p>
+<ul>
+  <li>Security audit timing
+    <ul>
+      <li>[NN] What do we want to audit? Our entire codebase? status-go and our smart contracts only? status-react? DApps should probably have their own securit audit (TN and DAO)</li>
+    </ul>
+  </li>
+  <li>Launch (i.e. public app store) release scope
+    <ul>
+      <li>[NN] Can be determined once we see the critical path</li>
+      <li>[OT] Checking with Corey as well</li>
+    </ul>
+  </li>
+  <li>Software for process management
+    <ul>
+      <li>Resource allocation to get swarm cost</li>
+      <li>Global view of state</li>
+      <li>Critical path</li>
+      <li>Monte Carlo simulations</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="specification">Specification</h2>
+
+<p>TODO: Update based on research phase.</p>
+
+<p><strong>Timeline</strong> 15th Jan to complete specifications of all &gt; P2 features below.
+<strong>Swarm Framework</strong>: https://github.com/status-im/swarms
+<strong>SNT Utility Swarms</strong>:</p>
+<ul>
+  <li>Teller Network [P0] (Iuri and co + Wallet for hooks)</li>
+  <li>Tribute to Talk [P0] (Chat swarm)
+    <ul>
+      <li>Anti-spam [P2]</li>
+    </ul>
+  </li>
+  <li>Sticker Market [P0] (Extensions)</li>
+  <li>Network Incentivisation [P1] (Core)
+– [OT] With this, do we mean a possibly half-baked solution assuming the existing protocol? One concern would be if we change things around later on, but we can also provide this and clarify it isn’t great and will likely be replaced. It depends on how much weight we put on ticking off boxes in whitepaper.</li>
+  <li>DApp store / Discover [P1] (Andy/DevRel)</li>
+  <li>User acquisition engine [P2]</li>
+  <li>Web of Trust / Trustlines [P3]</li>
+</ul>
+
+<p>– Get legal guidance on what is acceptable for completion of the White Paper –</p>
+
+<p><strong>Essential Swarms</strong>:</p>
+<ol>
+  <li>DAO (Iuri and co)</li>
+  <li>Onboarding/Patient Zero/Polish (Core/Relevant teams)</li>
+  <li>Status Protocol (Oskar and co)</li>
+</ol>
+
+<p><strong>Team Structures</strong></p>
+<ul>
+  <li>Core (Igor)</li>
+  <li>Chat (Eric)</li>
+  <li>Wallet (Goran)</li>
+  <li>DApp browser (Julien)</li>
+  <li>Desktop (?)</li>
+  <li>Keycard (Guy-Louis)</li>
+</ul>
+
+<h2 id="implementation">Implementation</h2>
+<p><strong>Timeline</strong>:</p>
+<ul>
+  <li>Soft deadline - EOQ1 2019</li>
+  <li>Hard deadline - EOQ2 2019</li>
+</ul>
+
+<blockquote>
+  <p>All swarm contributors should test and break the implementation, especially developers</p>
+</blockquote>
+
+<p>For above swarms to be in research phase: https://github.com/status-im/swarms/issues/338</p>
+
+<p>(required)
+<code class="highlighter-rouge">document progress</code></p>
+
+<p>(optional)
+<code class="highlighter-rouge">townhall demo</code></p>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<p><code class="highlighter-rouge">lead-contributor</code>,<code class="highlighter-rouge">post-mortems</code></p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

@@ -1,0 +1,249 @@
+<h2 id="preamble">Preamble</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 307-breaking-whisper
+Title: SITG Experiment #2: Breaking Whisper
+Status: Draft
+Created: 2018-09-24
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>1) Understanding the limits of whisper (with and without optimizations)</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @corpetty</li>
+  <li>Commited Contributors:</li>
+  <li>Suggested Contributors (??):
+    <ul>
+      <li>Ivan: @divan</li>
+      <li>Jakub: @jacob</li>
+      <li>Jacek: @arnetheduck</li>
+      <li>Mark: @easye</li>
+      <li>Adam: @adamb</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+<p>Approach finding the limits of whisper from a rigorous academic approach.  See <a href="https://hackmd.io/B-W4T1SzSgCAbYS2CfoIPg">this</a> for details.  We will be using the Skin In The Game (SITG) model for incentivizing the work here.  See <a href="https://hackmd.io/eqS67u1QSfmZQ3IsgywFkQ">this</a> for more details on SITG.</p>
+
+<h3 id="description">Description</h3>
+<p>The concept is simple: We use whisper as a fundamental backbone to Status’ communication, but we don’t know how much of a load that backbone can support.  Since this information does not exist, and there doesn’t seem to be other people in the community focused on providing it, we must do it ourselves.</p>
+
+<p>This endeavor outlines the process of systematically and rigorously evaluating the limitations, strengths, and weaknesses of Whisper as a communications protocol.  It is then planned to use the results of this study to reason about future improvements of whisper and their prioritization, as well as what whisper’s long term role within Status will be.</p>
+
+<p>In an attempt to streamline and incentivize this process, as well as experiment with primitives of a DAO, we will be encapsulating this project with the SITG experiments, which are outlined in the above HackMD docs.</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+<ul>
+  <li>Whisper Simulator and metrics</li>
+</ul>
+
+<h2 id="milestones"><a href="#milestones">Milestones</a></h2>
+<h3 id="milestone-1-simulation-engine-completion-and-metrics-definition">Milestone 1: Simulation engine completion and metrics definition.</h3>
+<p>Goal Date: 2018-
+Description:</p>
+<ul>
+  <li>Completion of <a href="https://github.com/status-im/whispervis">whispervis</a> and the required stats as laid out in <a href="##Overview">Overview</a> HackMD doc, which are repeated here as follows:
+    <ul>
+      <li>test capacity as</li>
+      <li>number of nodes</li>
+      <li>number of messages/sec
+        <ul>
+          <li>poisson distribution</li>
+        </ul>
+      </li>
+      <li>number of connections</li>
+    </ul>
+  </li>
+  <li>a given message $m_i$ has:
+    <ul>
+      <li>size of message, $m_{s,i}$
+        <ul>
+          <li>poisson distribution</li>
+        </ul>
+      </li>
+      <li>proof of work, $m_{pow, i}$</li>
+      <li>ttl, $m_{ttl,i}$</li>
+    </ul>
+  </li>
+  <li>a given node, $node$, has:
+    <ul>
+      <li>messages/sec rate, $node_{v,i}$
+        <ul>
+          <li>poisson distribution</li>
+        </ul>
+      </li>
+      <li>number of peers, $node_{num_p,i}$
+        <ul>
+          <li>poisson distribution
+            <ul>
+              <li>reputation per peer link (spam)
+                <ul>
+                  <li>dynamic based on devp2p</li>
+                  <li>which means it can move within a given distribution</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>topic bloom filter, $node_{b,i} \exists [0,1]$</li>
+    </ul>
+  </li>
+  <li>The simulation aspect is not as important as the ability to run multiple tests with different parameters changed in a quick manner</li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<p>Contributors:</p>
+<ul>
+  <li>@divan ??</li>
+  <li>@adamb ??</li>
+  <li>@arnetheduck ??</li>
+</ul>
+
+<h3 id="milestone-2-perform-theoretical-tests">Milestone 2: Perform theoretical tests.</h3>
+<p>Goal Date: 2018-
+Description:</p>
+<ul>
+  <li>Systematically perform and record all tests with regards to relevant parameter changes</li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<p>Contributors:</p>
+<ul>
+  <li>@corpetty</li>
+</ul>
+
+<h3 id="milestone-3-results-aggregation-and-data-analysis">Milestone 3: Results aggregation and data analysis.</h3>
+<p>Goal Date: 2018-
+Description:</p>
+<ul>
+  <li>Gather and scrub all data for uniformity</li>
+  <li>Plot relevant plots as per HackMD doc in Product Overview</li>
+  <li>Decide which results are best ported to experimental model
+    <ul>
+      <li>practicality</li>
+      <li>value of information for comparison</li>
+    </ul>
+  </li>
+  <li>This should provide preliminary data on theoretical limit of naive whisper scaling
+    <ul>
+      <li>Publish a blog about current progress, current insights, proposed next steps</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<p>Contributors:</p>
+<ul>
+  <li>@easye ??</li>
+</ul>
+
+<h3 id="milestone-4-beta-fleet-preparation">Milestone 4: Beta fleet preparation.</h3>
+<p>Goal Date: 2018-
+Description:</p>
+<ul>
+  <li>Complete description of cluster setup specifications</li>
+  <li>Make sure we are tracking the same metrics on the cluster as the theoretical model</li>
+  <li>Note typical usage / remove standard usage</li>
+  <li>Development of methodology for stress testing Beta fleet in the similar manner as Theoretical model.</li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<p>Contributors:</p>
+<ul>
+  <li>@jacob ??</li>
+</ul>
+
+<h3 id="milestone-5-perform-beta-fleet-stress-test">Milestone 5: Perform beta fleet stress test.</h3>
+<p>Goal Date: 2018-</p>
+<ul>
+  <li>Systematically apply methodology from previous milestone to actual experimental cluster</li>
+  <li>Collect and store relevent performance metrics</li>
+  <li>Publish a blog about initial experimental results and thoughts</li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<h3 id="milestone-6-comparison-analysis">Milestone 6: Comparison Analysis</h3>
+<p>Goal Date: 2018-</p>
+<ul>
+  <li>Compare theoretical vs experimental tests data</li>
+  <li>Plot and create indicator of how accurate theory is to experiment</li>
+  <li>brainstorm on
+    <ul>
+      <li>problems with theoretical model and experimental setup</li>
+      <li>improvements with communication scaling and their implementation details with experimental/theoretical frameworks</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<p>Contributors:</p>
+<ul>
+  <li>@corpetty</li>
+  <li>@jacek ??</li>
+</ul>
+
+<h3 id="milestone-7-paper-write-up-and-publish">Milestone 7: Paper write-up and publish</h3>
+<p>Goal Date: 2018-</p>
+<ul>
+  <li>Write up the entire process / analysis / results / and conclusions for ourselves and the public.</li>
+  <li>Portal for community feedback</li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<p>Contributors:</p>
+<ul>
+  <li>Someone from peopleops for portal ??</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<ul>
+  <li>Compeleted paper on whisper scaling, both theoretical and experimental</li>
+  <li>Enough information to make a case on how Status uses Whisper, what userbase / message load it breaks at, and what improvements to test to judge viability of Whisper in the future</li>
+</ul>
+
+<p>Milestone Manager: TBD
+Milestone Reviewer: TBD
+Recipient: TBD</p>
+
+<p>Contributors:</p>
+<ul>
+  <li>@easye ??</li>
+</ul>
+
+<h2 id="future-iterations">Future Iterations</h2>
+<ul>
+  <li>Implementation of said scaling improvements</li>
+  <li>Incorporation of other protocols into the simulator
+    <ul>
+      <li>pss, etc</li>
+    </ul>
+  </li>
+  <li>Clear roadmap on what a scaling study looks like for future improvements / other protocols</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Legend:
+?? - suggested contributor
+</code></pre></div></div>

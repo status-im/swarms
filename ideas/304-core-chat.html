@@ -1,0 +1,128 @@
+<h1 id="chat-swarm-proposal">Chat Swarm Proposal</h1>
+
+<h2 id="summary-and-goals">Summary and Goals</h2>
+
+<p>The Core Chat team is going to be primarily responsible in Q12019 for building the P0 SNT Utility feature Tribute to Talk.</p>
+
+<p>This swarm is also responsbile for maintaining and improving the overall chat experience.</p>
+
+<p>Any capacity leftover from TtT tasks will be dedicated to essential chat features or fixes.</p>
+
+<h2 id="contributors">Contributors</h2>
+
+<ul>
+  <li>Eric</li>
+  <li>Vitaliy</li>
+  <li>Tetiana</li>
+  <li>Maciej</li>
+</ul>
+
+<p>(+ Janitor swarm)</p>
+
+<h2 id="communication">Communication</h2>
+
+<p><code class="highlighter-rouge">Status channel</code>: #status-core-chat</p>
+
+<p><code class="highlighter-rouge">Sync schedule</code>: currently twice weekly</p>
+
+<p><code class="highlighter-rouge">Meeting notes</code>: https://notes.status.im/weekly-chat-sync-agenda</p>
+
+<p><code class="highlighter-rouge">Epic issues board</code>: https://github.com/orgs/status-im/projects/49</p>
+
+<p><code class="highlighter-rouge">Small issues board</code>: https://github.com/orgs/status-im/projects/21</p>
+
+<p><code class="highlighter-rouge">Pivotal board</code>: https://www.pivotaltracker.com/n/projects/2231830</p>
+
+<h2 id="research">Research</h2>
+
+<h3 id="phase-1">Phase 1</h3>
+
+<p><code class="highlighter-rouge">Timebox</code>: Complete by 19/12/18</p>
+
+<p><code class="highlighter-rouge">Objective</code>: Define high priority items for chat, outside of Tribute to Talk and independent of current board.</p>
+
+<p><code class="highlighter-rouge">Issues</code>:</p>
+
+<h4 id="hot-potato">Hot Potato</h4>
+
+<ul>
+  <li>Tribute To Talk</li>
+</ul>
+
+<h4 id="p0">P0</h4>
+
+<ul>
+  <li>Use of ENS names in chat/for contact resolution* (stateofus.eth only) - <a href="https://github.com/status-im/status-react/issues/7114">GH issue</a></li>
+  <li>Improve/reduce “fetching messages” appearance* - <a href="https://github.com/status-im/status-react/issues/5371">GH issue</a></li>
+  <li>Send SNT for a message (Reddit gold) / emoji reactions - <a href="https://github.com/status-im/status-react/issues/7118#event-2030637569">GH issue</a></li>
+  <li>Mute and/or block users* – [Rachel: I think this is P0][Hester: Agreed]</li>
+  <li>Send images/files*—discuss with browser team, no file browsing yet - <a href="https://github.com/status-im/status-react/issues/7120#event-2030639061">GH issue</a></li>
+  <li>Clear/fix 9+ notifications badge*—<em>already fixed?</em> [Rachel: I noticed that 9+ badge is still not clearing from public chats on last nightly—I open, scroll, navigate away, repeat, and still see 9+ new messages]</li>
+</ul>
+
+<h4 id="p1">P1</h4>
+
+<ul>
+  <li>Public chat preview and/or redesign of join public chat screen to look less like search bar and results. [Hester - from September testing in Berlin]</li>
+  <li>Message drafts* (unclear about this) [Hester: yes please! This impacts perception of reliability IMO. If I leave the app while typing a message (e.g. to copy a link), I want to come back to the same message. This issue relates to logout and password saving, but should be P0 IMO]</li>
+  <li>@ mentions and notifications* - <a href="https://github.com/status-im/status-react/issues/7117#event-2030636257">GH issue</a> [Rachel: I’m not sure this is so important with less focus on desktop][Hester: Agreed]</li>
+  <li>Mark all as read - <a href="https://github.com/status-im/status-react/issues/7119#event-2030637871">GH issue</a> [Rachel: I think this is p1 or p2] [Hester: Agreed; would swap with Clear/fix 9+ notifications badge. Seems the root of this requirement]</li>
+  <li>Group chat push notifications</li>
+</ul>
+
+<h4 id="unprioritised">Unprioritised</h4>
+
+<ul>
+  <li>Omnibar to…* [Hester: not sure what is meant with Omnibar, therefore can’t judge if it’s the right approach to offer search chat and add user.]
+    <ul>
+      <li>Search chats</li>
+      <li>Add user</li>
+    </ul>
+  </li>
+  <li>Rethink “seen”* [Hester: investigate how ‘received’ translates; more accurate]</li>
+  <li>Star, snooze, mark as unread, etc.</li>
+  <li>Notification settings</li>
+  <li>Bring back contact list?*</li>
+  <li>Allow messaging to self* (research required)</li>
+  <li>In-app notifications (e.g. receive message notification while in wallet view)?</li>
+  <li>Improve delivery failure messages*</li>
+  <li>Link previews*</li>
+  <li>Refresh chat*</li>
+  <li>Translate message button*</li>
+  <li>Architecture documentation*</li>
+  <li>Better markdown support*</li>
+  <li>Threads*?</li>
+  <li>Deeplinking to messages*</li>
+  <li>Windows platform compatibility</li>
+  <li>Priority inbox / messenger browser</li>
+  <li>[Hester: ‘Notification bundle’ seems worthwhile adding, if not captured yet. i.e. it’s impossible to see whether the 4 Status notifications are from the same conversation or not]</li>
+</ul>
+
+<p><code class="highlighter-rouge">Outcome</code>: TTT and 7 other epic issues have been picked from the list</p>
+<ul>
+  <li>MVP1 TTT https://github.com/orgs/status-im/projects/49#card-15834094</li>
+  <li>MVP2 ens username in chat https://github.com/orgs/status-im/projects/49#card-15833208</li>
+  <li>MVP3 Fetching messages progress bar (DONE) https://github.com/orgs/status-im/projects/49#card-15833629</li>
+  <li>MVP4 Block user https://github.com/orgs/status-im/projects/49#card-15962930</li>
+  <li>MVP5 SNT and emojis reactions https://github.com/orgs/status-im/projects/49#card-15833648</li>
+  <li>MVP6 Mark all as read https://github.com/orgs/status-im/projects/49#card-15833681</li>
+  <li>MVP7 Mentions https://github.com/orgs/status-im/projects/49#card-15833631</li>
+  <li>MVP8 Send images (as extension) https://github.com/orgs/status-im/projects/49#card-15833961</li>
+</ul>
+
+<h3 id="phase-2">Phase 2</h3>
+
+<p><code class="highlighter-rouge">Timebox</code>: Complete by 10/01/19</p>
+
+<p><code class="highlighter-rouge">Objective</code>: Timebox high priority issues. During that phase developpers will experiment with each high priority issue and estimate the time required for each.</p>
+
+<h2 id="specification">Specification</h2>
+
+<h2 id="implementation">Implementation</h2>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via CC0.</p>
+

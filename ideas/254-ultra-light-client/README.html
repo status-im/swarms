@@ -1,0 +1,97 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 254-ultra-light-client
+Title: Integration of ULC in Status
+Status: Draft
+Created: 2018-05-02
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Current LES is not yet optimized for ultra-light devices like mobile phones. So in the first step introduce
+the ULC addressing this kind of clients.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @b00ris</li>
+  <li>Testing &amp; Evaluation: TBD</li>
+  <li>Contributor: @jeka</li>
+  <li>Contributor: @themue</li>
+  <li>PM: @zsfelfoldi (external)</li>
+  <li>UX (if relevant):</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>Current LES is not optimized for usage on mobile phones. So Status is using Infura with all its assets and
+drawbacks. ULC is addressing ultra-light clients and distribution without dependency to central providers.
+Instead a network of trusted LES nodes acts as counterpart for the protocol.</p>
+
+<p>So Status is supporting the development and testing of ULC to accelerate integration into <code class="highlighter-rouge">go-ethereum</code> as
+well as into Status itself.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<ul>
+  <li>Research of ULC design</li>
+  <li>Definition and implementation of ULC</li>
+  <li>Integrate ULC in <code class="highlighter-rouge">statusd</code> and the <code class="highlighter-rouge">lib</code></li>
+  <li>Documentation</li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Goal Date: 2018-07-02
+Working board: https://github.com/status-im/go-ethereum/projects/5</p>
+
+<p>Description:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />New Ultra Light Client mode is added to patched LES</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Integrate ULC with <code class="highlighter-rouge">status-go</code> with Status nodes as trusted nodes</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Collect metrics (CPU, mem, disk, network I/O) when starting with a branch new install and after 1h of inactivity</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Keep battery and network consumption at least as low as today with Infura</li>
+</ul>
+
+<h3 id="iteration-2018-05-21---2018-06-04">Iteration 2018-05-21 - 2018-06-04</h3>
+
+<p>Goal Date: 2018-06-04</p>
+
+<p>Description:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Fix <a href="https://github.com/status-im/go-ethereum/issues/51">downloader N/M validation</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Fix <a href="https://github.com/status-im/go-ethereum/issues/55">announce type on handshake</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://github.com/status-im/go-ethereum/issues/52">ULC config refactoring</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />PR to <code class="highlighter-rouge">go-ethereum</code></li>
+</ul>
+
+<h3 id="iteration-2018-06-04---2018-06-18">Iteration 2018-06-04 - 2018-06-18</h3>
+
+<p>Goal Date: 2018-06-18</p>
+
+<p>Description:
+<a href="https://github.com/status-im/go-ethereum/milestone/1">ULC milestone 2018-06-04</a></p>
+
+<h3 id="iteration-2018-06-18---2018-07-02">Iteration 2018-06-18 - 2018-07-02</h3>
+
+<p>Goal Date: 2018-07-02</p>
+
+<p>Description:
+<a href="https://github.com/status-im/go-ethereum/milestone/2">ULC milestone 2018-06-18</a></p>
+
+<h2 id="artifacts">Artifacts</h2>
+
+<ul>
+  <li>None</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<p>LES of <code class="highlighter-rouge">go-ethereum</code> is extended to use ULC with a similar or better use of bandwidth and CPU as Infura.</p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

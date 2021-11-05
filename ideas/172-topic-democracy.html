@@ -1,0 +1,99 @@
+<h1 id="swarm-proposal">Swarm proposal</h1>
+
+<p>A democracy where you can specify delegate for carbon-voting proposals with specific multilevel governance delegation topics, or fallback to default delegate if none set.</p>
+
+<h2 id="communication">Communication</h2>
+<p><code class="highlighter-rouge">status channel</code>: <a href="https://get.status.im/chat/public/172-topic-democracy">#172-topic-democracy</a>
+<code class="highlighter-rouge">sync frequency</code>: Weekly Sync</p>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+
+<p>This product intend replace authority centralized control for contracts with a democracy based on a token.
+Developers would be able to spawn democracy contracts to take decisions on the control of contracts used in the Dapps they are developing.<br />
+The product would enhance security and continuance of this subsystems as the control would be up to token holders.</p>
+
+<p>For a democracy where every member understands basic about every subject required for senstive actions inside the network is utopic. 
+Every subsystem decisions would be democratic for the users of the platform, because a optional voting capability would be given to token owners, where they could set their delegate, or vote by themselfs.</p>
+
+<p>Users wouldn’t have to set specific delegates for each topic, they would be able to set their trusted in a root topic, which would be make that delegate claim the influence at any sub level which don’t have a specialized delegate set. 
+This relationship between child-parent creates a trust network, which is a common set of trust nominations by users in a network.</p>
+
+<p>When users don’t vote and don’t delegate, their influence might be delegated to a default delegate, if that specific delegation have a default.
+The default delegate will be defined by the developer of the governed sub system, as they usually are the most understanded in the issue, or issues in general, regarding their subsystem.</p>
+
+<h3 id="user-story">User Story</h3>
+
+<p>Contributor Julien is swarm leader of #313-sticker-market. 
+This project deploys a smart contract with settings that can be defined by its controller.</p>
+<ul>
+  <li>Being a onlyOwner is against Status Principle of Decentralization.</li>
+  <li>Developers need control over the smart contract for development roadmap.</li>
+  <li>Don’t knows exactly what is the consensus for many parameters.
+SNT Holders funded the development of Status.</li>
+  <li>Don’t want to trust a onlyOwner for decisions on Status Network Contracts</li>
+  <li>Wants to engage with decisions and polls by voting or selecting a delegate</li>
+  <li>Are happy if they can control the ecosystem around the token they hold.</li>
+</ul>
+
+<h3 id="product-description">Product Description</h3>
+
+<ul>
+  <li>Users should be able to participate on decisions or delegate their influence. <em>Important to democracy.</em></li>
+  <li>Votes are counted as MiniMeToken balance of user at block voting end. <em>Important to not double tabulating without locking token transfers</em></li>
+  <li>Voting or delegating must not cause direct risks to users balances. <em>Important to don’t cause barriers into democracy process</em></li>
+  <li>Users that delegates must be able to vote differently then their delegate. <em>Important to don’t cause barriers into setting a delegate.</em></li>
+  <li>Delegates should be able to delegate influence delegated to them, as a delegation chain. <em>Important to inflience get into experts.</em></li>
+  <li>The execution of proposals should be subject of two proposals, first asking for it’s approval, and second asking for it’s veto.  <em>Important to prevent a big delegate changing decision at last moment.</em></li>
+  <li>Approval Proposal uses a “Executive Delegation” and Veto Proposal uses a “Veto Delegation”. <em>Important to prevent bribe of delegates.</em></li>
+  <li>Specifics topics have their specific delegation chain, which if unset by user should fallback to parent topic definition. <em>Important to influence get into specialists of the topic.</em></li>
+  <li>Users that didnt defined any delegate would be claimable by default delegate. <em>Important to don’t cause slowness into development roadmaps.</em></li>
+  <li>Users could be able to create their own sub democracies and choose their trust network (or create a new one) for controlling the decisions of tokens that contract hold.</li>
+  <li>User’s democracy would be able to have any default delegate choosen by its creator.</li>
+</ul>
+
+<h3 id="mvp-basic-liquid-democracy-with-binary-proposals">[MVP] Basic liquid democracy with binary proposals</h3>
+
+<p>Description: Topic Democracy for contracts control</p>
+<ul>
+  <li>Developers can create democracy to own system contracts;</li>
+  <li>Developers can create subtopics to specific functions on their contract;</li>
+  <li>Users can request approval for execution of state changes;</li>
+  <li>Users can set delegates;</li>
+  <li>Users can vote;</li>
+  <li>Volunteers can include other votes signatures</li>
+  <li>Delegates can claim influence;</li>
+  <li>Volunteers can tabulate votes;</li>
+  <li>Proposal can be executed by Democracy contract;</li>
+  <li>Users can request opinion as poll to trust network;</li>
+</ul>
+
+<h3 id="2ºi-complex-proposals-and-elections">[2ºi] Complex proposals and elections.</h3>
+
+<p>Description: Election Proposal enable an Approval proposal to contain an elected variable based on other proposal.</p>
+<ul>
+  <li>Upgrade current SNT (Opinion) Voting Dapp to become completely gasless.</li>
+  <li>Users can easily approve a high majority and tercerize a complex decision based on an election.</li>
+  <li>Price variables could be elected as a weighted math mean.</li>
+</ul>
+
+<h3 id="3ºi-multiple-delegations">[3ºi] Multiple delegations</h3>
+
+<p>Description: Users can delegate to multiple delegates with different priorities.</p>
+<ul>
+  <li>Lessens power of default delegate on sub democracies</li>
+  <li>Allow smarter choices</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<p>Sub-democracies controlling sub-systems with intelligent outcomes. 
+At least one sub-system should be sucessfully operated democratically by SNT holders or it’s choosen delegates. (wonderfully work)
+The partial success might be having only sub-systems operated democratically by Default Delegates. (no user engagement, but works) 
+Another success metric would be the popularization of µTopic Democracy as means to control several aspects of Status, such as public chats (using SNT), group chats (using membership as token), public token list order and curation, and any aspect requiring democracy.</p>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<p>Working platform for developers spawn sub-democracies controlled by SNT holders for controlling their syb-systems (e.g. ENS Usernames, Sticker Market, Tribute to Talk).</p>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

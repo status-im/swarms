@@ -1,0 +1,91 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 293-ulc-integration
+Title: ULC integration
+Status: In Progress
+Created: 2018-08-06
+Requires (*optional): #254
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>Status app can use LES and ULC as Ethereum providers instead of Infura.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @mandrigin</li>
+  <li>Contributor: @jeka</li>
+  <li>Contributor: @b00ris</li>
+  <li>Contributor: TBD</li>
+  <li>QA: TBD</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<p>We need LES client enabled on mobile device to be really decentralized and to enable all web3 features for dApps.</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+<p>ULC integration depends on research swarm #254</p>
+
+<h3 id="security-and-privacy-implications">Security and Privacy Implications</h3>
+<ul>
+  <li>Free slots for LES servers(can be resolved by les service model, onlyannounce servers, vipnode)</li>
+  <li>Trusted nodes selection(trusted nodes list can be automatically expanded or changed)</li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+<ul>
+  <li>LES can work as the second Ethereum provider in status app.</li>
+  <li>ULC can work as the third Ethereum provider in status app with static trusted nodes.</li>
+</ul>
+
+<h3 id="iteration-0">Iteration 0</h3>
+
+<p>Goal Date: 2018-09-10</p>
+
+<p>Description:</p>
+<ul>
+  <li>Add LES as an option for test networks</li>
+  <li>ULC in go-ethereum master(#254)</li>
+  <li>Add LES servers to our staging fleet</li>
+</ul>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<p>Goal Date: 2018-09-14</p>
+
+<p>Description:</p>
+<ul>
+  <li>investigate les integration problems and add it to backlog</li>
+</ul>
+
+<h3 id="iteration-2">Iteration 2</h3>
+
+<p>Goal Date: 2018-09-25</p>
+
+<p>Description:</p>
+<ul>
+  <li>run in our cluster onlyAnnounce LES servers</li>
+  <li>update go-ethereum with ULC in status-go</li>
+  <li>graceful downgrade(use infura by default and if it fails, start ULC node)</li>
+</ul>
+
+<h3 id="iteration-3">Iteration 3—…</h3>
+
+<p>Goal Date: 2018-09-25</p>
+<ul>
+  <li>TBD</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<ul>
+  <li>Status app can use LES and ULC provider instead of Infura (10% of users are using it).</li>
+</ul>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+<ul>
+  <li>Running on Mainnet</li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived
+via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

@@ -1,0 +1,123 @@
+<h2 id="preamble">Preamble</h2>
+
+<p>Idea code: DEV#003
+Status: Done
+Created: 2017-11-08
+Started: 2017-11-14
+Ended: 2018-01-04</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Add ERC20 support</p>
+
+<h2 id="idea-proposal">Idea proposal</h2>
+
+<p>As a user I want my <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md">ERC20</a> tokens to be first class citizen.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @jeluard</li>
+  <li>Contributor: @goranjovic</li>
+  <li>Support: @3esmit</li>
+  <li>Tester: @asemiankevich</li>
+</ul>
+
+<p>Swarm channel: <strong>3-erc20</strong></p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>A user should be able to manage its ERC20 tokens pretty much the same way as ETH.
+In particular <code class="highlighter-rouge">wallet</code> and <code class="highlighter-rouge">send</code> command must support ERC20 tokens.</p>
+
+<p>As a first step considered ERC20 tokens will be based on a static list embedded in the application. This might be revisited later (see #18).</p>
+
+<p>ERC20 extensions might also be considered: <a href="https://github.com/ethereum/EIPs/issues/223">ERC223</a>, <a href="https://github.com/Giveth/minime">Minime</a> (<a href="https://etherscan.io/token/StatusNetwork">SNT</a> itself is a Minime token).</p>
+
+<h2 id="zeplin-references">Zeplin references</h2>
+
+<ul>
+  <li>Assets https://zpl.io/blwD8ka</li>
+  <li>wallet main screen (with list of assets shown + managin assets) https://zpl.io/b6d1eNV</li>
+</ul>
+
+<h2 id="board">Board</h2>
+<p>https://github.com/status-im/status-react/projects/4</p>
+
+<h2 id="goals--implementation-plan">Goals &amp; Implementation Plan</h2>
+
+<p>Following features should be considered:</p>
+
+<ul>
+  <li>list wallet tokens</li>
+  <li>provide default token</li>
+  <li>send tokens to a contact</li>
+  <li>request token from a contact</li>
+  <li>get current price</li>
+  <li>get historical price</li>
+  <li>get token details (historical price, market cap, # tokens, volume, crowdsale)</li>
+  <li>list historical transactions</li>
+  <li>add gas and data support when sending transaction</li>
+  <li>chart graphs</li>
+</ul>
+
+<p>Can be split in 4 categories:</p>
+
+<ul>
+  <li>wallet token details (access and management)</li>
+  <li>token details (static and dynamic data)</li>
+  <li>token price details</li>
+  <li>token transactions</li>
+</ul>
+
+<p>Token details will require some metadata currently not available in ethereum.
+Token price details can be provided by <code class="highlighter-rouge">cryptocompare</code>.</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>List user tokens and display token details</p>
+
+<p>Goal Date: 2017-12-01
+Started:  2017-11-15
+Completed: 2017-12-05
+Description: token list and details</p>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<p>Allow sending and requesting tokens.
+Show token historical data and update percentage info</p>
+
+<p>Goal Date: 2017-12-15
+Started: 2017-12-06
+Completed: 2018-01-04
+Description: send/request tokens</p>
+
+<h3 id="post-mortem">Post Mortem</h3>
+
+<h4 id="what-could-be-improved">What could be improved</h4>
+
+<p><a href="#61">App structure refinement</a> was defined during the first iteration and significantly impacted the scope of this iteration. Specifically @goranjovic work around asset details had to be removed.</p>
+
+<p>A number of technical elements has been discovered and added to the todo list during development. It appears primordial to spend some time during the first days to have a detailed understanding of what’s to be done and technical impacts. It appears our decentralized nature makes some usually simple things harder to implement.</p>
+
+<p>Finally we discovered pretty late some technical limitations that prevented us to implement some features (e.g. token transaction history).</p>
+
+<h4 id="what-went-well">What went well</h4>
+
+<p>Overall implementation went smoothly and we had fast test cycle thanks to @asemiankevich .</p>
+
+<h2 id="appendix-archive-of-future-work">Appendix: archive of future work</h2>
+
+<h3 id="known-limitations">Known limitations</h3>
+
+<p>Due to technical constraints some features have been left out and will be addressed after prerequisites have been implemented.</p>
+
+<ul>
+  <li>no token transaction history (etherscan API doesn’t support that)</li>
+  <li>send command: no token support (requires upgrade to API, support for deep linking)</li>
+  <li>request disabled for tokens (requires upgrade to API)</li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

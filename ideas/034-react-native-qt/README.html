@@ -1,0 +1,136 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: #34-react-native-qt
+Title: Extend react-native-desktop to support status-react Desktop functionality
+Status: In-Progress
+Created: 2017-11-22
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>Status React cross-platform (Linux, OS X and Windows) desktop version based on <a href="https://github.com/status-im/react-native-desktop/">react-native-desktop</a> port of react-native.</p>
+
+<h2 id="vision">Vision</h2>
+<p>React-Native-Desktop is the desktop extension of origin react-native framework developed by Status. With direct access to underlying OS’s APIs (via Qt Framework APIs mainly) we should be able to have almost full control on software stack and provide better users experience.</p>
+
+<p>Status IM application should has range of unique screens optimized for the best desktop users experience.</p>
+
+<p>Desktops version of Status IM is supposed to re-use backend implementation of Status IM Mobile, but with unique UI screens and based on react-native-desktop extension of original react-native.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @MaxRis</li>
+  <li>Testing &amp; Evaluation:</li>
+  <li>Contributor: @vkjr</li>
+  <li>Contributor: @flexsurfer</li>
+  <li>UX (if relevant):</li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+
+<h2 id="goals--implementation-plan">Goals &amp; Implementation Plan</h2>
+
+<p>Goal Date: 2017-12-11 (Done)
+Description: Enhance development cycle to get acceptable performance in code development (adopt figwheel + live-reload, find the way to compile ClojureScript to JS without code optimization (lein has known issues with that)</p>
+
+<p>Goal Date: 2017-12-15 (Done)
+Description: Login screen rendering and functionality</p>
+
+<h3 id="iteration-1">Iteration 1</h3>
+<p>Goal Date: 2018-04-09
+Description:</p>
+<ol>
+  <li>Upgrade react-native-desktop to react-native v.0.53.3 (since latest status-react expects  v.0.53.3 as well) (2018-04-09 update: Done)</li>
+  <li>Investigate and implement possibility to not rely on Node.js installed system wide, but bundle it with react-native-desktop app distribution (2018-04-09 update: In-Progress)</li>
+  <li>Create runnable react-native-desktop app distribution (status-electron MVP based) for Ububntu, OS X and Windows. (2018-04-09 update: Not started)</li>
+</ol>
+
+<h3 id="iteration-2">Iteration 2</h3>
+<p>Goal Date: 2018-04-23</p>
+<ol>
+  <li>react-native-desktop running with integrated JavaScriptCore engine instead Node.js on Ubuntu (continuation of Goal 2 from Iteration 1) (2018-04-23 update: Done)</li>
+  <li>Porting latest status-react to run on top of react-native-desktop. Work-in-progress. Resolve messages receiving and sending issues. (2018-04-23 update: Done)</li>
+  <li>Create runnable react-native-desktop app distribution (status-electron MVP based) for Ububntu, OS X and Windows. (2018-04-23 update: Not started)</li>
+</ol>
+
+<h3 id="iteration-3">Iteration 3</h3>
+<p>Goal Date: 2018-05-07</p>
+<ol>
+  <li>Build status-react Desktop in production (2018-05-04 update: Done)</li>
+  <li>OS X bundle distribution for status-react Desktop (2018-05-04 update: Done)</li>
+  <li>Realm native module support by r-n-d and JavaScriptCore (2018-05-04 update: Partially done, In-Progress)</li>
+  <li>Ubuntu distribution build of old status-electron for Desktop based on react-native-desktop and JavaScriptCore (2018-05-04 update: Done)</li>
+</ol>
+
+<h3 id="iteration-4">Iteration 4</h3>
+<p>Goal Date: 2018-05-18</p>
+<ol>
+  <li>Resolve account creation issues with StatusIm.app bundle (happens only on non-vm machines) (2018-05-16 update: Done)</li>
+  <li>Automate Mac OS bundle creation (2018-05-16 update: Done)</li>
+  <li>Ubuntu distribution with JavaScriptCore enabled (2018-05-16 update: Proof of concept verified)</li>
+  <li>Realm native module support by r-n-d and JavaScriptCore in Ubuntu distribution (2018-05-16 update: On-hold)</li>
+  <li>Build react-native-desktop on Windows (2018-05-16 update: Done)</li>
+  <li>status-react Desktop Windows portable binaries distribution (2018-05-16 update: Done)</li>
+</ol>
+
+<h3 id="iteration-5">Iteration 5</h3>
+<p>Goal Date: 2018-06-01</p>
+<ol>
+  <li>Resolve failing jest unit tests, increase stability of unit testing runs (2018-06-03 update: Not started)</li>
+  <li>Support of on-going needs for StatusIM Desktop project (2018-06-03 update: In-Progress)</li>
+</ol>
+
+<h3 id="iteration-6">Iteration 6</h3>
+<p>Goal Date: 2018-06-18</p>
+<ol>
+  <li>Resolve failing jest unit tests, increase stability of unit testing runs</li>
+  <li>Support of on-going needs for StatusIM Desktop project</li>
+</ol>
+
+<p>Goal Date: TODO
+Description: Integrate react-native-desktop into latest status-react sources with desktops screens available. (2018-05-04 update: Done)</p>
+
+<p>Goal Date: TODO
+Description: Resolve react-native-desktop related UI issues (missed support of some specific props or components, etc)</p>
+
+<p>Goal Date: TODO
+Description: Smoothly working figwheel for dev builds</p>
+
+<p>Goal Date: TODO
+Description: Stable Status Desktop application with screens specific for desktop users experience.</p>
+
+<p>Goal Date: TODO
+Description: Support by react-native-desktop of <a href="https://github.com/status-im/status-electron/wiki/Status-Components are supported by react-native-desktop">all react-native components</a> used in Status Desktop.</p>
+
+<p>Goal Date: TODO
+Description: Automated process of Status Desktop distributions creations for Linux, OS X and Windows desktop platforms.</p>
+
+<h3 id="minimum-viable-product-completed">Minimum Viable Product (completed)</h3>
+
+<ol>
+  <li>Application shows ‘chat’ screen</li>
+  <li>User can login</li>
+  <li>User can exchange 1-1 messages</li>
+</ol>
+
+<h3 id="minimum-viable-product-2">Minimum Viable Product 2</h3>
+
+<p>Status Desktop application with screens specific for desktop users experience based on Status-React (Status IM Mobile) source code base with possibility to chat without interruption.</p>
+
+<h2 id="success-metrics">Success Metrics:</h2>
+
+<ul>
+  <li>Successful internal usage of Status Desktop application by Status Team on daily basis (Additional metrics should be defined).</li>
+  <li>All react-native components from the list of used components in Status Desktop https://github.com/status-im/status-electron/wiki/Status-Components are supported by react-native-desktop</li>
+  <li>Existing UI for status-react desktop runs smoothly with <code class="highlighter-rouge">react-native-desktop</code></li>
+  <li>Automated creation of binary distributions for Linux, OS X, Windows desktop platforms.</li>
+</ul>
+
+<h2 id="exit-criterias">Exit criterias</h2>
+<ul>
+  <li>Stable Status Desktop application based on react-native-desktop (Additional criterias should be defined).</li>
+</ul>
+
+<h2 id="post-mortem">Post-Mortem</h2>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

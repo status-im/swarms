@@ -1,0 +1,296 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 168-paid-master-node
+Title: Paid master nodes
+Status: Limbo - On hold until after beta
+Created: 2018-04-13
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>In Status, users are stakeholders. This means we pay and get paid based on
+services provided. This includes high-connectivity nodes, aka master node, which
+are used for things like offline inboxing. We choose to let users pay other
+peers for this service, as opposed to providing it for free and selling our
+users.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @oskarth</li>
+  <li>QA: @adan</li>
+  <li>Evaluation: @oskarth</li>
+  <li>Clojure Contributor: TBD</li>
+  <li>Go Contributor: @pilu</li>
+  <li>PM: @rachelhamlin</li>
+  <li>UX(R): @jpbowen</li>
+  <li>Designer: TBD</li>
+  <li>Community: @andytudhope</li>
+</ul>
+
+<p>Risk:</p>
+<ul>
+  <li>Not enough Go and Clojure resources available</li>
+</ul>
+
+<p>Counteract:</p>
+<ul>
+  <li>Create clear issues as bounties</li>
+  <li>Oskar start initial spiking out, be OK with slow progress</li>
+  <li>Proactively reach out to individual devs to try to free up resources</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>This idea takes off where
+https://github.com/status-im/ideas/blob/master/ideas/001-offline-inboxing.md
+ended. It provides an SNT payment layer for usage of master nodes.</p>
+
+<p>Users want basic services such as offline inboxing to just work, while at the
+same time paying for the resources they are using, as opposed to being a product
+sold to other businesses. Users also want to make SNT so they can use it in the
+app.</p>
+
+<p>Currently offline inboxing is a free resource, subsidised and run by us. This is
+sub-optimal for many reasons, and goes against our vision of letting users pay
+for things they use, as well as incentivizing this capability to be
+decentralized.</p>
+
+<p>Offline inboxing is run on mail server aka master nodes. In the scope of e.g.
+86-push-notifications push notifications will likely be served through that as
+well.</p>
+
+<h3 id="user-stories">User stories</h3>
+
+<p>User story 1: Bobby Blockchain runs a master node and gets paid by peers in SNT for services provided.</p>
+
+<p>User story 2: Alice pays SNT to a master node in order to get offline inboxing for some period of time.</p>
+
+<p>Out of scope for this idea:</p>
+
+<ul>
+  <li>
+    <p>(User story 3: <a href="https://ideas.status.im/ideas/280-discoverable-trusted-server-nodes/README">Decentralized discovery mechanism for master nodes</a>)</p>
+  </li>
+  <li>
+    <p>(User story 4: Onboarding mechanism to seed closed beta users with SNT)</p>
+  </li>
+</ul>
+
+<p>User story 4 is sufficiently different in focus to warrant a separate swarm.
+Since it might be a pre-requsite from a UX point of view, the behavior in user
+story 1 and 2 should be toggle-able with a flag. I.e. we make sure we can still
+provide free service for the time being.</p>
+
+<p>In addition to these defined user-stories, additional ones might be carved out,
+such as communication of quality of service and price discovery mechanisms. It
+is unlikely these will be relevant until user story 1 and 2 are solved, but this
+swarm will decide if it makes sense to continue working to solve additional user
+stories after 1 and 2 are done.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>Currently we have a screen that shows mail servers available. Each mail server
+will have a basic monthly fee attached to it. This can start off as static but
+evolve to being dynamically communicated through our application protocol. In
+auction terms, this is an, initially static, bid process.</p>
+
+<blockquote>
+  <p>Comment from review: Are there any selection criteria for to show users other
+than price? Eg users/transaction, ratings, reviews, quality?</p>
+</blockquote>
+
+<p>As a user picks a mail server they are asked to sign a transaction in order to
+pay for offline inboxing for 1..N months. Sending this transaction counts as
+paying for this mail server. This is similar to paying for an app or service in
+the Apple store.</p>
+
+<p>Mail server needs to be able to process this transaction and have logic for
+whitelisting this user’s enode for some period of time.</p>
+
+<p>How renewal will happen is not specified yet.</p>
+
+<blockquote>
+  <p>Comment from review: May be out of scope for this idea but perhaps we’ll want
+to experiment with different payment models for time - e.g. Alice pays until
+she runs out of SNT OR N offline messages OR set period of time.</p>
+</blockquote>
+
+<p>Solving the initial user stories doesn’t require any proof of message delivery
+or quality of service.</p>
+
+<p>How reputable a given mail server is will thus be communicated outside of the
+app, at least initially. That is, instead of having the equivalent of an App
+Store rating system, or seed ratio on a Torrent site, this can be communicated
+through other means. For example: Riot, Reddit, public status channels, etc.</p>
+
+<h4 id="note-on-status-desktop">Note on Status Desktop</h4>
+
+<p>Status Desktop isn’t a requirement for this idea as a user can run a mail server
+from the command line. It is an additional user story that shouldn’t be too
+difficult to implement, but it isn’t clear how desirable it is, assuming that
+high availabity of mail servers is a requirement.</p>
+
+<h4 id="terminology">Terminology</h4>
+
+<p>Mail server / wnode / master node are used interchangably. Master mode is the
+“soft” user term (invented by the community!), mail server and wnode are
+technical terms on status-go side (wnode currently falling out of favor).</p>
+
+<h4 id="relevant-reading">Relevant reading</h4>
+
+<ul>
+  <li>https://status.im/whitepaper.pdf</li>
+  <li>http://nakamotoinstitute.org/static/docs/micropayments-and-mental-transaction-costs.pdf</li>
+</ul>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<p>(Lack of consensus on this point: Possibly onboarding SNT give-away logistics.)</p>
+
+<h3 id="pre-mvp---initial-investigation-and-spec">Pre MVP - initial investigation and spec</h3>
+
+<p>Goal Date: 2018-05-07</p>
+
+<p>Description:</p>
+<ul class="task-list">
+  <li>[-] Recruit additional roles: Designer, Clojure dev (yenda?), QA</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Spec out rough UX(R) track (jpbowen)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Spike out technical requirements:
+    - [x] deny requests to mail server as a function of peer and envelope
+    - [x] send STT payments and get basic proof
+    - [/] later: inspect basic proof (tx id initially)
+    (- [ ] inspect envelope in what format for basic proof of payment?)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Create issues (and bounties) necessary for MVP</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Communicate proof of payment / accept/deny thinking at kick off call</li>
+</ul>
+
+<p>Probably not enough time: (- [ ] Understand changes to requestMessage envelope required)</p>
+
+<p>Initial investigation to understand how to scope MVP (WIP):</p>
+<ul>
+  <li>https://github.com/status-im/status-react/commit/2a1678ef8724702cee547fdc3ba1f5f03681714a</li>
+  <li>https://github.com/status-im/status-go/commit/a4820285bdb16789477efc06d832bfbd51753ca4</li>
+  <li><a href="local-mailserver.md">Local mailserver HOWTO</a></li>
+  <li><a href="stt-payment-testing.md">Getting and sending STT, proof of payment</a></li>
+</ul>
+
+<p>Project board: https://github.com/orgs/status-im/projects/28</p>
+
+<p>Also see:</p>
+<ul>
+  <li>https://github.com/status-im/status-react/issues/4003</li>
+</ul>
+
+<h4 id="update-2018-05-07">Update 2018-05-07</h4>
+
+<p>PreMVP mostly complete. In terms of next steps, main focus is on Beta. Swarm on
+hold until then. When work is resumed, we have:</p>
+
+<ul>
+  <li>UXR initial wireframes</li>
+  <li>https://github.com/status-im/status-react/pull/4120 PR by bounty from status-react</li>
+  <li>Missing initial status-go side MVP</li>
+  <li>Should deploy custom mail server into cluster, even minimal</li>
+  <li>Meeting notes in some doc somewhere</li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+<p>Goal Date: 2018-XX</p>
+
+<p>Description: Spike out most basic proof of concept possible for payment / service on or off in Clojure and Go, using SNT test token (STT) on Ropsten.</p>
+
+<p>Maybe: signing of txid with address.</p>
+
+<h2 id="dates">Dates</h2>
+<p>Separate tracks:</p>
+<ul>
+  <li>UX(R) / design</li>
+  <li>Go dealing with app protocol / payment</li>
+</ul>
+
+<p>Goal Date:</p>
+
+<p>Description:</p>
+
+<p>Testing Days required:</p>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>
+    <p>Users running mail servers and transacting. Target: 10</p>
+  </li>
+  <li>
+    <p>Users paying for a mail server. Target: 50% of D7 retained users, or 20% of all users.</p>
+  </li>
+  <li>
+    <p>Daily Transacting Users. Target: 35 ((5000 DAU TARGET*0.2 TX%)/30 PAY-MONTHLY).</p>
+  </li>
+</ul>
+
+<p>OKRs:
+2.4: &gt;20% of users send a transaction (P1:P3)
+3.1: 2x launched SNT use cases (P2:P0)</p>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<p>Solving the two initial user stories. If the swarm deems it useful to continue,
+new specific user stories will be specified and inform the exit criteria.</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+
+<ul>
+  <li>
+    <p>Community for recruiting users to run mail server.</p>
+  </li>
+  <li>
+    <p>Finance for SNT utility approval.</p>
+  </li>
+  <li>
+    <p>Marketing for ‘you are not the product’ rationale communication.</p>
+  </li>
+</ul>
+
+<h2 id="appendix-constraints--objections">Appendix: Constraints / objections</h2>
+
+<ul>
+  <li>No one will pay for it.</li>
+</ul>
+
+<p>This is a free resource. If we want to subsidise it and the concern is people
+  not wanting to stay / top up to use basic funcrtionality we can solve it by
+  giving free SNT as part of SNT onboarding.</p>
+
+<ul>
+  <li>Free SNT?!</li>
+</ul>
+
+<p>Yes. For a closed beta limited to 40k people, we can limit the free amount to 5
+SNT per person, which limits the downside risk this to 200k SNT ($20k at the
+time of this writing).</p>
+
+<ul>
+  <li>What about fraud?</li>
+</ul>
+
+<p>We can use already collected emails as identity and dedup by it. Max downside
+per email (pre-signed up) is 5 SNT, and to get it out would still be a
+transaction, as well as a signal to us.</p>
+
+<ul>
+  <li>How does this scale?</li>
+</ul>
+
+<p>For open beta we can figure out how to deal with SNT onboarding by e.g. using
+trustlines.</p>
+
+<hr />
+
+<p>For more on rationale of SNT utility, see the whitepaper. Providing onboarding
+SNT also furthers distribution of tokens as well as transactions on their own, a
+good.</p>
+
+<p>This is a hypothesis, but this is the whole basis of Status.</p>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

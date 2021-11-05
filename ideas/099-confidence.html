@@ -1,0 +1,245 @@
+<h1 id="preamble">Preamble</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 99
+Title: Confidence in Messaging
+Status: Aborted
+Created: 2018-03-22
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>As end users we currently don’t have confidence that messages are being sent, delivered and read. This swarm aims to address this.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @PombeirP</li>
+  <li>Testing &amp; Evaluation: @lukaszfryc</li>
+  <li>Contributor (Clojure): @cammellos</li>
+  <li>Contributor (Clojure): @dmitryn</li>
+  <li>PM: @chadyj</li>
+  <li>UX: @nikitalukianov @jpbowen @hesterbruikman</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>We currently don’t have confidence in the reliability of messaging in Status. The reasons for this lack of confidence ranges all the way from how ‘read’ status is displayed in the app, to trivial - and non-trivial - bugs, to bad uptime of critical infrastructure, to how push notifications are decoupled from Whisper messaging, to a fundamental lack of (understanding of) reliability guarantees Whisper protocol provides.</p>
+
+<p>What all these issues have in common is that they cause the end user to not have confidence in their messages being delivered and read. This swarm aims to attack this from a user point of view. It is expected additional swarms might be spawned for more core technical areas as these are identified (e.g. network visibility or push notifications v2).</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>This section is based on user feedback spawned as part of 75-status-everyday (https://docs.google.com/document/d/1pkfZWxr9I0AqidEuOfogzxEXrcg6ofs2bUkh-HSKD6o/edit)</p>
+
+<ol>
+  <li>
+    <p>Messages should always be sent.</p>
+
+    <ul>
+      <li>Generally: lack of trust in messages being sent</li>
+      <li>Provide better feedback of when messages are or aren’t sent</li>
+      <li>Allow re-send of individual messages a la Whatsapp</li>
+    </ul>
+  </li>
+  <li>
+    <p>Messages are in wrong order.</p>
+
+    <ul>
+      <li>Confirm fixed in 1on1</li>
+      <li>Make decision re migrations for old messages</li>
+      <li>Understand and clarify work needed for private group / public (placeholders)</li>
+      <li>Design: Deal with right order but “message arriving too late” (see sidebar)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Messages lack timestamps.</p>
+
+    <ul>
+      <li>This appears to contribute to a lack of confidence in messaging</li>
+      <li>Design (then dev): Add this to UI</li>
+    </ul>
+  </li>
+  <li>Messages don’t arrive despite being sent, or they arrive late.
+    <ul>
+      <li>Disambiguate offline from mail server node copy</li>
+      <li>Understand what is needed to make mail server HA</li>
+      <li>Give user feedback while it is fetching messages (non-instant)</li>
+      <li>Understand if there are more reasons messages would arrive late</li>
+    </ul>
+  </li>
+  <li>
+    <p>Messages should always be delivered, 100% of the time.</p>
+
+    <ul>
+      <li>Similar to 1 but stronger</li>
+      <li>What happens if mail server goes down?</li>
+      <li>Can we implement read/re-send semantics at Whisper level (mailserver)?</li>
+      <li>Look into how read receipts can be improved</li>
+      <li>Clarify UI a la Whatsapp double-tick</li>
+      <li>Consider tracking send/delivered ratio as a metric</li>
+    </ul>
+  </li>
+  <li>
+    <p>Offline inboxing not working in public chat.</p>
+
+    <ul>
+      <li>Clarify perf dependency on smooth-ui swarm</li>
+      <li>While perf is being worked on, educate user about offline only being 1-1</li>
+    </ul>
+  </li>
+  <li>
+    <p>Perception of lack of notifications.</p>
+
+    <ul>
+      <li>UXR: understand expectation -  for non-contacts? Public chats? in-app?</li>
+      <li>Separate PN swarm, clarify dependency with this swarm</li>
+    </ul>
+  </li>
+  <li>
+    <p>Get notification but nothing visible in app.</p>
+
+    <ul>
+      <li>PN delivery being decoupled from Whisper delivery, see point 7 above</li>
+      <li>Clarify dependency on PN v2 swarm and where work done</li>
+    </ul>
+  </li>
+  <li>
+    <p>Perception of never received messages from other people.</p>
+
+    <ul>
+      <li>Investigate if same as filter while offline bug and current limitations</li>
+      <li>More 7: Investigate non-contact PN possibility</li>
+      <li>More 7: Public chat PN?</li>
+      <li>UXR: Understand this problem and perception better</li>
+    </ul>
+  </li>
+  <li>
+    <p>Sometimes need to change mail server manually to get messages working.</p>
+
+    <ul>
+      <li>Make failure of individual mail server apparent and prompt switching</li>
+      <li>Automated switching?</li>
+      <li>How ensure no switching is necessary? (HA, see 4)</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<ul>
+  <li><del><a href="https://github.com/status-im/status-react/pull/3493">Request messages history after background</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/pull/3273">New protocol</a></del></li>
+  <li><a href="https://github.com/status-im/ideas/blob/master/ideas/087-new-protocol.md">New Status App communication protocol idea</a></li>
+</ul>
+
+<h3 id="security-and-privacy-implications">Security and Privacy Implications</h3>
+
+<p>None currently known.</p>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<p>Complete several reliability improvements that have been identified so far:</p>
+
+<ul>
+  <li><del><a href="https://github.com/status-im/status-react/issues/3827">#3827 Message reliability survey</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/3793">#3793 Improve timestamps in chat messages</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/3787">#3787 Improve network offline and mail server error messaging</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/3784">#3784 Provide users with delivery status feedback when sending messages</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/3792">#3792 Measure message send/receive ratio on internal builds</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-go/pull/828">#828 Send an expiration signal when envelope wasn’t delivered to any peer</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-go/issues/810">#810 Notify clj side when the message actually “left” local node.</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/3785">#3785 Remove “seen by everyone” from public chat</a></del></li>
+</ul>
+
+<h3 id="iteration-2">Iteration 2</h3>
+
+<p>After iteration 1 is complete the swarm will meet and discuss the results of the UXR survey, send/receive ratio results, review current UX and discuss future iterations. Work will then be planned for a future iteration, or the swarm will be closed.</p>
+
+<h2 id="exit-criteria">Exit Criteria</h2>
+
+<ul>
+  <li>
+    <p>95% of a group of 100 users surveyed - who don’t have additional context beyond Status providing a p2p IM capability - using the app for an extended period of time, should answer ‘yes’ to the question: “Do you trust Status to deliver messages for you?” (and possibly variants of this).</p>
+
+    <p>This is fundamentally a soft or qualitative goal. It is thus necessary but not necessarily sufficient, and additional harder numbers might be used as we develop the capability to measure this.</p>
+  </li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>
+    <blockquote>
+      <p>99% message deliverability from <a href="https://github.com/status-im/status-react/issues/3792">#3792</a></p>
+    </blockquote>
+  </li>
+  <li>Zero instabug reports within 30 days of alpha release</li>
+</ul>
+
+<h2 id="retrospective">Retrospective</h2>
+
+<ul>
+  <li>
+    <p>What went well?</p>
+
+    <ul>
+      <li>Andrea: Effort was well focused, results were good (although hard to measure)</li>
+      <li>Chad:
+        <ul>
+          <li>Shipped beta on time</li>
+          <li>Chat Team worked much better together than previous swarm(s)</li>
+          <li>Dramatically increased chat reliability!</li>
+          <li>Coordinated from multiple angles, eg UXR surveys, mixpanel stats, automated testing</li>
+          <li>Chat board was like night and day compared to previous way</li>
+        </ul>
+      </li>
+      <li>Lukasz:
+        <ul>
+          <li>Switching to teams helped focus a lot</li>
+          <li>Almost no Instabug reports regarding reliability recently</li>
+        </ul>
+      </li>
+      <li>Dmitry: switch to teams, focus on Beta release, reliability and performance increase</li>
+      <li>Pedro: having a Chat team was helpful any time a high-priority bug or a question appeared. People know where to go to discuss that without cluttering #core.</li>
+    </ul>
+  </li>
+  <li>
+    <p>What could we do better?</p>
+
+    <ul>
+      <li>Andrea: The measuring part could have been more fleshed out, we focused more on fixing the current issues rather than fixing and preventing new ones from happening, but overall minor points compared to the benefits of the initiative.</li>
+      <li>Chad:
+        <ul>
+          <li>Find a better way to measure</li>
+          <li>Still had a handful of users complaining</li>
+          <li>Have a proactive way to spot regressions</li>
+        </ul>
+      </li>
+      <li>Lukasz:
+        <ul>
+          <li>Maybe try to monitor on cluster side in the future?</li>
+          <li>Some issues with Jenkins, seems to be solved now</li>
+        </ul>
+      </li>
+      <li>Pedro:
+        <ul>
+          <li>Better tooling, eg reliable surveys + instabug</li>
+        </ul>
+      </li>
+      <li>Eric: maybe the team effort can work just as well as a swarm, we just need better control of when a swarm is ready to start</li>
+      <li>Dmitry: reliability metrics (in-app and cluster monitoring)</li>
+    </ul>
+  </li>
+  <li>
+    <p>What do we want to implement/improve?</p>
+
+    <ul>
+      <li>Better monitoring and better communication between infra and chat teams</li>
+      <li>Continue with Chat team for Q3</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

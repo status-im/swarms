@@ -1,0 +1,87 @@
+<h2 id="preamble">Preamble</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 71-low-traffic
+Title: Low traffic consumption(technical)
+Status: Aborted
+Created: 2018-01-25
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>1) Issues related to statusgo network overhead</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: @JekaMas  (40h/w)</li>
+  <li>Testing &amp; Evaluation: @annadanchenko (?)</li>
+  <li>Go Contributor: @b00ris (40h/w)</li>
+  <li>Go Contributor: @PombeirP  (30h/w)</li>
+  <li>Go Contributor: @feuGeneA (30h/w)</li>
+  <li>Clojure Contributor: @yenda (20h/w)</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<p>Measure network overhead for main <code class="highlighter-rouge">statusgo</code> usage scenarios.
+Identify and fix the bottlenecks.</p>
+
+<h3 id="product-description">Product Description</h3>
+<p>Main use cases to track:
+1) node was started in background(sync was ended)
+1.1) node was started in background(sync was ended) + whisper
+2) node was started in background(sync is running)
+2) node was started in background(upstream)
+2.1) node was started in background(upstream) + whisper
+3) one chat 1-1.  sending messages(60rpm)
+4) 60 chats 1-1. receiving messages(10rpm per chat)
+5) 10 group chats(60 rpm per chat)
+6) 100 chats 1-1. 30 group chats. receiving historic messages for last day(100 messages per chat)</p>
+
+<p>Many topics problem https://github.com/status-im/status-react/issues/2964
+Whisper network overhead https://github.com/status-im/status-react/issues/2931</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+<p>Part of https://github.com/status-im/ideas/issues/55
+Related to ultralight client</p>
+
+<h2 id="iterations"><a href="#iterations">Iterations</a></h2>
+<h3 id="research-to-define-further-steps-and-related-metrics-iteration-1">Research to define further steps and related metrics. Iteration 1.</h3>
+<p>Goal Date: 2018-02-13
+Description:</p>
+<ul>
+  <li>Define reasonable steps to reduce network overhead</li>
+  <li>We have tools to measure CPU usage and network of statusgo for main use cases to track progress(part of https://github.com/status-im/ideas/issues/22)(status-go tasks TBD)</li>
+  <li>Success metrics for the issue was defined</li>
+</ul>
+
+<h3 id="minimum-viable-product-iteration-2">Minimum Viable Product. Iteration 2.</h3>
+<p>Goal Date: 2018-02-26</p>
+<ul>
+  <li>Reduce Status mean traffic to 50-100Mb/day (2-4 Mb/hour) from current 10-20Gb/day. This relates only to online chatting without offline mailboxing</li>
+  <li>Make WhisperV6 production ready and switch to it https://github.com/status-im/status-go/issues/634</li>
+</ul>
+
+<h3 id="acceptable-traffic-consumption-iteration-3">Acceptable traffic consumption. Iteration 3.</h3>
+<p>Goal Date: 2018-03-05</p>
+<ul>
+  <li>Reduce Status mean traffic to 10-40Mb/day(0.5-2 Mb/hour)</li>
+  <li>Many topics problem resolved https://github.com/status-im/status-react/issues/2964</li>
+  <li>Many topics used for topics subscription</li>
+  <li>Setup maximum Whesper’s peers</li>
+</ul>
+
+<h3 id="acceptable-traffic-consumption-at-the-start-of-status-iteration-4">Acceptable traffic consumption at the start of Status. Iteration 4.</h3>
+<p>Goal Date: 2018-03-26</p>
+<ul>
+  <li>Reduce traffic overhead on a Status start</li>
+  <li>Many topics used for offline mailboxing</li>
+  <li>Offline mailboxing sends only messages by given period of time (from-to timestamps)</li>
+  <li>Update mail server to send only messages that used doesn’t receive yet https://github.com/status-im/status-go/issues/690</li>
+</ul>
+
+<h3 id="minimal-offline-mailboxing-overhead-iteration-5">Minimal offline mailboxing overhead. Iteration 5.</h3>
+<p>Goal Date: 2018-04-09</p>
+<ul>
+  <li>Further traffic overhead decrease on a Status start</li>
+  <li>Use new offline mailboxing API on Clojure script side.</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<p>5 Mb/day of traffic</p>

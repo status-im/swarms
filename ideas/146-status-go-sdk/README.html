@@ -1,0 +1,178 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 146-status-go-sdk
+Title: Status GO-SDK
+Status: In Progress
+Created: 2018-04-03
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Provide an easy to use GO-SDK library to allow community developers easily interact with status messaging.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: <a href="https://github.com/adriacidre">@adriacidre</a></li>
+  <li>Contributor: <a href="https://github.com/pilu">@pilu</a></li>
+  <li>PM: <a href="https://github.com/rachelhamlin">@rachelhamlin</a></li>
+  <li>Testing &amp; Evaluation: <a href="https://github.com/lukaszfryc">@lukaszfryc</a></li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>One of the main goals of status is to grow its community, however is not easy to work on status-go project as a community developer.
+Is not easy to set up an environment</p>
+
+<ul>
+  <li>Identify where to start</li>
+  <li>Interact with status messaging system.</li>
+  <li>Test your changes</li>
+</ul>
+
+<p>The idea behind this swarm is to simplify this by allowing community developers to interact with status, based uniquely on status-go library.</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<ul>
+  <li><em>Easy to use SDK</em> : Using a sdk should be as easy as using any other messaging system, allowing you to subscribe or publish to specific chats.</li>
+  <li><em>The less dependencies the better</em> : ATM and in order to interact with status messaging system we need to interact with code on status-go and status-react repos. This should be simplified to allow devs work only on top of status-go</li>
+  <li><em>Quick dev environment setup</em> : Following the previous point, if we’re only based on status-go, dev environment should be trivial. Should be easy to build apps and distribute them as binaries for different platforms.</li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>MVP should allow a developer to accomplish some minimal actions:</p>
+
+<ul>
+  <li>Connect : creates a new connection</li>
+  <li>Close : closes active connection</li>
+  <li>Auth : login as a specific user</li>
+  <li>Subscribe : subscribe to a channel</li>
+  <li>Unsubscribe : unsubscribe from a channel</li>
+  <li>Publish : send a message.</li>
+</ul>
+
+<p><em>All methods should work for 1to1, groups and public chats.</em></p>
+
+<p>With this methods building a simple <code class="highlighter-rouge">autoresponder bot</code> should be as simple as:</p>
+
+<p><strong>TO BE DEFINED</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Connect to the default status url and defer closing the connection
+st, _ := status.Connect(st.DefaultAddr) // -&gt; localhost:51515
+defer st.Close()
+
+// Authenticate as an specific user
+st, _ = status.Auth([]byte(“S3cretT0ken”))
+
+// Subscribes to any message on chat chatID
+sub, _ := st.Subscribe("chatID", func(m *st.Msg) {
+    // Replies the received message
+    m.Reply([]byte("I can help!”))
+    sub.Unsubscribe()
+})
+
+// Simple message publisher
+st.Publish(“buddy_token", []byte("Hello World"))
+
+</code></pre></div></div>
+
+<p>SDK should be provided with different, easy to follow and well documented examples <em>(TBD)</em>:</p>
+
+<ul>
+  <li>Autoresponder bot (nice for testing)</li>
+  <li>Google assistant integration</li>
+  <li>Slack proxy (use status from slack)</li>
+  <li>Reminders (set and get reminders)</li>
+</ul>
+
+<p>Description: <!-- Description of Deliverables--></p>
+
+<h3 id="useful-links--dependencies">Useful links &amp; Dependencies</h3>
+
+<ul>
+  <li>http://offsite.chat</li>
+  <li><a href="#humans-need-not-apply bots">https://github.com/mandrigin/status-go-bots</a></li>
+  <li><a href="https://github.com/status-im/ideas/issues/131">Pre-existing issue</a></li>
+  <li><a href="https://docs.google.com/document/d/1Qh2h07T_qepzEJ7IytmxwIdQAOsGHrvhXwZxuZtbwgc/edit#">New protocol spec</a></li>
+  <li><a href="https://github.com/cognitect/transit-format">transit-format</a></li>
+  <li><a href="howto_Sniffing_app_messages.md">Sniffing app messages</a></li>
+</ul>
+
+<h3 id="blockers">Blockers</h3>
+<p>New Status App communication protocol - https://github.com/status-im/ideas/issues/87</p>
+
+<h2 id="dates">Dates</h2>
+<p>Goal Date: TBD</p>
+
+<p>Description: TBD</p>
+
+<p>Testing Days required: TBD</p>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<h4 id="milestone-1-status-messaging-basic-interaction-2018-05-07">Milestone 1: <a href="BasicSDK.md">Status messaging basic interaction</a> (2018-05-07)</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="BasicSDK.md#setup-a-new-connection">Setup a new connection</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="BasicSDK.md#ability-to-close-a-specific-connection">Ability to close a specific connection</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="BasicSDK.md#ability-to-change-connection-configuration">Ability to change connection configuration</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="BasicSDK.md#ability-to-sign-up-on-the-platform">Ability to sign up on the platform</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="BasicSDK.md#ability-to-login-as-a-specific-account">Ability to login as a specific account</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="BasicSDK.md#documented-api-for-basic-sdk-interaction">Documented API for basic sdk interaction</a></li>
+</ul>
+
+<h4 id="milestone-2-public-channels-interaction-2018-05-14">Milestone 2: <a href="PublicChannels.md">Public channels interaction</a> (2018-05-14)</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="PublicChannels.md#ability-to-join-public-channels">Ability to join public channels</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="PublicChannels.md#ability-to-publish-messages-on-public-channels">Ability to publish messages on public channels</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="PublicChannels.md#ability-to-subscribe-to-publc-channels">Ability to subscribe to public channels</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="PublicChannels.md#ability-to-unsubscribe-from-a-public-channel">Ability to unsubscribe from a public channel</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="PublicChannels.md#documented-api-for-public-channels-interaction">Documented API for public channels interaction</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="PublicChannels.md#working-examples-for-public-channel-interaction">Working examples for public channel interaction</a></li>
+</ul>
+
+<h3 id="milestone-3-contact-management-2018-05-21">Milestone 3: <a href="ContactManagement.md">Contact management</a> (2018-05-21)</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="ContactManagement.md#invite-new-contact">Invite new contact</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="ContactManagement.md#accept-contact-request">Accept a contact request</a></li>
+</ul>
+
+<h4 id="milestone-4-1-to-1-messages-interaction-2018-05-28">Milestone 4: <a href="1to1Channels.md">1 to 1 messages interaction</a> (2018-05-28)</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="1to1Channels.md#ability-to-send-1-to-1-conversation">Ability to send 1 to 1 conversation</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="1to1Channels.md#ability-to-subscribe-1-to-1-conversation">Ability to subscribe to 1 to 1 conversation</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="1to1Channels.md#ability-to-unsubscribe-1-to-1-conversation">Ability to unsubscribe from a 1 to 1 conversation</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="1to1Channels.md#documented-api-for-1-to-1-conversations">Documented API for 1 to 1 conversation</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="1to1Channels.md#working-examples-for-1-to-1-conversations">Working examples for 1 to 1 conversations</a></li>
+</ul>
+
+<h4 id="milestone-5-private-groups-interaction-2018-06-04">Milestone 5: <a href="PrivateChannels.md">Private groups interaction</a> (2018-06-04)</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="PrivateChannels.md#ability-to-publish-messages-on-private-groups">Ability to publish messages on private groups</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="PrivateChannels.md#ability-to-subscribe-to-private-groups">Ability to subscribe to private groups</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="PrivateChannels.md#ability-to-unsubscribe-to-private-groups">Ability to unsubscribe from a private groups</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="PrivateChannels.md#documented-api-for-private-groups">Documented API for private groups interaction</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TBD : <a href="PrivateChannels.md#working-examples-for-private-groups-interaction">Working examples for private groups interaction</a></li>
+</ul>
+
+<h4 id="milestone-6-extra-methods-2018-06-11">Milestone 6: Extra methods (2018-06-11)</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ability to recover your account</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ability to log out.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />…</li>
+</ul>
+
+<h2 id="exit-criteria">Exit criteria:</h2>
+
+<p>This swarm will be deemed successful and be closed upon the delivery of the above milestones.</p>
+
+<h2 id="success-metrics-1">Success Metrics</h2>
+
+<p>A dev who is unfamiliar with the SDK is able to set up his environment and build a simple chatbot in under 2 hours, just by following the documentation.</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+<!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

@@ -1,0 +1,198 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 266-methrics
+Title: Methrics
+Status: Draft
+Created: 2018-05-17
+Requires:
+Replaces:
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>A decentralized and anonymized approach to application metrics</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<p>TODO</p>
+
+<ul>
+  <li>Lead Contributor:</li>
+  <li>Evaluator (defaults to lead contributor):</li>
+  <li>Contributor:</li>
+  <li>Contributor:</li>
+  <li>QA:</li>
+  <li>PM (required for user-facing):</li>
+  <li>UXD/R (required for user-facing swarms): @patrick, @hester</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>Striking the balance between delivering a beautiful app and respecting the privacy of the user remains a task fraught with difficult tradeoffs.</p>
+
+<p>One such tradeoff is the collection of application metrics from users as they use the application - in that process, people have little insight into what is being collected and how it may be used, within or outside of its intended purpose.</p>
+
+<p>The decentralized open metrics idea is an experiment to explore fully transparent metrics collection where the data is available to the user and to anyone else as it’s being collected, with minimal leakage outside of its stated scope.</p>
+
+<p>Metrics are generally not limited to data that is explicitly generated for the purpose of tracking, but also include other traces that the user might leave behind as they navigate the application, such as transactions and dapp assets hosted on web sites, and part of the product idea is to explore ways to expose and break down these trails for the user such that they become accessible and understandable.</p>
+
+<p>To explore as part of this project is how to ensure that data retention laws such as GDPR are accounted for.</p>
+
+<h3 id="user-stories">User Stories</h3>
+
+<ul>
+  <li>I want to understand what trails I leave behind when using the application, including blockchain transactions and dapp interactions, and how these may be combined</li>
+  <li>I want to contribute to the development of Status anonymously by letting the application collect tracking data</li>
+  <li>I want to limit specific types of data that Status collects when I use the application</li>
+  <li>I want to export the data conveniently for my own analysis</li>
+  <li>I want meaningful information that I can make sense of, opposed to datapoints</li>
+  <li>As a status developer, I want to build the right features for our users, and want to understand adoption</li>
+  <li>As a dapp developer, I want to understand how users interact with my dapp</li>
+</ul>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<ul>
+  <li>Current tracking examples
+    <ul>
+      <li><a href="https://gist.github.com/chadyj/fb95dec5e557116d3715cb8facf6dae1#file-metrics-export-json">Example mixpanel data</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="security-and-privacy-implications">Security and Privacy Implications</h3>
+
+<p>Guideline: if not a primary necessity for application to            perform its tasks, should it be there?</p>
+
+<p>The security and privacy implications of enabling tracking in any application are significant - there are many things that can go wrong when creating a corpus of behavioral data, specially when valuable assets are involved.</p>
+
+<ul>
+  <li>Reliance on vendor
+    <ul>
+      <li>IP address disclosure</li>
+      <li>Vendor incentives to collect more than stated</li>
+      <li>Vendor may be hacked or bought out, transferring the data to another entity</li>
+    </ul>
+  </li>
+  <li>Radical openness
+    <ul>
+      <li>If we’re uncomfortable exposing our data publically we should not be collecting it</li>
+    </ul>
+  </li>
+  <li>Risks
+    <ul>
+      <li>Unintended leakage of data</li>
+      <li>Correlation between tracking data and other events
+        <ul>
+          <li>Liability for status in case of fallout from such correlations</li>
+        </ul>
+      </li>
+      <li>Doxing / deanonymization</li>
+      <li>No way of turning off, once decentralized</li>
+    </ul>
+  </li>
+  <li>Filtering
+    <ul>
+      <li>Allowing user to selectively share data - for example, chat ok but transaction not</li>
+    </ul>
+  </li>
+  <li>Community
+    <ul>
+      <li>Community members might prefer that data is not fully public    but only available to trusted parties</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="related-products">Related products</h3>
+
+<ul>
+  <li><a href="https://codeascraft.com/2011/02/15/measure-anything-measure-everything/">statsd</a> - metrics collection with a centralized server</li>
+  <li><a href="https://mixpanel.com">mixpanel</a> - Product analytics</li>
+  <li><a href="https://www.supermax.cool/">supermax</a> - Blockchain/smart contract log visualizer</li>
+  <li><a href="http://shiny.rstudio.com/">shiny</a> - Data analysis in R</li>
+  <li><a href="http://www.thegraph.com/">thegraph</a> - A decentralized query protocol for blockchains</li>
+</ul>
+
+<h3 id="background-information">Background information</h3>
+
+<ul>
+  <li><a href="https://status-im.slack.com/archives/C9R0TSTM2/p1523263085000070">Slack discussion on privacy</a></li>
+</ul>
+
+<h2 id="dates">Dates</h2>
+
+<p>TODO
+Scope - months?</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<ul>
+  <li>Anonymous data collection and storage
+    <ul>
+      <li>Send metrics over whisper? Good for anonymity, dogfooding protocol</li>
+    </ul>
+  </li>
+  <li>Documentation / FAQ</li>
+  <li>Community engagement and validation of the idea</li>
+  <li>Build connections to renowned privacy advocates who might vouch for the approach</li>
+</ul>
+
+<h3 id="iteration-2">Iteration 2</h3>
+
+<ul>
+  <li>Coverage for a broad range of current mixpanel statistics,
+such as Daily Active Users (TODO: list them)</li>
+  <li>Own data is discoverable by user, if possible
+    <ul>
+      <li>TODO: if it’s very anonymous, can we actually make this distiction?</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="iteration-3">Iteration 3</h3>
+
+<ul>
+  <li>Data exploration support
+    <ul>
+      <li>Custom front-end or pre-loaded panels in existing analyis platform like mixpanel, graphana, jupyter, Shiny/Rstudio?</li>
+      <li>Help user understand public traces such as blockchain transactions and tracable dapp requests (malicious dapps?)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>X% users are comfortable downloading the application, even though it contains tracking
+    <ul>
+      <li>we can measure with surveys and in-person UXR testing</li>
+      <li>TODO: how to not lose out on / measure privacy sensitive minority</li>
+    </ul>
+  </li>
+  <li>X% of users opted in/out of tracking</li>
+  <li>90% of users who do opt in to metrics tracking understand what is being tracked</li>
+  <li>90% of users who opt in know where to go to see aggregated data exploration</li>
+  <li>Collected data used to drive at least 3 significant UX improvements</li>
+  <li>Broader recognition from community that Status sets the standard for data usage transparency and security (TODO: measure?)</li>
+</ul>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<ul>
+  <li>Status app no longer connects to mixpanel or similar third parties</li>
+  <li>Status app supports publishing a broad range of events and metrics</li>
+  <li>Dashboards launched for data exploration</li>
+  <li>Source data can be exported in machine-readable format</li>
+</ul>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+
+<ul>
+  <li>Community manager - It might not be clear enough what the limit is of what we are collecting and ‘public data’ might give an allergic reaction altogether. Organize a session with some active community managers to discuss a mock of a public dashboard and get their feedback to see what FAQ we need to include.</li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

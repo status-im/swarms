@@ -1,0 +1,97 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: #61-app-structure
+Title: App structure refinement
+Status: In Progress
+Created: 2017-12-14
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>For the beta launch there needs to be some app structure refinements and UI tweaks in order to simplify the experience and orientate users on clear actions and expectations.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @jeluard</li>
+  <li>Testing &amp; Evaluation: @asemiankevich , @Serhy</li>
+  <li>Contributor: @flexsurfer</li>
+  <li>Contributor: @goranjovic</li>
+  <li>PM: @chadyj</li>
+  <li>UX: @andmironov</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>The current alpha build is an expression of many ideas at various stages of completion that showcases the longer term potential of Status. However, not all features are optimized and polished with the user in mind. An app structure update will re-focus the app around the core flows and provide a solid platform for future updates.</p>
+
+<p>The new app structure will focus the user around DApps, Chat, Wallet, and profile/settings. From a users perspective this presents a clear, focused, and unambiguous explanation of what Status does without the need to hunt around in the app.</p>
+
+<p>Lastly, a simplified and flatter structure will have a smaller surface area for bugs/testing/etc that will enable us to reach out beta goal sooner.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>The app will have 3 tabs: Home, Wallet, Profile (copy tbc).</p>
+
+<p>Home consolidates chats, contacts, and discover in the current release. This removes a lot of redundancy.</p>
+
+<p>The sidebar is removed and contents merged into Profile.</p>
+
+<p>Each screen is cleaned up and focused slightly.</p>
+
+<p><img width="679" alt="screen shot 2017-12-14 at 4 04 15 pm" src="https://user-images.githubusercontent.com/116099/34014328-c02a3e4c-e0e8-11e7-9784-c5495d48d438.png" />
+(sample screenshots for illustration)</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Description: migrate <code class="highlighter-rouge">wallet</code> and <code class="highlighter-rouge">profile</code> tabs
+Goal Date: 2 weeks after start (target start date: 2018-01-02)
+Started: 2018-01-06
+Completed: 2018-02-09</p>
+
+<p><strong>WARNING</strong> Related mockups are a dependency for this iteration.</p>
+
+<ul>
+  <li>migrate existing profile to the <code class="highlighter-rouge">profile</code> tab (according to MVP mockups)</li>
+  <li>update <code class="highlighter-rouge">wallet</code> tab (according to MVP mockups)</li>
+  <li>migrate to tab based navigation (as described in #33)</li>
+  <li>remove tabs <code class="highlighter-rouge">contacts</code> and <code class="highlighter-rouge">discover</code></li>
+  <li>prepare a detailed plan for <code class="highlighter-rouge">home</code> tab</li>
+</ul>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<p>Description: migrate <code class="highlighter-rouge">home</code> tab
+Goal Date: 3 weeks after start
+Started: 2018-02-12
+Completed: 2018-03-22</p>
+
+<ul>
+  <li>Restyle profile</li>
+  <li>Update home tab</li>
+  <li>Rework home “add”</li>
+  <li>Refine chats</li>
+  <li>Remove old commands</li>
+</ul>
+
+<p><strong>WARNING</strong> Related mockups are a dependency for this iteration.</p>
+
+<h2 id="post-mortem">Post-Mortem</h2>
+
+<p>The scope of the iteration was very broad. Probably our biggest set of changes so far!</p>
+
+<p>Nonetheless this swarm took significantly more time than expected.
+We identified a number of area that could be improved:</p>
+
+<ul>
+  <li>better scoping and time spent upfront to detail atomic tasks</li>
+  <li>assign task per iteration and let assignees estimate them</li>
+  <li>have a fixed scope per iteration: no new issue can be added during an iteration</li>
+  <li>have a fixed team, at least per iteration (limit turnaround)</li>
+  <li>improve test automation and ensure PRs do not introduce regression</li>
+  <li>improve communication related to technical cost / hidden complexity</li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

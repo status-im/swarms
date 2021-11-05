@@ -1,0 +1,105 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 58-mainnet-default
+Title: Use Mainnet as the default network
+Status: In progress
+Created: 2017-12-08
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<p>Alpha builds of Status should default to Mainnet. We should be using Status in a real-world environment.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: adambabik</li>
+  <li>Testing &amp; Evaluation: annadanchenko</li>
+  <li>Contributor: themue</li>
+  <li>Contributor: roman (supportive role; still in need of one Clojure dev)</li>
+  <li>PM: chadyj</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>Currently the Status alpha builds use testnet, but using Mainnet is a key milestone for the public launch of Status. There will be potentially major performance and security implications so the goal is to surface these issues early enough by testing the app in a real-world environment.</p>
+
+<p>From a users perspective, Mainnet should be a default network as it is required by most popular DApps, and is needed for real transactions, so the full potential of Status can’t be seen until we switch. The other networks will continue to be available, e.g. for developers and tests.</p>
+
+<h2 id="product-description">Product Description</h2>
+
+<p>This is a default setting change, so there aren’t any user facing options. The other networks are still visible.</p>
+
+<p>Some users, such as DApp creators may want to test their app on testnet (or some other use case), so they will be able to toggle networks as can be done currently.</p>
+
+<h2 id="requirements--dependancies">Requirements &amp; Dependancies</h2>
+
+<p>Security and performance should should be discussed and considered.</p>
+
+<p>Also, several DApps should be tested.</p>
+
+<h2 id="minimum-viable-product">Minimum Viable Product</h2>
+
+<p><strong>This MVP does not mean that after it’s finished we release the app with Mainnet enabled by default but defines prerequisites that should be done before we consider doing so.</strong></p>
+
+<p>Goal Date: 2018-04-14</p>
+
+<ol class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Development of required components is done. The work is tracked here: https://github.com/orgs/status-im/projects/15,</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />There is a Status App build with mainnet available,</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />All components have been tested by the Test Team,</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Mainnet is default in dev/nightly builds.</li>
+</ol>
+
+<h2 id="audit-iteration">Audit iteration</h2>
+
+<p>Goal Date: 2018-05-31</p>
+
+<ol class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Security audit is finished by an independent company,</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />The final report is available,</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />All reported security issues and recommendations are evaluated and finished.</li>
+</ol>
+
+<h3 id="updates">Updates</h3>
+
+<h4 id="2018-04-26">2018-04-26</h4>
+
+<ul>
+  <li>security audit got extended to May 7th,</li>
+  <li>security issues are tracked with <code class="highlighter-rouge">security</code> label in <a href="https://github.com/status-im/status-react/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity">status-react</a> and <a href="https://github.com/status-im/status-go/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity">status-go</a>,</li>
+  <li><a href="https://github.com/status-im/status-react/issues/3994">a feature request</a> to allow custom upstream address was created</li>
+</ul>
+
+<h4 id="2018-06-05">2018-06-05</h4>
+
+<ul>
+  <li>the final readout took place on May 7th,</li>
+  <li>there were no new issues reported,</li>
+  <li>all issues were fixed; there are still recommendations that we decided to implement but they are not blockers for beta. Moreover, more issues were identified during Risk Management meetings.</li>
+</ul>
+
+<h2 id="status-app-bug-bounty-iteration-canceled">Status App Bug Bounty iteration <del>(CANCELED)</del></h2>
+
+<p><del><strong>This iteration got canceled as we do not plan to announce Status App Bug Bounty for the time being.</strong></del></p>
+
+<p>Goal Date: 2018-04-??</p>
+
+<ol class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Status App Bug Bounty program is announced and will last for at least X weeks.</li>
+</ol>
+
+<h3 id="updates-1">Updates</h3>
+
+<h4 id="2018-06-05-1">2018-06-05</h4>
+
+<p>We actually decided to run Status App But Bounty in June. The blog post should appear this week.</p>
+
+<h2 id="success-and-exit-criteria">Success and exit criteria</h2>
+
+<ol>
+  <li>Mainnet is operational just like testnets and availalbe in dev/nightly builds,</li>
+  <li>The audit is completed and there are no low, medium, high or critical issues.</li>
+</ol>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

@@ -1,0 +1,87 @@
+<h1 id="friends-recovery-secret-multisig">Friends Recovery (Secret Multisig)</h1>
+
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 152-friends-recovery
+Title: Friends Recovery (Secret Multisig)
+Status: Draft
+Created: 2018-04-07
+Requires: 145-identity
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>A multisig controller that store owners privately and requires a secret to sign a call, to be used as a recovery for Identity through trust of selected friends.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: Ricardo Guilherme Schmidt</li>
+  <li>Testing &amp; Evaluation:</li>
+  <li>Contributor: Richard Ramos</li>
+  <li>PM:</li>
+  <li>UX:</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>A bad experience of cryptosystems is the lost or exposure of a private key, which can lead to irreversible situations. 
+Some contracts, such as Identity, support a recovery address which can recover a lost key or compromised contract.
+This product will provide a way of Status users selecting friends to recover this contracts, together with a built-in user interface for requesting to friends and signing recovery request from locked-out friends.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>User would be able to:</p>
+<ul>
+  <li>Use semi-private data as secret, such as personal details or biometric data.</li>
+  <li>Select privately a big amount of friends able to recover but only require a few of them</li>
+</ul>
+
+<p>Locked out user would be able to:</p>
+<ul>
+  <li>Request recovery to friends</li>
+</ul>
+
+<p>User’s friends would be able to:</p>
+<ul>
+  <li>Only know they are recovery when recovery is completed</li>
+  <li>Sign recovery call allowance for Friends Recovery contract to help locked out user (gas is paid by anyone/user)</li>
+  <li>Call Friends Recovery from Identity call allowance to help locked out friends (gas is paid by allower)</li>
+</ul>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<ul>
+  <li>Idea 151-Identity is the first use case of this product, but Friends Recovery contract itself don’t depend on Identity.</li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Goal Date: 2018-07-01</p>
+
+<p>Description:</p>
+
+<ul>
+  <li>Users can use a semi-private secret answer as recovery lock</li>
+  <li>Users can use friends as allowance for Identity recovery</li>
+  <li>Users are notified when a recovery is requested for them</li>
+  <li>Users can help locked out friends to recover their Identity without paying gas</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>Users are able to easly recover their Identity.</li>
+</ul>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<ul>
+  <li>Becomes an extension of Identity settings</li>
+</ul>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+<!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

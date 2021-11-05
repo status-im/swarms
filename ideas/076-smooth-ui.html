@@ -1,0 +1,84 @@
+<!-- Please Review https://docs.google.com/document/d/1CaFM2ZXGOKf05_LXMPJeNNy5qJOdAq91EF2Gn2QUBFI/edit# for more details -->
+<!-- in PR the document should be named as`DEV#1-title.md` -->
+
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 76-smooth-ui
+Title: Make UI fast and smooth
+Status: Aborted
+Created: 2018-01-24
+Requires (*optional): 87-new-protocol
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+<!-- "If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the Idea. -->
+<p>Status app should be fast enough to provide user smooth and nice experience - no lags and UI freezes.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<!-- Each contributor pledges to the idea with their FOCUS value. (hours per week) -->
+<!-- Here all roles in swarm are defined and filled, one of the contributors should responsibility of the Idea as Lead. -->
+
+<!-- Testing/Evaluation support role is also mandatory to check in on specified Goal dates or earlier. -->
+
+<!-- Lead Contributor is the Owner of the Idea. If required, they can get support from a PM, but should be responsible for end to end execution of the Idea. This includes ensuring appropriate resources are allocated, setting realistic timelines and milestones, and any post-launch metrics or bug fixes that are attributed to the Idea -->
+<!-- A swarm requires at minimum 3 contributors and 1 evaluator/tester -->
+<!-- 'Contributor' should be replaced with a descriptive role type. -->
+<ul>
+  <li>Lead Contributor: @dmitryn</li>
+  <li>Testing &amp; Evaluation: @Serhy</li>
+  <li>Contributor: @rasom</li>
+  <li>Contributor: @janherich</li>
+  <li>Contributor: @yenda</li>
+  <li>Contributor: @mandrigin</li>
+  <li>Contributor: @flexsurfer</li>
+  <li>UX: tba
+<!-- - Contributor: @username --></li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+<!-- A short (~200 word) description and motivation of the Idea. Without clear explanation the Idea should not proceed. Can include User Stories -->
+<!-- Testing/Evaluation role accepts responsbility to checkin at Goal dates, -->
+<!-- forces discussion to continue implementation or recommend disband and post-mortem. -->
+<p>App should be fast from user standpoint - switching screens, sending/receiving messages, dapp browsing. Every UI component should be responsible and provide almost immediate feedback to the user. For long-running operations spinner should be shown.</p>
+
+<p>User stories to be resolved:</p>
+<ul>
+  <li>https://github.com/status-im/status-react/issues/3095</li>
+  <li>https://github.com/status-im/status-react/issues/3108</li>
+  <li>https://github.com/status-im/status-react/issues/3397</li>
+</ul>
+
+<!-- ### Product Description -->
+<!-- What functionality are you adding? What will this look like from a user perspective? Why is this important? -->
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+<!-- Are there bugs or feature requests in other repositories that are part of this Idea? -->
+<!-- There is no approval unless the idea requires to be reviewed by supporting organelles (Financial, Hiring, or Design). -->
+<!-- The Swarm must develop a fully fleshed out Requirements document for the idea to proceed, to the satisfaction of participants. -->
+<p>Somewhat depends on 87-new-protocol idea to be finished to validate perfomance user story about getting many messages from offline (app freezes while doing that) https://github.com/status-im/status-react/issues/3095</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+<!-- Mandatory, completes the Idea in the fastest route possible, can be hacky, needed to feel progress. See https://imgur.com/a/HVlw3 -->
+<p>Goal Date: 2018-05-01</p>
+
+<p>Description: Perf user stories have been resolved</p>
+
+<!-- ## Dates -->
+<!-- Goal Date: 2018 -->
+
+<!-- Description: https://github.com/status-im/status-react/issues/3095 -->
+
+<!-- Days required at the end of development for testing -->
+<!-- Testing Days required:  -->
+
+<h2 id="success-metrics">Success Metrics</h2>
+<!-- Assuming the idea ships, what would success look like? What are the most important metrics that you would move? -->
+
+<p>App UI perfomance is good enough when using low-end and middle-end devices like iPhone 6 and Samsung Galaxy S4.
+Perfomance testing to be made by QA team, then by real-world users from focus group (needs UXR help on that).</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+<!-- Once Requirements and Goals are fleshed out, then it should be communicated to supporting organelles if required -->
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

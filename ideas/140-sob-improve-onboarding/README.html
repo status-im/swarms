@@ -1,0 +1,102 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: #XX-sob-improve-onboarding
+Title: OpenBounty Improved Onboarding
+Status: In progress
+Created: 2018-04-04
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Currently users wanting to publish a bounty need to go through various manual steps, including us whitelisting them for using the platform. This step forces users to wait for us and might make them drop out of the process even if they were committed to create a bounty.</p>
+
+<p>This swarm aims to remove the need for whitelisting users and revamp the onboarding flow at the same time.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @martinklepsch (10hr for MVP, 30hr+ from MVP onwards)</li>
+  <li>Testing &amp; Evaluation: @Churik</li>
+  <li>UX Contributor: @EugeOrtiz</li>
+  <li>Dev Contributor: @siphuel or @rcullito</li>
+  <li>Contracts Contributor: @3esmit (need not fully clear)</li>
+  <li>Product Manager Contributor: @arash009</li>
+</ul>
+
+<h2 id="product-description">Product Description</h2>
+
+<p>Currently all users wanting to issue a bounty need to go through a whitelisting process. This is required because we currently pay the gas for deploying the bounty contract. In order to make it easier for users to get started we should remove this whitelisting requirement, allowing users to onboard at their own speed.</p>
+
+<p>There are multiple ways the need for whitelisting could be removed:</p>
+
+<ul>
+  <li>Allow (or force) users to pay gas for contract deployment themselves</li>
+  <li>Pay gas for new users but implement some rate-limiting or similar guards to protect from bad actors</li>
+</ul>
+
+<p>These and other alternatives will be evaluated as part of this swarm, whatever decision is taken will be documented in a <a href="https://github.com/status-im/open-bounty/blob/develop/doc/decisions/0001-record-decisions.md">Decision Record</a>.</p>
+
+<h2 id="iterations">Iterations</h2>
+
+<h3 id="iteration-1--conceptdesign-mvp-2018-04-20">Iteration 1 — Concept/Design (MVP) <code class="highlighter-rouge">2018-04-20</code></h3>
+
+<ul>
+  <li>Design (wireframes) onboarding and bounty-issuing flow that properly accounts for the removed need to get whitelisted and guides users through the creation of their first bounty.</li>
+  <li>Decide on the best way to eliminate whitelisting requirement for immediate future.</li>
+</ul>
+
+<p><strong>Artifacts:</strong></p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />mockup of onboarding flow for bounty issuers</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />mockup of onboarding flow for bounty hunters</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Updated welcome email text for both</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Decision Record for removal of whitelisting requirement</li>
+</ul>
+
+<h3 id="iteration-2--implementation-2018-05-10">Iteration 2 — Implementation <code class="highlighter-rouge">2018-05-10</code></h3>
+
+<p>Implement the UI for the new flows and make it functional. Once <code class="highlighter-rouge">122-sob-metrics</code> has laid
+the necessary groundwork, start integrating some metrics using the tools defined by that
+swarm.</p>
+
+<p><strong>Artifacts:</strong></p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Functioning onboarding UI and bounty issuing flow that does not require getting whitelisted.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Emails that are sent to new users are updated</li>
+</ul>
+
+<h3 id="iteration-3-cleanup-2018-05-30">Iteration 3 — Cleanup <code class="highlighter-rouge">2018-05-30</code></h3>
+
+<p>Devise steps to fully migrate to new onboarding flow, refactor relevant code, delete code, clean up UI.</p>
+
+<h2 id="exit-criteria">Exit Criteria</h2>
+<ul>
+  <li>Whitelisting barrier has been removed</li>
+  <li>Any user can sign up to SOB and publish a bounty on a repository they own</li>
+  <li>The onboarding experience (UI, Emails, etc) has been revised to match the new process</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+<p>We don’t have proper metrics for Open Bounty yet but this should affect the following:</p>
+
+<ul>
+  <li>Value transacted through SOB</li>
+  <li>Increase number of bounty issuers</li>
+  <li>Increase number of bounties issued</li>
+  <li>Overall conversion/funnel improvements</li>
+</ul>
+
+<h2 id="appendix--notes">Appendix / Notes</h2>
+
+<h3 id="token-whitelisting">Token Whitelisting</h3>
+
+<p>Swarm Compensation Experimentse previously had issues with tokens being added to bounty contracts that have no value/are spam. While not explicitly the goal of this swarm this would be worth solving as well if it turns out to be low-hanging fruit.</p>
+
+<h3 id="repositoryuser_id-column"><code class="highlighter-rouge">repository.user_id</code> column</h3>
+
+<p>Currently when users sign up and install the OpenBounty app into their repo their GitHub <code class="highlighter-rouge">user_id</code> is stored as <code class="highlighter-rouge">repository.user_id</code>. This ID is later used to look up which address should be able to confirm a payout (specified at bounty deployment).</p>
+
+<p>This is later often referred to as <code class="highlighter-rouge">repo_owner</code>. This concept of a <code class="highlighter-rouge">repo_owner</code> is insufficient as it does not reflect the realities of GitHub. Multiple people should be able to publish/pay out bounties on the same repo — as they can add bounty labels.</p>
+

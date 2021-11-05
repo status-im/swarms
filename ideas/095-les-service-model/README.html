@@ -1,0 +1,87 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 095-les-service-model
+Title: Adding a service model to LES
+Status: Draft
+Created: 2018-03-20
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Add the LES Service Model where clients can subscribe to higher quality services. Different payment models will
+be available, negotiation between client and full node is done via auctions based on demands and capacity. This
+way full node service provide are able to monetize the services they provide. LES will make the beginning, Whisper
+and Swarm may follow.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @b00ris</li>
+  <li>Testing &amp; Evaluation: TBD</li>
+  <li>Contributor: @jeka</li>
+  <li>PM: @zsfelfoldi (external)</li>
+  <li>UX (if relevant):</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>Right now all light clients are treated equal by the full nodes they connect. A future service model will
+introduce the separation between free and payed services. As outlined by Felföldi Zsolt:</p>
+
+<ul>
+  <li>LES will be available either as free or paid service,</li>
+  <li>paid service can guarantee availability and short response times,</li>
+  <li>client bandwidth demand fluctuates with time, good service quality requires reserve capacity,</li>
+  <li>for-profit LES servers can still give away their extra capacity for free (with lower priority than paid service),</li>
+  <li>free service is a good indicator of high bandwidth capacity and therefore the capability to provide good service, and</li>
+  <li>paying clients will prefer servers which already gave them free service so free service can act as an advertisement.</li>
+</ul>
+
+<p>Here Status supports the development and testing to make the service model become a part of <em>geth</em> and be
+integrated into Status.</p>
+
+<h3 id="remark">Remark</h3>
+
+<p>For Status it also could become interesting to become a service provider offering payed full node services not only
+for own clients. This business case should be evaluated in an own swarm.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>Parts of the LES Service Model introduction are:</p>
+
+<ul>
+  <li>research, definition, and implementation of connection management system of paying clients for full nodes,</li>
+  <li>research, definition, and implementation of auctioning,</li>
+  <li>research, definition, and implementation of payment methods and models,</li>
+  <li>documentation.</li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Goal Date: TBD</p>
+
+<p>Description:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Auctioning protocol between client and full node is defined</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Payment methods and interfaces are defined</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Initial implementation validates auctioning and micropayment in automated tests</li>
+</ul>
+
+<h2 id="artifacts">Artifacts</h2>
+
+<ul>
+  <li><a href="micropayment.md">Information about Micropayment</a></li>
+  <li><a href="log.md">Logfile</a></li>
+  <li><a href="links.md">Links</a></li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<p>LES of <code class="highlighter-rouge">go-ethereum</code> is extended to provide micropayed services with a higher quality
+level as well as free services depending on capacity and configuration.</p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

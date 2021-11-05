@@ -1,0 +1,117 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 170
+Title: Wallet Improvements
+Status: In Progress
+Created: 2018-04-13
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Status Wallet does not fully support ERC20 tokens (requesting and transaction history not available)
+and generally the transactions UX is different between Chat and Wallet. The intention of this swarm
+is to wrap up those inconsistencies and study and improve wallet and transaction UX problems and
+limitations to make the wallet experience great.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+<ul>
+  <li>Lead Contributor: <a href="https://github.com/goranjovic">@goranjovic</a></li>
+  <li>Contributor:</li>
+  <li>Testing &amp; Evaluation: <a href="https://github.com/asemiankevich">@asemiankevich</a></li>
+  <li>PM: <a href="https://github.com/chadyj">@chadyj</a></li>
+  <li>UX: <a href="https://github.com/denis-sharypin">@denis-sharypin</a></li>
+  <li>UX: <a href="https://github.com/hesterbruikman">@hesterbruikman</a></li>
+</ul>
+
+<h2 id="product-overview--description">Product Overview &amp; Description</h2>
+
+<p>Add native support for all ERC20 token operations and rudimentary support for ERC721 tokens.</p>
+
+<h2 id="use-cases">Use Cases</h2>
+
+<ul>
+  <li>As a user I want to see my ERC20 transactions in history of transactions (Wallet -&gt; Transaction History).</li>
+  <li>As a user I want to distinguish my ERC20 transactions easily in History of transactions.</li>
+  <li>As a user I want to understand clearly whom i sent transaction to (ERC20, ETH, etc).</li>
+  <li>As a user I want to request erc20 tokens in 1x1 chat.</li>
+  <li>As a user I want to send erc20 tokens in 1x1 chat by responding to appropriate request.</li>
+  <li>As a user I want to send erc 20 tokens in a group chat.</li>
+  <li>As a user I want to send erc20 tokens in a group chat by responding to appropriate request.</li>
+</ul>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<ul>
+  <li>Possibly depends on extensions swarm for integrations with Chat</li>
+  <li>Related to #163 - support ERC721 tokens</li>
+</ul>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Goal Date: 2018-05-12</p>
+
+<p>Description:</p>
+
+<ul>
+  <li>Support for ERC20 transaction history in Wallet.</li>
+  <li>UX improvements derived from UXR sessions</li>
+</ul>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<p>Goal Date: 2018-05-04</p>
+
+<p>Description:</p>
+
+<ul>
+  <li>Wallet spring cleanup - triage, fix or remove reported bugs so far - https://github.com/orgs/status-im/projects/24</li>
+  <li>Compile UX insights into design decisions for the next iterations</li>
+  <li>Update the subsequent iterations accordingly</li>
+</ul>
+
+<h3 id="iteration-2">Iteration 2</h3>
+
+<p>Goal Date:</p>
+
+<p>Description:</p>
+<ul>
+  <li>Support for ERC20 tokens in <code class="highlighter-rouge">/send</code> and <code class="highlighter-rouge">/request</code> chat command API. 
+This iteration covers the prerequisites on the Command API side.</li>
+  <li>UXR sessions and recommendations</li>
+</ul>
+
+<h3 id="iteration-3">Iteration 3</h3>
+
+<p>Goal Date:</p>
+
+<p>Description: Integration of Send and Request operations between Wallet and Chat.</p>
+
+<h3 id="iteration-4">Iteration 4</h3>
+
+<p>Goal Date:</p>
+
+<p>Description: ERC721 support in Wallet</p>
+
+<p>Testing days required:</p>
+
+<h2 id="exit-criteria">Exit Criteria</h2>
+
+<ul>
+  <li>Display ERC20 token transfers in transaction history</li>
+  <li>Send ERC20 tokens from chat</li>
+  <li>Request ERC20 tokens from wallet and chat</li>
+  <li>Unified Chat/Wallet transaction UX</li>
+  <li>ERC721 support in Wallet</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>All exit criteria met</li>
+  <li>UXR retested with measurable improvements</li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

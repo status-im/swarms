@@ -1,0 +1,84 @@
+<h1 id="swarm-proposal">Swarm proposal</h1>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+<p>Kudos DApp - an experiment with awarding kudos each week between Status contributors. Heavily inspired by Giveth’s awesome RewardDAO concept, the idea is that contributors get a weekly allowance of SNT which they can distribute amongst other contributors as they see fit. The awarded totals can be withdrawn by contributors who have earned kudos.</p>
+
+<p>More here: https://discuss.status.im/t/kudos-rewards-building-the-status-meritocracy/1019</p>
+
+<p><strong>Swarm goals</strong></p>
+<ul>
+  <li>Create DApp</li>
+  <li>Launch DApp</li>
+  <li>Encourage regular (weekly) CC interaction with DApp to recognise others</li>
+</ul>
+
+<h2 id="communication">Communication</h2>
+<p>Channel: <a href="https://get.status.im/chat/public/324-meritocracy">#324-meritocracy</a></p>
+
+<p>Sync frequency: async via text</p>
+
+<h2 id="research">Research</h2>
+<ul>
+  <li>Influenced by Giveth’s Reward DAC <a href="https://wiki.giveth.io/dac/contributors-guide//">concept</a>.</li>
+  <li>Initial proposal and discussion <a href="https://docs.google.com/document/d/1QN2SZ8QO-7jfH8rAKLVDAB5LxuKvBScodWoiRfejFkM/edit#heading=h.tommnlxre23w">here</a>.</li>
+  <li>Idea developed on Discuss <a href="https://discuss.status.im/t/kudos-rewards-building-the-status-meritocracy/1019">here</a>.</li>
+  <li>Collected sign-ups <a href="@people-ops">here</a> - 42 people signed up 🎉</li>
+</ul>
+
+<h2 id="specification">Specification</h2>
+
+<ul>
+  <li>DApp spec <a href="https://github.com/status-im/meritocracy">here</a> courtesy of @jarrad</li>
+</ul>
+
+<h2 id="implementation">Implementation</h2>
+
+<p><strong>Timeline</strong>
+[Mid-Feb - 5 April]</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Deploy DApp to Mainnet (@richard)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add @jb and @rajanie as additional <code class="highlighter-rouge">Admins</code> if possible (@richard) - only the contract owner (richard) can add admins</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Seek help with adding Design to the UI (@richard/@people-ops)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Test DApp and share feedback (@people-ops)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Create budget and plan for transfer of SNT into contract (@people-ops / finance)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Create People Ops site page / FAQ (@people-ops) - https://people-ops.status.im/meritocracy/</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Draft launch post for Discuss (@people-ops)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Launch on 5 April with post on Discuss (@people-ops) - delayed to 8 April</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Present/demo in TH (@richard / @people-ops)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Schedule weekly reminders to ping all contributors to let them know a new reward cycle has started (@people-ops)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Leaderboard UI</li>
+</ul>
+
+<p><strong>Updates</strong></p>
+<ul>
+  <li>22 March - Added @ceri as admin in Ropsten testnet</li>
+  <li>25 March - @richard and @ceri walkthrough to get admin role set up, before doing allocations in mainnet.</li>
+  <li>26 March - pinged Finance about funding the wallet with SNT &amp; ETH. Did another test run on Ropsten of the weekly allocation by admin of funds to the meritocracy contract.
+    <ul>
+      <li>DApp does not currently have leaderboard UI, but the contract can be queries for each individual’s balance, so this info can be pulled manually if needed.</li>
+    </ul>
+  </li>
+  <li>28 March - Finance have transferred a small amount of ETH and SNT into @ceri’s Metamask wallet ready for first cycle (equivalent to SNT 5 per participant).</li>
+  <li>1 April - 5 SNT distributed to all participants.</li>
+  <li>3 April - troubleshooting issues with Richard. Drafting launch comms</li>
+  <li>8 April - launched with 10 SNT allocated.</li>
+</ul>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<ul>
+  <li>@ceri, @rajanie, and @jb will act as DApp <code class="highlighter-rouge">admin</code> to make the weekly allocation of SNTs.</li>
+  <li>Ask CCs to log any issues either in #324-meritocracy or creating an issue <a href="https://github.com/status-im/meritocracy/issues">here</a>.</li>
+  <li>Review quarterly (first review early July 2019) to review success of DApp:
+    <ul>
+      <li>Engagement - &gt; 50% of core contributors (currently = 32 people) using the DApp regularly (at least once a month)</li>
+      <li>Functionality - all open issues closed and volume of problems reported reduced</li>
+      <li>Feedback - anecdotal feedback from users positive, do CCs enjoy and benefit from using the DApp?</li>
+      <li>Utility - does the data generated through the DApp accurately represent a Meritocracy, or are there any concerns/issues.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

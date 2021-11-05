@@ -1,0 +1,74 @@
+<h2 id="preamble">Preamble</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: #282-deterministic-builds
+Title: Deterministic Mobile App Builds
+Status: In Progress
+Created: 2018-09-01
+</code></pre></div></div>
+
+<p>The purpose of achieving deterministic builds is encuring security of Status software. Deterministic builds depend on ensuring stable inputs, ensuring stable outputs, and capturing as little of the build environment as possible.</p>
+
+<p>In simple terms, deterministic builds mean the same commit generates exactly the same software package(s) regardless of where and when it is built. This is achieved by controlling all possible variables in a build, which includes controlling your build environment as well.</p>
+
+<h2 id="objectives">Objectives</h2>
+
+<ul>
+  <li>status-go builds are deterministic</li>
+  <li>status-react builds are deterministic</li>
+</ul>
+
+<h2 id="key-results">Key Results</h2>
+
+<ul>
+  <li>Anyone can build a commit on their own machines and verify the result by comparing against our builds</li>
+  <li>We can upload Android builds to F-Droid which requires deterministic builds</li>
+</ul>
+
+<h2 id="timeline--checkpoints">Timeline / Checkpoints</h2>
+
+<p>Time is given since start of swarm.</p>
+
+<ul>
+  <li><strong>1 month</strong>
+    <ul>
+      <li>All major blockers are identified for major build steps
+        <ul>
+          <li>Dependencies</li>
+          <li>Compilation</li>
+          <li>Packaging</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>3 months</strong>
+    <ul>
+      <li>All dependencies are contolled and versioned</li>
+      <li>Env controlling solution is chosen and implemented(vm, nix, docker)</li>
+    </ul>
+  </li>
+  <li><strong>4 months</strong>
+    <ul>
+      <li>Remaining blockers are cleared</li>
+      <li>CI is configured to build in a deterministic way</li>
+      <li>Instructions to check build vailidty are published for anyone to use</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="exit-criteria">Exit Criteria</h1>
+
+<ul>
+  <li>All Status mobile and desktop app builds are deterministic</li>
+</ul>
+
+<h2 id="what-exactly-we-going-to-do">What exactly we going to do?</h2>
+
+<ul>
+  <li>Verify all of our dependencies are frozen and versioned (<code class="highlighter-rouge">Gemfile.lock</code>)</li>
+  <li>Verify we depend on no resources pulled from internet during build</li>
+  <li>Make sure we initialize all variables in an explicit way</li>
+  <li>Verify the build output does not depend on build system time/locale/encoding</li>
+  <li>Eliminate timestamp related changes (use <code class="highlighter-rouge">SOURCE_DATE_EPOCH</code>)</li>
+  <li>Use <a href="https://github.com/devrandom/gitian-builder">gitan-builder</a> or <a href="https://nixos.org/nix/">Nix</a> to have a controlled build environment</li>
+  <li>Configure deterministic builds to run on Jenkins</li>
+</ul>

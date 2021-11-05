@@ -1,0 +1,203 @@
+<h1 id="core-networking-swarm-proposal">Core Networking Swarm proposal</h1>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+
+<p>Research and develop framework and incentivization structure for people
+deploying and using Status nodes according to <a href="https://status.im/whitepaper.pdf">the whitepaper</a>.</p>
+
+<p>One important vision aspect is that the app continues to work if all nodes in Status-hosted cluster is down.</p>
+
+<p>Current docs:</p>
+
+<p>https://hackmd.io/kQHqdZ0xR7WbYwGEG4FFNg</p>
+
+<h3 id="1-offline-messaging">1. Offline messaging</h3>
+
+<p>This one is the primary topic of research.</p>
+
+<p>The goal is:</p>
+<ul>
+  <li>to give the ability for the people (“providers”) to run and provide offline messaging to users of the Status app.
+    <ul>
+      <li>cryptoeconomic incentives (SNT use-case);</li>
+      <li>lowering the boundaries to install status node (docs, install scripts, etc);</li>
+    </ul>
+  </li>
+  <li>to users of the Status app to discover and use offline messaging nodes from providers.
+    <ul>
+      <li>receiving messages reliabily;</li>
+      <li>being able to choose the best mailservers and knowing the compromises.</li>
+    </ul>
+  </li>
+  <li>preserve security and privacy;</li>
+</ul>
+
+<h3 id="2-push-notifications-stretch-goal">2. Push Notifications [stretch goal]</h3>
+
+<p>Distributed push-notification market. Researching ways on how can users pick PN providers.</p>
+
+<h3 id="additional-contributors">Additional contributors</h3>
+<ul>
+  <li>oskarth</li>
+  <li>dmitrys</li>
+  <li>andrei m (design)</li>
+  <li>a smart contract dev</li>
+</ul>
+
+<h2 id="communication">Communication</h2>
+<p>(required)
+<code class="highlighter-rouge">status channel (same as swarm id)</code>: <a href="https://get.status.im/chat/public/316-core-network-incentives">#316-core-network-incentives</a>
+<code class="highlighter-rouge">sync frequency</code>: Weekly Sync Mondays, 11:00 CET
+<code class="highlighter-rouge">document</code>: https://notes.status.im/2ogTGMkqRwC7VMcGh9mBdA</p>
+
+<h2 id="research">Research</h2>
+<p>(required) 
+<code class="highlighter-rouge">timebox research (approx)</code> 
+Research deadline: February, 18th ~January 31th~</p>
+
+<p>(optional)
+<code class="highlighter-rouge">eips</code>, <code class="highlighter-rouge">competitors</code>, <code class="highlighter-rouge">existing research</code>, <code class="highlighter-rouge">wireframes</code>, <code class="highlighter-rouge">spike (PoC)</code>
+https://1337alliance.com/
+https://github.com/status-im/swarms/tree/master/ideas/168-paid-master-nodes
+https://status.im/whitepaper.pdf
+protocol work and leveraging data sync data, eg</p>
+
+<h3 id="weekly-goals">Weekly Goals</h3>
+<h4 id="w0405-19">W04/05-19</h4>
+<p>timebox: Feb, 4</p>
+
+<p>more wide research, setting the frame for new protocol
+conclusion about new protocol: it’s long-term, so we only care about not depending on Whisper</p>
+
+<h4 id="w03-19">W03-19</h4>
+<p>timebox: Jan 21</p>
+
+<p>widen research to include protocols different than Whisper and our current infra</p>
+
+<p>outcomes:</p>
+
+<h4 id="w03-19-1">W03-19</h4>
+<p>timebox: Jan 21</p>
+
+<p>initial research phase
+https://hackmd.io/jmuP-tk6QFOw14Vfp-DSbg</p>
+
+<ul>
+  <li>adding Loopix protocol case</li>
+  <li>goals to start some design research next week</li>
+  <li>extending the research phase due to Brussels meetup with Protocol research</li>
+</ul>
+
+<h4 id="w02-19">W02-19</h4>
+<p>timebox: Jan 14</p>
+
+<p>initial research phase</p>
+
+<p>outcomes:
+https://hackmd.io/WwDneHimRj2Oqwnjb9uG6A
+https://hackmd.io/s/r1ZawmIf4</p>
+
+<h4 id="w51-18-problemsideation">W51-18 Problems/Ideation</h4>
+<p>timebox: Dec, 21</p>
+
+<ul>
+  <li>trying to figure out which users and Status problems we can solve by users running Status nodes</li>
+</ul>
+
+<p>participants:</p>
+<ul>
+  <li>igorm</li>
+  <li>andrea mp</li>
+  <li>andrei m</li>
+</ul>
+
+<p>outcome:</p>
+<ul>
+  <li>ideas written in https://notes.status.im/2ogTGMkqRwC7VMcGh9mBdA</li>
+  <li>discussion on Dec, 21</li>
+</ul>
+
+<h3 id="1-offline-messaging-1">1. Offline Messaging</h3>
+
+<p>The goal of this research is to research the ways on how people can run Status
+nodes and how we can guarantee good behaviour in the network.</p>
+
+<p>Areas of research:</p>
+<ul>
+  <li>viability of ideas;</li>
+  <li>cryptoeconomics and incentivization for good behaviour;</li>
+  <li>security and privacy aspects;</li>
+  <li>UX research for both discovering nodes providing archives and running them;</li>
+  <li>MVP and transition using the current protocol;</li>
+  <li>risks assesments (what are known risks and unknown risks in implementing this
+  idea).</li>
+</ul>
+
+<p>Outcomes:</p>
+<ul>
+  <li>a document with the full research;</li>
+  <li>a document with MVP proposal;</li>
+  <li>list of risks for implementation;</li>
+  <li>(optional) a few PoCs;</li>
+</ul>
+
+<h3 id="2-push-notifications">2. Push notifications</h3>
+
+<p>Areas of research:</p>
+<ul>
+  <li>viability of ideas and their techincal implementation;</li>
+  <li>cryptoeconomics and incentivization for good behaviour;</li>
+  <li>security and privacy aspects;</li>
+  <li>UX research for both discovering PN providers and hosting them;</li>
+  <li>MVP and transition using the current protocol;</li>
+  <li>risks assesments (what are known risks and unknown risks in implementing this
+  idea).</li>
+</ul>
+
+<p>Outcomes:</p>
+<ul>
+  <li>a document with the full research;</li>
+  <li>a document with MVP proposal;</li>
+  <li>list of risks for implementation;</li>
+  <li>(optional) a few PoCs;</li>
+</ul>
+
+<h2 id="specification">Specification</h2>
+
+<blockquote>
+  <p>do after <code class="highlighter-rouge">Research</code></p>
+</blockquote>
+
+<p>(required)
+<code class="highlighter-rouge">timebox specification (approx)</code></p>
+
+<p>(optional)
+<code class="highlighter-rouge">user stories</code>, <code class="highlighter-rouge">architecture</code>, <code class="highlighter-rouge">designs</code>, <code class="highlighter-rouge">PoC</code></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>(required)
+<code class="highlighter-rouge">timebox implementation (approx)</code></p>
+
+<blockquote>
+  <p>do after <code class="highlighter-rouge">Specification</code></p>
+</blockquote>
+
+<blockquote>
+  <p>All swarm contributors should test and break the implementation, especially developers</p>
+</blockquote>
+
+<p>(required)
+<code class="highlighter-rouge">document progress</code></p>
+
+<p>(optional)
+<code class="highlighter-rouge">townhall demo</code></p>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<p><code class="highlighter-rouge">lead-contributor</code>,<code class="highlighter-rouge">post-mortems</code></p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+

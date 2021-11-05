@@ -1,0 +1,110 @@
+<h2 id="meta">Meta</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: #142
+Title: Wallet Compatibility
+Status: Active
+Created: 2018-04-04
+Replaces (*optional): #94
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Users should be able to use <code class="highlighter-rouge">dapps</code> on their browser and continue to use them with the same account in Status, and vice versa.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @pilu</li>
+  <li>Testing &amp; Evaluation: @antdanchenko</li>
+  <li>Testing &amp; Evaluation: @asemiankevich</li>
+  <li>Contributor: @flexsurfer</li>
+  <li>Contributor: <!-- @username --></li>
+  <li>PM: @chadyj</li>
+  <li>UX (if relevant): @jpbowen
+<!-- - Contributor: @username --></li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>Other wallets used to interact with dapps, like MetaMask, Toshi, Cipher, etc., implements BIPs 39/32/44 like Status, and so they derive the keys starting from 12 mnemonic words.</p>
+
+<p>Given that they use the same standards, users can start playing with a <code class="highlighter-rouge">dapp</code> with one of those apps, and continue with another one without problems. They can open one of the other apps, and use the same 12 mnemonic words to import their existing account (keys).</p>
+
+<p>In Status, we implement the same standards to derive the keys starting from the 12 mnemonic words but using different parameters, and we use the password added as an extra entropy in the generation of the seed.</p>
+
+<p>This means that users can click on “Add existing account” and successfully “import” an account with the 12 mnemonic words that they generated in a different wallet software.
+But this process ends up generating different keys and addresses.
+Since the generation of the key is different, the account and address are not the ones that the user expected to import.
+Users won’t be able to log in to <code class="highlighter-rouge">dapps</code> with the same account they used previously, and won’t be able to see the value and collectables they actually have in their wallet.</p>
+
+<p>To fix this problem, in the Technical Overview we describe the changes that make the generation of the keys compatible with those other wallets.</p>
+
+<p>Impacts Ideas #58-mainnet and #80-onboarding.</p>
+
+<h3 id="technical-overview">Technical overview</h3>
+
+<p>The changes have been already implemented in <a href="https://github.com/status-im/status-go/pull/858">PR 858</a>, and they already went through the security audit.</p>
+
+<p><strong>Changes:</strong></p>
+
+<ul>
+  <li>
+    <p>update the BIP39 seed generation to use the salt <code class="highlighter-rouge">"mnemonic"</code> instead of <code class="highlighter-rouge">"status-im"</code> following <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#from-mnemonic-to-seed">BIP39</a>.</p>
+  </li>
+  <li>
+    <p>update the master key generation using the constant <code class="highlighter-rouge">"Bitcoin seed"</code> instead of <code class="highlighter-rouge">"status-im"</code>, following <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#master-key-generation">BIP32</a>.</p>
+  </li>
+  <li>
+    <p>remove the use of the password in the salt during the BIP39 seed generation (password is not removed from the app in general, and it’s still required to encrypt the keys on the device).</p>
+  </li>
+</ul>
+
+<h3 id="relevant-reading">Relevant reading</h3>
+
+<ul>
+  <li><a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39</a></li>
+  <li><a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">BIP32</a></li>
+  <li><a href="https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki">BIP44</a></li>
+</ul>
+
+<h3 id="user-stories">User stories</h3>
+
+<ul>
+  <li>
+    <p>As a user, I want to be able to use a <code class="highlighter-rouge">dapp</code> in Status, and then open the same <code class="highlighter-rouge">dapp</code> with the same account in a different Wallet Software, using the 12 mnemonic words.</p>
+  </li>
+  <li>
+    <p>As a user, I want to be able to use a <code class="highlighter-rouge">dapp</code> in an external app, and then using it in Status with the same account imported using the 12 mnemonic words.</p>
+  </li>
+</ul>
+
+<h3 id="security-and-privacy-implications">Security and Privacy Implications</h3>
+
+<p>The changes went already through the security audit.</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Goal Date: 2018-05-18</p>
+
+<p>Description: users can import and export an account to and from Status.</p>
+
+<p>Testing Days required: <!-- Days required at the end of development for testing --></p>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>5k daily active users (OKR 2.1 of Q2)</li>
+  <li>20% of users send a transaction (OKR 2.4 of Q2)</li>
+</ul>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<p>Users can use a single account/address for <code class="highlighter-rouge">dapps</code> and use it both in external apps and in Status.</p>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+
+<p>Once deployed, the generation of the keys will change.
+It will be impossible to re-import an account created previously.</p>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

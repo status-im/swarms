@@ -1,0 +1,71 @@
+<h2 id="preamble">Preamble</h2>
+
+<p>Idea: 309
+Title: Build a status protocol JS library &amp; example web client for status
+Status: Draft
+Created: 2018-10-15</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>We need to make it easier for devs &amp; 3rd parties to build their own chat clients &amp; applications on top of the status protocol.
+We also need different/new client implementations which just like in the case of Ethereum itself, helps out flush the protocol and define it better. Arguably It also helps decentralization as users are not necessarily dependant on one client implementation.</p>
+
+<h3 id="swarm-participants">Swarm Participants</h3>
+
+<ul>
+  <li>Contributor: <a href="https://github.com/iurimatias">@iurimatias</a></li>
+  <li>Contributor: <a href="https://github.com/richard-ramos">@richard-ramos</a></li>
+  <li>Contributor: <a href="https://github.com/bgits">@bgits</a></li>
+</ul>
+
+<h3 id="technical-solution">Technical solution</h3>
+
+<ul>
+  <li>JS library that abstracts protocol, so developer can:
+– connect to (a) network
+– listen &amp; send messages to a channel or another user
+– is allowed to specify his own (sub)-app protocol</li>
+  <li>Webapp client
+– serverless app, connects to local geth node (initial solution)
+– implements similar UI &amp; functionality to existing status desktop</li>
+</ul>
+
+<h3 id="technologies-to-use">Technologies to use</h3>
+
+<ul>
+  <li>nodejs + webpack (to build library for both node and browser)</li>
+  <li>react</li>
+  <li>redux</li>
+</ul>
+
+<h3 id="milestones">Milestones</h3>
+
+<ul>
+  <li>
+    <ol>
+      <li>poc script that listens &amp; display messages on the command line connected to a configured geth node.</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>NodeJS library to listen to &amp; send messages to custom channels.</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>poc WebUI to listen to &amp; send messages to custom channels.</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="dates">Dates</h3>
+
+<p>To start after Devcon.</p>
+
+<h3 id="relevant-work">relevant work</h3>
+
+<ul>
+  <li>https://github.com/trazyn/weweChat</li>
+  <li>https://github.com/noman-land/matrix-whisper-bridge</li>
+</ul>
+

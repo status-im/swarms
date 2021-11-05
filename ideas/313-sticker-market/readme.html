@@ -1,0 +1,121 @@
+<h1 id="sticker-market-swarm-proposal">Sticker Market Swarm Proposal</h1>
+
+<h2 id="summary-and-goals">Summary and Goals</h2>
+
+<p>Stickers are a must-have for any messenger, particularly with Asian markets in mind.</p>
+
+<p>The goal of the Status sticker market is two-fold:</p>
+
+<p>1) Allow users to buy and use stickers in chat using SNT.
+2) Allow creators to sell stickers permissionlessly through a curated marketplace, for SNT.</p>
+
+<p>For the initial scope, the focus is on use case #1.</p>
+
+<p>We can commission a set of stickers to populate the marketplace starting out.</p>
+
+<h2 id="contributors">Contributors</h2>
+
+<ul>
+  <li>Julien</li>
+  <li>Andrey</li>
+  <li>Nastya</li>
+  <li>Ricardo</li>
+  <li>Maciej</li>
+</ul>
+
+<p>(+ Janitor swarm)</p>
+
+<h2 id="communication">Communication</h2>
+
+<p><code class="highlighter-rouge">status channel</code>: <a href="https://get.status.im/chat/public/313-sticker-market">#313-sticker-market</a></p>
+
+<p><code class="highlighter-rouge">sync schedule</code>: biweekly sprint planning, ad hoc meetings as needed</p>
+
+<p><code class="highlighter-rouge">Pivotal project:</code> https://www.pivotaltracker.com/projects/2231918</p>
+
+<p><code class="highlighter-rouge">Meeting notes:</code> https://notes.status.im/wyjNCxeURu6lYSwWGh3biw</p>
+
+<p><code class="highlighter-rouge">Research notes:</code> https://notes.status.im/stickers-market-research</p>
+
+<h2 id="latest">Latest</h2>
+
+<p>Monday, 11/2</p>
+<ul>
+  <li>Sticker UI is complete</li>
+  <li>Andrey working on contract/UI interface</li>
+  <li>Illustrator hired</li>
+  <li><a href="https://docs.google.com/document/d/1LxVHnWzdS9D1xO5b6lcferKX8xeIySzQ95u5eLZh8Q0/edit?ts=5c61c866">Community contest planning</a> underway</li>
+</ul>
+
+<p>Friday, 1/2</p>
+<ul>
+  <li>First iteration of UI complete</li>
+  <li>Design issues identified by Maciej</li>
+  <li>Rachel talking with sticker illustrators</li>
+  <li>Ricardo making final changes to contract to:</li>
+  <li>Allow multiple categories per pack</li>
+  <li>Include a function to globally set a burn percentage. One more option: global fee to all packs, only controller can set it.</li>
+  <li>Add new contract state restricting all market functions to controller but “buyToken”</li>
+</ul>
+
+<h2 id="research">Research</h2>
+
+<p><code class="highlighter-rouge">Timing</code>: wrap on 28/12</p>
+
+<p><code class="highlighter-rouge">References</code>: LINE &amp; Kakao are two of the best sticker markets. Looking at these two alone can give ample guidance on great sticker market UX. Telegram another worthy reference.</p>
+
+<p><code class="highlighter-rouge">Initial stories to inform technical research</code>:</p>
+<ul>
+  <li>As a user, I want to view and select stickers from my stickers within a chat.</li>
+  <li>I want to send and receive stickers in chat.</li>
+  <li>I want to buy new stickers via a marketplace accessible from chat.<br />
+–<br /></li>
+  <li>As a creator, I want to push my stickers to the market without waiting for approval.</li>
+  <li>I want my stickers to be hosted in a decentralized way.</li>
+  <li>I want my stickers to be protected from free use/stealing.</li>
+</ul>
+
+<p><code class="highlighter-rouge">Research questions</code>:</p>
+<ul>
+  <li>What are the pros &amp; cons of implementing as an extension vs. native feature?</li>
+  <li>Does one smart contract handle…?
+    <ul>
+      <li>Price setting</li>
+      <li>Payment from users</li>
+      <li>Payout to creators</li>
+    </ul>
+  </li>
+  <li>Which audience are we designing these stickers for? How should character design be informed?</li>
+  <li>What’s the cost to commission 1-3 initial sticker packs?</li>
+  <li>Sticker usage:
+    <ul>
+      <li>How many sets do people own on average?</li>
+      <li>How many do they use?</li>
+      <li>What makes certain characters popular?</li>
+      <li>etc.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="specification">Specification</h2>
+
+<h2 id="implementation">Implementation</h2>
+<h3 id="21st-january-update">21st January Update</h3>
+<ul>
+  <li>Finalizing specs for registry contract</li>
+  <li>Basic UI POC</li>
+</ul>
+
+<h3 id="4th-february-update">4th February Update</h3>
+<ul>
+  <li>Finalized specs</li>
+  <li>Contract implemented and deployed on Ropsten</li>
+  <li>Awaiting audit info</li>
+  <li>First stage of MVP UI merged</li>
+  <li>In talks with sticker illustrators</li>
+</ul>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<h2 id="copyright">Copyright</h2>
+<p>Copyright and related rights waived via CC0.</p>

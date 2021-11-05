@@ -1,0 +1,206 @@
+<h1 id="desktop-swarm-proposal">Desktop Swarm proposal</h1>
+
+<h1 id="outdated-desktop-was-merged-with-the-310-core-team">OUTDATED, Desktop was merged with the <a href="310-core.md">310-core</a> team.</h1>
+
+<hr />
+
+<h1 id="archive">Archive</h1>
+
+<h2 id="summary-and-goals">Summary and Goal(s)</h2>
+
+<p>Messenger apps expected to be present on all widely used platforms - ios, android, mac, windows, linux.</p>
+
+<p>Status desktop app currently extensively used by Status company for communications.
+It is implemented with the help of <a href="https://github.com/status-im/react-native-desktop">react-native-desktop</a> project that is a Qt-based port of <code class="highlighter-rouge">react-native</code> to desktop platforms: mac, windows, linux.</p>
+
+<p>So Desktop swarm has two goals in mind:</p>
+<ol>
+  <li>Providing well-polished communication tool for Status company itself and the community</li>
+  <li>Feature parity with mobile application
+For initial scope focus is on the first goal.</li>
+</ol>
+
+<p>Additional tasks for the swarm is maintaining <code class="highlighter-rouge">react-native-desktop</code> project to fit Status desktop needs and publishing Status desktop releases.</p>
+
+<h2 id="communication">Communication</h2>
+<p><code class="highlighter-rouge">status channel (same as swarm id)</code>: <a href="https://get.status.im/chat/public/318-desktop">#318-desktop</a></p>
+
+<p><code class="highlighter-rouge">sync frequency</code>: Weekly Sync</p>
+
+<p><code class="highlighter-rouge">meeting notes</code>: https://notes.status.im/IVQ6ZK6iRw6LfF-4y4WJmw</p>
+
+<h2 id="research">Research</h2>
+
+<p><code class="highlighter-rouge">Timebox: 21/12</code></p>
+
+<p><code class="highlighter-rouge">Research questions:</code></p>
+
+<ul>
+  <li><strong>what features we already planned or were talking about? How they priority changes now?</strong></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6272">Allow standard keyboard shortcuts</a></del></li>
+  <li><del>Publishing at platform’s official marketplaces</del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/5271">Fix memory leaks</a></del></li>
+  <li><del>Improve CPU usage</del></li>
+  <li><del>windows uwp support</del></li>
+  <li><del>markdown support in chat</del></li>
+  <li><del>text selection among multiple messages</del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6568">show connection stats inside the app</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/5848">add log level settings</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6961">use peer counts to detect online\offline state</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6396">No new messages after going back from sleep</a></del></li>
+  <li><del><a href="Desktop security and privacy review">Security and privacy review</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6571">Context menu in input fields</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/4434">Add design for menus</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6570">Fix scroll stuttering</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6477">Add dev mode and network switching</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6506">UI fixes for bubble-less chat area</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6607">Fix group chats creation</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/4977">Confirmation dialog on logout</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6394">Custom url support on linux</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6110">Add custom mailserver</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/5456">Edit profile picture</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/5424">Remove code duplication in Jenkinsfiles</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/5852">Persist scroll position after navigation through the app</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/5859">Add jenkins job for e2e tests</a></del></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/4418">Apply onboarding designs</a></del></li>
+  <li><strong>what existing desktop issues affect its usability most (in functionality or UI)</strong>?</li>
+  <li><del><strong>how many users outside of Status we have? (optional)</strong></del></li>
+  <li><strong>how can we get user feedback about desktop</strong></li>
+  <li><a href="https://goo.gl/forms/AAzNNfCTGjL8hcEl1">make a poll within Status</a></li>
+  <li><strong>what features mostly anticipated by users?</strong></li>
+  <li>mentions</li>
+  <li>image/links previews</li>
+  <li>pinned channels</li>
+  <li>mark all messages in a channel as unread</li>
+  <li>channel (chat where only creator can write and others can read). That would be great for announcing things company-wide</li>
+  <li>persisting chat list and settings between full reinstalls</li>
+  <li><strong>what ui/ux input needed</strong></li>
+  <li><strong>what should be done in <code class="highlighter-rouge">react-native-desktop</code> to support status desktop tasks</strong></li>
+  <li><del><a href="https://github.com/status-im/status-react/issues/6175">Get rid of ubuntu-server and embed js engine in react-native-desktop</a></del></li>
+  <li><del><a href="https://github.com/status-im/react-native-desktop/issues/377">File open dialog</a></del></li>
+  <li><del><a href="https://github.com/status-im/react-native-desktop/issues/392">Fix remote js debugging</a></del></li>
+  <li><del>Improve UI responsiveness (needs clarification on existing issues)</del></li>
+  <li><strong>what should be done in <code class="highlighter-rouge">react-native-desktop</code> to make its maintenance easier</strong></li>
+  <li><del>port to react-native 0.57. That will give us a possibility to make it an <a href="https://facebook.github.io/react-native/docs/out-of-tree-platforms">out-of-tree</a> platform and facilitate future upgrades.</del>
+    <ul>
+      <li>PR with updated version <a href="https://github.com/status-im/react-native-desktop/pull/422">already in react-native-desktop</a></li>
+      <li><a href="https://github.com/status-im/status-react/pull/6983">PR for testing it with status-react</a></li>
+      <li>PR for mobile <a href="https://github.com/status-im/status-react/pull/6951">in progress</a></li>
+    </ul>
+  </li>
+  <li><del>More documentation/tutorials for external contributors</del></li>
+  <li><strong>what tasks can be done without involving Clojure/Go resources</strong></li>
+</ul>
+
+<p><code class="highlighter-rouge">Research output structure:</code>
+ When questions above answered we can create:</p>
+<ul>
+  <li>prioritized list of most important tasks to do for boosting communication experience</li>
+  <li>user stories</li>
+  <li>bounties</li>
+</ul>
+
+<p><code class="highlighter-rouge">Research output:</code></p>
+
+<p><strong>Prioritized list of tasks:</strong></p>
+
+<ul>
+  <li><strong>TODO</strong>
+    <ul>
+      <li>High
+        <ul>
+          <li><a href="https://github.com/status-im/status-react/issues/5271">Fix memory leaks</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6570">Fix scroll stuttering</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6175">Get rid of ubuntu-server and embed js engine in react-native-desktop</a></li>
+          <li><a href="https://github.com/status-im/react-native-desktop/pull/422">port to react-native 0.57</a></li>
+        </ul>
+      </li>
+      <li>Medium
+        <ul>
+          <li><a href="https://github.com/status-im/react-native-desktop/issues/222">Support building react-native-desktop with msvc</a></li>
+          <li><a href="https://github.com/orgs/status-im/projects/32#card-16155153">Add emoji panel</a></li>
+          <li><a href="https://github.com/status-im/react-native-desktop/issues/392">Fix remote js debugging</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6506">UI fixes for bubble-less chat area</a></li>
+          <li><a href="Desktop security and privacy review">Security and privacy review</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/4434">Add design for menus</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/4977">Confirmation dialog on logout</a></li>
+          <li><a href="https://github.com/status-im/react-native-desktop/issues/377">File open dialog</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/5456">Edit profile picture</a> (depends on file open dialog implementation in react-native-desktop)</li>
+          <li><a href="https://github.com/status-im/status-react/issues/5852">Persist scroll position after navigation through the app</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/5859">Add jenkins job for e2e tests</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/4418">Apply onboarding designs</a></li>
+          <li>Improve UI responsiveness (needs clarification on existing issues)</li>
+          <li><a href="https://github.com/status-im/status-react/issues/7176">Image/links preview</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/7200">mark all messages in a channel as unread</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6272">Allow standard keyboard shortcuts</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/7201">markdown support in chat</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/7202">text selection among multiple messages</a></li>
+          <li>More documentation/tutorials in react-native-desktop for external contributors</li>
+          <li><a href="https://github.com/status-im/status-react/issues/6394">Custom url support on linux</a></li>
+          <li>Mentions</li>
+        </ul>
+      </li>
+      <li>Low
+        <ul>
+          <li><a href="https://github.com/status-im/status-react/issues/7203">Pinned channels</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6607">Fix group chats creation</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/5151">Improve CPU usage on resize</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6110">Add custom mailserver</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6477">Add dev mode and network switching</a></li>
+          <li><a href="https://github.com/status-im/status-react/issues/6571">Context menu in input fields</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Needs input from other teams (most probably)</strong></li>
+  <li>channels (public chat where only creator can write and others can read). That would be great for announcing things company-wide</li>
+  <li>
+    <p>persisting chat list and settings between full reinstalls</p>
+  </li>
+  <li><strong>Postponed</strong></li>
+  <li>windows uwp support</li>
+  <li>Publishing at platform’s official marketplaces</li>
+</ul>
+
+<p><strong>User stories:</strong></p>
+
+<p><strong>Bounties:</strong></p>
+
+<h2 id="specification">Specification</h2>
+
+<blockquote>
+  <p>do after <code class="highlighter-rouge">Research</code></p>
+</blockquote>
+
+<p>(required)
+<code class="highlighter-rouge">timebox specification (approx)</code></p>
+
+<p>(optional)
+<code class="highlighter-rouge">user stories</code>, <code class="highlighter-rouge">architecture</code>, <code class="highlighter-rouge">designs</code>, <code class="highlighter-rouge">PoC</code></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>(required)
+<code class="highlighter-rouge">timebox implementation (approx)</code></p>
+
+<blockquote>
+  <p>do after <code class="highlighter-rouge">Specification</code></p>
+</blockquote>
+
+<blockquote>
+  <p>All swarm contributors should test and break the implementation, especially developers</p>
+</blockquote>
+
+<p>(required)
+<code class="highlighter-rouge">document progress</code></p>
+
+<p>(optional)
+<code class="highlighter-rouge">townhall demo</code></p>
+
+<h2 id="maintenance">Maintenance</h2>
+
+<p><code class="highlighter-rouge">lead-contributor</code>,<code class="highlighter-rouge">post-mortems</code></p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

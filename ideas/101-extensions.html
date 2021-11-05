@@ -1,0 +1,160 @@
+<h2 id="meta">Meta</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Idea: 101
+Title: Status extensions
+Status: In Progress
+Created: 2018-03-26
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>A set of extension points so that external developers can enhance status</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<ul>
+  <li>Lead Contributor: @jeluard</li>
+  <li>Testing &amp; Evaluation: @asemiankevich</li>
+  <li>Contributor: @cammellos, @janherich</li>
+  <li>PM: @andytudhope</li>
+  <li>UX: @denis-sharypin</li>
+</ul>
+
+<h2 id="product-overview">Product overview</h2>
+
+<p>As an ecosystem status needs to offer extension capacities so that external developers can develop on top of it.
+This swarm will review the current state of our extensions, specify a updated mechanism based on our current knowledge and eventually implement it.</p>
+
+<h3 id="product-description">Product Description</h3>
+
+<p>3rd party developers will have access to API and documentation allowing them to extend status via various hooks using a simple API.
+There won’t be any distinction between those extensions and status itself (it will feel native).</p>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<p>None</p>
+
+<h3 id="research">Research</h3>
+
+<ul>
+  <li>document existing working features offered by status <a href="https://docs.status.im/">API</a></li>
+  <li>list (potential) new types of extensions</li>
+  <li>prepare new workflow / mockups (special care for chat extensions)</li>
+  <li>prepare draft specifications detailing technical solution to be discussed with team (development, distribution, incentivization)</li>
+  <li>detail how to integrate with status API / screens</li>
+</ul>
+
+<p>During definitions of specifications a number of potential use cases must be considered, namely:</p>
+
+<ul>
+  <li>retrofit existing chat commands</li>
+  <li>ethereum standards (721, ..)</li>
+  <li>video sharing technologies (<a href="https://livepeer.org/">livepeer</a>)</li>
+  <li>token transfers (https://raiden.network/)</li>
+  <li>https://ethlend.io/en/, https://trustlines.network/, …</li>
+  <li>extensions mechanisms provided by other chat applications</li>
+</ul>
+
+<p>First status hackathon is also a good starting point. <a href="https://github.com/status-im/status-react/wiki/Hackathon-Feedback">Feedback</a> has been shared and <a href="https://blog.status.im/announcing-winners-of-the-status-global-hackathon-a44fb54e98f7">winners</a> give us a good hint on extensions potential.</p>
+
+<p>Note that idea #96 might be the first guinea pig of extensions.</p>
+
+<p><em>Started</em>: 2018-26-03
+<em>Goal Date</em>: 3 weeks after beginning
+<em>Completed</em>: 2018-20-04</p>
+
+<h2 id="dates">Dates</h2>
+
+<h3 id="pre-mvp">Pre-MVP</h3>
+
+<p>Validate technical feasibility.</p>
+
+<ul>
+  <li>general mechanism (UI, conditionals, queries, events)</li>
+  <li>HTML based</li>
+  <li>stored in ipfs (via gateway)</li>
+  <li>entry point: QR code scanner</li>
+  <li>no concept of extension points</li>
+  <li>no custom code</li>
+  <li>extension are activated when loaded and cannot be deactivated</li>
+  <li>simplified app-db</li>
+</ul>
+
+<p><em>Started</em> 2018-04-24
+<em>Goal Date</em> 2018-05-09</p>
+
+<h3 id="mvp">MVP</h3>
+
+<p>Pre-MVP integrated in Status.</p>
+
+<p><em>Duration</em> 1 week</p>
+
+<h3 id="iteration-1">Iteration 1</h3>
+
+<p>Migrate old commands to extensions.</p>
+
+<ul>
+  <li>implement extension points logic and proposed extension points</li>
+  <li>isolated data per extension</li>
+  <li>migrate existing commands send / request (message-type, update message)</li>
+  <li>detail plan for persistent extensions</li>
+</ul>
+
+<p><em>Duration</em> 2 weeks</p>
+
+<h3 id="iteration-2">Iteration 2</h3>
+
+<p>Add custom code support.</p>
+
+<ul>
+  <li>implement security mechanism</li>
+  <li>remote code loading</li>
+  <li>JavaScript API</li>
+</ul>
+
+<p><em>Duration</em> 2 weeks</p>
+
+<h3 id="iteration-3">Iteration 3</h3>
+
+<p>Persistent extensions.</p>
+
+<ul>
+  <li>implement data persistency</li>
+  <li>implement extension lifecycle</li>
+  <li>extensions can be deactivated</li>
+  <li>add extension registry UI</li>
+</ul>
+
+<p><em>Duration</em> 2 weeks</p>
+
+<h3 id="iteration-4">Iteration 4</h3>
+
+<p>Support dependencies.</p>
+
+<ul>
+  <li>add versioning support</li>
+  <li>extensions can depend on others extensions</li>
+  <li>implement WhoPays</li>
+</ul>
+
+<p><em>Duration</em> 2 weeks</p>
+
+<h2 id="exit-criteria">Exit criteria</h2>
+
+<ul>
+  <li>current API state is documented</li>
+  <li>mockups and documentation of proposed changes of extensions are available and have been discused by team</li>
+  <li>extensions API is implemented and documented</li>
+  <li>an extensive example is available</li>
+</ul>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>2 internal extensions shipped</li>
+  <li>3 external extensions shipped</li>
+  <li>positive feedback (API, documentation) from 3 external ethereum projects</li>
+  <li>quality of documentation recognized: few support request related to extensions</li>
+</ul>
+
+<p>Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>

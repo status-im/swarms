@@ -1,0 +1,109 @@
+<h2 id="preamble">Preamble</h2>
+
+<p>Idea: 308
+Title: Ducmentation
+Status: Draft
+Created: 2018-09-25</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>We need to manage documentation better, in accordance with the findings in <a href="https://ethreport.info">ethreport.info</a>. Documentation has been a long-running battle at Status because our codebase moves so fast, but with a good team managing it, with clear responsibilities and an easy contribution pipeline for anyone to edit and update our docs, we can become the best-documented project on Ethereum.</p>
+
+<h2 id="swarm-participants">Swarm Participants</h2>
+
+<p>I have called everyone I need <code class="highlighter-rouge">janitors</code> rather than <code class="highlighter-rouge">leaders</code> or any other term in line with Swarmwise, the summary of which you can find <a href="https://docs.google.com/document/d/12Qema_8hPWuzDhqb8Tim66QZleVFcMXkVWICyH4nIT8/edit">here</a>. We need people to serve their teams, clean up after all the amazing work that is being done and ensure that it is properly documented at all times.</p>
+
+<ul>
+  <li>Lead Contributor: <a href="https://github.com/andytudhope">@andytudhope</a></li>
+  <li>Contributor: <a href="https://github.com/easye">@easye</a></li>
+  <li>Contributor: <a href="https://github.com/rachelhamlin">@rachelhamlin</a></li>
+  <li>Evaluator (defaults to lead contributor):</li>
+  <li>Contributor: <a href="https://github.com/jakubgs">@jakubgs</a></li>
+  <li>QA:</li>
+  <li>PM: <a href="https://github.com/rachelhamlin">@rachelhamlin</a></li>
+  <li>Janitor: <a href="https://github.com/jeluard">@jeluard</a></li>
+  <li>Janitor: <a href="https://github.com/PombeirP">PombeirP</a></li>
+  <li>UX(R):</li>
+</ul>
+
+<h2 id="product-overview">Product Overview</h2>
+
+<p>We have changed our documentation to use the same theme as the <a href="https://embark.status.im">Embark docs</a>: <a href="https://hexo.io">hexo.io</a>. All technical documentation will use this theme going forward, and we will style it according to the designs created by Hazel and Andrei. We will also implement a global header navigation, so that it is easy to move between all the different parts of Status, no matter where you are in our online web of information.</p>
+
+<p>We will also set up <a href="https://github.com/status-im/docs.status.im">the current repo</a> so that the <code class="highlighter-rouge">master</code> branch serves to <code class="highlighter-rouge">docs.status.im</code> and the <code class="highlighter-rouge">develop</code> branch serves to a staging site. That way, anyone can commit directly to <code class="highlighter-rouge">develop</code>, see the changes themselves, and submit a link for review so that the process can run as smoothly and quickly as possible.</p>
+
+<h3 id="problem">Problem</h3>
+
+<p>Documenting all the disparate parts of Status has always been a challenge. Rather than coming up with specific user journeys when we still have so few actual users seems to be the wrong way to go about building a great documentation site. I think we should rather make it as easy as possible for people to contribute to a really good-looking documentation site, and then craft user journeys out of the content we see generated across the organisation.</p>
+
+<p>With a good global navigation, the same theme as our other sites, and an easy-to-use and review pipleline, we can make sure that each project can easily maintain their own documentation adn that Status remains - as a whole - the best documented project in addition to the most active developer one. We need to achieve this is in the service of mass adoption of Ethereum because good education precedes mass use and acceptance.</p>
+
+<p>It also contributes greatly to many of our <a href="https://our.status.im/our-principles/">principles</a>, especially <code class="highlighter-rouge">openness</code>, <code class="highlighter-rouge">inclusivity</code>,<code class="highlighter-rouge">transparency</code>, <code class="highlighter-rouge">decentralization</code> and <code class="highlighter-rouge">continuance</code>.</p>
+
+<h3 id="technical-solution">Technical solution</h3>
+
+<ul>
+  <li>Style hexo.io to Hazel and Andrei’s new designs.</li>
+  <li>Work with Jakub to set up the pipeline detailed above with <code class="highlighter-rouge">master</code> and <code class="highlighter-rouge">develop</code> serving to different places so that we don’t end up with the mess of branches currently accumulating there.</li>
+  <li>Set up the <code class="highlighter-rouge">Edit on GitHub</code> button on each page to edit directly on <code class="highlighter-rouge">develop</code> and build the changes submitted so that it’s automatic to see the effect of your changes as a contributor.</li>
+  <li>Think about how we can use Swarm and/or IPFS to serve our docs.</li>
+  <li>Think about incorporating user feedback mechanism like the <code class="highlighter-rouge">SNT clap</code> @exiledsurfer is planning for the blog.</li>
+</ul>
+
+<h3 id="user-stories">User Stories</h3>
+
+<ul>
+  <li>I want to understand how to build Status easily so I can contribute to the core codebase.</li>
+  <li>I want to understand how to build Desktop easily so I can contribute to the core codebase.</li>
+  <li>I want to understand how I can use Status to connect to my DApp.</li>
+  <li>I want to understand how I can leverage the unique features of Status in my DApp.</li>
+  <li>I want to add my DApp to the Status store and optimise it for Status.</li>
+  <li>I want to understand the research happening on Nimbus and how to contribute (will be split into it’s own site when there is enough content, using the same theme).</li>
+  <li>I want to understand the technical details of Status’ protocols: how does Whisper work? how does X3DH key exchange and PFS work? What is different about <code class="highlighter-rouge">status-go</code>? How does LES and ULC work?</li>
+  <li>How can I use SNT? From voting to Tribute to Talk to how to run a mailserver (this all needs to be detailed still).</li>
+</ul>
+
+<h3 id="requirements--dependencies">Requirements &amp; Dependencies</h3>
+
+<p>Final design from Hazel and set up with Jakub.</p>
+
+<h3 id="security-and-privacy-implications">Security and Privacy Implications</h3>
+
+<p>None at the moment. Will follow up with @corpetty though.</p>
+
+<h2 id="dates">Dates</h2>
+
+<p>Final Design and Pipeline Setup
+2018-09-28</p>
+
+<p>Detailed explanation for CCs on blog
+2018-09-29</p>
+
+<p>Re-style omplete
+2018-10-10</p>
+
+<h3 id="minimum-viable-product">Minimum Viable Product</h3>
+
+<p>Site that uses hexo.io to generate pages, is styled according to our designs, and has a slick build pipeline that anyone technical can easily contribute to. Some semblance of a structure, with enough room to evolve into what it really needs to be.</p>
+
+<h2 id="success-metrics">Success Metrics</h2>
+
+<ul>
+  <li>4-8 new contributions a month</li>
+  <li>2-4 updates a month to existing docs</li>
+  <li>5 tutorials fully written by November</li>
+  <li>Technical spec for whisper complete and accessible</li>
+  <li>Technical spec for PFS complete and accessible</li>
+  <li>3 clear Nimbus docs on what it is, what the state is now, and how to contribute</li>
+  <li>Lots more comments like the one in slack on 2018-09-26 about the doc Julien shared being “exactly what I needed!”</li>
+</ul>
+
+<h2 id="supporting-role-communication">Supporting Role Communication</h2>
+
+<p>We’ll need help from Michael and Jonny to get the really good docs out and communicated across the community, especially tutorials.</p>
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright and related rights waived
+via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</p>
+
